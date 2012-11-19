@@ -1,0 +1,102 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cz.nkp</groupId>
+    <artifactId>differ</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+		
+    <prerequisites>
+        <maven>2.2.1</maven>
+    </prerequisites>
+		
+    <properties>
+        <vaadin.version>6.8.1</vaadin.version>
+        <gwt.version>2.4.0</gwt.version>
+        <derby.version>10.8.2.2</derby.version>
+        <apache.commons-io.version>2.3</apache.commons-io.version>
+        <apache.commons-codec.version>1.6</apache.commons-codec.version>
+        <javadjvu-lib.version>0.8.9-RELEASE</javadjvu-lib.version>
+        <apache.commons-io.version>2.3</apache.commons-io.version>
+        <jai.version>1.1.3</jai.version>
+        <proguard-plugin.version>2.0.4</proguard-plugin.version>
+        <gwt-maven-plugin.version>2.4.0</gwt-maven-plugin.version>
+        <maven.jar.plugin.version>2.3.1</maven.jar.plugin.version>
+        <maven.war.plugin.version>2.2</maven.war.plugin.version>
+        <maven-clean-plugin.version>2.5</maven-clean-plugin.version>
+        <vaadin-maven-plugin.version>1.0.2</vaadin-maven-plugin.version>
+        <gmaven-plugin.version>1.0</gmaven-plugin.version>
+        <jetty-maven-plugin.version>8.1.3.v20120416</jetty-maven-plugin.version>
+        <maven-compiler-plugin.version>2.4</maven-compiler-plugin.version>
+        <java.source.version>1.6</java.source.version>
+        <java.source.target.version>1.6</java.source.target.version>
+    </properties>
+		
+    <modules>
+        <module>differ-webapp</module>
+    </modules>
+	
+    <build>
+        <plugins>
+            <!-- A simple Jetty test server at http://localhost:8080/differ can be launched with the Maven goal jetty:run and stopped with jetty:stop -->
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jetty-maven-plugin.version}</version>
+                <inherited>false</inherited>
+                <configuration>
+                    <stopPort>9966</stopPort>
+                    <stopKey>differ</stopKey>
+	            <!-- Redeploy every x seconds if changes are detected, 0 for no automatic redeployment -->
+                    <scanIntervalSeconds>0</scanIntervalSeconds>
+		    <!-- make sure Jetty also finds the widgetset -->
+                    <war>${differ.bin.dir}/differ.war</war>
+                    <webAppConfig>
+                        <contextPath>/differ</contextPath>
+                    </webAppConfig>
+                </configuration>
+            </plugin>
+	    
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.5</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>../${differ.bin.dir}/resources</outputDirectory>
+                            <encoding>UTF-8</encoding>
+                            <resources>
+                                <resource>
+                                    <directory>unpacked_resources</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+	  
+            <plugin>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-maven-plugin</artifactId>
+                <version>${vaadin-maven-plugin.version}</version>
+                <inherited>false</inherited>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <module>cz.nkp.differ.gwt.DifferWidgetSet</module>
+                        </configuration>
+                        <goals>
+                            <goal>update-widgetset</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

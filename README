@@ -1,0 +1,31 @@
+Compilation Information:
+
+You must have Maven and the JDK installed.
+
+Before you can run 'mvn package', change to the differ-libs-from-source directory and run 'mvn install'
+
+The other commands below should be run from the root directory (./differ)
+To package the Differ application into a .war (which is by default placed in ./bin) and compile all plugins:
+ 
+	mvn package
+	
+	This produces a plugin directory and resources directory in the bin folder. Those should be placed into ~/.differ (%USERPROFILE%/.differ on Windows). A WAR is also
+	produced, which should be used in the appropriate configuration for your webserver.
+	
+To compile the Differ application without packaging:
+
+	mvn compile
+	
+To update the widgetsets without running a full compile:
+
+	mvn vaadin:update-widgetset
+	
+To compile as needed and run on a local Jetty server first run mvn:package and then:
+	
+	mvn jetty:run-war
+	
+	Passing a terminator control character to the console you initiated the server from shuts down the server. [Ctrl-C or Ctrl-Z on most platforms]
+
+To remove all build files:
+	
+	mvn clean
