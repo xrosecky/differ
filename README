@@ -2,6 +2,10 @@ Compilation Information:
 
 You must have Maven and the JDK installed.
 
+Install javadjvu-lib-0.8.9-RELEASE.jar manually:
+
+mvn install:install-file -DgroupId=com.lizardtech -DartifactId=javadjvu-lib -Dversion=0.8.9-RELEASE -Dpackaging=jar -Dfile=javadjvu-lib-0.8.9-RELEASE.jar
+
 Before you can run 'mvn package', change to the differ-libs-from-source directory and run 'mvn install'
 
 The other commands below should be run from the root directory (./differ)
