@@ -5,12 +5,14 @@
     <artifactId>differ</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>Differ</name>
 		
     <prerequisites>
         <maven>2.2.1</maven>
     </prerequisites>
 		
     <properties>
+        <differ.bin.dir>./bin</differ.bin.dir> 
         <vaadin.version>6.8.1</vaadin.version>
         <gwt.version>2.4.0</gwt.version>
         <derby.version>10.8.2.2</derby.version>
