@@ -53,221 +53,225 @@ public class ImageFileAnalysisContainer {
     private JFreeChartWrapper chartComponent = null;
 
     public ImageFileAnalysisContainer(ImageProcessorResult result, CompareComponent parent) {
-	this.result = result;
-	this.parent = parent;
+        this.result = result;
+        this.parent = parent;
     }
 
     public Image getImage() {
-	return result.getPreview();
+        return result.getPreview();
     }
 
     public Layout getComponent() {
-	final VerticalLayout layout = new VerticalLayout();
-	generateComponent(layout);
-	return layout;
+        final VerticalLayout layout = new VerticalLayout();
+        generateComponent(layout);
+        return layout;
     }
 
     private void generateComponent(final Layout layout) {
-	// Image preview
-	final Resource imageFullResource = imageToResource(result.getFullImage());
-	final Resource imageScaledResource = imageToResource(result.getPreview());
-	Button imageButton = new Button();
-	imageButton.setStyleName(BaseTheme.BUTTON_LINK);
-	imageButton.setIcon(imageScaledResource);
-	imageButton.addListener(new ClickListener() {
+        // Image preview
+        final Resource imageFullResource = imageToResource(result.getFullImage());
+        final Resource imageScaledResource = imageToResource(result.getPreview());
+        Button imageButton = new Button();
+        imageButton.setStyleName(BaseTheme.BUTTON_LINK);
+        imageButton.setIcon(imageScaledResource);
+        imageButton.addListener(new ClickListener() {
 
-	    @Override
-	    public void buttonClick(ClickEvent event) {
+            @Override
+            public void buttonClick(ClickEvent event) {
 
-		Embedded img = new Embedded(null, imageFullResource);
-		img.setType(Embedded.TYPE_IMAGE);
-		DifferApplication.getCurrentApplication().getMainWindow().addWindow(new FullSizeImageWindow(img));
-	    }
-	});
-	layout.addComponent(imageButton);
-	// Image checksum
-	Label hashLabel = new Label();
-	hashLabel.setCaption(String.format("Hash: %s", result.getMD5Checksum()));
-	layout.addComponent(hashLabel);
-	// Histogram
-	if (result.getType() == ImageProcessorResult.Type.IMAGE) {
-	    generateHistogramComponent(layout, false);
-	} else {
-	    generateHistogramComponent(layout, true);
-	}
-	// Metadata table
-	BeanItemContainer metadataContainer = new BeanItemContainer<ImageMetadata>(ImageMetadata.class, result.getMetadata());
-	metadataContainer.sort(new String[] { "key" }, new boolean[] { true });
-	final Table metadataTable = new Table("Metadata", metadataContainer);
-	metadataTable.setSelectable(true);
-	metadataTable.setMultiSelect(false);
-	metadataTable.setImmediate(true);
-	layout.addComponent(metadataTable);
-	final Button rawData = new Button();
-	rawData.setCaption("Raw data");
-	rawData.addListener(new ClickListener() {
+                Embedded img = new Embedded(null, imageFullResource);
+                img.setType(Embedded.TYPE_IMAGE);
+                DifferApplication.getCurrentApplication().getMainWindow().addWindow(new FullSizeImageWindow(img));
+            }
+        });
+        layout.addComponent(imageButton);
+        // Image checksum
+        Label hashLabel = new Label();
+        hashLabel.setCaption(String.format("Hash: %s", result.getMD5Checksum()));
+        layout.addComponent(hashLabel);
+        // Histogram
+        if (result.getType() == ImageProcessorResult.Type.IMAGE) {
+            generateHistogramComponent(layout, false);
+        } else {
+            generateHistogramComponent(layout, true);
+        }
+        // Metadata table
+        BeanItemContainer metadataContainer = new BeanItemContainer<ImageMetadata>(ImageMetadata.class, result.getMetadata());
+        metadataContainer.sort(new String[]{"key"}, new boolean[]{true});
+        final Table metadataTable = new Table("Metadata", metadataContainer);
+        metadataTable.setSelectable(true);
+        metadataTable.setMultiSelect(false);
+        metadataTable.setImmediate(true);
+        layout.addComponent(metadataTable);
+        final Button rawData = new Button();
+        rawData.setCaption("Raw data");
+        rawData.addListener(new ClickListener() {
 
-	    @Override
-	    public void buttonClick(ClickEvent event) {
-		ImageMetadata metadata = (ImageMetadata) metadataTable.getValue();
-		DifferApplication.getCurrentApplication().getMainWindow().addWindow(new RawDataWindow(parent, metadata.getSource()));
-	    }
-	});
-	rawData.setImmediate(true);
-	rawData.setEnabled(false); //FIXME
-	layout.addComponent(rawData);
-	metadataTable.addListener(new ValueChangeListener() {
+            @Override
+            public void buttonClick(ClickEvent event) {
+                try {
+                    ImageMetadata metadata = (ImageMetadata) metadataTable.getValue();
+                    DifferApplication.getCurrentApplication().getMainWindow().addWindow(new RawDataWindow(parent, metadata.getSource()));
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+        rawData.setImmediate(true);
+        rawData.setEnabled(false); //FIXME
+        layout.addComponent(rawData);
+        metadataTable.addListener(new ValueChangeListener() {
 
-	    @Override
-	    public void valueChange(ValueChangeEvent event) {
-		rawData.setEnabled(true);
-	    }
-	});
+            @Override
+            public void valueChange(ValueChangeEvent event) {
+                rawData.setEnabled(true);
+            }
+        });
     }
 
     private void generateHistogramComponent(final Layout mainLayout, boolean logarithmic) {
-	HorizontalLayout histogramLayout = new HorizontalLayout();
-	histogramLayout.setMargin(true);
-	histogramLayout.setWidth("100%");
-	histogramLayout.setSpacing(true);
-	this.chartComponent = createHistogramComponent(result.getHistogram(), logarithmic);
-	mainLayout.addComponent(chartComponent);
-	Button downloadButton = new Button();
-	downloadButton.setCaption("Download as CSV");
-	downloadButton.addListener(new ClickListener() {
+        HorizontalLayout histogramLayout = new HorizontalLayout();
+        histogramLayout.setMargin(true);
+        histogramLayout.setWidth("100%");
+        histogramLayout.setSpacing(true);
+        this.chartComponent = createHistogramComponent(result.getHistogram(), logarithmic);
+        mainLayout.addComponent(chartComponent);
+        Button downloadButton = new Button();
+        downloadButton.setCaption("Download as CSV");
+        downloadButton.addListener(new ClickListener() {
 
-	    @Override
-	    public void buttonClick(ClickEvent event) {
-		try {
-		    StringBuilder sb = new StringBuilder();
-		    int[][] bins = result.getHistogram();
-		    for (int i = 0; i < 256; i++) {
-			sb.append(i).append(',').append(bins[0][i]).append(',').append(bins[1][i]).append(',').append(bins[2][i]).append("\n");
-		    }
-		    File tmpFile = File.createTempFile("histogram", ".csv");
-		    tmpFile.deleteOnExit();
-		    FileUtils.writeByteArrayToFile(tmpFile, sb.toString().getBytes());
-		    FileResource resource = new FileResource(tmpFile, parent.getApplication());
-		    parent.getApplication().getMainWindow().open(resource);
-		} catch (Exception ex) {
-		    parent.getApplication().getMainWindow().showNotification("Error when creating CSV file for upload", "",
-			    Notification.TYPE_ERROR_MESSAGE);
-		}
-	    }
-	});
-	histogramLayout.addComponent(downloadButton);
+            @Override
+            public void buttonClick(ClickEvent event) {
+                try {
+                    StringBuilder sb = new StringBuilder();
+                    int[][] bins = result.getHistogram();
+                    for (int i = 0; i < 256; i++) {
+                        sb.append(i).append(',').append(bins[0][i]).append(',').append(bins[1][i]).append(',').append(bins[2][i]).append("\n");
+                    }
+                    File tmpFile = File.createTempFile("histogram", ".csv");
+                    tmpFile.deleteOnExit();
+                    FileUtils.writeByteArrayToFile(tmpFile, sb.toString().getBytes());
+                    FileResource resource = new FileResource(tmpFile, parent.getApplication());
+                    parent.getApplication().getMainWindow().open(resource);
+                } catch (Exception ex) {
+                    parent.getApplication().getMainWindow().showNotification("Error when creating CSV file for upload", "",
+                            Notification.TYPE_ERROR_MESSAGE);
+                }
+            }
+        });
+        histogramLayout.addComponent(downloadButton);
 
-	if (result.getType() == ImageProcessorResult.Type.COMPARISON) {
-	    Button zoomButton = new Button();
-	    zoomButton.setImmediate(true);
-	    zoomButton.setCaption("Setting");
-	    zoomButton.addListener(new ClickListener() {
+        if (result.getType() == ImageProcessorResult.Type.COMPARISON) {
+            Button zoomButton = new Button();
+            zoomButton.setImmediate(true);
+            zoomButton.setCaption("Setting");
+            zoomButton.addListener(new ClickListener() {
 
-		@Override
-		public void buttonClick(ClickEvent event) {
-		    double startX = plot.getDomainAxis().getLowerBound();
-		    double endX = plot.getDomainAxis().getUpperBound();
-		    double startY = plot.getRangeAxis().getLowerBound();
-		    double endY = plot.getRangeAxis().getUpperBound();
-		    final HistogramSettingsWindow zoomSettings = new HistogramSettingsWindow(new double[]{startX, endX, startY, endY}, true);
-		    ClickListener onSubmit = new ClickListener() {
+                @Override
+                public void buttonClick(ClickEvent event) {
+                    double startX = plot.getDomainAxis().getLowerBound();
+                    double endX = plot.getDomainAxis().getUpperBound();
+                    double startY = plot.getRangeAxis().getLowerBound();
+                    double endY = plot.getRangeAxis().getUpperBound();
+                    final HistogramSettingsWindow zoomSettings = new HistogramSettingsWindow(new double[]{startX, endX, startY, endY}, true);
+                    ClickListener onSubmit = new ClickListener() {
 
-			@Override
-			public void buttonClick(ClickEvent event) {
-			    try {
-				double[] xRange = zoomSettings.getXRange();
-				double[] yRange = zoomSettings.getYRange();
-				boolean logarithmic = zoomSettings.isLogarithmic();
-				JFreeChartWrapper newChartComponent = createHistogramComponent(result.getHistogram(),
-					logarithmic, xRange[0], xRange[1], yRange[0], yRange[1]);
-				mainLayout.replaceComponent(chartComponent, newChartComponent);
-				chartComponent = newChartComponent;
-			    } catch (NumberFormatException nfe) {
-				parent.getApplication().getMainWindow().showNotification("Invalid value", "", Notification.TYPE_ERROR_MESSAGE);
-			    }
-			}
-		    };
-		    zoomSettings.setOnSubmit(onSubmit);
-		    parent.getApplication().getMainWindow().addWindow(zoomSettings);
-		}
-	    });
-	    histogramLayout.addComponent(zoomButton);
-	}
-	mainLayout.addComponent(histogramLayout);
+                        @Override
+                        public void buttonClick(ClickEvent event) {
+                            try {
+                                double[] xRange = zoomSettings.getXRange();
+                                double[] yRange = zoomSettings.getYRange();
+                                boolean logarithmic = zoomSettings.isLogarithmic();
+                                JFreeChartWrapper newChartComponent = createHistogramComponent(result.getHistogram(),
+                                        logarithmic, xRange[0], xRange[1], yRange[0], yRange[1]);
+                                mainLayout.replaceComponent(chartComponent, newChartComponent);
+                                chartComponent = newChartComponent;
+                            } catch (NumberFormatException nfe) {
+                                parent.getApplication().getMainWindow().showNotification("Invalid value", "", Notification.TYPE_ERROR_MESSAGE);
+                            }
+                        }
+                    };
+                    zoomSettings.setOnSubmit(onSubmit);
+                    parent.getApplication().getMainWindow().addWindow(zoomSettings);
+                }
+            });
+            histogramLayout.addComponent(zoomButton);
+        }
+        mainLayout.addComponent(histogramLayout);
     }
 
     private JFreeChartWrapper createHistogramComponent(int[][] bins, boolean logarithmic) {
-	return createHistogramComponent(bins, logarithmic, -1.0, -1.0, -1.0, -1.0);
+        return createHistogramComponent(bins, logarithmic, -1.0, -1.0, -1.0, -1.0);
     }
 
     private JFreeChartWrapper createHistogramComponent(int[][] bins, boolean logarithmic, double xStart, double xEnd, double yStart, double yEnd) {
-	XYSeries redChannel = new XYSeries("Red");
-	XYSeries greenChannel = new XYSeries("Green");
-	XYSeries blueChannel = new XYSeries("Blue");
-	for (int i = 0; i < 256; i++) {
-	    if (logarithmic) {
-		redChannel.add((double) i, (bins[0][i] > 0) ? Math.log10(bins[0][i]) : 0);
-		greenChannel.add((double) i, (bins[1][i] > 0) ? Math.log10(bins[1][i]) : 0);
-		blueChannel.add((double) i, (bins[2][i] > 0) ? Math.log10(bins[2][i]) : 0);
-	    } else {
-		redChannel.add(i, bins[0][i]);
-		greenChannel.add(i, bins[1][i]);
-		blueChannel.add(i, bins[2][i]);
-	    }
-	}
-	XYSeriesCollection rgb = new XYSeriesCollection();
-	rgb.addSeries(redChannel);
-	rgb.addSeries(greenChannel);
-	rgb.addSeries(blueChannel);
-	JFreeChart histogram = ChartFactory.createXYLineChart(
-		"",
-		"",
-		"",
-		rgb, //imageProcessor.getHistogramDataset(),
-		PlotOrientation.VERTICAL,
-		false,
-		false,
-		false);
-	histogram.setBackgroundPaint(Color.WHITE);
-	// get a reference to the plot for further customization...
-	plot = histogram.getXYPlot();
-	if (xStart >= 0 && xEnd >= 0 && yStart >= 0 && yEnd >= 0) {
-	    plot.getDomainAxis(0).setLowerBound(xStart);
-	    plot.getDomainAxis(0).setUpperBound(xEnd);
-	    plot.getRangeAxis().setLowerBound(yStart);
-	    plot.getRangeAxis().setUpperBound(yEnd);
-	}
-	plot.setBackgroundPaint(Color.WHITE);
-	plot.setDomainGridlinesVisible(true);
-	plot.setRangeGridlinesVisible(true);
-	plot.setRangeGridlinePaint(Color.GRAY);
-	plot.setDomainGridlinePaint(Color.GRAY);
-	JFreeChartWrapper chart = new JFreeChartWrapper(histogram, JFreeChartWrapper.RenderingMode.PNG);
-	chart.setGraphHeight(scaleFactor);
-	chart.setGraphWidth(scaleFactor);
-	chart.setWidth(scaleFactor, Component.UNITS_PIXELS);
-	chart.setHeight(scaleFactor, Component.UNITS_PIXELS);
-	return chart;
+        XYSeries redChannel = new XYSeries("Red");
+        XYSeries greenChannel = new XYSeries("Green");
+        XYSeries blueChannel = new XYSeries("Blue");
+        for (int i = 0; i < 256; i++) {
+            if (logarithmic) {
+                redChannel.add((double) i, (bins[0][i] > 0) ? Math.log10(bins[0][i]) : 0);
+                greenChannel.add((double) i, (bins[1][i] > 0) ? Math.log10(bins[1][i]) : 0);
+                blueChannel.add((double) i, (bins[2][i] > 0) ? Math.log10(bins[2][i]) : 0);
+            } else {
+                redChannel.add(i, bins[0][i]);
+                greenChannel.add(i, bins[1][i]);
+                blueChannel.add(i, bins[2][i]);
+            }
+        }
+        XYSeriesCollection rgb = new XYSeriesCollection();
+        rgb.addSeries(redChannel);
+        rgb.addSeries(greenChannel);
+        rgb.addSeries(blueChannel);
+        JFreeChart histogram = ChartFactory.createXYLineChart(
+                "",
+                "",
+                "",
+                rgb, //imageProcessor.getHistogramDataset(),
+                PlotOrientation.VERTICAL,
+                false,
+                false,
+                false);
+        histogram.setBackgroundPaint(Color.WHITE);
+        // get a reference to the plot for further customization...
+        plot = histogram.getXYPlot();
+        if (xStart >= 0 && xEnd >= 0 && yStart >= 0 && yEnd >= 0) {
+            plot.getDomainAxis(0).setLowerBound(xStart);
+            plot.getDomainAxis(0).setUpperBound(xEnd);
+            plot.getRangeAxis().setLowerBound(yStart);
+            plot.getRangeAxis().setUpperBound(yEnd);
+        }
+        plot.setBackgroundPaint(Color.WHITE);
+        plot.setDomainGridlinesVisible(true);
+        plot.setRangeGridlinesVisible(true);
+        plot.setRangeGridlinePaint(Color.GRAY);
+        plot.setDomainGridlinePaint(Color.GRAY);
+        JFreeChartWrapper chart = new JFreeChartWrapper(histogram, JFreeChartWrapper.RenderingMode.PNG);
+        chart.setGraphHeight(scaleFactor);
+        chart.setGraphWidth(scaleFactor);
+        chart.setWidth(scaleFactor, Component.UNITS_PIXELS);
+        chart.setHeight(scaleFactor, Component.UNITS_PIXELS);
+        return chart;
     }
 
     public Resource imageToResource(Image img) {
-	try {
-	    String FILE_EXT = "png";
-	    File temp = File.createTempFile("image", "." + FILE_EXT);
-	    OutputStream stream = new BufferedOutputStream(new FileOutputStream(temp));
-	    /* Write the image to a buffer. */
-	    BufferedImage bimage = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_ARGB);
-	    Graphics g = bimage.getGraphics();
-	    g.drawImage(img, 0, 0, null);
-	    g.dispose();
-	    ImageIO.setUseCache(false);
-	    ImageIO.write(bimage, FILE_EXT, stream);
-	    bimage = null;
-	    stream.flush();
-	    stream.close();
-	    return new FileResource(temp, parent.getApplication());
-	} catch (IOException e) {
-	    return null;
-	}
+        try {
+            String FILE_EXT = "png";
+            File temp = File.createTempFile("image", "." + FILE_EXT);
+            OutputStream stream = new BufferedOutputStream(new FileOutputStream(temp));
+            /* Write the image to a buffer. */
+            BufferedImage bimage = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_ARGB);
+            Graphics g = bimage.getGraphics();
+            g.drawImage(img, 0, 0, null);
+            g.dispose();
+            ImageIO.setUseCache(false);
+            ImageIO.write(bimage, FILE_EXT, stream);
+            bimage = null;
+            stream.flush();
+            stream.close();
+            return new FileResource(temp, parent.getApplication());
+        } catch (IOException e) {
+            return null;
+        }
     }
 }
