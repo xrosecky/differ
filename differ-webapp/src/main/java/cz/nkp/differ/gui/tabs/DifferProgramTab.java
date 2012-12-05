@@ -42,128 +42,122 @@ public class DifferProgramTab extends HorizontalLayout {
     //Used by button listener to reference DifferProgramTab object indirectly
 
     public DifferProgramTab(MainDifferWindow window) {
-	this.mainWindow = window;
-	if (DifferApplication.getCurrentApplication().getLoggedUser() == null) {
-	    setLoggedOutView();//Start the program logged out
-	} else {
-	    setLoggedInView();
-	}
+        this.mainWindow = window;
+        if (DifferApplication.getCurrentApplication().getLoggedUser() == null) {
+            setLoggedOutView();//Start the program logged out
+        } else {
+            setLoggedInView();
+        }
     }
 
     private void setLoggedInView() {
-
-	if (loggedInView == null) {
-	    loggedInView = new HorizontalLayout();
-	    fileSelector1 = new UserFilesWidget(false);
-	    fileSelector2 = new UserFilesWidget(true);
-	    List<UserFilesWidget> widgets = new ArrayList<UserFilesWidget>();
-	    widgets.add(fileSelector1);
-	    widgets.add(fileSelector2);
-	    mainWindow.setUserFilesWidgets(widgets);
-	    loggedInView.addComponent(fileSelector1);
-	    loggedInView.addComponent(fileSelector2);
-	    loggedInView.addComponent(new DifferProgramTabButtonPanel(this, mainWindow));
-	    loggedInView.setSizeUndefined();
-	}
-
-	this.removeAllComponents();
-	this.addComponent(loggedInView);
-	this.setSizeUndefined();
+        if (loggedInView == null) {
+            loggedInView = new HorizontalLayout();
+            fileSelector1 = new UserFilesWidget(false);
+            fileSelector2 = new UserFilesWidget(true);
+            List<UserFilesWidget> widgets = new ArrayList<UserFilesWidget>();
+            widgets.add(fileSelector1);
+            widgets.add(fileSelector2);
+            mainWindow.setUserFilesWidgets(widgets);
+            loggedInView.addComponent(fileSelector1);
+            loggedInView.addComponent(fileSelector2);
+            loggedInView.addComponent(new DifferProgramTabButtonPanel(this, mainWindow));
+            loggedInView.setSizeUndefined();
+        }
+        this.removeAllComponents();
+        this.addComponent(loggedInView);
+        this.setSizeUndefined();
     }
 
     public void setLoggedOutView() {
+        if (loggedOutView == null) {
+            final DifferProgramTab parent = this;
+            loggedOutView = new VerticalLayout();
+            loginPanel = new LoginRegisterComponent(mainWindow, new LoginListener() {
 
-	if (loggedOutView == null) {
-	    final DifferProgramTab parent = this;
-	    loggedOutView = new VerticalLayout();
-	    loginPanel = new LoginRegisterComponent(mainWindow, new LoginListener() {
+                @Override
+                public void onLogin(LoginEvent event) {
+                    parent.login(event.getLoginParameter("username"), event.getLoginParameter("password"));
+                }
+            });
+            Button guestLogin = new Button("Guest Login");
+            guestLogin.addListener(new Listener() {
 
-		@Override
-		public void onLogin(LoginEvent event) {
-		    parent.login(event.getLoginParameter("username"), event.getLoginParameter("password"));
-		}
-	    });
-	    Button guestLogin = new Button("Guest Login");
-	    guestLogin.addListener(new Listener() {
-
-		@Override
-		public void componentEvent(Event event) {
-		    parent.login(GUEST_USERNAME, null);
-		}
-	    });
-	    loggedOutView.addComponent(loginPanel);
-	    loggedOutView.addComponent(guestLogin);
-	}
-
-	this.removeAllComponents();
-	this.addComponent(loggedOutView);
-	this.setSizeUndefined();
-	this.loggedInView = null;
+                @Override
+                public void componentEvent(Event event) {
+                    parent.login(GUEST_USERNAME, null);
+                }
+            });
+            loggedOutView.addComponent(loginPanel);
+            loggedOutView.addComponent(guestLogin);
+        }
+        this.removeAllComponents();
+        this.addComponent(loggedOutView);
+        this.setSizeUndefined();
+        this.loggedInView = null;
     }
 
     private void login(String username, String password) {
-	try {
-	    User user = null;
-	    DifferApplication app = DifferApplication.getCurrentApplication();
-	    if (username.equals(GUEST_USERNAME)) {
-		user = DifferApplication.getUserManager().getUserDAO().getUserByUserName("guest");
-	    } else {
-		user = DifferApplication.getUserManager().attemptLogin(username, password);
-	    }
-	    app.setLoggedUser(user);
-	    //User user = UserManager.getInstance().attemptLogin(event.getLoginParameter("username"), event.getLoginParameter("password"));
-	    setLoggedInView();
-	} catch (Exception ex) {
-	    DifferApplication.getCurrentApplication().getMainWindow().showNotification("Login Problem",
-		    "<br/>" + ex.getMessage(), Window.Notification.TYPE_WARNING_MESSAGE);
+        try {
+            User user = null;
+            DifferApplication app = DifferApplication.getCurrentApplication();
+            if (username.equals(GUEST_USERNAME)) {
+                user = DifferApplication.getUserManager().getUserDAO().getUserByUserName("guest");
+            } else {
+                user = DifferApplication.getUserManager().attemptLogin(username, password);
+            }
+            app.setLoggedUser(user);
+            //User user = UserManager.getInstance().attemptLogin(event.getLoginParameter("username"), event.getLoginParameter("password"));
+            setLoggedInView();
+        } catch (Exception ex) {
+            DifferApplication.getCurrentApplication().getMainWindow().showNotification("Login Problem",
+                    "<br/>" + ex.getMessage(), Window.Notification.TYPE_WARNING_MESSAGE);
 
-	}
+        }
     }
 
     public void setCustomView(Layout layout) {
-	if (customViewWrapper == null) {
-	    customViewWrapper = new VerticalLayout();
-	    customLayoutBackButton = new Button("Back");
-	    customLayoutBackButton.addListener(customViewWrapperBackButtonListener);
-	}
-
-	customViewWrapper.removeAllComponents();
-	customViewWrapper.addComponent(customLayoutBackButton);
-	customViewWrapper.addComponent(layout);
-	customViewWrapper.setSizeUndefined();
-
-	this.removeAllComponents();
-	this.addComponent(customViewWrapper);
-	this.setSizeUndefined();
+        if (customViewWrapper == null) {
+            customViewWrapper = new VerticalLayout();
+            customLayoutBackButton = new Button("Back");
+            customLayoutBackButton.addListener(customViewWrapperBackButtonListener);
+        }
+        customViewWrapper.removeAllComponents();
+        customViewWrapper.addComponent(customLayoutBackButton);
+        customViewWrapper.addComponent(layout);
+        customViewWrapper.setSizeUndefined();
+        this.removeAllComponents();
+        this.addComponent(customViewWrapper);
+        this.setSizeUndefined();
     }
 
     public Image[] getSelectedImages() {
-	Set<Image> images1 = fileSelector1.getSelectedImages();
-	Set<Image> images2 = fileSelector2.getSelectedImages();
-	if (images1 == null) {
-	    images1 = Collections.emptySet();
-	}
-	if (images2 == null) {
-	    images2 = Collections.emptySet();
-	}
-	Image[] result = new Image[images1.size() + images2.size()];
-	int index = 0;
-	for (Image image : images1) {
-	    result[index] = image;
-	    index++;
-	}
-	for (Image image : images2) {
-	    result[index] = image;
-	    index++;
-	}
-	return result;
+        Set<Image> images1 = fileSelector1.getSelectedImages();
+        Set<Image> images2 = fileSelector2.getSelectedImages();
+        if (images1 == null) {
+            images1 = Collections.emptySet();
+        }
+        if (images2 == null) {
+            images2 = Collections.emptySet();
+        }
+        Image[] result = new Image[images1.size() + images2.size()];
+        int index = 0;
+        for (Image image : images1) {
+            result[index] = image;
+            index++;
+        }
+        for (Image image : images2) {
+            result[index] = image;
+            index++;
+        }
+        return result;
     }
     private Button.ClickListener customViewWrapperBackButtonListener = new Button.ClickListener() {
 
-	@Override
-	public void buttonClick(ClickEvent event) {
-	    this_internal.removeAllComponents();
-	    this_internal.setLoggedInView();
-	}
+        @Override
+        public void buttonClick(ClickEvent event) {
+            this_internal.removeAllComponents();
+            this_internal.setLoggedInView();
+        }
     };
 }
