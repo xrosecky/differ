@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>differ-common</artifactId>
+    <packaging>jar</packaging>
+    <name>Differ common</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>Tool designed to help to identify, validate, and characterize selected still image file formats.</description>
+    <inceptionYear>2011</inceptionYear>
+    <url>http://differ.nkp.cz</url>
+    <organization>
+        <name>The National Library of the Czech Republic</name>
+        <url>http://www.nkp.cz</url>
+    </organization>
+  
+    <!-- Differ Parent Include -->
+    <parent>
+        <groupId>cz.nkp</groupId>
+        <artifactId>differ</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+  
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <differ.bin.dir>./bin</differ.bin.dir>
+    </properties>
+  
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java.source.version}</source>
+                    <target>${java.source.target.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
