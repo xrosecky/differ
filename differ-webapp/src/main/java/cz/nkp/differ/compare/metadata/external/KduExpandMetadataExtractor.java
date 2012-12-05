@@ -3,7 +3,7 @@ package cz.nkp.differ.compare.metadata.external;
 import cz.nkp.differ.compare.metadata.ImageMetadata;
 import cz.nkp.differ.compare.metadata.MetadataSource;
 import cz.nkp.differ.io.ProfileManager;
-import cz.nkp.differ.model.Image;
+import java.io.File;
 import java.util.List;
 import java.util.Map;
 
@@ -16,8 +16,8 @@ public class KduExpandMetadataExtractor extends ExternalMetadataExtractor {
     private ProfileManager profileManager;
 
     @Override
-    public List<ImageMetadata> getMetadata(Image image) {
-        List<ImageMetadata> result = super.getMetadata(image);
+    public List<ImageMetadata> getMetadata(File file) {
+        List<ImageMetadata> result = super.getMetadata(file);
         for (String profileName : profileManager.getProfiles()) {
             StringBuilder comparison = new StringBuilder();
             boolean conform = true;

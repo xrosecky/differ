@@ -16,7 +16,8 @@ public class ExternalMetadataExtractorTest {
     public void testMetadataExtractors() throws Exception {
 	List<MetadataExtractor> extractors = Helper.getMetadataExtractors().getExtractors();
 	for (MetadataExtractor extractor : extractors) {
-	    List<ImageMetadata> metadata = extractor.getMetadata(new Image());
+            Image image = new Image();
+	    List<ImageMetadata> metadata = extractor.getMetadata(image.getFile());
 	    for (ImageMetadata entry : metadata) {
 		System.err.println(String.format("%s, %s, %s", entry.getKey(), entry.getValue(), entry.getSource()));
 	    }

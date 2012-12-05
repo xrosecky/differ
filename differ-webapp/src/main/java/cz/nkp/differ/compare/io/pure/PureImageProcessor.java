@@ -45,7 +45,7 @@ public class PureImageProcessor extends ImageProcessor {
         result.getMetadata().add(new ImageMetadata("height", new Integer(fullImage.getHeight()), core));
         result.getMetadata().add(new ImageMetadata("width", new Integer(fullImage.getWidth()), core));
         for (MetadataExtractor extractor : extractors.getExtractors()) {
-            List<ImageMetadata> metadata = extractor.getMetadata(image);
+            List<ImageMetadata> metadata = extractor.getMetadata(image.getFile());
             result.getMetadata().addAll(metadata);
 
         }

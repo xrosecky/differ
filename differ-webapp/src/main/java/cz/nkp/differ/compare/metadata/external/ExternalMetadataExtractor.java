@@ -4,9 +4,9 @@ import cz.nkp.differ.compare.metadata.ImageMetadata;
 import cz.nkp.differ.compare.metadata.MetadataExtractor;
 import cz.nkp.differ.compare.metadata.MetadataSource;
 import cz.nkp.differ.compare.metadata.external.ResultTransformer.Entry;
-import cz.nkp.differ.model.Image;
 import cz.nkp.differ.plugins.tools.CommandRunner;
 import cz.nkp.differ.plugins.tools.CommandRunner.CommandOutput;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,15 +45,15 @@ public class ExternalMetadataExtractor implements MetadataExtractor {
     }
 
     @Override
-    public List<ImageMetadata> getMetadata(Image image) {
-	if (image == null) {
-	    throw new NullPointerException("image");
+    public List<ImageMetadata> getMetadata(File file) {
+	if (file == null) {
+	    throw new NullPointerException("file");
 	}
 	List<ImageMetadata> result = new ArrayList<ImageMetadata>();
 	List<String> arguments = new ArrayList<String>();
 	for (String argument : programArguments) {
 	    if (argument.equals("{file}")) {
-		arguments.add(image.getFile().getAbsolutePath());
+		arguments.add(file.getAbsolutePath());
 	    } else {
 		arguments.add(argument);
 	    }

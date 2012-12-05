@@ -1,6 +1,6 @@
 package cz.nkp.differ.compare.metadata;
 
-import cz.nkp.differ.model.Image;
+import java.io.File;
 import java.util.List;
 
 /**
@@ -9,6 +9,6 @@ import java.util.List;
  */
 public interface MetadataExtractor {
 
-    public List<ImageMetadata> getMetadata(Image image);
+    public List<ImageMetadata> getMetadata(File imageFile);
 
 }
