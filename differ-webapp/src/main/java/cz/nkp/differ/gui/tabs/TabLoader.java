@@ -22,26 +22,26 @@ import cz.nkp.differ.util.GeneralMacros;
  * Mar 30, 2012
  */
 @SuppressWarnings("serial")
-public class TabLoader extends VerticalLayout{
-	
-	/**
-	 * Creates a TabLoader by accessing the files stored within the differ custom theme.
-	 * @param resource
-	 * @throws IOException if the file is not present or readable from the package.
-	 */
-	public TabLoader(String resource) throws IOException{
-		super();//Create this as a VerticalLayout
-		
-		GeneralMacros.errorIfContainsNull(resource);
-		
-		/*
-		 * Load the content of the static html into a custom layout which is placed in a panel and 
-		 * set as this layouts component
-		 */
-		CustomLayout custom = new CustomLayout(resource);
-		Panel tab = new Panel();
-		tab.setContent(custom);
-		tab.addStyleName(Runo.PANEL_LIGHT);//No borders or styling on the panel
-		this.addComponent(tab);
-	}
+public class TabLoader extends VerticalLayout {
+
+    /**
+     * Creates a TabLoader by accessing the files stored within the differ custom theme.
+     * @param resource
+     * @throws IOException if the file is not present or readable from the package.
+     */
+    public TabLoader(String resource) throws IOException {
+        super();//Create this as a VerticalLayout
+
+        GeneralMacros.errorIfContainsNull(resource);
+
+        /*
+         * Load the content of the static html into a custom layout which is placed in a panel and
+         * set as this layouts component
+         */
+        CustomLayout custom = new CustomLayout(resource);
+        Panel tab = new Panel();
+        tab.setContent(custom);
+        tab.addStyleName(Runo.PANEL_LIGHT);//No borders or styling on the panel
+        this.addComponent(tab);
+    }
 }
