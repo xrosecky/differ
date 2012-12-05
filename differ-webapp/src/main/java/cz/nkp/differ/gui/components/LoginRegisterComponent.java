@@ -23,39 +23,39 @@ public class LoginRegisterComponent extends CustomComponent {
     private Window mainWindow;
 
     public LoginRegisterComponent(Window window, LoginListener parent) {
-	this.mainWindow = window;
-	setCompositionRoot(createUserLoginForm(parent));
+        this.mainWindow = window;
+        setCompositionRoot(createUserLoginForm(parent));
     }
 
     private Layout createUserLoginForm(final LoginListener parent) {
-	AbsoluteLayout layout = new AbsoluteLayout();
-	layout.setWidth("400px");
-	layout.setHeight("200px");
-	LoginForm loginForm = new LoginForm();
-	loginForm.addListener(parent);
-	layout.addComponent(loginForm, "left: 0px; top: 0px;");
-	Button registerButton = new Button("Register");
-	registerButton.addListener(GUIMacros.createWindowOpenButtonListener(mainWindow, new RegisterUserWindow()));
-	layout.addComponent(registerButton, "left: 65px; top: 80px;");
+        AbsoluteLayout layout = new AbsoluteLayout();
+        layout.setWidth("400px");
+        layout.setHeight("200px");
+        LoginForm loginForm = new LoginForm();
+        loginForm.addListener(parent);
+        layout.addComponent(loginForm, "left: 0px; top: 0px;");
+        Button registerButton = new Button("Register");
+        registerButton.addListener(GUIMacros.createWindowOpenButtonListener(mainWindow, new RegisterUserWindow()));
+        layout.addComponent(registerButton, "left: 65px; top: 80px;");
 
-	VerticalLayout wrapper = new VerticalLayout();
+        VerticalLayout wrapper = new VerticalLayout();
 
-	wrapper.addComponent(layout);
+        wrapper.addComponent(layout);
 
-	/*
-	Button guestLogin = new Button("Guest Login");
-	guestLogin.addListener(new Listener() {
+        /*
+        Button guestLogin = new Button("Guest Login");
+        guestLogin.addListener(new Listener() {
 
-	    @Override
-	    public void componentEvent(Event event) {
-		DifferProgramTab tab = (DifferProgramTab) parent;
-		tab.guestLogin();
-	    }
-	});
+        @Override
+        public void componentEvent(Event event) {
+        DifferProgramTab tab = (DifferProgramTab) parent;
+        tab.guestLogin();
+        }
+        });
 
-	wrapper.addComponent(guestLogin);
-	*/
+        wrapper.addComponent(guestLogin);
+         */
 
-	return wrapper;
+        return wrapper;
     }
 }
