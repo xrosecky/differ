@@ -1,129 +1,151 @@
 package cz.nkp.differ.gui.windows;
 
-import com.vaadin.data.validator.IntegerValidator;
+import com.vaadin.data.Property.ValueChangeEvent;
+import com.vaadin.data.Property.ValueChangeListener;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Button.ClickListener;
+import com.vaadin.ui.ComboBox;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.Select;
-import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Window;
+import cz.nkp.differ.DifferApplication;
 
-import cz.nkp.differ.gui.components.XYResolutionField;
+import cz.nkp.differ.io.ProfileManager;
 import cz.nkp.differ.util.GUIMacros;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 @SuppressWarnings("serial")
 public class ProfileCreationWindow extends Window {
 
+    private Map<String, Select> fields = new HashMap<String, Select>();
+    private ProfileManager profileManager;
+    private ComboBox profileName;
+
     public ProfileCreationWindow() {
-	setCaption("Create Profile");
-	setModal(true);
-	setDraggable(false);
-	setResizable(false);
-	center();
-	setWidth(335, Window.UNITS_PIXELS);
-	VerticalLayout windowLayout = new VerticalLayout();
-	windowLayout.setSpacing(true);
+        profileManager = (ProfileManager) DifferApplication.getApplicationContext().getBean("profileManager");
+        setCaption("Create Profile");
+        setModal(true);
+        setDraggable(false);
+        setResizable(false);
+        center();
+        setWidth(335, Window.UNITS_PIXELS);
+        VerticalLayout windowLayout = new VerticalLayout();
+        windowLayout.setSpacing(true);
 
-	windowLayout.addComponent(createProfileCreationWindowForm());
+        windowLayout.addComponent(createProfileCreationWindowForm());
 
-	HorizontalLayout buttonLayout = new HorizontalLayout();
-	Button create = new Button("Create");
-	buttonLayout.addComponent(create);
+        HorizontalLayout buttonLayout = new HorizontalLayout();
+        Button create = new Button("Create/Save");
+        create.setImmediate(true);
+        create.addListener(new ClickListener() {
 
-	Button close = new Button("Close");
-	buttonLayout.addComponent(close);
-	close.addListener(GUIMacros.createWindowCloseButtonListener(this));
+            @Override
+            public void buttonClick(ClickEvent event) {
+                String name = (String) profileName.getValue();
+                if (name != null) {
+                    Map<String, String> profile = new HashMap<String, String>();
+                    for (Entry<String, Select> entry : fields.entrySet()) {
+                        String property = entry.getKey();
+                        Select select = entry.getValue();
+                        if (select.getValue() != null) {
+                            profile.put(property, (String) select.getValue());
+                        }
+                    }
+                    profileManager.saveProfile(name, profile);
+                }
+            }
+        });
+        buttonLayout.addComponent(create);
 
-	windowLayout.addComponent(buttonLayout);
+        Button delete = new Button("Delete");
+        delete.setImmediate(true);
+        delete.addListener(new ClickListener() {
 
-	addComponent(windowLayout);
+            @Override
+            public void buttonClick(ClickEvent event) {
+                if (profileName.getValue() != null) {
+                    String profile = (String) profileName.getValue();
+                    if (!profile.isEmpty()) {
+                        profileManager.deleteProfile(profile);
+                        refreshProfiles();
+                    }
+                }
+            }
+        });
+        windowLayout.addComponent(delete);
+
+        Button close = new Button("Close");
+        buttonLayout.addComponent(close);
+        close.addListener(GUIMacros.createWindowCloseButtonListener(this));
+        windowLayout.addComponent(buttonLayout);
+        addComponent(windowLayout);
     }
 
     private Layout createProfileCreationWindowForm() {
-	VerticalLayout layout = new VerticalLayout();
-	layout.setWidth(this.getWidth(), this.getWidthUnits());
-	float childWidth = this.getWidth() * 0.8f;
-	int childWidthUnits = this.getWidthUnits();
+        VerticalLayout layout = new VerticalLayout();
+        layout.setWidth(this.getWidth(), this.getWidthUnits());
+        float childWidth = this.getWidth() * 0.8f;
+        int childWidthUnits = this.getWidthUnits();
+        profileName = new ComboBox("Profile name");
+        for (String name : profileManager.getProfiles()) {
+            profileName.addItem(name);
+        }
+        profileName.setNewItemsAllowed(true);
+        profileName.setImmediate(true);
+        profileName.setWidth(childWidth, childWidthUnits);
+        layout.addComponent(profileName);
+        profileName.addListener(new ValueChangeListener() {
 
-	TextField nameField = new TextField("Profile Name");
-	nameField.setWidth(childWidth, childWidthUnits);
-	layout.addComponent(nameField);
+            @Override
+            public void valueChange(ValueChangeEvent event) {
+                if (event.getProperty().getValue() != null) {
+                    String profileName = (String) event.getProperty().getValue();
+                    System.out.println("profileName: " + profileName);
+                    Map<String, String> profile = profileManager.getProfileByName(profileName);
+                    if (profile != null && profileName != null) {
+                        for (Entry<String, String> property : profile.entrySet()) {
+                            String key = property.getKey();
+                            String val = property.getValue();
+                            Select select = fields.get(key);
+                            if (select != null) {
+                                System.out.println("Setting " + key + " to " + val);
+                                select.setValue(val);
+                            } else {
+                                System.out.println("Not setting " + key + " to " + val);
+                            }
+                        }
+                    }
+                } else {
+                    System.out.println("property is null!");
+                }
+            }
+        });
+        for (Entry<String, List<String>> entry : profileManager.getProfileTemplate().entrySet()) {
+            String name = entry.getKey();
+            List<String> values = entry.getValue();
+            Select select = new Select(name);
 
-	TextField cLevelsField = new TextField("Levels");
-	cLevelsField.setWidth(childWidth, childWidthUnits);
-	cLevelsField.addValidator(new IntegerValidator("Levels must be a whole integer"));
-	layout.addComponent(cLevelsField);
+            for (String value : values) {
+                select.addItem(value);
+            }
+            select.setValue(values.get(0));
+            select.setImmediate(true);
+            fields.put(name, select);
+            layout.addComponent(select);
+        }
+        return layout;
+    }
 
-	TextField cLayersField = new TextField("Quality Layers");
-	cLayersField.setWidth(childWidth, childWidthUnits);
-	cLayersField.addValidator(new IntegerValidator("Quality Layers must be a whole integer"));
-	layout.addComponent(cLayersField);
-
-	Select Ckernels = new Select("Ckernels");
-	Ckernels.setWidth(childWidth, childWidthUnits);
-	Ckernels.addItem("Daubechies Biorthogonal Spline Filter");
-	Ckernels.addItem("Le Gall Spline Filter");
-	Ckernels.setNullSelectionAllowed(false);
-	Ckernels.setNewItemsAllowed(false);
-	Ckernels.setValue("Daubechies Biorthogonal Spline Filter");
-	layout.addComponent(Ckernels);
-
-	XYResolutionField Cblk = new XYResolutionField("Cblk");
-	Cblk.setWidth(childWidth, childWidthUnits);
-	Cblk.setValues(4, 8, 16, 32, 64, 128, 256, 512, 1024);
-	Cblk.setDefaultXValue(256);
-	Cblk.setDefaultYValue(256);
-	layout.addComponent(Cblk);
-
-	Select Corder = new Select("Corder");
-	Corder.setWidth(childWidth, childWidthUnits);
-	Corder.addItem("Layer Resolution Component Position");
-	Corder.addItem("Resolution Layer Component Position");
-	Corder.addItem("Resolution Position Component Layer");
-	Corder.addItem("Position Component Resolution Layer");
-	Corder.addItem("Component Position Resolution Layer");
-	Corder.setNullSelectionAllowed(false);
-	Corder.setNewItemsAllowed(false);
-	Corder.setValue("Layer Resolution Component Position");
-	layout.addComponent(Corder);
-
-	Select Creversible = new Select("Creversible");
-	Creversible.setWidth(childWidth, childWidthUnits);
-	Creversible.addItem("Yes");
-	Creversible.addItem("No");
-	Creversible.setNullSelectionAllowed(false);
-	Creversible.setNewItemsAllowed(false);
-	Creversible.setValue("Yes");
-	layout.addComponent(Creversible);
-
-	Select usePrecints = new Select("Use Precints");
-	usePrecints.setWidth(childWidth, childWidthUnits);
-	usePrecints.addItem("Yes");
-	usePrecints.addItem("No");
-	usePrecints.setNullSelectionAllowed(false);
-	usePrecints.setNewItemsAllowed(false);
-	usePrecints.setValue("Yes");
-	layout.addComponent(usePrecints);
-
-	Select packetHeaderStart = new Select("Packet Header [Start]");
-	packetHeaderStart.setWidth(childWidth, childWidthUnits);
-	packetHeaderStart.addItem("Yes");
-	packetHeaderStart.addItem("No");
-	packetHeaderStart.setNullSelectionAllowed(false);
-	packetHeaderStart.setNewItemsAllowed(false);
-	packetHeaderStart.setValue("Yes");
-	layout.addComponent(packetHeaderStart);
-
-	Select packetHeaderEnd = new Select("Packet Header [End]");
-	packetHeaderEnd.setWidth(childWidth, childWidthUnits);
-	packetHeaderEnd.addItem("Yes");
-	packetHeaderEnd.addItem("No");
-	packetHeaderEnd.setNullSelectionAllowed(false);
-	packetHeaderEnd.setNewItemsAllowed(false);
-	packetHeaderEnd.setValue("Yes");
-	layout.addComponent(packetHeaderEnd);
-
-	return layout;
+    private void refreshProfiles() {
+        profileName.removeAllItems();
+        for (String name : profileManager.getProfiles()) {
+            profileName.addItem(name);
+        }
     }
 }
