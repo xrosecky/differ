@@ -16,6 +16,7 @@ import com.vaadin.ui.DefaultFieldFactory;
 import com.vaadin.ui.Field;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.Table;
+import com.vaadin.ui.Table.ColumnGenerator;
 import com.vaadin.ui.VerticalLayout;
 
 import cz.nkp.differ.DifferApplication;
@@ -29,6 +30,7 @@ public class UserFilesWidget extends CustomComponent {
 
     private static final long serialVersionUID = 4241885952194067796L;
     private static Logger LOGGER = Logger.getLogger(UserFilesWidget.class);
+    private static int MB_UNIT = 1024 * 1024;
     private static List<UserFilesWidget> userFileWidgets = new ArrayList<UserFilesWidget>();
     private boolean isShort = false;
     private Table userFilesTable;
@@ -47,13 +49,23 @@ public class UserFilesWidget extends CustomComponent {
 	List<Image> images = DifferApplication.getImageManager().getImages(app.getLoggedUser());
 	fileContainer = new BeanItemContainer<Image>(Image.class, images);
 	userFilesTable = new Table("files", fileContainer);
+        userFilesTable.addGeneratedColumn("size", new ColumnGenerator() {
+
+            @Override
+            public Object generateCell(Table source, Object itemId, Object columnId) {
+                final Image image = (Image) itemId;
+                return String.format("%.2f", ((float) image.getSize()) / MB_UNIT);
+            }
+
+        });
 	if (isShort) {
 	    userFilesTable.setVisibleColumns(new Object[]{"fileName", "size"});
-	    userFilesTable.setColumnHeaders(new String[]{"file", "size"});
+	    userFilesTable.setColumnHeaders(new String[]{"file", "size (MB)"});
 	} else {
 	    userFilesTable.setVisibleColumns(new Object[]{"fileName", "size", "shared"});
-	    userFilesTable.setColumnHeaders(new String[]{"file", "size", "shared"});
+	    userFilesTable.setColumnHeaders(new String[]{"file", "size (MB)", "shared"});
 	}
+
 	userFilesTable.setTableFieldFactory(new DefaultFieldFactory() {
 
 	    @Override
