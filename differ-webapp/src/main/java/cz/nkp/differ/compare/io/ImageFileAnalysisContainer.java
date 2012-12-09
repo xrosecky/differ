@@ -102,6 +102,7 @@ public class ImageFileAnalysisContainer {
         metadataTable.setSelectable(true);
         metadataTable.setMultiSelect(false);
         metadataTable.setImmediate(true);
+        metadataTable.setVisibleColumns(new Object[]{"key", "source", "value", "unit"});
         layout.addComponent(metadataTable);
         final Button rawData = new Button();
         rawData.setCaption("Raw data");

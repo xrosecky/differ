@@ -9,6 +9,7 @@ import cz.nkp.differ.plugins.tools.CommandRunner.CommandOutput;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -19,6 +20,7 @@ public class ExternalMetadataExtractor implements MetadataExtractor {
     private List<String> programArguments;
     private ResultTransformer transformer;
     private String source;
+    private Map<String, String> units;
 
     public List<String> getProgramArguments() {
 	return programArguments;
@@ -44,6 +46,14 @@ public class ExternalMetadataExtractor implements MetadataExtractor {
 	this.source = source;
     }
 
+    public Map<String, String> getUnits() {
+        return units;
+    }
+
+    public void setUnits(Map<String, String> units) {
+        this.units = units;
+    }
+
     @Override
     public List<ImageMetadata> getMetadata(File file) {
 	if (file == null) {
@@ -67,6 +77,10 @@ public class ExternalMetadataExtractor implements MetadataExtractor {
 		List<Entry> entries = transformer.transform(cmdResult.getStdout(), cmdResult.getStderr());
 		for (Entry entry : entries) {
 		    ImageMetadata metadata = new ImageMetadata(entry.getKey(), entry.getValue(), metadataSource);
+                    if (units != null) {
+                        String unit = units.get(entry.getKey());
+                        metadata.setUnit(unit);
+                    }
 		    result.add(metadata);
 		}
 	    }
