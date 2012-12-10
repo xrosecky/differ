@@ -141,6 +141,11 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+	<repository>
+            <id>imagej</id>
+            <url>http://maven.imagej.net/content/repositories/thirdparty</url>
+        </repository>
+	
     </repositories>
 
     <pluginRepositories>
@@ -215,9 +220,9 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.media.jai</groupId>
-            <artifactId>com.springsource.javax.media.jai.core</artifactId>
-            <version>${jai.version}</version>
+            <groupId>org.jpedal</groupId>
+	    <artifactId>jpedalSTD</artifactId>
+	    <version>2.80b11</version>
         </dependency>
 	
         <dependency>

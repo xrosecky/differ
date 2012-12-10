@@ -61,8 +61,11 @@ public class ImageManipulator {
     }
 
     public static Image getBitmapScaledImage(BufferedImage image, int width, boolean scaleFit) {
-	if (image == null || width < 1) {
-	    throw new IllegalArgumentException("Invalid image or image scale width. Image scaling failed");
+        if (image == null) {
+            throw new NullPointerException("image");
+        }
+	if (width < 1) {
+	    throw new IllegalArgumentException("Invalid image scale width. Image scaling failed");
 	}
 	int height = image.getHeight();
 	if (scaleFit) {
