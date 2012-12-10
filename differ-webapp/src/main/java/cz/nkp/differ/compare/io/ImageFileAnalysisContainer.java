@@ -34,6 +34,8 @@ import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Arrays;
+import java.util.List;
 import javax.imageio.ImageIO;
 import org.apache.commons.io.FileUtils;
 import org.jfree.chart.ChartFactory;
@@ -51,6 +53,7 @@ public class ImageFileAnalysisContainer {
     private XYPlot plot;
     private final int scaleFactor = 400;
     private JFreeChartWrapper chartComponent = null;
+    private List<String> nonConflictMetadata = Arrays.asList("exit-code");
 
     public ImageFileAnalysisContainer(ImageProcessorResult result, CompareComponent parent) {
         this.result = result;
@@ -103,6 +106,28 @@ public class ImageFileAnalysisContainer {
         metadataTable.setMultiSelect(false);
         metadataTable.setImmediate(true);
         metadataTable.setVisibleColumns(new Object[]{"key", "source", "value", "unit"});
+        metadataTable.setCellStyleGenerator(new Table.CellStyleGenerator() {
+
+            @Override
+            public String getStyle(Object itemId, Object propertyId) {
+                ImageMetadata metadata = (ImageMetadata) itemId;
+                if (result.getType() == ImageProcessorResult.Type.COMPARISON) {
+                    String key = metadata.getKey();
+                    if (Arrays.asList("red", "blue", "green").contains(key)) {
+                        return key;
+                    }
+                } else {
+                    if (!nonConflictMetadata.contains(metadata.getKey())) {
+                        if (metadata.isConflict()) {
+                            return "red";
+                        } else {
+                            return "green";
+                        }
+                    }
+                }
+                return "";
+            }
+        });
         layout.addComponent(metadataTable);
         final Button rawData = new Button();
         rawData.setCaption("Raw data");

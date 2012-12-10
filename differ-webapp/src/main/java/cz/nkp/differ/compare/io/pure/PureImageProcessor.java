@@ -16,7 +16,11 @@ import java.awt.image.BufferedImage;
 import java.awt.image.ColorConvertOp;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import org.apache.commons.codec.digest.DigestUtils;
 
 /**
@@ -49,7 +53,24 @@ public class PureImageProcessor extends ImageProcessor {
             result.getMetadata().addAll(metadata);
 
         }
-
+        // process conflicts
+        Map<String, Object> results = new HashMap<String, Object>();
+        Set<String> conflicts = new HashSet<String>();
+        for (ImageMetadata data : result.getMetadata()) {
+            String key = data.getKey();
+            Object val1 = data.getValue();
+            Object val2 = results.get(key);
+            if (val2 != null && !val2.toString().equals(val1.toString())) {
+                conflicts.add(key);
+            }
+            if (val2 == null) {
+                results.put(key, val1);
+            }
+        }
+        for (ImageMetadata data : result.getMetadata()) {
+            String key = data.getKey();
+            data.setConflict(conflicts.contains(key));
+        }
         return result;
     }
 
@@ -160,7 +181,14 @@ public class PureImageProcessor extends ImageProcessor {
         image2.getRGB(0, 0, width, height, combo2Pixels, 0, width); //Get all pixels
 
         for (int pixel = 0; pixel < resolution; pixel++) {
-            imagePixels[pixel] = Math.abs(combo1Pixels[pixel] - combo2Pixels[pixel]);
+            Color pixel1 = new Color(combo1Pixels[pixel]);
+            Color pixel2 = new Color(combo2Pixels[pixel]);
+            Color diff = new Color(
+                    Math.abs(pixel1.getRed() - pixel2.getRed()),
+                    Math.abs(pixel1.getGreen() - pixel2.getGreen()),
+                    Math.abs(pixel1.getBlue() - pixel2.getBlue()));
+            //imagePixels[pixel] = Math.abs(combo1Pixels[pixel] - combo2Pixels[pixel]);
+            imagePixels[pixel] = diff.getRGB();
         }
 
         int imageType = image1.getType();
