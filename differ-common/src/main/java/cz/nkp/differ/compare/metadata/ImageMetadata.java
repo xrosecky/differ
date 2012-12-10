@@ -9,36 +9,37 @@ public class ImageMetadata {
     private String key;
     private Object value;
     private String unit;
+    private boolean conflict;
     private MetadataSource source;
 
     public ImageMetadata(String key, Object value, MetadataSource source) {
-	this.key = key;
-	this.value = value;
-	this.source = source;
+        this.key = key;
+        this.value = value;
+        this.source = source;
     }
 
     public String getKey() {
-	return key;
+        return key;
     }
 
     public void setKey(String key) {
-	this.key = key;
+        this.key = key;
     }
 
     public MetadataSource getSource() {
-	return source;
+        return source;
     }
 
     public void setSource(MetadataSource source) {
-	this.source = source;
+        this.source = source;
     }
 
     public Object getValue() {
-	return value;
+        return value;
     }
 
     public void setValue(Object value) {
-	this.value = value;
+        this.value = value;
     }
 
     public String getUnit() {
@@ -49,4 +50,11 @@ public class ImageMetadata {
         this.unit = unit;
     }
 
+    public boolean isConflict() {
+        return conflict;
+    }
+
+    public void setConflict(boolean conflict) {
+        this.conflict = conflict;
+    }
 }

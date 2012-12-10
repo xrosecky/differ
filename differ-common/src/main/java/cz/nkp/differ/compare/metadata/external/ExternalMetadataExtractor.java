@@ -23,27 +23,27 @@ public class ExternalMetadataExtractor implements MetadataExtractor {
     private Map<String, String> units;
 
     public List<String> getProgramArguments() {
-	return programArguments;
+        return programArguments;
     }
 
     public void setProgramArguments(List<String> programArguments) {
-	this.programArguments = programArguments;
+        this.programArguments = programArguments;
     }
 
     public ResultTransformer getTransformer() {
-	return transformer;
+        return transformer;
     }
 
     public void setTransformer(ResultTransformer transformer) {
-	this.transformer = transformer;
+        this.transformer = transformer;
     }
 
     public String getSource() {
-	return source;
+        return source;
     }
 
     public void setSource(String source) {
-	this.source = source;
+        this.source = source;
     }
 
     public Map<String, String> getUnits() {
@@ -56,37 +56,50 @@ public class ExternalMetadataExtractor implements MetadataExtractor {
 
     @Override
     public List<ImageMetadata> getMetadata(File file) {
-	if (file == null) {
-	    throw new NullPointerException("file");
-	}
-	List<ImageMetadata> result = new ArrayList<ImageMetadata>();
-	List<String> arguments = new ArrayList<String>();
-	for (String argument : programArguments) {
-	    if (argument.equals("{file}")) {
-		arguments.add(file.getAbsolutePath());
-	    } else {
-		arguments.add(argument);
-	    }
-	}
-	try {
-	    CommandOutput cmdResult = CommandRunner.runCommandAndWaitForExit(null, arguments);
-	    MetadataSource metadataSource = new MetadataSource(cmdResult.getExitCode(), new String(cmdResult.getStdout()),
-		    new String(cmdResult.getStderr()), source);
-	    result.add(new ImageMetadata("status", cmdResult.getExitCode(), metadataSource));
-	    if (cmdResult.getExitCode() == 0) {
-		List<Entry> entries = transformer.transform(cmdResult.getStdout(), cmdResult.getStderr());
-		for (Entry entry : entries) {
-		    ImageMetadata metadata = new ImageMetadata(entry.getKey(), entry.getValue(), metadataSource);
+        if (file == null) {
+            throw new NullPointerException("file");
+        }
+        List<ImageMetadata> result = new ArrayList<ImageMetadata>();
+        List<String> arguments = new ArrayList<String>();
+        for (String argument : programArguments) {
+            if (argument.equals("{file}")) {
+                arguments.add(file.getAbsolutePath());
+            } else {
+                arguments.add(argument);
+            }
+        }
+        try {
+            CommandOutput cmdResult = CommandRunner.runCommandAndWaitForExit(null, arguments);
+            MetadataSource metadataSource = new MetadataSource(cmdResult.getExitCode(), new String(cmdResult.getStdout()),
+                    new String(cmdResult.getStderr()), source);
+            int exitCode = cmdResult.getExitCode();
+            String exitCodeString = "";
+            switch (exitCode) {
+                case 0:
+                    exitCodeString = "ok";
+                    break;
+                case -1:
+                    exitCodeString = "failed (-1)";
+                    break;
+                default:
+                    exitCodeString = String.format("error (%s)", exitCode);
+                    break;
+            }
+            result.add(new ImageMetadata("exit-code", exitCodeString, metadataSource));
+            if (cmdResult.getExitCode() == 0) {
+                List<Entry> entries = transformer.transform(cmdResult.getStdout(), cmdResult.getStderr());
+                for (Entry entry : entries) {
+                    ImageMetadata metadata = new ImageMetadata(entry.getKey(), entry.getValue(), metadataSource);
                     if (units != null) {
                         String unit = units.get(entry.getKey());
                         metadata.setUnit(unit);
                     }
-		    result.add(metadata);
-		}
-	    }
-	} catch (Exception ex) {
-	    ex.printStackTrace();
-	}
-	return result;
+                    result.add(metadata);
+                }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return result;
     }
 }
