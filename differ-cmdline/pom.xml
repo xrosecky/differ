@@ -10,32 +10,82 @@
     <inceptionYear>2011</inceptionYear>
     <url>http://differ.nkp.cz</url>
     <organization>
-        <name>The National Library of the Czech Republic</name>
-        <url>http://www.nkp.cz</url>
+	<name>The National Library of the Czech Republic</name>
+	<url>http://www.nkp.cz</url>
     </organization>
   
     <!-- Differ Parent Include -->
     <parent>
-        <groupId>cz.nkp</groupId>
-        <artifactId>differ</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+	<groupId>cz.nkp</groupId>
+	<artifactId>differ</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
     </parent>
   
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-beans</artifactId>
+	    <version>3.1.2.RELEASE</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>3.1.2.RELEASE</version>
+	</dependency>
+	<dependency>
+	    <groupId>cz.nkp</groupId>
+	    <artifactId>differ-common</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+	</dependency>
+    </dependencies>
   
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler-plugin.version}</version>
-                <configuration>
-                    <source>${java.source.version}</source>
-                    <target>${java.source.target.version}</target>
-                </configuration>
-            </plugin>
-        </plugins>
+	<plugins>
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<version>${maven-compiler-plugin.version}</version>
+		<configuration>
+		    <source>${java.source.version}</source>
+		    <target>${java.source.target.version}</target>
+		</configuration>
+	    </plugin>
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-jar-plugin</artifactId>
+		<configuration>
+		    <archive>
+			<manifest>
+			    <mainClass>cz.nkp.differ.cmdline.Main</mainClass>
+			    <addClasspath>true</addClasspath>
+			    <classpathPrefix>lib/</classpathPrefix>
+			</manifest>
+		    </archive>
+		</configuration>
+	    </plugin>
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-dependency-plugin</artifactId>
+		<executions>
+		    <execution>
+			<id>copy-dependencies</id>
+			<phase>package</phase>
+			<goals>
+			    <goal>copy-dependencies</goal>
+			</goals>
+			<configuration>
+			    <outputDirectory>${project.build.directory}/lib</outputDirectory>
+			    <overWriteReleases>false</overWriteReleases>
+			    <overWriteSnapshots>false</overWriteSnapshots>
+			    <overWriteIfNewer>true</overWriteIfNewer>
+			</configuration>
+		    </execution>
+		</executions>
+	    </plugin>
+	</plugins>
     </build>
 </project>

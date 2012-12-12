@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+    ">
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	<property name="locations">
+	    <list>
+		<value>${application.properties}</value>
+	    </list>
+	</property>
+    </bean>
+
+    <bean id="genericImageLoader" class="cz.nkp.differ.images.GenericImageLoader"/>
+
+    <bean id="djvuImageLoader" class="cz.nkp.differ.images.DjvuImageLoader"/>
+
+    <bean id="imageLoaderFactory" class="cz.nkp.differ.images.ImageLoaderFactory">
+	<property name="loaders">
+	    <map>
+		<entry key="djvu" value-ref="djvuImageLoader"/>
+	    </map>
+	</property>
+	<property name="defaultImageLoader" ref="genericImageLoader"/>
+    </bean>
+
+    <bean id="imageProcessorConfig" class="cz.nkp.differ.compare.io.ImageProcessorConfig">
+	<property name="imageWidth" value="128"/>
+    </bean>
+
+    <bean id="imageProcessor" class="cz.nkp.differ.compare.io.pure.PureImageProcessor">
+	<constructor-arg ref="imageLoaderFactory"/>
+	<constructor-arg ref="metadataExtractors"/>
+	<property name="config" ref="imageProcessorConfig"/>
+    </bean>
+
+    <util:map id="units">
+	<entry key="width" value="px"/>
+	<entry key="height" value="px"/>
+    </util:map>
+
+    <!-- exiv2 -->
+    <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
+	<property name="mapOfRegexp">
+	    <map>
+		<entry key="width" value="Image size      : ([0-9]+) x [0-9]+"/>
+		<entry key="height" value="Image size      : [0-9]+ x ([0-9]+)"/>
+	    </map>
+	</property>
+	<property name="listOfRegexp">
+	    <list>
+		<value>([^:]+):([^:]+)</value>
+	    </list>
+	</property>
+    </bean>
+
+    <bean id="exiv2MetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+	<property name="source" value="exiv2"/>
+	<property name="transformer" ref="exiv2MetadataTransformer"/>
+	<property name="programArguments">
+	    <list>
+		<value>${exiv2.binary}</value>
+		<value>print</value>
+		<value>{file}</value>
+	    </list>
+	</property>
+	<property name="units" ref="units"/>
+    </bean>
+
+    <!-- Jhove -->
+    <bean id="jhoveMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
+	<property name="stylesheet" value="/home/xrosecky/differ/jhove/jhove.xsl"/>
+    </bean>
+
+    <bean id="jhoveMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+	<property name="source" value="jhove"/>
+	<property name="transformer" ref="jhoveMetadataTransformer"/>
+	<property name="programArguments">
+	    <list>
+		<value>${java.binary}</value>
+		<value>-jar</value>
+		<value>${jhove.jar}</value>
+		<value>-h</value>
+		<value>xml</value>
+		<value>{file}</value>
+	    </list>
+	</property>
+	<property name="units" ref="units"/>
+    </bean>
+
+    <bean id="metadataExtractors" class="cz.nkp.differ.compare.metadata.MetadataExtractors">
+	<property name="extractors">
+	    <list>
+		<ref bean="exiv2MetadataExtractor"/>
+		<ref bean="jhoveMetadataExtractor"/>
+	    </list>
+	</property>
+    </bean>
+
+
+</beans>
