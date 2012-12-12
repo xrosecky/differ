@@ -12,7 +12,7 @@ import com.vaadin.ui.VerticalLayout;
 import cz.nkp.differ.compare.io.CompareComponent;
 import cz.nkp.differ.model.Image;
 
-import cz.nkp.differ.plugins.PluginComponentReadyCallback;
+import cz.nkp.differ.listener.ProgressListener;
 
 public class PluginDisplayComponent extends CustomComponent {
 
@@ -35,7 +35,7 @@ public class PluginDisplayComponent extends CustomComponent {
     }
 }
 
-class PluginDisplayPanel extends VerticalLayout implements PluginComponentReadyCallback {
+class PluginDisplayPanel extends VerticalLayout implements ProgressListener {
 
     private static final long serialVersionUID = -4597810967107465071L;
     private ProgressIndicator progress = new ProgressIndicator();
@@ -55,9 +55,9 @@ class PluginDisplayPanel extends VerticalLayout implements PluginComponentReadyC
     }
 
     @Override
-    public void ready(Component c) {
+    public void ready(Object c) {
 	this.removeAllComponents();
-	this.addComponent(c);
+	this.addComponent((Component) c);
     }
 
     @Override

@@ -9,12 +9,12 @@ import cz.nkp.differ.compare.metadata.MetadataSource;
 import cz.nkp.differ.exceptions.ImageDifferException;
 import cz.nkp.differ.images.ImageLoader;
 import cz.nkp.differ.images.ImageManipulator;
-import cz.nkp.differ.model.Image;
-import cz.nkp.differ.plugins.PluginComponentReadyCallback;
+import cz.nkp.differ.listener.ProgressListener;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.awt.image.ColorConvertOp;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -40,8 +40,8 @@ public class PureImageProcessor extends ImageProcessor {
     }
 
     @Override
-    public PureImageProcessorResult processImage(Image image, PluginComponentReadyCallback callback) throws ImageDifferException {
-        BufferedImage fullImage = imageLoader.load(image.getFile());
+    public PureImageProcessorResult processImage(File image, ProgressListener callback) throws ImageDifferException {
+        BufferedImage fullImage = imageLoader.load(image);
         java.awt.Image preview = ImageManipulator.getBitmapScaledImage(fullImage, this.getConfig().getImageWidth(), true);
         PureImageProcessorResult result = new PureImageProcessorResult(fullImage, preview);
         result.setType(ImageProcessorResult.Type.IMAGE);
@@ -49,7 +49,7 @@ public class PureImageProcessor extends ImageProcessor {
         result.getMetadata().add(new ImageMetadata("height", new Integer(fullImage.getHeight()), core));
         result.getMetadata().add(new ImageMetadata("width", new Integer(fullImage.getWidth()), core));
         for (MetadataExtractor extractor : extractors.getExtractors()) {
-            List<ImageMetadata> metadata = extractor.getMetadata(image.getFile());
+            List<ImageMetadata> metadata = extractor.getMetadata(image);
             result.getMetadata().addAll(metadata);
 
         }
@@ -75,7 +75,7 @@ public class PureImageProcessor extends ImageProcessor {
     }
 
     @Override
-    public ImageProcessorResult[] processImages(Image a, Image b, PluginComponentReadyCallback callback) throws ImageDifferException {
+    public ImageProcessorResult[] processImages(File a, File b, ProgressListener callback) throws ImageDifferException {
         PureImageProcessorResult results[] = new PureImageProcessorResult[3];
         results[0] = this.processImage(a, null);
         results[1] = this.processImage(b, null);

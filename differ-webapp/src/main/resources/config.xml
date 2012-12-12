@@ -4,27 +4,31 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-	<property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver"/>
-	<property name="url" value="jdbc:derby:memory:myDB;create=true"/>
-	<property name="username" value=""/>
-	<property name="password" value=""/>
+        <property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+        <property name="url" value="jdbc:derby:memory:myDB;create=true"/>
+        <property name="username" value=""/>
+        <property name="password" value=""/>
     </bean>
 
     <bean id="imageDAO" class="cz.nkp.differ.dao.ImageDAOImpl">
-	<property name="dataSource" ref="dataSource"/>
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
     <bean id="userDAO" class="cz.nkp.differ.dao.UserDAOImpl">
-	<property name="dataSource" ref="dataSource"/>
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
     <bean id="imageManager" class="cz.nkp.differ.io.ImageManager">
-	<property name="imageDAO" ref="imageDAO"/>
-	<property name="uploadDirectory" value="/home/xrosecky/tmp/"/>
+        <property name="imageDAO" ref="imageDAO"/>
+        <property name="uploadDirectory" value="/home/xrosecky/tmp/"/>
+    </bean>
+
+    <bean id="profileManager" class="cz.nkp.differ.io.ProfileManager">
+        <property name="profileDirectory" value="/home/xrosecky/tmp/profiles/"/>
     </bean>
 
     <bean id="userManager" class="cz.nkp.differ.user.UserManager">
-	<property name="userDAO" ref="userDAO"/>
+        <property name="userDAO" ref="userDAO"/>
     </bean>
 
     <bean id="genericImageLoader" class="cz.nkp.differ.images.GenericImageLoader"/>
@@ -32,66 +36,66 @@
     <bean id="djvuImageLoader" class="cz.nkp.differ.images.DjvuImageLoader"/>
 
     <bean id="imageLoaderFactory" class="cz.nkp.differ.images.ImageLoaderFactory">
-	<property name="loaders">
-	    <map>
-		<entry key="djvu" value-ref="djvuImageLoader"/>
-	    </map>
-	</property>
-	<property name="defaultImageLoader" ref="genericImageLoader"/>
+        <property name="loaders">
+            <map>
+                <entry key="djvu" value-ref="djvuImageLoader"/>
+            </map>
+        </property>
+        <property name="defaultImageLoader" ref="genericImageLoader"/>
     </bean>
 
     <bean id="imageProcessorConfig" class="cz.nkp.differ.compare.io.ImageProcessorConfig">
-	<property name="imageWidth" value="480"/>
+        <property name="imageWidth" value="480"/>
     </bean>
 
     <bean id="imageProcessor" class="cz.nkp.differ.compare.io.pure.PureImageProcessor">
-	<constructor-arg ref="imageLoaderFactory"/>
-	<constructor-arg ref="metadataExtractors"/>
-	<property name="config" ref="imageProcessorConfig"/>
+        <constructor-arg ref="imageLoaderFactory"/>
+        <constructor-arg ref="metadataExtractors"/>
+        <property name="config" ref="imageProcessorConfig"/>
     </bean>
 
     <!-- kdu_expand -->
     <bean id="kduexpandMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
-	<property name="listOfRegexp">
-	    <list>
-		<value>([A-Z|a-z|0-9]+):([A-Z|a-z|0-9]+)</value>
-	    </list>
-	</property>
+        <property name="listOfRegexp">
+            <list>
+                <value>([A-Z|a-z|0-9]+):([A-Z|a-z|0-9]+)</value>
+            </list>
+        </property>
     </bean>
 
     <bean id="kduexpandMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-	<property name="source" value="kdu_expand"/>
-	<property name="transformer" ref="kduexpandMetadataTransformer"/>
-	<property name="programArguments">
-	    <list>
-		<value>/bin/echo</value>
-		<value>key:value</value>
-	    </list>
-	</property>
+        <property name="source" value="kdu_expand"/>
+        <property name="transformer" ref="kduexpandMetadataTransformer"/>
+        <property name="programArguments">
+            <list>
+                <value>/bin/echo</value>
+                <value>key:value</value>
+            </list>
+        </property>
     </bean>
 
     <!-- Jhove -->
     <bean id="jhoveMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-	<property name="stylesheet" value="/home/xrosecky/differ/jhove/jhove.xsl"/>
+        <property name="stylesheet" value="/home/xrosecky/differ/jhove/jhove.xsl"/>
     </bean>
 
     <bean id="jhoveMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-	<property name="source" value="jhove"/>
-	<property name="transformer" ref="jhoveMetadataTransformer"/>
-	<property name="programArguments">
-	    <list>
-		<value>/home/xrosecky/differ/jhove/jhove.sh</value>
-	    </list>
-	</property>
+        <property name="source" value="jhove"/>
+        <property name="transformer" ref="jhoveMetadataTransformer"/>
+        <property name="programArguments">
+            <list>
+                <value>/home/xrosecky/differ/jhove/jhove.sh</value>
+            </list>
+        </property>
     </bean>
 
     <bean id="metadataExtractors" class="cz.nkp.differ.compare.metadata.MetadataExtractors">
-	<property name="extractors">
-	    <list>
-		<ref bean="kduexpandMetadataExtractor"/>
-		<ref bean="jhoveMetadataExtractor"/>
-	    </list>
-	</property>
+        <property name="extractors">
+            <list>
+                <ref bean="kduexpandMetadataExtractor"/>
+                <ref bean="jhoveMetadataExtractor"/>
+            </list>
+        </property>
     </bean>
 
 </beans>

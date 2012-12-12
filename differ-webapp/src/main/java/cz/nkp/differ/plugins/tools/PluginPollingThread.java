@@ -5,15 +5,15 @@ import java.io.IOException;
 import com.vaadin.ui.Component;
 import cz.nkp.differ.compare.io.CompareComponent;
 
-import cz.nkp.differ.plugins.PluginComponentReadyCallback;
+import cz.nkp.differ.listener.ProgressListener;
 
 public class PluginPollingThread extends Thread{
 	
 	private volatile Component comp = null;
-	private volatile PluginComponentReadyCallback callback;
+	private volatile ProgressListener callback;
 	private volatile CompareComponent plugin;
 	
-	public PluginPollingThread(final CompareComponent plugin, final PluginComponentReadyCallback callback) throws IOException{
+	public PluginPollingThread(final CompareComponent plugin, final ProgressListener callback) throws IOException{
 		if(plugin == null || callback == null){
 			throw new IOException("Plugin or callback null!");
 		}

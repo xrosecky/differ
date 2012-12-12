@@ -9,7 +9,7 @@ import com.vaadin.ui.TextField;
 import com.vaadin.ui.Window;
 import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.model.Image;
-import cz.nkp.differ.plugins.PluginComponentReadyCallback;
+import cz.nkp.differ.listener.ProgressListener;
 
 import cz.nkp.differ.plugins.tools.PluginPollingThread;
 import java.util.ArrayList;
@@ -41,7 +41,7 @@ public class CompareComponent {
 	this.images = images;
     }
 
-    public void setPluginDisplayComponentCallback(final PluginComponentReadyCallback c) {
+    public void setPluginDisplayComponentCallback(final ProgressListener c) {
 	try {
 	    currentThread = new PluginPollingThread(this, c);
 	    currentThread.start();
@@ -50,12 +50,12 @@ public class CompareComponent {
 	}
     }
 
-    public Component getPluginDisplayComponent(PluginComponentReadyCallback c) {
+    public Component getPluginDisplayComponent(ProgressListener c) {
 	ImageProcessor imageProcessor = (ImageProcessor) DifferApplication.getApplicationContext().getBean("imageProcessor");
 	if (images.length == 2) {
 	    ImageProcessorResult[] result = null;
 	    try {
-		result = imageProcessor.processImages(images[0], images[1], c);
+		result = imageProcessor.processImages(images[0].getFile(), images[1].getFile(), c);
 	    } catch (Exception ex) {
 		ex.printStackTrace();
 	    }
@@ -80,7 +80,7 @@ public class CompareComponent {
 	    HorizontalLayout layout = new HorizontalLayout();
 	    for (Image image : images) {
 		try {
-		    ImageProcessorResult result = imageProcessor.processImage(image, c);
+		    ImageProcessorResult result = imageProcessor.processImage(image.getFile(), c);
 		    ImageFileAnalysisContainer iFAC = new ImageFileAnalysisContainer(result, this);
 		    layout.addComponent(iFAC.getComponent());
 		    iFACs.add(iFAC);

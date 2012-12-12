@@ -32,7 +32,7 @@ public class ImageProcessorTest {
 	    System.err.println("processing: " + file.getCanonicalPath());
 	    Image image = new Image();
 	    image.setFile(file);
-	    ImageProcessorResult result = imageProcessor.processImage(image);
+	    ImageProcessorResult result = imageProcessor.processImage(image.getFile());
 	    assert(result.getFullImage() != null);
 	    assert(result.getPreview() != null);
 	    assert(result.getHistogram() != null);
@@ -53,7 +53,7 @@ public class ImageProcessorTest {
 		    File file2 = entry2.getKey();
 		    Image image2 = new Image();
 		    image2.setFile(file2);
-		    ImageProcessorResult[] results = imageProcessor.processImages(image1, image2);
+		    ImageProcessorResult[] results = imageProcessor.processImages(image1.getFile(), image2.getFile());
 		}
 	    }
 	}
