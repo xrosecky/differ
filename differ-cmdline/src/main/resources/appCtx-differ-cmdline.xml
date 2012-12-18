@@ -43,6 +43,88 @@
 	<entry key="height" value="px"/>
     </util:map>
 
+    <!-- exiftool -->
+    <bean id="exiftoolMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
+      <property name="mapOfRegexp">
+	    <map>
+	      <entry key="FileSize"        value="File Size[\ \t]*:[\ \t]*(.+)"/>	      
+	      <entry key="FileType"        value="File Type[\ \t]*:[\ \t]*(.+)"/>	      
+	      <entry key="MIMEType"        value="MIME Type[\ \t]*:[\ \t]*(.+)"/>	      
+	      <entry key="SoftwareType"    value="Software[\ \t]*:[\ \t]*(.+)"/>	      
+	      <entry key="ModifiedDate"    value="File Modification Date/Time[\ \t]*:[\ \t]*(.+)"/>	      
+	      <entry key="ImageWidth"      value="Image Width[\ \t]*:[\ \t]*([0-9]+)[\ \t]*x[\ \t]*[0-9]+"/>	      
+	      <entry key="ImageHeight"     value="Image Height[\ \t]*:[\ \t]*[0-9]+[\ \t]*x[\ \t]*([0-9]+)"/>	      
+	      <entry key="ResolutionX"     value="X Resolution[\ \t]*:[\ \t]*(.*)"/>
+	      <entry key="ResolutionY"     value="Y Resolution[\ \t]*:[\ \t]*(.*)"/>
+	      <entry key="ResolutionUnit"  value="Resolution Unit[\ \t]*:[\ \t]*(.*)"/>	      
+	      <entry key="ImageUniqueID"   value="Image Unique ID[\ \t]*:[\ \t]*(.*)"/>
+	      <entry key="CompressionType" value="Compression[\ \t]*:[\ \t]*(.*)"/>
+	      <entry key="EncodingProcess" value="Encoding Process[\ \t]*:[\ \t]*(.*)"/>
+	      <entry key="BitsPerSample"   value="Bits Per Sample[\ \t]*:[\ \t]*([0-9]*)"/>
+	      <entry key="ColorComponents"   value="Color Components[\ \t]*:[\ \t]*([0-9]*)"/>
+	      <entry key="ColorComponents"   value="Color Components[\ \t]*:[\ \t]*([0-9]*)"/>
+	      <entry key="EXIF/Version"      value="Exif Version[\ \t]*:[\ \t]*(.*)"/>	      
+	      <entry key="EXIF/JFIFVersion"  value="JFIF Version[\ \t]*:[\ \t]*(.*)"/>	      
+	      <entry key="EXIF/ByteOrder"    value="Exif Byte Order[\ \t]*:[\ \t]*(.*)"/>	      
+	      <entry key="EXIF/Algorithm"    value="Components Configuration[\ \t]*:[\ \t]*(.*)"/>	      
+	      <entry key="EXIF/ExposureTime" value="Exposure Time[\ \t]*:[\ \t]*(.*)"/>	      
+	      <entry key="EXIF/FNumber"      value="F Number[\ \t]*:[\ \t]*(.*)"/>
+	      <entry key="EXIF/ISO"          value="ISO[\ \t]*:[\ \t]*(.*)"/>
+	      <entry key="EXIF/WhiteBalance" value="White Balance[\ \t]*:[\ \t]*(.*)"/>
+	    </map>
+	</property>
+	<property name="listOfRegexp">
+	    <list>
+		<value>([^:]+):([^:]+)</value>
+	    </list>
+	</property>
+    </bean>
+
+    <bean id="exiftoolMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+	<property name="source" value="exiftool"/>
+	<property name="transformer" ref="exiftoolMetadataTransformer"/>
+	<property name="programArguments">
+	    <list>
+		<value>${exivtool.binary}</value>
+		<value>{file}</value>
+	    </list>
+	</property>
+	<property name="units" ref="units"/>
+    </bean>
+
+    <!-- djvudump -->
+    <bean id="djvudumpMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
+      <property name="mapOfRegexp">
+	    <map>
+	      <entry key="FileSize"        value=""/>	      
+	      <entry key="FileType"        value="FORM:([^\[]+)"/>	      
+	      <entry key="SoftwareType"    value="INFO \[[0-9]+\][^x]*,[\ \t]*([^,]+)"/>	      
+	      <entry key="ImageWidth"      value="INFO \[[0-9]+\].*([0-9]+)x"/>
+	      <entry key="ImageHeight"     value="INFO \[[0-9]+\].*[0-9]+x([0-9]+)"/>
+	      <entry key="ResolutionX"     value="INFO \[[0-9]+\].*([0-9]+)x"/>
+	      <entry key="ResolutionY"     value="INFO \[[0-9]+\].*[0-9]+x([0-9]+)"/>
+	      <entry key="Resolution"      value="INFO \[[0-9=+\].*v[0-9]+,[\ \t]*([0-9]+[\ \t]*dpi)"/>	      
+	    </map>
+	</property>
+	<property name="listOfRegexp">
+	    <list>
+		<value>([^:]+):([^:]+)</value>
+	    </list>
+	</property>
+    </bean>
+
+    <bean id="djvudumpMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+	<property name="source" value="djvudump"/>
+	<property name="transformer" ref="djvudumpMetadataTransformer"/>
+	<property name="programArguments">
+	    <list>
+		<value>${djvudump.binary}</value>
+		<value>{file}</value>
+	    </list>
+	</property>
+	<property name="units" ref="units"/>
+    </bean>
+
     <!-- exiv2 -->
     <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
 	<property name="mapOfRegexp">
@@ -95,6 +177,8 @@
     <bean id="metadataExtractors" class="cz.nkp.differ.compare.metadata.MetadataExtractors">
 	<property name="extractors">
 	    <list>
+		<ref bean="exiftoolMetadataExtractor"/>
+		<ref bean="djvudumpMetadataExtractor"/>
 		<ref bean="exiv2MetadataExtractor"/>
 		<ref bean="jhoveMetadataExtractor"/>
 	    </list>
