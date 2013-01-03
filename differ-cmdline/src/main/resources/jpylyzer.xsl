@@ -97,7 +97,6 @@
     <property name="endOfPacketHeader"><xsl:value-of select="eph/text()"/></property>
     <property name="progressionOrder"><xsl:value-of select="order/text()"/></property>
     <property name="layers"><xsl:value-of select="layers/text()"/></property>
-    <property name="codeblock"><xsl:value-of select="concat(codeBlockWidth/text(), ' x ', codeBlockHeight/text())"/></property>
     <property name="transformation"><xsl:value-of select="transformation/text()"/></property>
     <property name="multipleComponentTransformation"><xsl:value-of select="multipleComponentTransformation/text()"/></property>
     <property name="resetOnBoundaries"><xsl:value-of select="resetOnBoundaries/text()"/></property>
