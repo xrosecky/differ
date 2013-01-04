@@ -1,16 +1,28 @@
 package cz.nkp.differ.compare.metadata;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlIDREF;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  *
  * @author xrosecky
  */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(propOrder = {"key", "value", "unit", "conflict", "source"})
 public class ImageMetadata {
 
     private String key;
     private Object value;
     private String unit;
     private boolean conflict;
+    @XmlIDREF
     private MetadataSource source;
+
+    public ImageMetadata() {
+	
+    }
 
     public ImageMetadata(String key, Object value, MetadataSource source) {
         this.key = key;

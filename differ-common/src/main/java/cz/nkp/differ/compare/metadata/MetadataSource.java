@@ -1,15 +1,32 @@
 package cz.nkp.differ.compare.metadata;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  *
  * @author xrosecky
  */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(propOrder = {"stdout", "stderr"})
 public class MetadataSource {
 
+    @XmlAttribute
     private int exitCode;
+    @XmlElement
     private String stderr;
+    @XmlElement
     private String stdout;
+    @XmlAttribute(name = "source")
+    @XmlID
     private String sourceName;
+
+    public MetadataSource() {
+    }
 
     public MetadataSource(int exitCode, String stdout, String stderr, String sourceName) {
 	this.exitCode = exitCode;
@@ -54,5 +71,4 @@ public class MetadataSource {
     public String toString() {
 	return sourceName;
     }
-
 }

@@ -6,14 +6,19 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
  * @author xrosecky
  */
+@XmlRootElement(name="result")
 public class PureImageProcessorResult implements ImageProcessorResult {
 
+    @XmlTransient
     private BufferedImage fullImage;
+    @XmlTransient
     private Image preview;
     private int[][] histogram;
     private String checksum;
@@ -21,6 +26,10 @@ public class PureImageProcessorResult implements ImageProcessorResult {
     private int width;
     private int height;
     private List<ImageMetadata> metadata = new ArrayList<ImageMetadata>();
+
+    public PureImageProcessorResult() {
+	
+    }
 
     public PureImageProcessorResult(BufferedImage fullImage, Image preview) {
 	this.fullImage = fullImage;
@@ -30,6 +39,10 @@ public class PureImageProcessorResult implements ImageProcessorResult {
     @Override
     public BufferedImage getFullImage() {
 	return fullImage;
+    }
+
+    public void setFullImage(BufferedImage fullImage) {
+	this.fullImage = fullImage;
     }
 
     @Override
@@ -44,6 +57,10 @@ public class PureImageProcessorResult implements ImageProcessorResult {
     @Override
     public Image getPreview() {
 	return preview;
+    }
+
+    public void setPreview(Image preview) {
+	this.preview = preview;
     }
 
     @Override
