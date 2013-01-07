@@ -56,10 +56,15 @@ public class XSLTTransformer implements ResultTransformer {
 		if (node.getNodeType() == Node.ELEMENT_NODE) {
 		     Element element = (Element) node;
 		     String key = node.getAttributes().getNamedItem("name").getNodeValue();
+		     String source = null;
+		     if (node.getAttributes().getNamedItem("source") != null) {
+			 source = node.getAttributes().getNamedItem("source").getNodeValue();
+		     }
 		     String value = node.getTextContent();
 		     Entry entry = new Entry();
 		     entry.setKey(key);
 		     entry.setValue(value);
+		     entry.setSource(source);
 		     entries.add(entry);
 		}
 	    }
