@@ -139,6 +139,7 @@ public class SerializableImageProcessorResult implements ImageProcessorResult {
 	result.setWidth(original.getWidth());
 	result.setMetadata(original.getMetadata());
 	result.setHistogram(original.getHistogram());
+	result.setType(original.getType());
 	Set<MetadataSource> sources = new HashSet<MetadataSource>();
 	for (ImageMetadata metadata : original.getMetadata()) {
 	    sources.add(metadata.getSource());
