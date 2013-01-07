@@ -11,6 +11,7 @@
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 	<property name="locations">
 	    <list>
+                <value>classpath:/common.properties</value>
 		<value>${application.properties}</value>
 	    </list>
 	</property>
@@ -33,16 +34,41 @@
 	<property name="imageWidth" value="128"/>
     </bean>
 
-    <bean id="imageProcessor" class="cz.nkp.differ.compare.io.pure.PureImageProcessor">
+    <bean id="imageProcessor" class="cz.nkp.differ.compare.io.external.ExternalImageProcessor">
 	<constructor-arg ref="imageLoaderFactory"/>
 	<constructor-arg ref="metadataExtractors"/>
 	<property name="config" ref="imageProcessorConfig"/>
+	<property name="extractor" ref="differBinaryMetadataExtractor"/>
     </bean>
 
     <util:map id="units">
 	<entry key="width" value="px"/>
 	<entry key="height" value="px"/>
     </util:map>
+
+    <!-- differ binary -->
+    <bean id="differBinaryMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
+	<property name="stylesheet" value="${differBinary.xsl}"/>
+    </bean>
+
+    <bean id="differBinaryMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+	<property name="source" value="differ"/>
+	<property name="transformer" ref="differBinaryMetadataTransformer"/>
+	<property name="programArguments">
+	    <list>
+		<value>${differ.binary}</value>
+		<value>--image1</value>
+		<value>{file1}</value>
+		<value>--image2</value>
+		<value>{file2}</value>
+		<value>--algorithm</value>
+		<value>all</value>
+		<value>--colorspace</value>
+		<value>1</value>
+	    </list>
+	</property>
+	<property name="units" ref="units"/>
+    </bean>
 
     <!-- exiv2 -->
     <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
@@ -74,7 +100,7 @@
 
     <!-- Jhove -->
     <bean id="jhoveMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-	<property name="stylesheet" value="/home/xrosecky/differ/jhove/jhove.xsl"/>
+	<property name="stylesheet" value="${jhove.xsl}"/>
     </bean>
 
     <bean id="jhoveMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
