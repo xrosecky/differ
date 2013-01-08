@@ -19,12 +19,12 @@
 "Transformation";"transformation";
 "Compression";"compression";"//mix:Compression/mix:compressionScheme"
 "Compression ratio";"compressionRatio";
-"Number of decomposition levels";"numOfDecompositionLevels";"//name[text()='NumberDecompositionLevels]/values/value"
-"Number of quality layers";"numOfQualityLayers";"contiguousCodestreamBox/cod/layers"
-"Progression order";"progressionOrder";"contiguousCodestreamBox/cod/order"
-"Code block width (Pixels)";"codeBlockWidth";"contiguousCodestreamBox/cod/codeBlockWidth"
-"Code block height (Pixels)";"codeBlockWidth";"contiguousCodestreamBox/cod/codeBlockHeight"
-"Coding bypass";"codingBypass";"contiguousCodestreamBox/cod/codingBypass"
-"Start of packet header";"sop";"contiguousCodestreamBox/cod/sop"
-"End of packet header";"eph";"contiguousCodestreamBox/cod/eph"
-"Precincts";"precints";"contiguousCodestreamBox/cod/precints"
+"Number of decomposition levels";"numOfDecompositionLevels";".//property[text(name)='NumberDecompositionLevels']/values/value"
+"Number of quality layers";"numOfQualityLayers";
+"Progression order";"progressionOrder";".//property[text(name)='ProgressionOrder']/values/value"
+"Code block width (Pixels)";"codeBlockWidth";
+"Code block height (Pixels)";"codeBlockWidth";	
+"Coding bypass";"codingBypass";
+"Start of packet header";"sop";
+"End of packet header";"eph";
+"Precincts";"precints";
