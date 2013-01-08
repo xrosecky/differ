@@ -52,45 +52,142 @@ jhove -h xml <span class="s1">&#39;/opt/testovaci-data/TESTOVACI DATA BEDRICHJ 2
 <p><a class="reference external" href="../../outputs/jhove.raw">xml output</a></p>
 <div class="section" id="significant-properties">
 <h2>Significant Properties<a class="headerlink" href="#significant-properties" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><table border="1" class="docutils">
+<table border="1" class="docutils">
+<caption>Map of significant properties</caption>
 <colgroup>
-<col width="19%" />
-<col width="81%" />
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Information</th>
-<th class="head">Value from an example</th>
+<tr class="row-odd"><th class="head">Properties</th>
+<th class="head">Properties as used in program</th>
+<th class="head">XPath in JHove xml output</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>datum vytvoreni</td>
-<td>/jhove/repInfo/lastModified  (2012-02-17T22:07:54+01:00)</td>
+<tr class="row-even"><td>File last modified</td>
+<td>fileLastModified</td>
+<td>repInfo/lastModified</td>
 </tr>
-<tr class="row-odd"><td>velikost souboru</td>
-<td>/jhove/repInfo/size (476756)</td>
-</tr>
-<tr class="row-even"><td>pocet barev</td>
+<tr class="row-odd"><td>File name</td>
+<td>fileName</td>
 <td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td>24bitu, 8bitu (grey scale)</td>
-<td>//mix:ImageColorEncoding/mix:bitsPerSampleValue (8)</td>
+<tr class="row-even"><td>File path</td>
+<td>filePath</td>
+<td><a class="reference external" href="mailto:repInfo/&#37;&#52;&#48;uri">repInfo/<span>&#64;</span>uri</a></td>
 </tr>
-<tr class="row-even"><td>rozliseni</td>
-<td>//mix:imageWidth x //mix:imageHeight  (512x512)</td>
+<tr class="row-odd"><td>File size</td>
+<td>fileSizeInBytes</td>
+<td>repInfo/size</td>
 </tr>
-<tr class="row-odd"><td>pocet vrstev</td>
+<tr class="row-even"><td>Image width (Pixels)</td>
+<td>ImageWidth</td>
+<td>.//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/imageWidth</td>
+</tr>
+<tr class="row-odd"><td>Image height (Pixels)</td>
+<td>ImageHeight</td>
+<td>.//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/imageHeight</td>
+</tr>
+<tr class="row-even"><td>Color depth</td>
+<td>colorDepth</td>
 <td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td>expozice</td>
+<tr class="row-odd"><td>Number of channels</td>
+<td>numOfChannels</td>
 <td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td>vyvazeni bile</td>
-<td>neco dalsiho</td>
+<tr class="row-even"><td>Color space</td>
+<td>colorSpace</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Resolution vertical (PPI)</td>
+<td>vResolutionInPixelsPerInch</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Resolution horizontal (PPI)</td>
+<td>hResolutionInPixelsPerInch</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Display resolution horizontal (PPI)</td>
+<td>hDisplayResolutionInPixelsPerInch</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Display Resolution vertical (PPI)</td>
+<td>vDisplayResolutionInPixelsPerInch</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Validation (well formed and valid)</td>
+<td>wellFormedAndValid</td>
+<td>repInfo/status</td>
+</tr>
+<tr class="row-even"><td>Type of format</td>
+<td>imageFormat</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Universal unique identifier (UUID)</td>
+<td>uuid</td>
+<td>concat(.//property[text(name)=&#8217;UUID&#8217;]/values/value)</td>
+</tr>
+<tr class="row-even"><td>Commentary</td>
+<td>commentary</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Number of tiles</td>
+<td>numberOfTiles</td>
+<td>count(.//name[text()=&#8217;TilePart&#8217;])</td>
+</tr>
+<tr class="row-even"><td>Transformation</td>
+<td>transformation</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Compression</td>
+<td>compression</td>
+<td>//mix:Compression/mix:compressionScheme</td>
+</tr>
+<tr class="row-even"><td>Compression ratio</td>
+<td>compressionRatio</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Number of decomposition levels</td>
+<td>numOfDecompositionLevels</td>
+<td>//name[text()=&#8217;NumberDecompositionLevels]/values/value</td>
+</tr>
+<tr class="row-even"><td>Number of quality layers</td>
+<td>numOfQualityLayers</td>
+<td>contiguousCodestreamBox/cod/layers</td>
+</tr>
+<tr class="row-odd"><td>Progression order</td>
+<td>progressionOrder</td>
+<td>contiguousCodestreamBox/cod/order</td>
+</tr>
+<tr class="row-even"><td>Code block width (Pixels)</td>
+<td>codeBlockWidth</td>
+<td>contiguousCodestreamBox/cod/codeBlockWidth</td>
+</tr>
+<tr class="row-odd"><td>Code block height (Pixels)</td>
+<td>codeBlockWidth</td>
+<td>contiguousCodestreamBox/cod/codeBlockHeight</td>
+</tr>
+<tr class="row-even"><td>Coding bypass</td>
+<td>codingBypass</td>
+<td>contiguousCodestreamBox/cod/codingBypass</td>
+</tr>
+<tr class="row-odd"><td>Start of packet header</td>
+<td>sop</td>
+<td>contiguousCodestreamBox/cod/sop</td>
+</tr>
+<tr class="row-even"><td>End of packet header</td>
+<td>eph</td>
+<td>contiguousCodestreamBox/cod/eph</td>
+</tr>
+<tr class="row-odd"><td>Precincts</td>
+<td>precints</td>
+<td>contiguousCodestreamBox/cod/precints</td>
 </tr>
 </tbody>
 </table>
-</div></blockquote>
 <p>identifikace</p>
 <div class="highlight-python"><pre>&lt;mimeType&gt;image/jp2&lt;/mimeType&gt;</pre>
 </div>
