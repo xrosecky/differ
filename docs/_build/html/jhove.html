@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>JHOVE &mdash; Differ Documentation 0.5 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Differ Documentation 0.5 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="index.html">Differ Documentation 0.5 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="jhove">
+<h1>JHOVE<a class="headerlink" href="#jhove" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
+jhove -h xml <span class="s1">&#39;/opt/testovaci-data/TESTOVACI DATA BEDRICHJ 2012/lena_std lossless.jpf&#39;</span> &gt; jhove.raw
+</pre></div>
+</div>
+<p><a class="reference external" href="../../outputs/jhove.raw">xml output</a></p>
+<div class="section" id="significant-properties">
+<h2>Significant Properties<a class="headerlink" href="#significant-properties" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="81%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Information</th>
+<th class="head">Value from an example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>datum vytvoreni</td>
+<td>/jhove/repInfo/lastModified  (2012-02-17T22:07:54+01:00)</td>
+</tr>
+<tr class="row-odd"><td>velikost souboru</td>
+<td>/jhove/repInfo/size (476756)</td>
+</tr>
+<tr class="row-even"><td>pocet barev</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>24bitu, 8bitu (grey scale)</td>
+<td>//mix:ImageColorEncoding/mix:bitsPerSampleValue (8)</td>
+</tr>
+<tr class="row-even"><td>rozliseni</td>
+<td>//mix:imageWidth x //mix:imageHeight  (512x512)</td>
+</tr>
+<tr class="row-odd"><td>pocet vrstev</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>expozice</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>vyvazeni bile</td>
+<td>neco dalsiho</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>identifikace</p>
+<div class="highlight-python"><pre>&lt;mimeType&gt;image/jp2&lt;/mimeType&gt;</pre>
+</div>
+<p>charakterizace</p>
+<div class="highlight-python"><pre>&lt;property&gt;
+&lt;name&gt;EnumCS&lt;/name&gt;
+&lt;values arity="Scalar" type="String"&gt;
+&lt;value&gt;sRGB&lt;/value&gt;
+&lt;/values&gt;
+&lt;/property&gt;</pre>
+</div>
+<p>uuid</p>
+<div class="highlight-python"><pre>&lt;property&gt;
+ &lt;name&gt;UUID&lt;/name&gt;
+ &lt;values arity="Array" type="Byte"&gt;
+  &lt;value&gt;58&lt;/value&gt;
+  &lt;value&gt;13&lt;/value&gt;
+  &lt;value&gt;2&lt;/value&gt;
+  &lt;value&gt;24&lt;/value&gt;
+  &lt;value&gt;10&lt;/value&gt;
+  &lt;value&gt;-23&lt;/value&gt;
+  &lt;value&gt;65&lt;/value&gt;
+  &lt;value&gt;21&lt;/value&gt;
+  &lt;value&gt;-77&lt;/value&gt;
+  &lt;value&gt;118&lt;/value&gt;
+  &lt;value&gt;75&lt;/value&gt;
+  &lt;value&gt;-54&lt;/value&gt;
+  &lt;value&gt;65&lt;/value&gt;
+  &lt;value&gt;-50&lt;/value&gt;
+  &lt;value&gt;14&lt;/value&gt;
+  &lt;value&gt;113&lt;/value&gt;
+ &lt;/values&gt;
+&lt;/property&gt;</pre>
+</div>
+<p>z mix se daji vytahnout vsechny veci.</p>
+<p>V JHOVE jsou nejdulezitejsi identifikace.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">JHOVE</a><ul>
+<li><a class="reference internal" href="#significant-properties">Significant Properties</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/jhove.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="index.html">Differ Documentation 0.5 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Jan Stavel.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -39,8 +39,8 @@
     </bean>
 
     <util:map id="units">
-	<entry key="width" value="px"/>
-	<entry key="height" value="px"/>
+	<entry key="Image width (Pixels)" value="px"/>
+	<entry key="Image height (Pixels)" value="px"/>
     </util:map>
 
     <!-- <import resource="../dist/WEB-INF/applicationContext.xml"/> -->
@@ -130,34 +130,48 @@
 
     <!-- exiv2 -->
     <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
-	<property name="mapOfRegexp">
-	    <map>
-		<entry key="width"  value="Image size      : ([0-9]+) x [0-9]+"/>
-		<entry key="height" value="Image size      : [0-9]+ x ([0-9]+)"/>
-	    </map>
-	</property>
-	<property name="listOfRegexp">
-	    <list>
-		<value>([^:]+):([^:]+)</value>
-	    </list>
-	</property>
+      <property name="mapOfRegexp">
+	<map>
+	  <entry key="Image width (Pixels)"  value="Image size      : ([0-9]+) x [0-9]+"/>
+	  <entry key="Image height (Pixels)" value="Image size      : [0-9]+ x ([0-9]+)"/>
+	</map>
+      </property>
+      <property name="listOfRegexp">
+	<list>
+	  <value>([^:]+):([^:]+)</value>
+	</list>
+      </property>
     </bean>
-
     <bean id="exiv2MetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-	<property name="source" value="exiv2"/>
-	<property name="transformer" ref="exiv2MetadataTransformer"/>
-	<property name="programArguments">
-	    <list>
-		<value>${exiv2.binary}</value>
-		<value>print</value>
-		<value>{file}</value>
-	    </list>
-	</property>
-	<property name="units" ref="units"/>
+      <property name="source" value="exiv2"/>
+      <property name="transformer" ref="exiv2MetadataTransformer"/>
+      <property name="programArguments">
+	<list>
+	  <value>${exiv2.binary}</value>
+	  <value>print</value>
+	  <value>{file}</value>
+	</list>
+      </property>
+      <property name="units" ref="units"/>
     </bean>
 
+    <!-- jpylyzer -->
+    <bean id="jpylyzerMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
+    	<property name="stylesheet" value="jpylyzer.xsl"/>
+    </bean>
+    <bean id="jpylyzerMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+      <property name="source" value="jpylyzer"/>
+      <property name="transformer" ref="jpylyzerMetadataTransformer"/>
+      <property name="programArguments">
+	<list>
+	  <value>${jpylyzer.binary}</value>
+	  <value>--verbose</value>
+	  <value>{file}</value>
+	</list>
+      </property>
+    </bean>
+    
     <!-- Jhove -->
-
     <!-- <bean id="jhoveMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer"> -->
     <!-- 	<property name="stylesheet" value="/home/xrosecky/differ/jhove/jhove.xsl"/> -->
     <!-- </bean> -->
@@ -185,6 +199,7 @@
 		<!-- <ref bean="djvudumpMetadataExtractor"/> -->
 		<!-- <ref bean="jhoveMetadataExtractor"/> -->
 		<ref bean="exiv2MetadataExtractor"/>
+		<ref bean="jpylyzerMetadataExtractor"/>
 	    </list>
 	</property>
     </bean>

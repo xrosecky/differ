@@ -31,6 +31,7 @@
         <maven-compiler-plugin.version>2.4</maven-compiler-plugin.version>
         <java.source.version>1.6</java.source.version>
         <java.source.target.version>1.6</java.source.target.version>
+	<sphinx-maven-plugin.version>1.0.3-SNAPSHOT</sphinx-maven-plugin.version>
     </properties>
 		
     <modules>
@@ -100,6 +101,7 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 </project>

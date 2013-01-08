@@ -33,3 +33,22 @@ To compile as needed and run on a local Jetty server first run mvn:package and t
 To remove all build files:
 	
 	mvn clean
+
+
+Differ Documentation
+====================
+
+You can read documentation [[https://differ-docs.readthedocs.org/en/latest/][online]].
+
+You can read documentation [[_build/html/index.html][offline]].
+
+You can build documentation:
+
+    cd docs
+    make html  
+
+ or:
+
+    cd docs
+    make.bat
+

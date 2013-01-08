@@ -1,0 +1,72 @@
+JHOVE
+.....
+
+.. literalinclude:: outputs/get-jhove.sh
+		    :language: bash
+
+`xml output <../../outputs/jhove.raw>`_
+
+
+Significant Properties
+~~~~~~~~~~~~~~~~~~~~~~~	 
+
+   ==========================    ============================================================================================================
+   Information                   Value from an example
+   ==========================    ============================================================================================================
+   datum vytvoreni               /jhove/repInfo/lastModified  (2012-02-17T22:07:54+01:00)
+   velikost souboru              /jhove/repInfo/size (476756)
+   pocet barev                   
+   24bitu, 8bitu (grey scale)    //mix:ImageColorEncoding/mix:bitsPerSampleValue (8)
+   rozliseni                     //mix:imageWidth x //mix:imageHeight  (512x512)
+   pocet vrstev                  
+   expozice
+   vyvazeni bile                 neco dalsiho
+   ==========================    ============================================================================================================
+
+identifikace ::
+  
+  <mimeType>image/jp2</mimeType>
+  
+charakterizace ::
+
+  <property>
+  <name>EnumCS</name>
+  <values arity="Scalar" type="String">
+  <value>sRGB</value>
+  </values>
+  </property>
+
+
+uuid ::
+  
+      <property>
+       <name>UUID</name>
+       <values arity="Array" type="Byte">
+        <value>58</value>
+        <value>13</value>
+        <value>2</value>
+        <value>24</value>
+        <value>10</value>
+        <value>-23</value>
+        <value>65</value>
+        <value>21</value>
+        <value>-77</value>
+        <value>118</value>
+        <value>75</value>
+        <value>-54</value>
+        <value>65</value>
+        <value>-50</value>
+        <value>14</value>
+        <value>113</value>
+       </values>
+      </property>
+
+z mix se daji vytahnout vsechny veci.
+
+V JHOVE jsou nejdulezitejsi identifikace.
+
+	 
+		    
+	 
+   
+

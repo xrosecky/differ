@@ -1,0 +1,30 @@
+"File last modified";"fileLastModified";"repInfo/lastModified"
+"File name";"fileName";""
+"File path";"filePath";"repInfo/@uri"
+"File size";"fileSizeInBytes";"repInfo/size"
+"Image width (Pixels)";"ImageWidth";".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/imageWidth"
+"Image height (Pixels)";"ImageHeight";".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/imageHeight"
+"Color depth";"colorDepth";
+"Number of channels";"numOfChannels";
+"Color space";"colorSpace";
+"Resolution vertical (PPI)";"vResolutionInPixelsPerInch";
+"Resolution horizontal (PPI)";"hResolutionInPixelsPerInch";
+"Display resolution horizontal (PPI)";"hDisplayResolutionInPixelsPerInch";
+"Display Resolution vertical (PPI)";"vDisplayResolutionInPixelsPerInch";
+"Validation (well formed and valid)";"wellFormedAndValid";"repInfo/status"
+"Type of format";"imageFormat";
+"Universal unique identifier (UUID)";"uuid";"concat(.//property[text(name)='UUID']/values/value)"
+"Commentary";"commentary";
+"Number of tiles";"numberOfTiles";"count(.//name[text()='TilePart'])"
+"Transformation";"transformation";
+"Compression";"compression";"//mix:Compression/mix:compressionScheme"
+"Compression ratio";"compressionRatio";
+"Number of decomposition levels";"numOfDecompositionLevels";"//name[text()='NumberDecompositionLevels]/values/value"
+"Number of quality layers";"numOfQualityLayers";"contiguousCodestreamBox/cod/layers"
+"Progression order";"progressionOrder";"contiguousCodestreamBox/cod/order"
+"Code block width (Pixels)";"codeBlockWidth";"contiguousCodestreamBox/cod/codeBlockWidth"
+"Code block height (Pixels)";"codeBlockWidth";"contiguousCodestreamBox/cod/codeBlockHeight"
+"Coding bypass";"codingBypass";"contiguousCodestreamBox/cod/codingBypass"
+"Start of packet header";"sop";"contiguousCodestreamBox/cod/sop"
+"End of packet header";"eph";"contiguousCodestreamBox/cod/eph"
+"Precincts";"precints";"contiguousCodestreamBox/cod/precints"

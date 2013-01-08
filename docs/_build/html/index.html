@@ -1,0 +1,1133 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to Differ Documentation! &mdash; Differ Documentation 0.5 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Differ Documentation 0.5 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">Differ Documentation 0.5 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-differ-documentation">
+<h1><a class="toc-backref" href="#id26">Welcome to Differ Documentation!</a><a class="headerlink" href="#welcome-to-differ-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#welcome-to-differ-documentation" id="id8">Welcome to Differ Documentation!</a><ul>
+<li><a class="reference internal" href="#recognized-validator-outputs" id="id9">Recognized Validator Outputs</a><ul>
+<li><a class="reference internal" href="#djdump" id="id10">DJDump</a><ul>
+<li><a class="reference internal" href="#significant-properties" id="id11">Significant Properties</a></li>
+<li><a class="reference internal" href="#layers-and-compressions" id="id12">Layers and Compressions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lpylyzer" id="id13">LPyLyzer</a><ul>
+<li><a class="reference internal" href="#id2" id="id14">Significant Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exiftool" id="id15">ExifTool</a><ul>
+<li><a class="reference internal" href="#id3" id="id16">Significant Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#jhove" id="id17">JHOVE</a><ul>
+<li><a class="reference internal" href="#id4" id="id18">Significant Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#fits" id="id19">FITS</a><ul>
+<li><a class="reference internal" href="#id5" id="id20">Significant Properties</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#command-line-application" id="id21">Command Line Application</a><ul>
+<li><a class="reference internal" href="#arguments-of-the-application" id="id22">Arguments of the application</a></li>
+<li><a class="reference internal" href="#naming-styles" id="id23">Naming styles</a></li>
+<li><a class="reference internal" href="#examples-of-a-program-usage" id="id24">Examples of a program usage</a></li>
+<li><a class="reference internal" href="#example-of-a-program-output" id="id25">Example of a program output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'differdocs'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a><div class="section" id="recognized-validator-outputs">
+<h2><a class="toc-backref" href="#id27">Recognized Validator Outputs</a><a class="headerlink" href="#recognized-validator-outputs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="djdump">
+<h3><a class="toc-backref" href="#id28">DJDump</a><a class="headerlink" href="#djdump" title="Permalink to this headline">¶</a></h3>
+<div class="contents topic" id="id1">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#welcome-to-differ-documentation" id="id26">Welcome to Differ Documentation!</a><ul>
+<li><a class="reference internal" href="#recognized-validator-outputs" id="id27">Recognized Validator Outputs</a><ul>
+<li><a class="reference internal" href="#djdump" id="id28">DJDump</a><ul>
+<li><a class="reference internal" href="#significant-properties" id="id29">Significant Properties</a></li>
+<li><a class="reference internal" href="#layers-and-compressions" id="id30">Layers and Compressions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lpylyzer" id="id31">LPyLyzer</a><ul>
+<li><a class="reference internal" href="#id2" id="id32">Significant Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exiftool" id="id33">ExifTool</a><ul>
+<li><a class="reference internal" href="#id3" id="id34">Significant Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#jhove" id="id35">JHOVE</a><ul>
+<li><a class="reference internal" href="#id4" id="id36">Significant Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#fits" id="id37">FITS</a><ul>
+<li><a class="reference internal" href="#id5" id="id38">Significant Properties</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#command-line-application" id="id39">Command Line Application</a><ul>
+<li><a class="reference internal" href="#arguments-of-the-application" id="id40">Arguments of the application</a></li>
+<li><a class="reference internal" href="#naming-styles" id="id41">Naming styles</a></li>
+<li><a class="reference internal" href="#examples-of-a-program-usage" id="id42">Examples of a program usage</a></li>
+<li><a class="reference internal" href="#example-of-a-program-output" id="id43">Example of a program output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>od verze 16 do v26 umi DJVU</p>
+<p>od verze 27 can recognize sDJVU</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
+djvudump <span class="s1">&#39;/opt/testovaci-data/2_Set ot TEST images Vlna_testovani-Vysledky_porovnani_obrazku/2_Sada_testovacich_obrazku/4_DJVU/4_2_11_01-Voda-Orig-HQ.djvu&#39;</span> &gt; djvudump.raw
+</pre></div>
+</div>
+<div class="highlight-python"><pre>  FORM:DJVU [901662] 
+    INFO [10]         DjVu 3776x2520, v21, 200 dpi, gamma=2.2
+    BG44 [103431]     IW4 data #1, 76 slices, v1.2 (color), 3776x2520
+    BG44 [150233]     IW4 data #2, 13 slices
+    BG44 [336086]     IW4 data #3, 12 slices
+    BG44 [311856]     IW4 data #4, 6 slices
+</pre>
+</div>
+<div class="section" id="significant-properties">
+<h4><a class="toc-backref" href="#id29">Significant Properties</a><a class="headerlink" href="#significant-properties" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="54%" />
+<col width="46%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Information</th>
+<th class="head">Value from an example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>format version</td>
+<td>v21</td>
+</tr>
+<tr class="row-odd"><td>datum vytvoreni</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>velikost souboru</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>num of colors</td>
+<td>(color .. 24bit)</td>
+</tr>
+<tr class="row-even"><td>rozliseni</td>
+<td>200 dpi</td>
+</tr>
+<tr class="row-odd"><td>pocet pixelu</td>
+<td>3776x2520</td>
+</tr>
+<tr class="row-even"><td>gamma correction</td>
+<td>2.2</td>
+</tr>
+<tr class="row-odd"><td>pocet vrstev</td>
+<td>4</td>
+</tr>
+<tr class="row-even"><td>expozice</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>vyvazeni bile</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>DJVU can use max. 24 bits for a color channel or indexed colors.</p>
+</div>
+<div class="section" id="layers-and-compressions">
+<h4><a class="toc-backref" href="#id30">Layers and Compressions</a><a class="headerlink" href="#layers-and-compressions" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p>BG .. background
+44 .. compression IW44</p>
+<p>FG .. foreground
+BZ .. compression JP2
+2K .. compression JPEG200
+JP .. compression JPEG</p>
+<p>SJBZ .. mask with compression</p>
+<p>DJBZ .. shared layer with compression JP2
+TXTA .. hidden text layer
+TXTZ .. hidden text layer</p>
+</div></blockquote>
+<p>slices nejsou moc dulezite.</p>
+</div>
+</div>
+<div class="section" id="lpylyzer">
+<h3><a class="toc-backref" href="#id31">LPyLyzer</a><a class="headerlink" href="#lpylyzer" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
+jpylyzer --verbose <span class="s1">&#39;/opt/testovaci-data/2_Set ot TEST images Vlna_testovani-Vysledky_porovnani_obrazku/2_Sada_testovacich_obrazku/3_JP2/3_JP2-KAKADU_KT-Voda-VMPC_OK/3_01_JP2-OK/3_2_01_01-KT-300dpi-Orig-KDU.jp2&#39;</span> | xmlstarlet fo &gt; jpylyzer.raw
+</pre></div>
+</div>
+<p><a class="reference external" href="../../outputs/jpylyzer.raw">output of jpylyzer</a></p>
+<div class="section" id="id2">
+<h4><a class="toc-backref" href="#id32">Significant Properties</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<caption>Map of significant properties</caption>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Properties</th>
+<th class="head">Properties as used in program</th>
+<th class="head">XPath in JPylyzer xml output</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>File last modified</td>
+<td>fileLastModified</td>
+<td>fileInfo/fileLastModified</td>
+</tr>
+<tr class="row-odd"><td>File name</td>
+<td>fileName</td>
+<td>fileInfo/fileName</td>
+</tr>
+<tr class="row-even"><td>File path</td>
+<td>filePath</td>
+<td>fileInfo/filePath</td>
+</tr>
+<tr class="row-odd"><td>File size</td>
+<td>fileSizeInBytes</td>
+<td>fileInfo/fileSizeInBytes</td>
+</tr>
+<tr class="row-even"><td>Image width (Pixels)</td>
+<td>ImageWidth</td>
+<td>jp2HeaderBox/imageHeaderBox/height</td>
+</tr>
+<tr class="row-odd"><td>Image height (Pixels)</td>
+<td>ImageHeight</td>
+<td>jp2HeaderBox/imageHeaderBox/width</td>
+</tr>
+<tr class="row-even"><td>Color depth</td>
+<td>colorDepth</td>
+<td>contiguousCodestreamBox/siz/ssizDepth</td>
+</tr>
+<tr class="row-odd"><td>Number of channels</td>
+<td>numOfChannels</td>
+<td>jp2HeaderBox/imageHeaderBox/nC</td>
+</tr>
+<tr class="row-even"><td>Color space</td>
+<td>colorSpace</td>
+<td>properties/jp2HeaderBox/colourSpecificationBox/enumCS</td>
+</tr>
+<tr class="row-odd"><td>Resolution vertical (PPI)</td>
+<td>vResolutionInPixelsPerInch</td>
+<td>jp2HeaderBox/resolutionBox/displayResolutionBox/vResdInPixelsPerInch</td>
+</tr>
+<tr class="row-even"><td>Resolution horizontal (PPI)</td>
+<td>hResolutionInPixelsPerInch</td>
+<td>jp2HeaderBox/resolutionBox/displayResolutionBox/hResdInPixelsPerInch</td>
+</tr>
+<tr class="row-odd"><td>Display resolution horizontal (PPI)</td>
+<td>hDisplayResolutionInPixelsPerInch</td>
+<td>jp2HeaderBox/resolutionBox/displayResolutionBox/hResdInPixelsPerInch</td>
+</tr>
+<tr class="row-even"><td>Display Resolution vertical (PPI)</td>
+<td>vDisplayResolutionInPixelsPerInch</td>
+<td>jp2HeaderBox/resolutionBox/displayResolutionBox/vResdInPixelsPerInch</td>
+</tr>
+<tr class="row-odd"><td>Validation (well formed and valid)</td>
+<td>wellFormedAndValid</td>
+<td>isValidJP2</td>
+</tr>
+<tr class="row-even"><td>Type of format</td>
+<td>imageFormat</td>
+<td>properties/jp2HeaderBox/imageHeaderBox/c</td>
+</tr>
+<tr class="row-odd"><td>Universal unique identifier (UUID)</td>
+<td>uuid</td>
+<td>properties/uuidBox/uuid</td>
+</tr>
+<tr class="row-even"><td>Commentary</td>
+<td>commentary</td>
+<td>contiguousCodestreamBox/com/comment</td>
+</tr>
+<tr class="row-odd"><td>Number of tiles</td>
+<td>numberOfTiles</td>
+<td>contiguousCodestreamBox/siz/numberOfTiles</td>
+</tr>
+<tr class="row-even"><td>Transformation</td>
+<td>transformation</td>
+<td>contiguousCodestreamBox/cod/transformation</td>
+</tr>
+<tr class="row-odd"><td>Compression</td>
+<td>compression</td>
+<td>contiguousCodestreamBox/cod/transformation</td>
+</tr>
+<tr class="row-even"><td>Compression ratio</td>
+<td>compressionRatio</td>
+<td>properties/compressionRatio</td>
+</tr>
+<tr class="row-odd"><td>Number of decomposition levels</td>
+<td>numOfDecompositionLevels</td>
+<td>contiguousCodestreamBox/cod/levels</td>
+</tr>
+<tr class="row-even"><td>Number of quality layers</td>
+<td>numOfQualityLayers</td>
+<td>contiguousCodestreamBox/cod/layers</td>
+</tr>
+<tr class="row-odd"><td>Progression order</td>
+<td>progressionOrder</td>
+<td>contiguousCodestreamBox/cod/order</td>
+</tr>
+<tr class="row-even"><td>Code block width (Pixels)</td>
+<td>codeBlockWidth</td>
+<td>contiguousCodestreamBox/cod/codeBlockWidth</td>
+</tr>
+<tr class="row-odd"><td>Code block height (Pixels)</td>
+<td>codeBlockWidth</td>
+<td>contiguousCodestreamBox/cod/codeBlockHeight</td>
+</tr>
+<tr class="row-even"><td>Coding bypass</td>
+<td>codingBypass</td>
+<td>contiguousCodestreamBox/cod/codingBypass</td>
+</tr>
+<tr class="row-odd"><td>Start of packet header</td>
+<td>sop</td>
+<td>contiguousCodestreamBox/cod/sop</td>
+</tr>
+<tr class="row-even"><td>End of packet header</td>
+<td>eph</td>
+<td>contiguousCodestreamBox/cod/eph</td>
+</tr>
+<tr class="row-odd"><td>Precincts</td>
+<td>precints</td>
+<td>contiguousCodestreamBox/cod/precints</td>
+</tr>
+</tbody>
+</table>
+<p>tabulka
+- identifikace
+image style format</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">jp2000</span>
+</pre></div>
+</div>
+<p>file format</p>
+<div class="highlight-python"><pre>*.jp2 , *.jpf</pre>
+</div>
+<ul class="simple">
+<li>validace
+all //tests are important</li>
+<li>charakterizace</li>
+</ul>
+<p>commentaries</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">kakadu</span>
+</pre></div>
+</div>
+<p>compression</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">reversible</span><span class="o">/</span><span class="n">ireversible</span>
+</pre></div>
+</div>
+<p>transformation</p>
+<div class="highlight-python"><pre>5-3 reversible
+9-7 ireversible</pre>
+</div>
+<p>compression ration</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="mf">2.39</span>
+</pre></div>
+</div>
+<p>tails</p>
+<div class="highlight-python"><pre>&lt;contiguousCodestreamBox&gt;
+&lt;siz&gt;
+  &lt;numberOfTiles&gt;1&lt;/numberOfTiles&gt;</pre>
+</div>
+<p>progression order</p>
+<div class="highlight-python"><pre>&lt;order&gt;RPCL&lt;/order&gt;
+
+values
+======
+CPRL
+RPCL
+RLCP
+LRCP
+PCRL
+CPRL</pre>
+</div>
+<p>num of decomposition levels</p>
+<div class="highlight-python"><pre>&lt;cod&gt;
+  &lt;levels&gt;5&lt;/levels&gt;</pre>
+</div>
+<p>quality layers</p>
+<div class="highlight-python"><pre>&lt;layers&gt;1&lt;/layers&gt;</pre>
+</div>
+<p>precinct</p>
+<div class="highlight-python"><pre>..  staci vypsat ve formate</pre>
+</div>
+<blockquote>
+<div><p>128x128, 256x256</p>
+<p>&lt;cod&gt;
+&lt;precinctSizeX&gt;128&lt;/precinctSizeX&gt;
+&lt;precinctSizeY&gt;128&lt;/precinctSizeY&gt;
+&lt;precinctSizeX&gt;128&lt;/precinctSizeX&gt;
+&lt;precinctSizeY&gt;128&lt;/precinctSizeY&gt;
+&lt;precinctSizeX&gt;128&lt;/precinctSizeX&gt;
+&lt;precinctSizeY&gt;128&lt;/precinctSizeY&gt;
+&lt;precinctSizeX&gt;128&lt;/precinctSizeX&gt;
+&lt;precinctSizeY&gt;128&lt;/precinctSizeY&gt;
+&lt;precinctSizeX&gt;128&lt;/precinctSizeX&gt;
+&lt;precinctSizeY&gt;128&lt;/precinctSizeY&gt;
+&lt;precinctSizeX&gt;256&lt;/precinctSizeX&gt;
+&lt;precinctSizeY&gt;256&lt;/precinctSizeY&gt;</p>
+</div></blockquote>
+<dl class="docutils">
+<dt>regions of interest ::</dt>
+<dd>no/yes</dd>
+</dl>
+<p>code block size</p>
+<div class="highlight-python"><pre>&lt;cod&gt;
+&lt;codeBlockWidth&gt;64&lt;/codeBlockWidth&gt;
+&lt;codeBlockHeight&gt;64&lt;/codeBlockHeight&gt;</pre>
+</div>
+<dl class="docutils">
+<dt>tail length layer ::</dt>
+<dd>yes /no</dd>
+<dt>bypass ::</dt>
+<dd>&lt;cod&gt;
+&lt;codingBypass&gt;yes&lt;/codingBypass&gt;</dd>
+<dt>icc profiles ::</dt>
+<dd>yes/no</dd>
+</dl>
+<p>soh start of packet header (zacatek hlavicky paketu)</p>
+<div class="highlight-python"><pre>&lt;sop&gt;yes&lt;/sop&gt;</pre>
+</div>
+<p>eph end of packet header</p>
+<div class="highlight-python"><pre>&lt;eph&gt;yes&lt;/eph&gt;</pre>
+</div>
+<p>xml box</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">no</span>
+</pre></div>
+</div>
+<p>uuid box</p>
+<div class="highlight-python"><pre>&lt;uuidBox&gt;
+  &lt;uuid&gt;be7acfcb-97a9-42e8-9c71-999491e3afac&lt;/uuid&gt;
+&lt;/uuidBox&gt;</pre>
+</div>
+<p>toto poskladat nejak dale.</p>
+<p>rozliseni</p>
+<div class="highlight-python"><pre>&lt;vResdInPixelsPerInch&gt;299.98&lt;/vResdInPixelsPerInch&gt;</pre>
+</div>
+<p>rozliseni display</p>
+<div class="highlight-python"><pre>&lt;hResdInPixelsPerInch&gt;299.98&lt;/hResdInPixelsPerInch&gt;</pre>
+</div>
+<p>depth:</p>
+<div class="highlight-python"><pre>&lt;contiguousCodestreamBox&gt;
+&lt;siz&gt;
+&lt;ssizDepth&gt;8&lt;/ssizDepth&gt;</pre>
+</div>
+<p>precincts</p>
+<div class="highlight-python"><pre>&lt;cod&gt;
+&lt;precincts&gt;yes&lt;/precincts&gt;</pre>
+</div>
+<p>multiple component transformation</p>
+<div class="highlight-python"><pre>&lt;cod&gt;
+&lt;multipleComponentTransformation&gt;yes&lt;/multipleComponentTransformation&gt;</pre>
+</div>
+<p>reset on boundaries</p>
+<div class="highlight-python"><pre>&lt;resetOnBoundaries&gt;no&lt;/resetOnBoundaries&gt;</pre>
+</div>
+<p>transformation</p>
+<div class="highlight-python"><pre>&lt;transformation&gt;5-3 reversible&lt;/transformation&gt;</pre>
+</div>
+<p>compression ration</p>
+<div class="highlight-python"><pre>&lt;compressionRatio&gt;2.39&lt;/compressionRatio&gt;</pre>
+</div>
+<p>comments</p>
+<div class="highlight-python"><pre>&lt;com&gt;
+&lt;lcom&gt;15&lt;/lcom&gt;
+&lt;rcom&gt;ISO/IEC 8859-15 (Latin)&lt;/rcom&gt;
+&lt;comment&gt;Kakadu-v6.4&lt;/comment&gt;
+&lt;/com&gt;</pre>
+</div>
+</div>
+</div>
+<div class="section" id="exiftool">
+<h3><a class="toc-backref" href="#id33">ExifTool</a><a class="headerlink" href="#exiftool" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
+exiftool <span class="s1">&#39;/opt/testovaci-data/2_Set ot TEST images Vlna_testovani-Vysledky_porovnani_obrazku/2_Sada_testovacich_obrazku/2_JPEG/2_2_11-Voda-Glitch10.jpg&#39;</span> &gt; exiftool.raw
+</pre></div>
+</div>
+<div class="highlight-python"><pre>ExifTool Version Number         : 8.60
+File Name                       : 2_2_11-Voda-Glitch10.jpg
+Directory                       : /opt/testovaci-data/2_Set ot TEST images Vlna_testovani-Vysledky_porovnani_obrazku/2_Sada_testovacich_obrazku/2_JPEG
+File Size                       : 4.1 MB
+File Modification Date/Time     : 2011:12:01 16:21:26+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Exif Byte Order                 : Little-endian (Intel, II)
+Make                            : Panasonic
+Camera Model Name               : DMC-LX3
+X Resolution                    : 180
+Y Resolution                    : 180
+Resolution Unit                 : inches
+Software                        : Ver.2.1
+Modify Date                     : 2011:04:15 15:51:42
+Artist                          : BEDRICH
+Y Cb Cr Positioning             : Co-sited
+Exposure Time                   : 1/125
+F Number                        : 2.8
+Exposure Program                : Program AE
+ISO                             : 80
+Exif Version                    : 0221
+Date/Time Original              : 2011:04:15 15:51:42
+Create Date                     : 2011:04:15 15:51:42
+Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 4
+Exposure Compensation           : 0
+Max Aperture Value              : 2.0
+Metering Mode                   : Multi-segment
+Light Source                    : Unknown
+Flash                           : Off, Did not fire
+Focal Length                    : 5.1 mm
+Image Quality                   : High
+Firmware Version                : 0.2.1.0
+White Balance                   : Auto
+Focus Mode                      : Auto
+AF Area Mode                    : Auto or Face Detect
+Image Stabilization             : On, Mode 2
+Macro Mode                      : Off
+Shooting Mode                   : Intelligent Auto
+Audio                           : No
+Data Dump                       : (Binary data 8200 bytes, use -b option to extract)
+Flash Bias                      : 0
+Internal Serial Number          : (F32) 2009:10:14 no. 0113
+Panasonic Exif Version          : 0291
+Color Effect                    : Off
+Time Since Power On             : 00:01:02.92
+Burst Mode                      : Off
+Sequence Number                 : 0
+Contrast Mode                   : Normal
+Noise Reduction                 : Standard
+Self Timer                      : Off
+Rotation                        : Horizontal (normal)
+AF Assist Lamp                  : Enabled but Not Used
+Color Mode                      : Normal
+Optical Zoom Mode               : Standard
+Conversion Lens                 : Off
+Travel Day                      : n/a
+World Time Location             : Destination
+Program ISO                     : n/a
+Advanced Scene Mode             : Auto
+Faces Detected                  : 0
+Film Mode                       : n/a
+WB Adjust AB                    : 0
+WB Adjust GM                    : 0
+Panasonic Image Width           : 0
+Panasonic Image Height          : 0
+AF Point Position               : 0.5 0.5
+Num Face Positions              : 0
+Maker Note Version              : 0132
+Scene Mode                      : Intelligent Auto
+WB Red Level                    : 2310
+WB Green Level                  : 1054
+WB Blue Level                   : 1478
+Flash Fired                     : No
+Text Stamp                      : Off
+Baby Age                        : (not set)
+Flashpix Version                : 0100
+Color Space                     : sRGB
+Exif Image Width                : 3776
+Exif Image Height               : 2520
+Interoperability Index          : R98 - DCF basic file (sRGB)
+Interoperability Version        : 0100
+Related Image Width             : 3776
+Related Image Height            : 2520
+Sensing Method                  : One-chip color area
+File Source                     : Digital Camera
+Scene Type                      : Directly photographed
+Custom Rendered                 : Normal
+Exposure Mode                   : Auto
+Digital Zoom Ratio              : 0
+Focal Length In 35mm Format     : 24 mm
+Scene Capture Type              : Standard
+Gain Control                    : None
+Contrast                        : Normal
+Saturation                      : Normal
+Sharpness                       : Normal
+Image Unique ID                 : 3cff5116ab3e3ecc373e976f4222e4c7
+PrintIM Version                 : 0250
+Compression                     : JPEG (old-style)
+Thumbnail Offset                : 10512
+Thumbnail Length                : 5071
+XMP Toolkit                     : XMP Core 5.1.2
+Image Width                     : 3776
+Image Height                    : 2520
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:2 (2 1)
+Aperture                        : 2.8
+Blue Balance                    : 1.402277
+Image Size                      : 3776x2520
+Red Balance                     : 2.191651
+Scale Factor To 35 mm Equivalent: 4.7
+Shutter Speed                   : 1/125
+Thumbnail Image                 : (Binary data 5071 bytes, use -b option to extract)
+Circle Of Confusion             : 0.006 mm
+Field Of View                   : 73.7 deg
+Focal Length                    : 5.1 mm (35 mm equivalent: 24.0 mm)
+Hyperfocal Distance             : 1.45 m
+Light Value                     : 10.3
+</pre>
+</div>
+<div class="section" id="id3">
+<h4><a class="toc-backref" href="#id34">Significant Properties</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Information</th>
+<th class="head">Value from an example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>datum vytvoreni</td>
+<td>File Modification Date/Time     : 2011:12:01 16:21:26+01:00</td>
+</tr>
+<tr class="row-odd"><td>velikost souboru</td>
+<td>File Size                       : 4.1 MB</td>
+</tr>
+<tr class="row-even"><td>pocet barev</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>24bitu, 8bitu (grey scale)</td>
+<td>Bits Per Sample                 : 8</td>
+</tr>
+<tr class="row-even"><td>rozliseni</td>
+<td>Image Size                      : 3776x2520</td>
+</tr>
+<tr class="row-odd"><td>pocet vrstev</td>
+<td>vzdy 1 vrstva</td>
+</tr>
+<tr class="row-even"><td>expozice</td>
+<td>1/125</td>
+</tr>
+<tr class="row-odd"><td>vyvazeni bile</td>
+<td>White Balance                   : Auto</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>prednostne</p>
+<div class="highlight-python"><pre>velikost souboru
+typ souboru
+main type
+software type  2.1
+modified date
+exif tool version
+resolution x, y
+color space                     :
+Exif Image Width                : 3776
+Exif Image Height               : 2520
+image unique id
+Compression                     : JPEG (old-style)
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Image Size                      : 3776x2520</pre>
+</div>
+<p>ostatni veci vlozit do sekce exif.</p>
+<p>ExifTool Version Number         : 8.60
+File Name                       : 2_2_11-Voda-Glitch10.jpg
+File Modification Date/Time     : 2011:12:01 16:21:26+01:00</p>
+<p>File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01</p>
+<p>Exif Byte Order                 : Little-endian (Intel, II)</p>
+<dl class="docutils">
+<dt>commentaries::</dt>
+<dd>Make                            : Panasonic</dd>
+</dl>
+<p>X Resolution                    : 180
+Y Resolution                    : 180
+Resolution Unit                 : inches</p>
+<dl class="docutils">
+<dt>typ algoritmu ::</dt>
+<dd>Y Cb Cr Positioning             : Co-sited</dd>
+</dl>
+<p>Exposure Time                   : 1/125
+F Number                        : 2.8</p>
+<p>Exif Version                    : 0221</p>
+<dl class="docutils">
+<dt>exit ::</dt>
+<dd>Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 4</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="jhove">
+<h3><a class="toc-backref" href="#id35">JHOVE</a><a class="headerlink" href="#jhove" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
+jhove -h xml <span class="s1">&#39;/opt/testovaci-data/TESTOVACI DATA BEDRICHJ 2012/lena_std lossless.jpf&#39;</span> &gt; jhove.raw
+</pre></div>
+</div>
+<p><a class="reference external" href="../../outputs/jhove.raw">xml output</a></p>
+<div class="section" id="id4">
+<h4><a class="toc-backref" href="#id36">Significant Properties</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="81%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Information</th>
+<th class="head">Value from an example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>datum vytvoreni</td>
+<td>/jhove/repInfo/lastModified  (2012-02-17T22:07:54+01:00)</td>
+</tr>
+<tr class="row-odd"><td>velikost souboru</td>
+<td>/jhove/repInfo/size (476756)</td>
+</tr>
+<tr class="row-even"><td>pocet barev</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>24bitu, 8bitu (grey scale)</td>
+<td>//mix:ImageColorEncoding/mix:bitsPerSampleValue (8)</td>
+</tr>
+<tr class="row-even"><td>rozliseni</td>
+<td>//mix:imageWidth x //mix:imageHeight  (512x512)</td>
+</tr>
+<tr class="row-odd"><td>pocet vrstev</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>expozice</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>vyvazeni bile</td>
+<td>neco dalsiho</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>identifikace</p>
+<div class="highlight-python"><pre>&lt;mimeType&gt;image/jp2&lt;/mimeType&gt;</pre>
+</div>
+<p>charakterizace</p>
+<div class="highlight-python"><pre>&lt;property&gt;
+&lt;name&gt;EnumCS&lt;/name&gt;
+&lt;values arity="Scalar" type="String"&gt;
+&lt;value&gt;sRGB&lt;/value&gt;
+&lt;/values&gt;
+&lt;/property&gt;</pre>
+</div>
+<p>uuid</p>
+<div class="highlight-python"><pre>&lt;property&gt;
+ &lt;name&gt;UUID&lt;/name&gt;
+ &lt;values arity="Array" type="Byte"&gt;
+  &lt;value&gt;58&lt;/value&gt;
+  &lt;value&gt;13&lt;/value&gt;
+  &lt;value&gt;2&lt;/value&gt;
+  &lt;value&gt;24&lt;/value&gt;
+  &lt;value&gt;10&lt;/value&gt;
+  &lt;value&gt;-23&lt;/value&gt;
+  &lt;value&gt;65&lt;/value&gt;
+  &lt;value&gt;21&lt;/value&gt;
+  &lt;value&gt;-77&lt;/value&gt;
+  &lt;value&gt;118&lt;/value&gt;
+  &lt;value&gt;75&lt;/value&gt;
+  &lt;value&gt;-54&lt;/value&gt;
+  &lt;value&gt;65&lt;/value&gt;
+  &lt;value&gt;-50&lt;/value&gt;
+  &lt;value&gt;14&lt;/value&gt;
+  &lt;value&gt;113&lt;/value&gt;
+ &lt;/values&gt;
+&lt;/property&gt;</pre>
+</div>
+<p>z mix se daji vytahnout vsechny veci.</p>
+<p>V JHOVE jsou nejdulezitejsi identifikace.</p>
+</div>
+</div>
+<div class="section" id="fits">
+<h3><a class="toc-backref" href="#id37">FITS</a><a class="headerlink" href="#fits" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
+/opt/fits-0.6.1/fits.sh -i <span class="s1">&#39;/opt/testovaci-data/ONLINE DIFFER/1TEST-CORRUPTED-1_PAINTING.JPG&#39;</span> &gt; fits.raw
+</pre></div>
+</div>
+<div class="highlight-python"><pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="13.12.12 7:19"&gt;
+  &lt;identification&gt;
+    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;version toolname="file utility" toolversion="5.11"&gt;1.02&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/44&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;1085698&lt;/size&gt;
+    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;Adobe Photoshop CS Windows&lt;/creatingApplicationName&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2011:12:06 17:18:46+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2004:12:07 14:38:49-08:00&lt;/created&gt;
+    &lt;created toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;2004:12:07 14:38:49&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/testovaci-data/ONLINE DIFFER/1TEST-CORRUPTED-1_PAINTING.JPG&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/testovaci-data/ONLINE DIFFER/1TEST-CORRUPTED-1_PAINTING.JPG&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;79009a4d6a14a2c3d49b859964925a35&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1323188326000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;2000&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1346&lt;/imageHeight&gt;
+      &lt;iccProfileName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;sRGB IEC61966-2.1&lt;/iccProfileName&gt;
+      &lt;iccProfileVersion toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2.1.0&lt;/iccProfileVersion&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;1 1&lt;/YCbCrSubSampling&gt;
+      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;300&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;300&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Adobe Photoshop CS Windows&lt;/scanningSoftwareName&gt;
+      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
+</pre>
+</div>
+<div class="section" id="id5">
+<h4><a class="toc-backref" href="#id38">Significant Properties</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="81%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Information</th>
+<th class="head">Value from an example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>datum vytvoreni</td>
+<td>/fits/fileinfo/created[0]</td>
+</tr>
+<tr class="row-odd"><td>velikost souboru</td>
+<td>/fits/fileinfo/size</td>
+</tr>
+<tr class="row-even"><td>pocet barev</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>24bitu, 8bitu (grey scale)</td>
+<td>/fits/metadata/image/bitsPerSample</td>
+</tr>
+<tr class="row-even"><td>rozliseni</td>
+<td>/fits/metadata/image/imageWidth x /fits/metadata/image/imageHeight</td>
+</tr>
+<tr class="row-odd"><td>pocet vrstev</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>expozice</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>vyvazeni bile</td>
+<td>/fits/metadata/image/lightSource</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="command-line-application">
+<h2><a class="toc-backref" href="#id39">Command Line Application</a><a class="headerlink" href="#command-line-application" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="arguments-of-the-application">
+<h3><a class="toc-backref" href="#id40">Arguments of the application</a><a class="headerlink" href="#arguments-of-the-application" title="Permalink to this headline">¶</a></h3>
+<p>The application can validate one image or compare two images.</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Argument</th>
+<th class="head">What</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#8211;save-report</td>
+<td>Save report into file with the same name and with extension <a href="#id6"><span class="problematic" id="id7">*</span></a>.drep</td>
+</tr>
+<tr class="row-odd"><td>&#8211;load-report</td>
+<td>Load report from a given file and print it in a readable form at stdout</td>
+</tr>
+<tr class="row-even"><td>&#8211;include-image-in-report</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>&#8211;report-format</td>
+<td>html/txt/pdf/xml</td>
+</tr>
+<tr class="row-even"><td>&#8211;compare</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>&#8211;transform-report</td>
+<td>transform xml report into other format - html/txt/pdf</td>
+</tr>
+<tr class="row-even"><td>&#8211;save-histogram</td>
+<td>save histogram as csv</td>
+</tr>
+<tr class="row-odd"><td>&#8211;name-style</td>
+<td>a way how to name and store result files</td>
+</tr>
+<tr class="row-even"><td>&#8211;save-raw-outputs</td>
+<td>save raw outputs from validators into files</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Compare report contains of all informations from validation reports and even compare informations.</p>
+</div>
+<div class="section" id="naming-styles">
+<h3><a class="toc-backref" href="#id41">Naming styles</a><a class="headerlink" href="#naming-styles" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>thesamename</p>
+<div class="highlight-python"><pre>generated files has the same name as image file</pre>
+</div>
+<p>thesamenamedir</p>
+<div class="highlight-python"><pre>all generated files are in a directory with the same name as an image file</pre>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="examples-of-a-program-usage">
+<h3><a class="toc-backref" href="#id42">Examples of a program usage</a><a class="headerlink" href="#examples-of-a-program-usage" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>validates image, prints report readable way at stdout and saves it into file image.drep
+c:\&gt; differ.bat --save-report image.jpg
+
+loads report from file image.drep and prints it readable way at stdout
+c:\&gt; differ.bat --load-report image.drep
+
+validates images and compares it and prints report readable way at stdout
+and save it into file image1.drep and image2.drep
+c:\&gt; differ.bat --save-report image1.jpg image2.jpg</pre>
+</div>
+</div>
+<div class="section" id="example-of-a-program-output">
+<h3><a class="toc-backref" href="#id43">Example of a program output</a><a class="headerlink" href="#example-of-a-program-output" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>Characterization
+================
+
+image.jpg: 2480x1748
+
+Significant Properties
+======================
+
+Code block height (Pixels)           jpylyzer  
+Code block width (Pixels)            jpylyzer  
+Coding bypass                        jpylyzer  
+Color depth                          jpylyzer  
+Color space                          jpylyzer  
+Commentary                           jpylyzer  
+Compression                          jpylyzer  
+Compression ratio                    jpylyzer  
+Display resolution horizontal (PPI)  jpylyzer  
+Display Resolution vertical (PPI)    jpylyzer  
+End of packet header                 jpylyzer  
+Exif Resolution                      exiv2     1748 x 2480
+exit-code                            exiv2     ok
+                                     jpylyzer  ok
+File last modified                   jpylyzer  Mon Oct 24 15:06:10 2011
+File name                            exiv2     /opt/differ/differ-cmdline/image.jpg
+                                     jpylyzer  image.jpg
+File path                            jpylyzer  /opt/differ/differ-cmdline/image.jpg
+File size                            exiv2     301376 Bytes
+                                     jpylyzer  301376
+height                               core      2480
+Image height (Pixels)                exiv2     2480
+                                     jpylyzer  
+Image width (Pixels)                 exiv2     1748
+                                     jpylyzer  
+MIME type                            exiv2     image/jpeg
+Number of channels                   jpylyzer  
+Number of decomposition levels       jpylyzer  
+Number of quality layers             jpylyzer  
+Number of tiles                      jpylyzer  
+Progression order                    jpylyzer  
+Resolution horizontal (PPI)          jpylyzer  
+Resolution vertical (PPI)            jpylyzer  
+Start of packet header               jpylyzer  
+Thumbnail                            exiv2     image/jpeg, 934 Bytes
+Transformation                       jpylyzer  
+Type of format                       jpylyzer  
+Universal unique identifier (UUID)   jpylyzer  
+Validation (well formed and valid)   jpylyzer  False
+width                                core      1748
+
+Raw outputs of extractors
+=========================
+
+   exiv2        'output &lt;/opt/differ/differ-cmdline/image-output-exiv2.raw&gt;'_
+   jpylyzer     'output &lt;/opt/differ/differ-cmdline/image-output-jpylyzer.raw&gt;'_
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to Differ Documentation!</a><ul>
+<li><a class="reference internal" href="#recognized-validator-outputs">Recognized Validator Outputs</a><ul>
+<li><a class="reference internal" href="#djdump">DJDump</a><ul>
+<li><a class="reference internal" href="#significant-properties">Significant Properties</a></li>
+<li><a class="reference internal" href="#layers-and-compressions">Layers and Compressions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lpylyzer">LPyLyzer</a><ul>
+<li><a class="reference internal" href="#id2">Significant Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exiftool">ExifTool</a><ul>
+<li><a class="reference internal" href="#id3">Significant Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#jhove">JHOVE</a><ul>
+<li><a class="reference internal" href="#id4">Significant Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#fits">FITS</a><ul>
+<li><a class="reference internal" href="#id5">Significant Properties</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#command-line-application">Command Line Application</a><ul>
+<li><a class="reference internal" href="#arguments-of-the-application">Arguments of the application</a></li>
+<li><a class="reference internal" href="#naming-styles">Naming styles</a></li>
+<li><a class="reference internal" href="#examples-of-a-program-usage">Examples of a program usage</a></li>
+<li><a class="reference internal" href="#example-of-a-program-output">Example of a program output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">Differ Documentation 0.5 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Jan Stavel.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
