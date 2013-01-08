@@ -4,6 +4,9 @@ JHOVE
 .. literalinclude:: outputs/get-jhove.sh
 		    :language: bash
 
+.. literalinclude:: outputs/jhove.raw
+
+
 `xml output <../../outputs/jhove.raw>`_
 
 
