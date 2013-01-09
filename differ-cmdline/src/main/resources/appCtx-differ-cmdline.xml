@@ -132,8 +132,14 @@
     <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
       <property name="mapOfRegexp">
 	<map>
-	  <entry key="Image width (Pixels)"  value="Image size      : ([0-9]+) x [0-9]+"/>
-	  <entry key="Image height (Pixels)" value="Image size      : [0-9]+ x ([0-9]+)"/>
+	  <entry key="Image width (Pixels)"            value="Image size      : ([0-9]+) x [0-9]+"/>
+	  <entry key="Image height (Pixels)"           value="Image size      : [0-9]+ x ([0-9]+)"/>
+	  <entry key="Resolution horizontal (PPI)"     value="Exif Resolution : ([0-9]+) x [0-9]+"/>
+	  <entry key="Resolution vertical (PPI)"       value="Exif Resolution : [0-9]+ x ([0-9]+)"/>
+	  <entry key="MIME type"                       value="MIME type       : (.*)"/>
+	  <entry key="File name"                       value="File name       : (.*)"/>
+	  <entry key="File path"                       value="File name       : (.*)"/>
+	  <entry key="File size"                       value="File size       : ([0-9]+)"/>
 	</map>
       </property>
       <property name="listOfRegexp">
@@ -172,26 +178,23 @@
     </bean>
     
     <!-- Jhove -->
-    <!-- <bean id="jhoveMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer"> -->
-    <!-- 	<property name="stylesheet" value="/home/xrosecky/differ/jhove/jhove.xsl"/> -->
-    <!-- </bean> -->
+    <bean id="jhoveMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
+      <property name="stylesheet" value="jhove.xsl"/>
+    </bean>
 
-    <!-- <bean id="jhoveMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor"> -->
-    <!-- 	<property name="source" value="jhove"/> -->
-    <!-- 	<property name="transformer" ref="jhoveMetadataTransformer"/> -->
-    <!-- 	<property name="programArguments"> -->
-    <!-- 	    <list> -->
-    <!-- 		<value>${java.binary}</value> -->
-    <!-- 		<value>-jar</value> -->
-    <!-- 		<value>${jhove.jar}</value> -->
-    <!-- 		<value>-h</value> -->
-    <!-- 		<value>xml</value> -->
-    <!-- 		<value>{file}</value> -->
-    <!-- 	    </list> -->
-    <!-- 	</property> -->
-    <!-- 	<property name="units" ref="units"/> -->
-    <!-- </bean> -->
-
+    <bean id="jhoveMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+      <property name="source" value="jhove"/>
+      <property name="transformer" ref="jhoveMetadataTransformer"/>
+      <property name="programArguments">
+	<list>
+	  <value>${jhove.binary}</value>
+	  <value>-h</value>
+	  <value>xml</value>
+	  <value>{file}</value>
+	</list>
+      </property>
+      <property name="units" ref="units"/>
+    </bean>
     <bean id="metadataExtractors" class="cz.nkp.differ.compare.metadata.MetadataExtractors">
 	<property name="extractors">
 	    <list>

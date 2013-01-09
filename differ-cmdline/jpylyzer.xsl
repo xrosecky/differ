@@ -11,13 +11,13 @@
   <xsl:template match="text()"/>
 
   <xsl:template match="/jpylyzer">
-    <properties>
+      <properties>
       <property name = "File last modified"><xsl:value-of select="fileInfo/fileLastModified"/></property>
       <property name = "File name"><xsl:value-of select="fileInfo/fileName"/></property>
       <property name = "File path"><xsl:value-of select="fileInfo/filePath"/></property>
       <property name = "File size"><xsl:value-of select="fileInfo/fileSizeInBytes"/></property>
-      <property name = "Image width (Pixels)"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/height"/></property>
-      <property name = "Image height (Pixels)"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/width"/></property>
+      <property name = "Image width (Pixels)"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/width"/></property>
+      <property name = "Image height (Pixels)"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/heigth"/></property>
       <property name = "Color depth"><xsl:value-of select="contiguousCodestreamBox/siz/ssizDepth"/></property>
       <property name = "Number of channels"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/nC"/></property>
       <property name = "Color space"><xsl:value-of select="properties/jp2HeaderBox/colourSpecificationBox/enumCS"/></property>
@@ -27,7 +27,7 @@
       <property name = "Display Resolution vertical (PPI)"><xsl:value-of select="jp2HeaderBox/resolutionBox/displayResolutionBox/vResdInPixelsPerInch"/></property>
       <property name = "Validation (well formed and valid)"><xsl:value-of select="isValidJP2"/></property>
       <property name = "Type of format"><xsl:value-of select="properties/jp2HeaderBox/imageHeaderBox/c"/></property>
-      <property name = "Universal unique identifier (UUID)"><xsl:value-of select="properties/uuidBox/uuid/text()"/></property>
+      <property name = "Universal unique identifier (UUID)"><xsl:value-of select="properties/uuidBox/uuid"/></property>
       <property name = "Commentary"><xsl:value-of select="contiguousCodestreamBox/com/comment"/></property>
       <property name = "Number of tiles"><xsl:value-of select="contiguousCodestreamBox/siz/numberOfTiles"/></property>
       <property name = "Transformation"><xsl:value-of select="contiguousCodestreamBox/cod/transformation"/></property>
@@ -41,6 +41,7 @@
       <property name = "Coding bypass"><xsl:value-of select="contiguousCodestreamBox/cod/codingBypass"/></property>
       <property name = "Start of packet header"><xsl:value-of select="contiguousCodestreamBox/cod/sop"/></property>
       <property name = "End of packet header"><xsl:value-of select="contiguousCodestreamBox/cod/eph"/></property>
+      <property name = "Precincts"><xsl:value-of select="contiguousCodestreamBox/cod/precints"/></property>
    </properties>  
-  </xsl:template>
+   </xsl:template>
 </xsl:stylesheet>

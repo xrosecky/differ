@@ -2,28 +2,33 @@
 "File name";"fileName";""
 "File path";"filePath";"repInfo/@uri"
 "File size";"fileSizeInBytes";"repInfo/size"
+"MIME type";"mimeType";"repInfo/mimeType"
 "Image width (Pixels)";"ImageWidth";".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/imageWidth"
 "Image height (Pixels)";"ImageHeight";".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/imageHeight"
-"Color depth";"colorDepth";
-"Number of channels";"numOfChannels";
-"Color space";"colorSpace";
+"Color depth";"colorDepth";"//mix:ImageColorEncoding/mix:BitsPerSample/mix:bitsPerSampleValue"
+"Number of channels";"numOfChannels";"//mix:ImageColorEncoding/mix:BitsPerSample/mix:samplesPerPixel>3"
+"Color space";"colorSpace";"//property[text(name)='EnumCS']/value"
 "Resolution vertical (PPI)";"vResolutionInPixelsPerInch";
 "Resolution horizontal (PPI)";"hResolutionInPixelsPerInch";
 "Display resolution horizontal (PPI)";"hDisplayResolutionInPixelsPerInch";
 "Display Resolution vertical (PPI)";"vDisplayResolutionInPixelsPerInch";
 "Validation (well formed and valid)";"wellFormedAndValid";"repInfo/status"
-"Type of format";"imageFormat";
+"Type of format";"imageFormat";"repInfo/format"
 "Universal unique identifier (UUID)";"uuid";"concat(.//property[text(name)='UUID']/values/value)"
 "Commentary";"commentary";
+"Tile size X (Pixels)";"tileSizeX";"//property[text(name)='XTSize']/values/value"
+"Tile size Y (Pixels)";"tileSizeY";"//property[text(name)='YTSize']/values/value"
 "Number of tiles";"numberOfTiles";"count(.//name[text()='TilePart'])"
-"Transformation";"transformation";
-"Compression";"compression";"//mix:Compression/mix:compressionScheme"
+"Transformation";"transformation";"//property[text(name)='Transformation']/values/value"
+"Compression";"compressionScheme";"//mix:Compression/mix:compressionScheme"
 "Compression ratio";"compressionRatio";
 "Number of decomposition levels";"numOfDecompositionLevels";".//property[text(name)='NumberDecompositionLevels']/values/value"
-"Number of quality layers";"numOfQualityLayers";
+"Number of quality layers";"numOfQualityLayers";".//property[text(name)='NumberOfLayers']/values/value"
+"Multiple Component Transformation";"multipleComponentTransformation";".//property[text(name)='MultipleComponentTransformation']/values/value"
 "Progression order";"progressionOrder";".//property[text(name)='ProgressionOrder']/values/value"
-"Code block width (Pixels)";"codeBlockWidth";
-"Code block height (Pixels)";"codeBlockWidth";	
+"Code block width (Pixels)";"codeBlockWidth";".//property[text(name)='CodeBlockWidth']/values/value"
+"Code block height (Pixels)";"codeBlockHeight";".//property[text(name)='CodeBlockHeight']/values/value"
+"Quantization style";"quantizationStyle";".//property[text(name)='QuantizationStyle']/values/value"
 "Coding bypass";"codingBypass";
 "Start of packet header";"sop";
 "End of packet header";"eph";

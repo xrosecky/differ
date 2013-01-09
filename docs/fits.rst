@@ -25,7 +25,4 @@ Significant Properties
 
 		    
 	 
-		    
-	 
-   
-
+iccProfileName - "ICC Profile"

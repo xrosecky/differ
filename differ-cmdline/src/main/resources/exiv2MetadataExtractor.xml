@@ -1,8 +1,8 @@
 <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
   <property name="mapOfRegexp">
     <map>
-      <entry key="width"  value="Image size      : ([0-9]+) x [0-9]+"/>
-      <entry key="height" value="Image size      : [0-9]+ x ([0-9]+)"/>
+      <entry key="Image width (Pixels)"  value="Image size      : ([0-9]+) x [0-9]+"/>
+      <entry key="Image height (Pixels)" value="Image size      : [0-9]+ x ([0-9]+)"/>
     </map>
   </property>
   <property name="listOfRegexp">
