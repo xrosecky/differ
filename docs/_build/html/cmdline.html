@@ -70,19 +70,16 @@
 <tr class="row-odd"><td>&#8211;report-format</td>
 <td>html/txt/pdf/xml</td>
 </tr>
-<tr class="row-even"><td>&#8211;compare</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>&#8211;transform-report</td>
+<tr class="row-even"><td>&#8211;transform-report</td>
 <td>transform xml report into other format - html/txt/pdf</td>
 </tr>
-<tr class="row-even"><td>&#8211;save-histogram</td>
+<tr class="row-odd"><td>&#8211;save-histogram</td>
 <td>save histogram as csv</td>
 </tr>
-<tr class="row-odd"><td>&#8211;name-style</td>
+<tr class="row-even"><td>&#8211;name-style</td>
 <td>a way how to name and store result files</td>
 </tr>
-<tr class="row-even"><td>&#8211;save-raw-outputs</td>
+<tr class="row-odd"><td>&#8211;save-raw-outputs</td>
 <td>save raw outputs from validators into files</td>
 </tr>
 </tbody>
@@ -101,8 +98,10 @@
 </div>
 </div></blockquote>
 </div>
-<div class="section" id="examples-of-a-program-usage">
-<h1>Examples of a program usage<a class="headerlink" href="#examples-of-a-program-usage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="program-usage">
+<h2>Program usage<a class="headerlink" href="#program-usage" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><pre>validates image, prints report readable way at stdout and saves it into file image.drep
 c:\&gt; differ.bat --save-report image.jpg
 
@@ -114,8 +113,8 @@ and save it into file image1.drep and image2.drep
 c:\&gt; differ.bat --save-report image1.jpg image2.jpg</pre>
 </div>
 </div>
-<div class="section" id="example-of-a-program-output">
-<h1>Example of a program output<a class="headerlink" href="#example-of-a-program-output" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="program-output-when-validating-image">
+<h2>Program output when validating image<a class="headerlink" href="#program-output-when-validating-image" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><pre>Characterization
 ================
 
@@ -174,6 +173,116 @@ Raw outputs of extractors
 </pre>
 </div>
 </div>
+<div class="section" id="program-output-when-comparing-images">
+<h2>Program output when comparing images<a class="headerlink" href="#program-output-when-comparing-images" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>Characterization
+================
+
+image.jpg: 2480x1748
+image2.jpg: 2480x1748
+
+Significant Properties
+======================
+
+Code block height (Pixels)           jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Code block width (Pixels)            jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Coding bypass                        jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Color depth                          jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Color space                          jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Commentary                           jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Compression                          jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Compression ratio                    jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Display Resolution vertical (PPI)    jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Display resolution horizontal (PPI)  jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+End of packet header                 jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+File last modified                   jpylyzer  image.jpg   Mon Oct 24 15:06:10 2011
+                                     jpylyzer  image2.jpg  Mon Oct 24 15:13:54 2011
+File name                            exiv2     image.jpg   /opt/differ/differ-cmdline/image.jpg
+                                     jpylyzer  image.jpg   image.jpg
+                                     exiv2     image2.jpg  /opt/differ/differ-cmdline/image2.jpg
+                                     jpylyzer  image2.jpg  image2.jpg
+File path                            exiv2     image.jpg   /opt/differ/differ-cmdline/image.jpg
+                                     jpylyzer  image.jpg   /opt/differ/differ-cmdline/image.jpg
+                                     exiv2     image2.jpg  /opt/differ/differ-cmdline/image2.jpg
+                                     jpylyzer  image2.jpg  /opt/differ/differ-cmdline/image2.jpg
+File size                            exiv2     image.jpg   301376
+                                     jpylyzer  image.jpg   301376
+                                     exiv2     image2.jpg  307248
+                                     jpylyzer  image2.jpg  307248
+Image height (Pixels)                core      image.jpg   2480
+                                     exiv2     image.jpg   2480
+                                     jpylyzer  image.jpg   
+                                     core      image2.jpg  2480
+                                     exiv2     image2.jpg  2480
+                                     jpylyzer  image2.jpg  
+Image width (Pixels)                 core      image.jpg   1748
+                                     exiv2     image.jpg   1748
+                                     jpylyzer  image.jpg   
+                                     core      image2.jpg  1748
+                                     exiv2     image2.jpg  1748
+                                     jpylyzer  image2.jpg  
+MIME type                            exiv2     image.jpg   image/jpeg
+                                     exiv2     image2.jpg  image/jpeg
+Number of channels                   jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Number of decomposition levels       jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Number of quality layers             jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Number of tiles                      jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Precincts                            jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Progression order                    jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Resolution horizontal (PPI)          exiv2     image.jpg   1748
+                                     jpylyzer  image.jpg   
+                                     exiv2     image2.jpg  1748
+                                     jpylyzer  image2.jpg  
+Resolution vertical (PPI)            exiv2     image.jpg   2480
+                                     jpylyzer  image.jpg   
+                                     exiv2     image2.jpg  2480
+                                     jpylyzer  image2.jpg  
+Start of packet header               jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Thumbnail                            exiv2     image.jpg   image/jpeg, 934 Bytes
+                                     exiv2     image2.jpg  image/jpeg, 934 Bytes
+Transformation                       jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Type of format                       jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Universal unique identifier (UUID)   jpylyzer  image.jpg   
+                                     jpylyzer  image2.jpg  
+Validation (well formed and valid)   jpylyzer  image.jpg   False
+                                     jpylyzer  image2.jpg  False
+exit-code                            exiv2     image.jpg   ok
+                                     jpylyzer  image.jpg   ok
+                                     exiv2     image2.jpg  ok
+                                     jpylyzer  image2.jpg  ok
+
+Raw outputs of extractors
+=========================
+
+   exiv2        'output &lt;/opt/differ/differ-cmdline/image-output-exiv2.raw&gt;'_
+   jpylyzer     'output &lt;/opt/differ/differ-cmdline/image-output-jpylyzer.raw&gt;'_
+   exiv2        'output &lt;/opt/differ/differ-cmdline/image2-output-exiv2.raw&gt;'_
+   jpylyzer     'output &lt;/opt/differ/differ-cmdline/image2-output-jpylyzer.raw&gt;'_
+
+</pre>
+</div>
+</div>
+</div>
 
 
           </div>
@@ -185,8 +294,12 @@ Raw outputs of extractors
   <ul>
 <li><a class="reference internal" href="#">Arguments of the application</a></li>
 <li><a class="reference internal" href="#naming-styles">Naming styles</a></li>
-<li><a class="reference internal" href="#examples-of-a-program-usage">Examples of a program usage</a></li>
-<li><a class="reference internal" href="#example-of-a-program-output">Example of a program output</a></li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#program-usage">Program usage</a></li>
+<li><a class="reference internal" href="#program-output-when-validating-image">Program output when validating image</a></li>
+<li><a class="reference internal" href="#program-output-when-comparing-images">Program output when comparing images</a></li>
+</ul>
+</li>
 </ul>
 
   <h3>This Page</h3>

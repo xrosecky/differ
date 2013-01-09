@@ -10,7 +10,6 @@ The application can validate one image or compare two images.
  --load-report               Load report from a given file and print it in a readable form at stdout
  --include-image-in-report   
  --report-format             html/txt/pdf/xml
- --compare                   
  --transform-report          transform xml report into other format - html/txt/pdf
  --save-histogram            save histogram as csv
  --name-style                a way how to name and store result files
@@ -30,8 +29,11 @@ Naming styles
 
     all generated files are in a directory with the same name as an image file
   
-Examples of a program usage
-...........................
+Examples
+.........
+
+Program usage
+~~~~~~~~~~~~~
   
 ::
 
@@ -44,12 +46,15 @@ Examples of a program usage
    validates images and compares it and prints report readable way at stdout 
    and save it into file image1.drep and image2.drep
    c:\> differ.bat --save-report image1.jpg image2.jpg
-   
-   
 
 
 
-Example of a program output
-...........................
+Program output when validating image
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. literalinclude:: outputs/cmdline.txt
+
+Program output when comparing images
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. literalinclude:: outputs/cmdline-compare.txt
