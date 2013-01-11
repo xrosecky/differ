@@ -15,6 +15,7 @@ The application can validate one image or compare two images.
  --name-style                a way how to name and store result files
  --save-raw-outputs          save raw outputs from validators into files
  --load-properties           program will print just properties that has 1 in the file defined by this argument
+ --show-properties           program will print out all known properties in a usable format and will finish
  =========================   ===================================================================================
 
 Compare report contains of all informations from validation reports and even compare informations.
