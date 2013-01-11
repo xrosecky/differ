@@ -49,8 +49,8 @@
 <blockquote>
 <div><table border="1" class="docutils">
 <colgroup>
-<col width="26%" />
-<col width="74%" />
+<col width="23%" />
+<col width="77%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Argument</th>
@@ -82,10 +82,20 @@
 <tr class="row-odd"><td>&#8211;save-raw-outputs</td>
 <td>save raw outputs from validators into files</td>
 </tr>
+<tr class="row-even"><td>&#8211;load-properties</td>
+<td>program will print just properties that has 1 in the file defined by this argument</td>
+</tr>
 </tbody>
 </table>
 </div></blockquote>
 <p>Compare report contains of all informations from validation reports and even compare informations.</p>
+</div>
+<div class="section" id="example-of-property-list-definition">
+<h1>Example of property list definition<a class="headerlink" href="#example-of-property-list-definition" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python"><pre>Image width;1
+Image height;0</pre>
+</div>
+<p>So property =Image width= will be printed and =Image height= will not be printed.</p>
 </div>
 <div class="section" id="naming-styles">
 <h1>Naming styles<a class="headerlink" href="#naming-styles" title="Permalink to this headline">¶</a></h1>
@@ -110,7 +120,14 @@ c:\&gt; differ.bat --load-report image.drep
 
 validates images and compares it and prints report readable way at stdout
 and save it into file image1.drep and image2.drep
-c:\&gt; differ.bat --save-report image1.jpg image2.jpg</pre>
+c:\&gt; differ.bat --save-report image1.jpg image2.jpg
+
+validates images and compares it and prints report readable way at stdout
+The program will print properties regarding to a file properties.lst
+c:\&gt; differ.bat --load-properties properties.lst image1.jpg image2.jpg
+
+The program will print properties in a format that can be used to choose properties to print in future
+c:\&gt; differ.bat --show-properties</pre>
 </div>
 </div>
 <div class="section" id="program-output-when-validating-image">
@@ -293,6 +310,7 @@ Raw outputs of extractors
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Arguments of the application</a></li>
+<li><a class="reference internal" href="#example-of-property-list-definition">Example of property list definition</a></li>
 <li><a class="reference internal" href="#naming-styles">Naming styles</a></li>
 <li><a class="reference internal" href="#examples">Examples</a><ul>
 <li><a class="reference internal" href="#program-usage">Program usage</a></li>
