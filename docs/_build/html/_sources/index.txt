@@ -44,6 +44,8 @@ Recognized Validator Outputs
 
 .. include:: fits.rst
 
+.. include:: kdu.rst
+
 Command Line Application
 ----------------------------
 
