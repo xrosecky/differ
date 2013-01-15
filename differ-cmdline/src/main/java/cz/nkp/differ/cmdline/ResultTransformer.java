@@ -11,6 +11,7 @@ public interface ResultTransformer {
     public Boolean includeOutputs = false;
     public Boolean includeImage = false;
     public Boolean saveReport = false;
+    public Boolean saveProperties = false;
     public OutputNamer outputNamer = null;
 
     public String transform(ImageProcessorResult result);

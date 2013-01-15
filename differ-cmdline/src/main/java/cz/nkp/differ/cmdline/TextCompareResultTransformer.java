@@ -37,15 +37,18 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
     public Boolean includeImage = false;
     public Boolean saveReport = false;
     public OutputNamer outputNamer = null;
+    public Boolean saveProperties = false;
 
     public TextCompareResultTransformer(OutputNamer outputNamer,
                                         Boolean includeOutputs,
                                         Boolean saveReport,
+                                        Boolean saveProperties,
                                         Boolean includeImage) {
         this.includeOutputs = includeOutputs;
         this.saveReport = saveReport;
         this.includeImage = includeImage;
         this.outputNamer = outputNamer;
+        this.saveProperties = saveProperties;
     }
 
     protected String getStringGivenLength(int length, char chr) {
@@ -66,8 +69,8 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
         Integer valueLength = "Value".length();
         String fileName0 = null;
         String fileName1 = null;
-        HashMap<String, ArrayList<MetadataWithImageName>> metadataByKeyName =
-                new HashMap<String, ArrayList<MetadataWithImageName>>();
+        HashMap<String, ArrayList<MetadataWithImageName>> metadataByKeyName = new HashMap<String, ArrayList<MetadataWithImageName>>();
+        PropertiesSummary propertiesSummary = new PropertiesSummary();
 
         ImageProcessorResult result = results[0];
         for(ImageMetadata metadata: result.getMetadata()){
@@ -78,6 +81,7 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
             sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
             if( metadata.getUnit() != null) unitLength = Math.max(unitLength,metadata.getUnit().length());
             if( metadata.getValue() != null) valueLength = Math.max(valueLength,metadata.getValue().toString().length());
+            propertiesSummary.addProperty(metadata.getKey());
         }
         fileName0 = fileName;
         for(ImageMetadata metadata: result.getMetadata()){
@@ -96,6 +100,7 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
             sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
             if( metadata.getUnit() != null) unitLength = Math.max(unitLength,metadata.getUnit().length());
             if( metadata.getValue() != null) valueLength = Math.max(valueLength,metadata.getValue().toString().length());
+            propertiesSummary.addProperty(metadata.getKey());
         }
         fileName1 = fileName;
         for(ImageMetadata metadata: result.getMetadata()){
@@ -194,6 +199,13 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
                     results[0],
                     results[1]
                     ));
+        }
+        if( this.saveProperties) {
+            output += "\nUsed significant properties";
+            output += "\n===========================\n";
+            for(String property: propertiesSummary.getProperties()){
+                output += String.format("%s\n",property);
+            }
         }
         return output;
     }

@@ -42,16 +42,19 @@ public class TextResultTransformer implements ResultTransformer{
     public Boolean includeOutputs = false;
     public Boolean includeImage = false;
     public OutputNamer outputNamer = null;
-    public Boolean saveReport;
+    public Boolean saveReport = false;
+    public Boolean saveProperties = false;
 
     public TextResultTransformer(OutputNamer outputNamer,
                                  Boolean includeOutputs,
                                  Boolean saveReport,
+                                 Boolean saveProperties,
                                  Boolean includeImage) {
         this.includeOutputs = includeOutputs;
         this.saveReport = saveReport;
         this.includeImage = includeImage;
         this.outputNamer = outputNamer;
+        this.saveProperties = saveProperties;
     }
 
     protected String getStringGivenLength(int length, char chr) {
@@ -70,6 +73,8 @@ public class TextResultTransformer implements ResultTransformer{
         Integer sourceLength = "Source".length();
         Integer unitLength = "Unit".length();
         Integer valueLength = "Value".length();
+        PropertiesSummary propertiesSummary = new PropertiesSummary();
+
         for(ImageMetadata metadata: result.getMetadata()){
             if( metadata.getKey().equals("File name") ){
                 fileName = (String) metadata.getValue();
@@ -78,6 +83,7 @@ public class TextResultTransformer implements ResultTransformer{
             sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
             if (metadata.getUnit() != null) unitLength = Math.max(unitLength, metadata.getUnit().length());
             if (metadata.getValue() != null) valueLength = Math.max(valueLength, metadata.getValue().toString().length());
+            propertiesSummary.addProperty(metadata.getKey());
         }
         Collections.sort(result.getMetadata(), new Comparator<ImageMetadata>() {
             @Override
@@ -143,6 +149,13 @@ public class TextResultTransformer implements ResultTransformer{
             output += "\nText report";
             output += "\n===========\n";
             output += String.format("\n  `text report <%s>`_\n", this.outputNamer.textName(result));
+        }
+        if( this.saveProperties ){
+            output += "\nUsed significant properties";
+            output += "\n===========================\n";
+            for(String property: propertiesSummary.getProperties()){
+                output += String.format("%s\n", property);
+            }
         }
         return output;
     }

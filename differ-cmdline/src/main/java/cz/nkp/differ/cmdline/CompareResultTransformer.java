@@ -11,6 +11,8 @@ public interface CompareResultTransformer {
     public Boolean includeOutputs = false;
     public Boolean includeImage = false;
     public OutputNamer outputNamer = null;
+    public Boolean saveProperties = false;
+    public Boolean saveReport = false;
 
     public String transform(ImageProcessorResult results[]);
 }
