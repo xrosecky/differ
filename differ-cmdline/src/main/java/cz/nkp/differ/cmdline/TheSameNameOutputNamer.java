@@ -42,4 +42,11 @@ public class TheSameNameOutputNamer implements OutputNamer {
         String output = String.format("%s-report.txt", this.baseName(result));
         return output;  //To change body of implemented methods use File | Settings | File Templates.
     }
+
+    @Override
+    public String textCompareName(ImageProcessorResult result1, ImageProcessorResult result2){
+        String basename1 = this.baseName(result1);
+        String basename2 = this.baseName(result2);
+        return String.format("%s-%s-report.txt", basename1, basename2);
+    }
 }

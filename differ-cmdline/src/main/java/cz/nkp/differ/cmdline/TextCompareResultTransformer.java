@@ -35,19 +35,35 @@ class MetadataWithImageName {
 public class TextCompareResultTransformer implements CompareResultTransformer {
     public Boolean includeOutputs = false;
     public Boolean includeImage = false;
+    public Boolean saveReport = false;
     public OutputNamer outputNamer = null;
 
-    public TextCompareResultTransformer(OutputNamer outputNamer, Boolean includeOutputs, Boolean includeImage) {
+    public TextCompareResultTransformer(OutputNamer outputNamer,
+                                        Boolean includeOutputs,
+                                        Boolean saveReport,
+                                        Boolean includeImage) {
         this.includeOutputs = includeOutputs;
+        this.saveReport = saveReport;
         this.includeImage = includeImage;
         this.outputNamer = outputNamer;
     }
 
+    protected String getStringGivenLength(int length, char chr) {
+        if( length > 0 ){
+            char [] array = new char[length];
+            Arrays.fill(array, chr);
+            return new String(array);
+        }
+        return "";
+    };
+
     @Override
     public String transform(ImageProcessorResult results[]) {
         String fileName = null;
-        Integer keyLength = 0;
-        Integer sourceLength = 0;
+        Integer keyLength = "Property".length();
+        Integer sourceLength = "Source".length();
+        Integer unitLength = "Unit".length();
+        Integer valueLength = "Value".length();
         String fileName0 = null;
         String fileName1 = null;
         HashMap<String, ArrayList<MetadataWithImageName>> metadataByKeyName =
@@ -60,6 +76,8 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
             };
             keyLength = Math.max(keyLength, metadata.getKey().length());
             sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
+            if( metadata.getUnit() != null) unitLength = Math.max(unitLength,metadata.getUnit().length());
+            if( metadata.getValue() != null) valueLength = Math.max(valueLength,metadata.getValue().toString().length());
         }
         fileName0 = fileName;
         for(ImageMetadata metadata: result.getMetadata()){
@@ -76,6 +94,8 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
             };
             keyLength = Math.max(keyLength, metadata.getKey().length());
             sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
+            if( metadata.getUnit() != null) unitLength = Math.max(unitLength,metadata.getUnit().length());
+            if( metadata.getValue() != null) valueLength = Math.max(valueLength,metadata.getValue().toString().length());
         }
         fileName1 = fileName;
         for(ImageMetadata metadata: result.getMetadata()){
@@ -96,22 +116,37 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
         output += String.format("%s: %sx%s\n", fileName1, results[1].getHeight(), results[1].getWidth());
         output += "\nSignificant Properties\n";
         output += "======================\n\n";
-        String format = String.format("%%-%ds  %%-%ds  %%-%ds  %%s\n", keyLength, sourceLength, fileNameLength);
+        String format = String.format("%%-%ds %%-%ds  %%-%ds  %%-%ds  %%s\n", keyLength, unitLength, sourceLength, fileNameLength);
 
         TreeSet<String> keys = new TreeSet<String>();
         for( String key: metadataByKeyName.keySet()){
             keys.add(key);
         }
+        output += String.format(format,"Property", "Unit", "Source", "File Name", "Value");
+        output += String.format(format,
+                getStringGivenLength(keyLength,'-'),
+                getStringGivenLength(unitLength, '-'),
+                getStringGivenLength(sourceLength,'-'),
+                getStringGivenLength(fileNameLength,'-'),
+                getStringGivenLength(valueLength,'-'));
         for( String key: keys){
             ArrayList<MetadataWithImageName> metadataWithImageNames = metadataByKeyName.get(key);
             for( MetadataWithImageName metadataWithImageName: metadataWithImageNames  ){
+                String unit = metadataWithImageName.metadata.getUnit();
                 output += String.format(format,
-                        propertyNameHider.getOrHide(metadataWithImageName.metadata.getKey())
-                        ,metadataWithImageName.metadata.getSource(),
-                        metadataWithImageName.imageName,
-                        metadataWithImageName.metadata.getValue());
+                                        propertyNameHider.getOrHide(metadataWithImageName.metadata.getKey()),
+                                        unit != null ? unit : "",
+                                        metadataWithImageName.metadata.getSource(),
+                                        metadataWithImageName.imageName,
+                                        metadataWithImageName.metadata.getValue());
             }
         }
+        output += String.format(format,
+                getStringGivenLength(keyLength,'-'),
+                getStringGivenLength(unitLength, '-'),
+                getStringGivenLength(sourceLength,'-'),
+                getStringGivenLength(fileNameLength,'-'),
+                getStringGivenLength(valueLength,'-'));
         if( this.includeOutputs ){
             output += "\nRaw outputs of extractors";
             output += "\n=========================\n\n";
@@ -151,6 +186,14 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
                     }
                 }
             }
+        }
+        if( this.saveReport ){
+            output += "\nText report";
+            output += "\n===========\n";
+            output += String.format("\n  `text report <%s>`_\n", this.outputNamer.textCompareName(
+                    results[0],
+                    results[1]
+                    ));
         }
         return output;
     }

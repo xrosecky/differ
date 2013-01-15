@@ -39,103 +39,101 @@
     </bean>
 
     <util:map id="units">
-	<entry key="Image width (Pixels)" value="px"/>
-	<entry key="Image height (Pixels)" value="px"/>
+	<entry key="Image width" value="px"/>
+	<entry key="Image height" value="px"/>
+	<entry key="Code block height" value="px"/>
+	<entry key="Code block width" value="px"/>
+	<entry key="Resolution horizontal" value="PPI"/>
+	<entry key="Resolution vertical" value="PPI"/>
+	<entry key="Display resolution horizontal" value="PPI"/>
+	<entry key="Display resolution vertical" value="PPI"/>
+	<entry key="Tile size X" value="PPI"/>
+	<entry key="Tile size Y" value="PPI"/>
     </util:map>
 
     <!-- <import resource="../dist/WEB-INF/applicationContext.xml"/> -->
 
     <!-- exiftool -->
-    <!-- <bean id="exiftoolMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer"> -->
-    <!--   <property name="mapOfRegexp"> -->
-    <!-- 	    <map> -->
-    <!-- 	      <entry key="FileSize"        value="File Size[\ \t]*:[\ \t]*(.+)"/>	       -->
-    <!-- 	      <entry key="FileType"        value="File Type[\ \t]*:[\ \t]*(.+)"/>	       -->
-    <!-- 	      <entry key="MIMEType"        value="MIME Type[\ \t]*:[\ \t]*(.+)"/>	       -->
-    <!-- 	      <entry key="SoftwareType"    value="Software[\ \t]*:[\ \t]*(.+)"/>	       -->
-    <!-- 	      <entry key="ModifiedDate"    value="File Modification Date/Time[\ \t]*:[\ \t]*(.+)"/>	       -->
-    <!-- 	      <entry key="ImageWidth"      value="Image Width[\ \t]*:[\ \t]*([0-9]+)[\ \t]*x[\ \t]*[0-9]+"/>	       -->
-    <!-- 	      <entry key="ImageHeight"     value="Image Height[\ \t]*:[\ \t]*[0-9]+[\ \t]*x[\ \t]*([0-9]+)"/>	       -->
-    <!-- 	      <entry key="ResolutionX"     value="X Resolution[\ \t]*:[\ \t]*(.*)"/> -->
-    <!-- 	      <entry key="ResolutionY"     value="Y Resolution[\ \t]*:[\ \t]*(.*)"/> -->
-    <!-- 	      <entry key="ResolutionUnit"  value="Resolution Unit[\ \t]*:[\ \t]*(.*)"/>	       -->
-    <!-- 	      <entry key="ImageUniqueID"   value="Image Unique ID[\ \t]*:[\ \t]*(.*)"/> -->
-    <!-- 	      <entry key="CompressionType" value="Compression[\ \t]*:[\ \t]*(.*)"/> -->
-    <!-- 	      <entry key="EncodingProcess" value="Encoding Process[\ \t]*:[\ \t]*(.*)"/> -->
-    <!-- 	      <entry key="BitsPerSample"   value="Bits Per Sample[\ \t]*:[\ \t]*([0-9]*)"/> -->
-    <!-- 	      <entry key="ColorComponents"   value="Color Components[\ \t]*:[\ \t]*([0-9]*)"/> -->
-    <!-- 	      <entry key="ColorComponents"   value="Color Components[\ \t]*:[\ \t]*([0-9]*)"/> -->
-    <!-- 	      <entry key="EXIF/Version"      value="Exif Version[\ \t]*:[\ \t]*(.*)"/>	       -->
-    <!-- 	      <entry key="EXIF/JFIFVersion"  value="JFIF Version[\ \t]*:[\ \t]*(.*)"/>	       -->
-    <!-- 	      <entry key="EXIF/ByteOrder"    value="Exif Byte Order[\ \t]*:[\ \t]*(.*)"/>	       -->
-    <!-- 	      <entry key="EXIF/Algorithm"    value="Components Configuration[\ \t]*:[\ \t]*(.*)"/>	       -->
-    <!-- 	      <entry key="EXIF/ExposureTime" value="Exposure Time[\ \t]*:[\ \t]*(.*)"/>	       -->
-    <!-- 	      <entry key="EXIF/FNumber"      value="F Number[\ \t]*:[\ \t]*(.*)"/> -->
-    <!-- 	      <entry key="EXIF/ISO"          value="ISO[\ \t]*:[\ \t]*(.*)"/> -->
-    <!-- 	      <entry key="EXIF/WhiteBalance" value="White Balance[\ \t]*:[\ \t]*(.*)"/> -->
-    <!-- 	    </map> -->
-    <!-- 	</property> -->
-    <!-- 	<property name="listOfRegexp"> -->
-    <!-- 	    <list> -->
-    <!-- 		<value>([^:]+):([^:]+)</value> -->
-    <!-- 	    </list> -->
-    <!-- 	</property> -->
-    <!-- </bean> -->
+    <bean id="exiftoolMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
+      <property name="mapOfRegexp">
+    	    <map>
+    	      <entry key="File size"        value="File Size[\ \t]*:[\ \t]*(.+)"/>
+    	      <entry key="File type"        value="File Type[\ \t]*:[\ \t]*(.+)"/>
+    	      <entry key="MIME type"        value="MIME Type[\ \t]*:[\ \t]*(.+)"/>
+    	      <entry key="Software type"    value="Software[\ \t]*:[\ \t]*(.+)"/>
+    	      <entry key="File last modified"    value="File Modification Date/Time[\ \t]*:[\ \t]*(.+)"/>
+    	      <entry key="Image width"      value="^[\ \t]*Image Width[\ \t]*:[\ \t]*([0-9]+)"/>
+    	      <entry key="Image height"     value="^[\ \t]*Image Height[\ \t]*:[\ \t]*([0-9]+)"/>
+    	      <entry key="Resolution horizontal"     value="X Resolution[\ \t]*:[\ \t]*(.*)"/>
+    	      <entry key="Resolution vertical"     value="Y Resolution[\ \t]*:[\ \t]*(.*)"/>
+    	      <entry key="Resolution unit"  value="Resolution Unit[\ \t]*:[\ \t]*(.*)"/>
+    	      <entry key="Univerzal unique identifier (UUID)"   value="Image Unique ID[\ \t]*:[\ \t]*(.*)"/>
+    	      <entry key="Compression" value="Compression[\ \t]*:[\ \t]*(.*)"/>
+    	      <entry key="Encoding process" value="Encoding Process[\ \t]*:[\ \t]*(.*)"/>
+    	      <entry key="Color depth"   value="Bits Per Sample[\ \t]*:[\ \t]*([0-9]*)"/>
+    	      <entry key="Number of channels"   value="Color Components[\ \t]*:[\ \t]*([0-9]*)"/>
+    	      <entry key="Color space"   value="Color Space[\ \t]*:[\ \t]*(.*)"/>
+    	    </map>
+    	</property>
+    	<property name="listOfRegexp">
+    	    <list>
+	      <!-- <value>([^:]+):([^:]+)</value> -->
+    	    </list>
+    	</property>
+    </bean>
 
-    <!-- <bean id="exiftoolMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor"> -->
-    <!-- 	<property name="source" value="exiftool"/> -->
-    <!-- 	<property name="transformer" ref="exiftoolMetadataTransformer"/> -->
-    <!-- 	<property name="programArguments"> -->
-    <!-- 	    <list> -->
-    <!-- 		<value>${exivtool.binary}</value> -->
-    <!-- 		<value>{file}</value> -->
-    <!-- 	    </list> -->
-    <!-- 	</property> -->
-    <!-- 	<property name="units" ref="units"/> -->
-    <!-- </bean> -->
+    <bean id="exiftoolMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+    	<property name="source" value="exiftool"/>
+    	<property name="transformer" ref="exiftoolMetadataTransformer"/>
+    	<property name="programArguments">
+    	    <list>
+    		<value>${exiftool.binary}</value>
+    		<value>{file}</value>
+    	    </list>
+    	</property>
+    	<property name="units" ref="units"/>
+    </bean>
 
     <!-- djvudump -->
 
-    <!-- <bean id="djvudumpMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer"> -->
-    <!--   <property name="mapOfRegexp"> -->
-    <!-- 	    <map> -->
-    <!-- 	      <entry key="FileSize"        value=""/>	       -->
-    <!-- 	      <entry key="FileType"        value="FORM:([^\[]+)"/>	       -->
-    <!-- 	      <entry key="SoftwareType"    value="INFO \[[0-9]+\][^x]*,[\ \t]*([^,]+)"/>	       -->
-    <!-- 	      <entry key="ImageWidth"      value="INFO \[[0-9]+\].*([0-9]+)x"/> -->
-    <!-- 	      <entry key="ImageHeight"     value="INFO \[[0-9]+\].*[0-9]+x([0-9]+)"/> -->
-    <!-- 	      <entry key="ResolutionX"     value="INFO \[[0-9]+\].*([0-9]+)x"/> -->
-    <!-- 	      <entry key="ResolutionY"     value="INFO \[[0-9]+\].*[0-9]+x([0-9]+)"/> -->
-    <!-- 	      <entry key="Resolution"      value="INFO \[[0-9=+\].*v[0-9]+,[\ \t]*([0-9]+[\ \t]*dpi)"/>	       -->
-    <!-- 	    </map> -->
-    <!-- 	</property> -->
-    <!-- 	<property name="listOfRegexp"> -->
-    <!-- 	    <list> -->
-    <!-- 		<value>([^:]+):([^:]+)</value> -->
-    <!-- 	    </list> -->
-    <!-- 	</property> -->
-    <!-- </bean> -->
+    <bean id="djvudumpMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
+      <property name="mapOfRegexp">
+    	    <map>
+    	      <!-- <entry key="File size"        value=""/> -->
+    	      <entry key="File type"        value="FORM:([^\[]+)"/>
+    	      <entry key="Software type"    value="INFO \[[0-9]+\][^x]*,[\ \t]*([^,]+)"/>
+    	      <entry key="Image width"      value="INFO \[[0-9]+\].*([0-9]+)x"/>
+    	      <entry key="Image height"     value="INFO \[[0-9]+\].*[0-9]+x([0-9]+)"/>
+    	      <entry key="Resolution"      value="INFO \[[0-9=+\].*v[0-9]+,[\ \t]*([0-9]+[\ \t]*dpi)"/>
+    	    </map>
+    	</property>
+    	<property name="listOfRegexp">
+    	    <list>
+    		<!-- <value>([^:]+):([^:]+)</value> -->
+    	    </list>
+    	</property>
+    </bean>
 
-    <!-- <bean id="djvudumpMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor"> -->
-    <!-- 	<property name="source" value="djvudump"/> -->
-    <!-- 	<property name="transformer" ref="djvudumpMetadataTransformer"/> -->
-    <!-- 	<property name="programArguments"> -->
-    <!-- 	    <list> -->
-    <!-- 		<value>${djvudump.binary}</value> -->
-    <!-- 		<value>{file}</value> -->
-    <!-- 	    </list> -->
-    <!-- 	</property> -->
-    <!-- 	<property name="units" ref="units"/> -->
-    <!-- </bean> -->
+    <bean id="djvudumpMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+    	<property name="source" value="djvudump"/>
+    	<property name="transformer" ref="djvudumpMetadataTransformer"/>
+    	<property name="programArguments">
+    	    <list>
+    		<value>${djvudump.binary}</value>
+    		<value>{file}</value>
+    	    </list>
+    	</property>
+    	<property name="units" ref="units"/>
+    </bean>
 
     <!-- exiv2 -->
     <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
       <property name="mapOfRegexp">
 	<map>
-	  <entry key="Image width (Pixels)"            value="Image size      : ([0-9]+) x [0-9]+"/>
-	  <entry key="Image height (Pixels)"           value="Image size      : [0-9]+ x ([0-9]+)"/>
-	  <entry key="Resolution horizontal (PPI)"     value="Exif Resolution : ([0-9]+) x [0-9]+"/>
-	  <entry key="Resolution vertical (PPI)"       value="Exif Resolution : [0-9]+ x ([0-9]+)"/>
+	  <entry key="Image width"            value="Image size      : ([0-9]+) x [0-9]+"/>
+	  <entry key="Image height"           value="Image size      : [0-9]+ x ([0-9]+)"/>
+	  <entry key="Resolution horizontal"     value="Exif Resolution : ([0-9]+) x [0-9]+"/>
+	  <entry key="Resolution vertical"       value="Exif Resolution : [0-9]+ x ([0-9]+)"/>
 	  <entry key="MIME type"                       value="MIME type       : (.*)"/>
 	  <entry key="File name"                       value="File name       : (.*)"/>
 	  <entry key="File path"                       value="File name       : (.*)"/>
@@ -161,6 +159,23 @@
       <property name="units" ref="units"/>
     </bean>
 
+    <!-- fits -->
+    <bean id="fitsMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
+    	<property name="stylesheet" value="fits.xsl"/>
+    </bean>
+    <bean id="fitsMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+      <property name="source" value="fits"/>
+      <property name="transformer" ref="fitsMetadataTransformer"/>
+      <property name="programArguments">
+	<list>
+	  <value>${fits.binary}</value>
+	  <value>-i</value>
+	  <value>{file}</value>
+	</list>
+      </property>
+      <property name="units" ref="units"/>
+    </bean>
+
     <!-- jpylyzer -->
     <bean id="jpylyzerMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
     	<property name="stylesheet" value="jpylyzer.xsl"/>
@@ -175,6 +190,7 @@
 	  <value>{file}</value>
 	</list>
       </property>
+      <property name="units" ref="units"/>
     </bean>
     
     <!-- Jhove -->
@@ -198,14 +214,13 @@
     <bean id="metadataExtractors" class="cz.nkp.differ.compare.metadata.MetadataExtractors">
 	<property name="extractors">
 	    <list>
-		<!-- <ref bean="exiftoolMetadataExtractor"/> -->
-		<!-- <ref bean="djvudumpMetadataExtractor"/> -->
-		<!-- <ref bean="jhoveMetadataExtractor"/> -->
-		<ref bean="exiv2MetadataExtractor"/>
-		<ref bean="jpylyzerMetadataExtractor"/>
+	      <ref bean="fitsMetadataExtractor"/>
+	      <ref bean="exiftoolMetadataExtractor"/>
+	      <ref bean="djvudumpMetadataExtractor"/>
+	      <ref bean="jhoveMetadataExtractor"/>
+	      <ref bean="exiv2MetadataExtractor"/>
+	      <ref bean="jpylyzerMetadataExtractor"/>
 	    </list>
 	</property>
     </bean>
-
-
 </beans>

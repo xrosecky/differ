@@ -6,6 +6,7 @@ import cz.nkp.differ.compare.metadata.ImageMetadata;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 
@@ -34,29 +35,49 @@ class TheSameValueHider {
         lastValue = value;
         return value;
     }
-}
+};
+
+
 public class TextResultTransformer implements ResultTransformer{
     public Boolean includeOutputs = false;
     public Boolean includeImage = false;
     public OutputNamer outputNamer = null;
+    public Boolean saveReport;
 
-    public TextResultTransformer(OutputNamer outputNamer, Boolean includeOutputs, Boolean includeImage) {
+    public TextResultTransformer(OutputNamer outputNamer,
+                                 Boolean includeOutputs,
+                                 Boolean saveReport,
+                                 Boolean includeImage) {
         this.includeOutputs = includeOutputs;
+        this.saveReport = saveReport;
         this.includeImage = includeImage;
         this.outputNamer = outputNamer;
     }
 
+    protected String getStringGivenLength(int length, char chr) {
+        if( length > 0 ){
+            char [] array = new char[length];
+            Arrays.fill(array, chr);
+            return new String(array);
+        }
+        return "";
+    };
+
     @Override
     public String transform(ImageProcessorResult result) {
         String fileName = null;
-        Integer keyLength = 0;
-        Integer sourceLength = 0;
+        Integer keyLength = "Property".length();
+        Integer sourceLength = "Source".length();
+        Integer unitLength = "Unit".length();
+        Integer valueLength = "Value".length();
         for(ImageMetadata metadata: result.getMetadata()){
             if( metadata.getKey().equals("File name") ){
                 fileName = (String) metadata.getValue();
             };
             keyLength = Math.max(keyLength, metadata.getKey().length());
             sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
+            if (metadata.getUnit() != null) unitLength = Math.max(unitLength, metadata.getUnit().length());
+            if (metadata.getValue() != null) valueLength = Math.max(valueLength, metadata.getValue().toString().length());
         }
         Collections.sort(result.getMetadata(), new Comparator<ImageMetadata>() {
             @Override
@@ -78,12 +99,25 @@ public class TextResultTransformer implements ResultTransformer{
         output += String.format("%s: %sx%s\n", fileName, result.getHeight(), result.getWidth());
         output += "\nSignificant Properties\n";
         output += "======================\n\n";
-        String format = String.format("%%-%ds  %%-%ds  %%s\n", keyLength, sourceLength);
+        String format = String.format("%%-%ds %%-%ds  %%-%ds  %%s\n", keyLength, unitLength, sourceLength);
+        output += String.format(format, "Property", "Unit", "Source", "Value");
+        output += String.format(format,
+                getStringGivenLength(keyLength,'-'),
+                getStringGivenLength(unitLength, '-'),
+                getStringGivenLength(sourceLength,'-'),
+                getStringGivenLength(valueLength,'-'));
         for (ImageMetadata metadata: result.getMetadata()) {
-            output += String.format(format, propertyNameHider.getOrHide(metadata.getKey())
-                    ,metadata.getSource(),
+            output += String.format(format,
+                    propertyNameHider.getOrHide(metadata.getKey()),
+                    metadata.getUnit() != null ? metadata.getUnit() : "",
+                    metadata.getSource(),
                     metadata.getValue());
         }
+        output += String.format(format,
+                getStringGivenLength(keyLength,'-'),
+                getStringGivenLength(unitLength, '-'),
+                getStringGivenLength(sourceLength,'-'),
+                getStringGivenLength(valueLength,'-'));
         if( this.includeOutputs ){
             output += "\nRaw outputs of extractors";
             output += "\n=========================\n\n";
@@ -104,6 +138,11 @@ public class TextResultTransformer implements ResultTransformer{
                     }
                 }
             }
+        }
+        if( this.saveReport ){
+            output += "\nText report";
+            output += "\n===========\n";
+            output += String.format("\n  `text report <%s>`_\n", this.outputNamer.textName(result));
         }
         return output;
     }

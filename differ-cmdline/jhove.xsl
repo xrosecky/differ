@@ -15,30 +15,30 @@
 
   <xsl:template match="/jhove:jhove">
       <properties>
-      <property name = "File last modified"><xsl:value-of select="jhove:repInfo/jhove:lastModified"/></property>
-      <property name = "File path"><xsl:value-of select="jhove:repInfo/@uri"/></property>
-      <property name = "File size"><xsl:value-of select="jhove:repInfo/jhove:size"/></property>
-      <property name = "MIME type"><xsl:value-of select="jhove:repInfo/jhove:mimeType"/></property>
-      <property name = "Image width (Pixels)"><xsl:value-of select=".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageWidth"/></property>
-      <property name = "Image height (Pixels)"><xsl:value-of select=".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageHeight"/></property>
-      <property name = "Color depth"><xsl:value-of select="//mix:ImageColorEncoding/mix:BitsPerSample/mix:bitsPerSampleValue"/></property>
-      <property name = "Number of channels"><xsl:value-of select="//mix:ImageColorEncoding/mix:samplesPerPixel"/></property>
-      <property name = "Color space"><xsl:value-of select=".//jhove:property[./jhove:name/text()='EnumCS']/jhove:values/jhove:value"/></property>
-      <property name = "Validation (well formed and valid)"><xsl:value-of select="jhove:repInfo/jhove:status"/></property>
-      <property name = "Type of format"><xsl:value-of select="jhove:repInfo/jhove:format"/></property>
-      <property name = "Universal unique identifier (UUID)"><xsl:value-of select="str:concat(.//jhove:property[generate-id(.)=$uuid_id]/jhove:values/jhove:value)"/></property>
-      <property name = "Tile size X (Pixels)"><xsl:value-of select="//jhove:property[./jhove:name/text()='XTSize']/jhove:values/jhove:value"/></property>
-      <property name = "Tile size Y (Pixels)"><xsl:value-of select="//jhove:property[./jhove:name/text()='YTSize']/jhove:values/jhove:value"/></property>
-      <property name = "Number of tiles"><xsl:value-of select="count(.//jhove:name[text()='TilePart'])"/></property>
-      <property name = "Transformation"><xsl:value-of select="//jhove:property[./jhove:name/text()='Transformation']/jhove:values/jhove:value"/></property>
-      <property name = "Compression"><xsl:value-of select=".//mix:Compression/mix:compressionScheme"/></property>
-      <property name = "Number of decomposition levels"><xsl:value-of select=".//jhove:property[./jhove:name/text()='NumberDecompositionLevels']/jhove:values/jhove:value"/></property>
-      <property name = "Number of quality layers"><xsl:value-of select=".//jhove:property[./jhove:name/text()='NumberOfLayers']/jhove:values/jhove:value"/></property>
-      <property name = "Multiple Component Transformation"><xsl:value-of select=".//jhove:property[./jhove:name/text()='MultipleComponentTransformation']/jhove:values/jhove:value"/></property>
-      <property name = "Progression order"><xsl:value-of select=".//jhove:property[./jhove:name/text()='ProgressionOrder']/jhove:values/jhove:value"/></property>
-      <property name = "Code block width (Pixels)"><xsl:value-of select=".//jhove:property[./jhove:name/text()='CodeBlockWidth']/jhove:values/jhove:value"/></property>
-      <property name = "Code block height (Pixels)"><xsl:value-of select=".//jhove:property[./jhove:name/text()='CodeBlockHeight']/jhove:values/jhove:value"/></property>
-      <property name = "Quantization style"><xsl:value-of select=".//jhove:property[./jhove:name/text()='QuantizationStyle']/jhove:values/jhove:value"/></property>
-   </properties>  
+	<property name = "File last modified"><xsl:value-of select="jhove:repInfo/jhove:lastModified"/></property>
+	<property name = "File path"><xsl:value-of select="jhove:repInfo/@uri"/></property>
+	<property name = "File size"><xsl:value-of select="jhove:repInfo/jhove:size"/></property>
+	<property name = "MIME type"><xsl:value-of select="jhove:repInfo/jhove:mimeType"/></property>
+	<property name = "Image width"><xsl:value-of select=".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageWidth"/></property>
+	<property name = "Image height"><xsl:value-of select=".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageHeight"/></property>
+	<property name = "Color depth"><xsl:value-of select="//mix:ImageColorEncoding/mix:BitsPerSample/mix:bitsPerSampleValue"/></property>
+	<property name = "Number of channels"><xsl:value-of select="//mix:ImageColorEncoding/mix:samplesPerPixel"/></property>
+	<property name = "Color space"><xsl:value-of select=".//jhove:property[./jhove:name/text()='EnumCS']/jhove:values/jhove:value"/></property>
+	<property name = "Validation (well formed and valid)"><xsl:value-of select="jhove:repInfo/jhove:status"/></property>
+	<property name = "Type of format"><xsl:value-of select="jhove:repInfo/jhove:format"/></property>
+	<property name = "Universal unique identifier (UUID)"><xsl:value-of select="str:concat(.//jhove:property[generate-id(.)=$uuid_id]/jhove:values/jhove:value)"/></property>
+	<property name = "Tile size X"><xsl:value-of select="//jhove:property[./jhove:name/text()='XTSize']/jhove:values/jhove:value"/></property>
+	<property name = "Tile size Y"><xsl:value-of select="//jhove:property[./jhove:name/text()='YTSize']/jhove:values/jhove:value"/></property>
+	<property name = "Number of tiles"><xsl:value-of select="count(.//jhove:name[text()='TilePart'])"/></property>
+	<property name = "Transformation"><xsl:value-of select="//jhove:property[./jhove:name/text()='Transformation']/jhove:values/jhove:value"/></property>
+	<property name = "Compression"><xsl:value-of select=".//mix:Compression/mix:compressionScheme"/></property>
+	<property name = "Number of decomposition levels"><xsl:value-of select=".//jhove:property[./jhove:name/text()='NumberDecompositionLevels']/jhove:values/jhove:value"/></property>
+	<property name = "Number of quality layers"><xsl:value-of select=".//jhove:property[./jhove:name/text()='NumberOfLayers']/jhove:values/jhove:value"/></property>
+	<property name = "Multiple Component Transformation"><xsl:value-of select=".//jhove:property[./jhove:name/text()='MultipleComponentTransformation']/jhove:values/jhove:value"/></property>
+	<property name = "Progression order"><xsl:value-of select=".//jhove:property[./jhove:name/text()='ProgressionOrder']/jhove:values/jhove:value"/></property>
+	<property name = "Code block width"><xsl:value-of select=".//jhove:property[./jhove:name/text()='CodeBlockWidth']/jhove:values/jhove:value"/></property>
+	<property name = "Code block height"><xsl:value-of select=".//jhove:property[./jhove:name/text()='CodeBlockHeight']/jhove:values/jhove:value"/></property>
+	<property name = "Quantization style"><xsl:value-of select=".//jhove:property[./jhove:name/text()='QuantizationStyle']/jhove:values/jhove:value"/></property>
+      </properties>
    </xsl:template>
 </xsl:stylesheet>

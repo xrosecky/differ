@@ -10,6 +10,7 @@ import cz.nkp.differ.compare.io.ImageProcessorResult;
 public interface ResultTransformer {
     public Boolean includeOutputs = false;
     public Boolean includeImage = false;
+    public Boolean saveReport = false;
     public OutputNamer outputNamer = null;
 
     public String transform(ImageProcessorResult result);
