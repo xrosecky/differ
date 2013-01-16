@@ -2,14 +2,16 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:context="http://www.springframework.org/schema/context"
     xsi:schemaLocation="
     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
-    ">
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 	<property name="locations">
 	    <list>
+                <value>classpath:/common.properties</value>
 		<value>${application.properties}</value>
 	    </list>
 	</property>
@@ -32,10 +34,11 @@
 	<property name="imageWidth" value="128"/>
     </bean>
 
-    <bean id="imageProcessor" class="cz.nkp.differ.compare.io.pure.PureImageProcessor">
+    <bean id="imageProcessor" class="cz.nkp.differ.compare.io.external.ExternalImageProcessor">
 	<constructor-arg ref="imageLoaderFactory"/>
 	<constructor-arg ref="metadataExtractors"/>
 	<property name="config" ref="imageProcessorConfig"/>
+	<property name="extractor" ref="differBinaryMetadataExtractor"/>
     </bean>
 
     <util:map id="units">
@@ -124,6 +127,29 @@
     	    </list>
     	</property>
     	<property name="units" ref="units"/>
+
+    <!-- differ binary -->
+    <bean id="differBinaryMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
+	<property name="stylesheet" value="${differBinary.xsl}"/>
+    </bean>
+
+    <bean id="differBinaryMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+	<property name="source" value="differ"/>
+	<property name="transformer" ref="differBinaryMetadataTransformer"/>
+	<property name="programArguments">
+	    <list>
+		<value>${differ.binary}</value>
+		<value>--image1</value>
+		<value>{file1}</value>
+		<value>--image2</value>
+		<value>{file2}</value>
+		<value>--algorithm</value>
+		<value>all</value>
+		<value>--colorspace</value>
+		<value>1</value>
+	    </list>
+	</property>
+	<property name="units" ref="units"/>
     </bean>
 
     <!-- exiv2 -->
@@ -195,7 +221,7 @@
     
     <!-- Jhove -->
     <bean id="jhoveMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-      <property name="stylesheet" value="jhove.xsl"/>
+      <property name="stylesheet" value="${jhove.xsl}"/>
     </bean>
 
     <bean id="jhoveMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
@@ -223,4 +249,25 @@
 	    </list>
 	</property>
     </bean>
+
+    <context:component-scan base-package="cz.nkp.differ"/>
+
+    <bean id="jaxb2Marshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+	<property name="classesToBeBound">
+	    <list>
+		<value>cz.nkp.differ.compare.io.SerializableImageProcessorResult</value>
+	    </list>
+	</property>
+	<property name="marshallerProperties">
+	    <map>
+		<entry>
+		    <key>
+			<util:constant static-field="javax.xml.bind.Marshaller.JAXB_FORMATTED_OUTPUT" />
+		    </key>
+		    <value type="boolean">true</value>
+		</entry>
+	    </map>
+	</property>
+    </bean>
+
 </beans>

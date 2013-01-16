@@ -73,6 +73,7 @@ public class PureImageProcessor extends ImageProcessor {
             String key = data.getKey();
             data.setConflict(conflicts.contains(key));
         }
+	result.setType(ImageProcessorResult.Type.IMAGE);
         return result;
     }
 
@@ -88,6 +89,7 @@ public class PureImageProcessor extends ImageProcessor {
             result.setType(ImageProcessorResult.Type.COMPARISON);
             this.processImage(compareFull, result);
             this.addMetrics(result);
+	    result.setType(ImageProcessorResult.Type.COMPARISON);
             results[2] = result;
         } catch (Exception ex) {
             ex.printStackTrace();

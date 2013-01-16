@@ -12,6 +12,9 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
+import org.springframework.core.io.DefaultResourceLoader;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -24,6 +27,7 @@ import org.w3c.dom.NodeList;
 public class XSLTTransformer implements ResultTransformer {
 
     private String stylesheet;
+    private ResourceLoader resourceLoader = new DefaultResourceLoader();
 
     public String getStylesheet() {
 	return stylesheet;
@@ -35,13 +39,14 @@ public class XSLTTransformer implements ResultTransformer {
 
     @Override
     public List<Entry> transform(byte[] stdout, byte[] stderr) throws IOException {
+	Resource resource = resourceLoader.getResource(stylesheet);
 	if (stylesheet == null) {
 	    throw new NullPointerException("stylesheet");
 	}
 	List<Entry> entries = new ArrayList<Entry>();
 	try {
 	    TransformerFactory factory = TransformerFactory.newInstance();
-	    Source xslt = new StreamSource(stylesheet);
+	    Source xslt = new StreamSource(resource.getInputStream());
 	    Transformer transformer = factory.newTransformer(xslt);
 	    Source src = new StreamSource(new ByteArrayInputStream(stdout));
 	    ByteArrayOutputStream os = new ByteArrayOutputStream();
@@ -56,10 +61,15 @@ public class XSLTTransformer implements ResultTransformer {
 		if (node.getNodeType() == Node.ELEMENT_NODE) {
 		     Element element = (Element) node;
 		     String key = node.getAttributes().getNamedItem("name").getNodeValue();
+		     String source = null;
+		     if (node.getAttributes().getNamedItem("source") != null) {
+			 source = node.getAttributes().getNamedItem("source").getNodeValue();
+		     }
 		     String value = node.getTextContent();
 		     Entry entry = new Entry();
 		     entry.setKey(key);
 		     entry.setValue(value);
+		     entry.setSource(source);
 		     entries.add(entry);
 		}
 	    }

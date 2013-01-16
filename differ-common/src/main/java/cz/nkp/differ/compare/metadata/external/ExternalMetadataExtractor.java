@@ -8,6 +8,8 @@ import cz.nkp.differ.plugins.tools.CommandRunner;
 import cz.nkp.differ.plugins.tools.CommandRunner.CommandOutput;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -55,16 +57,17 @@ public class ExternalMetadataExtractor implements MetadataExtractor {
     }
 
     @Override
-    public List<ImageMetadata> getMetadata(File file) {
-        if (file == null) {
-            throw new NullPointerException("file");
-        }
+    public List<ImageMetadata> getMetadata(File a) {
+	return this.getMetadata(Collections.singletonMap("{file}", a.getAbsolutePath()));
+    }
+
+    public List<ImageMetadata> getMetadata(Map<String, String> attributes) {
         List<ImageMetadata> result = new ArrayList<ImageMetadata>();
         List<String> arguments = new ArrayList<String>();
         for (String argument : programArguments) {
-            if (argument.equals("{file}")) {
-                arguments.add(file.getAbsolutePath());
-            } else {
+	    if (attributes.containsKey(argument)) {
+		arguments.add(attributes.get(argument));
+	    } else {
                 arguments.add(argument);
             }
         }
@@ -87,9 +90,21 @@ public class ExternalMetadataExtractor implements MetadataExtractor {
             }
             result.add(new ImageMetadata("exit-code", exitCodeString, metadataSource));
             if (cmdResult.getExitCode() == 0) {
+		Map<String, MetadataSource> sources = new HashMap<String, MetadataSource>();
                 List<Entry> entries = transformer.transform(cmdResult.getStdout(), cmdResult.getStderr());
                 for (Entry entry : entries) {
-                    ImageMetadata metadata = new ImageMetadata(entry.getKey(), entry.getValue(), metadataSource);
+		    ImageMetadata metadata = null;
+		    if (entry.getSource() == null) {
+			metadata = new ImageMetadata(entry.getKey(), entry.getValue(), metadataSource);
+		    } else {
+			MetadataSource newSource = sources.get(entry.getSource());
+			if (newSource == null) {
+			    newSource = new MetadataSource(cmdResult.getExitCode(), new String(cmdResult.getStdout()),
+				new String(cmdResult.getStderr()), entry.getSource());
+			    sources.put(entry.getSource(), newSource);
+			}
+			metadata = new ImageMetadata(entry.getKey(), entry.getValue(), newSource);
+		    }
                     if (units != null) {
                         String unit = units.get(entry.getKey());
                         metadata.setUnit(unit);

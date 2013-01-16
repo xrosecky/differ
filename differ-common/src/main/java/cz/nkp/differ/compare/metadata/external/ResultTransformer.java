@@ -12,7 +12,8 @@ public interface ResultTransformer {
     public static class Entry {
 
 	private String key;
-	private Object value;
+	private String source;
+	private String value;
 
 	public String getKey() {
 	    return key;
@@ -22,12 +23,20 @@ public interface ResultTransformer {
 	    this.key = key;
 	}
 
-	public Object getValue() {
+	public String getValue() {
 	    return value;
 	}
 
-	public void setValue(Object value) {
+	public void setValue(String value) {
 	    this.value = value;
+	}
+
+	public String getSource() {
+	    return source;
+	}
+
+	public void setSource(String source) {
+	    this.source = source;
 	}
 
     }

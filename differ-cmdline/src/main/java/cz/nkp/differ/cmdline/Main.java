@@ -4,15 +4,32 @@ import com.beust.jcommander.JCommander;
 import com.sun.jmx.snmp.defaults.DefaultPaths;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import cz.nkp.differ.compare.io.ImageProcessor;
 import cz.nkp.differ.compare.io.ImageProcessorResult;
+import cz.nkp.differ.compare.io.SerializableImageProcessorResult;
 import java.io.File;
 import java.io.FileWriter;
+import javax.xml.transform.stream.StreamResult;
+
 
 public class Main {
     public static void main(String[] args) throws Exception {
+// =======
+// 	ApplicationContext context =
+// 		new ClassPathXmlApplicationContext(new String[]{"appCtx-differ-cmdline.xml"});
+// 	ImageProcessor processor = (ImageProcessor) context.getBean("imageProcessor");
+// 	Jaxb2Marshaller marshaller = (Jaxb2Marshaller) context.getBean("jaxb2Marshaller");
+// 	File file = new File(args[0]);
+// 	ImageProcessorResult result = processor.processImage(file);
+// 	SerializableImageProcessorResult resultForSerialization = SerializableImageProcessorResult.create(result, false);
+// 	StreamResult streamResult = new StreamResult(System.out);
+// 	marshaller.marshal(resultForSerialization, streamResult);
+// >>>>>>> master
+
         ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"appCtx-differ-cmdline.xml"});
         ImageProcessor processor = (ImageProcessor) context.getBean("imageProcessor");
+	Jaxb2Marshaller marshaller = (Jaxb2Marshaller) context.getBean("jaxb2Marshaller");
         CommandArgs commandArgs = new CommandArgs();
         new JCommander(commandArgs,args);
         if( commandArgs.files.size() > 1){
@@ -47,6 +64,12 @@ public class Main {
             if ( commandArgs.saveReport ) {
                 FileWriter writer = new FileWriter(textResultTransformer.outputNamer.textName(result));
                 writer.write(output);
+                writer.close();
+                
+                writer = new FileWriter(textResultTransformer.outputNamer.reportName(result));
+                SerializableImageProcessorResult resultForSerialization = SerializableImageProcessorResult.create(result, false);
+                StreamResult streamResult = new StreamResult(writer);
+                marshaller.marshal(resultForSerialization, streamResult);
                 writer.close();
             }
         }
