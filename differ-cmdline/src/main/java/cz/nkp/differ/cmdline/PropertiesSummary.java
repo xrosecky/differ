@@ -1,6 +1,6 @@
 package cz.nkp.differ.cmdline;
 
-import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,11 +11,16 @@ import java.util.Set;
  * This class will collect all properties that occured in a validator output.
  */
 public class PropertiesSummary {
-    protected Set<String> properties;
-    void addProperty(String property){
-        this.properties.add(property);
+    protected TreeSet<String> properties;
+
+    public PropertiesSummary() {
+        properties = new TreeSet<String>();
     }
-    Set<String> getProperties(){
-        return this.properties;
+
+    public void addProperty(String property){
+        properties.add(property);
+    }
+    public TreeSet<String> getProperties(){
+        return properties;
     }
 }

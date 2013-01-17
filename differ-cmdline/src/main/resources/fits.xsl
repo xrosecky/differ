@@ -20,5 +20,5 @@
       <property name = "Image width"><xsl:value-of select="fits:metadata/fits:image/fits:imageWidth"/></property>
       <property name = "Image height"><xsl:value-of select="fits:metadata/fits:image/fits:imageHeight"/></property>
    </properties>  
-   </xsl:template>
+  </xsl:template>
 </xsl:stylesheet>

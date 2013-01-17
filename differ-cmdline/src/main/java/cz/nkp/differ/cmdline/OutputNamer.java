@@ -13,4 +13,5 @@ public interface OutputNamer {
     public String reportName(ImageProcessorResult result);
     public String textName(ImageProcessorResult result);
     public String textCompareName(ImageProcessorResult result1, ImageProcessorResult result2);
+    public String propertiesSummaryName(ImageProcessorResult result);
 }

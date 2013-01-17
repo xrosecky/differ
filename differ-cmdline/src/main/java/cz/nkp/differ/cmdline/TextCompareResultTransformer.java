@@ -17,21 +17,6 @@ import java.util.*;
  * To change this template use File | Settings | File Templates.
  */
 
-class MetadataWithImageName {
-    /*
-      The class will hold metadata even with image name.
-      It is important to join two results into one text/html table to compare them.
-      There is necesary to show a image name that a metadata relates to.
-     */
-    public String imageName;
-    public ImageMetadata metadata;
-
-    MetadataWithImageName (String imageName, ImageMetadata metadata){
-        this.metadata = metadata;
-        this.imageName = imageName;
-    }
-}
-
 public class TextCompareResultTransformer implements CompareResultTransformer {
     public Boolean includeOutputs = false;
     public Boolean includeImage = false;
@@ -62,136 +47,130 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
 
     @Override
     public String transform(ImageProcessorResult results[]) {
-        String fileName = null;
-        Integer keyLength = "Property".length();
+        Integer keyLength = "Significant Property".length();
         Integer sourceLength = "Source".length();
         Integer unitLength = "Unit".length();
         Integer valueLength = "Value".length();
-        String fileName0 = null;
-        String fileName1 = null;
-        HashMap<String, ArrayList<MetadataWithImageName>> metadataByKeyName = new HashMap<String, ArrayList<MetadataWithImageName>>();
+        Integer [] valueWithUnitLength = new Integer [2];
+        String [] fileNames = new String[2];
+        String [] filePaths = new String[2];
+        ImageMetadata [] exitCodeMetadata = new ImageMetadata[2];
+
+        valueWithUnitLength[0] = "Value".length();
+        valueWithUnitLength[1] = "Value".length();
+
+        HashMap<String, HashMap<String, ImageMetadata[]>> metadataByKeyName =
+                new HashMap<String, HashMap<String,ImageMetadata[]>>();
         PropertiesSummary propertiesSummary = new PropertiesSummary();
 
-        ImageProcessorResult result = results[0];
-        for(ImageMetadata metadata: result.getMetadata()){
-            if( metadata.getKey().equals("File name") ){
-                fileName = (String) metadata.getValue();
-            };
-            keyLength = Math.max(keyLength, metadata.getKey().length());
-            sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
-            if( metadata.getUnit() != null) unitLength = Math.max(unitLength,metadata.getUnit().length());
-            if( metadata.getValue() != null) valueLength = Math.max(valueLength,metadata.getValue().toString().length());
-            propertiesSummary.addProperty(metadata.getKey());
-        }
-        fileName0 = fileName;
-        for(ImageMetadata metadata: result.getMetadata()){
-            String key = metadata.getKey();
-            if( ! metadataByKeyName.containsKey(key)){
-                metadataByKeyName.put(key, new ArrayList<MetadataWithImageName>());
+        for(int imageOrder = 0;imageOrder < 2; imageOrder++ ){
+            ImageProcessorResult result = results[imageOrder];
+            for(ImageMetadata metadata: result.getMetadata()){
+
+                String key = metadata.getKey();
+                String source = metadata.getSource().toString();
+
+                if( key.equals("File name") ){
+                    fileNames[imageOrder] = (String) metadata.getValue();
+                } else if (key.equals("File path")) {
+                    filePaths[imageOrder] = (String) metadata.getValue();
+                } else if (key.equals("exit-code")){
+                    exitCodeMetadata[imageOrder] = metadata;
+                } else {
+                    keyLength = Math.max(keyLength, key.length());
+                    sourceLength = Math.max(sourceLength, source.length());
+                    if( metadata.getUnit() != null) unitLength = Math.max(unitLength,metadata.getUnit().length());
+                    if( metadata.getValue() != null){
+                        if( metadata.getUnit() != null ){
+                            valueWithUnitLength[imageOrder] = Math.max(
+                                    valueWithUnitLength[imageOrder],
+                                    metadata.getValue().toString().length()
+                                    );
+                        }
+                        valueLength = Math.max(valueLength,metadata.getValue().toString().length());
+                    }
+                    propertiesSummary.addProperty(key);
+                    if( ! metadataByKeyName.containsKey(key)){
+                        metadataByKeyName.put(key, new HashMap<String, ImageMetadata[]>());
+                    }
+                    if( ! metadataByKeyName.get(key).containsKey(source)){
+                        metadataByKeyName.get(key).put(source, new ImageMetadata[2] );
+                    }
+                    metadataByKeyName.get(key).get(source)[imageOrder] = metadata;
+                }
             }
-            metadataByKeyName.get(key).add(new MetadataWithImageName(fileName, metadata));
-        }
-        result = results[1];
-        for(ImageMetadata metadata: result.getMetadata()){
-            if( metadata.getKey().equals("File name") ){
-                fileName = (String) metadata.getValue();
-            };
-            keyLength = Math.max(keyLength, metadata.getKey().length());
-            sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
-            if( metadata.getUnit() != null) unitLength = Math.max(unitLength,metadata.getUnit().length());
-            if( metadata.getValue() != null) valueLength = Math.max(valueLength,metadata.getValue().toString().length());
-            propertiesSummary.addProperty(metadata.getKey());
-        }
-        fileName1 = fileName;
-        for(ImageMetadata metadata: result.getMetadata()){
-            String key = metadata.getKey();
-            if( ! metadataByKeyName.containsKey(key)){
-                metadataByKeyName.put(key, new ArrayList<MetadataWithImageName>());
-            }
-            metadataByKeyName.get(key).add(new MetadataWithImageName(fileName, metadata));
         }
 
         TheSameValueHider propertyNameHider = new TheSameValueHider();
         String output = "";
 
-        Integer fileNameLength = Math.max(fileName0.length(), fileName1.length());
+        Integer fileNameLength = Math.max(fileNames[0].length(), fileNames[1].length());
         output += "Characterization\n";
         output += "================\n\n";
-        output += String.format("%s: %sx%s\n", fileName0, results[0].getHeight(), results[0].getWidth());
-        output += String.format("%s: %sx%s\n", fileName1, results[1].getHeight(), results[1].getWidth());
+        output += String.format("  Img A :: %s: %sx%s\n", filePaths[0], results[0].getHeight(), results[0].getWidth());
+        output += String.format("  Img B :: %s: %sx%s\n", filePaths[1], results[1].getHeight(), results[1].getWidth());
         output += "\nSignificant Properties\n";
         output += "======================\n\n";
-        String format = String.format("%%-%ds %%-%ds  %%-%ds  %%-%ds  %%s\n", keyLength, unitLength, sourceLength, fileNameLength);
-
+        String format = String.format("%%-%ds  %%-%ds  %%-%ds  %%-%ds\n",
+               keyLength, sourceLength, valueLength, valueLength);
+        String [] valueFormats = new String [2];
+        for ( int imageOrder = 0; imageOrder < 2; imageOrder++){
+            valueFormats[imageOrder] = String.format("%%-%ds %%s", valueWithUnitLength[imageOrder]);
+        }
         TreeSet<String> keys = new TreeSet<String>();
         for( String key: metadataByKeyName.keySet()){
             keys.add(key);
         }
-        output += String.format(format,"Property", "Unit", "Source", "File Name", "Value");
+        output += String.format(format,"Significant Property", "Source", "Value for Img A", "Value for Img B");
         output += String.format(format,
                 getStringGivenLength(keyLength,'-'),
-                getStringGivenLength(unitLength, '-'),
                 getStringGivenLength(sourceLength,'-'),
-                getStringGivenLength(fileNameLength,'-'),
+                getStringGivenLength(valueLength,'-'),
                 getStringGivenLength(valueLength,'-'));
         for( String key: keys){
-            ArrayList<MetadataWithImageName> metadataWithImageNames = metadataByKeyName.get(key);
-            for( MetadataWithImageName metadataWithImageName: metadataWithImageNames  ){
-                String unit = metadataWithImageName.metadata.getUnit();
+            HashMap<String, ImageMetadata[]> metadataBySource = metadataByKeyName.get(key);
+            for( String source: metadataBySource.keySet() ){
+                ImageMetadata[] pair = metadataBySource.get(source);
+                String unit = (pair[0] != null ? pair[0].getUnit() : (pair[1] != null ? pair[1].getUnit() : ""));
                 output += String.format(format,
-                                        propertyNameHider.getOrHide(metadataWithImageName.metadata.getKey()),
-                                        unit != null ? unit : "",
-                                        metadataWithImageName.metadata.getSource(),
-                                        metadataWithImageName.imageName,
-                                        metadataWithImageName.metadata.getValue());
+                        propertyNameHider.getOrHide(key),
+                        source,
+                        String.format(valueFormats[0],
+                                (pair[0] != null ? pair[0].getValue() : ""),
+                                (unit != null ? unit : "")),
+                        String.format(valueFormats[1],
+                                (pair[1] != null ? pair[1].getValue() : ""),
+                                (unit != null ? unit : ""))
+                        );
             }
         }
         output += String.format(format,
                 getStringGivenLength(keyLength,'-'),
-                getStringGivenLength(unitLength, '-'),
                 getStringGivenLength(sourceLength,'-'),
-                getStringGivenLength(fileNameLength,'-'),
+                getStringGivenLength(valueLength,'-'),
                 getStringGivenLength(valueLength,'-'));
+
         if( this.includeOutputs ){
             output += "\nRaw outputs of extractors";
             output += "\n=========================\n\n";
-            result = results[0];
-            for(ImageMetadata metadata: result.getMetadata()){
-                if( metadata.getKey().equals("exit-code") ){
-                    File outFile = new File(this.outputNamer.rawOutputName(result,metadata.getSource().toString()));
-                    FileWriter writer = null;
-                    try {
-                        output += String.format("   %-10s   'output <%s>'_\n",
-                                metadata.getSource().toString(),
-                                outFile
-                        );
-                        writer = new FileWriter(outFile);
-                        writer.write(metadata.getSource().getStdout());
-                        writer.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-            result = results[1];
-            for(ImageMetadata metadata: result.getMetadata()){
-                if( metadata.getKey().equals("exit-code") ){
-                    File outFile = new File(this.outputNamer.rawOutputName(result,metadata.getSource().toString()));
-                    FileWriter writer = null;
-                    try {
-                        output += String.format("   %-10s   'output <%s>'_\n",
-                                metadata.getSource().toString(),
-                                outFile
-                        );
-                        writer = new FileWriter(outFile);
-                        writer.write(metadata.getSource().getStdout());
-                        writer.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+            for(int imageOrder = 0; imageOrder < 2; imageOrder++){
+                File outFile = new File(this.outputNamer.rawOutputName(results[imageOrder],
+                        exitCodeMetadata[imageOrder].getSource().toString()));
+                FileWriter writer = null;
+                try {
+                    output += String.format("   %-10s   'output <%s>'_\n",
+                            exitCodeMetadata[imageOrder].getSource().toString(),
+                            outFile
+                    );
+                    writer = new FileWriter(outFile);
+                    writer.write(exitCodeMetadata[imageOrder].getSource().getStdout());
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
             }
         }
+
         if( this.saveReport ){
             output += "\nText report";
             output += "\n===========\n";
@@ -200,12 +179,28 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
                     results[1]
                     ));
         }
+
         if( this.saveProperties) {
             output += "\nUsed significant properties";
-            output += "\n===========================\n";
-            for(String property: propertiesSummary.getProperties()){
-                output += String.format("%s\n",property);
+            output += "\n===========================\n\n";
+            for( int imageOrder=0; imageOrder < 2; imageOrder++){
+                output += String.format("\n  `used properties <%s>`_",
+                        this.outputNamer.propertiesSummaryName(results[imageOrder])
+                );
+
+                File outFile = new File(this.outputNamer.propertiesSummaryName(results[imageOrder]));
+                FileWriter writer = null;
+                try {
+                    writer = new FileWriter(outFile);
+                    for(String property: propertiesSummary.getProperties()){
+                        writer.write(String.format("1;%s\n",property));
+                    }
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+
         }
         return output;
     }

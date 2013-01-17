@@ -34,26 +34,22 @@
 	<property name="imageWidth" value="128"/>
     </bean>
 
-    <bean id="imageProcessor" class="cz.nkp.differ.compare.io.external.ExternalImageProcessor">
-	<constructor-arg ref="imageLoaderFactory"/>
-	<constructor-arg ref="metadataExtractors"/>
-	<property name="config" ref="imageProcessorConfig"/>
-	<property name="extractor" ref="differBinaryMetadataExtractor"/>
-    </bean>
+    <!-- <import resource="imageProcessor.xml"/> -->
+    <import resource="pureImageProcessor.xml"/>
 
     <util:map id="units">
-	<entry key="Image width" value="px"/>
-	<entry key="Image height" value="px"/>
-	<entry key="Code block height" value="px"/>
-	<entry key="Code block width" value="px"/>
-	<entry key="Resolution horizontal" value="PPI"/>
-	<entry key="Resolution vertical" value="PPI"/>
-	<entry key="Display resolution horizontal" value="PPI"/>
-	<entry key="Display resolution vertical" value="PPI"/>
-	<entry key="Tile size X" value="PPI"/>
-	<entry key="Tile size Y" value="PPI"/>
+      <entry key="Image width" value="px"/>
+      <entry key="Image height" value="px"/>
+      <entry key="Code block height" value="px"/>
+      <entry key="Code block width" value="px"/>
+      <entry key="Resolution horizontal" value="PPI"/>
+      <entry key="Resolution vertical" value="PPI"/>
+      <entry key="Display resolution horizontal" value="PPI"/>
+      <entry key="Display resolution vertical" value="PPI"/>
+      <entry key="Tile size X" value="PPI"/>
+      <entry key="Tile size Y" value="PPI"/>
     </util:map>
-
+    
     <!-- <import resource="../dist/WEB-INF/applicationContext.xml"/> -->
 
     <!-- exiftool -->
@@ -127,29 +123,6 @@
     	    </list>
     	</property>
     	<property name="units" ref="units"/>
-
-    <!-- differ binary -->
-    <bean id="differBinaryMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-	<property name="stylesheet" value="${differBinary.xsl}"/>
-    </bean>
-
-    <bean id="differBinaryMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-	<property name="source" value="differ"/>
-	<property name="transformer" ref="differBinaryMetadataTransformer"/>
-	<property name="programArguments">
-	    <list>
-		<value>${differ.binary}</value>
-		<value>--image1</value>
-		<value>{file1}</value>
-		<value>--image2</value>
-		<value>{file2}</value>
-		<value>--algorithm</value>
-		<value>all</value>
-		<value>--colorspace</value>
-		<value>1</value>
-	    </list>
-	</property>
-	<property name="units" ref="units"/>
     </bean>
 
     <!-- exiv2 -->
@@ -187,7 +160,7 @@
 
     <!-- fits -->
     <bean id="fitsMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-    	<property name="stylesheet" value="fits.xsl"/>
+    	<property name="stylesheet" value="${fits.xsl}"/>
     </bean>
     <bean id="fitsMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
       <property name="source" value="fits"/>
@@ -204,7 +177,7 @@
 
     <!-- jpylyzer -->
     <bean id="jpylyzerMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-    	<property name="stylesheet" value="jpylyzer.xsl"/>
+    	<property name="stylesheet" value="${jpylyzer.xsl}"/>
     </bean>
     <bean id="jpylyzerMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
       <property name="source" value="jpylyzer"/>
@@ -269,5 +242,5 @@
 	    </map>
 	</property>
     </bean>
-
+    
 </beans>

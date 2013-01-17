@@ -1,4 +1,4 @@
-LPyLyzer
+JPyLyzer
 ........
 
 .. literalinclude:: outputs/get-jpylyzer.sh

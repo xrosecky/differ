@@ -6,9 +6,7 @@ import cz.nkp.differ.compare.metadata.ImageMetadata;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 
 /**
@@ -69,7 +67,7 @@ public class TextResultTransformer implements ResultTransformer{
     @Override
     public String transform(ImageProcessorResult result) {
         String fileName = null;
-        Integer keyLength = "Property".length();
+        Integer keyLength = "Significant Property".length();
         Integer sourceLength = "Source".length();
         Integer unitLength = "Unit".length();
         Integer valueLength = "Value".length();
@@ -106,7 +104,7 @@ public class TextResultTransformer implements ResultTransformer{
         output += "\nSignificant Properties\n";
         output += "======================\n\n";
         String format = String.format("%%-%ds %%-%ds  %%-%ds  %%s\n", keyLength, unitLength, sourceLength);
-        output += String.format(format, "Property", "Unit", "Source", "Value");
+        output += String.format(format, "Significant Property", "Unit", "Source", "Value");
         output += String.format(format,
                 getStringGivenLength(keyLength,'-'),
                 getStringGivenLength(unitLength, '-'),
@@ -152,9 +150,10 @@ public class TextResultTransformer implements ResultTransformer{
         }
         if( this.saveProperties ){
             output += "\nUsed significant properties";
-            output += "\n===========================\n";
-            for(String property: propertiesSummary.getProperties()){
-                output += String.format("%s\n", property);
+            output += "\n===========================\n\n";
+            TreeSet<String> properties = propertiesSummary.getProperties();
+            for(String property: properties){
+                output += String.format("   %s\n", property);
             }
         }
         return output;

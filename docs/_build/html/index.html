@@ -56,7 +56,7 @@
 <li><a class="reference internal" href="#layers-and-compressions" id="id13">Layers and Compressions</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#lpylyzer" id="id14">LPyLyzer</a><ul>
+<li><a class="reference internal" href="#jpylyzer" id="id14">JPyLyzer</a><ul>
 <li><a class="reference internal" href="#id2" id="id15">Significant Properties</a></li>
 </ul>
 </li>
@@ -125,7 +125,7 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 <li><a class="reference internal" href="#layers-and-compressions" id="id36">Layers and Compressions</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#lpylyzer" id="id37">LPyLyzer</a><ul>
+<li><a class="reference internal" href="#jpylyzer" id="id37">JPyLyzer</a><ul>
 <li><a class="reference internal" href="#id2" id="id38">Significant Properties</a></li>
 </ul>
 </li>
@@ -244,8 +244,8 @@ TXTZ .. hidden text layer</p>
 <p>slices nejsou moc dulezite.</p>
 </div>
 </div>
-<div class="section" id="lpylyzer">
-<h3><a class="toc-backref" href="#id37">LPyLyzer</a><a class="headerlink" href="#lpylyzer" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="jpylyzer">
+<h3><a class="toc-backref" href="#id37">JPyLyzer</a><a class="headerlink" href="#jpylyzer" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
 jpylyzer --verbose <span class="s1">&#39;/opt/testovaci-data/2_Set ot TEST images Vlna_testovani-Vysledky_porovnani_obrazku/2_Sada_testovacich_obrazku/3_JP2/3_JP2-KAKADU_KT-Voda-VMPC_OK/3_01_JP2-OK/3_2_01_01-KT-300dpi-Orig-KDU.jp2&#39;</span> | xmlstarlet fo &gt; jpylyzer.raw
 </pre></div>
@@ -28360,6 +28360,54 @@ Qabs_steps=0.003906,0.001953,0.001953,0.000977,0.001953,0.001953,0.000977,0.001
 </tr>
 </tbody>
 </table>
+<p>Consumed 0 tile-part(s) from a total of 1 tile(s).</p>
+<p>... Bits per pixel
+Consumed 114 codestream bytes (excluding any file format) = 0.003479 bits/pel.</p>
+<p>o,no,no</p>
+<p>... Color depth;colorDepth
+Sprecision=8,8,8</p>
+<p>... ;SSampling
+Ssampling={1,1},{1,1},{1,1}</p>
+<p>... ;sdims
+Sdims={512,512},{512,512},{512,512}</p>
+<p>... Transformation
+Cycc=yes</p>
+<p>... ;cmct
+Cmct=0</p>
+<p>... Number of quality layers
+Clayers=1</p>
+<p>... Start of packet header
+Cuse_sop=no</p>
+<p>... End of packet header
+Cuse_eph=no</p>
+<p>... Progression order
+Corder=RLCP</p>
+<p>Calign_blk_last={no,no}</p>
+<p>... Number of decomposition levels
+Clevels=5</p>
+<p>... ;cads
+Cads=0</p>
+<p>... ;cdfs
+Cdfs=0</p>
+<p>... ;cdecomp
+Cdecomp=B(-:-:-)</p>
+<p>... Compression  (reversible/ireversible)
+Creversible=no</p>
+<p>... Type of algorithm  W5X3, W9X7
+Ckernels=W9X7</p>
+<p>... ;catk
+Catk=0</p>
+<p>... Precints
+Cuse_precincts=no</p>
+<p>... Code block size
+Cblk={32,32}</p>
+<p>... Bypass;Cmodes
+Cmodes=0</p>
+<p>... ;qguart
+Qguard=2</p>
+<p>Qderived=no
+Qabs_steps=0.003906,0.001953,0.001953,0.000977,0.001953,0.001953,0.000977,0.001
+953,0.001953,0.000977,0.001953,0.001953,0.000977,0.001953,0.001953,0.000977</p>
 </div>
 </div>
 </div>
@@ -28586,218 +28634,53 @@ Text report
 <div class="highlight-python"><pre>Characterization
 ================
 
-image.jpg: 2480x1748
-image2.jpg: 2480x1748
+  Img A :: /opt/differ/differ-cmdline/image.jpg: 2480x1748
+  Img B :: /opt/differ/differ-cmdline/image2.jpg: 2480x1748
 
 Significant Properties
 ======================
 
-Property                           Unit  Source    File Name   Value
----------------------------------- ----  --------  ----------  -------------------------------------
-Code block height                  px    jhove     image.jpg   
-                                   px    jpylyzer  image.jpg   
-                                   px    jhove     image2.jpg  
-                                   px    jpylyzer  image2.jpg  
-Code block width                   px    jhove     image.jpg   
-                                   px    jpylyzer  image.jpg   
-                                   px    jhove     image2.jpg  
-                                   px    jpylyzer  image2.jpg  
-Coding bypass                            jpylyzer  image.jpg   
-                                         jpylyzer  image2.jpg  
-Color depth                              exiftool  image.jpg   8
-                                         jhove     image.jpg   8
-                                         jpylyzer  image.jpg   
-                                         exiftool  image2.jpg  8
-                                         jhove     image2.jpg  8
-                                         jpylyzer  image2.jpg  
-Color space                              exiftool  image.jpg   sRGB
-                                         jhove     image.jpg   
-                                         jpylyzer  image.jpg   
-                                         exiftool  image2.jpg  sRGB
-                                         jhove     image2.jpg  
-                                         jpylyzer  image2.jpg  
-Commentary                               jpylyzer  image.jpg   
-                                         jpylyzer  image2.jpg  
-Compression                              exiftool  image.jpg   JPEG (old-style)
-                                         jhove     image.jpg   JPEG
-                                         jpylyzer  image.jpg   
-                                         exiftool  image2.jpg  JPEG (old-style)
-                                         jhove     image2.jpg  JPEG
-                                         jpylyzer  image2.jpg  
-Compression ratio                        jpylyzer  image.jpg   
-                                         jpylyzer  image2.jpg  
-Display resolution horizontal      PPI   jpylyzer  image.jpg   
-                                   PPI   jpylyzer  image2.jpg  
-Display resolution vertical        PPI   jpylyzer  image.jpg   
-                                   PPI   jpylyzer  image2.jpg  
-Encoding process                         exiftool  image.jpg   Baseline DCT, Huffman coding
-                                         exiftool  image2.jpg  Baseline DCT, Huffman coding
-End of packet header                     jpylyzer  image.jpg   
-                                         jpylyzer  image2.jpg  
-File last modified                       fits      image.jpg   
-                                         exiftool  image.jpg   2011:10:24 15:06:10+02:00
-                                         jhove     image.jpg   2011-10-24T15:06:10+02:00
-                                         jpylyzer  image.jpg   Mon Oct 24 15:06:10 2011
-                                         fits      image2.jpg  
-                                         exiftool  image2.jpg  2011:10:24 15:13:54+02:00
-                                         jhove     image2.jpg  2011-10-24T15:13:54+02:00
-                                         jpylyzer  image2.jpg  Mon Oct 24 15:13:54 2011
-File name                                core      image.jpg   image.jpg
-                                         fits      image.jpg   /opt/differ/differ-cmdline/image.jpg
-                                         exiv2     image.jpg   /opt/differ/differ-cmdline/image.jpg
-                                         jpylyzer  image.jpg   image.jpg
-                                         core      image2.jpg  image2.jpg
-                                         fits      image2.jpg  /opt/differ/differ-cmdline/image2.jpg
-                                         exiv2     image2.jpg  /opt/differ/differ-cmdline/image2.jpg
-                                         jpylyzer  image2.jpg  image2.jpg
-File path                                core      image.jpg   /opt/differ/differ-cmdline/image.jpg
-                                         fits      image.jpg   /opt/differ/differ-cmdline/image.jpg
-                                         jhove     image.jpg   /opt/differ/differ-cmdline/image.jpg
-                                         exiv2     image.jpg   /opt/differ/differ-cmdline/image.jpg
-                                         jpylyzer  image.jpg   /opt/differ/differ-cmdline/image.jpg
-                                         core      image2.jpg  /opt/differ/differ-cmdline/image2.jpg
-                                         fits      image2.jpg  /opt/differ/differ-cmdline/image2.jpg
-                                         jhove     image2.jpg  /opt/differ/differ-cmdline/image2.jpg
-                                         exiv2     image2.jpg  /opt/differ/differ-cmdline/image2.jpg
-                                         jpylyzer  image2.jpg  /opt/differ/differ-cmdline/image2.jpg
-File size                                fits      image.jpg   301376
-                                         exiftool  image.jpg   294 kB
-                                         jhove     image.jpg   301376
-                                         exiv2     image.jpg   301376
-                                         jpylyzer  image.jpg   301376
-                                         fits      image2.jpg  307248
-                                         exiftool  image2.jpg  300 kB
-                                         jhove     image2.jpg  307248
-                                         exiv2     image2.jpg  307248
-                                         jpylyzer  image2.jpg  307248
-File type                                exiftool  image.jpg   JPEG
-                                         exiftool  image2.jpg  JPEG
-Image height                             core      image.jpg   2480
-                                   px    fits      image.jpg   2480
-                                   px    exiftool  image.jpg   2480
-                                   px    jhove     image.jpg   2480
-                                   px    exiv2     image.jpg   2480
-                                   px    jpylyzer  image.jpg   
-                                         core      image2.jpg  2480
-                                   px    fits      image2.jpg  2480
-                                   px    exiftool  image2.jpg  2480
-                                   px    jhove     image2.jpg  2480
-                                   px    exiv2     image2.jpg  2480
-                                   px    jpylyzer  image2.jpg  
-Image width                              core      image.jpg   1748
-                                   px    fits      image.jpg   1748
-                                   px    exiftool  image.jpg   1748
-                                   px    jhove     image.jpg   1748
-                                   px    exiv2     image.jpg   1748
-                                   px    jpylyzer  image.jpg   
-                                         core      image2.jpg  1748
-                                   px    fits      image2.jpg  1748
-                                   px    exiftool  image2.jpg  1748
-                                   px    jhove     image2.jpg  1748
-                                   px    exiv2     image2.jpg  1748
-                                   px    jpylyzer  image2.jpg  
-MIME type                                exiftool  image.jpg   image/jpeg
-                                         jhove     image.jpg   image/jpeg
-                                         exiv2     image.jpg   image/jpeg
-                                         exiftool  image2.jpg  image/jpeg
-                                         jhove     image2.jpg  image/jpeg
-                                         exiv2     image2.jpg  image/jpeg
-Multiple Component Transformation        jhove     image.jpg   
-                                         jhove     image2.jpg  
-Number of channels                       exiftool  image.jpg   3
-                                         jhove     image.jpg   3
-                                         jpylyzer  image.jpg   
-                                         exiftool  image2.jpg  3
-                                         jhove     image2.jpg  3
-                                         jpylyzer  image2.jpg  
-Number of decomposition levels           jhove     image.jpg   
-                                         jpylyzer  image.jpg   
-                                         jhove     image2.jpg  
-                                         jpylyzer  image2.jpg  
-Number of quality layers                 jhove     image.jpg   
-                                         jpylyzer  image.jpg   
-                                         jhove     image2.jpg  
-                                         jpylyzer  image2.jpg  
-Number of tiles                          jhove     image.jpg   0
-                                         jpylyzer  image.jpg   
-                                         jhove     image2.jpg  0
-                                         jpylyzer  image2.jpg  
-Precincts                                jpylyzer  image.jpg   
-                                         jpylyzer  image2.jpg  
-Progression order                        jhove     image.jpg   
-                                         jpylyzer  image.jpg   
-                                         jhove     image2.jpg  
-                                         jpylyzer  image2.jpg  
-Quantization style                       jhove     image.jpg   
-                                         jhove     image2.jpg  
-Resolution horizontal              PPI   exiftool  image.jpg   300
-                                   PPI   exiv2     image.jpg   1748
-                                   PPI   jpylyzer  image.jpg   
-                                   PPI   exiftool  image2.jpg  300
-                                   PPI   exiv2     image2.jpg  1748
-                                   PPI   jpylyzer  image2.jpg  
-Resolution unit                          exiftool  image.jpg   inches
-                                         exiftool  image2.jpg  inches
-Resolution vertical                PPI   exiftool  image.jpg   300
-                                   PPI   exiv2     image.jpg   2480
-                                   PPI   jpylyzer  image.jpg   
-                                   PPI   exiftool  image2.jpg  300
-                                   PPI   exiv2     image2.jpg  2480
-                                   PPI   jpylyzer  image2.jpg  
-Software type                            exiftool  image.jpg   Adobe Photoshop CS4 Windows
-                                         exiftool  image2.jpg  Adobe Photoshop CS4 Windows
-Start of packet header                   jpylyzer  image.jpg   
-                                         jpylyzer  image2.jpg  
-Thumbnail                                exiv2     image.jpg   image/jpeg, 934 Bytes
-                                         exiv2     image2.jpg  image/jpeg, 934 Bytes
-Tile size X                        PPI   jhove     image.jpg   
-                                   PPI   jhove     image2.jpg  
-Tile size Y                        PPI   jhove     image.jpg   
-                                   PPI   jhove     image2.jpg  
-Transformation                           jhove     image.jpg   
-                                         jpylyzer  image.jpg   
-                                         jhove     image2.jpg  
-                                         jpylyzer  image2.jpg  
-Type of format                           jhove     image.jpg   JPEG
-                                         jpylyzer  image.jpg   
-                                         jhove     image2.jpg  JPEG
-                                         jpylyzer  image2.jpg  
-Universal unique identifier (UUID)       jhove     image.jpg   
-                                         jpylyzer  image.jpg   
-                                         jhove     image2.jpg  
-                                         jpylyzer  image2.jpg  
-Validation (well formed and valid)       jhove     image.jpg   Well-Formed and valid
-                                         jpylyzer  image.jpg   False
-                                         jhove     image2.jpg  Well-Formed and valid
-                                         jpylyzer  image2.jpg  False
-exit-code                                fits      image.jpg   ok
-                                         exiftool  image.jpg   ok
-                                         djvudump  image.jpg   error (1)
-                                         jhove     image.jpg   ok
-                                         exiv2     image.jpg   ok
-                                         jpylyzer  image.jpg   ok
-                                         fits      image2.jpg  ok
-                                         exiftool  image2.jpg  ok
-                                         djvudump  image2.jpg  error (1)
-                                         jhove     image2.jpg  ok
-                                         exiv2     image2.jpg  ok
-                                         jpylyzer  image2.jpg  ok
----------------------------------- ----  --------  ----------  -------------------------------------
+Significant Property   Source    Value for Img A               Value for Img B             
+---------------------  --------  ----------------------------  ----------------------------
+Color depth            exiftool  8                             8                           
+Color space            exiftool  sRGB                          sRGB                        
+Compression            exiftool  JPEG (old-style)              JPEG (old-style)            
+Encoding process       exiftool  Baseline DCT, Huffman coding   Baseline DCT, Huffman coding 
+File last modified     fits                                                                
+                       exiftool  2011:10:24 15:06:10+02:00     2011:10:24 15:13:54+02:00   
+File size              fits      301376                        307248                      
+                       exiftool  294 kB                        300 kB                      
+                       exiv2     301376                        307248                      
+File type              exiftool  JPEG                          JPEG                        
+Image height           fits      2480  px                      2480  px                    
+                       exiftool  2480  px                      2480  px                    
+                       exiv2     2480  px                      2480  px                    
+                       core      2480                          2480                        
+Image width            fits      1748  px                      1748  px                    
+                       exiftool  1748  px                      1748  px                    
+                       exiv2     1748  px                      1748  px                    
+                       core      1748                          1748                        
+MIME type              exiftool  image/jpeg                    image/jpeg                  
+                       exiv2     image/jpeg                    image/jpeg                  
+Number of channels     exiftool  3                             3                           
+Resolution horizontal  exiftool  300   PPI                     300   PPI                   
+                       exiv2     1748  PPI                     1748  PPI                   
+Resolution unit        exiftool  inches                        inches                      
+Resolution vertical    exiftool  300   PPI                     300   PPI                   
+                       exiv2     2480  PPI                     2480  PPI                   
+Software type          exiftool  Adobe Photoshop CS4 Windows   Adobe Photoshop CS4 Windows 
+Thumbnail              exiv2     image/jpeg, 934 Bytes         image/jpeg, 934 Bytes       
+format                 jhove     JPEG                          JPEG                        
+height                 jhove     2480                          2480                        
+mimetype               jhove     image/jpeg                    image/jpeg                  
+status                 jhove     Well-Formed and valid         Well-Formed and valid       
+width                  jhove     1748                          1748                        
+---------------------  --------  ----------------------------  ----------------------------
 
 Raw outputs of extractors
 =========================
 
-   fits         'output &lt;image-output-fits.raw&gt;'_
-   exiftool     'output &lt;image-output-exiftool.raw&gt;'_
-   djvudump     'output &lt;image-output-djvudump.raw&gt;'_
-   jhove        'output &lt;image-output-jhove.raw&gt;'_
-   exiv2        'output &lt;image-output-exiv2.raw&gt;'_
    jpylyzer     'output &lt;image-output-jpylyzer.raw&gt;'_
-   fits         'output &lt;image2-output-fits.raw&gt;'_
-   exiftool     'output &lt;image2-output-exiftool.raw&gt;'_
-   djvudump     'output &lt;image2-output-djvudump.raw&gt;'_
-   jhove        'output &lt;image2-output-jhove.raw&gt;'_
-   exiv2        'output &lt;image2-output-exiv2.raw&gt;'_
    jpylyzer     'output &lt;image2-output-jpylyzer.raw&gt;'_
 
 Text report
@@ -28805,6 +28688,12 @@ Text report
 
   `text report &lt;image-image2-report.txt&gt;`_
 
+Used significant properties
+===========================
+
+
+  `used properties &lt;image-used-properties.txt&gt;`_
+  `used properties &lt;image2-used-properties.txt&gt;`_
 </pre>
 </div>
 </div>
@@ -28827,7 +28716,7 @@ Text report
 <li><a class="reference internal" href="#layers-and-compressions">Layers and Compressions</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#lpylyzer">LPyLyzer</a><ul>
+<li><a class="reference internal" href="#jpylyzer">JPyLyzer</a><ul>
 <li><a class="reference internal" href="#id2">Significant Properties</a></li>
 </ul>
 </li>

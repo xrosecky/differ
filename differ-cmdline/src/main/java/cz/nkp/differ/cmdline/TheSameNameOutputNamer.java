@@ -49,4 +49,10 @@ public class TheSameNameOutputNamer implements OutputNamer {
         String basename2 = this.baseName(result2);
         return String.format("%s-%s-report.txt", basename1, basename2);
     }
+
+    @Override
+    public String propertiesSummaryName(ImageProcessorResult result){
+        String output = String.format("%s-used-properties.txt", this.baseName(result));
+        return output;
+    }
 }
