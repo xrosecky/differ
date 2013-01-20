@@ -17,7 +17,6 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import com.vaadin.terminal.gwt.server.WebApplicationContext;
 import com.vaadin.ui.Window;
-import cz.nkp.differ.exceptions.FatalDifferException;
 
 import cz.nkp.differ.gui.windows.MainDifferWindow;
 import cz.nkp.differ.io.ImageManager;
@@ -25,7 +24,7 @@ import cz.nkp.differ.model.User;
 import cz.nkp.differ.user.UserManager;
 import eu.livotov.tpt.TPTApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.web.context.support.XmlWebApplicationContext;
 
 /**
  * The main Application instance, responsible for setting global settings, such as locale, theme, and the root window for the GUI.
@@ -129,14 +128,9 @@ public class DifferApplication extends TPTApplication {
 
     @Override
     public void firstApplicationStartup() {
-	String applicationContextFileLocation = System.getProperty("application.context");
-	if (applicationContextFileLocation != null) {
-	    applicationContext = new FileSystemXmlApplicationContext(applicationContextFileLocation);
-	    userManager = (UserManager) applicationContext.getBean("userManager");
-	    imageManager = (ImageManager) applicationContext.getBean("imageManager");
-	} else {
-	    throw new FatalDifferException("System property application.context is not set!");
-	}
+	applicationContext = new XmlWebApplicationContext();
+	userManager = (UserManager) applicationContext.getBean("userManager");
+	imageManager = (ImageManager) applicationContext.getBean("imageManager");
     }
 
     @Override

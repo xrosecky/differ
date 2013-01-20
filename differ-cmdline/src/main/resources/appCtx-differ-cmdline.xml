@@ -11,7 +11,7 @@
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 	<property name="locations">
 	    <list>
-                <value>classpath:/common.properties</value>
+		<value>classpath:/common.properties</value>
 		<value>${application.properties}</value>
 	    </list>
 	</property>
@@ -147,5 +147,5 @@
 	    </map>
 	</property>
     </bean>
-
+    
 </beans>

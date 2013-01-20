@@ -9,294 +9,319 @@
     <inceptionYear>2011</inceptionYear>
     <url>http://differ.nkp.cz</url>
     <organization>
-        <name>The National Library of the Czech Republic</name>
-        <url>http://www.nkp.cz</url>
+	<name>The National Library of the Czech Republic</name>
+	<url>http://www.nkp.cz</url>
     </organization>
   
     <!-- Differ Parent Include -->
     <parent>
-        <groupId>cz.nkp</groupId>
-        <artifactId>differ</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+	<groupId>cz.nkp</groupId>
+	<artifactId>differ</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
     </parent>
   
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <differ.bin.dir>./bin</differ.bin.dir>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<differ.bin.dir>./bin</differ.bin.dir>
     </properties>
   
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler-plugin.version}</version>
-                <configuration>
-                    <source>${java.source.version}</source>
-                    <target>${java.source.target.version}</target>
-                </configuration>
-            </plugin>
+	<plugins>
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<version>${maven-compiler-plugin.version}</version>
+		<configuration>
+		    <source>${java.source.version}</source>
+		    <target>${java.source.target.version}</target>
+		</configuration>
+	    </plugin>
 	  
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>${maven.war.plugin.version}</version>
-                <configuration>
-                    <archive>
-                        <manifestEntries>
-                            <Class-Path>plugins/*</Class-Path>
-                        </manifestEntries>
-                    </archive>
-                    <outputDirectory>${differ.bin.dir}</outputDirectory>
-                    <warName>differ</warName>
-                </configuration>
-            </plugin>
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-war-plugin</artifactId>
+		<version>${maven.war.plugin.version}</version>
+		<configuration>
+		    <archive>
+			<manifestEntries>
+			    <Class-Path>plugins/*</Class-Path>
+			</manifestEntries>
+		    </archive>
+		    <outputDirectory>${differ.bin.dir}</outputDirectory>
+		    <warName>differ</warName>
+		</configuration>
+	    </plugin>
 		
 		<!--Plugin to compile GWT widget set -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>gwt-maven-plugin</artifactId>
-                <version>${gwt-maven-plugin.version}</version>
-                <inherited>false</inherited>
-                <configuration>
+	    <plugin>
+		<groupId>org.codehaus.mojo</groupId>
+		<artifactId>gwt-maven-plugin</artifactId>
+		<version>${gwt-maven-plugin.version}</version>
+		<inherited>false</inherited>
+		<configuration>
                 <!-- if you don't specify any modules, the plugin will find them -->
-                    <modules>
-                        <module>cz.nkp.differ.gwt.DifferWidgetSet</module>
-                    </modules>
-                    <webappDirectory>${project.build.directory}/${project.build.finalName}/VAADIN/widgetsets</webappDirectory>
-                    <extraJvmArgs>-Xmx512M -Xss1024k</extraJvmArgs>
-                    <runTarget>clean</runTarget>
-                    <hostedWebapp>${differ.bin.dir}/differ.war</hostedWebapp>
-                    <copyWebapp>true</copyWebapp>
-                    <noServer>true</noServer>
-                    <soyc>false</soyc>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>resources</goal>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-        <pluginManagement>
-            <plugins>
+		    <modules>
+			<module>cz.nkp.differ.gwt.DifferWidgetSet</module>
+		    </modules>
+		    <webappDirectory>${project.build.directory}/${project.build.finalName}/VAADIN/widgetsets</webappDirectory>
+		    <extraJvmArgs>-Xmx512M -Xss1024k</extraJvmArgs>
+		    <runTarget>clean</runTarget>
+		    <hostedWebapp>${differ.bin.dir}/differ.war</hostedWebapp>
+		    <copyWebapp>true</copyWebapp>
+		    <noServer>true</noServer>
+		    <soyc>false</soyc>
+		</configuration>
+		<executions>
+		    <execution>
+			<goals>
+			    <goal>resources</goal>
+			    <goal>compile</goal>
+			</goals>
+		    </execution>
+		</executions>
+	    </plugin>
+	</plugins>
+	<pluginManagement>
+	    <plugins>
     		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
-                <plugin>
-                    <groupId>org.eclipse.m2e</groupId>
-                    <artifactId>lifecycle-mapping</artifactId>
-                    <version>1.0.0</version>
-                    <configuration>
-                        <lifecycleMappingMetadata>
-                            <pluginExecutions>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>org.codehaus.mojo</groupId>
-                                        <artifactId>gwt-maven-plugin</artifactId>
-                                        <versionRange>[2.4.0,)</versionRange>
-                                        <goals>
-                                            <goal>resources</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <ignore></ignore>
-                                    </action>
-                                </pluginExecution>
-                            </pluginExecutions>
-                        </lifecycleMappingMetadata>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+		<plugin>
+		    <groupId>org.eclipse.m2e</groupId>
+		    <artifactId>lifecycle-mapping</artifactId>
+		    <version>1.0.0</version>
+		    <configuration>
+			<lifecycleMappingMetadata>
+			    <pluginExecutions>
+				<pluginExecution>
+				    <pluginExecutionFilter>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>gwt-maven-plugin</artifactId>
+					<versionRange>[2.4.0,)</versionRange>
+					<goals>
+					    <goal>resources</goal>
+					</goals>
+				    </pluginExecutionFilter>
+				    <action>
+					<ignore></ignore>
+				    </action>
+				</pluginExecution>
+			    </pluginExecutions>
+			</lifecycleMappingMetadata>
+		    </configuration>
+		</plugin>
+	    </plugins>
+	</pluginManagement>
     </build>
 
     <repositories>
-        <repository>
-            <id>vaadin-snapshots</id>
-            <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>vaadin-addons</id>
-            <url>http://maven.vaadin.com/vaadin-addons</url>
-        </repository>
-        <repository>
-            <id>com.springsource.repository.bundles.external</id>
-            <url>http://repository.springsource.com/maven/bundles/external</url>
-        </repository>
-        <repository>
-            <id>apache-snapshots</id>
-            <url>https://repository.apache.org/content/groups/snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
 	<repository>
-            <id>imagej</id>
-            <url>http://maven.imagej.net/content/repositories/thirdparty</url>
-        </repository>
+	    <id>vaadin-snapshots</id>
+	    <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
+	    <releases>
+		<enabled>false</enabled>
+	    </releases>
+	    <snapshots>
+		<enabled>true</enabled>
+	    </snapshots>
+	</repository>
+	<repository>
+	    <id>vaadin-addons</id>
+	    <url>http://maven.vaadin.com/vaadin-addons</url>
+	</repository>
+	<repository>
+	    <id>com.springsource.repository.bundles.external</id>
+	    <url>http://repository.springsource.com/maven/bundles/external</url>
+	</repository>
+	<repository>
+	    <id>apache-snapshots</id>
+	    <url>https://repository.apache.org/content/groups/snapshots/</url>
+	    <releases>
+		<enabled>false</enabled>
+	    </releases>
+	    <snapshots>
+		<enabled>true</enabled>
+	    </snapshots>
+	</repository>
+	<repository>
+	    <id>imagej</id>
+	    <url>http://maven.imagej.net/content/repositories/thirdparty</url>
+	</repository>
 	
     </repositories>
 
     <pluginRepositories>
-        <pluginRepository>
-            <id>codehaus-snapshots</id>
-            <url>http://nexus.codehaus.org/snapshots</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </pluginRepository>
-        <pluginRepository>
-            <id>vaadin-snapshots</id>
-            <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </pluginRepository>
+	<pluginRepository>
+	    <id>codehaus-snapshots</id>
+	    <url>http://nexus.codehaus.org/snapshots</url>
+	    <snapshots>
+		<enabled>true</enabled>
+	    </snapshots>
+	    <releases>
+		<enabled>false</enabled>
+	    </releases>
+	</pluginRepository>
+	<pluginRepository>
+	    <id>vaadin-snapshots</id>
+	    <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
+	    <snapshots>
+		<enabled>true</enabled>
+	    </snapshots>
+	    <releases>
+		<enabled>false</enabled>
+	    </releases>
+	</pluginRepository>
     </pluginRepositories>
 
     <dependencies>
 
-        <dependency>
-            <groupId>cz.nkp</groupId>
-            <artifactId>differ-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+	<dependency>
+	    <groupId>cz.nkp</groupId>
+	    <artifactId>differ-common</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+	</dependency>
         
-        <dependency>
-            <groupId>org.apache.derby</groupId>
-            <artifactId>derbynet</artifactId>
-            <version>${derby.version}</version>
-        </dependency>
+	<dependency>
+	    <groupId>org.apache.derby</groupId>
+	    <artifactId>derbynet</artifactId>
+	    <version>${derby.version}</version>
+	</dependency>
 	
-        <dependency>
-            <groupId>org.apache.derby</groupId>
-            <artifactId>derbyclient</artifactId>
-            <version>${derby.version}</version>
-        </dependency>
+	<dependency>
+	    <groupId>org.apache.derby</groupId>
+	    <artifactId>derbyclient</artifactId>
+	    <version>${derby.version}</version>
+	</dependency>
 	
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>${apache.commons-io.version}</version>
-        </dependency>
+	<dependency>
+	    <groupId>commons-io</groupId>
+	    <artifactId>commons-io</artifactId>
+	    <version>${apache.commons-io.version}</version>
+	</dependency>
 	
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>${apache.commons-codec.version}</version>
-        </dependency>
+	<dependency>
+	    <groupId>commons-codec</groupId>
+	    <artifactId>commons-codec</artifactId>
+	    <version>${apache.commons-codec.version}</version>
+	</dependency>
 	
 	<!-- 
 			I packaged this dependency personally and submitted it to Maven central. Until then you need to install it from
 			differ-libs-from-sources to your local repo
 	-->
 	
-        <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin</artifactId>
-            <version>${vaadin.version}</version>
-        </dependency>
+	<dependency>
+	    <groupId>com.vaadin</groupId>
+	    <artifactId>vaadin</artifactId>
+	    <version>${vaadin.version}</version>
+	</dependency>
 	
         <!-- This is also used by gwt-maven-plugin to deduce GWT version number. -->
-        <dependency>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-user</artifactId>
-            <version>${gwt.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>1.0.0.GA</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>1.0.0.GA</version>
-            <classifier>sources</classifier>
-            <scope>provided</scope>
-        </dependency>
+	<dependency>
+	    <groupId>com.google.gwt</groupId>
+	    <artifactId>gwt-user</artifactId>
+	    <version>${gwt.version}</version>
+	    <scope>provided</scope>
+	</dependency>
+	<dependency>
+	    <groupId>javax.validation</groupId>
+	    <artifactId>validation-api</artifactId>
+	    <version>1.0.0.GA</version>
+	    <scope>provided</scope>
+	</dependency>
+	<dependency>
+	    <groupId>javax.validation</groupId>
+	    <artifactId>validation-api</artifactId>
+	    <version>1.0.0.GA</version>
+	    <classifier>sources</classifier>
+	    <scope>provided</scope>
+	</dependency>
 	
 	<!-- Bouncycastle provides JVM independent security algorithm implementations -->
-        <dependency>
-            <groupId>bouncycastle</groupId>
-            <artifactId>bcprov-jdk15</artifactId>
-            <version>140</version>
-        </dependency>
+	<dependency>
+	    <groupId>bouncycastle</groupId>
+	    <artifactId>bcprov-jdk15</artifactId>
+	    <version>140</version>
+	</dependency>
 	
 	<!-- Provides multi file upload widget -->
-        <dependency>
-            <groupId>org.vaadin.addons</groupId>
-            <artifactId>easyuploads</artifactId>
-            <version>0.5.1</version>
-        </dependency>
+	<dependency>
+	    <groupId>org.vaadin.addons</groupId>
+	    <artifactId>easyuploads</artifactId>
+	    <version>0.5.1</version>
+	</dependency>
 	
 	<!-- Captcha Widget -->
-        <dependency>
-            <groupId>org.vaadin.addons</groupId>
-            <artifactId>toolkit-productivity-tools</artifactId>
-            <version>1.2.0</version>
-        </dependency>
+	<dependency>
+	    <groupId>org.vaadin.addons</groupId>
+	    <artifactId>toolkit-productivity-tools</artifactId>
+	    <version>1.2.0</version>
+	</dependency>
 	
 	<!-- Image Scale Widget -->
-        <dependency>
-            <groupId>org.vaadin.addons</groupId>
-            <artifactId>imagescaler</artifactId>
-            <version>1.0</version>
-        </dependency>
+	<dependency>
+	    <groupId>org.vaadin.addons</groupId>
+	    <artifactId>imagescaler</artifactId>
+	    <version>1.0</version>
+	</dependency>
 
 	<!-- Spring JDBC -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>3.1.2.RELEASE</version>
-        </dependency>
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	    <version>3.1.2.RELEASE</version>
+	</dependency>
+
+	<!-- Spring MVC -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>3.1.2.RELEASE</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-oxm</artifactId>
+	    <version>3.1.2.RELEASE</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-web</artifactId>
+	    <version>3.1.2.RELEASE</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-config</artifactId>
+	    <version>3.1.2.RELEASE</version>
+	</dependency>
 
 	<!-- MySQL -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.9</version>
-        </dependency>
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.9</version>
+	</dependency>
 
 	<!-- Log4J -->
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.16</version>
-        </dependency>
+	<dependency>
+	    <groupId>log4j</groupId>
+	    <artifactId>log4j</artifactId>
+	    <version>1.2.16</version>
+	</dependency>
 	
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.4</version>
-            <scope>test</scope>
-        </dependency>
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.4</version>
+	    <scope>test</scope>
+	</dependency>
 
 	<!--Graph Support-->
-        <dependency>
-            <groupId>org.vaadin.addon</groupId>
-            <artifactId>jfreechartwrapper</artifactId>
-            <version>2.5.0</version>
-        </dependency>
+	<dependency>
+	    <groupId>org.vaadin.addon</groupId>
+	    <artifactId>jfreechartwrapper</artifactId>
+	    <version>2.5.0</version>
+	</dependency>
 
     </dependencies>
 </project>

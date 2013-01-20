@@ -79,7 +79,6 @@ public class UserManager {
      * @return
      */
     public User attemptLogin(String username, String userSuppliedPassword) throws UserDifferException {
-	System.err.println("User login: "+ username + " password: " + userSuppliedPassword);
 	User user = userDAO.getUserByUserName(username);
 	if (user == null) {
 	    throw new UserDifferException(UserDifferException.ErrorCode.BAD_PASSWORD_OR_USERNAME, "User does not exists.");
