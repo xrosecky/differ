@@ -1,0 +1,161 @@
+Characterization
+================
+
+12.jpg: 1600x1200
+
+Significant Properties
+======================
+
+Significant Property               Unit  Source    Value
+---------------------------------- ----  --------  ------------------------------------------------------------
+Aperture                                 exiv2     F2.6
+Camera make                              exiv2     NIKON
+Code block height                  px    jpylyzer  
+Code block width                   px    jpylyzer  
+Coding bypass                            jpylyzer  
+Color depth                              exiftool  8
+                                         jpylyzer  
+Color space                              exiftool  sRGB
+                                         jpylyzer  
+Commentary                               jpylyzer  
+Compression                              exiftool  JPEG (old-style)
+                                         jpylyzer  
+Compression ratio                        jpylyzer  
+Display resolution horizontal      PPI   jpylyzer  
+Display resolution vertical        PPI   jpylyzer  
+Encoding process                         exiftool  Baseline DCT, Huffman coding
+End of packet header                     jpylyzer  
+exit-code                                djvudump  error (1)
+                                         exiftool  ok
+                                         exiv2     ok
+                                         fits      ok
+                                         jhove     error (1)
+                                         jpylyzer  ok
+Exposure bias                            exiv2     0 EV
+Exposure mode                            exiv2     Auto
+Exposure time                            exiv2     1/60 s
+File last modified                       exiftool  2011:12:06 17:18:00+01:00
+                                         fits      
+                                         jpylyzer  Tue Dec  6 17:18:00 2011
+File name                                core      12.jpg
+                                         exiv2     /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+                                         fits      /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+                                         jpylyzer  12.jpg
+File path                                core      /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+                                         exiv2     /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+                                         fits      /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+                                         jpylyzer  /opt/differ/docs/examples/images_02/12.jpg
+File size                                exiftool  375 kB
+                                         exiv2     383559
+                                         fits      383559
+                                         jpylyzer  383559
+File type                                exiftool  JPEG
+Flash                                    exiv2     Yes, auto
+Focal length                             exiv2     4.7 mm (35 mm equivalent
+Image height                             core      1600
+                                   px    exiftool  1600
+                                   px    exiv2     1600
+                                   px    fits      1600
+                                   px    jpylyzer  
+Image quality                            exiv2     NORMAL
+Image timestamp                          exiv2     0000
+Image width                              core      1200
+                                   px    exiftool  1200
+                                   px    exiv2     1200
+                                   px    fits      1200
+                                   px    jpylyzer  
+ISO speed                                exiv2     100
+Metering mode                            exiv2     Multi-segment
+MIME type                                exiftool  image/jpeg
+                                         exiv2     image/jpeg
+Number of channels                       exiftool  3
+                                         jpylyzer  
+Number of decomposition levels           jpylyzer  
+Number of quality layers                 jpylyzer  
+Number of tiles                          jpylyzer  
+Precincts                                jpylyzer  
+Progression order                        jpylyzer  
+Resolution horizontal              PPI   exiftool  300
+                                   PPI   exiv2     1600
+                                   PPI   jpylyzer  
+Resolution unit                          exiftool  inches
+Resolution vertical                PPI   exiftool  300
+                                   PPI   exiv2     1200
+                                   PPI   jpylyzer  
+Software type                            exiftool  E2100v1.1
+Start of packet header                   jpylyzer  
+Thumbnail                                exiv2     None
+Transformation                           jpylyzer  
+Type of format                           jpylyzer  
+Universal unique identifier (UUID)       jpylyzer  
+Validation (well formed and valid)       jpylyzer  False
+White balance                            exiv2     AUTO
+---------------------------------- ----  --------  ------------------------------------------------------------
+
+Raw outputs of extractors
+=========================
+
+   djvudump     'output <../docs/examples/images_02/12/output-djvudump.raw>'_
+   exiftool     'output <../docs/examples/images_02/12/output-exiftool.raw>'_
+   exiv2        'output <../docs/examples/images_02/12/output-exiv2.raw>'_
+   fits         'output <../docs/examples/images_02/12/output-fits.raw>'_
+   jhove        'output <../docs/examples/images_02/12/output-jhove.raw>'_
+   jpylyzer     'output <../docs/examples/images_02/12/output-jpylyzer.raw>'_
+
+Text report
+===========
+
+  `text report <../docs/examples/images_02/12/report.txt>`_
+
+Used significant properties
+===========================
+
+   Aperture
+   Camera make
+   Code block height
+   Code block width
+   Coding bypass
+   Color depth
+   Color space
+   Commentary
+   Compression
+   Compression ratio
+   Display resolution horizontal
+   Display resolution vertical
+   Encoding process
+   End of packet header
+   Exposure bias
+   Exposure mode
+   Exposure time
+   File last modified
+   File name
+   File path
+   File size
+   File type
+   Flash
+   Focal length
+   ISO speed
+   Image height
+   Image quality
+   Image timestamp
+   Image width
+   MIME type
+   Metering mode
+   Number of channels
+   Number of decomposition levels
+   Number of quality layers
+   Number of tiles
+   Precincts
+   Progression order
+   Resolution horizontal
+   Resolution unit
+   Resolution vertical
+   Software type
+   Start of packet header
+   Thumbnail
+   Transformation
+   Type of format
+   Universal unique identifier (UUID)
+   Validation (well formed and valid)
+   White balance
+   exit-code

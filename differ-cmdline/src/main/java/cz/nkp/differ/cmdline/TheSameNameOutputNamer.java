@@ -3,6 +3,7 @@ package cz.nkp.differ.cmdline;
 import cz.nkp.differ.compare.io.ImageProcessorResult;
 import cz.nkp.differ.compare.metadata.ImageMetadata;
 
+import java.awt.geom.Path2D;
 import java.io.File;
 
 /**
@@ -13,46 +14,41 @@ import java.io.File;
  */
 public class TheSameNameOutputNamer implements OutputNamer {
     @Override
-    public String baseName(ImageProcessorResult result) {
-        String outFPath = "imageResult";
-        for(ImageMetadata metadata: result.getMetadata()){
-            if(metadata.getKey().equals("File name")){
-                File file = new File((String) metadata.getValue());
-                outFPath = file.getPath().split("\\.")[0];
-                break;
-            }
-        }
+    public File baseName(File file, ImageProcessorResult result) {
+        File outFPath = new File(file.toString().replaceFirst("[.][^.]+$", ""));
+        outFPath.mkdirs();
         return outFPath;
     }
 
     @Override
-    public String rawOutputName(ImageProcessorResult result, String source) {
-        String output = String.format("%s-output-%s.raw",this.baseName(result),source);
-        return output;  //To change body of implemented methods use File | Settings | File Templates.
-    }
-
-    @Override
-    public String reportName(ImageProcessorResult result) {
-        String output = String.format("%s-report.drep",this.baseName(result));
-        return output;  //To change body of implemented methods use File | Settings | File Templates.
-    }
-
-    @Override
-    public String textName(ImageProcessorResult result) {
-        String output = String.format("%s-report.txt", this.baseName(result));
-        return output;  //To change body of implemented methods use File | Settings | File Templates.
-    }
-
-    @Override
-    public String textCompareName(ImageProcessorResult result1, ImageProcessorResult result2){
-        String basename1 = this.baseName(result1);
-        String basename2 = this.baseName(result2);
-        return String.format("%s-%s-report.txt", basename1, basename2);
-    }
-
-    @Override
-    public String propertiesSummaryName(ImageProcessorResult result){
-        String output = String.format("%s-used-properties.txt", this.baseName(result));
+    public File rawOutputName(File file, ImageProcessorResult result, String source) {
+        File output =  new File(this.baseName(file, result),String.format("output-%s.raw",source));
         return output;
     }
+
+    @Override
+    public File reportName(File file, ImageProcessorResult result) {
+        File output = new File(this.baseName(file, result),"report.drep");
+        return output;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public File textName(File file, ImageProcessorResult result) {
+        File output = new File(this.baseName(file, result),"report.txt");
+        return output;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public File textCompareName(File file1, File file2, ImageProcessorResult result1, ImageProcessorResult result2){
+        File basename1 = this.baseName(file1,result1);
+        File basename2 = this.baseName(file2,result2);
+        return new File(basename1, String.format("%s-%s-report.txt", basename1.getName(), basename2.getName()));
+    }
+
+    @Override
+    public File propertiesSummaryName(File file, ImageProcessorResult result){
+        File output = new File(this.baseName(file, result),"used-properties.txt");
+        return output;
+    }
+
 }

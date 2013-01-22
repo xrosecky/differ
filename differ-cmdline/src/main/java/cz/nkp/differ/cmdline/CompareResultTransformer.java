@@ -2,6 +2,8 @@ package cz.nkp.differ.cmdline;
 
 import cz.nkp.differ.compare.io.ImageProcessorResult;
 
+import java.io.File;
+
 /**
  * User: stavel
  * Date: 2.1.13
@@ -14,5 +16,5 @@ public interface CompareResultTransformer {
     public Boolean saveProperties = false;
     public Boolean saveReport = false;
 
-    public String transform(ImageProcessorResult results[]);
+    public String transform(File files[], ImageProcessorResult results[]) throws Exception;
 }

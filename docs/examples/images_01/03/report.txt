@@ -1,0 +1,165 @@
+Characterization
+================
+
+03.jpg: 512x512
+
+Significant Properties
+======================
+
+Significant Property               Unit  Source    Value
+---------------------------------- ----  --------  ------------------------------------------------------------
+Code block height                  px    jhove     
+                                   px    jpylyzer  
+Code block width                   px    jhove     
+                                   px    jpylyzer  
+Coding bypass                            jpylyzer  
+Color depth                              exiftool  8
+                                         jhove     8
+                                         jpylyzer  
+Color space                              exiftool  Uncalibrated
+                                         jhove     
+                                         jpylyzer  
+Commentary                               jpylyzer  
+Compression                              exiftool  Uncompressed
+                                         jhove     JPEG
+                                         jpylyzer  
+Compression ratio                        jpylyzer  
+Display resolution horizontal      PPI   jpylyzer  
+Display resolution vertical        PPI   jpylyzer  
+Encoding process                         exiftool  Baseline DCT, Huffman coding
+End of packet header                     jpylyzer  
+exit-code                                djvudump  error (1)
+                                         exiftool  ok
+                                         exiv2     ok
+                                         fits      ok
+                                         jhove     ok
+                                         jpylyzer  ok
+File last modified                       exiftool  2012:02:12 12:23:58+01:00
+                                         fits      
+                                         jhove     2012-02-12T12:23:58+01:00
+                                         jpylyzer  Sun Feb 12 12:23:58 2012
+File name                                core      03.jpg
+                                         exiv2     /opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg
+                                         fits      /opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg
+                                         jpylyzer  03.jpg
+File path                                core      /opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg
+                                         exiv2     /opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg
+                                         fits      /opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg
+                                         jhove     /opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg
+                                         jpylyzer  /opt/differ/docs/examples/images_01/03.jpg
+File size                                exiftool  173 kB
+                                         exiv2     176853
+                                         fits      176853
+                                         jhove     176853
+                                         jpylyzer  176853
+File type                                exiftool  JPEG
+Image height                             core      512
+                                   px    exiftool  512
+                                   px    exiv2     512
+                                   px    fits      512
+                                   px    jhove     512
+                                   px    jpylyzer  
+Image width                              core      512
+                                   px    exiftool  512
+                                   px    exiv2     512
+                                   px    fits      512
+                                   px    jhove     512
+                                   px    jpylyzer  
+MIME type                                exiftool  image/jpeg
+                                         exiv2     image/jpeg
+                                         jhove     image/jpeg
+Multiple Component Transformation        jhove     
+Number of channels                       exiftool  3
+                                         jhove     3
+                                         jpylyzer  
+Number of decomposition levels           jhove     
+                                         jpylyzer  
+Number of quality layers                 jhove     
+                                         jpylyzer  
+Number of tiles                          jhove     0
+                                         jpylyzer  
+Precincts                                jpylyzer  
+Progression order                        jhove     
+                                         jpylyzer  
+Quantization style                       jhove     
+Resolution horizontal              PPI   exiftool  72
+                                   PPI   exiv2     512
+                                   PPI   jpylyzer  
+Resolution unit                          exiftool  inches
+Resolution vertical                PPI   exiftool  72
+                                   PPI   exiv2     512
+                                   PPI   jpylyzer  
+Software type                            exiftool  Adobe Photoshop CS5 Windows
+Start of packet header                   jpylyzer  
+Thumbnail                                exiv2     image/jpeg, 6963 Bytes
+Tile size X                        PPI   jhove     
+Tile size Y                        PPI   jhove     
+Transformation                           jhove     
+                                         jpylyzer  
+Type of format                           jhove     JPEG
+                                         jpylyzer  
+Universal unique identifier (UUID)       jhove     
+                                         jpylyzer  
+Validation (well formed and valid)       jhove     Well-Formed and valid
+                                         jpylyzer  False
+---------------------------------- ----  --------  ------------------------------------------------------------
+
+Raw outputs of extractors
+=========================
+
+   djvudump     'output <../docs/examples/images_01/03/output-djvudump.raw>'_
+   exiftool     'output <../docs/examples/images_01/03/output-exiftool.raw>'_
+   exiv2        'output <../docs/examples/images_01/03/output-exiv2.raw>'_
+   fits         'output <../docs/examples/images_01/03/output-fits.raw>'_
+   jhove        'output <../docs/examples/images_01/03/output-jhove.raw>'_
+   jpylyzer     'output <../docs/examples/images_01/03/output-jpylyzer.raw>'_
+
+Text report
+===========
+
+  `text report <../docs/examples/images_01/03/report.txt>`_
+
+Used significant properties
+===========================
+
+   Code block height
+   Code block width
+   Coding bypass
+   Color depth
+   Color space
+   Commentary
+   Compression
+   Compression ratio
+   Display resolution horizontal
+   Display resolution vertical
+   Encoding process
+   End of packet header
+   File last modified
+   File name
+   File path
+   File size
+   File type
+   Image height
+   Image width
+   MIME type
+   Multiple Component Transformation
+   Number of channels
+   Number of decomposition levels
+   Number of quality layers
+   Number of tiles
+   Precincts
+   Progression order
+   Quantization style
+   Resolution horizontal
+   Resolution unit
+   Resolution vertical
+   Software type
+   Start of packet header
+   Thumbnail
+   Tile size X
+   Tile size Y
+   Transformation
+   Type of format
+   Universal unique identifier (UUID)
+   Validation (well formed and valid)
+   exit-code

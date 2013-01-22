@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04">
+ <date>2013-01-22T13:09:16+01:00</date>
+ <repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg">
+  <reportingModule release="1.2" date="2007-02-13">JPEG-hul</reportingModule>
+  <lastModified>2011-04-28T09:12:18+02:00</lastModified>
+  <size>383559</size>
+  <format>JPEG</format>
+  <version>1.01</version>
+  <status>Well-Formed and valid</status>
+  <sigMatch>
+  <module>JPEG-hul</module>
+  </sigMatch>
+  <mimeType>image/jpeg</mimeType>
+  <profiles>
+   <profile>JFIF</profile>
+  </profiles>
+  <properties>
+   <property>
+    <name>JPEGMetadata</name>
+    <values arity="List" type="Property">
+    <property>
+     <name>CompressionType</name>
+     <values arity="Scalar" type="String">
+      <value>Huffman coding, Baseline DCT</value>
+     </values>
+    </property>
+    <property>
+     <name>Images</name>
+     <values arity="List" type="Property">
+     <property>
+      <name>Number</name>
+      <values arity="Scalar" type="Integer">
+       <value>1</value>
+      </values>
+     </property>
+     <property>
+      <name>Image</name>
+      <values arity="List" type="Property">
+      <property>
+       <name>NisoImageMetadata</name>
+       <values arity="Scalar" type="NISOImageMetadata">
+        <value>
+      <mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd">
+       <mix:BasicDigitalObjectInformation>
+        <mix:ObjectIdentifier>
+         <mix:objectIdentifierType>JHOVE</mix:objectIdentifierType>
+        </mix:ObjectIdentifier>
+        <mix:byteOrder>big endian</mix:byteOrder>
+        <mix:Compression>
+         <mix:compressionScheme>JPEG</mix:compressionScheme>
+        </mix:Compression>
+       </mix:BasicDigitalObjectInformation>
+       <mix:BasicImageInformation>
+        <mix:BasicImageCharacteristics>
+         <mix:imageWidth>1200</mix:imageWidth>
+         <mix:imageHeight>1600</mix:imageHeight>
+         <mix:PhotometricInterpretation>
+          <mix:colorSpace>YCbCr</mix:colorSpace>
+         </mix:PhotometricInterpretation>
+        </mix:BasicImageCharacteristics>
+       </mix:BasicImageInformation>
+       <mix:ImageCaptureMetadata>
+        <mix:ScannerCapture>
+         <mix:scannerManufacturer>NIKON</mix:scannerManufacturer>
+         <mix:ScannerModel>
+          <mix:scannerModelName>E2100</mix:scannerModelName>
+         </mix:ScannerModel>
+        </mix:ScannerCapture>
+       </mix:ImageCaptureMetadata>
+       <mix:ImageAssessmentMetadata>
+        <mix:SpatialMetrics>
+         <mix:samplingFrequencyUnit>in.</mix:samplingFrequencyUnit>
+         <mix:xSamplingFrequency>
+          <mix:numerator>300</mix:numerator>
+         </mix:xSamplingFrequency>
+         <mix:ySamplingFrequency>
+          <mix:numerator>300</mix:numerator>
+         </mix:ySamplingFrequency>
+        </mix:SpatialMetrics>
+        <mix:ImageColorEncoding>
+         <mix:BitsPerSample>
+          <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+          <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+          <mix:bitsPerSampleUnit>integer</mix:bitsPerSampleUnit>
+         </mix:BitsPerSample>
+         <mix:samplesPerPixel>3</mix:samplesPerPixel>
+        </mix:ImageColorEncoding>
+       </mix:ImageAssessmentMetadata>
+      </mix:mix>
+        </value>
+       </values>
+      </property>
+      <property>
+       <name>Scans</name>
+       <values arity="Scalar" type="Integer">
+        <value>1</value>
+       </values>
+      </property>
+      <property>
+       <name>QuantizationTables</name>
+       <values arity="List" type="Property">
+       <property>
+        <name>QuantizationTable</name>
+        <values arity="Array" type="Property">
+        <property>
+         <name>Precision</name>
+         <values arity="Scalar" type="String">
+          <value>8-bit</value>
+         </values>
+        </property>
+        <property>
+         <name>DestinationIdentifier</name>
+         <values arity="Scalar" type="Integer">
+          <value>0</value>
+         </values>
+        </property>
+        </values>
+       </property>
+       <property>
+        <name>QuantizationTable</name>
+        <values arity="Array" type="Property">
+        <property>
+         <name>Precision</name>
+         <values arity="Scalar" type="String">
+          <value>8-bit</value>
+         </values>
+        </property>
+        <property>
+         <name>DestinationIdentifier</name>
+         <values arity="Scalar" type="Integer">
+          <value>1</value>
+         </values>
+        </property>
+        </values>
+       </property>
+       </values>
+      </property>
+      <property>
+       <name>Exif</name>
+       <values arity="List" type="Property">
+       <property>
+        <name>ExifVersion</name>
+        <values arity="Scalar" type="String">
+         <value>0220</value>
+        </values>
+       </property>
+       <property>
+        <name>FlashpixVersion</name>
+        <values arity="Scalar" type="String">
+         <value>0100</value>
+        </values>
+       </property>
+       <property>
+        <name>FocalPlaneResolutionUnit</name>
+        <values arity="Scalar" type="String">
+         <value>inches</value>
+        </values>
+       </property>
+       <property>
+        <name>Make</name>
+        <values arity="Scalar" type="String">
+         <value>NIKON</value>
+        </values>
+       </property>
+       <property>
+        <name>Model</name>
+        <values arity="Scalar" type="String">
+         <value>E2100</value>
+        </values>
+       </property>
+       </values>
+      </property>
+      <property>
+       <name>XMP</name>
+       <values arity="Scalar" type="String">
+        <value>&lt;xmp:xmpmeta xmlns:xmp="adobe:ns:meta/"&gt;&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt;&lt;rdf:Description rdf:about="uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b" xmlns:exif="http://ns.adobe.com/exif/1.0/"&gt;&lt;exif:FocalLengthIn35mmFilm&gt;36&lt;/exif:FocalLengthIn35mmFilm&gt;&lt;exif:Saturation&gt;0&lt;/exif:Saturation&gt;&lt;exif:DigitalZoomRatio&gt;0/100&lt;/exif:DigitalZoomRatio&gt;&lt;exif:FocalLength&gt;47/10&lt;/exif:FocalLength&gt;&lt;exif:MaxApertureValue&gt;30/10&lt;/exif:MaxApertureValue&gt;&lt;exif:FNumber&gt;26/10&lt;/exif:FNumber&gt;&lt;exif:ExposureTime&gt;10/601&lt;/exif:ExposureTime&gt;&lt;exif:ExposureBiasValue&gt;0/10&lt;/exif:ExposureBiasValue&gt;&lt;exif:ExifVersion&gt;0220&lt;/exif:ExifVersion&gt;&lt;exif:ProgramMode&gt;2&lt;/exif:ProgramMode&gt;&lt;exif:WhiteBalance&gt;0&lt;/exif:WhiteBalance&gt;&lt;exif:MeteringMode&gt;5&lt;/exif:MeteringMode&gt;&lt;exif:LightSource&gt;0&lt;/exif:LightSource&gt;&lt;exif:Flash&gt;&lt;rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt;&lt;exif:Fired xmlns:exif="http://ns.adobe.com/exif/1.0/"&gt;True&lt;/exif:Fired&gt;&lt;exif:Return xmlns:exif="http://ns.adobe.com/exif/1.0/"&gt;0&lt;/exif:Return&gt;&lt;exif:Mode xmlns:exif="http://ns.adobe.com/exif/1.0/"&gt;3&lt;/exif:Mode&gt;&lt;exif:Function xmlns:exif="http://ns.adobe.com/exif/1.0/"&gt;False&lt;/exif:Function&gt;&lt;exif:RedEyeMode xmlns:exif="http://ns.adobe.com/exif/1.0/"&gt;False&lt;/exif:RedEyeMode&gt;&lt;/rdf:Description&gt;
+			&lt;/exif:Flash&gt;&lt;exif:ISOSpeed&gt;100&lt;/exif:ISOSpeed&gt;&lt;exif:Contrast&gt;0&lt;/exif:Contrast&gt;&lt;exif:Sharpness&gt;0&lt;/exif:Sharpness&gt;&lt;/rdf:Description&gt;&lt;rdf:Description rdf:about="uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b" xmlns:tiff="http://ns.adobe.com/tiff/1.0/"&gt;&lt;tiff:make&gt;NIKON&lt;/tiff:make&gt;&lt;tiff:model&gt;E2100&lt;/tiff:model&gt;&lt;tiff:software&gt;E2100v1.1&lt;/tiff:software&gt;&lt;tiff:Orientation&gt;1&lt;/tiff:Orientation&gt;&lt;/rdf:Description&gt;&lt;rdf:Description rdf:about="uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b" xmlns:xmp="http://ns.adobe.com/xap/1.0/"&gt;&lt;xmp:creatortool&gt;E2100v1.1&lt;/xmp:creatortool&gt;&lt;/rdf:Description&gt;&lt;/rdf:RDF&gt;&lt;/xmp:xmpmeta&gt;</value>
+       </values>
+      </property>
+      </values>
+     </property>
+     </values>
+    </property>
+    <property>
+     <name>ApplicationSegments</name>
+     <values arity="List" type="String">
+      <value>APP0</value>
+      <value>APP1</value>
+      <value>APP1</value>
+     </values>
+    </property>
+    </values>
+   </property>
+  </properties>
+ </repInfo>
+</jhove>

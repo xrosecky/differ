@@ -65,7 +65,7 @@ public class TextResultTransformer implements ResultTransformer{
     };
 
     @Override
-    public String transform(ImageProcessorResult result) {
+    public String transform(File file, ImageProcessorResult result) {
         String fileName = null;
         Integer keyLength = "Significant Property".length();
         Integer sourceLength = "Source".length();
@@ -127,7 +127,7 @@ public class TextResultTransformer implements ResultTransformer{
             output += "\n=========================\n\n";
             for(ImageMetadata metadata: result.getMetadata()){
                 if( metadata.getKey().equals("exit-code") ){
-                    File outFile = new File(this.outputNamer.rawOutputName(result,metadata.getSource().toString()));
+                    File outFile = this.outputNamer.rawOutputName(file, result,metadata.getSource().toString());
                     FileWriter writer = null;
                     try {
                         output += String.format("   %-10s   'output <%s>'_\n",
@@ -146,7 +146,7 @@ public class TextResultTransformer implements ResultTransformer{
         if( this.saveReport ){
             output += "\nText report";
             output += "\n===========\n";
-            output += String.format("\n  `text report <%s>`_\n", this.outputNamer.textName(result));
+            output += String.format("\n  `text report <%s>`_\n", this.outputNamer.textName(file, result));
         }
         if( this.saveProperties ){
             output += "\nUsed significant properties";

@@ -46,14 +46,12 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
     };
 
     @Override
-    public String transform(ImageProcessorResult results[]) {
+    public String transform(File files[], ImageProcessorResult results[]) throws Exception{
         Integer keyLength = "Significant Property".length();
         Integer sourceLength = "Source".length();
         Integer unitLength = "Unit".length();
         Integer valueLength = "Value".length();
         Integer [] valueWithUnitLength = new Integer [2];
-        String [] fileNames = new String[2];
-        String [] filePaths = new String[2];
         ImageMetadata [] exitCodeMetadata = new ImageMetadata[2];
 
         valueWithUnitLength[0] = "Value".length();
@@ -70,11 +68,7 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
                 String key = metadata.getKey();
                 String source = metadata.getSource().toString();
 
-                if( key.equals("File name") ){
-                    fileNames[imageOrder] = (String) metadata.getValue();
-                } else if (key.equals("File path")) {
-                    filePaths[imageOrder] = (String) metadata.getValue();
-                } else if (key.equals("exit-code")){
+                if (key.equals("exit-code")){
                     exitCodeMetadata[imageOrder] = metadata;
                 } else {
                     keyLength = Math.max(keyLength, key.length());
@@ -104,11 +98,11 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
         TheSameValueHider propertyNameHider = new TheSameValueHider();
         String output = "";
 
-        Integer fileNameLength = Math.max(fileNames[0].length(), fileNames[1].length());
+        Integer fileNameLength = Math.max(files[0].toString().length(), files[1].toString().length());
         output += "Characterization\n";
         output += "================\n\n";
-        output += String.format("  Img A :: %s: %sx%s\n", filePaths[0], results[0].getHeight(), results[0].getWidth());
-        output += String.format("  Img B :: %s: %sx%s\n", filePaths[1], results[1].getHeight(), results[1].getWidth());
+        output += String.format("  Image A :: %s: %sx%s\n", files[0].toString(), results[0].getHeight(), results[0].getWidth());
+        output += String.format("  Image B :: %s: %sx%s\n", files[1].toString(), results[1].getHeight(), results[1].getWidth());
         output += "\nSignificant Properties\n";
         output += "======================\n\n";
         String format = String.format("%%-%ds  %%-%ds  %%-%ds  %%-%ds\n",
@@ -121,7 +115,7 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
         for( String key: metadataByKeyName.keySet()){
             keys.add(key);
         }
-        output += String.format(format,"Significant Property", "Source", "Value for Img A", "Value for Img B");
+        output += String.format(format,"Significant Property", "Source", "Value for Image A", "Value for Image B");
         output += String.format(format,
                 getStringGivenLength(keyLength,'-'),
                 getStringGivenLength(sourceLength,'-'),
@@ -154,41 +148,50 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
             output += "\nRaw outputs of extractors";
             output += "\n=========================\n\n";
             for(int imageOrder = 0; imageOrder < 2; imageOrder++){
-                File outFile = new File(this.outputNamer.rawOutputName(results[imageOrder],
-                        exitCodeMetadata[imageOrder].getSource().toString()));
+                File outFile = this.outputNamer.rawOutputName(files[imageOrder], results[imageOrder],
+                        exitCodeMetadata[imageOrder].getSource().toString());
                 FileWriter writer = null;
-                try {
-                    output += String.format("   %-10s   'output <%s>'_\n",
+                output += String.format("   %-10s   'output <%s>'_\n",
                             exitCodeMetadata[imageOrder].getSource().toString(),
                             outFile
-                    );
-                    writer = new FileWriter(outFile);
-                    writer.write(exitCodeMetadata[imageOrder].getSource().getStdout());
-                    writer.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                );
+                writer = new FileWriter(outFile);
+                writer.write(exitCodeMetadata[imageOrder].getSource().getStdout());
+                writer.close();
             }
         }
 
         if( this.saveReport ){
-            output += "\nText report";
-            output += "\n===========\n";
+            output += "\nText reports";
+            output += "\n============\n\n";
+
+            for(int imageOrder = 0; imageOrder < 2; imageOrder++){
+                File outFile = this.outputNamer.textName(files[imageOrder], results[imageOrder]);
+                output += String.format("   %-10s   'text report <%s>'_\n",
+                        files[imageOrder].toString(),
+                        outFile
+                );
+            }
             output += String.format("\n  `text report <%s>`_\n", this.outputNamer.textCompareName(
+                    files[0],
+                    files[1],
                     results[0],
                     results[1]
                     ));
+            FileWriter writer = new FileWriter(this.outputNamer.textCompareName(files[0], files[1], results[0],results[1]));
+            writer.write(output);
+            writer.close();
         }
 
         if( this.saveProperties) {
             output += "\nUsed significant properties";
-            output += "\n===========================\n\n";
+            output += "\n===========================\n";
             for( int imageOrder=0; imageOrder < 2; imageOrder++){
                 output += String.format("\n  `used properties <%s>`_",
-                        this.outputNamer.propertiesSummaryName(results[imageOrder])
+                        this.outputNamer.propertiesSummaryName(files[imageOrder], results[imageOrder])
                 );
 
-                File outFile = new File(this.outputNamer.propertiesSummaryName(results[imageOrder]));
+                File outFile = this.outputNamer.propertiesSummaryName(files[imageOrder], results[imageOrder]);
                 FileWriter writer = null;
                 try {
                     writer = new FileWriter(outFile);
@@ -200,7 +203,6 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
                     e.printStackTrace();
                 }
             }
-
         }
         return output;
     }

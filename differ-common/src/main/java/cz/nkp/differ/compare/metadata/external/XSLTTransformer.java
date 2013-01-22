@@ -51,7 +51,7 @@ public class XSLTTransformer implements ResultTransformer {
 	    Source src = new StreamSource(new ByteArrayInputStream(stdout));
 	    ByteArrayOutputStream os = new ByteArrayOutputStream();
 	    transformer.transform(src, new StreamResult(os));
-	    System.err.println(new String(os.toByteArray()));
+	    //System.err.println(new String(os.toByteArray()));
 	    DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 	    DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 	    Document doc = dBuilder.parse(new ByteArrayInputStream(os.toByteArray()));
