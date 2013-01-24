@@ -50,6 +50,8 @@ Recognized Validator Outputs
 
 .. include:: kdu.rst
 
+.. include:: daitss.rst
+
 Command Line Application
 ----------------------------
 
