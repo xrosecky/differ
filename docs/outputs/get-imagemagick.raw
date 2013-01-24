@@ -1,0 +1,3 @@
+#!/bin/bash
+FILE="/opt/testovaci-data/ONLINE DIFFER/lena_std lossy.jpf"
+identify -verbose "$FILE" > imagemagick.raw

@@ -52,6 +52,8 @@ Recognized Validator Outputs
 
 .. include:: daitss.rst
 
+.. include:: imagemagick.rst
+
 Command Line Application
 ----------------------------
 
