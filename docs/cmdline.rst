@@ -81,3 +81,8 @@ Program output when comparing images
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. literalinclude:: outputs/cmdline-compare.txt
+
+
+Program output examples
+~~~~~~~~~~~~~~~~~~~~~~~
+
