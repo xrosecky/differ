@@ -6,6 +6,8 @@
 	<description>Vaadin production mode</description>
 	<param-name>productionMode</param-name>
 	<param-value>true</param-value>
+	<param-name>contextConfigLocation</param-name>
+	<param-value>classpath*:applicationContext.xml</param-value>
     </context-param>
 
     <!-- Differ web frontend -->
@@ -22,6 +24,7 @@
 	    <param-name>widgetset</param-name>
 	    <param-value>cz.nkp.differ.gwt.DifferWidgetSet</param-value>
 	</init-param>
+	<load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>

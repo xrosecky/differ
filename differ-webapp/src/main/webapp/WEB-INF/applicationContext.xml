@@ -45,6 +45,11 @@
     <bean id="userManager" class="cz.nkp.differ.user.UserManager">
 	<property name="userDAO" ref="userDAO"/>
     </bean>
+    
+    <bean id="resultManager" class="cz.nkp.differ.io.ResultManager">
+	<property name="marshaller" ref="jaxb2Marshaller"/>
+	<property name="directory" value="/home/xrosecky/tmp/results/"/>
+    </bean>
 
     <bean id="genericImageLoader" class="cz.nkp.differ.images.GenericImageLoader"/>
 
