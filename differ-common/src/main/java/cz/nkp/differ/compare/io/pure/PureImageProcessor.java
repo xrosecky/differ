@@ -1,8 +1,8 @@
 package cz.nkp.differ.compare.io.pure;
 
-import cz.nkp.differ.compare.metadata.ImageMetadata;
 import cz.nkp.differ.compare.io.ImageProcessor;
 import cz.nkp.differ.compare.io.ImageProcessorResult;
+import cz.nkp.differ.compare.metadata.ImageMetadata;
 import cz.nkp.differ.compare.metadata.MetadataExtractor;
 import cz.nkp.differ.compare.metadata.MetadataExtractors;
 import cz.nkp.differ.compare.metadata.MetadataSource;
@@ -13,14 +13,21 @@ import cz.nkp.differ.listener.ProgressListener;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.awt.image.ColorConvertOp;
+import java.util.concurrent.Executors;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
 import org.apache.commons.codec.digest.DigestUtils;
 
 /**
@@ -39,21 +46,64 @@ public class PureImageProcessor extends ImageProcessor {
         this.extractors = extractors;
     }
 
+    private class ProcessImageTask implements Callable<PureImageProcessorResult> {
+
+        private File image;
+
+        public ProcessImageTask(File image) {
+            this.image = image;
+        }
+
+        @Override
+        public PureImageProcessorResult call() throws Exception {
+            return processImage(image, null);
+        }
+    }
+
+    private class ImageMetadataTask implements Callable<List<ImageMetadata>> {
+
+        private MetadataExtractor extractor;
+        private File image;
+
+        public ImageMetadataTask(MetadataExtractor extractor, File image) {
+            this.extractor = extractor;
+            this.image = image;
+        }
+
+        @Override
+        public List<ImageMetadata> call() throws Exception {
+            return extractor.getMetadata(image);
+        }
+    }
+
     @Override
     public PureImageProcessorResult processImage(File image, ProgressListener callback) throws ImageDifferException {
         BufferedImage fullImage = imageLoader.load(image);
+        if (fullImage == null) {
+            throw new ImageDifferException(ImageDifferException.ErrorCode.IMAGE_READ_ERROR, "Unsupported file type");
+        }
         java.awt.Image preview = ImageManipulator.getBitmapScaledImage(fullImage, this.getConfig().getImageWidth(), true);
         PureImageProcessorResult result = new PureImageProcessorResult(fullImage, preview);
         result.setType(ImageProcessorResult.Type.IMAGE);
         processImage(fullImage, result);
         result.getMetadata().add(new ImageMetadata("height", new Integer(fullImage.getHeight()), core));
         result.getMetadata().add(new ImageMetadata("width", new Integer(fullImage.getWidth()), core));
+        List<Callable<List<ImageMetadata>>> tasks = new ArrayList<Callable<List<ImageMetadata>>>();
         for (MetadataExtractor extractor : extractors.getExtractors()) {
-            List<ImageMetadata> metadata = extractor.getMetadata(image);
-            result.getMetadata().addAll(metadata);
-
+            tasks.add(new ImageMetadataTask(extractor, image));
         }
-        // process conflicts
+        List<Future<List<ImageMetadata>>> futures = execute(tasks);
+        for (Future<List<ImageMetadata>> future : futures) {
+            if (future.isDone()) {
+                try {
+                    result.getMetadata().addAll(future.get());
+                } catch (InterruptedException ie) {
+                    throw new ImageDifferException(ImageDifferException.ErrorCode.IMAGE_READ_ERROR, "Timeout exceeded", ie);
+                } catch (ExecutionException ee) {
+                    handleException(ee);
+                }
+            }
+        }
         Map<String, Object> results = new HashMap<String, Object>();
         Set<String> conflicts = new HashSet<String>();
         for (ImageMetadata data : result.getMetadata()) {
@@ -71,13 +121,31 @@ public class PureImageProcessor extends ImageProcessor {
             String key = data.getKey();
             data.setConflict(conflicts.contains(key));
         }
-	result.setType(ImageProcessorResult.Type.IMAGE);
+        result.setType(ImageProcessorResult.Type.IMAGE);
         return result;
     }
 
     @Override
     public ImageProcessorResult[] processImages(File a, File b, ProgressListener callback) throws ImageDifferException {
         PureImageProcessorResult results[] = new PureImageProcessorResult[3];
+        try {
+            Callable<PureImageProcessorResult> task1 = new ProcessImageTask(a);
+            Callable<PureImageProcessorResult> task2 = new ProcessImageTask(b);
+            List<Future<PureImageProcessorResult>> futures = this.execute(Arrays.asList(task1, task2));
+            int index = 0;
+            for (Future<PureImageProcessorResult> future : futures) {
+                if (future.isDone()) {
+                    results[index] = future.get();
+                } else {
+                    results[index] = null;
+                }
+                index++;
+            }
+        } catch (InterruptedException ie) {
+            throw new ImageDifferException(ImageDifferException.ErrorCode.IMAGE_READ_ERROR, "Timeout exceeded", ie);
+        } catch (ExecutionException ee) {
+            this.handleException(ee);
+        }
         results[0] = this.processImage(a, null);
         results[1] = this.processImage(b, null);
         try {
@@ -87,13 +155,37 @@ public class PureImageProcessor extends ImageProcessor {
             result.setType(ImageProcessorResult.Type.COMPARISON);
             this.processImage(compareFull, result);
             this.addMetrics(result);
-	    result.setType(ImageProcessorResult.Type.COMPARISON);
+            result.setType(ImageProcessorResult.Type.COMPARISON);
             results[2] = result;
         } catch (Exception ex) {
             ex.printStackTrace();
             results[2] = null;
         }
         return results;
+    }
+
+    private <T> List<Future<T>> execute(List<Callable<T>> tasks) throws ImageDifferException {
+        ExecutorService executor = null;
+        try {
+            executor = Executors.newCachedThreadPool();
+            return executor.invokeAll(tasks);
+        } catch (InterruptedException ie) {
+            throw new ImageDifferException(ImageDifferException.ErrorCode.IMAGE_READ_ERROR, "Timeout exceeded", ie);
+        } finally {
+            if (executor != null) {
+                executor.shutdown();
+            }
+        }
+    }
+
+    private void handleException(ExecutionException ee) throws ImageDifferException {
+        if (ee.getCause() instanceof ImageDifferException) {
+            throw (ImageDifferException) ee.getCause();
+        } else if (ee.getCause() instanceof RuntimeException) {
+            throw (RuntimeException) ee.getCause();
+        } else {
+            throw new ImageDifferException(ImageDifferException.ErrorCode.IMAGE_READ_ERROR, "Error when reading image", ee);
+        }
     }
 
     private void addMetrics(PureImageProcessorResult result) {
