@@ -1,6 +1,7 @@
 package cz.nkp.differ.io;
 
 import cz.nkp.differ.compare.io.SerializableImageProcessorResult;
+import cz.nkp.differ.model.Result;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -32,17 +33,19 @@ public class ResultManager {
 	marshaller.marshal(result, streamResult);
     }
 
-    public List<String> getResults() {
-	List<String> result = new ArrayList<String>();
+    public List<Result> getResults() {
+	List<Result> results = new ArrayList<Result>();
 	File dir = new File(directory);
 	for (File file : dir.listFiles()) {
-	    result.add(file.getName());
+            Result result = new Result();
+            result.setName(file.getName());
+	    results.add(result);
 	}
-	return result;
+	return results;
     }
 
-    public SerializableImageProcessorResult getResult(String name) throws IOException {
-	File input = new File(directory, name);
+    public SerializableImageProcessorResult getResult(Result result) throws IOException {
+	File input = new File(directory, result.getName());
 	StreamSource source = new StreamSource(new FileInputStream(input));
 	return (SerializableImageProcessorResult) marshaller.unmarshal(source);
     }

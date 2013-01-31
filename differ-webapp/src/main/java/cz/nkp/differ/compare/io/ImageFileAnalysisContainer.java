@@ -77,16 +77,17 @@ public class ImageFileAnalysisContainer {
         Button imageButton = new Button();
         imageButton.setStyleName(BaseTheme.BUTTON_LINK);
         imageButton.setIcon(imageScaledResource);
-        imageButton.addListener(new ClickListener() {
+        if (imageFullResource != null) {
+            imageButton.addListener(new ClickListener() {
+                @Override
+                public void buttonClick(ClickEvent event) {
 
-            @Override
-            public void buttonClick(ClickEvent event) {
-
-                Embedded img = new Embedded(null, imageFullResource);
-                img.setType(Embedded.TYPE_IMAGE);
-                DifferApplication.getCurrentApplication().getMainWindow().addWindow(new FullSizeImageWindow(img));
-            }
-        });
+                    Embedded img = new Embedded(null, imageFullResource);
+                    img.setType(Embedded.TYPE_IMAGE);
+                    DifferApplication.getCurrentApplication().getMainWindow().addWindow(new FullSizeImageWindow(img));
+                }
+            });
+        }
         layout.addComponent(imageButton);
         // Image checksum
         Label hashLabel = new Label();
@@ -107,7 +108,6 @@ public class ImageFileAnalysisContainer {
         metadataTable.setImmediate(true);
         metadataTable.setVisibleColumns(new Object[]{"key", "source", "value", "unit"});
         metadataTable.setCellStyleGenerator(new Table.CellStyleGenerator() {
-
             @Override
             public String getStyle(Object itemId, Object propertyId) {
                 ImageMetadata metadata = (ImageMetadata) itemId;
@@ -132,7 +132,6 @@ public class ImageFileAnalysisContainer {
         final Button rawData = new Button();
         rawData.setCaption("Raw data");
         rawData.addListener(new ClickListener() {
-
             @Override
             public void buttonClick(ClickEvent event) {
                 try {
@@ -147,7 +146,6 @@ public class ImageFileAnalysisContainer {
         rawData.setEnabled(false); //FIXME
         layout.addComponent(rawData);
         metadataTable.addListener(new ValueChangeListener() {
-
             @Override
             public void valueChange(ValueChangeEvent event) {
                 rawData.setEnabled(true);
@@ -165,7 +163,6 @@ public class ImageFileAnalysisContainer {
         Button downloadButton = new Button();
         downloadButton.setCaption("Download as CSV");
         downloadButton.addListener(new ClickListener() {
-
             @Override
             public void buttonClick(ClickEvent event) {
                 try {
@@ -192,7 +189,6 @@ public class ImageFileAnalysisContainer {
             zoomButton.setImmediate(true);
             zoomButton.setCaption("Setting");
             zoomButton.addListener(new ClickListener() {
-
                 @Override
                 public void buttonClick(ClickEvent event) {
                     double startX = plot.getDomainAxis().getLowerBound();
@@ -201,7 +197,6 @@ public class ImageFileAnalysisContainer {
                     double endY = plot.getRangeAxis().getUpperBound();
                     final HistogramSettingsWindow zoomSettings = new HistogramSettingsWindow(new double[]{startX, endX, startY, endY}, true);
                     ClickListener onSubmit = new ClickListener() {
-
                         @Override
                         public void buttonClick(ClickEvent event) {
                             try {
@@ -281,6 +276,12 @@ public class ImageFileAnalysisContainer {
     }
 
     public Resource imageToResource(Image img) {
+        if (img == null) {
+            return null;
+        }
+        if (img instanceof SerializableImage) {
+            img = ((SerializableImage) img).getBufferedImage();
+        }
         try {
             String FILE_EXT = "png";
             File temp = File.createTempFile("image", "." + FILE_EXT);
