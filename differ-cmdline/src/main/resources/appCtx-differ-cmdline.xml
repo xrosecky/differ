@@ -34,11 +34,10 @@
 	<property name="imageWidth" value="128"/>
     </bean>
 
-    <bean id="imageProcessor" class="cz.nkp.differ.compare.io.external.ExternalImageProcessor">
+    <bean id="imageProcessor" class="cz.nkp.differ.compare.io.pure.PureImageProcessor">
 	<constructor-arg ref="imageLoaderFactory"/>
 	<constructor-arg ref="metadataExtractors"/>
 	<property name="config" ref="imageProcessorConfig"/>
-	<property name="extractor" ref="differBinaryMetadataExtractor"/>
     </bean>
 
     <util:map id="units">
@@ -134,6 +133,7 @@
 	<property name="classesToBeBound">
 	    <list>
 		<value>cz.nkp.differ.compare.io.SerializableImageProcessorResult</value>
+                <value>cz.nkp.differ.compare.io.SerializableImageProcessorResults</value>
 	    </list>
 	</property>
 	<property name="marshallerProperties">
