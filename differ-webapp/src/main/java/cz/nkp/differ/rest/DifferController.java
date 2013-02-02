@@ -1,6 +1,6 @@
 package cz.nkp.differ.rest;
 
-import cz.nkp.differ.compare.io.SerializableImageProcessorResult;
+import cz.nkp.differ.compare.io.SerializableImageProcessorResults;
 import cz.nkp.differ.io.ResultManager;
 import java.io.IOException;
 import org.springframework.beans.BeansException;
@@ -32,7 +32,7 @@ public class DifferController implements ApplicationContextAware {
 
     @RequestMapping(value="/results", method=RequestMethod.POST)
     @ResponseBody
-    public String addResult(@RequestBody SerializableImageProcessorResult body) {
+    public String addResult(@RequestBody SerializableImageProcessorResults body) {
 	try {
 	    manager.save(body);
 	} catch (IOException ioe) {
@@ -43,8 +43,8 @@ public class DifferController implements ApplicationContextAware {
 
     @RequestMapping(value="/results/{id}", method=RequestMethod.GET)
     @ResponseBody
-    public SerializableImageProcessorResult getResult(@PathVariable("id") Long id) {
-	SerializableImageProcessorResult result = new SerializableImageProcessorResult();
+    public SerializableImageProcessorResults getResult(@PathVariable("id") Long id) {
+	SerializableImageProcessorResults result = new SerializableImageProcessorResults();
 	return result;
     }
 

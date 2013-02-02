@@ -1,6 +1,6 @@
 package cz.nkp.differ.io;
 
-import cz.nkp.differ.compare.io.SerializableImageProcessorResult;
+import cz.nkp.differ.compare.io.SerializableImageProcessorResults;
 import cz.nkp.differ.model.Result;
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,7 +24,7 @@ public class ResultManager {
     private Jaxb2Marshaller marshaller;
     private String directory;
 
-    public void save(SerializableImageProcessorResult result) throws IOException {
+    public void save(SerializableImageProcessorResults result) throws IOException {
 	String name = new Date().toString();
 	File outputFile = new File(directory, name + EXTENSION);
 	OutputStream os;
@@ -44,10 +44,10 @@ public class ResultManager {
 	return results;
     }
 
-    public SerializableImageProcessorResult getResult(Result result) throws IOException {
+    public SerializableImageProcessorResults getResult(Result result) throws IOException {
 	File input = new File(directory, result.getName());
 	StreamSource source = new StreamSource(new FileInputStream(input));
-	return (SerializableImageProcessorResult) marshaller.unmarshal(source);
+	return (SerializableImageProcessorResults) marshaller.unmarshal(source);
     }
 
     public String getDirectory() {
