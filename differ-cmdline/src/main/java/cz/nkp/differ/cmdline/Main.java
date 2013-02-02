@@ -67,11 +67,11 @@ public class Main {
             }
         })){
             String name = file.getName();
-            name.replaceFirst("[.][^.]+$", "");
+            String nameWithoutExtension = name.replaceFirst("[.][^.]+$", "");
             File [] pair = new File[2];
             pair[0] = file;
             pair[1] = null;
-            pairsByName.put(name,pair);
+            pairsByName.put(nameWithoutExtension,pair);
         }
         for( File file: files[1].listFiles(new FileFilter() {
             @Override
@@ -79,8 +79,7 @@ public class Main {
                 return !file.isDirectory();
             }
         })){
-            String name = file.getName();
-            name.replaceFirst("[.][^.]+$", "");
+            String name = file.getName().replaceFirst("[.][^.]+$", "");
             if( pairsByName.containsKey(name)){
                 pairsByName.get(name)[1] = file;
             };
@@ -142,10 +141,12 @@ public class Main {
             files[0] = new File(commandArgs.files.get(0));
             files[1] = new File(commandArgs.files.get(1));
             if( files[0].isDirectory() && files[1].isDirectory()){
-                for( File[] fpair: getPairsToCompare(files)){
+                ArrayList<File[]> pairs = getPairsToCompare(files);
+                for( File[] fpair: pairs){
                     System.out.println(String.format("processing: \t%s\n\t\t%s\n", fpair[0], fpair[1]));
                     processFiles(context, fpair);
                 }
+                System.out.println("Done\n");
             } else {
                 System.out.println(processFiles(context, files));
             }

@@ -58,7 +58,7 @@ public class ExternalMetadataExtractor implements MetadataExtractor {
 
     @Override
     public List<ImageMetadata> getMetadata(File a) {
-	return this.getMetadata(Collections.singletonMap("{file}", a.getAbsolutePath()));
+	    return this.getMetadata(Collections.singletonMap("{file}", a.getAbsolutePath()));
     }
 
     public List<ImageMetadata> getMetadata(Map<String, String> attributes) {

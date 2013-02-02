@@ -12,7 +12,6 @@ The application can validate one image or compare two images.
  --report-format             html/txt/pdf/xml
  --transform-report          transform xml report into other format - html/txt/pdf
  --save-histogram            save histogram as csv
- --name-style                a way how to name and store result files
  --save-raw-outputs          save raw outputs from validators into files
  --load-properties           program will print just properties that has 1 in the file defined by this argument
  --show-properties           program will print out all known properties in a usable format and will finish
@@ -32,18 +31,6 @@ Example of property list definition
 
 So property =Image width= will be printed and =Image height= will not be printed.
 
-
-Naming styles
-..............
-
-  thesamename ::
-
-    generated files has the same name as image file
-
-  thesamenamedir ::
-
-    all generated files are in a directory with the same name as an image file
-  
 Examples
 .........
 
@@ -85,4 +72,6 @@ Program output when comparing images
 
 Program output examples
 ~~~~~~~~~~~~~~~~~~~~~~~
+
+.. literalinclude:: examples.rst
 

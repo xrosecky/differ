@@ -120,6 +120,12 @@
         </metadata>
         <metadata>
             <key>exit-code</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">OK</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
+        </metadata>
+        <metadata>
+            <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">error (1)</value>
             <conflict>true</conflict>
             <source>djvudump</source>
@@ -183,6 +189,12 @@
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">09.jpg</value>
             <conflict>true</conflict>
             <source>core</source>
+        </metadata>
+        <metadata>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">09.jpg</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
         </metadata>
         <metadata>
             <key>File name</key>
@@ -576,16 +588,64 @@
         </metadata>
     </metadata-list>
     <sources-list>
-        <source source="jpylyzer" exitCode="0">
-            <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
-&lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.5.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;09.jpg&lt;/fileName&gt;&lt;filePath&gt;/opt/differ/docs/examples/images_01/09.jpg&lt;/filePath&gt;&lt;fileSizeInBytes&gt;5074036&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Thu Apr 28 09:09:24 2011&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;containsSignatureBox&gt;False&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;False&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;False&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;False&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;False&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;False&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;False&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;/tests&gt;&lt;properties&gt;&lt;unknownBox /&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
-            <stderr>User warning: ignoring unknown box
+        <source source="djvudump" exitCode="1">
+            <stdout></stdout>
+            <stderr>*** [1-15108] Corrupted IFF file (Illegal chunk id).
+*** (IFFByteStream.cpp:248)
+*** 'int DJVU::IFFByteStream::get_chunk(DJVU::GUTF8String&amp;, int*, int*)'
+
 </stderr>
+        </source>
+        <source source="core" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
+        <source source="fits" exitCode="0">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="31.1.13 14:02"&gt;
+  &lt;identification status="CONFLICT"&gt;
+    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;version toolname="Exiftool" toolversion="7.74"&gt;1.01&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+    &lt;identity format="symbolic link to `/opt/testovaci-data/ONLINE DIFFER/2_2_41-RK-StulUmelce-Orig.jpg'" mimetype="inode/symlink" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;5074036&lt;/size&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2011:04:28 09:09:24+02:00&lt;/lastmodified&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;98ce35f4258351bfd64d65429ff9a114&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1303974564000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;3509&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;2550&lt;/imageHeight&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
+      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;300&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;300&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
+</stdout>
+            <stderr></stderr>
         </source>
         <source source="jhove" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-01-22T13:07:31+01:00&lt;/date&gt;
+ &lt;date&gt;2013-01-31T14:02:26+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2011-04-28T09:09:24+02:00&lt;/lastModified&gt;
@@ -755,52 +815,6 @@
 </stdout>
             <stderr></stderr>
         </source>
-        <source source="core" exitCode="0">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
-        <source source="fits" exitCode="0">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="22.1.13 13:07"&gt;
-  &lt;identification status="CONFLICT"&gt;
-    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;version toolname="Exiftool" toolversion="7.74"&gt;1.01&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-    &lt;identity format="symbolic link to `/opt/testovaci-data/ONLINE DIFFER/2_2_41-RK-StulUmelce-Orig.jpg'" mimetype="inode/symlink" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;5074036&lt;/size&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2011:04:28 09:09:24+02:00&lt;/lastmodified&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;98ce35f4258351bfd64d65429ff9a114&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1303974564000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus /&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;3509&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;2550&lt;/imageHeight&gt;
-      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
-      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
-      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;300&lt;/xSamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;300&lt;/ySamplingFrequency&gt;
-      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
-      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
-
-</stdout>
-            <stderr></stderr>
-        </source>
         <source source="exiv2" exitCode="0">
             <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg
 File size       : 5074036 Bytes
@@ -831,14 +845,6 @@ Exif comment    :
 </stdout>
             <stderr></stderr>
         </source>
-        <source source="djvudump" exitCode="1">
-            <stdout></stdout>
-            <stderr>*** [1-15108] Corrupted IFF file (Illegal chunk id).
-*** (IFFByteStream.cpp:248)
-*** 'int DJVU::IFFByteStream::get_chunk(DJVU::GUTF8String&amp;, int*, int*)'
-
-</stderr>
-        </source>
         <source source="exiftool" exitCode="0">
             <stdout>ExifTool Version Number         : 8.60
 File Name                       : 09.jpg
@@ -864,6 +870,16 @@ Color Components                : 3
 Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
 Image Size                      : 3509x2550
 </stdout>
+            <stderr></stderr>
+        </source>
+        <source source="jpylyzer" exitCode="0">
+            <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
+&lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.5.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;09.jpg&lt;/fileName&gt;&lt;filePath&gt;/opt/differ/docs/examples/images_01/09.jpg&lt;/filePath&gt;&lt;fileSizeInBytes&gt;5074036&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Thu Apr 28 09:09:24 2011&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;containsSignatureBox&gt;False&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;False&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;False&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;False&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;False&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;False&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;False&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;/tests&gt;&lt;properties&gt;&lt;unknownBox /&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
+            <stderr>User warning: ignoring unknown box
+</stderr>
+        </source>
+        <source source="daitss" exitCode="0">
+            <stdout></stdout>
             <stderr></stderr>
         </source>
     </sources-list>

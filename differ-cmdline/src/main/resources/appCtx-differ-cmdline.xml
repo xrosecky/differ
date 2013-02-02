@@ -21,14 +21,37 @@
 
     <bean id="djvuImageLoader" class="cz.nkp.differ.images.DjvuImageLoader"/>
 
-    <bean id="imageLoaderFactory" class="cz.nkp.differ.images.ImageLoaderFactory">
-	<property name="loaders">
-	    <map>
-		<entry key="djvu" value-ref="djvuImageLoader"/>
-	    </map>
-	</property>
-	<property name="defaultImageLoader" ref="genericImageLoader"/>
+    <bean id="tiffImageLoader" class="cz.nkp.differ.images.ExternalImageLoader">
+      <property name="programArguments">
+	<list>
+	  <value>/usr/bin/convert</value>
+	  <value>{input_file}</value>
+	  <value>{output_file}</value>
+	</list>
+      </property>
+      <property name="imageLoader" ref="genericImageLoader"/>
+      <property name="prefix" value="bmp"/>
     </bean>
+    
+    <bean id="imageLoaderFactory" class="cz.nkp.differ.images.ImageLoaderFactory">
+      <property name="loaders">
+	<map>
+	  <entry key="djvu" value-ref="djvuImageLoader"/>
+	  <entry key="tiff" value-ref="tiffImageLoader"/>
+	  <entry key="tif" value-ref="tiffImageLoader"/>
+	</map>
+      </property>
+      <property name="defaultImageLoader" ref="genericImageLoader"/>
+    </bean>
+    
+    <!-- <bean id="imageLoaderFactory" class="cz.nkp.differ.images.ImageLoaderFactory"> -->
+    <!-- 	<property name="loaders"> -->
+    <!-- 	    <map> -->
+    <!-- 		<entry key="djvu" value-ref="djvuImageLoader"/> -->
+    <!-- 	    </map> -->
+    <!-- 	</property> -->
+    <!-- 	<property name="defaultImageLoader" ref="genericImageLoader"/> -->
+    <!-- </bean> -->
 
     <bean id="imageProcessorConfig" class="cz.nkp.differ.compare.io.ImageProcessorConfig">
 	<property name="imageWidth" value="128"/>
@@ -158,6 +181,17 @@
       <property name="units" ref="units"/>
     </bean>
 
+    <!-- daitss -->
+    <bean id="daitssMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
+    	<property name="stylesheet" value="${daitss.xsl}"/>
+    </bean>
+    <bean id="daitssHTTPMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.DaitssHTTPMetadataExtractor">
+      <property name="source" value="daitss"/>
+      <property name="transformer" ref="daitssMetadataTransformer"/>
+      <property name="units" ref="units"/>
+      <property name="url" value="http://description.fcla.edu/description"/>
+    </bean>
+
     <!-- fits -->
     <bean id="fitsMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
     	<property name="stylesheet" value="${fits.xsl}"/>
@@ -219,6 +253,7 @@
 	      <ref bean="jhoveMetadataExtractor"/>
 	      <ref bean="exiv2MetadataExtractor"/>
 	      <ref bean="jpylyzerMetadataExtractor"/>
+	      <ref bean="daitssHTTPMetadataExtractor"/>
 	    </list>
 	</property>
     </bean>

@@ -1,2 +1,0 @@
-#!/bin/bash
-jpylyzer --verbose '/opt/testovaci-data/2_Set ot TEST images Vlna_testovani-Vysledky_porovnani_obrazku/2_Sada_testovacich_obrazku/3_JP2/3_JP2-KAKADU_KT-Voda-VMPC_OK/3_01_JP2-OK/3_2_01_01-KT-300dpi-Orig-KDU.jp2' | xmlstarlet fo > jpylyzer.raw

@@ -1,5 +1,14 @@
 package cz.nkp.differ.cmdline;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.FileEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+
+import java.io.File;
+import java.io.IOException;
+
 /**
  * Created with IntelliJ IDEA.
  * User: stavel
@@ -8,4 +17,27 @@ package cz.nkp.differ.cmdline;
  * To change this template use File | Settings | File Templates.
  */
 public class ReportHTTPSender {
+    private String url;
+
+    public void setUrl(String url){
+        this.url = url;
+    }
+    public String getUrl(){
+        return this.url;
+    }
+    public HttpResponse sendReport(File report){
+        HttpResponse response = null;
+        HttpPost httpPost = new HttpPost(this.url);
+        HttpClient client = new DefaultHttpClient();
+        FileEntity input = new FileEntity(report);
+	    input.setContentType("application/xml");
+		httpPost.setEntity(input);
+        try {
+            response = client.execute(httpPost);
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+        client.getConnectionManager().shutdown();
+        return response;
+    }
 }

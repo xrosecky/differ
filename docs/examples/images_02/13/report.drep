@@ -132,6 +132,12 @@
         </metadata>
         <metadata>
             <key>exit-code</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">OK</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
+        </metadata>
+        <metadata>
+            <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">error (1)</value>
             <conflict>true</conflict>
             <source>djvudump</source>
@@ -195,6 +201,12 @@
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">13.jpg</value>
             <conflict>true</conflict>
             <source>core</source>
+        </metadata>
+        <metadata>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">13.jpg</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
         </metadata>
         <metadata>
             <key>File name</key>
@@ -594,99 +606,17 @@
         </metadata>
     </metadata-list>
     <sources-list>
-        <source source="exiv2" exitCode="0">
-            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_02/13.jpg
-File size       : 1447733 Bytes
-MIME type       : image/jpeg
-Image size      : 1815 x 2126
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 1815 x 2126
-White balance   : 
-Thumbnail       : image/jpeg, 5929 Bytes
-Copyright       : 
-Exif comment    : 
+        <source source="djvudump" exitCode="1">
+            <stdout></stdout>
+            <stderr>*** [1-15108] Corrupted IFF file (Illegal chunk id).
+*** (IFFByteStream.cpp:248)
+*** 'int DJVU::IFFByteStream::get_chunk(DJVU::GUTF8String&amp;, int*, int*)'
 
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="exiftool" exitCode="0">
-            <stdout>ExifTool Version Number         : 8.60
-File Name                       : 13.jpg
-Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_02
-File Size                       : 1414 kB
-File Modification Date/Time     : 2011:04:28 09:15:24+02:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-JFIF Version                    : 1.02
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Orientation                     : Horizontal (normal)
-X Resolution                    : 300
-Y Resolution                    : 300
-Resolution Unit                 : inches
-Software                        : Adobe Photoshop CS2 Windows
-Modify Date                     : 2010:12:14 11:53:28
-Color Space                     : Uncalibrated
-Exif Image Width                : 1815
-Exif Image Height               : 2126
-Compression                     : JPEG (old-style)
-Thumbnail Offset                : 332
-Thumbnail Length                : 5929
-IPTC Digest                     : 00000000000000000000000000000000
-Displayed Units X               : inches
-Displayed Units Y               : inches
-Global Angle                    : 30
-Global Altitude                 : 30
-Copyright Flag                  : False
-Photoshop Thumbnail             : (Binary data 5929 bytes, use -b option to extract)
-Photoshop Quality               : 8
-Photoshop Format                : Progressive
-Progressive Scans               : 3 Scans
-XMP Toolkit                     : 3.1.1-112
-Document ID                     : uuid:CB596EAF7807E011B337EC427BA3BC23
-Instance ID                     : uuid:CE596EAF7807E011B337EC427BA3BC23
-Derived From Instance ID        : uuid:74B41C887807E011B337EC427BA3BC23
-Derived From Document ID        : uuid:74B41C887807E011B337EC427BA3BC23
-Create Date                     : 2010:12:14 11:53:15Z
-Metadata Date                   : 2010:12:14 11:53:28Z
-Creator Tool                    : Adobe Photoshop CS2 Windows
-Format                          : image/jpeg
-Color Mode                      : RGB
-History                         : 
-Native Digest                   : 256,257,258,259,262,274,277,284,530,531,282,283,296,301,318,319,529,532,306,270,271,272,305,315,33432;74BC224FB5D502CE5A6B57AC25F7C366
-DCT Encode Version              : 100
-APP14 Flags 0                   : (none)
-APP14 Flags 1                   : (none)
-Color Transform                 : YCbCr
-Image Width                     : 1815
-Image Height                    : 2126
-Encoding Process                : Progressive DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
-Image Size                      : 1815x2126
-Thumbnail Image                 : (Binary data 5929 bytes, use -b option to extract)
-</stdout>
-            <stderr></stderr>
+</stderr>
         </source>
         <source source="fits" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="22.1.13 13:12"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="31.1.13 14:09"&gt;
   &lt;identification status="CONFLICT"&gt;
     &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
@@ -731,28 +661,20 @@ Thumbnail Image                 : (Binary data 5929 bytes, use -b option to extr
 </stdout>
             <stderr></stderr>
         </source>
-        <source source="core" exitCode="0">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
-        <source source="djvudump" exitCode="1">
-            <stdout></stdout>
-            <stderr>*** [1-15108] Corrupted IFF file (Illegal chunk id).
-*** (IFFByteStream.cpp:248)
-*** 'int DJVU::IFFByteStream::get_chunk(DJVU::GUTF8String&amp;, int*, int*)'
-
-</stderr>
-        </source>
         <source source="jpylyzer" exitCode="0">
             <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
 &lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.5.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;13.jpg&lt;/fileName&gt;&lt;filePath&gt;/opt/differ/docs/examples/images_02/13.jpg&lt;/filePath&gt;&lt;fileSizeInBytes&gt;1447733&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Thu Apr 28 09:15:24 2011&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;containsSignatureBox&gt;False&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;False&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;False&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;False&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;False&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;False&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;False&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;/tests&gt;&lt;properties&gt;&lt;unknownBox /&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
             <stderr>User warning: ignoring unknown box
 </stderr>
         </source>
+        <source source="core" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
         <source source="jhove" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-01-22T13:12:18+01:00&lt;/date&gt;
+ &lt;date&gt;2013-01-31T14:09:23+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_02/13.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2011-04-28T09:15:24+02:00&lt;/lastModified&gt;
@@ -955,6 +877,100 @@ Thumbnail Image                 : (Binary data 5929 bytes, use -b option to extr
   &lt;/properties&gt;
  &lt;/repInfo&gt;
 &lt;/jhove&gt;
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="daitss" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
+        <source source="exiftool" exitCode="0">
+            <stdout>ExifTool Version Number         : 8.60
+File Name                       : 13.jpg
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 1414 kB
+File Modification Date/Time     : 2011:04:28 09:15:24+02:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.02
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Orientation                     : Horizontal (normal)
+X Resolution                    : 300
+Y Resolution                    : 300
+Resolution Unit                 : inches
+Software                        : Adobe Photoshop CS2 Windows
+Modify Date                     : 2010:12:14 11:53:28
+Color Space                     : Uncalibrated
+Exif Image Width                : 1815
+Exif Image Height               : 2126
+Compression                     : JPEG (old-style)
+Thumbnail Offset                : 332
+Thumbnail Length                : 5929
+IPTC Digest                     : 00000000000000000000000000000000
+Displayed Units X               : inches
+Displayed Units Y               : inches
+Global Angle                    : 30
+Global Altitude                 : 30
+Copyright Flag                  : False
+Photoshop Thumbnail             : (Binary data 5929 bytes, use -b option to extract)
+Photoshop Quality               : 8
+Photoshop Format                : Progressive
+Progressive Scans               : 3 Scans
+XMP Toolkit                     : 3.1.1-112
+Document ID                     : uuid:CB596EAF7807E011B337EC427BA3BC23
+Instance ID                     : uuid:CE596EAF7807E011B337EC427BA3BC23
+Derived From Instance ID        : uuid:74B41C887807E011B337EC427BA3BC23
+Derived From Document ID        : uuid:74B41C887807E011B337EC427BA3BC23
+Create Date                     : 2010:12:14 11:53:15Z
+Metadata Date                   : 2010:12:14 11:53:28Z
+Creator Tool                    : Adobe Photoshop CS2 Windows
+Format                          : image/jpeg
+Color Mode                      : RGB
+History                         : 
+Native Digest                   : 256,257,258,259,262,274,277,284,530,531,282,283,296,301,318,319,529,532,306,270,271,272,305,315,33432;74BC224FB5D502CE5A6B57AC25F7C366
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Image Width                     : 1815
+Image Height                    : 2126
+Encoding Process                : Progressive DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
+Image Size                      : 1815x2126
+Thumbnail Image                 : (Binary data 5929 bytes, use -b option to extract)
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="exiv2" exitCode="0">
+            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_02/13.jpg
+File size       : 1447733 Bytes
+MIME type       : image/jpeg
+Image size      : 1815 x 2126
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 1815 x 2126
+White balance   : 
+Thumbnail       : image/jpeg, 5929 Bytes
+Copyright       : 
+Exif comment    : 
+
 </stdout>
             <stderr></stderr>
         </source>

@@ -26,7 +26,8 @@ Display resolution horizontal      PPI   jpylyzer
 Display resolution vertical        PPI   jpylyzer  
 Encoding process                         exiftool  Baseline DCT, Huffman coding
 End of packet header                     jpylyzer  
-exit-code                                djvudump  error (1)
+exit-code                                daitss    OK
+                                         djvudump  error (1)
                                          exiftool  ok
                                          exiv2     ok
                                          fits      ok
@@ -37,6 +38,7 @@ File last modified                       exiftool  2011:04:28 09:09:24+02:00
                                          jhove     2011-04-28T09:09:24+02:00
                                          jpylyzer  Thu Apr 28 09:09:24 2011
 File name                                core      09.jpg
+                                         daitss    09.jpg
                                          exiv2     /opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg
                                          fits      /opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg
                                          jpylyzer  09.jpg
@@ -104,6 +106,7 @@ Validation (well formed and valid)       jhove     Well-Formed and valid
 Raw outputs of extractors
 =========================
 
+   daitss       'output <../docs/examples/images_01/09/output-daitss.raw>'_
    djvudump     'output <../docs/examples/images_01/09/output-djvudump.raw>'_
    exiftool     'output <../docs/examples/images_01/09/output-exiftool.raw>'_
    exiv2        'output <../docs/examples/images_01/09/output-exiv2.raw>'_

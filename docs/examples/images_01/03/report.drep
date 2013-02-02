@@ -132,6 +132,12 @@
         </metadata>
         <metadata>
             <key>exit-code</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">OK</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
+        </metadata>
+        <metadata>
+            <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">error (1)</value>
             <conflict>true</conflict>
             <source>djvudump</source>
@@ -195,6 +201,12 @@
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">03.jpg</value>
             <conflict>true</conflict>
             <source>core</source>
+        </metadata>
+        <metadata>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">03.jpg</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
         </metadata>
         <metadata>
             <key>File name</key>
@@ -594,118 +606,6 @@
         </metadata>
     </metadata-list>
     <sources-list>
-        <source source="exiv2" exitCode="0">
-            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg
-File size       : 176853 Bytes
-MIME type       : image/jpeg
-Image size      : 512 x 512
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 512 x 512
-White balance   : 
-Thumbnail       : image/jpeg, 6963 Bytes
-Copyright       : 
-Exif comment    : 
-
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="djvudump" exitCode="1">
-            <stdout></stdout>
-            <stderr>*** [1-15108] Corrupted IFF file (Illegal chunk id).
-*** (IFFByteStream.cpp:248)
-*** 'int DJVU::IFFByteStream::get_chunk(DJVU::GUTF8String&amp;, int*, int*)'
-
-</stderr>
-        </source>
-        <source source="exiftool" exitCode="0">
-            <stdout>ExifTool Version Number         : 8.60
-File Name                       : 03.jpg
-Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
-File Size                       : 173 kB
-File Modification Date/Time     : 2012:02:12 12:23:58+01:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Compression                     : Uncompressed
-Photometric Interpretation      : RGB
-Orientation                     : Horizontal (normal)
-Samples Per Pixel               : 3
-X Resolution                    : 72
-Y Resolution                    : 72
-Planar Configuration            : Chunky
-Resolution Unit                 : inches
-Software                        : Adobe Photoshop CS5 Windows
-Modify Date                     : 2012:02:12 12:23:55
-Color Space                     : Uncalibrated
-Exif Image Width                : 512
-Exif Image Height               : 512
-Thumbnail Offset                : 402
-Thumbnail Length                : 6963
-IPTC Digest                     : 00000000000000000000000000000000
-Displayed Units X               : inches
-Displayed Units Y               : inches
-Global Angle                    : 30
-Global Altitude                 : 30
-Photoshop Thumbnail             : (Binary data 6963 bytes, use -b option to extract)
-Photoshop Quality               : 12
-Photoshop Format                : Standard
-Progressive Scans               : 3 Scans
-XMP Toolkit                     : Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00
-Create Date                     : 2012:02:12 12:09:13+01:00
-Metadata Date                   : 2012:02:12 12:23:55+01:00
-Creator Tool                    : Adobe Photoshop CS5 Windows
-Format                          : image/jpeg
-Color Mode                      : RGB
-Instance ID                     : xmp.iid:F7B79AEC6A55E11180A5EF7BDC084C3E
-Document ID                     : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-Original Document ID            : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-Document Ancestors              : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-History Action                  : created, converted, saved, saved, saved, saved, converted, derived, saved, saved, converted, derived, saved
-History Instance ID             : xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:F6B79AEC6A55E11180A5EF7BDC084C3E, xmp.iid:F7B79AEC6A55E11180A5EF7BDC084C3E
-History When                    : 2012:02:12 12:09:13+01:00, 2012:02:12 12:11:16+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:23:55+01:00, 2012:02:12 12:23:55+01:00
-History Software Agent          : Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows
-History Parameters              : from image/tiff to image/jpeg, from image/jpeg to application/vnd.adobe.photoshop, converted from image/jpeg to application/vnd.adobe.photoshop, from application/vnd.adobe.photoshop to image/jpeg, converted from application/vnd.adobe.photoshop to image/jpeg
-History Changed                 : /, /, /, /, /, /, /
-Derived From Instance ID        : xmp.iid:F6B79AEC6A55E11180A5EF7BDC084C3E
-Derived From Document ID        : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-Derived From Original Document ID: xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-DCT Encode Version              : 100
-APP14 Flags 0                   : [14]
-APP14 Flags 1                   : (none)
-Color Transform                 : YCbCr
-Image Width                     : 512
-Image Height                    : 512
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
-Image Size                      : 512x512
-Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extract)
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="jpylyzer" exitCode="0">
-            <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
-&lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.5.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;03.jpg&lt;/fileName&gt;&lt;filePath&gt;/opt/differ/docs/examples/images_01/03.jpg&lt;/filePath&gt;&lt;fileSizeInBytes&gt;176853&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Sun Feb 12 12:23:58 2012&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;containsSignatureBox&gt;False&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;False&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;False&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;False&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;False&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;False&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;False&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;/tests&gt;&lt;properties&gt;&lt;unknownBox /&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
-            <stderr>User warning: ignoring unknown box
-</stderr>
-        </source>
         <source source="core" exitCode="0">
             <stdout></stdout>
             <stderr></stderr>
@@ -713,7 +613,7 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
         <source source="jhove" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-01-22T13:05:22+01:00&lt;/date&gt;
+ &lt;date&gt;2013-01-31T13:58:14+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2012-02-12T12:23:58+01:00&lt;/lastModified&gt;
@@ -881,9 +781,53 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
 </stdout>
             <stderr></stderr>
         </source>
+        <source source="exiv2" exitCode="0">
+            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg
+File size       : 176853 Bytes
+MIME type       : image/jpeg
+Image size      : 512 x 512
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 512 x 512
+White balance   : 
+Thumbnail       : image/jpeg, 6963 Bytes
+Copyright       : 
+Exif comment    : 
+
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="djvudump" exitCode="1">
+            <stdout></stdout>
+            <stderr>*** [1-15108] Corrupted IFF file (Illegal chunk id).
+*** (IFFByteStream.cpp:248)
+*** 'int DJVU::IFFByteStream::get_chunk(DJVU::GUTF8String&amp;, int*, int*)'
+
+</stderr>
+        </source>
+        <source source="jpylyzer" exitCode="0">
+            <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
+&lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.5.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;03.jpg&lt;/fileName&gt;&lt;filePath&gt;/opt/differ/docs/examples/images_01/03.jpg&lt;/filePath&gt;&lt;fileSizeInBytes&gt;176853&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Sun Feb 12 12:23:58 2012&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;containsSignatureBox&gt;False&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;False&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;False&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;False&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;False&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;False&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;False&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;/tests&gt;&lt;properties&gt;&lt;unknownBox /&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
+            <stderr>User warning: ignoring unknown box
+</stderr>
+        </source>
         <source source="fits" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="22.1.13 13:05"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="31.1.13 13:58"&gt;
   &lt;identification status="CONFLICT"&gt;
     &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
@@ -924,6 +868,78 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
   &lt;/metadata&gt;
 &lt;/fits&gt;
 
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="daitss" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
+        <source source="exiftool" exitCode="0">
+            <stdout>ExifTool Version Number         : 8.60
+File Name                       : 03.jpg
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
+File Size                       : 173 kB
+File Modification Date/Time     : 2012:02:12 12:23:58+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Compression                     : Uncompressed
+Photometric Interpretation      : RGB
+Orientation                     : Horizontal (normal)
+Samples Per Pixel               : 3
+X Resolution                    : 72
+Y Resolution                    : 72
+Planar Configuration            : Chunky
+Resolution Unit                 : inches
+Software                        : Adobe Photoshop CS5 Windows
+Modify Date                     : 2012:02:12 12:23:55
+Color Space                     : Uncalibrated
+Exif Image Width                : 512
+Exif Image Height               : 512
+Thumbnail Offset                : 402
+Thumbnail Length                : 6963
+IPTC Digest                     : 00000000000000000000000000000000
+Displayed Units X               : inches
+Displayed Units Y               : inches
+Global Angle                    : 30
+Global Altitude                 : 30
+Photoshop Thumbnail             : (Binary data 6963 bytes, use -b option to extract)
+Photoshop Quality               : 12
+Photoshop Format                : Standard
+Progressive Scans               : 3 Scans
+XMP Toolkit                     : Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00
+Create Date                     : 2012:02:12 12:09:13+01:00
+Metadata Date                   : 2012:02:12 12:23:55+01:00
+Creator Tool                    : Adobe Photoshop CS5 Windows
+Format                          : image/jpeg
+Color Mode                      : RGB
+Instance ID                     : xmp.iid:F7B79AEC6A55E11180A5EF7BDC084C3E
+Document ID                     : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Original Document ID            : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Document Ancestors              : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+History Action                  : created, converted, saved, saved, saved, saved, converted, derived, saved, saved, converted, derived, saved
+History Instance ID             : xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:F6B79AEC6A55E11180A5EF7BDC084C3E, xmp.iid:F7B79AEC6A55E11180A5EF7BDC084C3E
+History When                    : 2012:02:12 12:09:13+01:00, 2012:02:12 12:11:16+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:23:55+01:00, 2012:02:12 12:23:55+01:00
+History Software Agent          : Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows
+History Parameters              : from image/tiff to image/jpeg, from image/jpeg to application/vnd.adobe.photoshop, converted from image/jpeg to application/vnd.adobe.photoshop, from application/vnd.adobe.photoshop to image/jpeg, converted from application/vnd.adobe.photoshop to image/jpeg
+History Changed                 : /, /, /, /, /, /, /
+Derived From Instance ID        : xmp.iid:F6B79AEC6A55E11180A5EF7BDC084C3E
+Derived From Document ID        : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Derived From Original Document ID: xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+DCT Encode Version              : 100
+APP14 Flags 0                   : [14]
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Image Width                     : 512
+Image Height                    : 512
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
+Image Size                      : 512x512
+Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extract)
 </stdout>
             <stderr></stderr>
         </source>

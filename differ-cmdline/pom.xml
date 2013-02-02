@@ -51,6 +51,21 @@
 	  <artifactId>jcommander</artifactId>
 	  <version>1.30</version>
 	</dependency>
+
+	<dependency>
+	  <groupId>org.apache.httpcomponents</groupId>
+	  <artifactId>httpclient</artifactId>
+	  <version>4.2.3</version>
+	  <scope>compile</scope>
+	</dependency>	
+	
+	<dependency>
+	  <groupId>org.apache.httpcomponents</groupId>
+	  <artifactId>httpmime</artifactId>
+	  <version>4.2.3</version>
+	  <scope>compile</scope>
+	</dependency>
+
     </dependencies>
   
     <build>

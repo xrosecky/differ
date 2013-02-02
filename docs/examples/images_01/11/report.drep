@@ -144,6 +144,12 @@
         </metadata>
         <metadata>
             <key>exit-code</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">OK</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
+        </metadata>
+        <metadata>
+            <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">error (1)</value>
             <conflict>true</conflict>
             <source>djvudump</source>
@@ -225,6 +231,12 @@
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">11.jpg</value>
             <conflict>true</conflict>
             <source>core</source>
+        </metadata>
+        <metadata>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">11.jpg</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
         </metadata>
         <metadata>
             <key>File name</key>
@@ -668,7 +680,7 @@
     <sources-list>
         <source source="fits" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="22.1.13 13:08"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="31.1.13 14:05"&gt;
   &lt;identification status="CONFLICT"&gt;
     &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
@@ -732,166 +744,14 @@
 </stdout>
             <stderr></stderr>
         </source>
-        <source source="djvudump" exitCode="1">
-            <stdout></stdout>
-            <stderr>*** [1-15108] Corrupted IFF file (Illegal chunk id).
-*** (IFFByteStream.cpp:248)
-*** 'int DJVU::IFFByteStream::get_chunk(DJVU::GUTF8String&amp;, int*, int*)'
-
-</stderr>
-        </source>
-        <source source="core" exitCode="0">
+        <source source="daitss" exitCode="0">
             <stdout></stdout>
             <stderr></stderr>
-        </source>
-        <source source="exiftool" exitCode="0">
-            <stdout>ExifTool Version Number         : 8.60
-File Name                       : 11.jpg
-Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
-File Size                       : 153 kB
-File Modification Date/Time     : 2011:04:28 09:16:06+02:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-JFIF Version                    : 1.01
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Image Description               : SONY DSC
-Make                            : SONY
-Camera Model Name               : DSLR-A200
-Orientation                     : Horizontal (normal)
-X Resolution                    : 72
-Y Resolution                    : 72
-Resolution Unit                 : inches
-Software                        : Microsoft Windows Photo Gallery 6.0.6001.18000
-Modify Date                     : 2010:03:07 20:16:11
-Y Cb Cr Positioning             : Co-sited
-Exposure Time                   : 1/30
-F Number                        : 3.5
-Exposure Program                : Program AE
-ISO                             : 400
-Exif Version                    : 0221
-Date/Time Original              : 2010:03:07 21:07:11
-Create Date                     : 2010:03:07 21:07:11
-Components Configuration        : Y, Cb, Cr, -
-Compressed Bits Per Pixel       : 8
-Brightness Value                : 1.75
-Exposure Compensation           : 0
-Max Aperture Value              : 3.5
-Light Source                    : Unknown
-Flash                           : Off, Did not fire
-Focal Length                    : 18.0 mm
-Warning                         : [minor] Possibly incorrect maker notes offsets (fix by 3958?)
-Flash Exposure Compensation     : -0.5578225782
-Teleconverter                   : None
-White Balance Fine Tune         : 0
-Focus Mode                      : Unknown (64445)
-AF Area Mode                    : Unknown (63231)
-Local AF Area Point             : Unknown (64494)
-Metering Mode                   : Unknown (64381)
-ISO Setting                     : inf
-Dynamic Range Optimizer Mode    : Unknown (65535)
-Dynamic Range Optimizer Level   : 64374
-Creative Style                  : Unknown (63227)
-Zone Matching Value             : +55217
-Brightness                      : +31629
-Flash Mode                      : Unknown (65270)
-Rotation                        : Unknown (49151)
-Sony Image Size                 : Unknown (49151)
-Aspect Ratio                    : Unknown (28655)
-Quality                         : Unknown (64459)
-Exposure Level Increments       : Unknown (60156)
-White Balance                   : Auto
-Preview Image                   : (Binary data 467747 bytes, use -b option to extract)
-Color Temperature               : Auto
-Color Compensation Filter       : 0
-Scene Mode                      : Auto
-Zone Matching                   : ISO Setting Used
-Dynamic Range Optimizer         : Advanced Auto
-Image Stabilization             : On
-Lens Type                       : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or 18-200m F3.5-6.3
-Color Mode                      : Standard
-User Comment                    : 
-Flashpix Version                : 0100
-Exif Image Width                : 1846
-Exif Image Height               : 2677
-Interoperability Version        : 0100
-File Source                     : Digital Camera
-Scene Type                      : Directly photographed
-Custom Rendered                 : Normal
-Exposure Mode                   : Auto
-Focal Length In 35mm Format     : 27 mm
-Scene Capture Type              : Standard
-Contrast                        : Normal
-Saturation                      : Normal
-Sharpness                       : Normal
-Image Unique ID                 : 347AA785BFCA46758249245D37EAD703
-Offset Schema                   : 3958
-PrintIM Version                 : 0300
-Padding                         : (Binary data 2060 bytes, use -b option to extract)
-Compression                     : JPEG (old-style)
-Thumbnail Offset                : 34912
-Thumbnail Length                : 1636
-Image Width                     : 1846
-Image Height                    : 2677
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
-Aperture                        : 3.5
-Image Size                      : 1846x2677
-Lens ID                         : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or Sony AF DT 18-200mm F3.5-6.3
-Scale Factor To 35 mm Equivalent: 1.5
-Shutter Speed                   : 1/30
-Thumbnail Image                 : (Binary data 1636 bytes, use -b option to extract)
-Circle Of Confusion             : 0.020 mm
-Field Of View                   : 67.4 deg
-Focal Length                    : 18.0 mm (35 mm equivalent: 27.0 mm)
-Hyperfocal Distance             : 4.62 m
-Light Value                     : 6.5
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="exiv2" exitCode="0">
-            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/11.jpg
-File size       : 157041 Bytes
-MIME type       : image/jpeg
-Image size      : 1846 x 2677
-Camera make     : SONY 
-Camera model    : DSLR-A200
-Image timestamp : 2010:03:07 21:07:11
-Image number    : 
-Exposure time   : 1/30 s
-Aperture        : F3.5
-Exposure bias   : 0 EV
-Flash           : No, compulsory
-Flash bias      : 
-Focal length    : 18.0 mm (35 mm equivalent: 27.0 mm)
-Subject distance: 
-ISO speed       : 400
-Exposure mode   : Auto
-Metering mode   : Multi-segment
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 1846 x 2677
-White balance   : Auto
-Thumbnail       : image/jpeg, 1636 Bytes
-Copyright       : 
-Exif comment    :                                                         
-
-</stdout>
-            <stderr>Error: Directory Sony1 with 5632 entries considered invalid; not read.
-</stderr>
-        </source>
-        <source source="jpylyzer" exitCode="0">
-            <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
-&lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.5.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;11.jpg&lt;/fileName&gt;&lt;filePath&gt;/opt/differ/docs/examples/images_01/11.jpg&lt;/filePath&gt;&lt;fileSizeInBytes&gt;157041&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Thu Apr 28 09:16:06 2011&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;containsSignatureBox&gt;False&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;False&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;False&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;False&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;False&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;False&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;False&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;/tests&gt;&lt;properties&gt;&lt;unknownBox /&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
-            <stderr>User warning: ignoring unknown box
-</stderr>
         </source>
         <source source="jhove" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-01-22T13:08:44+01:00&lt;/date&gt;
+ &lt;date&gt;2013-01-31T14:05:17+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/11.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2011-04-28T09:16:06+02:00&lt;/lastModified&gt;
@@ -1060,6 +920,162 @@ Exif comment    :                                                         
 &lt;/jhove&gt;
 </stdout>
             <stderr></stderr>
+        </source>
+        <source source="exiv2" exitCode="0">
+            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/11.jpg
+File size       : 157041 Bytes
+MIME type       : image/jpeg
+Image size      : 1846 x 2677
+Camera make     : SONY 
+Camera model    : DSLR-A200
+Image timestamp : 2010:03:07 21:07:11
+Image number    : 
+Exposure time   : 1/30 s
+Aperture        : F3.5
+Exposure bias   : 0 EV
+Flash           : No, compulsory
+Flash bias      : 
+Focal length    : 18.0 mm (35 mm equivalent: 27.0 mm)
+Subject distance: 
+ISO speed       : 400
+Exposure mode   : Auto
+Metering mode   : Multi-segment
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 1846 x 2677
+White balance   : Auto
+Thumbnail       : image/jpeg, 1636 Bytes
+Copyright       : 
+Exif comment    :                                                         
+
+</stdout>
+            <stderr>Error: Directory Sony1 with 5632 entries considered invalid; not read.
+</stderr>
+        </source>
+        <source source="core" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
+        <source source="jpylyzer" exitCode="0">
+            <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
+&lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.5.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;11.jpg&lt;/fileName&gt;&lt;filePath&gt;/opt/differ/docs/examples/images_01/11.jpg&lt;/filePath&gt;&lt;fileSizeInBytes&gt;157041&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Thu Apr 28 09:16:06 2011&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;containsSignatureBox&gt;False&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;False&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;False&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;False&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;False&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;False&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;False&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;/tests&gt;&lt;properties&gt;&lt;unknownBox /&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
+            <stderr>User warning: ignoring unknown box
+</stderr>
+        </source>
+        <source source="exiftool" exitCode="0">
+            <stdout>ExifTool Version Number         : 8.60
+File Name                       : 11.jpg
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
+File Size                       : 153 kB
+File Modification Date/Time     : 2011:04:28 09:16:06+02:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : SONY DSC
+Make                            : SONY
+Camera Model Name               : DSLR-A200
+Orientation                     : Horizontal (normal)
+X Resolution                    : 72
+Y Resolution                    : 72
+Resolution Unit                 : inches
+Software                        : Microsoft Windows Photo Gallery 6.0.6001.18000
+Modify Date                     : 2010:03:07 20:16:11
+Y Cb Cr Positioning             : Co-sited
+Exposure Time                   : 1/30
+F Number                        : 3.5
+Exposure Program                : Program AE
+ISO                             : 400
+Exif Version                    : 0221
+Date/Time Original              : 2010:03:07 21:07:11
+Create Date                     : 2010:03:07 21:07:11
+Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 8
+Brightness Value                : 1.75
+Exposure Compensation           : 0
+Max Aperture Value              : 3.5
+Light Source                    : Unknown
+Flash                           : Off, Did not fire
+Focal Length                    : 18.0 mm
+Warning                         : [minor] Possibly incorrect maker notes offsets (fix by 3958?)
+Flash Exposure Compensation     : -0.5578225782
+Teleconverter                   : None
+White Balance Fine Tune         : 0
+Focus Mode                      : Unknown (64445)
+AF Area Mode                    : Unknown (63231)
+Local AF Area Point             : Unknown (64494)
+Metering Mode                   : Unknown (64381)
+ISO Setting                     : inf
+Dynamic Range Optimizer Mode    : Unknown (65535)
+Dynamic Range Optimizer Level   : 64374
+Creative Style                  : Unknown (63227)
+Zone Matching Value             : +55217
+Brightness                      : +31629
+Flash Mode                      : Unknown (65270)
+Rotation                        : Unknown (49151)
+Sony Image Size                 : Unknown (49151)
+Aspect Ratio                    : Unknown (28655)
+Quality                         : Unknown (64459)
+Exposure Level Increments       : Unknown (60156)
+White Balance                   : Auto
+Preview Image                   : (Binary data 467747 bytes, use -b option to extract)
+Color Temperature               : Auto
+Color Compensation Filter       : 0
+Scene Mode                      : Auto
+Zone Matching                   : ISO Setting Used
+Dynamic Range Optimizer         : Advanced Auto
+Image Stabilization             : On
+Lens Type                       : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or 18-200m F3.5-6.3
+Color Mode                      : Standard
+User Comment                    : 
+Flashpix Version                : 0100
+Exif Image Width                : 1846
+Exif Image Height               : 2677
+Interoperability Version        : 0100
+File Source                     : Digital Camera
+Scene Type                      : Directly photographed
+Custom Rendered                 : Normal
+Exposure Mode                   : Auto
+Focal Length In 35mm Format     : 27 mm
+Scene Capture Type              : Standard
+Contrast                        : Normal
+Saturation                      : Normal
+Sharpness                       : Normal
+Image Unique ID                 : 347AA785BFCA46758249245D37EAD703
+Offset Schema                   : 3958
+PrintIM Version                 : 0300
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+Compression                     : JPEG (old-style)
+Thumbnail Offset                : 34912
+Thumbnail Length                : 1636
+Image Width                     : 1846
+Image Height                    : 2677
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Aperture                        : 3.5
+Image Size                      : 1846x2677
+Lens ID                         : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or Sony AF DT 18-200mm F3.5-6.3
+Scale Factor To 35 mm Equivalent: 1.5
+Shutter Speed                   : 1/30
+Thumbnail Image                 : (Binary data 1636 bytes, use -b option to extract)
+Circle Of Confusion             : 0.020 mm
+Field Of View                   : 67.4 deg
+Focal Length                    : 18.0 mm (35 mm equivalent: 27.0 mm)
+Hyperfocal Distance             : 4.62 m
+Light Value                     : 6.5
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="djvudump" exitCode="1">
+            <stdout></stdout>
+            <stderr>*** [1-15108] Corrupted IFF file (Illegal chunk id).
+*** (IFFByteStream.cpp:248)
+*** 'int DJVU::IFFByteStream::get_chunk(DJVU::GUTF8String&amp;, int*, int*)'
+
+</stderr>
         </source>
     </sources-list>
     <histogram-list>

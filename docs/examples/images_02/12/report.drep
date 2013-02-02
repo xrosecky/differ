@@ -112,6 +112,12 @@
         </metadata>
         <metadata>
             <key>exit-code</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">OK</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
+        </metadata>
+        <metadata>
+            <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">error (1)</value>
             <conflict>true</conflict>
             <source>djvudump</source>
@@ -187,6 +193,12 @@
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
             <conflict>true</conflict>
             <source>core</source>
+        </metadata>
+        <metadata>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
         </metadata>
         <metadata>
             <key>File name</key>
@@ -516,6 +528,40 @@
         </metadata>
     </metadata-list>
     <sources-list>
+        <source source="exiv2" exitCode="0">
+            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+File size       : 383559 Bytes
+MIME type       : image/jpeg
+Image size      : 1200 x 1600
+Camera make     : NIKON
+Camera model    : 
+Image timestamp : 0000:00:00 00:00:00
+Image number    : 
+Exposure time   : 1/60 s
+Aperture        : F2.6
+Exposure bias   : 0 EV
+Flash           : Yes, auto
+Flash bias      : 
+Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Subject distance: 
+ISO speed       : 100
+Exposure mode   : Auto
+Metering mode   : Multi-segment
+Macro mode      : 
+Image quality   : NORMAL
+Exif Resolution : 1600 x 1200
+White balance   : AUTO        
+Thumbnail       : None
+Copyright       : 
+Exif comment    :                                                                                                                      
+
+</stdout>
+            <stderr>Error: Directory Image, entry 0x0110 has invalid size 825637217*1; skipping entry.
+Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
+Error: XMP Toolkit error 203: Mismatched top level rdf:about values
+Warning: Failed to decode XMP metadata.
+</stderr>
+        </source>
         <source source="jhove" exitCode="1">
             <stdout></stdout>
             <stderr>Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
@@ -533,6 +579,79 @@
 	at edu.harvard.hul.ois.jhove.JhoveBase.process(JhoveBase.java:614)
 	at edu.harvard.hul.ois.jhove.JhoveBase.dispatch(JhoveBase.java:465)
 	at Jhove.main(Jhove.java:296)
+</stderr>
+        </source>
+        <source source="core" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
+        <source source="fits" exitCode="0">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="31.1.13 14:07"&gt;
+  &lt;identification status="CONFLICT"&gt;
+    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;version toolname="Exiftool" toolversion="7.74"&gt;1.01&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+    &lt;identity format="symbolic link to `/opt/testovaci-data/ONLINE DIFFER/2_2_48-RK-ModryObraz-Glitch.jpg'" mimetype="inode/symlink" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;383559&lt;/size&gt;
+    &lt;creatingApplicationName toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;E2100&lt;/creatingApplicationName&gt;
+    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;E2100v1.1&lt;/creatingApplicationName&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2011:12:06 17:18:00+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74"&gt;0000:00:00 00:00:00&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;f30d95b7f39a05585ae31da8498ce3c0&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1323188280000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;1200&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1600&lt;/imageHeight&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
+      &lt;YCbCrPositioning toolname="Exiftool" toolversion="7.74"&gt;2&lt;/YCbCrPositioning&gt;
+      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;captureDevice toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;digital still camera&lt;/captureDevice&gt;
+      &lt;digitalCameraManufacturer toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;NIKON&lt;/digitalCameraManufacturer&gt;
+      &lt;digitalCameraModelName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100&lt;/digitalCameraModelName&gt;
+      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100v1.1&lt;/scanningSoftwareName&gt;
+      &lt;fNumber toolname="Exiftool" toolversion="7.74"&gt;2.6&lt;/fNumber&gt;
+      &lt;exposureTime toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;1/60&lt;/exposureTime&gt;
+      &lt;exposureTime toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;0.016638935108153077&lt;/exposureTime&gt;
+      &lt;exposureProgram toolname="Exiftool" toolversion="7.74"&gt;Normal program&lt;/exposureProgram&gt;
+      &lt;isoSpeedRating toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;100&lt;/isoSpeedRating&gt;
+      &lt;exifVersion toolname="Exiftool" toolversion="7.74"&gt;0220&lt;/exifVersion&gt;
+      &lt;exposureBiasValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;0&lt;/exposureBiasValue&gt;
+      &lt;maxApertureValue toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2.8&lt;/maxApertureValue&gt;
+      &lt;maxApertureValue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;3.0&lt;/maxApertureValue&gt;
+      &lt;meteringMode toolname="Exiftool" toolversion="7.74"&gt;Pattern&lt;/meteringMode&gt;
+      &lt;lightSource toolname="Exiftool" toolversion="7.74"&gt;unknown&lt;/lightSource&gt;
+      &lt;flash toolname="Exiftool" toolversion="7.74"&gt;Flash fired, auto mode&lt;/flash&gt;
+      &lt;focalLength toolname="Exiftool" toolversion="7.74"&gt;4.7&lt;/focalLength&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="jpylyzer" exitCode="0">
+            <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
+&lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.5.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;12.jpg&lt;/fileName&gt;&lt;filePath&gt;/opt/differ/docs/examples/images_02/12.jpg&lt;/filePath&gt;&lt;fileSizeInBytes&gt;383559&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Tue Dec  6 17:18:00 2011&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;containsSignatureBox&gt;False&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;False&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;False&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;False&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;False&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;False&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;False&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;/tests&gt;&lt;properties&gt;&lt;unknownBox /&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
+            <stderr>User warning: ignoring unknown box
 </stderr>
         </source>
         <source source="exiftool" exitCode="0">
@@ -641,106 +760,9 @@ Light Value                     : 8.7
 </stdout>
             <stderr></stderr>
         </source>
-        <source source="fits" exitCode="0">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="22.1.13 13:10"&gt;
-  &lt;identification status="CONFLICT"&gt;
-    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;version toolname="Exiftool" toolversion="7.74"&gt;1.01&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-    &lt;identity format="symbolic link to `/opt/testovaci-data/ONLINE DIFFER/2_2_48-RK-ModryObraz-Glitch.jpg'" mimetype="inode/symlink" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;383559&lt;/size&gt;
-    &lt;creatingApplicationName toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;E2100&lt;/creatingApplicationName&gt;
-    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;E2100v1.1&lt;/creatingApplicationName&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2011:12:06 17:18:00+01:00&lt;/lastmodified&gt;
-    &lt;created toolname="Exiftool" toolversion="7.74"&gt;0000:00:00 00:00:00&lt;/created&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;f30d95b7f39a05585ae31da8498ce3c0&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1323188280000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus /&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
-      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;1200&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1600&lt;/imageHeight&gt;
-      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
-      &lt;YCbCrPositioning toolname="Exiftool" toolversion="7.74"&gt;2&lt;/YCbCrPositioning&gt;
-      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
-      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/xSamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/ySamplingFrequency&gt;
-      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
-      &lt;captureDevice toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;digital still camera&lt;/captureDevice&gt;
-      &lt;digitalCameraManufacturer toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;NIKON&lt;/digitalCameraManufacturer&gt;
-      &lt;digitalCameraModelName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100&lt;/digitalCameraModelName&gt;
-      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100v1.1&lt;/scanningSoftwareName&gt;
-      &lt;fNumber toolname="Exiftool" toolversion="7.74"&gt;2.6&lt;/fNumber&gt;
-      &lt;exposureTime toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;1/60&lt;/exposureTime&gt;
-      &lt;exposureTime toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;0.016638935108153077&lt;/exposureTime&gt;
-      &lt;exposureProgram toolname="Exiftool" toolversion="7.74"&gt;Normal program&lt;/exposureProgram&gt;
-      &lt;isoSpeedRating toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;100&lt;/isoSpeedRating&gt;
-      &lt;exifVersion toolname="Exiftool" toolversion="7.74"&gt;0220&lt;/exifVersion&gt;
-      &lt;exposureBiasValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;0&lt;/exposureBiasValue&gt;
-      &lt;maxApertureValue toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2.8&lt;/maxApertureValue&gt;
-      &lt;maxApertureValue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;3.0&lt;/maxApertureValue&gt;
-      &lt;meteringMode toolname="Exiftool" toolversion="7.74"&gt;Pattern&lt;/meteringMode&gt;
-      &lt;lightSource toolname="Exiftool" toolversion="7.74"&gt;unknown&lt;/lightSource&gt;
-      &lt;flash toolname="Exiftool" toolversion="7.74"&gt;Flash fired, auto mode&lt;/flash&gt;
-      &lt;focalLength toolname="Exiftool" toolversion="7.74"&gt;4.7&lt;/focalLength&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
-
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="core" exitCode="0">
+        <source source="daitss" exitCode="0">
             <stdout></stdout>
             <stderr></stderr>
-        </source>
-        <source source="exiv2" exitCode="0">
-            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
-File size       : 383559 Bytes
-MIME type       : image/jpeg
-Image size      : 1200 x 1600
-Camera make     : NIKON
-Camera model    : 
-Image timestamp : 0000:00:00 00:00:00
-Image number    : 
-Exposure time   : 1/60 s
-Aperture        : F2.6
-Exposure bias   : 0 EV
-Flash           : Yes, auto
-Flash bias      : 
-Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
-Subject distance: 
-ISO speed       : 100
-Exposure mode   : Auto
-Metering mode   : Multi-segment
-Macro mode      : 
-Image quality   : NORMAL
-Exif Resolution : 1600 x 1200
-White balance   : AUTO        
-Thumbnail       : None
-Copyright       : 
-Exif comment    :                                                                                                                      
-
-</stdout>
-            <stderr>Error: Directory Image, entry 0x0110 has invalid size 825637217*1; skipping entry.
-Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
-Error: XMP Toolkit error 203: Mismatched top level rdf:about values
-Warning: Failed to decode XMP metadata.
-</stderr>
         </source>
         <source source="djvudump" exitCode="1">
             <stdout></stdout>
@@ -748,12 +770,6 @@ Warning: Failed to decode XMP metadata.
 *** (IFFByteStream.cpp:248)
 *** 'int DJVU::IFFByteStream::get_chunk(DJVU::GUTF8String&amp;, int*, int*)'
 
-</stderr>
-        </source>
-        <source source="jpylyzer" exitCode="0">
-            <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
-&lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.5.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;12.jpg&lt;/fileName&gt;&lt;filePath&gt;/opt/differ/docs/examples/images_02/12.jpg&lt;/filePath&gt;&lt;fileSizeInBytes&gt;383559&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Tue Dec  6 17:18:00 2011&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;containsSignatureBox&gt;False&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;False&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;False&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;False&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;False&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;False&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;False&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;/tests&gt;&lt;properties&gt;&lt;unknownBox /&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
-            <stderr>User warning: ignoring unknown box
 </stderr>
         </source>
     </sources-list>
