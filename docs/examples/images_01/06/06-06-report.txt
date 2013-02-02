@@ -1,0 +1,115 @@
+Characterization
+================
+
+  Image A :: ../docs/examples/images_01/06.tif: 512x512
+  Image B :: ../docs/examples/images_02/06.jpg: 512x512
+
+Significant Properties
+======================
+
+Significant Property                Source    Value for Image A                                             Value for Image B                                           
+----------------------------------  --------  ------------------------------------------------------------  ------------------------------------------------------------
+Code block height                   jpylyzer        px                                                            px                                                    
+                                    jhove           px                                                            px                                                    
+Code block width                    jpylyzer        px                                                            px                                                    
+                                    jhove           px                                                            px                                                    
+Coding bypass                       jpylyzer                                                                                                                            
+Color depth                         exiftool  8                                                             8                                                           
+                                    jpylyzer                                                                                                                            
+                                    jhove     8                                                             8                                                           
+Color space                         exiftool                                                                Uncalibrated                                                
+                                    jpylyzer                                                                                                                            
+                                    jhove                                                                                                                               
+Commentary                          jpylyzer                                                                                                                            
+Compression                         exiftool  Uncompressed                                                  Uncompressed                                                
+                                    jpylyzer                                                                                                                            
+                                    jhove     Uncompressed                                                  JPEG                                                        
+Compression ratio                   jpylyzer                                                                                                                            
+Display resolution horizontal       jpylyzer        PPI                                                           PPI                                                   
+Display resolution vertical         jpylyzer        PPI                                                           PPI                                                   
+Encoding process                    exiftool                                                                Baseline DCT, Huffman coding                                
+End of packet header                jpylyzer                                                                                                                            
+File last modified                  fits                                                                                                                                
+                                    exiftool  2012:02:12 12:09:22+01:00                                     2012:02:12 12:21:56+01:00                                   
+                                    jpylyzer  Sun Feb 12 12:09:22 2012                                      Sun Feb 12 12:21:56 2012                                    
+                                    jhove     2012-02-12T12:09:22+01:00                                     2012-02-12T12:21:56+01:00                                   
+File name                           fits      /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/06.jpg 
+                                    exiv2     /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/06.jpg 
+                                    jpylyzer  06.tif                                                        06.jpg                                                      
+                                    core      06.tif                                                        06.jpg                                                      
+                                    daitss    06.tif                                                        06.jpg                                                      
+File path                           fits      /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/06.jpg 
+                                    exiv2     /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/06.jpg 
+                                    jpylyzer  /opt/differ/docs/examples/images_01/06.tif                    /opt/differ/docs/examples/images_02/06.jpg                  
+                                    core      /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/06.jpg 
+                                    jhove     /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/06.jpg 
+File size                           fits      786572                                                        173595                                                      
+                                    exiftool  768 kB                                                        170 kB                                                      
+                                    exiv2     786572                                                        173595                                                      
+                                    jpylyzer  786572                                                        173595                                                      
+                                    jhove     786572                                                        173595                                                      
+File type                           exiftool  TIFF                                                          JPEG                                                        
+Image height                        fits      512   px                                                      512   px                                                    
+                                    exiftool  512   px                                                      512   px                                                    
+                                    exiv2     512   px                                                      512   px                                                    
+                                    jpylyzer        px                                                            px                                                    
+                                    core      512                                                           512                                                         
+                                    jhove     512   px                                                      512   px                                                    
+Image width                         fits      512   px                                                      512   px                                                    
+                                    exiftool  512   px                                                      512   px                                                    
+                                    exiv2     512   px                                                      512   px                                                    
+                                    jpylyzer        px                                                            px                                                    
+                                    core      512                                                           512                                                         
+                                    jhove     512   px                                                      512   px                                                    
+MIME type                           exiftool  image/tiff                                                    image/jpeg                                                  
+                                    exiv2     image/tiff                                                    image/jpeg                                                  
+                                    jhove     image/tiff                                                    image/jpeg                                                  
+Multiple Component Transformation   jhove                                                                                                                               
+Number of channels                  exiftool                                                                3                                                           
+                                    jpylyzer                                                                                                                            
+                                    jhove     3                                                             3                                                           
+Number of decomposition levels      jpylyzer                                                                                                                            
+                                    jhove                                                                                                                               
+Number of quality layers            jpylyzer                                                                                                                            
+                                    jhove                                                                                                                               
+Number of tiles                     jpylyzer                                                                                                                            
+                                    jhove     0                                                             0                                                           
+Precincts                           jpylyzer                                                                                                                            
+Progression order                   jpylyzer                                                                                                                            
+                                    jhove                                                                                                                               
+Quantization style                  jhove                                                                                                                               
+Resolution horizontal               exiftool        PPI                                                     72    PPI                                                   
+                                    exiv2     512   PPI                                                     512   PPI                                                   
+                                    jpylyzer        PPI                                                           PPI                                                   
+Resolution unit                     exiftool                                                                inches                                                      
+Resolution vertical                 exiftool        PPI                                                     72    PPI                                                   
+                                    exiv2     512   PPI                                                     512   PPI                                                   
+                                    jpylyzer        PPI                                                           PPI                                                   
+Software type                       exiftool                                                                Adobe Photoshop CS5 Windows                                 
+Start of packet header              jpylyzer                                                                                                                            
+Thumbnail                           exiv2     None                                                          image/jpeg, 6564 Bytes                                      
+Tile size X                         jhove           PPI                                                           PPI                                                   
+Tile size Y                         jhove           PPI                                                           PPI                                                   
+Transformation                      jpylyzer                                                                                                                            
+                                    jhove                                                                                                                               
+Type of format                      jpylyzer                                                                                                                            
+                                    jhove     TIFF                                                          JPEG                                                        
+Universal unique identifier (UUID)  jpylyzer                                                                                                                            
+                                    jhove                                                                                                                               
+Validation (well formed and valid)  jpylyzer  False                                                         False                                                       
+                                    jhove     Well-Formed and valid                                         Well-Formed and valid                                       
+----------------------------------  --------  ------------------------------------------------------------  ------------------------------------------------------------
+
+Raw outputs of extractors
+=========================
+
+   daitss       'output <../docs/examples/images_01/06/output-daitss.raw>'_
+   daitss       'output <../docs/examples/images_02/06/output-daitss.raw>'_
+
+Text reports
+============
+
+   ../docs/examples/images_01/06.tif   'text report <../docs/examples/images_01/06/report.txt>'_
+   ../docs/examples/images_02/06.jpg   'text report <../docs/examples/images_02/06/report.txt>'_
+
+  `text report <../docs/examples/images_01/06/06-06-report.txt>`_
