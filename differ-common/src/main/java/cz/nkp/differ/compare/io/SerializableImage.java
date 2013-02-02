@@ -84,6 +84,11 @@ public class SerializableImage extends Image {
 	check();
 	return image.getWidth(observer);
     }
+    
+    public BufferedImage getBufferedImage() {
+        check();
+        return convert(this.image);
+    }
 
     public static BufferedImage convert(Image image) {
 	if (image instanceof BufferedImage) {
