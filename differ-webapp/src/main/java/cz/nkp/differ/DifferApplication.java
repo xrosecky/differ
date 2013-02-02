@@ -17,15 +17,16 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import com.vaadin.terminal.gwt.server.WebApplicationContext;
 import com.vaadin.ui.Window;
-import cz.nkp.differ.exceptions.FatalDifferException;
 
 import cz.nkp.differ.gui.windows.MainDifferWindow;
 import cz.nkp.differ.io.ImageManager;
+import cz.nkp.differ.io.ResultManager;
 import cz.nkp.differ.model.User;
 import cz.nkp.differ.user.UserManager;
 import eu.livotov.tpt.TPTApplication;
+import javax.servlet.ServletContext;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 /**
  * The main Application instance, responsible for setting global settings, such as locale, theme, and the root window for the GUI.
@@ -39,6 +40,7 @@ public class DifferApplication extends TPTApplication {
     /* static class members */
     protected static UserManager userManager = null;
     protected static ImageManager imageManager = null;
+    protected static ResultManager resultManager = null;
     protected static ApplicationContext applicationContext = null;
     /* session variables */
     private User loggedUser = null;
@@ -121,6 +123,11 @@ public class DifferApplication extends TPTApplication {
 		}
 	    }
 	}
+	ServletContext servletContext = ((WebApplicationContext) this.getContext()).getHttpSession().getServletContext();
+        applicationContext = WebApplicationContextUtils.getRequiredWebApplicationContext(servletContext);
+	userManager = (UserManager) applicationContext.getBean("userManager");
+	imageManager = (ImageManager) applicationContext.getBean("imageManager");
+	resultManager = (ResultManager) applicationContext.getBean("resultManager");
 
 	MainDifferWindow mainWindow = new MainDifferWindow();
 	mainWindow.setSizeUndefined();
@@ -129,14 +136,6 @@ public class DifferApplication extends TPTApplication {
 
     @Override
     public void firstApplicationStartup() {
-	String applicationContextFileLocation = System.getProperty("application.context");
-	if (applicationContextFileLocation != null) {
-	    applicationContext = new FileSystemXmlApplicationContext(applicationContextFileLocation);
-	    userManager = (UserManager) applicationContext.getBean("userManager");
-	    imageManager = (ImageManager) applicationContext.getBean("imageManager");
-	} else {
-	    throw new FatalDifferException("System property application.context is not set!");
-	}
     }
 
     @Override
@@ -166,6 +165,10 @@ public class DifferApplication extends TPTApplication {
 
     public static UserManager getUserManager() {
 	return userManager;
+    }
+
+    public static ResultManager getResultManager() {
+	return resultManager;
     }
 
     public static ApplicationContext getApplicationContext() {

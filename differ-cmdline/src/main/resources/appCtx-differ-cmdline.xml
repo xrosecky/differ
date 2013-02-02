@@ -11,7 +11,7 @@
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 	<property name="locations">
 	    <list>
-                <value>classpath:/common.properties</value>
+		<value>classpath:/common.properties</value>
 		<value>${application.properties}</value>
 	    </list>
 	</property>
@@ -264,6 +264,7 @@
 	<property name="classesToBeBound">
 	    <list>
 		<value>cz.nkp.differ.compare.io.SerializableImageProcessorResult</value>
+                <value>cz.nkp.differ.compare.io.SerializableImageProcessorResults</value>
 	    </list>
 	</property>
 	<property name="marshallerProperties">

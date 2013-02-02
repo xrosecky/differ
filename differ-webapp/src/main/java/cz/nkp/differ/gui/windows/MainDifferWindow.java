@@ -10,6 +10,7 @@ import com.vaadin.ui.Window;
 import cz.nkp.differ.gui.components.ProjectHeaderPanel;
 import cz.nkp.differ.gui.components.UserFilesWidget;
 import cz.nkp.differ.gui.tabs.DifferProgramTab;
+import cz.nkp.differ.gui.tabs.ResultManagerTab;
 import cz.nkp.differ.gui.tabs.TabLoader;
 import cz.nkp.differ.util.GeneralMacros;
 import java.util.List;
@@ -34,6 +35,8 @@ public class MainDifferWindow extends Window {
 	 * Adding the dynamic content tabs
 	 */
 	MainDifferWindow.createDynamicContentTab(new DifferProgramTab(this), "DIFFER", menuTabs);
+	MainDifferWindow.createDynamicContentTab(new ResultManagerTab(this), "Results", menuTabs);
+
 	/*
 	 * Adding the static content tabs
 	 */

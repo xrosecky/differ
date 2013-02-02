@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import javax.sql.DataSource;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
@@ -60,7 +61,11 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public User getUserByUserName(String userName) throws UserDifferException {
-	return (User) jdbcTemplate.queryForObject(GET_USER_BY_USERNAME, new Object[]{userName}, new UserMapper());
+	try {
+	    return (User) jdbcTemplate.queryForObject(GET_USER_BY_USERNAME, new Object[]{userName}, new UserMapper());
+	} catch (EmptyResultDataAccessException ex) {
+	    return null;
+	}
     }
 
     public class UserMapper implements RowMapper<User> {

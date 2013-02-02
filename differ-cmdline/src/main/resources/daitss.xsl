@@ -24,7 +24,7 @@
   <xsl:template match="premis:object/premis:objectCharacteristics">
     <property name = "Universal unique identifier (UUID)"><xsl:value-of select="premis:fixity/premis:messageDigest"/></property>
     <property name = "File size"><xsl:value-of select="premis:size"/></property>
-    <property name = "Format"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatName"/></property>    
+    <property name = "Type of Format"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatName"/></property>    
     <property name = "Format version"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatVersion"/></property>    
     <xsl:apply-templates/>
   </xsl:template>

@@ -7,11 +7,17 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import cz.nkp.differ.compare.io.ImageProcessor;
 import cz.nkp.differ.compare.io.ImageProcessorResult;
 import cz.nkp.differ.compare.io.SerializableImageProcessorResult;
+import cz.nkp.differ.compare.io.SerializableImageProcessorResults;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.FileWriter;
 import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import javax.xml.transform.stream.StreamResult;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 
 /**
   mvn -fn -o -Dmaven.compiler.showWarnings=true -f pom.xml compile test-compile
@@ -24,15 +30,30 @@ public class Main {
      * And will report averything it did.
      */
     public static String processFiles(ApplicationContext context, File file[]) throws Exception {
-    //      ApplicationContext context =
-    //              new ClassPathXmlApplicationContext(new String[]{"appCtx-differ-cmdline.xml"});
-    //      ImageProcessor processor = (ImageProcessor) context.getBean("imageProcessor");
-    //      Jaxb2Marshaller marshaller = (Jaxb2Marshaller) context.getBean("jaxb2Marshaller");
-    //      File file = new File(args[0]);
-    //      ImageProcessorResult result = processor.processImage(file);
-    //      SerializableImageProcessorResult resultForSerialization = SerializableImageProcessorResult.create(result, false);
-    //      StreamResult streamResult = new StreamResult(System.out);
-    //      marshaller.marshal(resultForSerialization, streamResult);
+        //      ApplicationContext context =
+        //              new ClassPathXmlApplicationContext(new String[]{"appCtx-differ-cmdline.xml"});
+        //      ImageProcessor processor = (ImageProcessor) context.getBean("imageProcessor");
+        //      Jaxb2Marshaller marshaller = (Jaxb2Marshaller) context.getBean("jaxb2Marshaller");
+        //      File file = new File(args[0]);
+        //      ImageProcessorResult result = processor.processImage(file);
+        //      SerializableImageProcessorResult resultForSerialization = SerializableImageProcessorResult.create(result, false);
+        //      StreamResult streamResult = new StreamResult(System.out);
+        //      marshaller.marshal(resultForSerialization, streamResult);
+        
+	// ApplicationContext context =
+	// 	new ClassPathXmlApplicationContext(new String[]{"appCtx-differ-cmdline.xml"});
+	// ImageProcessor processor = (ImageProcessor) context.getBean("imageProcessor");
+	// Jaxb2Marshaller marshaller = (Jaxb2Marshaller) context.getBean("jaxb2Marshaller");
+	// File file1 = new File(args[0]);
+	// File file2 = new File(args[1]);
+	// ImageProcessorResult[] results = processor.processImages(file1, file2);
+        // List<SerializableImageProcessorResult> resultsForSerialization = new ArrayList<SerializableImageProcessorResult>();
+        // for (ImageProcessorResult result : results) {
+        //     resultsForSerialization.add(SerializableImageProcessorResult.create(result, false));
+        // }
+        // SerializableImageProcessorResults serializableResults = new SerializableImageProcessorResults(resultsForSerialization);
+	// StreamResult streamResult = new StreamResult(System.out);
+	// marshaller.marshal(serializableResults, streamResult);
 
         String output = "";
         processFile(context,file[0]);
