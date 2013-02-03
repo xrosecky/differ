@@ -10,6 +10,7 @@ Significant Properties
 Significant Property                Source    Value for Image A                                             Value for Image B                                           
 ----------------------------------  --------  ------------------------------------------------------------  ------------------------------------------------------------
 Aperture                            exiv2     F2.6                                                          F2.6                                                        
+Bits per sample                     daitss    88                                                                                                                        
 Camera make                         exiv2     NIKON                                                         NIKON                                                       
 Camera model                        exiv2     E2100                                                                                                                     
 Code block height                   jpylyzer        px                                                            px                                                    
@@ -22,10 +23,12 @@ Color depth                         exiftool  8                                 
                                     jhove     8                                                                                                                         
 Color space                         exiftool  sRGB                                                          sRGB                                                        
                                     jpylyzer                                                                                                                            
+                                    daitss    YCbCr                                                                                                                     
                                     jhove                                                                                                                               
 Commentary                          jpylyzer                                                                                                                            
 Compression                         exiftool  JPEG (old-style)                                              JPEG (old-style)                                            
                                     jpylyzer                                                                                                                            
+                                    daitss    JPEG                                                                                                                      
                                     jhove     JPEG                                                                                                                      
 Compression ratio                   jpylyzer                                                                                                                            
 Display resolution horizontal       jpylyzer        PPI                                                           PPI                                                   
@@ -36,9 +39,9 @@ Exposure bias                       exiv2     0 EV                              
 Exposure mode                       exiv2     Auto                                                          Auto                                                        
 Exposure time                       exiv2     1/60 s                                                        1/60 s                                                      
 File last modified                  fits                                                                                                                                
-                                    exiftool  2011:04:28 09:12:18+02:00                                     2011:12:06 17:18:00+01:00                                   
-                                    jpylyzer  Thu Apr 28 09:12:18 2011                                      Tue Dec  6 17:18:00 2011                                    
-                                    jhove     2011-04-28T09:12:18+02:00                                                                                                 
+                                    exiftool  2013:02:02 17:03:00+01:00                                     2013:02:02 17:03:00+01:00                                   
+                                    jpylyzer  Sat Feb  2 17:03:00 2013                                      Sat Feb  2 17:03:00 2013                                    
+                                    jhove     2013-02-02T17:03:00+01:00                                                                                                 
 File name                           fits      /opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg   /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg 
                                     exiv2     /opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg   /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg 
                                     jpylyzer  12.jpg                                                        12.jpg                                                      
@@ -53,16 +56,20 @@ File size                           fits      383559                            
                                     exiftool  375 kB                                                        375 kB                                                      
                                     exiv2     383559                                                        383559                                                      
                                     jpylyzer  383559                                                        383559                                                      
+                                    daitss    383559                                                                                                                    
                                     jhove     383559                                                                                                                    
 File type                           exiftool  JPEG                                                          JPEG                                                        
 Flash                               exiv2     Yes, auto                                                     Yes, auto                                                   
 Focal length                        exiv2     4.7 mm (35 mm equivalent                                      4.7 mm (35 mm equivalent                                    
+Format                              daitss    JPEG File Interchange Format                                                                                              
+Format version                      daitss    1.01                                                                                                                      
 ISO speed                           exiv2     100                                                           100                                                         
 Image height                        fits      1600  px                                                      1600  px                                                    
                                     exiftool  1600  px                                                      1600  px                                                    
                                     exiv2     1600  px                                                      1600  px                                                    
                                     jpylyzer        px                                                            px                                                    
                                     core      1600                                                          1600                                                        
+                                    daitss    1600  px                                                            px                                                    
                                     jhove     1600  px                                                            px                                                    
 Image quality                       exiv2     NORMAL                                                        NORMAL                                                      
 Image timestamp                     exiv2     0000                                                          0000                                                        
@@ -71,6 +78,7 @@ Image width                         fits      1200  px                          
                                     exiv2     1200  px                                                      1200  px                                                    
                                     jpylyzer        px                                                            px                                                    
                                     core      1200                                                          1200                                                        
+                                    daitss    1200  px                                                            px                                                    
                                     jhove     1200  px                                                            px                                                    
 MIME type                           exiftool  image/jpeg                                                    image/jpeg                                                  
                                     exiv2     image/jpeg                                                    image/jpeg                                                  
@@ -97,6 +105,9 @@ Resolution unit                     exiftool  inches                            
 Resolution vertical                 exiftool  300   PPI                                                     300   PPI                                                   
                                     exiv2     1200  PPI                                                     1200  PPI                                                   
                                     jpylyzer        PPI                                                           PPI                                                   
+Samples per pixel                   daitss    3                                                                                                                         
+Sampling frequency x                daitss    300                                                                                                                       
+Sampling frequency y                daitss    300                                                                                                                       
 Software type                       exiftool  E2100v1.1                                                     E2100v1.1                                                   
 Start of packet header              jpylyzer                                                                                                                            
 Thumbnail                           exiv2     None                                                          None                                                        
@@ -107,8 +118,10 @@ Transformation                      jpylyzer
 Type of format                      jpylyzer                                                                                                                            
                                     jhove     JPEG                                                                                                                      
 Universal unique identifier (UUID)  jpylyzer                                                                                                                            
+                                    daitss    7da5d79d536210a36efb2618e6bcb0c9                                                                                          
                                     jhove                                                                                                                               
 Validation (well formed and valid)  jpylyzer  False                                                         False                                                       
+                                    daitss    Well-Formed and valid                                                                                                     
                                     jhove     Well-Formed and valid                                                                                                     
 White balance                       exiv2     AUTO                                                          AUTO                                                        
 ----------------------------------  --------  ------------------------------------------------------------  ------------------------------------------------------------

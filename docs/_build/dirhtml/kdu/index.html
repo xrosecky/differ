@@ -47,11 +47,15 @@
 <h1>KDU<a class="headerlink" href="#kdu" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
 <span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/home/stavel/KDU71_Demo_Apps_for_Linux-x86-64_120605/
-<span class="nv">FILE</span><span class="o">=</span><span class="s2">&quot;/opt/testovaci-data/ONLINE DIFFER/lena_std lossy.jpf&quot;</span>
-/home/stavel/KDU71_Demo_Apps_for_Linux-x86-64_120605/kdu_expand -i <span class="s2">&quot;$FILE&quot;</span> -record /dev/stdout -no_decode
+<span class="k">for </span>FILE in <span class="k">$(</span>ls images<span class="k">)</span>
+<span class="k">do</span>
+<span class="k">    </span><span class="nv">OUTPUT</span><span class="o">=</span>outputs/kdu/<span class="nv">$FILE</span>.raw
+    <span class="nb">echo</span> -e <span class="s2">&quot;images/$FILE \t -&gt; $OUTPUT&quot;</span>
+    /home/stavel/KDU71_Demo_Apps_for_Linux-x86-64_120605/kdu_expand -i <span class="s2">&quot;images/$FILE&quot;</span> -record /dev/stdout -no_decode &gt; <span class="nv">$OUTPUT</span>
+<span class="k">done</span>
 </pre></div>
 </div>
-<div class="highlight-python"><pre>
+<div class="output kdu"><div class="highlight-python"><pre>
 Consumed 0 tile-part(s) from a total of 1 tile(s).
 Consumed 114 codestream bytes (excluding any file format) = 0.003479 bits/pel.
 o,no,no
@@ -81,7 +85,7 @@ Qabs_steps=0.003906,0.001953,0.001953,0.000977,0.001953,0.001953,0.000977,0.001
 953,0.001953,0.000977,0.001953,0.001953,0.000977,0.001953,0.001953,0.000977
 </pre>
 </div>
-<div class="section" id="significant-properties">
+</div><div class="section" id="significant-properties">
 <h2>Significant Properties<a class="headerlink" href="#significant-properties" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <caption>Map of significant properties</caption>

@@ -1,10 +1,18 @@
 KDU
 ...
 
-.. literalinclude:: outputs/get-kdu.sh
+.. literalinclude:: bin/get-kdu.sh
 		    :language: bash
 
-.. literalinclude:: outputs/kdu.raw
+.. raw:: html
+
+	 <div class="output kdu">
+	 
+.. literalinclude:: outputs/kdu/kdu.raw
+
+.. raw:: html
+
+	 </div>
 
 
 Significant Properties
@@ -14,8 +22,6 @@ Significant Properties
    :delim: ;
    :header: "Properties", "Properties as used in program", "XPath in KDU_expand xml output"
    :file: kdu.csv
-
-
 
 
 Consumed 0 tile-part(s) from a total of 1 tile(s).

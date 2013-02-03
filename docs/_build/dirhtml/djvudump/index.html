@@ -58,11 +58,15 @@
 <p>od verze 16 do v26 umi DJVU</p>
 <p>od verze 27 can recognize sDJVU</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
-djvudump <span class="s1">&#39;/opt/testovaci-data/2_Set ot TEST images Vlna_testovani-Vysledky_porovnani_obrazku/2_Sada_testovacich_obrazku/4_DJVU/4_2_11_01-Voda-Orig-HQ.djvu&#39;</span> &gt; djvudump.raw
-<span class="c">#djvudump &#39;/opt/testovaci-data/2_Set ot TEST images Vlna_testovani-Vysledky_porovnani_obrazku/2_Sada_testovacich_obrazku/4_DJVU/4_2_11_28-VMPC-HQ-Glitch11.djvu&#39; &gt; djvudump.raw</span>
+<span class="k">for </span>FILE in <span class="k">$(</span>ls images<span class="k">)</span>
+<span class="k">do</span>
+<span class="k">    </span><span class="nv">OUTPUT</span><span class="o">=</span>outputs/djvudump/<span class="nv">$FILE</span>.raw
+    <span class="nb">echo</span> -e <span class="s2">&quot;images/$FILE \t -&gt; $OUTPUT&quot;</span>
+    djvudump <span class="s2">&quot;images/$FILE&quot;</span> &gt; <span class="s2">&quot;$OUTPUT&quot;</span>
+<span class="k">done</span>
 </pre></div>
 </div>
-<div class="highlight-python"><pre>  FORM:DJVU [901662] 
+<div class="output djvudump"><div class="highlight-python"><pre>  FORM:DJVU [901662] 
     INFO [10]         DjVu 3776x2520, v21, 200 dpi, gamma=2.2
     BG44 [103431]     IW4 data #1, 76 slices, v1.2 (color), 3776x2520
     BG44 [150233]     IW4 data #2, 13 slices
@@ -70,7 +74,7 @@ djvudump <span class="s1">&#39;/opt/testovaci-data/2_Set ot TEST images Vlna_tes
     BG44 [311856]     IW4 data #4, 6 slices
 </pre>
 </div>
-<div class="section" id="significant-properties">
+</div><div class="section" id="significant-properties">
 <h2><a class="toc-backref" href="#id2">Significant Properties</a><a class="headerlink" href="#significant-properties" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><table border="1" class="docutils">

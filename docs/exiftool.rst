@@ -1,10 +1,18 @@
 ExifTool
 ........
 
-.. literalinclude:: outputs/get-exiftool.sh
+.. literalinclude:: bin/get-exiftool.sh
 		    :language: bash
 
-.. literalinclude:: outputs/exiftool.raw
+.. raw:: html
+
+	 <div class="output exiftool">
+
+.. literalinclude:: outputs/exiftool/exiftool.raw
+
+.. raw:: html
+
+	 </div>
 
 
 Significant Properties

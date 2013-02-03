@@ -55,6 +55,6 @@ Recognized Validator Outputs
 .. include:: imagemagick.rst
 
 Command Line Application
-----------------------------
+------------------------
 
 .. include:: cmdline.rst

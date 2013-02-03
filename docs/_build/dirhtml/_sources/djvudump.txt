@@ -7,11 +7,18 @@ od verze 16 do v26 umi DJVU
 
 od verze 27 can recognize sDJVU
 
-.. literalinclude:: outputs/get-djvudump.sh
+.. literalinclude:: bin/get-djvudump.sh
 		    :language: bash
 
-.. literalinclude:: outputs/djvudump.raw
+.. raw:: html
+
+	 <div class="output djvudump">
+
+.. literalinclude:: outputs/djvudump/djvudump.raw
 		    
+.. raw:: html
+
+	 </div>
 
 Significant Properties
 ~~~~~~~~~~~~~~~~~~~~~~~	 

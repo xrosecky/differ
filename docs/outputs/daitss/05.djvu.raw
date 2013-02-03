@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+	
+	<!-- premis file object -->
+	<object xsi:type="file">
+		<objectIdentifier>
+			<objectIdentifierType>URI</objectIdentifierType>
+			<objectIdentifierValue>/tmp/object20130203-1949-11t3c4y-0.djvu</objectIdentifierValue>
+		</objectIdentifier>
+		<objectCharacteristics>
+			<compositionLevel>0</compositionLevel>
+			<fixity>
+				<messageDigestAlgorithm>MD5</messageDigestAlgorithm>
+				<messageDigest>7163c73a54fcaeff53680b091121e59b</messageDigest>
+				<messageDigestOriginator>Archive</messageDigestOriginator>
+			</fixity>
+			<fixity>
+				<messageDigestAlgorithm>SHA-1</messageDigestAlgorithm>
+				<messageDigest>9f8a17ab5a1a00c44cecf10fa6f00aebcde05bba</messageDigest>
+				<messageDigestOriginator>Archive</messageDigestOriginator>
+			</fixity>
+			<size>901674</size>
+			
+			<format>
+				<formatDesignation>
+					<formatName>DjVu File Format</formatName>
+					
+				</formatDesignation>
+				
+				<formatRegistry>
+					<formatRegistryName>http://www.nationalarchives.gov.uk/pronom</formatRegistryName>
+					<formatRegistryKey>fmt/255</formatRegistryKey>
+				</formatRegistry>
+				
+				
+			</format>
+			
+			
+			
+			
+		</objectCharacteristics>
+		
+		<originalName>05.djvu</originalName>
+		
+		
+		
+		
+		<linkingEventIdentifier>
+			<linkingEventIdentifierType>URI</linkingEventIdentifierType>
+			<linkingEventIdentifierValue>1</linkingEventIdentifierValue>
+		</linkingEventIdentifier>
+	</object>
+	
+
+	
+	<!-- premis bitstream object -->
+	
+	
+
+	<!-- premis event -->
+	<event>
+		<eventIdentifier>
+			<eventIdentifierType>URI</eventIdentifierType>
+			<eventIdentifierValue>1</eventIdentifierValue>
+		</eventIdentifier>
+		<eventType>describe</eventType>
+		<eventDateTime>2013-02-03T15:37:46-05:00</eventDateTime>
+		<eventDetail>format identified</eventDetail>
+		<eventOutcomeInformation>
+			<eventOutcome>success</eventOutcome>
+			
+		</eventOutcomeInformation>
+		<linkingAgentIdentifier>
+			<linkingAgentIdentifierType>URI</linkingAgentIdentifierType>
+			<linkingAgentIdentifierValue>info:fda/daitss/description/v2.2.0</linkingAgentIdentifierValue>
+		</linkingAgentIdentifier>
+		<linkingObjectIdentifier>
+			<linkingObjectIdentifierType>URI</linkingObjectIdentifierType>
+			<linkingObjectIdentifierValue>/tmp/object20130203-1949-11t3c4y-0.djvu</linkingObjectIdentifierValue>
+		</linkingObjectIdentifier>
+	</event>
+
+<!-- premis agent -->
+<agent>
+	<agentIdentifier>
+		<agentIdentifierType>URI</agentIdentifierType>
+		<agentIdentifierValue>info:fda/daitss/description/v2.2.0</agentIdentifierValue>
+	</agentIdentifier>
+	<agentName>Format Description Service</agentName>
+	<agentType>Web Service</agentType>
+	<agentNote>built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.</agentNote>
+</agent>
+</premis>

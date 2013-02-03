@@ -1,10 +1,20 @@
 JPyLyzer
 ........
 
-.. literalinclude:: outputs/get-jpylyzer.sh
+.. literalinclude:: bin/get-jpylyzer.sh
 		    :language: bash
 
-`output of jpylyzer <../../outputs/jpylyzer.raw>`_
+.. raw:: html
+
+	 <div class="output jpylyzer">
+
+.. literalinclude:: outputs/jpylyzer/jpylyzer.raw
+
+.. raw:: html
+
+	 </div>
+
+`output of jpylyzer <../../outputs/jpylyzer/jpylyzer.raw>`_
 
 
 Significant Properties

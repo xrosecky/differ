@@ -3,19 +3,17 @@ Arguments of the application
 
 The application can validate one image or compare two images.
 
- =========================   ===================================================================================
- Argument                    What   
- =========================   ===================================================================================
- --save-report               Save report into file with the same name and with extension *.drep
- --load-report               Load report from a given file and print it in a readable form at stdout
+ ========================= ===== ===================================================================================
+ Argument                        What   
+ ========================= ===== ===================================================================================
+ --save-report               -s  Save report into file with the same name and with extension drep
+ --load-report               -l  Load report from a given file and print it in a readable form at stdout
  --include-image-in-report   
- --report-format             html/txt/pdf/xml
- --transform-report          transform xml report into other format - html/txt/pdf
- --save-histogram            save histogram as csv
- --save-raw-outputs          save raw outputs from validators into files
- --load-properties           program will print just properties that has 1 in the file defined by this argument
- --show-properties           program will print out all known properties in a usable format and will finish
- =========================   ===================================================================================
+ --save-raw-outputs          -r  save raw outputs from validators into files
+ --load-properties               program will print just properties that has 1 in the file defined by this argument
+ --save-properties               program will print out all known properties
+ --send-report-to-web        -w  program will send report to web
+ ========================= ===== ===================================================================================
 
 Compare report contains of all informations from validation reports and even compare informations.
 

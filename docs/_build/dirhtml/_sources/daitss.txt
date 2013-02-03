@@ -1,12 +1,21 @@
 DAITSS
 ......
 
-.. literalinclude:: outputs/get-daitss.sh
+.. literalinclude:: bin/get-daitss.sh
 		    :language: bash
 
-.. literalinclude:: outputs/daitss.raw
 
+.. raw:: html
 
-`xml output <../../outputs/daitss.raw>`_
+   <div class="output daitss">
+
+.. literalinclude:: outputs/daitss/daitss.raw
+		    :language: xml
+
+.. raw:: html
+
+    </div>
+
+`xml output of daitss program <../../outputs/daitss/daitss.raw>`_
 
 

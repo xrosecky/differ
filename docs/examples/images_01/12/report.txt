@@ -9,6 +9,7 @@ Significant Properties
 Significant Property               Unit  Source    Value
 ---------------------------------- ----  --------  ------------------------------------------------------------
 Aperture                                 exiv2     F2.6
+Bits per sample                          daitss    88
 Camera make                              exiv2     NIKON
 Camera model                             exiv2     E2100
 Code block height                  px    jhove     
@@ -19,11 +20,13 @@ Coding bypass                            jpylyzer
 Color depth                              exiftool  8
                                          jhove     8
                                          jpylyzer  
-Color space                              exiftool  sRGB
+Color space                              daitss    YCbCr
+                                         exiftool  sRGB
                                          jhove     
                                          jpylyzer  
 Commentary                               jpylyzer  
-Compression                              exiftool  JPEG (old-style)
+Compression                              daitss    JPEG
+                                         exiftool  JPEG (old-style)
                                          jhove     JPEG
                                          jpylyzer  
 Compression ratio                        jpylyzer  
@@ -41,11 +44,12 @@ exit-code                                daitss    OK
 Exposure bias                            exiv2     0 EV
 Exposure mode                            exiv2     Auto
 Exposure time                            exiv2     1/60 s
-File last modified                       exiftool  2011:04:28 09:12:18+02:00
+File last modified                       exiftool  2013:02:02 17:03:00+01:00
                                          fits      
-                                         jhove     2011-04-28T09:12:18+02:00
-                                         jpylyzer  Thu Apr 28 09:12:18 2011
+                                         jhove     2013-02-02T17:03:00+01:00
+                                         jpylyzer  Sat Feb  2 17:03:00 2013
 File name                                core      12.jpg
+                                         daitss    12.jpg
                                          daitss    12.jpg
                                          exiv2     /opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg
                                          fits      /opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg
@@ -55,7 +59,8 @@ File path                                core      /opt/differ/differ-cmdline/..
                                          fits      /opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg
                                          jhove     /opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg
                                          jpylyzer  /opt/differ/docs/examples/images_01/12.jpg
-File size                                exiftool  375 kB
+File size                                daitss    383559
+                                         exiftool  375 kB
                                          exiv2     383559
                                          fits      383559
                                          jhove     383559
@@ -63,7 +68,11 @@ File size                                exiftool  375 kB
 File type                                exiftool  JPEG
 Flash                                    exiv2     Yes, auto
 Focal length                             exiv2     4.7 mm (35 mm equivalent
+Format                                   daitss    JPEG File Interchange Format
+Format version                           daitss    1.01
 Image height                             core      1600
+                                   px    daitss    1600
+                                   px    daitss    1600
                                    px    exiftool  1600
                                    px    exiv2     1600
                                    px    fits      1600
@@ -72,6 +81,7 @@ Image height                             core      1600
 Image quality                            exiv2     NORMAL
 Image timestamp                          exiv2     0000
 Image width                              core      1200
+                                   px    daitss    1200
                                    px    exiftool  1200
                                    px    exiv2     1200
                                    px    fits      1200
@@ -103,6 +113,9 @@ Resolution unit                          exiftool  inches
 Resolution vertical                PPI   exiftool  300
                                    PPI   exiv2     1200
                                    PPI   jpylyzer  
+Samples per pixel                        daitss    3
+Sampling frequency x                     daitss    300
+Sampling frequency y                     daitss    300
 Software type                            exiftool  E2100v1.1
 Start of packet header                   jpylyzer  
 Thumbnail                                exiv2     None
@@ -112,9 +125,11 @@ Transformation                           jhove
                                          jpylyzer  
 Type of format                           jhove     JPEG
                                          jpylyzer  
-Universal unique identifier (UUID)       jhove     
+Universal unique identifier (UUID)       daitss    7da5d79d536210a36efb2618e6bcb0c9
+                                         jhove     
                                          jpylyzer  
-Validation (well formed and valid)       jhove     Well-Formed and valid
+Validation (well formed and valid)       daitss    Well-Formed and valid
+                                         jhove     Well-Formed and valid
                                          jpylyzer  False
 White balance                            exiv2     AUTO
 ---------------------------------- ----  --------  ------------------------------------------------------------
@@ -139,6 +154,7 @@ Used significant properties
 ===========================
 
    Aperture
+   Bits per sample
    Camera make
    Camera model
    Code block height
@@ -163,6 +179,8 @@ Used significant properties
    File type
    Flash
    Focal length
+   Format
+   Format version
    ISO speed
    Image height
    Image quality
@@ -181,6 +199,9 @@ Used significant properties
    Resolution horizontal
    Resolution unit
    Resolution vertical
+   Samples per pixel
+   Sampling frequency x
+   Sampling frequency y
    Software type
    Start of packet header
    Thumbnail

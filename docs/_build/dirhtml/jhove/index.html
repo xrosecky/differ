@@ -46,10 +46,15 @@
   <div class="section" id="jhove">
 <h1>JHOVE<a class="headerlink" href="#jhove" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
-jhove -h xml <span class="s1">&#39;/opt/testovaci-data/TESTOVACI DATA BEDRICHJ 2012/lena_std lossless.jpf&#39;</span> &gt; jhove.raw
+<span class="k">for </span>FILE in <span class="k">$(</span>ls images<span class="k">)</span>
+<span class="k">do</span>
+<span class="k">    </span><span class="nv">OUTPUT</span><span class="o">=</span>outputs/jhove/<span class="nv">$FILE</span>.raw
+    <span class="nb">echo</span> -e <span class="s2">&quot;images/$FILE \t -&gt; $OUTPUT&quot;</span>
+    jhove -h xml <span class="s2">&quot;images/$FILE&quot;</span> &gt; <span class="nv">$OUTPUT</span>
+<span class="k">done</span>
 </pre></div>
 </div>
-<div class="highlight-python"><pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<div class="output jhove"><div class="highlight-python"><pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
  &lt;date&gt;2012-12-10T22:08:20+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/testovaci-data/TESTOVACI%20DATA%20BEDRICHJ%202012/lena_std%20lossless.jpf"&gt;
@@ -27333,7 +27338,7 @@ jhove -h xml <span class="s1">&#39;/opt/testovaci-data/TESTOVACI DATA BEDRICHJ 2
 &lt;/jhove&gt;
 </pre>
 </div>
-<p><a class="reference external" href="../../outputs/jhove.raw">xml output</a></p>
+</div><p><a class="reference external" href="../../outputs/jhove/jhove.raw">output of jhove program</a></p>
 <div class="section" id="significant-properties">
 <h2>Significant Properties<a class="headerlink" href="#significant-properties" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">

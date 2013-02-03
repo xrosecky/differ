@@ -46,10 +46,15 @@
   <div class="section" id="exiftool">
 <h1>ExifTool<a class="headerlink" href="#exiftool" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
-exiftool <span class="s1">&#39;/opt/testovaci-data/2_Set ot TEST images Vlna_testovani-Vysledky_porovnani_obrazku/2_Sada_testovacich_obrazku/2_JPEG/2_2_11-Voda-Glitch10.jpg&#39;</span> &gt; exiftool.raw
+<span class="k">for </span>FILE in <span class="k">$(</span>ls images<span class="k">)</span>
+<span class="k">do</span>
+<span class="k">    </span><span class="nv">OUTPUT</span><span class="o">=</span>outputs/exiftool/<span class="nv">$FILE</span>.raw
+    <span class="nb">echo</span> -e <span class="s2">&quot;images/$FILE \t -&gt; $OUTPUT&quot;</span>
+    exiftool <span class="s2">&quot;images/$FILE&quot;</span> &gt; <span class="nv">$OUTPUT</span>
+<span class="k">done</span>
 </pre></div>
 </div>
-<div class="highlight-python"><pre>ExifTool Version Number         : 8.60
+<div class="output exiftool"><div class="highlight-python"><pre>ExifTool Version Number         : 8.60
 File Name                       : 2_2_11-Voda-Glitch10.jpg
 Directory                       : /opt/testovaci-data/2_Set ot TEST images Vlna_testovani-Vysledky_porovnani_obrazku/2_Sada_testovacich_obrazku/2_JPEG
 File Size                       : 4.1 MB
@@ -174,7 +179,7 @@ Hyperfocal Distance             : 1.45 m
 Light Value                     : 10.3
 </pre>
 </div>
-<div class="section" id="significant-properties">
+</div><div class="section" id="significant-properties">
 <h2>Significant Properties<a class="headerlink" href="#significant-properties" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><table border="1" class="docutils">

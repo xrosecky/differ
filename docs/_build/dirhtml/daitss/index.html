@@ -45,136 +45,148 @@
             
   <div class="section" id="daitss">
 <h1>DAITSS<a class="headerlink" href="#daitss" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-bash"><div class="highlight"><pre>curl -F <span class="s2">&quot;document=@../examples/images_01/01.jpg&quot;</span> -F <span class="s2">&quot;extension=jpg&quot;</span> http://description.fcla.edu/description &gt; daitss.raw
+<div class="highlight-bash"><div class="highlight"><pre><span class="k">for </span>FILE in <span class="k">$(</span>ls images<span class="k">)</span>
+<span class="k">do</span>
+<span class="k">    </span><span class="nv">OUTPUT</span><span class="o">=</span>outputs/daitss/<span class="nv">$FILE</span>.raw
+    <span class="k">if </span><span class="nb">echo</span> <span class="s2">&quot;$FILE&quot;</span> | grep -v -i <span class="s1">&#39;.fits&#39;</span>
+	<span class="k">then</span>
+<span class="k">	</span><span class="nv">EXTENSION</span><span class="o">=</span><span class="k">${</span><span class="nv">FILE</span><span class="p">#*.</span><span class="k">}</span>
+	<span class="nb">echo</span> <span class="nv">$EXTENSION</span>
+	<span class="nb">echo</span> -e <span class="s2">&quot;images/$FILE \t -&gt; $OUTPUT&quot;</span>
+	<span class="c">#curl -F &quot;document=@images/$FILE&quot; -F &quot;extension=jpg&quot; http://description.fcla.edu/description &gt; daitss.raw</span>
+	curl -F <span class="s2">&quot;document=@images/$FILE&quot;</span> -F <span class="s2">&quot;extension=$EXTENSION&quot;</span> http://description.fcla.edu/description &gt; <span class="nv">$OUTPUT</span>
+	sleep 2
+    <span class="k">fi</span>
+<span class="k">done</span>
 </pre></div>
 </div>
-<div class="highlight-python"><pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<div class="output daitss"><div class="highlight-xml"><div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 
-&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
+<span class="nt">&lt;premis</span> <span class="na">xmlns=</span><span class="s">&quot;info:lc/xmlns/premis-v2&quot;</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="na">version=</span><span class="s">&quot;2.0&quot;</span><span class="nt">&gt;</span>
 	
-	&lt;!-- premis file object --&gt;
-	&lt;object xsi:type="file"&gt;
-		&lt;objectIdentifier&gt;
-			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130124-1940-1xbic60-0.jpg&lt;/objectIdentifierValue&gt;
-		&lt;/objectIdentifier&gt;
-		&lt;objectCharacteristics&gt;
-			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;da7db7dbe9cece08cb506bf614fd4e3c&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;931cb843080f264e69f8fad1a521f1b305bd5cb0&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;size&gt;177246&lt;/size&gt;
+	<span class="c">&lt;!-- premis file object --&gt;</span>
+	<span class="nt">&lt;object</span> <span class="na">xsi:type=</span><span class="s">&quot;file&quot;</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;objectIdentifier&gt;</span>
+			<span class="nt">&lt;objectIdentifierType&gt;</span>URI<span class="nt">&lt;/objectIdentifierType&gt;</span>
+			<span class="nt">&lt;objectIdentifierValue&gt;</span>/tmp/object20130124-1940-1xbic60-0.jpg<span class="nt">&lt;/objectIdentifierValue&gt;</span>
+		<span class="nt">&lt;/objectIdentifier&gt;</span>
+		<span class="nt">&lt;objectCharacteristics&gt;</span>
+			<span class="nt">&lt;compositionLevel&gt;</span>0<span class="nt">&lt;/compositionLevel&gt;</span>
+			<span class="nt">&lt;fixity&gt;</span>
+				<span class="nt">&lt;messageDigestAlgorithm&gt;</span>MD5<span class="nt">&lt;/messageDigestAlgorithm&gt;</span>
+				<span class="nt">&lt;messageDigest&gt;</span>da7db7dbe9cece08cb506bf614fd4e3c<span class="nt">&lt;/messageDigest&gt;</span>
+				<span class="nt">&lt;messageDigestOriginator&gt;</span>Archive<span class="nt">&lt;/messageDigestOriginator&gt;</span>
+			<span class="nt">&lt;/fixity&gt;</span>
+			<span class="nt">&lt;fixity&gt;</span>
+				<span class="nt">&lt;messageDigestAlgorithm&gt;</span>SHA-1<span class="nt">&lt;/messageDigestAlgorithm&gt;</span>
+				<span class="nt">&lt;messageDigest&gt;</span>931cb843080f264e69f8fad1a521f1b305bd5cb0<span class="nt">&lt;/messageDigest&gt;</span>
+				<span class="nt">&lt;messageDigestOriginator&gt;</span>Archive<span class="nt">&lt;/messageDigestOriginator&gt;</span>
+			<span class="nt">&lt;/fixity&gt;</span>
+			<span class="nt">&lt;size&gt;</span>177246<span class="nt">&lt;/size&gt;</span>
 			
-			&lt;format&gt;
-				&lt;formatDesignation&gt;
-					&lt;formatName&gt;Raw JPEG Stream&lt;/formatName&gt;
+			<span class="nt">&lt;format&gt;</span>
+				<span class="nt">&lt;formatDesignation&gt;</span>
+					<span class="nt">&lt;formatName&gt;</span>Raw JPEG Stream<span class="nt">&lt;/formatName&gt;</span>
 					
-				&lt;/formatDesignation&gt;
+				<span class="nt">&lt;/formatDesignation&gt;</span>
 				
-				&lt;formatRegistry&gt;
-					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
-					&lt;formatRegistryKey&gt;fmt/41&lt;/formatRegistryKey&gt;
-				&lt;/formatRegistry&gt;
+				<span class="nt">&lt;formatRegistry&gt;</span>
+					<span class="nt">&lt;formatRegistryName&gt;</span>http://www.nationalarchives.gov.uk/pronom<span class="nt">&lt;/formatRegistryName&gt;</span>
+					<span class="nt">&lt;formatRegistryKey&gt;</span>fmt/41<span class="nt">&lt;/formatRegistryKey&gt;</span>
+				<span class="nt">&lt;/formatRegistry&gt;</span>
 				
 				
-			&lt;/format&gt;
+			<span class="nt">&lt;/format&gt;</span>
 			
 			
 			
 			
-			&lt;objectCharacteristicsExtension&gt;
-				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
-  &lt;mix:BasicDigitalObjectInformation&gt;
-    &lt;mix:ObjectIdentifier&gt;
-      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
-    &lt;/mix:ObjectIdentifier&gt;
-    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
-    &lt;mix:Compression&gt;
-      &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
-    &lt;/mix:Compression&gt;
-  &lt;/mix:BasicDigitalObjectInformation&gt;
-  &lt;mix:BasicImageInformation&gt;
-    &lt;mix:BasicImageCharacteristics&gt;
-      &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
-      &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
-    &lt;/mix:BasicImageCharacteristics&gt;
-  &lt;/mix:BasicImageInformation&gt;
-  &lt;mix:ImageAssessmentMetadata&gt;
-    &lt;mix:ImageColorEncoding&gt;
-      &lt;mix:BitsPerSample&gt;
-        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
-      &lt;/mix:BitsPerSample&gt;
-      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
-    &lt;/mix:ImageColorEncoding&gt;
-  &lt;/mix:ImageAssessmentMetadata&gt;
-&lt;/mix:mix&gt;
-			&lt;/objectCharacteristicsExtension&gt;
+			<span class="nt">&lt;objectCharacteristicsExtension&gt;</span>
+				<span class="nt">&lt;mix:mix</span> <span class="na">xmlns:mix=</span><span class="s">&quot;http://www.loc.gov/mix/v20&quot;</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;mix:BasicDigitalObjectInformation&gt;</span>
+    <span class="nt">&lt;mix:ObjectIdentifier&gt;</span>
+      <span class="nt">&lt;mix:objectIdentifierType&gt;</span>JHOVE<span class="nt">&lt;/mix:objectIdentifierType&gt;</span>
+    <span class="nt">&lt;/mix:ObjectIdentifier&gt;</span>
+    <span class="nt">&lt;mix:byteOrder&gt;</span>big endian<span class="nt">&lt;/mix:byteOrder&gt;</span>
+    <span class="nt">&lt;mix:Compression&gt;</span>
+      <span class="nt">&lt;mix:compressionScheme&gt;</span>JPEG<span class="nt">&lt;/mix:compressionScheme&gt;</span>
+    <span class="nt">&lt;/mix:Compression&gt;</span>
+  <span class="nt">&lt;/mix:BasicDigitalObjectInformation&gt;</span>
+  <span class="nt">&lt;mix:BasicImageInformation&gt;</span>
+    <span class="nt">&lt;mix:BasicImageCharacteristics&gt;</span>
+      <span class="nt">&lt;mix:imageWidth&gt;</span>512<span class="nt">&lt;/mix:imageWidth&gt;</span>
+      <span class="nt">&lt;mix:imageHeight&gt;</span>512<span class="nt">&lt;/mix:imageHeight&gt;</span>
+    <span class="nt">&lt;/mix:BasicImageCharacteristics&gt;</span>
+  <span class="nt">&lt;/mix:BasicImageInformation&gt;</span>
+  <span class="nt">&lt;mix:ImageAssessmentMetadata&gt;</span>
+    <span class="nt">&lt;mix:ImageColorEncoding&gt;</span>
+      <span class="nt">&lt;mix:BitsPerSample&gt;</span>
+        <span class="nt">&lt;mix:bitsPerSampleValue&gt;</span>8<span class="nt">&lt;/mix:bitsPerSampleValue&gt;</span>
+        <span class="nt">&lt;mix:bitsPerSampleValue&gt;</span>8<span class="nt">&lt;/mix:bitsPerSampleValue&gt;</span>
+        <span class="nt">&lt;mix:bitsPerSampleUnit&gt;</span>integer<span class="nt">&lt;/mix:bitsPerSampleUnit&gt;</span>
+      <span class="nt">&lt;/mix:BitsPerSample&gt;</span>
+      <span class="nt">&lt;mix:samplesPerPixel&gt;</span>3<span class="nt">&lt;/mix:samplesPerPixel&gt;</span>
+    <span class="nt">&lt;/mix:ImageColorEncoding&gt;</span>
+  <span class="nt">&lt;/mix:ImageAssessmentMetadata&gt;</span>
+<span class="nt">&lt;/mix:mix&gt;</span>
+			<span class="nt">&lt;/objectCharacteristicsExtension&gt;</span>
 			
-		&lt;/objectCharacteristics&gt;
+		<span class="nt">&lt;/objectCharacteristics&gt;</span>
 		
-		&lt;originalName&gt;01.jpg&lt;/originalName&gt;
-		
-		
+		<span class="nt">&lt;originalName&gt;</span>01.jpg<span class="nt">&lt;/originalName&gt;</span>
 		
 		
-		&lt;linkingEventIdentifier&gt;
-			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
-			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
-		&lt;/linkingEventIdentifier&gt;
-	&lt;/object&gt;
+		
+		
+		<span class="nt">&lt;linkingEventIdentifier&gt;</span>
+			<span class="nt">&lt;linkingEventIdentifierType&gt;</span>URI<span class="nt">&lt;/linkingEventIdentifierType&gt;</span>
+			<span class="nt">&lt;linkingEventIdentifierValue&gt;</span>1<span class="nt">&lt;/linkingEventIdentifierValue&gt;</span>
+		<span class="nt">&lt;/linkingEventIdentifier&gt;</span>
+	<span class="nt">&lt;/object&gt;</span>
 	
 
 	
-	&lt;!-- premis bitstream object --&gt;
+	<span class="c">&lt;!-- premis bitstream object --&gt;</span>
 	
 	
 
-	&lt;!-- premis event --&gt;
-	&lt;event&gt;
-		&lt;eventIdentifier&gt;
-			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
-			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
-		&lt;/eventIdentifier&gt;
-		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-01-24T09:48:14-05:00&lt;/eventDateTime&gt;
-		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
-		&lt;eventOutcomeInformation&gt;
-			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
+	<span class="c">&lt;!-- premis event --&gt;</span>
+	<span class="nt">&lt;event&gt;</span>
+		<span class="nt">&lt;eventIdentifier&gt;</span>
+			<span class="nt">&lt;eventIdentifierType&gt;</span>URI<span class="nt">&lt;/eventIdentifierType&gt;</span>
+			<span class="nt">&lt;eventIdentifierValue&gt;</span>1<span class="nt">&lt;/eventIdentifierValue&gt;</span>
+		<span class="nt">&lt;/eventIdentifier&gt;</span>
+		<span class="nt">&lt;eventType&gt;</span>describe<span class="nt">&lt;/eventType&gt;</span>
+		<span class="nt">&lt;eventDateTime&gt;</span>2013-01-24T09:48:14-05:00<span class="nt">&lt;/eventDateTime&gt;</span>
+		<span class="nt">&lt;eventDetail&gt;</span>Well-Formed and valid<span class="nt">&lt;/eventDetail&gt;</span>
+		<span class="nt">&lt;eventOutcomeInformation&gt;</span>
+			<span class="nt">&lt;eventOutcome&gt;</span>success<span class="nt">&lt;/eventOutcome&gt;</span>
 			
-		&lt;/eventOutcomeInformation&gt;
-		&lt;linkingAgentIdentifier&gt;
-			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
-			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
-		&lt;/linkingAgentIdentifier&gt;
-		&lt;linkingObjectIdentifier&gt;
-			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130124-1940-1xbic60-0.jpg&lt;/linkingObjectIdentifierValue&gt;
-		&lt;/linkingObjectIdentifier&gt;
-	&lt;/event&gt;
+		<span class="nt">&lt;/eventOutcomeInformation&gt;</span>
+		<span class="nt">&lt;linkingAgentIdentifier&gt;</span>
+			<span class="nt">&lt;linkingAgentIdentifierType&gt;</span>URI<span class="nt">&lt;/linkingAgentIdentifierType&gt;</span>
+			<span class="nt">&lt;linkingAgentIdentifierValue&gt;</span>info:fda/daitss/description/v2.2.0<span class="nt">&lt;/linkingAgentIdentifierValue&gt;</span>
+		<span class="nt">&lt;/linkingAgentIdentifier&gt;</span>
+		<span class="nt">&lt;linkingObjectIdentifier&gt;</span>
+			<span class="nt">&lt;linkingObjectIdentifierType&gt;</span>URI<span class="nt">&lt;/linkingObjectIdentifierType&gt;</span>
+			<span class="nt">&lt;linkingObjectIdentifierValue&gt;</span>/tmp/object20130124-1940-1xbic60-0.jpg<span class="nt">&lt;/linkingObjectIdentifierValue&gt;</span>
+		<span class="nt">&lt;/linkingObjectIdentifier&gt;</span>
+	<span class="nt">&lt;/event&gt;</span>
 
-&lt;!-- premis agent --&gt;
-&lt;agent&gt;
-	&lt;agentIdentifier&gt;
-		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
-		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
-	&lt;/agentIdentifier&gt;
-	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
-	&lt;agentType&gt;Web Service&lt;/agentType&gt;
-	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
-&lt;/agent&gt;
-&lt;/premis&gt;
-</pre>
+<span class="c">&lt;!-- premis agent --&gt;</span>
+<span class="nt">&lt;agent&gt;</span>
+	<span class="nt">&lt;agentIdentifier&gt;</span>
+		<span class="nt">&lt;agentIdentifierType&gt;</span>URI<span class="nt">&lt;/agentIdentifierType&gt;</span>
+		<span class="nt">&lt;agentIdentifierValue&gt;</span>info:fda/daitss/description/v2.2.0<span class="nt">&lt;/agentIdentifierValue&gt;</span>
+	<span class="nt">&lt;/agentIdentifier&gt;</span>
+	<span class="nt">&lt;agentName&gt;</span>Format Description Service<span class="nt">&lt;/agentName&gt;</span>
+	<span class="nt">&lt;agentType&gt;</span>Web Service<span class="nt">&lt;/agentType&gt;</span>
+	<span class="nt">&lt;agentNote&gt;</span>built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.<span class="nt">&lt;/agentNote&gt;</span>
+<span class="nt">&lt;/agent&gt;</span>
+<span class="nt">&lt;/premis&gt;</span>
+</pre></div>
 </div>
-<p><a class="reference external" href="../../outputs/daitss.raw">xml output</a></p>
+</div><p><a class="reference external" href="../../outputs/daitss/daitss.raw">xml output of daitss program</a></p>
 </div>
 
 

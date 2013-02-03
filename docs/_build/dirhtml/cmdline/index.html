@@ -49,44 +49,44 @@
 <blockquote>
 <div><table border="1" class="docutils">
 <colgroup>
-<col width="23%" />
-<col width="77%" />
+<col width="22%" />
+<col width="4%" />
+<col width="73%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Argument</th>
+<th class="head">&nbsp;</th>
 <th class="head">What</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>&#8211;save-report</td>
-<td>Save report into file with the same name and with extension <a href="#id1"><span class="problematic" id="id2">*</span></a>.drep</td>
+<td>-s</td>
+<td>Save report into file with the same name and with extension drep</td>
 </tr>
 <tr class="row-odd"><td>&#8211;load-report</td>
+<td>-l</td>
 <td>Load report from a given file and print it in a readable form at stdout</td>
 </tr>
 <tr class="row-even"><td>&#8211;include-image-in-report</td>
 <td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>&#8211;report-format</td>
-<td>html/txt/pdf/xml</td>
-</tr>
-<tr class="row-even"><td>&#8211;transform-report</td>
-<td>transform xml report into other format - html/txt/pdf</td>
-</tr>
-<tr class="row-odd"><td>&#8211;save-histogram</td>
-<td>save histogram as csv</td>
-</tr>
-<tr class="row-even"><td>&#8211;name-style</td>
-<td>a way how to name and store result files</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>&#8211;save-raw-outputs</td>
+<td>-r</td>
 <td>save raw outputs from validators into files</td>
 </tr>
 <tr class="row-even"><td>&#8211;load-properties</td>
+<td>&nbsp;</td>
 <td>program will print just properties that has 1 in the file defined by this argument</td>
 </tr>
-<tr class="row-odd"><td>&#8211;show-properties</td>
-<td>program will print out all known properties in a usable format and will finish</td>
+<tr class="row-odd"><td>&#8211;save-properties</td>
+<td>&nbsp;</td>
+<td>program will print out all known properties</td>
+</tr>
+<tr class="row-even"><td>&#8211;send-report-to-web</td>
+<td>-w</td>
+<td>program will send report to web</td>
 </tr>
 </tbody>
 </table>
@@ -99,17 +99,6 @@
 Image height;0</pre>
 </div>
 <p>So property =Image width= will be printed and =Image height= will not be printed.</p>
-</div>
-<div class="section" id="naming-styles">
-<h1>Naming styles<a class="headerlink" href="#naming-styles" title="Permalink to this headline">¶</a></h1>
-<blockquote>
-<div><p>thesamename</p>
-<div class="highlight-python"><pre>generated files has the same name as image file</pre>
-</div>
-<p>thesamenamedir</p>
-<div class="highlight-python"><pre>all generated files are in a directory with the same name as an image file</pre>
-</div>
-</div></blockquote>
 </div>
 <div class="section" id="examples">
 <h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
@@ -329,6 +318,9 @@ Used significant properties
 </div>
 <div class="section" id="program-output-examples">
 <h2>Program output examples<a class="headerlink" href="#program-output-examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">a</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -342,7 +334,6 @@ Used significant properties
   <ul>
 <li><a class="reference internal" href="#">Arguments of the application</a></li>
 <li><a class="reference internal" href="#example-of-property-list-definition">Example of property list definition</a></li>
-<li><a class="reference internal" href="#naming-styles">Naming styles</a></li>
 <li><a class="reference internal" href="#examples">Examples</a><ul>
 <li><a class="reference internal" href="#program-usage">Program usage</a></li>
 <li><a class="reference internal" href="#program-output-when-validating-image">Program output when validating image</a></li>

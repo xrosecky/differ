@@ -10,10 +10,18 @@ FITS
 'FITS images of Galaxy Halos, Outer disks, Substructure, Thick disks and Star clusters <http://archive.stsci.edu/pub/hlsp/ghosts/data/ngc0253/>'_
 
 
-.. literalinclude:: outputs/get-fits.sh
+.. literalinclude:: bin/get-fits.sh
 		    :language: bash
 
-.. literalinclude:: outputs/fits.raw
+.. raw:: html
+
+	 <div class="output fits">
+
+.. literalinclude:: outputs/fits/fits.raw
+
+.. raw:: html
+
+	 </div>
 
 
 Significant Properties

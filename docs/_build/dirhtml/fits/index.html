@@ -45,11 +45,20 @@
             
   <div class="section" id="fits">
 <h1>FITS<a class="headerlink" href="#fits" title="Permalink to this headline">¶</a></h1>
+<p>&#8216;FITS on WikiPedia &lt;<a class="reference external" href="http://en.wikipedia.org/wiki/FITS">http://en.wikipedia.org/wiki/FITS</a>&gt;&#8217;_</p>
+<p>&#8216;FITS samples &lt;<a class="reference external" href="http://tdc-www.harvard.edu/wcstools/samples/">http://tdc-www.harvard.edu/wcstools/samples/</a>&gt;&#8217;_</p>
+<p>&#8216;High Level Science Products &lt;<a class="reference external" href="http://archive.stsci.edu/hlsp/'_">http://archive.stsci.edu/hlsp/&#8217;_</a></p>
+<p>&#8216;FITS images of Galaxy Halos, Outer disks, Substructure, Thick disks and Star clusters &lt;<a class="reference external" href="http://archive.stsci.edu/pub/hlsp/ghosts/data/ngc0253/">http://archive.stsci.edu/pub/hlsp/ghosts/data/ngc0253/</a>&gt;&#8217;_</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
-/opt/fits-0.6.1/fits.sh -i <span class="s1">&#39;/opt/testovaci-data/ONLINE DIFFER/1TEST-CORRUPTED-1_PAINTING.JPG&#39;</span> &gt; fits.raw
+<span class="k">for </span>FILE in <span class="k">$(</span>ls images<span class="k">)</span>
+<span class="k">do</span>
+<span class="k">    </span><span class="nv">OUTPUT</span><span class="o">=</span>outputs/fits/<span class="nv">$FILE</span>.raw
+    <span class="nb">echo</span> -e <span class="s2">&quot;images/$FILE \t -&gt; $OUTPUT&quot;</span>
+    /opt/fits-0.6.1/fits.sh -i <span class="s2">&quot;images/$FILE&quot;</span> -xc &gt; <span class="nv">$OUTPUT</span>
+<span class="k">done</span>
 </pre></div>
 </div>
-<div class="highlight-python"><pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<div class="output fits"><div class="highlight-python"><pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="13.12.12 7:19"&gt;
   &lt;identification&gt;
     &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
@@ -94,7 +103,7 @@
 
 </pre>
 </div>
-<div class="section" id="significant-properties">
+</div><div class="section" id="significant-properties">
 <h2>Significant Properties<a class="headerlink" href="#significant-properties" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><table border="1" class="docutils">

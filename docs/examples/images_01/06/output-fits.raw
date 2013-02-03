@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="31.1.13 14:00">
-  <identification status="CONFLICT">
+<fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="2.2.13 17:44">
+  <identification>
     <identity format="Tagged Image File Format" mimetype="image/tiff" toolname="FITS" toolversion="0.6.1">
       <tool toolname="Jhove" toolversion="1.5" />
+      <tool toolname="file utility" toolversion="5.11" />
       <tool toolname="Exiftool" toolversion="7.74" />
       <tool toolname="Droid" toolversion="3.0" />
       <tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" />
@@ -16,17 +17,14 @@
       <externalIdentifier toolname="Droid" toolversion="3.0" type="puid">fmt/9</externalIdentifier>
       <externalIdentifier toolname="Droid" toolversion="3.0" type="puid">fmt/10</externalIdentifier>
     </identity>
-    <identity format="symbolic link to `/opt/testovaci-data/ONLINE DIFFER/lena_std.tif'" mimetype="inode/symlink" toolname="FITS" toolversion="0.6.1">
-      <tool toolname="file utility" toolversion="5.11" />
-    </identity>
   </identification>
   <fileinfo>
     <size toolname="Jhove" toolversion="1.5">786572</size>
-    <lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT">2012:02:12 12:09:22+01:00</lastmodified>
+    <lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT">2013:02:02 17:03:00+01:00</lastmodified>
     <filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT">/opt/differ/differ-cmdline/../docs/examples/images_01/06.tif</filepath>
     <filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT">/opt/differ/differ-cmdline/../docs/examples/images_01/06.tif</filename>
     <md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT">7278246cf26b76e0ca398e7f739b527e</md5checksum>
-    <fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT">1329044962000</fslastmodified>
+    <fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT">1359820980000</fslastmodified>
   </fileinfo>
   <filestatus>
     <well-formed toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">true</well-formed>

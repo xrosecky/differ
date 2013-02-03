@@ -8,6 +8,7 @@ Significant Properties
 
 Significant Property               Unit  Source    Value
 ---------------------------------- ----  --------  ------------------------------------------------------------
+Bits per sample                          daitss    
 Code block height                  px    jhove     
                                    px    jpylyzer  
 Code block width                   px    jhove     
@@ -16,11 +17,13 @@ Coding bypass                            jpylyzer
 Color depth                              exiftool  8
                                          jhove     
                                          jpylyzer  
-Color space                              exiftool  Uncalibrated
+Color space                              daitss    
+                                         exiftool  Uncalibrated
                                          jhove     
                                          jpylyzer  
 Commentary                               jpylyzer  
-Compression                              exiftool  Uncompressed
+Compression                              daitss    JPEG
+                                         exiftool  Uncompressed
                                          jhove     JPEG
                                          jpylyzer  
 Compression ratio                        jpylyzer  
@@ -35,11 +38,12 @@ exit-code                                daitss    OK
                                          fits      ok
                                          jhove     ok
                                          jpylyzer  ok
-File last modified                       exiftool  2012:02:12 12:11:44+01:00
+File last modified                       exiftool  2013:02:02 17:03:00+01:00
                                          fits      
-                                         jhove     2012-02-12T12:11:44+01:00
-                                         jpylyzer  Sun Feb 12 12:11:44 2012
+                                         jhove     2013-02-02T17:03:00+01:00
+                                         jpylyzer  Sat Feb  2 17:03:00 2013
 File name                                core      02.jpg
+                                         daitss    02.jpg
                                          daitss    02.jpg
                                          exiv2     /opt/differ/differ-cmdline/../docs/examples/images_02/02.jpg
                                          fits      /opt/differ/differ-cmdline/../docs/examples/images_02/02.jpg
@@ -49,19 +53,25 @@ File path                                core      /opt/differ/differ-cmdline/..
                                          fits      /opt/differ/differ-cmdline/../docs/examples/images_02/02.jpg
                                          jhove     /opt/differ/differ-cmdline/../docs/examples/images_02/02.jpg
                                          jpylyzer  /opt/differ/docs/examples/images_02/02.jpg
-File size                                exiftool  154 kB
+File size                                daitss    158027
+                                         exiftool  154 kB
                                          exiv2     158027
                                          fits      158027
                                          jhove     158027
                                          jpylyzer  158027
 File type                                exiftool  JPEG
+Format                                   daitss    Raw JPEG Stream
+Format version                           daitss    
 Image height                             core      512
+                                   px    daitss    512
+                                   px    daitss    512
                                    px    exiftool  512
                                    px    exiv2     512
                                    px    fits      512
                                    px    jhove     512
                                    px    jpylyzer  
 Image width                              core      512
+                                   px    daitss    512
                                    px    exiftool  512
                                    px    exiv2     512
                                    px    fits      512
@@ -91,6 +101,9 @@ Resolution unit                          exiftool  inches
 Resolution vertical                PPI   exiftool  72
                                    PPI   exiv2     512
                                    PPI   jpylyzer  
+Samples per pixel                        daitss    1
+Sampling frequency x                     daitss    
+Sampling frequency y                     daitss    
 Software type                            exiftool  Adobe Photoshop CS5 Windows
 Start of packet header                   jpylyzer  
 Thumbnail                                exiv2     image/jpeg, 6527 Bytes
@@ -100,9 +113,11 @@ Transformation                           jhove
                                          jpylyzer  
 Type of format                           jhove     JPEG
                                          jpylyzer  
-Universal unique identifier (UUID)       jhove     
+Universal unique identifier (UUID)       daitss    83afef066999155a08a3f06bf0410847
+                                         jhove     
                                          jpylyzer  
-Validation (well formed and valid)       jhove     Well-Formed and valid
+Validation (well formed and valid)       daitss    Well-Formed and valid
+                                         jhove     Well-Formed and valid
                                          jpylyzer  False
 ---------------------------------- ----  --------  ------------------------------------------------------------
 
@@ -125,6 +140,7 @@ Text report
 Used significant properties
 ===========================
 
+   Bits per sample
    Code block height
    Code block width
    Coding bypass
@@ -142,6 +158,8 @@ Used significant properties
    File path
    File size
    File type
+   Format
+   Format version
    Image height
    Image width
    MIME type
@@ -156,6 +174,9 @@ Used significant properties
    Resolution horizontal
    Resolution unit
    Resolution vertical
+   Samples per pixel
+   Sampling frequency x
+   Sampling frequency y
    Software type
    Start of packet header
    Thumbnail

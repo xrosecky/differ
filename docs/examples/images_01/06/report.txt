@@ -8,6 +8,7 @@ Significant Properties
 
 Significant Property               Unit  Source    Value
 ---------------------------------- ----  --------  ------------------------------------------------------------
+Bits per sample                          daitss    88
 Code block height                  px    jhove     
                                    px    jpylyzer  
 Code block width                   px    jhove     
@@ -16,10 +17,12 @@ Coding bypass                            jpylyzer
 Color depth                              exiftool  8
                                          jhove     8
                                          jpylyzer  
-Color space                              jhove     
+Color space                              daitss    RGB
+                                         jhove     
                                          jpylyzer  
 Commentary                               jpylyzer  
-Compression                              exiftool  Uncompressed
+Compression                              daitss    Uncompressed
+                                         exiftool  Uncompressed
                                          jhove     Uncompressed
                                          jpylyzer  
 Compression ratio                        jpylyzer  
@@ -33,11 +36,12 @@ exit-code                                daitss    OK
                                          fits      ok
                                          jhove     ok
                                          jpylyzer  ok
-File last modified                       exiftool  2012:02:12 12:09:22+01:00
+File last modified                       exiftool  2013:02:02 17:03:00+01:00
                                          fits      
-                                         jhove     2012-02-12T12:09:22+01:00
-                                         jpylyzer  Sun Feb 12 12:09:22 2012
+                                         jhove     2013-02-02T17:03:00+01:00
+                                         jpylyzer  Sat Feb  2 17:03:00 2013
 File name                                core      06.tif
+                                         daitss    06.tif
                                          daitss    06.tif
                                          exiv2     /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif
                                          fits      /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif
@@ -47,19 +51,28 @@ File path                                core      /opt/differ/differ-cmdline/..
                                          fits      /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif
                                          jhove     /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif
                                          jpylyzer  /opt/differ/docs/examples/images_01/06.tif
-File size                                exiftool  768 kB
+File size                                daitss    786572
+                                         daitss    
+                                         exiftool  768 kB
                                          exiv2     786572
                                          fits      786572
                                          jhove     786572
                                          jpylyzer  786572
 File type                                exiftool  TIFF
+Format                                   daitss    Tagged Image File Format for Internet Fax (TIFF-FX)
+                                         daitss    Uncompressed
+Format version                           daitss    
+                                         daitss    
 Image height                             core      512
+                                   px    daitss    512
+                                   px    daitss    512
                                    px    exiftool  512
                                    px    exiv2     512
                                    px    fits      512
                                    px    jhove     512
                                    px    jpylyzer  
 Image width                              core      512
+                                   px    daitss    512
                                    px    exiftool  512
                                    px    exiv2     512
                                    px    fits      512
@@ -85,6 +98,9 @@ Resolution horizontal              PPI   exiv2     512
                                    PPI   jpylyzer  
 Resolution vertical                PPI   exiv2     512
                                    PPI   jpylyzer  
+Samples per pixel                        daitss    3
+Sampling frequency x                     daitss    
+Sampling frequency y                     daitss    
 Start of packet header                   jpylyzer  
 Thumbnail                                exiv2     None
 Tile size X                        PPI   jhove     
@@ -93,9 +109,12 @@ Transformation                           jhove
                                          jpylyzer  
 Type of format                           jhove     TIFF
                                          jpylyzer  
-Universal unique identifier (UUID)       jhove     
+Universal unique identifier (UUID)       daitss    7278246cf26b76e0ca398e7f739b527e
+                                         daitss    
+                                         jhove     
                                          jpylyzer  
-Validation (well formed and valid)       jhove     Well-Formed and valid
+Validation (well formed and valid)       daitss    Well-Formed and valid
+                                         jhove     Well-Formed and valid
                                          jpylyzer  False
 ---------------------------------- ----  --------  ------------------------------------------------------------
 
@@ -118,6 +137,7 @@ Text report
 Used significant properties
 ===========================
 
+   Bits per sample
    Code block height
    Code block width
    Coding bypass
@@ -134,6 +154,8 @@ Used significant properties
    File path
    File size
    File type
+   Format
+   Format version
    Image height
    Image width
    MIME type
@@ -147,6 +169,9 @@ Used significant properties
    Quantization style
    Resolution horizontal
    Resolution vertical
+   Samples per pixel
+   Sampling frequency x
+   Sampling frequency y
    Start of packet header
    Thumbnail
    Tile size X

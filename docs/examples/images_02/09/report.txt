@@ -8,6 +8,7 @@ Significant Properties
 
 Significant Property               Unit  Source    Value
 ---------------------------------- ----  --------  ------------------------------------------------------------
+Bits per sample                          daitss    88
 Code block height                  px    jhove     
                                    px    jpylyzer  
 Code block width                   px    jhove     
@@ -16,10 +17,12 @@ Coding bypass                            jpylyzer
 Color depth                              exiftool  8
                                          jhove     8
                                          jpylyzer  
-Color space                              jhove     
+Color space                              daitss    YCbCr
+                                         jhove     
                                          jpylyzer  
 Commentary                               jpylyzer  
-Compression                              jhove     JPEG
+Compression                              daitss    JPEG
+                                         jhove     JPEG
                                          jpylyzer  
 Compression ratio                        jpylyzer  
 Display resolution horizontal      PPI   jpylyzer  
@@ -33,11 +36,12 @@ exit-code                                daitss    OK
                                          fits      ok
                                          jhove     ok
                                          jpylyzer  ok
-File last modified                       exiftool  2011:12:06 17:18:00+01:00
+File last modified                       exiftool  2013:02:02 17:03:00+01:00
                                          fits      
-                                         jhove     2011-12-06T17:18:00+01:00
-                                         jpylyzer  Tue Dec  6 17:18:00 2011
+                                         jhove     2013-02-02T17:03:00+01:00
+                                         jpylyzer  Sat Feb  2 17:03:00 2013
 File name                                core      09.jpg
+                                         daitss    09.jpg
                                          daitss    09.jpg
                                          exiv2     /opt/differ/differ-cmdline/../docs/examples/images_02/09.jpg
                                          fits      /opt/differ/differ-cmdline/../docs/examples/images_02/09.jpg
@@ -47,19 +51,25 @@ File path                                core      /opt/differ/differ-cmdline/..
                                          fits      /opt/differ/differ-cmdline/../docs/examples/images_02/09.jpg
                                          jhove     /opt/differ/differ-cmdline/../docs/examples/images_02/09.jpg
                                          jpylyzer  /opt/differ/docs/examples/images_02/09.jpg
-File size                                exiftool  4.8 MB
+File size                                daitss    5074036
+                                         exiftool  4.8 MB
                                          exiv2     5074036
                                          fits      5074036
                                          jhove     5074036
                                          jpylyzer  5074036
 File type                                exiftool  JPEG
+Format                                   daitss    JPEG File Interchange Format
+Format version                           daitss    1.01
 Image height                             core      2550
+                                   px    daitss    2550
+                                   px    daitss    2550
                                    px    exiftool  2550
                                    px    exiv2     2550
                                    px    fits      2550
                                    px    jhove     2550
                                    px    jpylyzer  
 Image width                              core      3509
+                                   px    daitss    3509
                                    px    exiftool  3509
                                    px    exiv2     3509
                                    px    fits      3509
@@ -89,6 +99,9 @@ Resolution unit                          exiftool  inches
 Resolution vertical                PPI   exiftool  300
                                    PPI   exiv2     2550
                                    PPI   jpylyzer  
+Samples per pixel                        daitss    3
+Sampling frequency x                     daitss    300
+Sampling frequency y                     daitss    300
 Start of packet header                   jpylyzer  
 Thumbnail                                exiv2     None
 Tile size X                        PPI   jhove     
@@ -97,9 +110,11 @@ Transformation                           jhove
                                          jpylyzer  
 Type of format                           jhove     JPEG
                                          jpylyzer  
-Universal unique identifier (UUID)       jhove     
+Universal unique identifier (UUID)       daitss    b9b88d2f9edb3439d16585cea1fa257f
+                                         jhove     
                                          jpylyzer  
-Validation (well formed and valid)       jhove     Well-Formed and valid
+Validation (well formed and valid)       daitss    Well-Formed and valid
+                                         jhove     Well-Formed and valid
                                          jpylyzer  False
 ---------------------------------- ----  --------  ------------------------------------------------------------
 
@@ -122,6 +137,7 @@ Text report
 Used significant properties
 ===========================
 
+   Bits per sample
    Code block height
    Code block width
    Coding bypass
@@ -139,6 +155,8 @@ Used significant properties
    File path
    File size
    File type
+   Format
+   Format version
    Image height
    Image width
    MIME type
@@ -153,6 +171,9 @@ Used significant properties
    Resolution horizontal
    Resolution unit
    Resolution vertical
+   Samples per pixel
+   Sampling frequency x
+   Sampling frequency y
    Start of packet header
    Thumbnail
    Tile size X

@@ -1,0 +1,93 @@
+READBOX seen=true
+<?xml version="1.0" encoding="UTF-8"?>
+<fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="3.2.13 21:38">
+  <identification status="SINGLE_RESULT">
+    <identity format="JPEG 2000 JP2" mimetype="image/jp2" toolname="FITS" toolversion="0.6.1">
+      <tool toolname="Jhove" toolversion="1.5" />
+    </identity>
+  </identification>
+  <fileinfo>
+    <size toolname="Jhove" toolversion="1.5">476756</size>
+    <lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT">2013:02:02 16:12:38+01:00</lastmodified>
+    <created toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT">2012:02:12 12:27:13+01:00</created>
+    <filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT">/opt/differ/docs/images/03.jpf</filepath>
+    <filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT">images/03.jpf</filename>
+    <md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT">f94464fb6f0b82e11a2340bf7e77d525</md5checksum>
+    <fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT">1359817958000</fslastmodified>
+  </fileinfo>
+  <filestatus>
+    <well-formed toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">true</well-formed>
+    <valid toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">true</valid>
+  </filestatus>
+  <metadata>
+    <image>
+      <byteOrder toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">big endian</byteOrder>
+      <compressionScheme toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">JPEG 2000 Lossless</compressionScheme>
+      <imageWidth toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">512</imageWidth>
+      <imageHeight toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">512</imageHeight>
+      <colorSpace toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">sRGB</colorSpace>
+      <tileWidth toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">1024</tileWidth>
+      <tileHeight toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">1024</tileHeight>
+      <qualityLayers toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">1</qualityLayers>
+      <resolutionLevels toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">5</resolutionLevels>
+      <samplingFrequencyUnit toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">cm</samplingFrequencyUnit>
+      <xSamplingFrequency toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">28</xSamplingFrequency>
+      <ySamplingFrequency toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">28</ySamplingFrequency>
+      <bitsPerSample toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">8 8 8</bitsPerSample>
+      <samplesPerPixel toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT">3</samplesPerPixel>
+      <standard>
+        <mix:mix xmlns:mix="http://www.loc.gov/mix/v20">
+          <mix:BasicDigitalObjectInformation>
+            <mix:byteOrder>big endian</mix:byteOrder>
+            <mix:Compression>
+              <mix:compressionScheme>JPEG 2000 Lossless</mix:compressionScheme>
+            </mix:Compression>
+          </mix:BasicDigitalObjectInformation>
+          <mix:BasicImageInformation>
+            <mix:BasicImageCharacteristics>
+              <mix:imageWidth>512</mix:imageWidth>
+              <mix:imageHeight>512</mix:imageHeight>
+              <mix:PhotometricInterpretation>
+                <mix:colorSpace>sRGB</mix:colorSpace>
+              </mix:PhotometricInterpretation>
+            </mix:BasicImageCharacteristics>
+            <mix:SpecialFormatCharacteristics>
+              <mix:JPEG2000>
+                <mix:EncodingOptions>
+                  <mix:Tiles>
+                    <mix:tileWidth>1024</mix:tileWidth>
+                    <mix:tileHeight>1024</mix:tileHeight>
+                  </mix:Tiles>
+                  <mix:qualityLayers>1</mix:qualityLayers>
+                  <mix:resolutionLevels>5</mix:resolutionLevels>
+                </mix:EncodingOptions>
+              </mix:JPEG2000>
+            </mix:SpecialFormatCharacteristics>
+          </mix:BasicImageInformation>
+          <mix:ImageCaptureMetadata>
+            <mix:GeneralCaptureInformation>
+              <mix:dateTimeCreated>2012-02-12T12:27:13.0Z</mix:dateTimeCreated>
+            </mix:GeneralCaptureInformation>
+          </mix:ImageCaptureMetadata>
+          <mix:ImageAssessmentMetadata>
+            <mix:SpatialMetrics>
+              <mix:samplingFrequencyUnit>cm</mix:samplingFrequencyUnit>
+              <mix:xSamplingFrequency>
+                <mix:numerator>28</mix:numerator>
+                <mix:denominator>1</mix:denominator>
+              </mix:xSamplingFrequency>
+              <mix:ySamplingFrequency>
+                <mix:numerator>28</mix:numerator>
+                <mix:denominator>1</mix:denominator>
+              </mix:ySamplingFrequency>
+            </mix:SpatialMetrics>
+            <mix:ImageColorEncoding>
+              <mix:samplesPerPixel>3</mix:samplesPerPixel>
+            </mix:ImageColorEncoding>
+          </mix:ImageAssessmentMetadata>
+        </mix:mix>
+      </standard>
+    </image>
+  </metadata>
+</fits>
+
