@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>DJDump &mdash; Differ Documentation 0.5 documentation</title>
+    <title>DjvuDump &mdash; Differ Documentation 0.5 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -43,18 +43,8 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="djdump">
-<h1><a class="toc-backref" href="#id1">DJDump</a><a class="headerlink" href="#djdump" title="Permalink to this headline">¶</a></h1>
-<div class="contents topic" id="contents">
-<p class="topic-title first">Contents</p>
-<ul class="simple">
-<li><a class="reference internal" href="#djdump" id="id1">DJDump</a><ul>
-<li><a class="reference internal" href="#significant-properties" id="id2">Significant Properties</a></li>
-<li><a class="reference internal" href="#layers-and-compressions" id="id3">Layers and Compressions</a></li>
-</ul>
-</li>
-</ul>
-</div>
+  <div class="section" id="djvudump">
+<h1>DjvuDump<a class="headerlink" href="#djvudump" title="Permalink to this headline">¶</a></h1>
 <p>od verze 16 do v26 umi DJVU</p>
 <p>od verze 27 can recognize sDJVU</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
@@ -66,7 +56,9 @@
 <span class="k">done</span>
 </pre></div>
 </div>
-<div class="output djvudump"><div class="highlight-python"><pre>  FORM:DJVU [901662] 
+<div class="output djvudump">
+<a class="show" href="#">djvudump.raw - show</a>
+<a class="hide" href="#">djvudump.raw - hide</a><div class="highlight-python"><pre>  FORM:DJVU [901662] 
     INFO [10]         DjVu 3776x2520, v21, 200 dpi, gamma=2.2
     BG44 [103431]     IW4 data #1, 76 slices, v1.2 (color), 3776x2520
     BG44 [150233]     IW4 data #2, 13 slices
@@ -74,8 +66,58 @@
     BG44 [311856]     IW4 data #4, 6 slices
 </pre>
 </div>
+</div><div class="output djvudump">
+<a class="show" href="#">ngc0253-field01-f606w_drz.fits.raw - show</a>
+<a class="hide" href="#">ngc0253-field01-f606w_drz.fits.raw - hide</a><div class="highlight-python"><div class="highlight"><pre>  <span class="n">SIMP</span> <span class="p">[</span><span class="mi">1279598624</span><span class="p">]</span> 
+</pre></div>
+</div>
+</div><div class="output djvudump">
+<a class="show" href="#">01-komLZW.tif.raw - show</a>
+<a class="hide" href="#">01-komLZW.tif.raw - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div><div class="output djvudump">
+<a class="show" href="#">01.tif.raw - show</a>
+<a class="hide" href="#">01.tif.raw - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div><div class="output">
+<a class="show" href="#">02.jpg.raw  - show</a>
+<a class="hide" href="#">02.jpg.raw  - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div><div class="output">
+<a class="show" href="#">03.jpf.raw  - show</a>
+<a class="hide" href="#">03.jpf.raw  - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div><div class="output">
+<a class="show" href="#">03-PSCS5.jp2.raw  - show</a>
+<a class="hide" href="#">03-PSCS5.jp2.raw  - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div><div class="output">
+<a class="show" href="#">04-KDU.jp2.raw  - show</a>
+<a class="hide" href="#">04-KDU.jp2.raw  - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div><div class="output">
+<a class="show" href="#">05.djvu.raw  - show</a>
+<a class="hide" href="#">05.djvu.raw  - hide</a><div class="highlight-python"><pre>  FORM:DJVU [901662] 
+    INFO [10]         DjVu 3776x2520, v21, 200 dpi, gamma=2.2
+    BG44 [103431]     IW4 data #1, 76 slices, v1.2 (color), 3776x2520
+    BG44 [150233]     IW4 data #2, 13 slices
+    BG44 [336086]     IW4 data #3, 12 slices
+    BG44 [311856]     IW4 data #4, 6 slices
+</pre>
+</div>
+</div><div class="output">
+<a class="show" href="#">06.png.raw  - show</a>
+<a class="hide" href="#">06.png.raw  - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
+</div>
 </div><div class="section" id="significant-properties">
-<h2><a class="toc-backref" href="#id2">Significant Properties</a><a class="headerlink" href="#significant-properties" title="Permalink to this headline">¶</a></h2>
+<h2>Significant Properties<a class="headerlink" href="#significant-properties" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><table border="1" class="docutils">
 <colgroup>
@@ -124,7 +166,7 @@
 <p>DJVU can use max. 24 bits for a color channel or indexed colors.</p>
 </div>
 <div class="section" id="layers-and-compressions">
-<h2><a class="toc-backref" href="#id3">Layers and Compressions</a><a class="headerlink" href="#layers-and-compressions" title="Permalink to this headline">¶</a></h2>
+<h2>Layers and Compressions<a class="headerlink" href="#layers-and-compressions" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>BG .. background
 44 .. compression IW44</p>
@@ -149,7 +191,7 @@ TXTZ .. hidden text layer</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">DJDump</a><ul>
+<li><a class="reference internal" href="#">DjvuDump</a><ul>
 <li><a class="reference internal" href="#significant-properties">Significant Properties</a></li>
 <li><a class="reference internal" href="#layers-and-compressions">Layers and Compressions</a></li>
 </ul>

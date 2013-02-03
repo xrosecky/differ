@@ -3,6 +3,28 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+
+.. raw:: html
+	 
+	 <script type="text/javascript">
+	 $(function(){
+		 $('a.show').click(function(){
+			 $(this).parent().find('.highlight-python').fadeIn();
+			 $(this).hide();
+			 $(this).parent().find('a.hide').show();
+			 return false;
+		 });
+		 $('a.hide').click(function(){
+			 $(this).parent().find('.highlight-python').fadeOut();
+			 $(this).hide();
+			 $(this).parent().find('a.show').show();
+			 return false;
+		 });
+		 $('.output .highlight-python').hide();
+		 $('.output a.hide').hide();
+	 });
+	 </script>
+
 Welcome to Differ Documentation!
 ================================
 
@@ -13,22 +35,6 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-.. raw:: html
-
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-  var disqus_shortname = 'differdocs'; // required: replace example with your forum shortname
-  
-  /* * * DON'T EDIT BELOW THIS LINE * * */
-  (function() {
-  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 Installation
 ------------
@@ -44,8 +50,6 @@ Recognized Validator Outputs
 
 .. include:: exiftool.rst
 
-.. include:: jhove.rst
-
 .. include:: fits.rst
 
 .. include:: kdu.rst
@@ -53,6 +57,8 @@ Recognized Validator Outputs
 .. include:: daitss.rst
 
 .. include:: imagemagick.rst
+
+.. include:: jhove.rst
 
 Command Line Application
 ------------------------
