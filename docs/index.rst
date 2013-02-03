@@ -15,7 +15,7 @@
 			 return false;
 		 });
 		 $('a.hide').click(function(){
-			 $(this).parent().find('.highlight-python').fadeOut();
+			 $(this).parent().find('.highlight-python').hide();
 			 $(this).hide();
 			 $(this).parent().find('a.show').show();
 			 return false;
