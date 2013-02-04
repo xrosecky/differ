@@ -172,13 +172,25 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
                         outFile
                 );
             }
-            output += String.format("\n  `text report <%s>`_\n", this.outputNamer.textCompareName(
-                    files[0],
-                    files[1],
-                    results[0],
-                    results[1]
+            output += String.format("\n  `text comparison report <%s>`_\n", this.outputNamer.textCompareName(
+                    files[0], files[1], results
                     ));
-            FileWriter writer = new FileWriter(this.outputNamer.textCompareName(files[0], files[1], results[0],results[1]));
+
+            output += "\nReports for web";
+            output += "\n============\n\n";
+
+            for(int imageOrder = 0; imageOrder < 2; imageOrder++){
+                File outFile = this.outputNamer.reportName(files[imageOrder], results[imageOrder]);
+                output += String.format("   %-10s   'web report <%s>'_\n",
+                        files[imageOrder].toString(),
+                        outFile
+                );
+            }
+            output += String.format("\n  `web comparison report <%s>`_\n", this.outputNamer.reportCompareName(
+                    files[0], files[1], results
+            ));
+
+            FileWriter writer = new FileWriter(this.outputNamer.textCompareName(files[0], files[1], results));
             writer.write(output);
             writer.close();
         }

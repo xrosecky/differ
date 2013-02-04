@@ -39,10 +39,17 @@ public class TheSameNameOutputNamer implements OutputNamer {
     }
 
     @Override
-    public File textCompareName(File file1, File file2, ImageProcessorResult result1, ImageProcessorResult result2){
-        File basename1 = this.baseName(file1,result1);
-        File basename2 = this.baseName(file2,result2);
+    public File textCompareName(File file1, File file2, ImageProcessorResult results[]){
+        File basename1 = this.baseName(file1,results[0]);
+        File basename2 = this.baseName(file2,results[1]);
         return new File(basename1, String.format("%s-%s-report.txt", basename1.getName(), basename2.getName()));
+    }
+
+    @Override
+    public File reportCompareName(File file1, File file2, ImageProcessorResult[] results) {
+        File basename1 = this.baseName(file1,results[0]);
+        File basename2 = this.baseName(file2,results[1]);
+        return new File(basename1, String.format("%s-%s-report.drep", basename1.getName(), basename2.getName()));
     }
 
     @Override

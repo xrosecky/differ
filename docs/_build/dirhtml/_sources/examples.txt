@@ -1,1 +1,40 @@
-a
+.. list-table:: Examples of validation results
+   :widths:  50 50
+   :header-rows: 1
+   
+   * - Image 01
+     - Image 02
+   
+   * - .. image:: examples/images_01/01.jpg
+     - .. image:: examples/images_02/01.jpg
+
+   * - .. literalinclude:: examples/images_01/01/output-daitss.raw
+     - .. literalinclude:: examples/images_02/01/output-daitss.raw
+
+   * - .. literalinclude:: examples/images_01/01/output-djvudump.raw
+     - .. literalinclude:: examples/images_02/01/output-djvudump.raw
+
+   * - .. literalinclude:: examples/images_01/01/output-exiftool.raw
+     - .. literalinclude:: examples/images_02/01/output-exiftool.raw
+
+   * - .. literalinclude:: examples/images_01/01/output-exiv2.raw
+     - .. literalinclude:: examples/images_02/01/output-exiv2.raw
+
+   * - .. literalinclude:: examples/images_01/01/output-fits.raw
+     - .. literalinclude:: examples/images_02/01/output-fits.raw
+
+   * - .. literalinclude:: examples/images_01/01/output-jhove.raw
+     - .. literalinclude:: examples/images_02/01/output-jhove.raw
+
+   * - .. literalinclude:: examples/images_01/01/output-jpylyzer.raw
+     - .. literalinclude:: examples/images_02/01/output-jpylyzer.raw
+
+   * - .. literalinclude:: examples/images_01/01/report.txt
+     - .. literalinclude:: examples/images_02/01/report.txt
+
+   * - .. literalinclude:: examples/images_01/01/used-properties.txt
+     - .. literalinclude:: examples/images_02/01/used-properties.txt
+
+     
+   
+		

@@ -18,6 +18,8 @@ import java.io.IOException;
  */
 public class ReportHTTPSender {
     private String url;
+    private String user;
+    private String password;
 
     public void setUrl(String url){
         this.url = url;
@@ -25,6 +27,19 @@ public class ReportHTTPSender {
     public String getUrl(){
         return this.url;
     }
+    public void setUser(String user){
+         this.user = user;
+    }
+    public String getUser(){
+         return this.user;
+    }
+    public void setPassword(String password){
+        this.password = password;
+    }
+    public String getPassword(){
+        return this.password;
+    }
+
     public HttpResponse sendReport(File report){
         HttpResponse response = null;
         HttpPost httpPost = new HttpPost(this.url);
@@ -35,7 +50,7 @@ public class ReportHTTPSender {
         try {
             response = client.execute(httpPost);
         } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
         client.getConnectionManager().shutdown();
         return response;

@@ -22,6 +22,7 @@
 		 });
 		 $('.output .highlight-python').hide();
 		 $('.output a.hide').hide();
+		 $('td div').width($('div.contents').width()/2.0);
 	 });
 	 </script>
 
@@ -64,3 +65,10 @@ Command Line Application
 ------------------------
 
 .. include:: cmdline.rst
+
+
+Examples of validation results
+------------------------------
+
+.. include:: examples.rst
+

@@ -147,6 +147,9 @@ public class TextResultTransformer implements ResultTransformer{
             output += "\nText report";
             output += "\n===========\n";
             output += String.format("\n  `text report <%s>`_\n", this.outputNamer.textName(file, result));
+            output += "\nReport for web";
+            output += "\n===========\n";
+            output += String.format("\n  `web report <%s>`_\n", this.outputNamer.reportName(file, result));
         }
         if( this.saveProperties ){
             output += "\nUsed significant properties";

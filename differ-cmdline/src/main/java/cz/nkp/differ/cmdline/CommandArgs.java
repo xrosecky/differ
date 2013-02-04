@@ -16,10 +16,10 @@ public class CommandArgs {
     @Parameter(description = "Files to validate.")
     public List<String> files = new ArrayList<String>();
 
-    @Parameter(names = {"-s","--save-report"}, description = "Report will be stored in a file named the same as input file. With extension: *.report")
+    @Parameter(names = {"-s","--save-report"}, description = "Report will be stored in a file named the same as input file. With extension: *.drep")
     public boolean saveReport=false;
 
-    @Parameter(names = {"-l","--load-report"}, description = "Report will loaded from a given file named the same as input file. With extension: *.report")
+    @Parameter(names = {"-l","--load-report"}, description = "Report will loaded from a given file named the same as input file. With extension: *.drep")
     public boolean loadReport=false;
 
     @Parameter(names = {"--save-properties"}, description = "A review of used significant properties will be saved.")
@@ -28,6 +28,9 @@ public class CommandArgs {
     @Parameter(names = {"--load-properties"}, description = "A review of significant properties to be used is loaded from a file.")
     public boolean loadProperties=false;
 
-    @Parameter(names = {"--save-raw-outputs"}, description = "Raw outputs of extractors will be saved too.")
+    @Parameter(names = {"-r","--save-raw-outputs"}, description = "Raw outputs of extractors will be saved too.")
     public boolean saveOutputs=false;
+
+    @Parameter(names = {"-w","--send-report-to-web"}, description = "Report will be sent to web.")
+    public boolean sendReportToWeb=false;
 };

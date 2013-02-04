@@ -75,12 +75,19 @@
     
     <!-- <import resource="../dist/WEB-INF/applicationContext.xml"/> -->
 
+    <!-- web to collect results of comparison -->
+    <bean id="reportHTTPSender" class="cz.nkp.differ.cmdline.ReportHTTPSender">
+      <property name="url" value="${reportingWeb.url}"/>
+      <property name="password" value="${reportingWeb.password}"/>
+      <property name="user" value="${reportingWeb.user}"/>
+    </bean>
+
     <!-- exiftool -->
     <bean id="exiftoolMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
       <property name="mapOfRegexp">
     	    <map>
     	      <entry key="File size"        value="File Size[\ \t]*:[\ \t]*(.+)"/>
-    	      <entry key="File type"        value="File Type[\ \t]*:[\ \t]*(.+)"/>
+    	      <entry key="Type of format"        value="File Type[\ \t]*:[\ \t]*(.+)"/>
     	      <entry key="MIME type"        value="MIME Type[\ \t]*:[\ \t]*(.+)"/>
     	      <entry key="Software type"    value="Software[\ \t]*:[\ \t]*(.+)"/>
     	      <entry key="File last modified"    value="File Modification Date/Time[\ \t]*:[\ \t]*(.+)"/>
@@ -122,7 +129,7 @@
       <property name="mapOfRegexp">
     	    <map>
     	      <!-- <entry key="File size"        value=""/> -->
-    	      <entry key="File type"        value="FORM:([^\[]+)"/>
+    	      <entry key="Type of format"        value="FORM:([^\[]+)"/>
     	      <entry key="Software type"    value="INFO \[[0-9]+\][^x]*,[\ \t]*([^,]+)"/>
     	      <entry key="Image width"      value="INFO \[[0-9]+\].*([0-9]+)x"/>
     	      <entry key="Image height"     value="INFO \[[0-9]+\].*[0-9]+x([0-9]+)"/>
@@ -181,6 +188,7 @@
       <property name="units" ref="units"/>
     </bean>
 
+
     <!-- daitss -->
     <bean id="daitssMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
     	<property name="stylesheet" value="${daitss.xsl}"/>
@@ -189,7 +197,7 @@
       <property name="source" value="daitss"/>
       <property name="transformer" ref="daitssMetadataTransformer"/>
       <property name="units" ref="units"/>
-      <property name="url" value="http://description.fcla.edu/description"/>
+      <property name="url" value="${daitssHTTPExtractor.url}"/>
     </bean>
 
     <!-- fits -->

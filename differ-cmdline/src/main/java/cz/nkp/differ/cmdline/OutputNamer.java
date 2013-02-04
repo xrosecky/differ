@@ -14,6 +14,7 @@ public interface OutputNamer {
     public File rawOutputName(File file, ImageProcessorResult result, String source);
     public File reportName(File file, ImageProcessorResult result);
     public File textName(File file, ImageProcessorResult result);
-    public File textCompareName(File file1, File file2, ImageProcessorResult result1, ImageProcessorResult result2);
+    public File textCompareName(File file1, File file2, ImageProcessorResult results[]);
+    public File reportCompareName(File file1, File file2, ImageProcessorResult results[]);
     public File propertiesSummaryName(File file, ImageProcessorResult result);
 }
