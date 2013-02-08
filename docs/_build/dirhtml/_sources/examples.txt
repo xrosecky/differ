@@ -23,6 +23,9 @@
    * - .. literalinclude:: examples/images_01/01/output-jhove.raw
      - .. literalinclude:: examples/images_02/01/output-jhove.raw
 
+   * - .. literalinclude:: examples/images_01/01/output-imagemagick.raw
+     - .. literalinclude:: examples/images_02/01/output-imagemagick.raw
+
    * - .. literalinclude:: examples/images_01/01/report.txt
      - .. literalinclude:: examples/images_02/01/report.txt
 
@@ -46,6 +49,9 @@
 
    * - .. literalinclude:: examples/images_01/02/output-jhove.raw
      - .. literalinclude:: examples/images_02/02/output-jhove.raw
+
+   * - .. literalinclude:: examples/images_01/02/output-imagemagick.raw
+     - .. literalinclude:: examples/images_02/02/output-imagemagick.raw
 
    * - .. literalinclude:: examples/images_01/02/report.txt
      - .. literalinclude:: examples/images_02/02/report.txt
