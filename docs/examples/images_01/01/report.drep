@@ -18,31 +18,11 @@
             <source>jhove</source>
         </metadata>
         <metadata>
-            <key>Code block height</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <unit>px</unit>
-            <conflict>false</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
             <key>Code block width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <unit>px</unit>
             <conflict>false</conflict>
             <source>jhove</source>
-        </metadata>
-        <metadata>
-            <key>Code block width</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <unit>px</unit>
-            <conflict>false</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>Coding bypass</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>false</conflict>
-            <source>jpylyzer</source>
         </metadata>
         <metadata>
             <key>Color depth</key>
@@ -52,15 +32,15 @@
         </metadata>
         <metadata>
             <key>Color depth</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8-bit</value>
             <conflict>true</conflict>
-            <source>jhove</source>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Color depth</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8</value>
             <conflict>true</conflict>
-            <source>jpylyzer</source>
+            <source>jhove</source>
         </metadata>
         <metadata>
             <key>Color space</key>
@@ -76,21 +56,15 @@
         </metadata>
         <metadata>
             <key>Color space</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">sRGB</value>
             <conflict>true</conflict>
-            <source>jhove</source>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Color space</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <conflict>true</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>Commentary</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>false</conflict>
-            <source>jpylyzer</source>
+            <source>jhove</source>
         </metadata>
         <metadata>
             <key>Compression</key>
@@ -108,33 +82,19 @@
             <key>Compression</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
             <conflict>true</conflict>
-            <source>jhove</source>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Compression</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
             <conflict>true</conflict>
-            <source>jpylyzer</source>
+            <source>jhove</source>
         </metadata>
         <metadata>
-            <key>Compression ratio</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+            <key>Compression quality</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">99</value>
             <conflict>false</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>Display resolution horizontal</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <unit>PPI</unit>
-            <conflict>false</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>Display resolution vertical</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <unit>PPI</unit>
-            <conflict>false</conflict>
-            <source>jpylyzer</source>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Encoding process</key>
@@ -143,22 +103,10 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>End of packet header</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>false</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
             <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">OK</value>
             <conflict>true</conflict>
             <source>daitss</source>
-        </metadata>
-        <metadata>
-            <key>exit-code</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">error (1)</value>
-            <conflict>true</conflict>
-            <source>djvudump</source>
         </metadata>
         <metadata>
             <key>exit-code</key>
@@ -182,13 +130,19 @@
             <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ok</value>
             <conflict>true</conflict>
-            <source>jhove</source>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ok</value>
             <conflict>true</conflict>
-            <source>jpylyzer</source>
+            <source>jhove</source>
+        </metadata>
+        <metadata>
+            <key>File created</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-02T17:03:00+01:00</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>File last modified</key>
@@ -206,79 +160,79 @@
             <key>File last modified</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-02T17:03:00+01:00</value>
             <conflict>true</conflict>
-            <source>jhove</source>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>File last modified</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Sat Feb  2 17:03:00 2013</value>
-            <conflict>true</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>File name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">01.jpg</value>
-            <conflict>true</conflict>
-            <source>core</source>
-        </metadata>
-        <metadata>
-            <key>File name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">01.jpg</value>
-            <conflict>true</conflict>
-            <source>daitss</source>
-        </metadata>
-        <metadata>
-            <key>File name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">01.jpg</value>
-            <conflict>true</conflict>
-            <source>daitss</source>
-        </metadata>
-        <metadata>
-            <key>File name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
-            <conflict>true</conflict>
-            <source>exiv2</source>
-        </metadata>
-        <metadata>
-            <key>File name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
-            <conflict>true</conflict>
-            <source>fits</source>
-        </metadata>
-        <metadata>
-            <key>File name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">01.jpg</value>
-            <conflict>true</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>File path</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
-            <conflict>true</conflict>
-            <source>core</source>
-        </metadata>
-        <metadata>
-            <key>File path</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
-            <conflict>true</conflict>
-            <source>exiv2</source>
-        </metadata>
-        <metadata>
-            <key>File path</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
-            <conflict>true</conflict>
-            <source>fits</source>
-        </metadata>
-        <metadata>
-            <key>File path</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-02T17:03:00+01:00</value>
             <conflict>true</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
-            <key>File path</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/docs/examples/images_01/01.jpg</value>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">01.jpg</value>
             <conflict>true</conflict>
-            <source>jpylyzer</source>
+            <source>core</source>
+        </metadata>
+        <metadata>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">01.jpg</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
+        </metadata>
+        <metadata>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">01.jpg</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
+        </metadata>
+        <metadata>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
+            <conflict>true</conflict>
+            <source>exiv2</source>
+        </metadata>
+        <metadata>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
+            <conflict>true</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
+            <conflict>true</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>File path</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
+            <conflict>false</conflict>
+            <source>core</source>
+        </metadata>
+        <metadata>
+            <key>File path</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
+            <conflict>false</conflict>
+            <source>exiv2</source>
+        </metadata>
+        <metadata>
+            <key>File path</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
+            <conflict>false</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
+            <key>File path</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>File path</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg</value>
+            <conflict>false</conflict>
+            <source>jhove</source>
         </metadata>
         <metadata>
             <key>File size</key>
@@ -306,27 +260,15 @@
         </metadata>
         <metadata>
             <key>File size</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">177246</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">177KB</value>
             <conflict>true</conflict>
-            <source>jhove</source>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>File size</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">177246</value>
             <conflict>true</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>File type</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
-            <conflict>false</conflict>
-            <source>exiftool</source>
-        </metadata>
-        <metadata>
-            <key>Format</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Raw JPEG Stream</value>
-            <conflict>false</conflict>
-            <source>daitss</source>
+            <source>jhove</source>
         </metadata>
         <metadata>
             <key>Format version</key>
@@ -337,105 +279,595 @@
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:int" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>core</source>
         </metadata>
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
-        </metadata>
-        <metadata>
-            <key>Image height</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <unit>px</unit>
-            <conflict>true</conflict>
-            <source>jpylyzer</source>
         </metadata>
         <metadata>
             <key>Image width</key>
             <value xsi:type="xs:int" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>core</source>
         </metadata>
         <metadata>
             <key>Image width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
             <key>Image width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
             <key>Image width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
             <key>Image width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
             <key>Image width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
             <unit>px</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
-            <key>Image width</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <unit>px</unit>
-            <conflict>true</conflict>
-            <source>jpylyzer</source>
+            <key>Image/Channel depth/blue</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8-bit</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel depth/green</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8-bit</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel depth/red</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8-bit</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Blue/kurtosis</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-0.562356</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Blue/max</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">255 (1)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Blue/mean</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">127.194 (0.498801)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Blue/min</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">28 (0.109804)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Blue/skewness</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.0756983</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Blue/standard deviation</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">49.0628 (0.192403)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Green/kurtosis</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-0.628355</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Green/max</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">247 (0.968627)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Green/mean</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">123.193 (0.48311)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Green/min</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0 (0)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Green/skewness</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-0.19127</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Green/standard deviation</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">48.8692 (0.191644)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Artifacts/verbose</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Background color</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">white</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Border color</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">srgb(223,223,223)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Chromaticity/blue primary</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">(0.15,0.06)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Chromaticity/green primary</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">(0.3,0.6)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Chromaticity/red primary</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">(0.64,0.33)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Chromaticity/white point</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">(0.3127,0.329)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Colors</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">444</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Compose</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Over</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Dispose</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Undefined</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Elapsed time</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.070</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Gamma</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.454545</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Interlace</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">None</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Iterations</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Matte color</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">grey74</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Number pixels</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">262K</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Orientation</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">TopLeft</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Overall/kurtosis</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-0.578137</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Overall/max</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">255 (1)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Overall/mean</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">124.527 (0.488343)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Overall/min</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0 (0)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Overall/skewness</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-0.100979</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Overall/standard deviation</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">48.9328 (0.191893)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Page geometry</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512x512+0+0</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Pixels per second</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3.745MB</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Profiles/Profile-8bim</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9276 bytes</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Profiles/Profile-exif</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">7464 bytes</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Profiles/Profile-xmp</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5582 bytes</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/BitsPerSample</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8, 8, 8</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/ColorSpace</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">65535</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/Compression</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/DateTime</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2012:02:12 12:16:49</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/ExifImageLength</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/ExifImageWidth</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/ExifOffset</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">252</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/ImageLength</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/ImageWidth</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/JPEGInterchangeFormat</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">390</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/JPEGInterchangeFormatLength</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">7068</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/Orientation</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/PhotometricInterpretation</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/PlanarConfiguration</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/ResolutionUnit</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/SamplesPerPixel</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/Software</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Adobe Photoshop CS5 Windows</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/XResolution</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">720000/10000</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/exif/YResolution</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">720000/10000</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/jpeg/colorspace</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/jpeg/sampling-factor</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1x1,1x1,1x1</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/rdf</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Bag:</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Properties/xmpMM</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">DerivedFrom:</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Rendering intent</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Perceptual</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Tainted</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">False</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Transparent color</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">black</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/User time</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.020u</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Image statistics/Version</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Red/kurtosis</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-0.629455</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Red/max</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">247 (0.968627)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Red/mean</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">123.195 (0.483116)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Red/min</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0 (0)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Red/skewness</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-0.19092</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Channel statistics/Red/standard deviation</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">48.8662 (0.191632)</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Class</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">DirectClass</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Endianess</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Undefined</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Geometry</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512x512+0+0</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Print size</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">7.11111x7.11111</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Resolution</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">72x72</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Type</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">TrueColor</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
+        </metadata>
+        <metadata>
+            <key>Image/Units</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">PixelsPerInch</value>
+            <conflict>false</conflict>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>MIME type</key>
@@ -464,35 +896,17 @@
         <metadata>
             <key>Number of channels</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
             <key>Number of channels</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3</value>
-            <conflict>true</conflict>
-            <source>jhove</source>
-        </metadata>
-        <metadata>
-            <key>Number of channels</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>true</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>Number of decomposition levels</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
             <key>Number of decomposition levels</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>false</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>Number of quality layers</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <conflict>false</conflict>
             <source>jhove</source>
@@ -501,29 +915,11 @@
             <key>Number of quality layers</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <conflict>false</conflict>
-            <source>jpylyzer</source>
+            <source>jhove</source>
         </metadata>
         <metadata>
             <key>Number of tiles</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</value>
-            <conflict>true</conflict>
-            <source>jhove</source>
-        </metadata>
-        <metadata>
-            <key>Number of tiles</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>true</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>Precincts</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>false</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
-            <key>Progression order</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
@@ -531,7 +927,7 @@
             <key>Progression order</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <conflict>false</conflict>
-            <source>jpylyzer</source>
+            <source>jhove</source>
         </metadata>
         <metadata>
             <key>Quantization style</key>
@@ -554,13 +950,6 @@
             <source>exiv2</source>
         </metadata>
         <metadata>
-            <key>Resolution horizontal</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <unit>PPI</unit>
-            <conflict>true</conflict>
-            <source>jpylyzer</source>
-        </metadata>
-        <metadata>
             <key>Resolution unit</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">inches</value>
             <conflict>false</conflict>
@@ -579,13 +968,6 @@
             <unit>PPI</unit>
             <conflict>true</conflict>
             <source>exiv2</source>
-        </metadata>
-        <metadata>
-            <key>Resolution vertical</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <unit>PPI</unit>
-            <conflict>true</conflict>
-            <source>jpylyzer</source>
         </metadata>
         <metadata>
             <key>Samples per pixel</key>
@@ -610,12 +992,6 @@
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Adobe Photoshop CS5 Windows</value>
             <conflict>false</conflict>
             <source>exiftool</source>
-        </metadata>
-        <metadata>
-            <key>Start of packet header</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>false</conflict>
-            <source>jpylyzer</source>
         </metadata>
         <metadata>
             <key>Thumbnail</key>
@@ -644,22 +1020,28 @@
             <source>jhove</source>
         </metadata>
         <metadata>
-            <key>Transformation</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+            <key>Type of Format</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Raw JPEG Stream</value>
             <conflict>false</conflict>
-            <source>jpylyzer</source>
+            <source>daitss</source>
+        </metadata>
+        <metadata>
+            <key>Type of format</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
+            <conflict>true</conflict>
+            <source>exiftool</source>
+        </metadata>
+        <metadata>
+            <key>Type of format</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG (Joint Photographic Experts Group JFIF format)</value>
+            <conflict>true</conflict>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Type of format</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
             <conflict>true</conflict>
             <source>jhove</source>
-        </metadata>
-        <metadata>
-            <key>Type of format</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>true</conflict>
-            <source>jpylyzer</source>
         </metadata>
         <metadata>
             <key>Universal unique identifier (UUID)</key>
@@ -669,215 +1051,33 @@
         </metadata>
         <metadata>
             <key>Universal unique identifier (UUID)</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">c036720f47e4cf3bb04000f79c5d99b53781ca3ab35940ad83289fb981412a68</value>
             <conflict>true</conflict>
-            <source>jhove</source>
+            <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Universal unique identifier (UUID)</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <conflict>true</conflict>
-            <source>jpylyzer</source>
+            <source>jhove</source>
         </metadata>
         <metadata>
             <key>Validation (well formed and valid)</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Well-Formed and valid</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
             <key>Validation (well formed and valid)</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Well-Formed and valid</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
-        </metadata>
-        <metadata>
-            <key>Validation (well formed and valid)</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">False</value>
-            <conflict>true</conflict>
-            <source>jpylyzer</source>
         </metadata>
     </metadata-list>
     <sources-list>
-        <source source="daitss" exitCode="0">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-
-&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
-	
-	&lt;!-- premis file object --&gt;
-	&lt;object xsi:type="file"&gt;
-		&lt;objectIdentifier&gt;
-			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130202-1940-4fxrpm-0.jpg&lt;/objectIdentifierValue&gt;
-		&lt;/objectIdentifier&gt;
-		&lt;objectCharacteristics&gt;
-			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;da7db7dbe9cece08cb506bf614fd4e3c&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;931cb843080f264e69f8fad1a521f1b305bd5cb0&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;size&gt;177246&lt;/size&gt;
-			
-			&lt;format&gt;
-				&lt;formatDesignation&gt;
-					&lt;formatName&gt;Raw JPEG Stream&lt;/formatName&gt;
-					
-				&lt;/formatDesignation&gt;
-				
-				&lt;formatRegistry&gt;
-					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
-					&lt;formatRegistryKey&gt;fmt/41&lt;/formatRegistryKey&gt;
-				&lt;/formatRegistry&gt;
-				
-				
-			&lt;/format&gt;
-			
-			
-			
-			
-			&lt;objectCharacteristicsExtension&gt;
-				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
-  &lt;mix:BasicDigitalObjectInformation&gt;
-    &lt;mix:ObjectIdentifier&gt;
-      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
-    &lt;/mix:ObjectIdentifier&gt;
-    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
-    &lt;mix:Compression&gt;
-      &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
-    &lt;/mix:Compression&gt;
-  &lt;/mix:BasicDigitalObjectInformation&gt;
-  &lt;mix:BasicImageInformation&gt;
-    &lt;mix:BasicImageCharacteristics&gt;
-      &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
-      &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
-    &lt;/mix:BasicImageCharacteristics&gt;
-  &lt;/mix:BasicImageInformation&gt;
-  &lt;mix:ImageAssessmentMetadata&gt;
-    &lt;mix:ImageColorEncoding&gt;
-      &lt;mix:BitsPerSample&gt;
-        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
-      &lt;/mix:BitsPerSample&gt;
-      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
-    &lt;/mix:ImageColorEncoding&gt;
-  &lt;/mix:ImageAssessmentMetadata&gt;
-&lt;/mix:mix&gt;
-			&lt;/objectCharacteristicsExtension&gt;
-			
-		&lt;/objectCharacteristics&gt;
-		
-		&lt;originalName&gt;01.jpg&lt;/originalName&gt;
-		
-		
-		
-		
-		&lt;linkingEventIdentifier&gt;
-			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
-			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
-		&lt;/linkingEventIdentifier&gt;
-	&lt;/object&gt;
-	
-
-	
-	&lt;!-- premis bitstream object --&gt;
-	
-	
-
-	&lt;!-- premis event --&gt;
-	&lt;event&gt;
-		&lt;eventIdentifier&gt;
-			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
-			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
-		&lt;/eventIdentifier&gt;
-		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-02T11:45:03-05:00&lt;/eventDateTime&gt;
-		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
-		&lt;eventOutcomeInformation&gt;
-			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
-			
-		&lt;/eventOutcomeInformation&gt;
-		&lt;linkingAgentIdentifier&gt;
-			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
-			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
-		&lt;/linkingAgentIdentifier&gt;
-		&lt;linkingObjectIdentifier&gt;
-			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130202-1940-4fxrpm-0.jpg&lt;/linkingObjectIdentifierValue&gt;
-		&lt;/linkingObjectIdentifier&gt;
-	&lt;/event&gt;
-
-&lt;!-- premis agent --&gt;
-&lt;agent&gt;
-	&lt;agentIdentifier&gt;
-		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
-		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
-	&lt;/agentIdentifier&gt;
-	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
-	&lt;agentType&gt;Web Service&lt;/agentType&gt;
-	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
-&lt;/agent&gt;
-&lt;/premis&gt;
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="djvudump" exitCode="1">
-            <stdout></stdout>
-            <stderr>*** [1-15108] Corrupted IFF file (Illegal chunk id).
-*** (IFFByteStream.cpp:248)
-*** 'int DJVU::IFFByteStream::get_chunk(DJVU::GUTF8String&amp;, int*, int*)'
-
-</stderr>
-        </source>
-        <source source="jpylyzer" exitCode="0">
-            <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
-&lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.5.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;01.jpg&lt;/fileName&gt;&lt;filePath&gt;/opt/differ/docs/examples/images_01/01.jpg&lt;/filePath&gt;&lt;fileSizeInBytes&gt;177246&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Sat Feb  2 17:03:00 2013&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;containsSignatureBox&gt;False&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;False&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;False&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;False&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;False&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;False&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;False&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;/tests&gt;&lt;properties&gt;&lt;unknownBox /&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
-            <stderr>User warning: ignoring unknown box
-</stderr>
-        </source>
-        <source source="core" exitCode="0">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
-        <source source="exiv2" exitCode="0">
-            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg
-File size       : 177246 Bytes
-MIME type       : image/jpeg
-Image size      : 512 x 512
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 512 x 512
-White balance   : 
-Thumbnail       : image/jpeg, 7068 Bytes
-Copyright       : 
-Exif comment    : 
-
-</stdout>
-            <stderr></stderr>
-        </source>
         <source source="fits" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="2.2.13 17:41"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="8.2.13 19:04"&gt;
   &lt;identification&gt;
     &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.11" /&gt;
@@ -919,78 +1119,10 @@ Exif comment    :
 </stdout>
             <stderr></stderr>
         </source>
-        <source source="exiftool" exitCode="0">
-            <stdout>ExifTool Version Number         : 8.60
-File Name                       : 01.jpg
-Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
-File Size                       : 173 kB
-File Modification Date/Time     : 2013:02:02 17:03:00+01:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Compression                     : Uncompressed
-Photometric Interpretation      : RGB
-Orientation                     : Horizontal (normal)
-Samples Per Pixel               : 3
-X Resolution                    : 72
-Y Resolution                    : 72
-Planar Configuration            : Chunky
-Resolution Unit                 : inches
-Software                        : Adobe Photoshop CS5 Windows
-Modify Date                     : 2012:02:12 12:16:49
-Color Space                     : Uncalibrated
-Exif Image Width                : 512
-Exif Image Height               : 512
-Thumbnail Offset                : 402
-Thumbnail Length                : 7068
-IPTC Digest                     : 00000000000000000000000000000000
-Displayed Units X               : inches
-Displayed Units Y               : inches
-Global Angle                    : 30
-Global Altitude                 : 30
-Photoshop Thumbnail             : (Binary data 7068 bytes, use -b option to extract)
-Photoshop Quality               : 12
-Photoshop Format                : Standard
-Progressive Scans               : 3 Scans
-XMP Toolkit                     : Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00
-Create Date                     : 2012:02:12 12:09:13+01:00
-Metadata Date                   : 2012:02:12 12:16:49+01:00
-Creator Tool                    : Adobe Photoshop CS5 Windows
-Format                          : image/jpeg
-Color Mode                      : RGB
-Instance ID                     : xmp.iid:F3B79AEC6A55E11180A5EF7BDC084C3E
-Document ID                     : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-Original Document ID            : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-Document Ancestors              : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-History Action                  : created, converted, saved, saved, saved, saved, converted, derived, saved, saved, converted, derived, saved
-History Instance ID             : xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:F2B79AEC6A55E11180A5EF7BDC084C3E, xmp.iid:F3B79AEC6A55E11180A5EF7BDC084C3E
-History When                    : 2012:02:12 12:09:13+01:00, 2012:02:12 12:11:16+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:16:49+01:00, 2012:02:12 12:16:49+01:00
-History Software Agent          : Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows
-History Parameters              : from image/tiff to image/jpeg, from image/jpeg to application/vnd.adobe.photoshop, converted from image/jpeg to application/vnd.adobe.photoshop, from application/vnd.adobe.photoshop to image/jpeg, converted from application/vnd.adobe.photoshop to image/jpeg
-History Changed                 : /, /, /, /, /, /, /
-Derived From Instance ID        : xmp.iid:F2B79AEC6A55E11180A5EF7BDC084C3E
-Derived From Document ID        : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-Derived From Original Document ID: xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-DCT Encode Version              : 100
-APP14 Flags 0                   : [14]
-APP14 Flags 1                   : (none)
-Color Transform                 : YCbCr
-Image Width                     : 512
-Image Height                    : 512
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
-Image Size                      : 512x512
-Thumbnail Image                 : (Binary data 7068 bytes, use -b option to extract)
-</stdout>
-            <stderr></stderr>
-        </source>
         <source source="jhove" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-02-02T17:41:09+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-08T19:04:48+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-02T17:03:00+01:00&lt;/lastModified&gt;
@@ -1155,6 +1287,791 @@ Thumbnail Image                 : (Binary data 7068 bytes, use -b option to extr
   &lt;/properties&gt;
  &lt;/repInfo&gt;
 &lt;/jhove&gt;
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="core" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
+        <source source="imagemagick" exitCode="0">
+            <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Class: DirectClass
+  Geometry: 512x512+0+0
+  Resolution: 72x72
+  Print size: 7.11111x7.11111
+  Units: PixelsPerInch
+  Type: TrueColor
+  Endianess: Undefined
+  Colorspace: sRGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Red:
+      min: 0 (0)
+      max: 247 (0.968627)
+      mean: 123.195 (0.483116)
+      standard deviation: 48.8662 (0.191632)
+      kurtosis: -0.629455
+      skewness: -0.19092
+    Green:
+      min: 0 (0)
+      max: 247 (0.968627)
+      mean: 123.193 (0.48311)
+      standard deviation: 48.8692 (0.191644)
+      kurtosis: -0.628355
+      skewness: -0.19127
+    Blue:
+      min: 28 (0.109804)
+      max: 255 (1)
+      mean: 127.194 (0.498801)
+      standard deviation: 49.0628 (0.192403)
+      kurtosis: -0.562356
+      skewness: 0.0756983
+  Image statistics:
+    Overall:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 124.527 (0.488343)
+      standard deviation: 48.9328 (0.191893)
+      kurtosis: -0.578137
+      skewness: -0.100979
+  Colors: 444
+  Histogram:
+         2: (  0,  0,251) #0000FB srgb(0,0,251)
+       130: (  0,  0,253) #0000FD srgb(0,0,253)
+      2928: (  0,  0,254) #0000FE srgb(0,0,254)
+         3: (  0,  1,252) #0001FC srgb(0,1,252)
+        11: (  0,  1,254) #0001FE srgb(0,1,254)
+         1: (  0,  2,255) #0002FF srgb(0,2,255)
+         1: (  1,  0,252) #0100FC srgb(1,0,252)
+       365: (  1,  0,254) #0100FE srgb(1,0,254)
+       224: (  1,  1,255) #0101FF srgb(1,1,255)
+         1: (  2,  0,252) #0200FC srgb(2,0,252)
+         2: (  2,  0,254) #0200FE srgb(2,0,254)
+        39: (  2,  1,255) #0201FF srgb(2,1,255)
+         1: (  2,  2,255) #0202FF srgb(2,2,255)
+         1: ( 19, 22,175) #1316AF srgb(19,22,175)
+         1: ( 21, 20,156) #15149C srgb(21,20,156)
+         1: ( 21, 21,169) #1515A9 srgb(21,21,169)
+         1: ( 23, 26,159) #171A9F srgb(23,26,159)
+         1: ( 24, 23,179) #1817B3 srgb(24,23,179)
+         1: ( 25, 23,156) #19179C srgb(25,23,156)
+         1: ( 27, 27,161) #1B1BA1 srgb(27,27,161)
+         1: ( 28, 28, 28) #1C1C1C grey11
+         1: ( 28, 31,110) #1C1F6E srgb(28,31,110)
+         1: ( 29, 25,180) #1D19B4 srgb(29,25,180)
+         2: ( 29, 29, 29) #1D1D1D srgb(29,29,29)
+         7: ( 30, 30, 30) #1E1E1E srgb(30,30,30)
+        12: ( 31, 31, 31) #1F1F1F grey12
+        28: ( 32, 32, 32) #202020 srgb(32,32,32)
+         2: ( 32, 33,185) #2021B9 srgb(32,33,185)
+        61: ( 33, 33, 33) #212121 grey13
+        69: ( 34, 34, 34) #222222 srgb(34,34,34)
+         1: ( 34, 35,187) #2223BB srgb(34,35,187)
+       116: ( 35, 35, 35) #232323 srgb(35,35,35)
+         1: ( 35, 36,188) #2324BC srgb(35,36,188)
+       168: ( 36, 36, 36) #242424 grey14
+         1: ( 36, 36,170) #2424AA srgb(36,36,170)
+         2: ( 36, 37,189) #2425BD srgb(36,37,189)
+       217: ( 37, 37, 37) #252525 srgb(37,37,37)
+         5: ( 37, 38,190) #2526BE srgb(37,38,190)
+       310: ( 38, 38, 38) #262626 grey15
+         1: ( 38, 39,191) #2627BF srgb(38,39,191)
+       396: ( 39, 39, 39) #272727 srgb(39,39,39)
+         3: ( 39, 40,192) #2728C0 srgb(39,40,192)
+       516: ( 40, 40, 40) #282828 srgb(40,40,40)
+         2: ( 40, 41,193) #2829C1 srgb(40,41,193)
+       642: ( 41, 41, 41) #292929 grey16
+         8: ( 41, 42,194) #292AC2 srgb(41,42,194)
+         1: ( 41, 42,195) #292AC3 srgb(41,42,195)
+       868: ( 42, 42, 42) #2A2A2A srgb(42,42,42)
+         9: ( 42, 43,195) #2A2BC3 srgb(42,43,195)
+       972: ( 43, 43, 43) #2B2B2B grey17
+         9: ( 43, 44,196) #2B2CC4 srgb(43,44,196)
+      1233: ( 44, 44, 44) #2C2C2C srgb(44,44,44)
+         4: ( 44, 45,197) #2C2DC5 srgb(44,45,197)
+         1: ( 45, 44,180) #2D2CB4 srgb(45,44,180)
+      1421: ( 45, 45, 45) #2D2D2D srgb(45,45,45)
+         1: ( 45, 46, 48) #2D2E30 srgb(45,46,48)
+         9: ( 45, 46,198) #2D2EC6 srgb(45,46,198)
+         1: ( 45, 47, 46) #2D2F2E srgb(45,47,46)
+      1682: ( 46, 46, 46) #2E2E2E grey18
+         7: ( 46, 47,199) #2E2FC7 srgb(46,47,199)
+         1: ( 47, 45, 46) #2F2D2E srgb(47,45,46)
+      1798: ( 47, 47, 47) #2F2F2F srgb(47,47,47)
+        10: ( 47, 48,200) #2F30C8 srgb(47,48,200)
+         1: ( 48, 46, 49) #302E31 srgb(48,46,49)
+      2018: ( 48, 48, 48) #303030 grey19
+         8: ( 48, 49,201) #3031C9 srgb(48,49,201)
+      2194: ( 49, 49, 49) #313131 srgb(49,49,49)
+        20: ( 49, 50,202) #3132CA srgb(49,50,202)
+      2216: ( 50, 50, 50) #323232 srgb(50,50,50)
+        24: ( 50, 51,203) #3233CB srgb(50,51,203)
+      2238: ( 51, 51, 51) #333333 grey20
+        38: ( 51, 52,204) #3334CC srgb(51,52,204)
+      2375: ( 52, 52, 52) #343434 srgb(52,52,52)
+        24: ( 52, 53,205) #3435CD srgb(52,53,205)
+         1: ( 53, 52,154) #35349A srgb(53,52,154)
+      2506: ( 53, 53, 53) #353535 srgb(53,53,53)
+        13: ( 53, 54,206) #3536CE srgb(53,54,206)
+         2: ( 54, 53,155) #36359B srgb(54,53,155)
+         1: ( 54, 53,189) #3635BD srgb(54,53,189)
+      2187: ( 54, 54, 54) #363636 grey21
+         7: ( 54, 55,207) #3637CF srgb(54,55,207)
+         1: ( 55, 54,156) #37369C srgb(55,54,156)
+      2098: ( 55, 55, 55) #373737 srgb(55,55,55)
+         8: ( 55, 56,208) #3738D0 srgb(55,56,208)
+         1: ( 55, 57,192) #3739C0 srgb(55,57,192)
+         1: ( 56, 55,157) #38379D srgb(56,55,157)
+      1949: ( 56, 56, 56) #383838 grey22
+        12: ( 56, 57,209) #3839D1 srgb(56,57,209)
+      1929: ( 57, 57, 57) #393939 srgb(57,57,57)
+        28: ( 57, 58,210) #393AD2 srgb(57,58,210)
+      1728: ( 58, 58, 58) #3A3A3A srgb(58,58,58)
+        24: ( 58, 59,211) #3A3BD3 srgb(58,59,211)
+         3: ( 59, 58,160) #3B3AA0 srgb(59,58,160)
+      1545: ( 59, 59, 59) #3B3B3B grey23
+        22: ( 59, 60,212) #3B3CD4 srgb(59,60,212)
+         2: ( 60, 59,161) #3C3BA1 srgb(60,59,161)
+      1400: ( 60, 60, 60) #3C3C3C srgb(60,60,60)
+        15: ( 60, 61,213) #3C3DD5 srgb(60,61,213)
+         1: ( 61, 59,194) #3D3BC2 srgb(61,59,194)
+      1312: ( 61, 61, 61) #3D3D3D grey24
+        10: ( 61, 62,214) #3D3ED6 srgb(61,62,214)
+         7: ( 62, 61,163) #3E3DA3 srgb(62,61,163)
+      1143: ( 62, 62, 62) #3E3E3E srgb(62,62,62)
+         6: ( 62, 63,215) #3E3FD7 srgb(62,63,215)
+         6: ( 63, 62,164) #3F3EA4 srgb(63,62,164)
+         1: ( 63, 62,215) #3F3ED7 srgb(63,62,215)
+      1122: ( 63, 63, 63) #3F3F3F srgb(63,63,63)
+         3: ( 63, 64,216) #3F40D8 srgb(63,64,216)
+         6: ( 64, 63,165) #403FA5 srgb(64,63,165)
+      1058: ( 64, 64, 64) #404040 grey25
+         2: ( 64, 65,217) #4041D9 srgb(64,65,217)
+         1: ( 64, 67,222) #4043DE srgb(64,67,222)
+         8: ( 65, 64,166) #4140A6 srgb(65,64,166)
+      1034: ( 65, 65, 65) #414141 srgb(65,65,65)
+         5: ( 65, 66,218) #4142DA srgb(65,66,218)
+         7: ( 66, 65,167) #4241A7 srgb(66,65,167)
+         1: ( 66, 65,219) #4241DB srgb(66,65,219)
+       896: ( 66, 66, 66) #424242 grey26
+         2: ( 66, 67,219) #4243DB srgb(66,67,219)
+         1: ( 66, 68,169) #4244A9 srgb(66,68,169)
+         4: ( 67, 66,168) #4342A8 srgb(67,66,168)
+       832: ( 67, 67, 67) #434343 srgb(67,67,67)
+         1: ( 67, 67,215) #4343D7 srgb(67,67,215)
+         3: ( 67, 68,220) #4344DC srgb(67,68,220)
+         8: ( 68, 67,169) #4443A9 srgb(68,67,169)
+       797: ( 68, 68, 68) #444444 srgb(68,68,68)
+         3: ( 68, 69,221) #4445DD srgb(68,69,221)
+         1: ( 69, 65,220) #4541DC srgb(69,65,220)
+         3: ( 69, 68,170) #4544AA srgb(69,68,170)
+       805: ( 69, 69, 69) #454545 grey27
+         7: ( 69, 70,222) #4546DE srgb(69,70,222)
+         1: ( 69, 71,172) #4547AC srgb(69,71,172)
+         7: ( 70, 69,171) #4645AB srgb(70,69,171)
+       752: ( 70, 70, 70) #464646 srgb(70,70,70)
+         3: ( 70, 71,223) #4647DF srgb(70,71,223)
+         1: ( 70, 72,175) #4648AF srgb(70,72,175)
+         3: ( 71, 70,172) #4746AC srgb(71,70,172)
+       802: ( 71, 71, 71) #474747 grey28
+         1: ( 71, 74,177) #474AB1 srgb(71,74,177)
+         7: ( 72, 71,173) #4847AD srgb(72,71,173)
+       781: ( 72, 72, 72) #484848 srgb(72,72,72)
+         5: ( 72, 73,225) #4849E1 srgb(72,73,225)
+         5: ( 73, 72,174) #4948AE srgb(73,72,174)
+         1: ( 73, 72,176) #4948B0 srgb(73,72,176)
+       741: ( 73, 73, 73) #494949 srgb(73,73,73)
+         4: ( 73, 74,226) #494AE2 srgb(73,74,226)
+        12: ( 74, 73,175) #4A49AF srgb(74,73,175)
+       751: ( 74, 74, 74) #4A4A4A grey29
+         2: ( 74, 75,227) #4A4BE3 srgb(74,75,227)
+        17: ( 75, 74,176) #4B4AB0 srgb(75,74,176)
+       763: ( 75, 75, 75) #4B4B4B srgb(75,75,75)
+         4: ( 75, 76,228) #4B4CE4 srgb(75,76,228)
+        17: ( 76, 75,177) #4C4BB1 srgb(76,75,177)
+       859: ( 76, 76, 76) #4C4C4C srgb(76,76,76)
+         3: ( 76, 77,229) #4C4DE5 srgb(76,77,229)
+         1: ( 76, 78,179) #4C4EB3 srgb(76,78,179)
+        32: ( 77, 76,178) #4D4CB2 srgb(77,76,178)
+       818: ( 77, 77, 77) #4D4D4D grey30
+         5: ( 77, 78,230) #4D4EE6 srgb(77,78,230)
+        31: ( 78, 77,179) #4E4DB3 srgb(78,77,179)
+       835: ( 78, 78, 78) #4E4E4E srgb(78,78,78)
+         2: ( 78, 79,231) #4E4FE7 srgb(78,79,231)
+         1: ( 79, 77, 80) #4F4D50 srgb(79,77,80)
+        37: ( 79, 78,180) #4F4EB4 srgb(79,78,180)
+       919: ( 79, 79, 79) #4F4F4F grey31
+        23: ( 80, 79,181) #504FB5 srgb(80,79,181)
+       947: ( 80, 80, 80) #505050 srgb(80,80,80)
+         1: ( 80, 81,233) #5051E9 srgb(80,81,233)
+        12: ( 81, 80,182) #5150B6 srgb(81,80,182)
+       907: ( 81, 81, 81) #515151 srgb(81,81,81)
+         6: ( 82, 81,183) #5251B7 srgb(82,81,183)
+       906: ( 82, 82, 82) #525252 grey32
+         1: ( 82, 83,235) #5253EB srgb(82,83,235)
+         2: ( 83, 82,184) #5352B8 srgb(83,82,184)
+       991: ( 83, 83, 83) #535353 srgb(83,83,83)
+         1: ( 83, 84,236) #5354EC srgb(83,84,236)
+         1: ( 83, 85,204) #5355CC srgb(83,85,204)
+         3: ( 84, 83,185) #5453B9 srgb(84,83,185)
+       924: ( 84, 84, 84) #545454 grey33
+         3: ( 85, 84,186) #5554BA srgb(85,84,186)
+       945: ( 85, 85, 85) #555555 srgb(85,85,85)
+         1: ( 85, 86,238) #5556EE srgb(85,86,238)
+        11: ( 86, 85,187) #5655BB srgb(86,85,187)
+       900: ( 86, 86, 86) #565656 srgb(86,86,86)
+         1: ( 86, 87,239) #5657EF srgb(86,87,239)
+         2: ( 87, 85,208) #5755D0 srgb(87,85,208)
+         8: ( 87, 86,188) #5756BC srgb(87,86,188)
+         1: ( 87, 86,206) #5756CE srgb(87,86,206)
+       984: ( 87, 87, 87) #575757 grey34
+         1: ( 87, 87,207) #5757CF srgb(87,87,207)
+         2: ( 87, 88,240) #5758F0 srgb(87,88,240)
+         1: ( 88, 86,209) #5856D1 srgb(88,86,209)
+         7: ( 88, 87,189) #5857BD srgb(88,87,189)
+         1: ( 88, 87,207) #5857CF srgb(88,87,207)
+       967: ( 88, 88, 88) #585858 srgb(88,88,88)
+         1: ( 88, 88,208) #5858D0 srgb(88,88,208)
+         1: ( 88, 89,241) #5859F1 srgb(88,89,241)
+         7: ( 89, 88,190) #5958BE srgb(89,88,190)
+         1: ( 89, 88,208) #5958D0 srgb(89,88,208)
+       978: ( 89, 89, 89) #595959 grey35
+         4: ( 89, 90,242) #595AF2 srgb(89,90,242)
+         6: ( 90, 89,191) #5A59BF srgb(90,89,191)
+      1056: ( 90, 90, 90) #5A5A5A srgb(90,90,90)
+         2: ( 90, 91,243) #5A5BF3 srgb(90,91,243)
+         8: ( 91, 90,192) #5B5AC0 srgb(91,90,192)
+      1060: ( 91, 91, 91) #5B5B5B srgb(91,91,91)
+         3: ( 91, 92,244) #5B5CF4 srgb(91,92,244)
+         1: ( 91, 93,196) #5B5DC4 srgb(91,93,196)
+        13: ( 92, 91,193) #5C5BC1 srgb(92,91,193)
+      1049: ( 92, 92, 92) #5C5C5C grey36
+        11: ( 93, 92,194) #5D5CC2 srgb(93,92,194)
+      1117: ( 93, 93, 93) #5D5D5D srgb(93,93,93)
+        11: ( 94, 93,195) #5E5DC3 srgb(94,93,195)
+      1233: ( 94, 94, 94) #5E5E5E grey37
+        11: ( 95, 94,196) #5F5EC4 srgb(95,94,196)
+      1244: ( 95, 95, 95) #5F5F5F srgb(95,95,95)
+         1: ( 95, 95,195) #5F5FC3 srgb(95,95,195)
+         5: ( 96, 95,197) #605FC5 srgb(96,95,197)
+      1233: ( 96, 96, 96) #606060 srgb(96,96,96)
+         1: ( 96, 98,201) #6062C9 srgb(96,98,201)
+         2: ( 97, 96,198) #6160C6 srgb(97,96,198)
+      1283: ( 97, 97, 97) #616161 grey38
+         1: ( 98, 97,199) #6261C7 srgb(98,97,199)
+      1304: ( 98, 98, 98) #626262 srgb(98,98,98)
+         1: ( 98,102,202) #6266CA srgb(98,102,202)
+         1: ( 99, 98,202) #6362CA srgb(99,98,202)
+         1: ( 99, 99, 97) #636361 srgb(99,99,97)
+      1475: ( 99, 99, 99) #636363 grey39
+         1: (100, 99,156) #64639C srgb(100,99,156)
+         1: (100, 99,201) #6463C9 srgb(100,99,201)
+      1544: (100,100,100) #646464 srgb(100,100,100)
+         1: (101,100,202) #6564CA srgb(101,100,202)
+      1690: (101,101,101) #656565 srgb(101,101,101)
+      1977: (102,102,102) #666666 grey40
+      2080: (103,103,103) #676767 srgb(103,103,103)
+         1: (104,103,205) #6867CD srgb(104,103,205)
+      2184: (104,104,104) #686868 srgb(104,104,104)
+      2117: (105,105,105) #696969 DimGray
+         1: (106,105,207) #6A69CF srgb(106,105,207)
+      1966: (106,106,106) #6A6A6A srgb(106,106,106)
+         1: (107,106,208) #6B6AD0 srgb(107,106,208)
+      1901: (107,107,107) #6B6B6B grey42
+      1786: (108,108,108) #6C6C6C srgb(108,108,108)
+         2: (108,110,107) #6C6E6B srgb(108,110,107)
+         1: (109,108,210) #6D6CD2 srgb(109,108,210)
+      1621: (109,109,109) #6D6D6D srgb(109,109,109)
+         1: (109,110,112) #6D6E70 srgb(109,110,112)
+      1598: (110,110,110) #6E6E6E grey43
+      1436: (111,111,111) #6F6F6F srgb(111,111,111)
+      1375: (112,112,112) #707070 grey44
+      1316: (113,113,113) #717171 srgb(113,113,113)
+         1: (113,115,112) #717370 srgb(113,115,112)
+         1: (114,113,215) #7271D7 srgb(114,113,215)
+      1345: (114,114,114) #727272 srgb(114,114,114)
+         1: (115,113,114) #737172 srgb(115,113,114)
+      1344: (115,115,115) #737373 grey45
+         1: (115,115,117) #737375 srgb(115,115,117)
+         1: (116,114,115) #747273 srgb(116,114,115)
+      1397: (116,116,116) #747474 srgb(116,116,116)
+         1: (116,116,118) #747476 srgb(116,116,118)
+         1: (116,118,117) #747675 srgb(116,118,117)
+         1: (117,115,116) #757374 srgb(117,115,116)
+         1: (117,116,114) #757472 srgb(117,116,114)
+      1399: (117,117,117) #757575 grey46
+         1: (117,117,119) #757577 srgb(117,117,119)
+         1: (118,116,117) #767475 srgb(118,116,117)
+         1: (118,117,115) #767573 srgb(118,117,115)
+      1421: (118,118,118) #767676 srgb(118,118,118)
+         1: (118,120,119) #767877 srgb(118,120,119)
+         1: (119,117,118) #777576 srgb(119,117,118)
+      1403: (119,119,119) #777777 srgb(119,119,119)
+      1487: (120,120,120) #787878 grey47
+         1: (121,120,222) #7978DE srgb(121,120,222)
+         1: (121,121,119) #797977 srgb(121,121,119)
+      1520: (121,121,121) #797979 srgb(121,121,121)
+         1: (121,121,123) #79797B srgb(121,121,123)
+         1: (121,121,191) #7979BF srgb(121,121,191)
+         1: (121,122,124) #797A7C srgb(121,122,124)
+         1: (121,123,122) #797B7A srgb(121,123,122)
+         1: (122,121,223) #7A79DF srgb(122,121,223)
+         1: (122,122,120) #7A7A78 srgb(122,122,120)
+      1625: (122,122,122) #7A7A7A grey48
+         1: (122,124,121) #7A7C79 srgb(122,124,121)
+         1: (123,121,122) #7B797A srgb(123,121,122)
+      1654: (123,123,123) #7B7B7B srgb(123,123,123)
+      1734: (124,124,124) #7C7C7C srgb(124,124,124)
+         2: (125,124,226) #7D7CE2 srgb(125,124,226)
+      1737: (125,125,125) #7D7D7D grey49
+         1: (125,127,124) #7D7F7C srgb(125,127,124)
+         1: (125,127,126) #7D7F7E srgb(125,127,126)
+         2: (126,124,127) #7E7C7F srgb(126,124,127)
+         1: (126,125,227) #7E7DE3 srgb(126,125,227)
+      1899: (126,126,126) #7E7E7E gray
+      1907: (127,127,127) #7F7F7F grey50
+      2111: (128,128,128) #808080 fractal
+         1: (129,127,128) #817F80 srgb(129,127,128)
+      2282: (129,129,129) #818181 srgb(129,129,129)
+         1: (130,129,231) #8281E7 srgb(130,129,231)
+      2469: (130,130,130) #828282 grey51
+         1: (131,130,232) #8382E8 srgb(131,130,232)
+      2448: (131,131,131) #838383 srgb(131,131,131)
+         1: (132,131,233) #8483E9 srgb(132,131,233)
+      2561: (132,132,132) #848484 srgb(132,132,132)
+         3: (133,132,234) #8584EA srgb(133,132,234)
+      2558: (133,133,133) #858585 grey52
+         1: (134,132,182) #8684B6 srgb(134,132,182)
+         2: (134,133,235) #8685EB srgb(134,133,235)
+      2303: (134,134,134) #868686 srgb(134,134,134)
+         4: (135,134,236) #8786EC srgb(135,134,236)
+      2347: (135,135,135) #878787 grey53
+      2027: (136,136,136) #888888 srgb(136,136,136)
+      2025: (137,137,137) #898989 srgb(137,137,137)
+      2011: (138,138,138) #8A8A8A grey54
+      2096: (139,139,139) #8B8B8B srgb(139,139,139)
+      2151: (140,140,140) #8C8C8C grey55
+      2292: (141,141,141) #8D8D8D srgb(141,141,141)
+      2414: (142,142,142) #8E8E8E srgb(142,142,142)
+      2553: (143,143,143) #8F8F8F grey56
+      2584: (144,144,144) #909090 srgb(144,144,144)
+      2501: (145,145,145) #919191 grey57
+      2610: (146,146,146) #929292 srgb(146,146,146)
+      2543: (147,147,147) #939393 srgb(147,147,147)
+      2415: (148,148,148) #949494 grey58
+      2424: (149,149,149) #959595 srgb(149,149,149)
+      2282: (150,150,150) #969696 grey59
+      2408: (151,151,151) #979797 srgb(151,151,151)
+         1: (151,152,154) #97989A srgb(151,152,154)
+         1: (151,153,152) #979998 srgb(151,153,152)
+      2442: (152,152,152) #989898 srgb(152,152,152)
+         1: (153,151,152) #999798 srgb(153,151,152)
+      2590: (153,153,153) #999999 grey60
+      2697: (154,154,154) #9A9A9A srgb(154,154,154)
+         1: (155,154,152) #9B9A98 srgb(155,154,152)
+      2720: (155,155,155) #9B9B9B srgb(155,155,155)
+         1: (155,157,156) #9B9D9C srgb(155,157,156)
+         1: (156,154,155) #9C9A9B srgb(156,154,155)
+      2634: (156,156,156) #9C9C9C grey61
+         1: (156,156,158) #9C9C9E srgb(156,156,158)
+      2597: (157,157,157) #9D9D9D srgb(157,157,157)
+         1: (158,156,159) #9E9C9F srgb(158,156,159)
+      2363: (158,158,158) #9E9E9E grey62
+         1: (158,160,159) #9EA09F srgb(158,160,159)
+      2249: (159,159,159) #9F9F9F srgb(159,159,159)
+         1: (159,159,161) #9F9FA1 srgb(159,159,161)
+         1: (159,161,158) #9FA19E srgb(159,161,158)
+         2: (159,161,160) #9FA1A0 srgb(159,161,160)
+      2036: (160,160,160) #A0A0A0 srgb(160,160,160)
+         1: (160,161,156) #A0A19C srgb(160,161,156)
+         1: (161,159,160) #A19FA0 srgb(161,159,160)
+         1: (161,161,159) #A1A19F srgb(161,161,159)
+      1815: (161,161,161) #A1A1A1 grey63
+         1: (162,160,161) #A2A0A1 srgb(162,160,161)
+         1: (162,161,159) #A2A19F srgb(162,161,159)
+      1647: (162,162,162) #A2A2A2 srgb(162,162,162)
+         1: (162,162,164) #A2A2A4 srgb(162,162,164)
+         2: (163,161,164) #A3A1A4 srgb(163,161,164)
+      1543: (163,163,163) #A3A3A3 grey64
+         1: (163,165,164) #A3A5A4 srgb(163,165,164)
+         3: (164,164,162) #A4A4A2 srgb(164,164,162)
+      1476: (164,164,164) #A4A4A4 srgb(164,164,164)
+         3: (164,164,166) #A4A4A6 srgb(164,164,166)
+         1: (164,166,163) #A4A6A3 srgb(164,166,163)
+         1: (165,163,166) #A5A3A6 srgb(165,163,166)
+         1: (165,165,163) #A5A5A3 srgb(165,165,163)
+      1356: (165,165,165) #A5A5A5 srgb(165,165,165)
+         1: (165,165,167) #A5A5A7 srgb(165,165,167)
+      1321: (166,166,166) #A6A6A6 grey65
+         1: (167,165,166) #A7A5A6 srgb(167,165,166)
+      1214: (167,167,167) #A7A7A7 srgb(167,167,167)
+         1: (168,166,167) #A8A6A7 srgb(168,166,167)
+      1260: (168,168,168) #A8A8A8 grey66
+         1: (169,167,168) #A9A7A8 srgb(169,167,168)
+      1255: (169,169,169) #A9A9A9 DarkGray
+      1155: (170,170,170) #AAAAAA srgb(170,170,170)
+      1232: (171,171,171) #ABABAB grey67
+      1274: (172,172,172) #ACACAC srgb(172,172,172)
+      1256: (173,173,173) #ADADAD grey68
+      1253: (174,174,174) #AEAEAE srgb(174,174,174)
+      1203: (175,175,175) #AFAFAF srgb(175,175,175)
+      1198: (176,176,176) #B0B0B0 grey69
+      1175: (177,177,177) #B1B1B1 srgb(177,177,177)
+      1098: (178,178,178) #B2B2B2 srgb(178,178,178)
+       952: (179,179,179) #B3B3B3 grey70
+       928: (180,180,180) #B4B4B4 srgb(180,180,180)
+       810: (181,181,181) #B5B5B5 grey71
+       700: (182,182,182) #B6B6B6 srgb(182,182,182)
+       714: (183,183,183) #B7B7B7 srgb(183,183,183)
+       621: (184,184,184) #B8B8B8 grey72
+       643: (185,185,185) #B9B9B9 srgb(185,185,185)
+       634: (186,186,186) #BABABA grey73
+       629: (187,187,187) #BBBBBB srgb(187,187,187)
+       640: (188,188,188) #BCBCBC srgb(188,188,188)
+       658: (189,189,189) #BDBDBD grey74
+       792: (190,190,190) #BEBEBE grey
+       800: (191,191,191) #BFBFBF grey75
+       827: (192,192,192) #C0C0C0 silver
+       851: (193,193,193) #C1C1C1 srgb(193,193,193)
+       874: (194,194,194) #C2C2C2 grey76
+       942: (195,195,195) #C3C3C3 srgb(195,195,195)
+       921: (196,196,196) #C4C4C4 grey77
+       876: (197,197,197) #C5C5C5 srgb(197,197,197)
+       924: (198,198,198) #C6C6C6 srgb(198,198,198)
+       892: (199,199,199) #C7C7C7 grey78
+       814: (200,200,200) #C8C8C8 srgb(200,200,200)
+       844: (201,201,201) #C9C9C9 grey79
+       815: (202,202,202) #CACACA srgb(202,202,202)
+       797: (203,203,203) #CBCBCB srgb(203,203,203)
+       820: (204,204,204) #CCCCCC grey80
+       827: (205,205,205) #CDCDCD srgb(205,205,205)
+       924: (206,206,206) #CECECE srgb(206,206,206)
+       955: (207,207,207) #CFCFCF grey81
+      1037: (208,208,208) #D0D0D0 srgb(208,208,208)
+       920: (209,209,209) #D1D1D1 grey82
+       992: (210,210,210) #D2D2D2 srgb(210,210,210)
+      1008: (211,211,211) #D3D3D3 LightGray
+       841: (212,212,212) #D4D4D4 grey83
+       798: (213,213,213) #D5D5D5 srgb(213,213,213)
+       693: (214,214,214) #D6D6D6 grey84
+       609: (215,215,215) #D7D7D7 srgb(215,215,215)
+       437: (216,216,216) #D8D8D8 srgb(216,216,216)
+       388: (217,217,217) #D9D9D9 grey85
+       350: (218,218,218) #DADADA srgb(218,218,218)
+       323: (219,219,219) #DBDBDB grey86
+       280: (220,220,220) #DCDCDC gainsboro
+       232: (221,221,221) #DDDDDD srgb(221,221,221)
+       193: (222,222,222) #DEDEDE grey87
+       159: (223,223,223) #DFDFDF srgb(223,223,223)
+       137: (224,224,224) #E0E0E0 grey88
+        78: (225,225,225) #E1E1E1 srgb(225,225,225)
+        72: (226,226,226) #E2E2E2 srgb(226,226,226)
+        44: (227,227,227) #E3E3E3 grey89
+        46: (228,228,228) #E4E4E4 srgb(228,228,228)
+        34: (229,229,229) #E5E5E5 grey90
+        21: (230,230,230) #E6E6E6 srgb(230,230,230)
+        17: (231,231,231) #E7E7E7 srgb(231,231,231)
+         6: (232,232,232) #E8E8E8 grey91
+         7: (233,233,233) #E9E9E9 srgb(233,233,233)
+         7: (234,234,234) #EAEAEA srgb(234,234,234)
+         1: (236,236,236) #ECECEC srgb(236,236,236)
+         1: (239,239,239) #EFEFEF srgb(239,239,239)
+         1: (243,243,243) #F3F3F3 srgb(243,243,243)
+         1: (244,244,244) #F4F4F4 srgb(244,244,244)
+         1: (246,246,246) #F6F6F6 srgb(246,246,246)
+         1: (247,247,247) #F7F7F7 grey97
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Interlace: None
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Compose: Over
+  Page geometry: 512x512+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 99
+  Orientation: TopLeft
+  Properties:
+    date:create: 2013-02-02T17:03:00+01:00
+    date:modify: 2013-02-02T17:03:00+01:00
+    exif:BitsPerSample: 8, 8, 8
+    exif:ColorSpace: 65535
+    exif:Compression: 1
+    exif:DateTime: 2012:02:12 12:16:49
+    exif:ExifImageLength: 512
+    exif:ExifImageWidth: 512
+    exif:ExifOffset: 252
+    exif:ImageLength: 512
+    exif:ImageWidth: 512
+    exif:JPEGInterchangeFormat: 390
+    exif:JPEGInterchangeFormatLength: 7068
+    exif:Orientation: 1
+    exif:PhotometricInterpretation: 2
+    exif:PlanarConfiguration: 1
+    exif:ResolutionUnit: 2
+    exif:SamplesPerPixel: 3
+    exif:Software: Adobe Photoshop CS5 Windows
+    exif:XResolution: 720000/10000
+    exif:YResolution: 720000/10000
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 1x1,1x1,1x1
+    rdf:Bag:   
+    signature: c036720f47e4cf3bb04000f79c5d99b53781ca3ab35940ad83289fb981412a68
+    xmpMM:DerivedFrom: 
+  Profiles:
+    Profile-8bim: 9276 bytes
+    Profile-exif: 7464 bytes
+    Profile-xmp: 5582 bytes
+  Artifacts:
+    filename: /opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 177KB
+  Number pixels: 262K
+  Pixels per second: 3.745MB
+  User time: 0.020u
+  Elapsed time: 0:01.070
+  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="exiftool" exitCode="0">
+            <stdout>ExifTool Version Number         : 8.60
+File Name                       : 01.jpg
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
+File Size                       : 173 kB
+File Modification Date/Time     : 2013:02:02 17:03:00+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Compression                     : Uncompressed
+Photometric Interpretation      : RGB
+Orientation                     : Horizontal (normal)
+Samples Per Pixel               : 3
+X Resolution                    : 72
+Y Resolution                    : 72
+Planar Configuration            : Chunky
+Resolution Unit                 : inches
+Software                        : Adobe Photoshop CS5 Windows
+Modify Date                     : 2012:02:12 12:16:49
+Color Space                     : Uncalibrated
+Exif Image Width                : 512
+Exif Image Height               : 512
+Thumbnail Offset                : 402
+Thumbnail Length                : 7068
+IPTC Digest                     : 00000000000000000000000000000000
+Displayed Units X               : inches
+Displayed Units Y               : inches
+Global Angle                    : 30
+Global Altitude                 : 30
+Photoshop Thumbnail             : (Binary data 7068 bytes, use -b option to extract)
+Photoshop Quality               : 12
+Photoshop Format                : Standard
+Progressive Scans               : 3 Scans
+XMP Toolkit                     : Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00
+Create Date                     : 2012:02:12 12:09:13+01:00
+Metadata Date                   : 2012:02:12 12:16:49+01:00
+Creator Tool                    : Adobe Photoshop CS5 Windows
+Format                          : image/jpeg
+Color Mode                      : RGB
+Instance ID                     : xmp.iid:F3B79AEC6A55E11180A5EF7BDC084C3E
+Document ID                     : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Original Document ID            : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Document Ancestors              : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+History Action                  : created, converted, saved, saved, saved, saved, converted, derived, saved, saved, converted, derived, saved
+History Instance ID             : xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:F2B79AEC6A55E11180A5EF7BDC084C3E, xmp.iid:F3B79AEC6A55E11180A5EF7BDC084C3E
+History When                    : 2012:02:12 12:09:13+01:00, 2012:02:12 12:11:16+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:16:49+01:00, 2012:02:12 12:16:49+01:00
+History Software Agent          : Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows
+History Parameters              : from image/tiff to image/jpeg, from image/jpeg to application/vnd.adobe.photoshop, converted from image/jpeg to application/vnd.adobe.photoshop, from application/vnd.adobe.photoshop to image/jpeg, converted from application/vnd.adobe.photoshop to image/jpeg
+History Changed                 : /, /, /, /, /, /, /
+Derived From Instance ID        : xmp.iid:F2B79AEC6A55E11180A5EF7BDC084C3E
+Derived From Document ID        : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Derived From Original Document ID: xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+DCT Encode Version              : 100
+APP14 Flags 0                   : [14]
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Image Width                     : 512
+Image Height                    : 512
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
+Image Size                      : 512x512
+Thumbnail Image                 : (Binary data 7068 bytes, use -b option to extract)
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="daitss" exitCode="0">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
+	
+	&lt;!-- premis file object --&gt;
+	&lt;object xsi:type="file"&gt;
+		&lt;objectIdentifier&gt;
+			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130208-1949-1csw79o-0.jpg&lt;/objectIdentifierValue&gt;
+		&lt;/objectIdentifier&gt;
+		&lt;objectCharacteristics&gt;
+			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;da7db7dbe9cece08cb506bf614fd4e3c&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;931cb843080f264e69f8fad1a521f1b305bd5cb0&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;size&gt;177246&lt;/size&gt;
+			
+			&lt;format&gt;
+				&lt;formatDesignation&gt;
+					&lt;formatName&gt;Raw JPEG Stream&lt;/formatName&gt;
+					
+				&lt;/formatDesignation&gt;
+				
+				&lt;formatRegistry&gt;
+					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
+					&lt;formatRegistryKey&gt;fmt/41&lt;/formatRegistryKey&gt;
+				&lt;/formatRegistry&gt;
+				
+				
+			&lt;/format&gt;
+			
+			
+			
+			
+			&lt;objectCharacteristicsExtension&gt;
+				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+  &lt;mix:BasicDigitalObjectInformation&gt;
+    &lt;mix:ObjectIdentifier&gt;
+      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+    &lt;/mix:ObjectIdentifier&gt;
+    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+    &lt;mix:Compression&gt;
+      &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
+    &lt;/mix:Compression&gt;
+  &lt;/mix:BasicDigitalObjectInformation&gt;
+  &lt;mix:BasicImageInformation&gt;
+    &lt;mix:BasicImageCharacteristics&gt;
+      &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
+      &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
+    &lt;/mix:BasicImageCharacteristics&gt;
+  &lt;/mix:BasicImageInformation&gt;
+  &lt;mix:ImageAssessmentMetadata&gt;
+    &lt;mix:ImageColorEncoding&gt;
+      &lt;mix:BitsPerSample&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+      &lt;/mix:BitsPerSample&gt;
+      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+    &lt;/mix:ImageColorEncoding&gt;
+  &lt;/mix:ImageAssessmentMetadata&gt;
+&lt;/mix:mix&gt;
+			&lt;/objectCharacteristicsExtension&gt;
+			
+		&lt;/objectCharacteristics&gt;
+		
+		&lt;originalName&gt;01.jpg&lt;/originalName&gt;
+		
+		
+		
+		
+		&lt;linkingEventIdentifier&gt;
+			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
+			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
+		&lt;/linkingEventIdentifier&gt;
+	&lt;/object&gt;
+	
+
+	
+	&lt;!-- premis bitstream object --&gt;
+	
+	
+
+	&lt;!-- premis event --&gt;
+	&lt;event&gt;
+		&lt;eventIdentifier&gt;
+			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
+			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
+		&lt;/eventIdentifier&gt;
+		&lt;eventType&gt;describe&lt;/eventType&gt;
+		&lt;eventDateTime&gt;2013-02-08T13:08:45-05:00&lt;/eventDateTime&gt;
+		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
+		&lt;eventOutcomeInformation&gt;
+			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
+			
+		&lt;/eventOutcomeInformation&gt;
+		&lt;linkingAgentIdentifier&gt;
+			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
+			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
+		&lt;/linkingAgentIdentifier&gt;
+		&lt;linkingObjectIdentifier&gt;
+			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130208-1949-1csw79o-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+		&lt;/linkingObjectIdentifier&gt;
+	&lt;/event&gt;
+
+&lt;!-- premis agent --&gt;
+&lt;agent&gt;
+	&lt;agentIdentifier&gt;
+		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
+		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
+	&lt;/agentIdentifier&gt;
+	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
+	&lt;agentType&gt;Web Service&lt;/agentType&gt;
+	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
+&lt;/agent&gt;
+&lt;/premis&gt;
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="exiv2" exitCode="0">
+            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/01.jpg
+File size       : 177246 Bytes
+MIME type       : image/jpeg
+Image size      : 512 x 512
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 512 x 512
+White balance   : 
+Thumbnail       : image/jpeg, 7068 Bytes
+Copyright       : 
+Exif comment    : 
+
 </stdout>
             <stderr></stderr>
         </source>

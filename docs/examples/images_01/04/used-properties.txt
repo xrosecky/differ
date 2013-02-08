@@ -1,32 +1,160 @@
 1;Bits per sample
 1;Code block height
 1;Code block width
-1;Coding bypass
 1;Color depth
 1;Color space
-1;Commentary
 1;Compression
-1;Compression ratio
-1;Display resolution horizontal
-1;Display resolution vertical
+1;Compression quality
 1;Encoding process
-1;End of packet header
+1;File created
 1;File last modified
 1;File name
 1;File path
 1;File size
-1;File type
-1;Format
 1;Format version
 1;Image height
 1;Image width
+1;Image/Base type
+1;Image/Channel depth/blue
+1;Image/Channel depth/gray
+1;Image/Channel depth/green
+1;Image/Channel depth/red
+1;Image/Channel statistics/Artifacts/filename
+1;Image/Channel statistics/Artifacts/verbose
+1;Image/Channel statistics/Background color
+1;Image/Channel statistics/Blue/kurtosis
+1;Image/Channel statistics/Blue/max
+1;Image/Channel statistics/Blue/mean
+1;Image/Channel statistics/Blue/min
+1;Image/Channel statistics/Blue/skewness
+1;Image/Channel statistics/Blue/standard deviation
+1;Image/Channel statistics/Border color
+1;Image/Channel statistics/Colors
+1;Image/Channel statistics/Compose
+1;Image/Channel statistics/Compression
+1;Image/Channel statistics/Dispose
+1;Image/Channel statistics/Elapsed time
+1;Image/Channel statistics/Filesize
+1;Image/Channel statistics/Gamma
+1;Image/Channel statistics/Gray/kurtosis
+1;Image/Channel statistics/Gray/max
+1;Image/Channel statistics/Gray/mean
+1;Image/Channel statistics/Gray/min
+1;Image/Channel statistics/Gray/skewness
+1;Image/Channel statistics/Gray/standard deviation
+1;Image/Channel statistics/Green/kurtosis
+1;Image/Channel statistics/Green/max
+1;Image/Channel statistics/Green/mean
+1;Image/Channel statistics/Green/min
+1;Image/Channel statistics/Green/skewness
+1;Image/Channel statistics/Green/standard deviation
+1;Image/Channel statistics/Image statistics/Artifacts/verbose
+1;Image/Channel statistics/Image statistics/Background color
+1;Image/Channel statistics/Image statistics/Border color
+1;Image/Channel statistics/Image statistics/Chromaticity/blue primary
+1;Image/Channel statistics/Image statistics/Chromaticity/green primary
+1;Image/Channel statistics/Image statistics/Chromaticity/red primary
+1;Image/Channel statistics/Image statistics/Chromaticity/white point
+1;Image/Channel statistics/Image statistics/Colors
+1;Image/Channel statistics/Image statistics/Compose
+1;Image/Channel statistics/Image statistics/Dispose
+1;Image/Channel statistics/Image statistics/Elapsed time
+1;Image/Channel statistics/Image statistics/Gamma
+1;Image/Channel statistics/Image statistics/Interlace
+1;Image/Channel statistics/Image statistics/Iterations
+1;Image/Channel statistics/Image statistics/Matte color
+1;Image/Channel statistics/Image statistics/Number pixels
+1;Image/Channel statistics/Image statistics/Orientation
+1;Image/Channel statistics/Image statistics/Overall/kurtosis
+1;Image/Channel statistics/Image statistics/Overall/max
+1;Image/Channel statistics/Image statistics/Overall/mean
+1;Image/Channel statistics/Image statistics/Overall/min
+1;Image/Channel statistics/Image statistics/Overall/skewness
+1;Image/Channel statistics/Image statistics/Overall/standard deviation
+1;Image/Channel statistics/Image statistics/Page geometry
+1;Image/Channel statistics/Image statistics/Pixels per second
+1;Image/Channel statistics/Image statistics/Profiles/Profile-8bim
+1;Image/Channel statistics/Image statistics/Profiles/Profile-exif
+1;Image/Channel statistics/Image statistics/Profiles/Profile-xmp
+1;Image/Channel statistics/Image statistics/Properties/exif/BitsPerSample
+1;Image/Channel statistics/Image statistics/Properties/exif/ColorSpace
+1;Image/Channel statistics/Image statistics/Properties/exif/Compression
+1;Image/Channel statistics/Image statistics/Properties/exif/DateTime
+1;Image/Channel statistics/Image statistics/Properties/exif/ExifImageLength
+1;Image/Channel statistics/Image statistics/Properties/exif/ExifImageWidth
+1;Image/Channel statistics/Image statistics/Properties/exif/ExifOffset
+1;Image/Channel statistics/Image statistics/Properties/exif/ImageLength
+1;Image/Channel statistics/Image statistics/Properties/exif/ImageWidth
+1;Image/Channel statistics/Image statistics/Properties/exif/JPEGInterchangeFormat
+1;Image/Channel statistics/Image statistics/Properties/exif/JPEGInterchangeFormatLength
+1;Image/Channel statistics/Image statistics/Properties/exif/Orientation
+1;Image/Channel statistics/Image statistics/Properties/exif/PhotometricInterpretation
+1;Image/Channel statistics/Image statistics/Properties/exif/PlanarConfiguration
+1;Image/Channel statistics/Image statistics/Properties/exif/ResolutionUnit
+1;Image/Channel statistics/Image statistics/Properties/exif/SamplesPerPixel
+1;Image/Channel statistics/Image statistics/Properties/exif/Software
+1;Image/Channel statistics/Image statistics/Properties/exif/XResolution
+1;Image/Channel statistics/Image statistics/Properties/exif/YResolution
+1;Image/Channel statistics/Image statistics/Properties/jpeg/colorspace
+1;Image/Channel statistics/Image statistics/Properties/jpeg/sampling-factor
+1;Image/Channel statistics/Image statistics/Properties/rdf
+1;Image/Channel statistics/Image statistics/Properties/xmpMM
+1;Image/Channel statistics/Image statistics/Rendering intent
+1;Image/Channel statistics/Image statistics/Tainted
+1;Image/Channel statistics/Image statistics/Transparent color
+1;Image/Channel statistics/Image statistics/User time
+1;Image/Channel statistics/Image statistics/Version
+1;Image/Channel statistics/Interlace
+1;Image/Channel statistics/Iterations
+1;Image/Channel statistics/Matte color
+1;Image/Channel statistics/Number pixels
+1;Image/Channel statistics/Orientation
+1;Image/Channel statistics/Page geometry
+1;Image/Channel statistics/Pixels per second
+1;Image/Channel statistics/Profiles/Profile-8bim
+1;Image/Channel statistics/Profiles/Profile-xmp
+1;Image/Channel statistics/Properties/date/create
+1;Image/Channel statistics/Properties/date/modify
+1;Image/Channel statistics/Properties/dc/format
+1;Image/Channel statistics/Properties/exif/PixelXDimension
+1;Image/Channel statistics/Properties/exif/PixelYDimension
+1;Image/Channel statistics/Properties/photoshop/ColorMode
+1;Image/Channel statistics/Properties/signature
+1;Image/Channel statistics/Properties/tiff/endian
+1;Image/Channel statistics/Properties/tiff/photometric
+1;Image/Channel statistics/Properties/tiff/rows-per-strip
+1;Image/Channel statistics/Properties/tiff/software
+1;Image/Channel statistics/Properties/tiff/timestamp
+1;Image/Channel statistics/Properties/xmp/CreateDate
+1;Image/Channel statistics/Properties/xmp/MetadataDate
+1;Image/Channel statistics/Properties/xmp/ModifyDate
+1;Image/Channel statistics/Properties/xmpMM/DocumentID
+1;Image/Channel statistics/Properties/xmpMM/InstanceID
+1;Image/Channel statistics/Properties/xmpMM/OriginalDocumentID
+1;Image/Channel statistics/Red/kurtosis
+1;Image/Channel statistics/Red/max
+1;Image/Channel statistics/Red/mean
+1;Image/Channel statistics/Red/min
+1;Image/Channel statistics/Red/skewness
+1;Image/Channel statistics/Red/standard deviation
+1;Image/Channel statistics/Rendering intent
+1;Image/Channel statistics/Tainted
+1;Image/Channel statistics/Transparent color
+1;Image/Channel statistics/User time
+1;Image/Channel statistics/Version
+1;Image/Class
+1;Image/Endianess
+1;Image/Geometry
+1;Image/Print size
+1;Image/Resolution
+1;Image/Type
+1;Image/Units
 1;MIME type
 1;Multiple Component Transformation
 1;Number of channels
 1;Number of decomposition levels
 1;Number of quality layers
 1;Number of tiles
-1;Precincts
 1;Progression order
 1;Quantization style
 1;Resolution horizontal
@@ -36,11 +164,11 @@
 1;Sampling frequency x
 1;Sampling frequency y
 1;Software type
-1;Start of packet header
 1;Thumbnail
 1;Tile size X
 1;Tile size Y
 1;Transformation
+1;Type of Format
 1;Type of format
 1;Universal unique identifier (UUID)
 1;Validation (well formed and valid)

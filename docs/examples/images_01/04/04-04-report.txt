@@ -7,117 +7,233 @@ Characterization
 Significant Properties
 ======================
 
-Significant Property                Source    Value for Image A                                             Value for Image B                                           
-----------------------------------  --------  ------------------------------------------------------------  ------------------------------------------------------------
-Bits per sample                     daitss                                                                  88                                                          
-Code block height                   jpylyzer        px                                                            px                                                    
-                                    jhove           px                                                            px                                                    
-Code block width                    jpylyzer        px                                                            px                                                    
-                                    jhove           px                                                            px                                                    
-Coding bypass                       jpylyzer                                                                                                                            
-Color depth                         exiftool  8                                                             8                                                           
-                                    jpylyzer                                                                                                                            
-                                    jhove                                                                   8                                                           
-Color space                         exiftool  Uncalibrated                                                  Uncalibrated                                                
-                                    jpylyzer                                                                                                                            
-                                    daitss    BlackIsZero                                                                                                               
-                                    jhove                                                                                                                               
-Commentary                          jpylyzer                                                                                                                            
-Compression                         exiftool  Uncompressed                                                  Uncompressed                                                
-                                    jpylyzer                                                                                                                            
-                                    daitss    Uncompressed                                                  JPEG                                                        
-                                    jhove     Uncompressed                                                  JPEG                                                        
-Compression ratio                   jpylyzer                                                                                                                            
-Display resolution horizontal       jpylyzer        PPI                                                           PPI                                                   
-Display resolution vertical         jpylyzer        PPI                                                           PPI                                                   
-Encoding process                    exiftool                                                                Baseline DCT, Huffman coding                                
-End of packet header                jpylyzer                                                                                                                            
-File last modified                  fits                                                                                                                                
-                                    exiftool  2013:02:02 17:03:00+01:00                                     2013:02:02 17:03:00+01:00                                   
-                                    jpylyzer  Sat Feb  2 17:03:00 2013                                      Sat Feb  2 17:03:00 2013                                    
-                                    jhove     2013-02-02T17:03:00+01:00                                     2013-02-02T17:03:00+01:00                                   
-File name                           fits      /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg 
-                                    exiv2     /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg 
-                                    jpylyzer  04.tif                                                        04.jpg                                                      
-                                    core      04.tif                                                        04.jpg                                                      
-                                    daitss    04.tif                                                        04.jpg                                                      
-File path                           fits      /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg 
-                                    exiv2     /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg 
-                                    jpylyzer  /opt/differ/docs/examples/images_01/04.tif                    /opt/differ/docs/examples/images_02/04.jpg                  
-                                    core      /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg 
-                                    jhove     /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif   /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg 
-File size                           fits      286116                                                        176940                                                      
-                                    exiftool  279 kB                                                        173 kB                                                      
-                                    exiv2     286116                                                        176940                                                      
-                                    jpylyzer  286116                                                        176940                                                      
-                                    daitss                                                                  176940                                                      
-                                    jhove     286116                                                        176940                                                      
-File type                           exiftool  TIFF                                                          JPEG                                                        
-Format                              daitss    Uncompressed                                                  Raw JPEG Stream                                             
-Format version                      daitss                                                                                                                              
-Image height                        fits      512   px                                                      512   px                                                    
-                                    exiftool  512   px                                                      512   px                                                    
-                                    exiv2     512   px                                                      512   px                                                    
-                                    jpylyzer        px                                                            px                                                    
-                                    core      512                                                           512                                                         
-                                    daitss    512   px                                                      512   px                                                    
-                                    jhove     512   px                                                      512   px                                                    
-Image width                         fits      512   px                                                      512   px                                                    
-                                    exiftool  512   px                                                      512   px                                                    
-                                    exiv2     512   px                                                      512   px                                                    
-                                    jpylyzer        px                                                            px                                                    
-                                    core      512                                                           512                                                         
-                                    daitss    512   px                                                      512   px                                                    
-                                    jhove     512   px                                                      512   px                                                    
-MIME type                           exiftool  image/tiff                                                    image/jpeg                                                  
-                                    exiv2     image/tiff                                                    image/jpeg                                                  
-                                    jhove     image/tiff                                                    image/jpeg                                                  
-Multiple Component Transformation   jhove                                                                                                                               
-Number of channels                  exiftool                                                                3                                                           
-                                    jpylyzer                                                                                                                            
-                                    jhove     1                                                             3                                                           
-Number of decomposition levels      jpylyzer                                                                                                                            
-                                    jhove                                                                                                                               
-Number of quality layers            jpylyzer                                                                                                                            
-                                    jhove                                                                                                                               
-Number of tiles                     jpylyzer                                                                                                                            
-                                    jhove     0                                                             0                                                           
-Precincts                           jpylyzer                                                                                                                            
-Progression order                   jpylyzer                                                                                                                            
-                                    jhove                                                                                                                               
-Quantization style                  jhove                                                                                                                               
-Resolution horizontal               exiftool  72    PPI                                                     72    PPI                                                   
-                                    exiv2     512   PPI                                                     512   PPI                                                   
-                                    jpylyzer        PPI                                                           PPI                                                   
-Resolution unit                     exiftool  inches                                                        inches                                                      
-Resolution vertical                 exiftool  72    PPI                                                     72    PPI                                                   
-                                    exiv2     512   PPI                                                     512   PPI                                                   
-                                    jpylyzer        PPI                                                           PPI                                                   
-Samples per pixel                   daitss    1                                                             3                                                           
-Sampling frequency x                daitss    720000                                                                                                                    
-Sampling frequency y                daitss    720000                                                                                                                    
-Software type                       exiftool  Adobe Photoshop CS5 Windows                                   Adobe Photoshop CS5 Windows                                 
-Start of packet header              jpylyzer                                                                                                                            
-Thumbnail                           exiv2     None                                                          image/jpeg, 7012 Bytes                                      
-Tile size X                         jhove           PPI                                                           PPI                                                   
-Tile size Y                         jhove           PPI                                                           PPI                                                   
-Transformation                      jpylyzer                                                                                                                            
-                                    jhove                                                                                                                               
-Type of format                      jpylyzer                                                                                                                            
-                                    jhove     TIFF                                                          JPEG                                                        
-Universal unique identifier (UUID)  jpylyzer                                                                                                                            
-                                    daitss                                                                  5c4fefeca3ef619d97d9f4398e709c5e                            
-                                    jhove                                                                                                                               
-Validation (well formed and valid)  jpylyzer  False                                                         False                                                       
-                                    daitss    Well-Formed and valid                                         Well-Formed and valid                                       
-                                    jhove     Well-Formed and valid                                         Well-Formed and valid                                       
-----------------------------------  --------  ------------------------------------------------------------  ------------------------------------------------------------
+Significant Property                                                                   Source       Value for Image A                                                 Value for Image B                                               
+-------------------------------------------------------------------------------------  -----------  ----------------------------------------------------------------  ----------------------------------------------------------------
+Bits per sample                                                                        daitss                                                                         88                                                              
+Code block height                                                                      jhove              px                                                                px                                                        
+Code block width                                                                       jhove              px                                                                px                                                        
+Color depth                                                                            exiftool     8                                                                 8                                                               
+                                                                                       imagemagick  8-bit                                                             8-bit                                                           
+                                                                                       jhove                                                                          8                                                               
+Color space                                                                            exiftool     Uncalibrated                                                      Uncalibrated                                                    
+                                                                                       imagemagick  Gray                                                              sRGB                                                            
+                                                                                       daitss       BlackIsZero                                                                                                                       
+                                                                                       jhove                                                                                                                                          
+Compression                                                                            exiftool     Uncompressed                                                      Uncompressed                                                    
+                                                                                       imagemagick                                                                    JPEG                                                            
+                                                                                       daitss       Uncompressed                                                      JPEG                                                            
+                                                                                       jhove        Uncompressed                                                      JPEG                                                            
+Compression quality                                                                    imagemagick                                                                    99                                                              
+Encoding process                                                                       exiftool                                                                       Baseline DCT, Huffman coding                                    
+File created                                                                           imagemagick                                                                    2013-02-02T17:03:00+01:00                                       
+File last modified                                                                     fits                                                                                                                                           
+                                                                                       exiftool     2013:02:02 17:03:00+01:00                                         2013:02:02 17:03:00+01:00                                       
+                                                                                       imagemagick                                                                    2013-02-02T17:03:00+01:00                                       
+                                                                                       jhove        2013-02-02T17:03:00+01:00                                         2013-02-02T17:03:00+01:00                                       
+File name                                                                              fits         /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif      /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg    
+                                                                                       imagemagick  /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif      /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg    
+                                                                                       exiv2        /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif      /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg    
+                                                                                       core         04.tif                                                            04.jpg                                                          
+                                                                                       daitss       04.tif                                                            04.jpg                                                          
+File path                                                                              fits         /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif      /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg    
+                                                                                       imagemagick                                                                    /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg    
+                                                                                       exiv2        /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif      /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg    
+                                                                                       core         /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif      /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg    
+                                                                                       jhove        /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif      /opt/differ/differ-cmdline/../docs/examples/images_02/04.jpg    
+File size                                                                              fits         286116                                                            176940                                                          
+                                                                                       exiftool     279 kB                                                            173 kB                                                          
+                                                                                       imagemagick                                                                    177KB                                                           
+                                                                                       exiv2        286116                                                            176940                                                          
+                                                                                       daitss                                                                         176940                                                          
+                                                                                       jhove        286116                                                            176940                                                          
+Format version                                                                         daitss                                                                                                                                         
+Image height                                                                           fits         512   px                                                          512   px                                                        
+                                                                                       exiftool     512   px                                                          512   px                                                        
+                                                                                       exiv2        512   px                                                          512   px                                                        
+                                                                                       core         512                                                               512                                                             
+                                                                                       daitss       512   px                                                          512   px                                                        
+                                                                                       jhove        512   px                                                          512   px                                                        
+Image width                                                                            fits         512   px                                                          512   px                                                        
+                                                                                       exiftool     512   px                                                          512   px                                                        
+                                                                                       exiv2        512   px                                                          512   px                                                        
+                                                                                       core         512                                                               512                                                             
+                                                                                       daitss       512   px                                                          512   px                                                        
+                                                                                       jhove        512   px                                                          512   px                                                        
+Image/Base type                                                                        imagemagick  Grayscale                                                                                                                         
+Image/Channel depth/blue                                                               imagemagick                                                                    8-bit                                                           
+Image/Channel depth/gray                                                               imagemagick  8-bit                                                                                                                             
+Image/Channel depth/green                                                              imagemagick                                                                    8-bit                                                           
+Image/Channel depth/red                                                                imagemagick                                                                    8-bit                                                           
+Image/Channel statistics/Artifacts/filename                                            imagemagick  /opt/differ/differ-cmdline/../docs/examples/images_01/04.tif                                                                      
+Image/Channel statistics/Artifacts/verbose                                             imagemagick  true                                                                                                                              
+Image/Channel statistics/Background color                                              imagemagick  gray(255,255,255)                                                                                                                 
+Image/Channel statistics/Blue/kurtosis                                                 imagemagick                                                                    -0.628197                                                       
+Image/Channel statistics/Blue/max                                                      imagemagick                                                                    247 (0.968627)                                                  
+Image/Channel statistics/Blue/mean                                                     imagemagick                                                                    123.193 (0.483109)                                              
+Image/Channel statistics/Blue/min                                                      imagemagick                                                                    0 (0)                                                           
+Image/Channel statistics/Blue/skewness                                                 imagemagick                                                                    -0.190955                                                       
+Image/Channel statistics/Blue/standard deviation                                       imagemagick                                                                    48.8565 (0.191594)                                              
+Image/Channel statistics/Border color                                                  imagemagick  gray(223,223,223)                                                                                                                 
+Image/Channel statistics/Colors                                                        imagemagick  206                                                                                                                               
+Image/Channel statistics/Compose                                                       imagemagick  Over                                                                                                                              
+Image/Channel statistics/Compression                                                   imagemagick  None                                                                                                                              
+Image/Channel statistics/Dispose                                                       imagemagick  Undefined                                                                                                                         
+Image/Channel statistics/Elapsed time                                                  imagemagick  0:01.000                                                                                                                          
+Image/Channel statistics/Filesize                                                      imagemagick  286KB                                                                                                                             
+Image/Channel statistics/Gamma                                                         imagemagick  1                                                                                                                                 
+Image/Channel statistics/Gray/kurtosis                                                 imagemagick  -0.807688                                                                                                                         
+Image/Channel statistics/Gray/max                                                      imagemagick  246 (0.964706)                                                                                                                    
+Image/Channel statistics/Gray/mean                                                     imagemagick  125.161 (0.490827)                                                                                                                
+Image/Channel statistics/Gray/min                                                      imagemagick  34 (0.133333)                                                                                                                     
+Image/Channel statistics/Gray/skewness                                                 imagemagick  -0.0282769                                                                                                                        
+Image/Channel statistics/Gray/standard deviation                                       imagemagick  45.2026 (0.177265)                                                                                                                
+Image/Channel statistics/Green/kurtosis                                                imagemagick                                                                    -0.6278                                                         
+Image/Channel statistics/Green/max                                                     imagemagick                                                                    247 (0.968627)                                                  
+Image/Channel statistics/Green/mean                                                    imagemagick                                                                    123.196 (0.483121)                                              
+Image/Channel statistics/Green/min                                                     imagemagick                                                                    0 (0)                                                           
+Image/Channel statistics/Green/skewness                                                imagemagick                                                                    -0.191033                                                       
+Image/Channel statistics/Green/standard deviation                                      imagemagick                                                                    48.8539 (0.191584)                                              
+Image/Channel statistics/Image statistics/Artifacts/verbose                            imagemagick                                                                    true                                                            
+Image/Channel statistics/Image statistics/Background color                             imagemagick                                                                    white                                                           
+Image/Channel statistics/Image statistics/Border color                                 imagemagick                                                                    srgb(223,223,223)                                               
+Image/Channel statistics/Image statistics/Chromaticity/blue primary                    imagemagick                                                                    (0.15,0.06)                                                     
+Image/Channel statistics/Image statistics/Chromaticity/green primary                   imagemagick                                                                    (0.3,0.6)                                                       
+Image/Channel statistics/Image statistics/Chromaticity/red primary                     imagemagick                                                                    (0.64,0.33)                                                     
+Image/Channel statistics/Image statistics/Chromaticity/white point                     imagemagick                                                                    (0.3127,0.329)                                                  
+Image/Channel statistics/Image statistics/Colors                                       imagemagick                                                                    508                                                             
+Image/Channel statistics/Image statistics/Compose                                      imagemagick                                                                    Over                                                            
+Image/Channel statistics/Image statistics/Dispose                                      imagemagick                                                                    Undefined                                                       
+Image/Channel statistics/Image statistics/Elapsed time                                 imagemagick                                                                    0:01.029                                                        
+Image/Channel statistics/Image statistics/Gamma                                        imagemagick                                                                    0.454545                                                        
+Image/Channel statistics/Image statistics/Interlace                                    imagemagick                                                                    None                                                            
+Image/Channel statistics/Image statistics/Iterations                                   imagemagick                                                                    0                                                               
+Image/Channel statistics/Image statistics/Matte color                                  imagemagick                                                                    grey74                                                          
+Image/Channel statistics/Image statistics/Number pixels                                imagemagick                                                                    262K                                                            
+Image/Channel statistics/Image statistics/Orientation                                  imagemagick                                                                    TopLeft                                                         
+Image/Channel statistics/Image statistics/Overall/kurtosis                             imagemagick                                                                    -0.577754                                                       
+Image/Channel statistics/Image statistics/Overall/max                                  imagemagick                                                                    255 (1)                                                         
+Image/Channel statistics/Image statistics/Overall/mean                                 imagemagick                                                                    124.523 (0.488327)                                              
+Image/Channel statistics/Image statistics/Overall/min                                  imagemagick                                                                    0 (0)                                                           
+Image/Channel statistics/Image statistics/Overall/skewness                             imagemagick                                                                    -0.100923                                                       
+Image/Channel statistics/Image statistics/Overall/standard deviation                   imagemagick                                                                    48.9211 (0.191848)                                              
+Image/Channel statistics/Image statistics/Page geometry                                imagemagick                                                                    512x512+0+0                                                     
+Image/Channel statistics/Image statistics/Pixels per second                            imagemagick                                                                    8.738MB                                                         
+Image/Channel statistics/Image statistics/Profiles/Profile-8bim                        imagemagick                                                                    9550 bytes                                                      
+Image/Channel statistics/Image statistics/Profiles/Profile-exif                        imagemagick                                                                    7408 bytes                                                      
+Image/Channel statistics/Image statistics/Profiles/Profile-xmp                         imagemagick                                                                    5582 bytes                                                      
+Image/Channel statistics/Image statistics/Properties/exif/BitsPerSample                imagemagick                                                                    8, 8, 8                                                         
+Image/Channel statistics/Image statistics/Properties/exif/ColorSpace                   imagemagick                                                                    65535                                                           
+Image/Channel statistics/Image statistics/Properties/exif/Compression                  imagemagick                                                                    1                                                               
+Image/Channel statistics/Image statistics/Properties/exif/DateTime                     imagemagick                                                                    2012:02:12 12:15:52                                             
+Image/Channel statistics/Image statistics/Properties/exif/ExifImageLength              imagemagick                                                                    512                                                             
+Image/Channel statistics/Image statistics/Properties/exif/ExifImageWidth               imagemagick                                                                    512                                                             
+Image/Channel statistics/Image statistics/Properties/exif/ExifOffset                   imagemagick                                                                    252                                                             
+Image/Channel statistics/Image statistics/Properties/exif/ImageLength                  imagemagick                                                                    512                                                             
+Image/Channel statistics/Image statistics/Properties/exif/ImageWidth                   imagemagick                                                                    512                                                             
+Image/Channel statistics/Image statistics/Properties/exif/JPEGInterchangeFormat        imagemagick                                                                    390                                                             
+Image/Channel statistics/Image statistics/Properties/exif/JPEGInterchangeFormatLength  imagemagick                                                                    7012                                                            
+Image/Channel statistics/Image statistics/Properties/exif/Orientation                  imagemagick                                                                    1                                                               
+Image/Channel statistics/Image statistics/Properties/exif/PhotometricInterpretation    imagemagick                                                                    2                                                               
+Image/Channel statistics/Image statistics/Properties/exif/PlanarConfiguration          imagemagick                                                                    1                                                               
+Image/Channel statistics/Image statistics/Properties/exif/ResolutionUnit               imagemagick                                                                    2                                                               
+Image/Channel statistics/Image statistics/Properties/exif/SamplesPerPixel              imagemagick                                                                    3                                                               
+Image/Channel statistics/Image statistics/Properties/exif/Software                     imagemagick                                                                    Adobe Photoshop CS5 Windows                                     
+Image/Channel statistics/Image statistics/Properties/exif/XResolution                  imagemagick                                                                    720000/10000                                                    
+Image/Channel statistics/Image statistics/Properties/exif/YResolution                  imagemagick                                                                    720000/10000                                                    
+Image/Channel statistics/Image statistics/Properties/jpeg/colorspace                   imagemagick                                                                    2                                                               
+Image/Channel statistics/Image statistics/Properties/jpeg/sampling-factor              imagemagick                                                                    1x1,1x1,1x1                                                     
+Image/Channel statistics/Image statistics/Properties/rdf                               imagemagick                                                                    Bag:                                                            
+Image/Channel statistics/Image statistics/Properties/xmpMM                             imagemagick                                                                    DerivedFrom:                                                    
+Image/Channel statistics/Image statistics/Rendering intent                             imagemagick                                                                    Perceptual                                                      
+Image/Channel statistics/Image statistics/Tainted                                      imagemagick                                                                    False                                                           
+Image/Channel statistics/Image statistics/Transparent color                            imagemagick                                                                    black                                                           
+Image/Channel statistics/Image statistics/User time                                    imagemagick                                                                    0.020u                                                          
+Image/Channel statistics/Image statistics/Version                                      imagemagick                                                                    ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org  
+Image/Channel statistics/Interlace                                                     imagemagick  None                                                                                                                              
+Image/Channel statistics/Iterations                                                    imagemagick  0                                                                                                                                 
+Image/Channel statistics/Matte color                                                   imagemagick  gray(189,189,189)                                                                                                                 
+Image/Channel statistics/Number pixels                                                 imagemagick  262K                                                                                                                              
+Image/Channel statistics/Orientation                                                   imagemagick  TopLeft                                                                                                                           
+Image/Channel statistics/Page geometry                                                 imagemagick  512x512+0+0                                                                                                                       
+Image/Channel statistics/Pixels per second                                             imagemagick  0B                                                                                                                                
+Image/Channel statistics/Profiles/Profile-8bim                                         imagemagick  9246 bytes                                                                                                                        
+Image/Channel statistics/Profiles/Profile-xmp                                          imagemagick  14375 bytes                                                                                                                       
+Image/Channel statistics/Properties/date/create                                        imagemagick  2013-02-02T17:03:00+01:00                                                                                                         
+Image/Channel statistics/Properties/date/modify                                        imagemagick  2013-02-02T17:03:00+01:00                                                                                                         
+Image/Channel statistics/Properties/dc/format                                          imagemagick  image/tiff                                                                                                                        
+Image/Channel statistics/Properties/exif/PixelXDimension                               imagemagick  512                                                                                                                               
+Image/Channel statistics/Properties/exif/PixelYDimension                               imagemagick  512                                                                                                                               
+Image/Channel statistics/Properties/photoshop/ColorMode                                imagemagick  1                                                                                                                                 
+Image/Channel statistics/Properties/signature                                          imagemagick  c83b83944e73db24e7f1a8887bdd7be1f7770c34d0b11965a073c06d1a7b6e22                                                                   
+Image/Channel statistics/Properties/tiff/endian                                        imagemagick  msb                                                                                                                               
+Image/Channel statistics/Properties/tiff/photometric                                   imagemagick  min-is-black                                                                                                                      
+Image/Channel statistics/Properties/tiff/rows-per-strip                                imagemagick  16                                                                                                                                
+Image/Channel statistics/Properties/tiff/software                                      imagemagick  Adobe Photoshop CS5 Windows                                                                                                       
+Image/Channel statistics/Properties/tiff/timestamp                                     imagemagick  2012:02:12 12:10:26                                                                                                               
+Image/Channel statistics/Properties/xmp/CreateDate                                     imagemagick  2012-02-12T12:09:13+01:00                                                                                                         
+Image/Channel statistics/Properties/xmp/MetadataDate                                   imagemagick  2012-02-12T12:10:26+01:00                                                                                                         
+Image/Channel statistics/Properties/xmp/ModifyDate                                     imagemagick  2012-02-12T12:10:26+01:00                                                                                                         
+Image/Channel statistics/Properties/xmpMM/DocumentID                                   imagemagick  xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                                                                                          
+Image/Channel statistics/Properties/xmpMM/InstanceID                                   imagemagick  xmp.iid:D3B1752A6A55E11180A5EF7BDC084C3E                                                                                          
+Image/Channel statistics/Properties/xmpMM/OriginalDocumentID                           imagemagick  xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                                                                                          
+Image/Channel statistics/Red/kurtosis                                                  imagemagick                                                                    -0.562624                                                       
+Image/Channel statistics/Red/max                                                       imagemagick                                                                    255 (1)                                                         
+Image/Channel statistics/Red/mean                                                      imagemagick                                                                    127.181 (0.49875)                                               
+Image/Channel statistics/Red/min                                                       imagemagick                                                                    28 (0.109804)                                                   
+Image/Channel statistics/Red/skewness                                                  imagemagick                                                                    0.0756254                                                       
+Image/Channel statistics/Red/standard deviation                                        imagemagick                                                                    49.0527 (0.192364)                                              
+Image/Channel statistics/Rendering intent                                              imagemagick  Undefined                                                                                                                         
+Image/Channel statistics/Tainted                                                       imagemagick  False                                                                                                                             
+Image/Channel statistics/Transparent color                                             imagemagick  gray(0,0,0)                                                                                                                       
+Image/Channel statistics/User time                                                     imagemagick  0.000u                                                                                                                            
+Image/Channel statistics/Version                                                       imagemagick  ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org                                                                    
+Image/Class                                                                            imagemagick  DirectClass                                                       DirectClass                                                     
+Image/Endianess                                                                        imagemagick  MSB                                                               Undefined                                                       
+Image/Geometry                                                                         imagemagick  512x512+0+0                                                       512x512+0+0                                                     
+Image/Print size                                                                       imagemagick  7.11111x7.11111                                                   7.11111x7.11111                                                 
+Image/Resolution                                                                       imagemagick  72x72                                                             72x72                                                           
+Image/Type                                                                             imagemagick  Grayscale                                                         TrueColor                                                       
+Image/Units                                                                            imagemagick  PixelsPerInch                                                     PixelsPerInch                                                   
+MIME type                                                                              exiftool     image/tiff                                                        image/jpeg                                                      
+                                                                                       exiv2        image/tiff                                                        image/jpeg                                                      
+                                                                                       jhove        image/tiff                                                        image/jpeg                                                      
+Multiple Component Transformation                                                      jhove                                                                                                                                          
+Number of channels                                                                     exiftool                                                                       3                                                               
+                                                                                       jhove        1                                                                 3                                                               
+Number of decomposition levels                                                         jhove                                                                                                                                          
+Number of quality layers                                                               jhove                                                                                                                                          
+Number of tiles                                                                        jhove        0                                                                 0                                                               
+Progression order                                                                      jhove                                                                                                                                          
+Quantization style                                                                     jhove                                                                                                                                          
+Resolution horizontal                                                                  exiftool     72    PPI                                                         72    PPI                                                       
+                                                                                       exiv2        512   PPI                                                         512   PPI                                                       
+Resolution unit                                                                        exiftool     inches                                                            inches                                                          
+Resolution vertical                                                                    exiftool     72    PPI                                                         72    PPI                                                       
+                                                                                       exiv2        512   PPI                                                         512   PPI                                                       
+Samples per pixel                                                                      daitss       1                                                                 3                                                               
+Sampling frequency x                                                                   daitss       720000                                                                                                                            
+Sampling frequency y                                                                   daitss       720000                                                                                                                            
+Software type                                                                          exiftool     Adobe Photoshop CS5 Windows                                       Adobe Photoshop CS5 Windows                                     
+Thumbnail                                                                              exiv2        None                                                              image/jpeg, 7012 Bytes                                          
+Tile size X                                                                            jhove              PPI                                                               PPI                                                       
+Tile size Y                                                                            jhove              PPI                                                               PPI                                                       
+Transformation                                                                         jhove                                                                                                                                          
+Type of Format                                                                         daitss       Uncompressed                                                      Raw JPEG Stream                                                 
+Type of format                                                                         exiftool     TIFF                                                              JPEG                                                            
+                                                                                       imagemagick  TIFF (Tagged Image File Format)                                   JPEG (Joint Photographic Experts Group JFIF format)             
+                                                                                       jhove        TIFF                                                              JPEG                                                            
+Universal unique identifier (UUID)                                                     imagemagick                                                                    5324376dd7df2bb47a1df872455d9ac2100c659a7c5535e5c7dea231ae26f007 
+                                                                                       daitss                                                                         5c4fefeca3ef619d97d9f4398e709c5e                                
+                                                                                       jhove                                                                                                                                          
+Validation (well formed and valid)                                                     daitss       Well-Formed and valid                                             Well-Formed and valid                                           
+                                                                                       jhove        Well-Formed and valid                                             Well-Formed and valid                                           
+-------------------------------------------------------------------------------------  -----------  ----------------------------------------------------------------  ----------------------------------------------------------------
 
 Raw outputs of extractors
 =========================
 
-   daitss       'output <../docs/examples/images_01/04/output-daitss.raw>'_
-   daitss       'output <../docs/examples/images_02/04/output-daitss.raw>'_
+   jhove        'output <../docs/examples/images_01/04/output-jhove.raw>'_
+   jhove        'output <../docs/examples/images_02/04/output-jhove.raw>'_
 
 Text reports
 ============
@@ -125,4 +241,18 @@ Text reports
    ../docs/examples/images_01/04.tif   'text report <../docs/examples/images_01/04/report.txt>'_
    ../docs/examples/images_02/04.jpg   'text report <../docs/examples/images_02/04/report.txt>'_
 
-  `text report <../docs/examples/images_01/04/04-04-report.txt>`_
+  `text comparison report <../docs/examples/images_01/04/04-04-report.txt>`_
+
+Reports for web
+============
+
+   ../docs/examples/images_01/04.tif   'web report <../docs/examples/images_01/04/report.drep>'_
+   ../docs/examples/images_02/04.jpg   'web report <../docs/examples/images_02/04/report.drep>'_
+
+  `web comparison report <../docs/examples/images_01/04/04-04-report.drep>`_
+
+Used significant properties
+===========================
+
+  `used properties <../docs/examples/images_01/04/used-properties.txt>`_
+  `used properties <../docs/examples/images_02/04/used-properties.txt>`_
