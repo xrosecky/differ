@@ -912,9 +912,201 @@
             </metadata>
         </metadata-list>
         <sources-list>
+            <source source="daitss" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
+	
+	&lt;!-- premis file object --&gt;
+	&lt;object xsi:type="file"&gt;
+		&lt;objectIdentifier&gt;
+			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130208-1949-1u33jbc-0.tif&lt;/objectIdentifierValue&gt;
+		&lt;/objectIdentifier&gt;
+		&lt;objectCharacteristics&gt;
+			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;7278246cf26b76e0ca398e7f739b527e&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;e647d0f6736f82e498de8398eccc48cf0a7d53b9&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;size&gt;786572&lt;/size&gt;
+			
+			&lt;format&gt;
+				&lt;formatDesignation&gt;
+					&lt;formatName&gt;Tagged Image File Format for Internet Fax (TIFF-FX)&lt;/formatName&gt;
+					
+				&lt;/formatDesignation&gt;
+				
+				&lt;formatRegistry&gt;
+					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
+					&lt;formatRegistryKey&gt;fmt/156&lt;/formatRegistryKey&gt;
+				&lt;/formatRegistry&gt;
+				
+				
+			&lt;/format&gt;
+			
+			
+			
+			
+		&lt;/objectCharacteristics&gt;
+		
+		&lt;originalName&gt;06.tif&lt;/originalName&gt;
+		
+		
+		
+		&lt;relationship&gt;
+			&lt;relationshipType&gt;structural&lt;/relationshipType&gt;
+			&lt;relationshipSubType&gt;includes&lt;/relationshipSubType&gt;
+			&lt;relatedObjectIdentification&gt;
+				&lt;relatedObjectIdentifierType&gt;URI&lt;/relatedObjectIdentifierType&gt;
+				&lt;relatedObjectIdentifierValue&gt;/tmp/object20130208-1949-1u33jbc-0.tif/1&lt;/relatedObjectIdentifierValue&gt;
+			&lt;/relatedObjectIdentification&gt;
+		&lt;/relationship&gt;
+		
+		
+		&lt;linkingEventIdentifier&gt;
+			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
+			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
+		&lt;/linkingEventIdentifier&gt;
+	&lt;/object&gt;
+	
+
+	
+	&lt;!-- premis bitstream object --&gt;
+	
+	&lt;object xsi:type="bitstream"&gt;
+		&lt;objectIdentifier&gt;
+			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130208-1949-1u33jbc-0.tif/1&lt;/objectIdentifierValue&gt;
+		&lt;/objectIdentifier&gt;
+		&lt;objectCharacteristics&gt;
+			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
+			&lt;format&gt;
+				
+				&lt;formatDesignation&gt;
+					&lt;formatName&gt;Uncompressed&lt;/formatName&gt;
+				&lt;/formatDesignation&gt;
+				
+			&lt;/format&gt;
+			&lt;objectCharacteristicsExtension&gt;
+				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+  &lt;mix:BasicDigitalObjectInformation&gt;
+    &lt;mix:ObjectIdentifier&gt;
+      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+    &lt;/mix:ObjectIdentifier&gt;
+    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+    &lt;mix:Compression&gt;
+      &lt;mix:compressionScheme&gt;Uncompressed&lt;/mix:compressionScheme&gt;
+    &lt;/mix:Compression&gt;
+  &lt;/mix:BasicDigitalObjectInformation&gt;
+  &lt;mix:BasicImageInformation&gt;
+    &lt;mix:BasicImageCharacteristics&gt;
+      &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
+      &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
+      &lt;mix:PhotometricInterpretation&gt;
+        &lt;mix:colorSpace&gt;RGB&lt;/mix:colorSpace&gt;
+        &lt;mix:ReferenceBlackWhite&gt;
+          &lt;mix:Component&gt;
+            &lt;mix:componentPhotometricInterpretation&gt;R&lt;/mix:componentPhotometricInterpretation&gt;
+            &lt;mix:footroom&gt;
+              &lt;mix:numerator&gt;0&lt;/mix:numerator&gt;
+            &lt;/mix:footroom&gt;
+            &lt;mix:headroom&gt;
+              &lt;mix:numerator&gt;255&lt;/mix:numerator&gt;
+            &lt;/mix:headroom&gt;
+          &lt;/mix:Component&gt;
+          &lt;mix:Component&gt;
+            &lt;mix:componentPhotometricInterpretation&gt;G&lt;/mix:componentPhotometricInterpretation&gt;
+            &lt;mix:footroom&gt;
+              &lt;mix:numerator&gt;0&lt;/mix:numerator&gt;
+            &lt;/mix:footroom&gt;
+            &lt;mix:headroom&gt;
+              &lt;mix:numerator&gt;255&lt;/mix:numerator&gt;
+            &lt;/mix:headroom&gt;
+          &lt;/mix:Component&gt;
+          &lt;mix:Component&gt;
+            &lt;mix:componentPhotometricInterpretation&gt;B&lt;/mix:componentPhotometricInterpretation&gt;
+            &lt;mix:footroom&gt;
+              &lt;mix:numerator&gt;0&lt;/mix:numerator&gt;
+            &lt;/mix:footroom&gt;
+            &lt;mix:headroom&gt;
+              &lt;mix:numerator&gt;255&lt;/mix:numerator&gt;
+            &lt;/mix:headroom&gt;
+          &lt;/mix:Component&gt;
+        &lt;/mix:ReferenceBlackWhite&gt;
+      &lt;/mix:PhotometricInterpretation&gt;
+    &lt;/mix:BasicImageCharacteristics&gt;
+  &lt;/mix:BasicImageInformation&gt;
+  &lt;mix:ImageCaptureMetadata&gt;
+    &lt;mix:orientation&gt;normal*&lt;/mix:orientation&gt;
+  &lt;/mix:ImageCaptureMetadata&gt;
+  &lt;mix:ImageAssessmentMetadata&gt;
+    &lt;mix:ImageColorEncoding&gt;
+      &lt;mix:BitsPerSample&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+      &lt;/mix:BitsPerSample&gt;
+      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+    &lt;/mix:ImageColorEncoding&gt;
+  &lt;/mix:ImageAssessmentMetadata&gt;
+&lt;/mix:mix&gt;
+			&lt;/objectCharacteristicsExtension&gt;
+		&lt;/objectCharacteristics&gt;
+	&lt;/object&gt;
+	
+	
+
+	&lt;!-- premis event --&gt;
+	&lt;event&gt;
+		&lt;eventIdentifier&gt;
+			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
+			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
+		&lt;/eventIdentifier&gt;
+		&lt;eventType&gt;describe&lt;/eventType&gt;
+		&lt;eventDateTime&gt;2013-02-08T14:23:13-05:00&lt;/eventDateTime&gt;
+		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
+		&lt;eventOutcomeInformation&gt;
+			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
+			
+		&lt;/eventOutcomeInformation&gt;
+		&lt;linkingAgentIdentifier&gt;
+			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
+			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
+		&lt;/linkingAgentIdentifier&gt;
+		&lt;linkingObjectIdentifier&gt;
+			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130208-1949-1u33jbc-0.tif&lt;/linkingObjectIdentifierValue&gt;
+		&lt;/linkingObjectIdentifier&gt;
+	&lt;/event&gt;
+
+&lt;!-- premis agent --&gt;
+&lt;agent&gt;
+	&lt;agentIdentifier&gt;
+		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
+		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
+	&lt;/agentIdentifier&gt;
+	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
+	&lt;agentType&gt;Web Service&lt;/agentType&gt;
+	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
+&lt;/agent&gt;
+&lt;/premis&gt;
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="core" exitCode="0">
+                <stdout></stdout>
+                <stderr></stderr>
+            </source>
             <source source="fits" exitCode="0">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="8.2.13 19:07"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="8.2.13 20:19"&gt;
   &lt;identification&gt;
     &lt;identity format="Tagged Image File Format" mimetype="image/tiff" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="Jhove" toolversion="1.5" /&gt;
@@ -1053,226 +1245,10 @@
 </stdout>
                 <stderr></stderr>
             </source>
-            <source source="exiftool" exitCode="0">
-                <stdout>ExifTool Version Number         : 8.60
-File Name                       : 06.tif
-Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
-File Size                       : 768 kB
-File Modification Date/Time     : 2013:02:02 17:03:00+01:00
-File Permissions                : rw-r--r--
-File Type                       : TIFF
-MIME Type                       : image/tiff
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Subfile Type                    : Full-resolution Image
-Image Width                     : 512
-Image Height                    : 512
-Bits Per Sample                 : 8 8 8
-Compression                     : Uncompressed
-Photometric Interpretation      : RGB
-Strip Offsets                   : 8
-Samples Per Pixel               : 3
-Strip Byte Counts               : 786432
-Planar Configuration            : Chunky
-Image Size                      : 512x512
-</stdout>
-                <stderr></stderr>
-            </source>
-            <source source="core" exitCode="0">
-                <stdout></stdout>
-                <stderr></stderr>
-            </source>
-            <source source="daitss" exitCode="0">
-                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-
-&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
-	
-	&lt;!-- premis file object --&gt;
-	&lt;object xsi:type="file"&gt;
-		&lt;objectIdentifier&gt;
-			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130208-1949-v6hp8e-0.tif&lt;/objectIdentifierValue&gt;
-		&lt;/objectIdentifier&gt;
-		&lt;objectCharacteristics&gt;
-			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;7278246cf26b76e0ca398e7f739b527e&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;e647d0f6736f82e498de8398eccc48cf0a7d53b9&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;size&gt;786572&lt;/size&gt;
-			
-			&lt;format&gt;
-				&lt;formatDesignation&gt;
-					&lt;formatName&gt;Tagged Image File Format for Internet Fax (TIFF-FX)&lt;/formatName&gt;
-					
-				&lt;/formatDesignation&gt;
-				
-				&lt;formatRegistry&gt;
-					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
-					&lt;formatRegistryKey&gt;fmt/156&lt;/formatRegistryKey&gt;
-				&lt;/formatRegistry&gt;
-				
-				
-			&lt;/format&gt;
-			
-			
-			
-			
-		&lt;/objectCharacteristics&gt;
-		
-		&lt;originalName&gt;06.tif&lt;/originalName&gt;
-		
-		
-		
-		&lt;relationship&gt;
-			&lt;relationshipType&gt;structural&lt;/relationshipType&gt;
-			&lt;relationshipSubType&gt;includes&lt;/relationshipSubType&gt;
-			&lt;relatedObjectIdentification&gt;
-				&lt;relatedObjectIdentifierType&gt;URI&lt;/relatedObjectIdentifierType&gt;
-				&lt;relatedObjectIdentifierValue&gt;/tmp/object20130208-1949-v6hp8e-0.tif/1&lt;/relatedObjectIdentifierValue&gt;
-			&lt;/relatedObjectIdentification&gt;
-		&lt;/relationship&gt;
-		
-		
-		&lt;linkingEventIdentifier&gt;
-			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
-			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
-		&lt;/linkingEventIdentifier&gt;
-	&lt;/object&gt;
-	
-
-	
-	&lt;!-- premis bitstream object --&gt;
-	
-	&lt;object xsi:type="bitstream"&gt;
-		&lt;objectIdentifier&gt;
-			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130208-1949-v6hp8e-0.tif/1&lt;/objectIdentifierValue&gt;
-		&lt;/objectIdentifier&gt;
-		&lt;objectCharacteristics&gt;
-			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
-			&lt;format&gt;
-				
-				&lt;formatDesignation&gt;
-					&lt;formatName&gt;Uncompressed&lt;/formatName&gt;
-				&lt;/formatDesignation&gt;
-				
-			&lt;/format&gt;
-			&lt;objectCharacteristicsExtension&gt;
-				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
-  &lt;mix:BasicDigitalObjectInformation&gt;
-    &lt;mix:ObjectIdentifier&gt;
-      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
-    &lt;/mix:ObjectIdentifier&gt;
-    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
-    &lt;mix:Compression&gt;
-      &lt;mix:compressionScheme&gt;Uncompressed&lt;/mix:compressionScheme&gt;
-    &lt;/mix:Compression&gt;
-  &lt;/mix:BasicDigitalObjectInformation&gt;
-  &lt;mix:BasicImageInformation&gt;
-    &lt;mix:BasicImageCharacteristics&gt;
-      &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
-      &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
-      &lt;mix:PhotometricInterpretation&gt;
-        &lt;mix:colorSpace&gt;RGB&lt;/mix:colorSpace&gt;
-        &lt;mix:ReferenceBlackWhite&gt;
-          &lt;mix:Component&gt;
-            &lt;mix:componentPhotometricInterpretation&gt;R&lt;/mix:componentPhotometricInterpretation&gt;
-            &lt;mix:footroom&gt;
-              &lt;mix:numerator&gt;0&lt;/mix:numerator&gt;
-            &lt;/mix:footroom&gt;
-            &lt;mix:headroom&gt;
-              &lt;mix:numerator&gt;255&lt;/mix:numerator&gt;
-            &lt;/mix:headroom&gt;
-          &lt;/mix:Component&gt;
-          &lt;mix:Component&gt;
-            &lt;mix:componentPhotometricInterpretation&gt;G&lt;/mix:componentPhotometricInterpretation&gt;
-            &lt;mix:footroom&gt;
-              &lt;mix:numerator&gt;0&lt;/mix:numerator&gt;
-            &lt;/mix:footroom&gt;
-            &lt;mix:headroom&gt;
-              &lt;mix:numerator&gt;255&lt;/mix:numerator&gt;
-            &lt;/mix:headroom&gt;
-          &lt;/mix:Component&gt;
-          &lt;mix:Component&gt;
-            &lt;mix:componentPhotometricInterpretation&gt;B&lt;/mix:componentPhotometricInterpretation&gt;
-            &lt;mix:footroom&gt;
-              &lt;mix:numerator&gt;0&lt;/mix:numerator&gt;
-            &lt;/mix:footroom&gt;
-            &lt;mix:headroom&gt;
-              &lt;mix:numerator&gt;255&lt;/mix:numerator&gt;
-            &lt;/mix:headroom&gt;
-          &lt;/mix:Component&gt;
-        &lt;/mix:ReferenceBlackWhite&gt;
-      &lt;/mix:PhotometricInterpretation&gt;
-    &lt;/mix:BasicImageCharacteristics&gt;
-  &lt;/mix:BasicImageInformation&gt;
-  &lt;mix:ImageCaptureMetadata&gt;
-    &lt;mix:orientation&gt;normal*&lt;/mix:orientation&gt;
-  &lt;/mix:ImageCaptureMetadata&gt;
-  &lt;mix:ImageAssessmentMetadata&gt;
-    &lt;mix:ImageColorEncoding&gt;
-      &lt;mix:BitsPerSample&gt;
-        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
-      &lt;/mix:BitsPerSample&gt;
-      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
-    &lt;/mix:ImageColorEncoding&gt;
-  &lt;/mix:ImageAssessmentMetadata&gt;
-&lt;/mix:mix&gt;
-			&lt;/objectCharacteristicsExtension&gt;
-		&lt;/objectCharacteristics&gt;
-	&lt;/object&gt;
-	
-	
-
-	&lt;!-- premis event --&gt;
-	&lt;event&gt;
-		&lt;eventIdentifier&gt;
-			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
-			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
-		&lt;/eventIdentifier&gt;
-		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-08T13:11:04-05:00&lt;/eventDateTime&gt;
-		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
-		&lt;eventOutcomeInformation&gt;
-			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
-			
-		&lt;/eventOutcomeInformation&gt;
-		&lt;linkingAgentIdentifier&gt;
-			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
-			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
-		&lt;/linkingAgentIdentifier&gt;
-		&lt;linkingObjectIdentifier&gt;
-			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130208-1949-v6hp8e-0.tif&lt;/linkingObjectIdentifierValue&gt;
-		&lt;/linkingObjectIdentifier&gt;
-	&lt;/event&gt;
-
-&lt;!-- premis agent --&gt;
-&lt;agent&gt;
-	&lt;agentIdentifier&gt;
-		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
-		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
-	&lt;/agentIdentifier&gt;
-	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
-	&lt;agentType&gt;Web Service&lt;/agentType&gt;
-	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
-&lt;/agent&gt;
-&lt;/premis&gt;
-</stdout>
-                <stderr></stderr>
-            </source>
             <source source="jhove" exitCode="0">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-02-08T19:07:03+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-08T20:19:13+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/06.tif"&gt;
   &lt;reportingModule release="1.5" date="2007-10-02"&gt;TIFF-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-02T17:03:00+01:00&lt;/lastModified&gt;
@@ -1526,6 +1502,30 @@ Thumbnail       : None
 Copyright       : 
 Exif comment    : 
 
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="exiftool" exitCode="0">
+                <stdout>ExifTool Version Number         : 8.60
+File Name                       : 06.tif
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
+File Size                       : 768 kB
+File Modification Date/Time     : 2013:02:02 17:03:00+01:00
+File Permissions                : rw-r--r--
+File Type                       : TIFF
+MIME Type                       : image/tiff
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Subfile Type                    : Full-resolution Image
+Image Width                     : 512
+Image Height                    : 512
+Bits Per Sample                 : 8 8 8
+Compression                     : Uncompressed
+Photometric Interpretation      : RGB
+Strip Offsets                   : 8
+Samples Per Pixel               : 3
+Strip Byte Counts               : 786432
+Planar Configuration            : Chunky
+Image Size                      : 512x512
 </stdout>
                 <stderr></stderr>
             </source>
@@ -2828,7 +2828,7 @@ Exif comment    :
             </metadata>
             <metadata>
                 <key>Image/Channel statistics/Image statistics/Elapsed time</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.030</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.019</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -2912,7 +2912,7 @@ Exif comment    :
             </metadata>
             <metadata>
                 <key>Image/Channel statistics/Image statistics/Pixels per second</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8.738MB</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">13.11MB</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -3386,38 +3386,132 @@ Exif comment    :
             </metadata>
         </metadata-list>
         <sources-list>
-            <source source="exiv2" exitCode="0">
-                <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_02/06.jpg
-File size       : 173595 Bytes
-MIME type       : image/jpeg
-Image size      : 512 x 512
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 512 x 512
-White balance   : 
-Thumbnail       : image/jpeg, 6564 Bytes
-Copyright       : 
-Exif comment    : 
+            <source source="daitss" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
+&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
+	
+	&lt;!-- premis file object --&gt;
+	&lt;object xsi:type="file"&gt;
+		&lt;objectIdentifier&gt;
+			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130208-1949-hymdg1-0.jpg&lt;/objectIdentifierValue&gt;
+		&lt;/objectIdentifier&gt;
+		&lt;objectCharacteristics&gt;
+			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;3ac10f9874103ffc222b428f7214a5ea&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;e1b6d5f8afc8f68796c13dd687b0ad4f9fd85a58&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;size&gt;173595&lt;/size&gt;
+			
+			&lt;format&gt;
+				&lt;formatDesignation&gt;
+					&lt;formatName&gt;Raw JPEG Stream&lt;/formatName&gt;
+					
+				&lt;/formatDesignation&gt;
+				
+				&lt;formatRegistry&gt;
+					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
+					&lt;formatRegistryKey&gt;fmt/41&lt;/formatRegistryKey&gt;
+				&lt;/formatRegistry&gt;
+				
+				
+			&lt;/format&gt;
+			
+			
+			
+			
+			&lt;objectCharacteristicsExtension&gt;
+				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+  &lt;mix:BasicDigitalObjectInformation&gt;
+    &lt;mix:ObjectIdentifier&gt;
+      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+    &lt;/mix:ObjectIdentifier&gt;
+    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+    &lt;mix:Compression&gt;
+      &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
+    &lt;/mix:Compression&gt;
+  &lt;/mix:BasicDigitalObjectInformation&gt;
+  &lt;mix:BasicImageInformation&gt;
+    &lt;mix:BasicImageCharacteristics&gt;
+      &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
+      &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
+    &lt;/mix:BasicImageCharacteristics&gt;
+  &lt;/mix:BasicImageInformation&gt;
+  &lt;mix:ImageAssessmentMetadata&gt;
+    &lt;mix:ImageColorEncoding&gt;
+      &lt;mix:BitsPerSample&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+      &lt;/mix:BitsPerSample&gt;
+      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+    &lt;/mix:ImageColorEncoding&gt;
+  &lt;/mix:ImageAssessmentMetadata&gt;
+&lt;/mix:mix&gt;
+			&lt;/objectCharacteristicsExtension&gt;
+			
+		&lt;/objectCharacteristics&gt;
+		
+		&lt;originalName&gt;06.jpg&lt;/originalName&gt;
+		
+		
+		
+		
+		&lt;linkingEventIdentifier&gt;
+			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
+			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
+		&lt;/linkingEventIdentifier&gt;
+	&lt;/object&gt;
+	
+
+	
+	&lt;!-- premis bitstream object --&gt;
+	
+	
+
+	&lt;!-- premis event --&gt;
+	&lt;event&gt;
+		&lt;eventIdentifier&gt;
+			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
+			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
+		&lt;/eventIdentifier&gt;
+		&lt;eventType&gt;describe&lt;/eventType&gt;
+		&lt;eventDateTime&gt;2013-02-08T14:23:17-05:00&lt;/eventDateTime&gt;
+		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
+		&lt;eventOutcomeInformation&gt;
+			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
+			
+		&lt;/eventOutcomeInformation&gt;
+		&lt;linkingAgentIdentifier&gt;
+			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
+			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
+		&lt;/linkingAgentIdentifier&gt;
+		&lt;linkingObjectIdentifier&gt;
+			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130208-1949-hymdg1-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+		&lt;/linkingObjectIdentifier&gt;
+	&lt;/event&gt;
+
+&lt;!-- premis agent --&gt;
+&lt;agent&gt;
+	&lt;agentIdentifier&gt;
+		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
+		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
+	&lt;/agentIdentifier&gt;
+	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
+	&lt;agentType&gt;Web Service&lt;/agentType&gt;
+	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
+&lt;/agent&gt;
+&lt;/premis&gt;
 </stdout>
-                <stderr></stderr>
-            </source>
-            <source source="core" exitCode="0">
-                <stdout></stdout>
                 <stderr></stderr>
             </source>
             <source source="exiftool" exitCode="0">
@@ -3488,9 +3582,214 @@ Thumbnail Image                 : (Binary data 6564 bytes, use -b option to extr
 </stdout>
                 <stderr></stderr>
             </source>
+            <source source="core" exitCode="0">
+                <stdout></stdout>
+                <stderr></stderr>
+            </source>
+            <source source="jhove" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
+ &lt;date&gt;2013-02-08T20:19:19+01:00&lt;/date&gt;
+ &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_02/06.jpg"&gt;
+  &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
+  &lt;lastModified&gt;2013-02-02T17:03:00+01:00&lt;/lastModified&gt;
+  &lt;size&gt;173595&lt;/size&gt;
+  &lt;format&gt;JPEG&lt;/format&gt;
+  &lt;status&gt;Well-Formed and valid&lt;/status&gt;
+  &lt;sigMatch&gt;
+  &lt;module&gt;JPEG-hul&lt;/module&gt;
+  &lt;/sigMatch&gt;
+  &lt;mimeType&gt;image/jpeg&lt;/mimeType&gt;
+  &lt;properties&gt;
+   &lt;property&gt;
+    &lt;name&gt;JPEGMetadata&lt;/name&gt;
+    &lt;values arity="List" type="Property"&gt;
+    &lt;property&gt;
+     &lt;name&gt;CompressionType&lt;/name&gt;
+     &lt;values arity="Scalar" type="String"&gt;
+      &lt;value&gt;Huffman coding, Baseline DCT&lt;/value&gt;
+     &lt;/values&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+     &lt;name&gt;Images&lt;/name&gt;
+     &lt;values arity="List" type="Property"&gt;
+     &lt;property&gt;
+      &lt;name&gt;Number&lt;/name&gt;
+      &lt;values arity="Scalar" type="Integer"&gt;
+       &lt;value&gt;1&lt;/value&gt;
+      &lt;/values&gt;
+     &lt;/property&gt;
+     &lt;property&gt;
+      &lt;name&gt;Image&lt;/name&gt;
+      &lt;values arity="List" type="Property"&gt;
+      &lt;property&gt;
+       &lt;name&gt;NisoImageMetadata&lt;/name&gt;
+       &lt;values arity="Scalar" type="NISOImageMetadata"&gt;
+        &lt;value&gt;
+      &lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+       &lt;mix:BasicDigitalObjectInformation&gt;
+        &lt;mix:ObjectIdentifier&gt;
+         &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+        &lt;/mix:ObjectIdentifier&gt;
+        &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+        &lt;mix:Compression&gt;
+         &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
+        &lt;/mix:Compression&gt;
+       &lt;/mix:BasicDigitalObjectInformation&gt;
+       &lt;mix:BasicImageInformation&gt;
+        &lt;mix:BasicImageCharacteristics&gt;
+         &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
+         &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
+        &lt;/mix:BasicImageCharacteristics&gt;
+       &lt;/mix:BasicImageInformation&gt;
+       &lt;mix:ImageAssessmentMetadata&gt;
+        &lt;mix:ImageColorEncoding&gt;
+         &lt;mix:BitsPerSample&gt;
+          &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+          &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+          &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+         &lt;/mix:BitsPerSample&gt;
+         &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+        &lt;/mix:ImageColorEncoding&gt;
+       &lt;/mix:ImageAssessmentMetadata&gt;
+      &lt;/mix:mix&gt;
+        &lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;PixelAspectRatio&lt;/name&gt;
+       &lt;values arity="List" type="Property"&gt;
+       &lt;property&gt;
+        &lt;name&gt;PixelAspectRatioX&lt;/name&gt;
+        &lt;values arity="Scalar" type="Integer"&gt;
+         &lt;value&gt;0&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;property&gt;
+        &lt;name&gt;PixelAspectRatioY&lt;/name&gt;
+        &lt;values arity="Scalar" type="Integer"&gt;
+         &lt;value&gt;0&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;RestartInterval&lt;/name&gt;
+       &lt;values arity="Scalar" type="Integer"&gt;
+        &lt;value&gt;64&lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;Scans&lt;/name&gt;
+       &lt;values arity="Scalar" type="Integer"&gt;
+        &lt;value&gt;1&lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;QuantizationTables&lt;/name&gt;
+       &lt;values arity="List" type="Property"&gt;
+       &lt;property&gt;
+        &lt;name&gt;QuantizationTable&lt;/name&gt;
+        &lt;values arity="Array" type="Property"&gt;
+        &lt;property&gt;
+         &lt;name&gt;Precision&lt;/name&gt;
+         &lt;values arity="Scalar" type="String"&gt;
+          &lt;value&gt;8-bit&lt;/value&gt;
+         &lt;/values&gt;
+        &lt;/property&gt;
+        &lt;property&gt;
+         &lt;name&gt;DestinationIdentifier&lt;/name&gt;
+         &lt;values arity="Scalar" type="Integer"&gt;
+          &lt;value&gt;0&lt;/value&gt;
+         &lt;/values&gt;
+        &lt;/property&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;Exif&lt;/name&gt;
+       &lt;values arity="List" type="Property"&gt;
+       &lt;property&gt;
+        &lt;name&gt;ExifVersion&lt;/name&gt;
+        &lt;values arity="Scalar" type="String"&gt;
+         &lt;value&gt;0220&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;property&gt;
+        &lt;name&gt;FlashpixVersion&lt;/name&gt;
+        &lt;values arity="Scalar" type="String"&gt;
+         &lt;value&gt;0100&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;property&gt;
+        &lt;name&gt;FocalPlaneResolutionUnit&lt;/name&gt;
+        &lt;values arity="Scalar" type="String"&gt;
+         &lt;value&gt;inches&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;XMP&lt;/name&gt;
+       &lt;values arity="Scalar" type="String"&gt;
+        &lt;value&gt;&amp;lt;x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00        "&amp;gt; &amp;lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&amp;gt; &amp;lt;rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreateDate="2012-02-12T12:09:13+01:00" xmp:ModifyDate="2012-02-12T12:21:53+01:00" xmp:MetadataDate="2012-02-12T12:21:53+01:00" xmp:CreatorTool="Adobe Photoshop CS5 Windows" dc:format="image/jpeg" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:F5B79AEC6A55E11180A5EF7BDC084C3E" xmpMM:DocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E" xmpMM:OriginalDocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E"&amp;gt; &amp;lt;photoshop:DocumentAncestors&amp;gt; &amp;lt;rdf:Bag&amp;gt; &amp;lt;rdf:li&amp;gt;xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E&amp;lt;/rdf:li&amp;gt; &amp;lt;/rdf:Bag&amp;gt; &amp;lt;/photoshop:DocumentAncestors&amp;gt; &amp;lt;xmpMM:History&amp;gt; &amp;lt;rdf:Seq&amp;gt; &amp;lt;rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:09:13+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from image/tiff to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:16+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:40+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:40+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:15:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from image/jpeg to application/vnd.adobe.photoshop"/&amp;gt; &amp;lt;rdf:li stEvt:action="derived" stEvt:parameters="converted from image/jpeg to application/vnd.adobe.photoshop"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:15:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F4B79AEC6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:21:53+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F5B79AEC6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:21:53+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;/rdf:Seq&amp;gt; &amp;lt;/xmpMM:History&amp;gt; &amp;lt;xmpMM:DerivedFrom stRef:instanceID="xmp.iid:F4B79AEC6A55E11180A5EF7BDC084C3E" stRef:documentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E" stRef:originalDocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E"/&amp;gt; &amp;lt;/rdf:Description&amp;gt; &amp;lt;/rdf:RDF&amp;gt; &amp;lt;/x:xmpmeta&amp;gt;&lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;/values&gt;
+     &lt;/property&gt;
+     &lt;/values&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+     &lt;name&gt;ApplicationSegments&lt;/name&gt;
+     &lt;values arity="List" type="String"&gt;
+      &lt;value&gt;APP1&lt;/value&gt;
+      &lt;value&gt;APP13&lt;/value&gt;
+      &lt;value&gt;APP1&lt;/value&gt;
+      &lt;value&gt;APP14&lt;/value&gt;
+     &lt;/values&gt;
+    &lt;/property&gt;
+    &lt;/values&gt;
+   &lt;/property&gt;
+  &lt;/properties&gt;
+ &lt;/repInfo&gt;
+&lt;/jhove&gt;
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="exiv2" exitCode="0">
+                <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_02/06.jpg
+File size       : 173595 Bytes
+MIME type       : image/jpeg
+Image size      : 512 x 512
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 512 x 512
+White balance   : 
+Thumbnail       : image/jpeg, 6564 Bytes
+Copyright       : 
+Exif comment    : 
+
+</stdout>
+                <stderr></stderr>
+            </source>
             <source source="fits" exitCode="0">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="8.2.13 19:07"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="8.2.13 20:19"&gt;
   &lt;identification&gt;
     &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.11" /&gt;
@@ -3849,309 +4148,10 @@ Thumbnail Image                 : (Binary data 6564 bytes, use -b option to extr
   Tainted: False
   Filesize: 174KB
   Number pixels: 262K
-  Pixels per second: 8.738MB
+  Pixels per second: 13.11MB
   User time: 0.020u
-  Elapsed time: 0:01.030
+  Elapsed time: 0:01.019
   Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
-</stdout>
-                <stderr></stderr>
-            </source>
-            <source source="jhove" exitCode="0">
-                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-02-08T19:07:09+01:00&lt;/date&gt;
- &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_02/06.jpg"&gt;
-  &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
-  &lt;lastModified&gt;2013-02-02T17:03:00+01:00&lt;/lastModified&gt;
-  &lt;size&gt;173595&lt;/size&gt;
-  &lt;format&gt;JPEG&lt;/format&gt;
-  &lt;status&gt;Well-Formed and valid&lt;/status&gt;
-  &lt;sigMatch&gt;
-  &lt;module&gt;JPEG-hul&lt;/module&gt;
-  &lt;/sigMatch&gt;
-  &lt;mimeType&gt;image/jpeg&lt;/mimeType&gt;
-  &lt;properties&gt;
-   &lt;property&gt;
-    &lt;name&gt;JPEGMetadata&lt;/name&gt;
-    &lt;values arity="List" type="Property"&gt;
-    &lt;property&gt;
-     &lt;name&gt;CompressionType&lt;/name&gt;
-     &lt;values arity="Scalar" type="String"&gt;
-      &lt;value&gt;Huffman coding, Baseline DCT&lt;/value&gt;
-     &lt;/values&gt;
-    &lt;/property&gt;
-    &lt;property&gt;
-     &lt;name&gt;Images&lt;/name&gt;
-     &lt;values arity="List" type="Property"&gt;
-     &lt;property&gt;
-      &lt;name&gt;Number&lt;/name&gt;
-      &lt;values arity="Scalar" type="Integer"&gt;
-       &lt;value&gt;1&lt;/value&gt;
-      &lt;/values&gt;
-     &lt;/property&gt;
-     &lt;property&gt;
-      &lt;name&gt;Image&lt;/name&gt;
-      &lt;values arity="List" type="Property"&gt;
-      &lt;property&gt;
-       &lt;name&gt;NisoImageMetadata&lt;/name&gt;
-       &lt;values arity="Scalar" type="NISOImageMetadata"&gt;
-        &lt;value&gt;
-      &lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
-       &lt;mix:BasicDigitalObjectInformation&gt;
-        &lt;mix:ObjectIdentifier&gt;
-         &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
-        &lt;/mix:ObjectIdentifier&gt;
-        &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
-        &lt;mix:Compression&gt;
-         &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
-        &lt;/mix:Compression&gt;
-       &lt;/mix:BasicDigitalObjectInformation&gt;
-       &lt;mix:BasicImageInformation&gt;
-        &lt;mix:BasicImageCharacteristics&gt;
-         &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
-         &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
-        &lt;/mix:BasicImageCharacteristics&gt;
-       &lt;/mix:BasicImageInformation&gt;
-       &lt;mix:ImageAssessmentMetadata&gt;
-        &lt;mix:ImageColorEncoding&gt;
-         &lt;mix:BitsPerSample&gt;
-          &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-          &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-          &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
-         &lt;/mix:BitsPerSample&gt;
-         &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
-        &lt;/mix:ImageColorEncoding&gt;
-       &lt;/mix:ImageAssessmentMetadata&gt;
-      &lt;/mix:mix&gt;
-        &lt;/value&gt;
-       &lt;/values&gt;
-      &lt;/property&gt;
-      &lt;property&gt;
-       &lt;name&gt;PixelAspectRatio&lt;/name&gt;
-       &lt;values arity="List" type="Property"&gt;
-       &lt;property&gt;
-        &lt;name&gt;PixelAspectRatioX&lt;/name&gt;
-        &lt;values arity="Scalar" type="Integer"&gt;
-         &lt;value&gt;0&lt;/value&gt;
-        &lt;/values&gt;
-       &lt;/property&gt;
-       &lt;property&gt;
-        &lt;name&gt;PixelAspectRatioY&lt;/name&gt;
-        &lt;values arity="Scalar" type="Integer"&gt;
-         &lt;value&gt;0&lt;/value&gt;
-        &lt;/values&gt;
-       &lt;/property&gt;
-       &lt;/values&gt;
-      &lt;/property&gt;
-      &lt;property&gt;
-       &lt;name&gt;RestartInterval&lt;/name&gt;
-       &lt;values arity="Scalar" type="Integer"&gt;
-        &lt;value&gt;64&lt;/value&gt;
-       &lt;/values&gt;
-      &lt;/property&gt;
-      &lt;property&gt;
-       &lt;name&gt;Scans&lt;/name&gt;
-       &lt;values arity="Scalar" type="Integer"&gt;
-        &lt;value&gt;1&lt;/value&gt;
-       &lt;/values&gt;
-      &lt;/property&gt;
-      &lt;property&gt;
-       &lt;name&gt;QuantizationTables&lt;/name&gt;
-       &lt;values arity="List" type="Property"&gt;
-       &lt;property&gt;
-        &lt;name&gt;QuantizationTable&lt;/name&gt;
-        &lt;values arity="Array" type="Property"&gt;
-        &lt;property&gt;
-         &lt;name&gt;Precision&lt;/name&gt;
-         &lt;values arity="Scalar" type="String"&gt;
-          &lt;value&gt;8-bit&lt;/value&gt;
-         &lt;/values&gt;
-        &lt;/property&gt;
-        &lt;property&gt;
-         &lt;name&gt;DestinationIdentifier&lt;/name&gt;
-         &lt;values arity="Scalar" type="Integer"&gt;
-          &lt;value&gt;0&lt;/value&gt;
-         &lt;/values&gt;
-        &lt;/property&gt;
-        &lt;/values&gt;
-       &lt;/property&gt;
-       &lt;/values&gt;
-      &lt;/property&gt;
-      &lt;property&gt;
-       &lt;name&gt;Exif&lt;/name&gt;
-       &lt;values arity="List" type="Property"&gt;
-       &lt;property&gt;
-        &lt;name&gt;ExifVersion&lt;/name&gt;
-        &lt;values arity="Scalar" type="String"&gt;
-         &lt;value&gt;0220&lt;/value&gt;
-        &lt;/values&gt;
-       &lt;/property&gt;
-       &lt;property&gt;
-        &lt;name&gt;FlashpixVersion&lt;/name&gt;
-        &lt;values arity="Scalar" type="String"&gt;
-         &lt;value&gt;0100&lt;/value&gt;
-        &lt;/values&gt;
-       &lt;/property&gt;
-       &lt;property&gt;
-        &lt;name&gt;FocalPlaneResolutionUnit&lt;/name&gt;
-        &lt;values arity="Scalar" type="String"&gt;
-         &lt;value&gt;inches&lt;/value&gt;
-        &lt;/values&gt;
-       &lt;/property&gt;
-       &lt;/values&gt;
-      &lt;/property&gt;
-      &lt;property&gt;
-       &lt;name&gt;XMP&lt;/name&gt;
-       &lt;values arity="Scalar" type="String"&gt;
-        &lt;value&gt;&amp;lt;x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00        "&amp;gt; &amp;lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&amp;gt; &amp;lt;rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreateDate="2012-02-12T12:09:13+01:00" xmp:ModifyDate="2012-02-12T12:21:53+01:00" xmp:MetadataDate="2012-02-12T12:21:53+01:00" xmp:CreatorTool="Adobe Photoshop CS5 Windows" dc:format="image/jpeg" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:F5B79AEC6A55E11180A5EF7BDC084C3E" xmpMM:DocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E" xmpMM:OriginalDocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E"&amp;gt; &amp;lt;photoshop:DocumentAncestors&amp;gt; &amp;lt;rdf:Bag&amp;gt; &amp;lt;rdf:li&amp;gt;xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E&amp;lt;/rdf:li&amp;gt; &amp;lt;/rdf:Bag&amp;gt; &amp;lt;/photoshop:DocumentAncestors&amp;gt; &amp;lt;xmpMM:History&amp;gt; &amp;lt;rdf:Seq&amp;gt; &amp;lt;rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:09:13+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from image/tiff to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:16+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:40+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:40+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:15:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from image/jpeg to application/vnd.adobe.photoshop"/&amp;gt; &amp;lt;rdf:li stEvt:action="derived" stEvt:parameters="converted from image/jpeg to application/vnd.adobe.photoshop"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:15:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F4B79AEC6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:21:53+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F5B79AEC6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:21:53+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;/rdf:Seq&amp;gt; &amp;lt;/xmpMM:History&amp;gt; &amp;lt;xmpMM:DerivedFrom stRef:instanceID="xmp.iid:F4B79AEC6A55E11180A5EF7BDC084C3E" stRef:documentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E" stRef:originalDocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E"/&amp;gt; &amp;lt;/rdf:Description&amp;gt; &amp;lt;/rdf:RDF&amp;gt; &amp;lt;/x:xmpmeta&amp;gt;&lt;/value&gt;
-       &lt;/values&gt;
-      &lt;/property&gt;
-      &lt;/values&gt;
-     &lt;/property&gt;
-     &lt;/values&gt;
-    &lt;/property&gt;
-    &lt;property&gt;
-     &lt;name&gt;ApplicationSegments&lt;/name&gt;
-     &lt;values arity="List" type="String"&gt;
-      &lt;value&gt;APP1&lt;/value&gt;
-      &lt;value&gt;APP13&lt;/value&gt;
-      &lt;value&gt;APP1&lt;/value&gt;
-      &lt;value&gt;APP14&lt;/value&gt;
-     &lt;/values&gt;
-    &lt;/property&gt;
-    &lt;/values&gt;
-   &lt;/property&gt;
-  &lt;/properties&gt;
- &lt;/repInfo&gt;
-&lt;/jhove&gt;
-</stdout>
-                <stderr></stderr>
-            </source>
-            <source source="daitss" exitCode="0">
-                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-
-&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
-	
-	&lt;!-- premis file object --&gt;
-	&lt;object xsi:type="file"&gt;
-		&lt;objectIdentifier&gt;
-			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130208-1949-f08qrn-0.jpg&lt;/objectIdentifierValue&gt;
-		&lt;/objectIdentifier&gt;
-		&lt;objectCharacteristics&gt;
-			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;3ac10f9874103ffc222b428f7214a5ea&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;e1b6d5f8afc8f68796c13dd687b0ad4f9fd85a58&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;size&gt;173595&lt;/size&gt;
-			
-			&lt;format&gt;
-				&lt;formatDesignation&gt;
-					&lt;formatName&gt;Raw JPEG Stream&lt;/formatName&gt;
-					
-				&lt;/formatDesignation&gt;
-				
-				&lt;formatRegistry&gt;
-					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
-					&lt;formatRegistryKey&gt;fmt/41&lt;/formatRegistryKey&gt;
-				&lt;/formatRegistry&gt;
-				
-				
-			&lt;/format&gt;
-			
-			
-			
-			
-			&lt;objectCharacteristicsExtension&gt;
-				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
-  &lt;mix:BasicDigitalObjectInformation&gt;
-    &lt;mix:ObjectIdentifier&gt;
-      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
-    &lt;/mix:ObjectIdentifier&gt;
-    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
-    &lt;mix:Compression&gt;
-      &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
-    &lt;/mix:Compression&gt;
-  &lt;/mix:BasicDigitalObjectInformation&gt;
-  &lt;mix:BasicImageInformation&gt;
-    &lt;mix:BasicImageCharacteristics&gt;
-      &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
-      &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
-    &lt;/mix:BasicImageCharacteristics&gt;
-  &lt;/mix:BasicImageInformation&gt;
-  &lt;mix:ImageAssessmentMetadata&gt;
-    &lt;mix:ImageColorEncoding&gt;
-      &lt;mix:BitsPerSample&gt;
-        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
-      &lt;/mix:BitsPerSample&gt;
-      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
-    &lt;/mix:ImageColorEncoding&gt;
-  &lt;/mix:ImageAssessmentMetadata&gt;
-&lt;/mix:mix&gt;
-			&lt;/objectCharacteristicsExtension&gt;
-			
-		&lt;/objectCharacteristics&gt;
-		
-		&lt;originalName&gt;06.jpg&lt;/originalName&gt;
-		
-		
-		
-		
-		&lt;linkingEventIdentifier&gt;
-			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
-			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
-		&lt;/linkingEventIdentifier&gt;
-	&lt;/object&gt;
-	
-
-	
-	&lt;!-- premis bitstream object --&gt;
-	
-	
-
-	&lt;!-- premis event --&gt;
-	&lt;event&gt;
-		&lt;eventIdentifier&gt;
-			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
-			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
-		&lt;/eventIdentifier&gt;
-		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-08T13:11:07-05:00&lt;/eventDateTime&gt;
-		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
-		&lt;eventOutcomeInformation&gt;
-			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
-			
-		&lt;/eventOutcomeInformation&gt;
-		&lt;linkingAgentIdentifier&gt;
-			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
-			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
-		&lt;/linkingAgentIdentifier&gt;
-		&lt;linkingObjectIdentifier&gt;
-			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130208-1949-f08qrn-0.jpg&lt;/linkingObjectIdentifierValue&gt;
-		&lt;/linkingObjectIdentifier&gt;
-	&lt;/event&gt;
-
-&lt;!-- premis agent --&gt;
-&lt;agent&gt;
-	&lt;agentIdentifier&gt;
-		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
-		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
-	&lt;/agentIdentifier&gt;
-	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
-	&lt;agentType&gt;Web Service&lt;/agentType&gt;
-	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
-&lt;/agent&gt;
-&lt;/premis&gt;
 </stdout>
                 <stderr></stderr>
             </source>
