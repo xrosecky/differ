@@ -30,6 +30,8 @@
       <property name="entryTransformers">
 	<map>
 	  <entry key="Type of format" value-ref="typeOfFormatNormalizer"/>
+	  <entry key="File name" value-ref="fileNameNormalizer"/>
+	  <entry key="File last modified" value-ref="dateNormalizer"/>
 	</map>
       </property>
 

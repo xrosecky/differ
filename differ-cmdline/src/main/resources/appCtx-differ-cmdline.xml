@@ -62,6 +62,7 @@
     <!-- <import resource="imageProcessor.xml"/> -->
     <import resource="pureImageProcessor.xml"/>
     <import resource="metadataFinishing.xml"/>
+    <import resource="metadataSignificantProperties.xml"/>
 
     <util:map id="units">
       <entry key="Image width" value="px"/>
@@ -230,35 +231,7 @@
     <import resource="daitssMetadataExtractor.xml"/>
 
     <!-- fits -->
-    <bean id="fitsMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-    	<property name="stylesheet" value="${fits.xsl}"/>
-    </bean>
-    <bean id="fitsMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-      <property name="source" value="fits"/>
-      <property name="transformer" ref="fitsMetadataTransformer"/>
-      <property name="programArguments">
-	<list>
-	  <value>${fits.binary}</value>
-	  <value>-i</value>
-	  <value>{file}</value>
-	</list>
-      </property>
-      <property name="units" ref="units"/>
-      <property name="supportedFileExtensions">
-	<list>
-	  <value>tiff</value>
-	  <value>tif</value>
-	  <value>jpeg</value>
-	  <value>jpg</value>
-	  <value>jp2000</value>
-	  <value>jp2</value>
-	  <value>jpf</value>
-	  <value>jpp</value>
-	  <value>djvu</value>
-	</list>
-      </property>
-
-    </bean>
+    <import resource="fitsMetadataExtractor.xml"/>
 
     <!-- jpylyzer -->
     <bean id="jpylyzerMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
@@ -314,6 +287,7 @@
 	  <value>jpf</value>
 	  <value>jpp</value>
 	  <value>djvu</value>
+	  <value>png</value>
 	</list>
       </property>
     </bean>

@@ -2,6 +2,7 @@ package cz.nkp.differ.cmdline;
 
 import cz.nkp.differ.compare.io.ImageProcessorResult;
 import cz.nkp.differ.compare.metadata.ImageMetadata;
+import org.springframework.context.ApplicationContext;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -14,7 +15,6 @@ import java.util.*;
  * User: stavel
  * Date: 5.1.13
  * Time: 14:11
- * To change this template use File | Settings | File Templates.
  */
 class TheSameValueHider {
     /*
@@ -43,7 +43,9 @@ public class TextResultTransformer implements ResultTransformer{
     public Boolean saveReport = false;
     public Boolean saveProperties = false;
 
-    public TextResultTransformer(OutputNamer outputNamer,
+    protected ApplicationContext context;
+    public TextResultTransformer(ApplicationContext context,
+                                 OutputNamer outputNamer,
                                  Boolean includeOutputs,
                                  Boolean saveReport,
                                  Boolean saveProperties,
@@ -53,6 +55,7 @@ public class TextResultTransformer implements ResultTransformer{
         this.includeImage = includeImage;
         this.outputNamer = outputNamer;
         this.saveProperties = saveProperties;
+        this.context = context;
     }
 
     protected String getStringGivenLength(int length, char chr) {
@@ -65,85 +68,64 @@ public class TextResultTransformer implements ResultTransformer{
     };
     @Override
     public String transform(File file, ImageProcessorResult result) {
-        String fileName = null;
-        Integer keyLength = "Significant Property".length();
-        Integer sourceLength = "Source".length();
-        Integer unitLength = "Unit".length();
-        Integer valueLength = "Value".length();
-        PropertiesSummary propertiesSummary = new PropertiesSummary();
+        List<ImageMetadata> identificationMetadata = new ArrayList<ImageMetadata>();
+        List<ImageMetadata> validationMetadata = new ArrayList<ImageMetadata>();
+        List<ImageMetadata> characterizationMetadata = new ArrayList<ImageMetadata>();
+        List<ImageMetadata> otherMetadata = new ArrayList<ImageMetadata>();
+
         List<ImageMetadata>  metadataList = result.getMetadata();
 
-        /* save special elements */
-        List<ImageMetadata> toRemove = new ArrayList<ImageMetadata>();
+        Set<String> identificationProperties = (Set<String>) context.getBean("identificationProperties");
+        Set<String> validationProperties = (Set<String>) context.getBean("validationProperties");
+        Set<String> characterizationProperties = (Set<String>) context.getBean("characterizationProperties");
 
+        /* save special elements */
         for(ImageMetadata metadata: metadataList){
-            if(metadata.getKey().equalsIgnoreCase("Histogram")){
-                toRemove.add(metadata);
+            String key = metadata.getKey();
+            if(key.equalsIgnoreCase("Histogram")){
                 saveHistogram(metadata);
             } else {
-                if( metadata.getKey().equalsIgnoreCase("Clipping path")){
-                    toRemove.add(metadata);
+                if( key.equalsIgnoreCase("Clipping path")){
                     saveClippingPath(metadata);
                 } else {
-                    if (metadata.getKey().equalsIgnoreCase("Colormap")){
-                        toRemove.add(metadata);
+                    if (key.equalsIgnoreCase("Colormap")){
                         saveColorMap(metadata);
+                    } else {
+                        if( identificationProperties.contains(key)){
+                            identificationMetadata.add(metadata);
+                        } else {
+                            if(validationProperties.contains(key)){
+                                validationMetadata.add(metadata);
+                            } else {
+                                if( characterizationProperties.contains(key)){
+                                    characterizationMetadata.add(metadata);
+                                } else {
+                                    otherMetadata.add(metadata);
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
-        if( !toRemove.isEmpty() ){
-            metadataList.removeAll(toRemove);
-        }
-        for(ImageMetadata metadata: metadataList){
-            if( metadata.getKey().equals("File name") ){
-                fileName = (String) metadata.getValue();
-            };
-            keyLength = Math.max(keyLength, metadata.getKey().length());
-            sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
-            if (metadata.getUnit() != null) unitLength = Math.max(unitLength, metadata.getUnit().length());
-            if (metadata.getValue() != null) valueLength = Math.max(valueLength, metadata.getValue().toString().length());
-            propertiesSummary.addProperty(metadata.getKey());
-        }
-        Collections.sort(result.getMetadata(), new Comparator<ImageMetadata>() {
-            @Override
-            public int compare(ImageMetadata imageMetadata1, ImageMetadata imageMetadata2) {
-                String key1 = imageMetadata1.getKey();
-                String key2 = imageMetadata2.getKey();
-                if( key1.compareToIgnoreCase(key2) == 0){
-                    String source1 = imageMetadata1.getSource().toString();
-                    String source2 = imageMetadata2.getSource().toString();
-                    return source1.compareToIgnoreCase(source2);
-                }
-                return key1.compareToIgnoreCase(key2);
-            }
-        });
-        TheSameValueHider propertyNameHider = new TheSameValueHider();
         String output = "";
-        output += "Characterization\n";
-        output += "================\n\n";
-        output += String.format("%s: %sx%s\n", fileName, result.getHeight(), result.getWidth());
-        output += "\nSignificant Properties\n";
-        output += "======================\n\n";
-        String format = String.format("%%-%ds %%-%ds  %%-%ds  %%s\n", keyLength, unitLength, sourceLength);
-        output += String.format(format, "Significant Property", "Unit", "Source", "Value");
-        output += String.format(format,
-                getStringGivenLength(keyLength,'-'),
-                getStringGivenLength(unitLength, '-'),
-                getStringGivenLength(sourceLength,'-'),
-                getStringGivenLength(valueLength,'-'));
-        for (ImageMetadata metadata: result.getMetadata()) {
-            output += String.format(format,
-                    propertyNameHider.getOrHide(metadata.getKey()),
-                    metadata.getUnit() != null ? metadata.getUnit() : "",
-                    metadata.getSource(),
-                    metadata.getValue());
-        }
-        output += String.format(format,
-                getStringGivenLength(keyLength,'-'),
-                getStringGivenLength(unitLength, '-'),
-                getStringGivenLength(sourceLength,'-'),
-                getStringGivenLength(valueLength,'-'));
+        output += "Identification\n";
+        output += "==============\n\n";
+        output += file.getName() + "\n\n";
+        output += reportMetadataList(identificationMetadata);
+
+        output += "\nValidation";
+        output += "\n==========\n\n";
+        output += reportMetadataList(validationMetadata);
+
+        output += "\nCharacterization";
+        output += "\n================\n\n";
+        output += reportMetadataList(characterizationMetadata);
+
+        output += "\nOther properties";
+        output += "\n================\n\n";
+        output += reportMetadataList(otherMetadata);
+
         if( this.includeOutputs ){
             output += "\nRaw outputs of extractors";
             output += "\n=========================\n\n";
@@ -180,6 +162,60 @@ public class TextResultTransformer implements ResultTransformer{
                         this.outputNamer.propertiesSummaryName(file, result)
             );
         }
+        return output;
+    }
+
+    public String reportMetadataList(List<ImageMetadata> metadataList){
+        Integer keyLength = "Significant Property".length();
+        Integer sourceLength = "Source".length();
+        Integer unitLength = "Unit".length();
+        Integer valueLength = "Value".length();
+        PropertiesSummary propertiesSummary = new PropertiesSummary();
+
+        for(ImageMetadata metadata: metadataList){
+            keyLength = Math.max(keyLength, metadata.getKey().length());
+            sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
+            if (metadata.getUnit() != null) unitLength = Math.max(unitLength, metadata.getUnit().length());
+            if (metadata.getValue() != null) valueLength = Math.max(valueLength, metadata.getValue().toString().length());
+            propertiesSummary.addProperty(metadata.getKey());
+        }
+        Collections.sort(metadataList, new Comparator<ImageMetadata>() {
+            @Override
+            public int compare(ImageMetadata imageMetadata1, ImageMetadata imageMetadata2) {
+                String key1 = imageMetadata1.getKey();
+                String key2 = imageMetadata2.getKey();
+                if( key1.compareToIgnoreCase(key2) == 0){
+                    String source1 = imageMetadata1.getSource().toString();
+                    String source2 = imageMetadata2.getSource().toString();
+                    return source1.compareToIgnoreCase(source2);
+                }
+                return key1.compareToIgnoreCase(key2);
+            }
+        });
+        TheSameValueHider propertyNameHider = new TheSameValueHider();
+        String output = "";
+        String format = String.format("%%-%ds %%-%ds  %%-%ds  %%s\n", keyLength, sourceLength, valueLength);
+        output += String.format(format, "Significant Property", "Source", "Value", "Unit");
+        output += String.format(format,
+                getStringGivenLength(keyLength,'-'),
+                getStringGivenLength(sourceLength,'-'),
+                getStringGivenLength(valueLength,'-'),
+                getStringGivenLength(unitLength, '-'));
+
+        for (ImageMetadata metadata: metadataList) {
+            output += String.format(format,
+                    propertyNameHider.getOrHide(metadata.getKey()),
+                    metadata.getSource(),
+                    metadata.getValue(),
+                    metadata.getUnit() != null ? metadata.getUnit() : ""
+                    );
+        }
+        output += String.format(format,
+                getStringGivenLength(keyLength,'-'),
+                getStringGivenLength(sourceLength,'-'),
+                getStringGivenLength(valueLength,'-'),
+                getStringGivenLength(unitLength, '-'));
+
         return output;
     }
 

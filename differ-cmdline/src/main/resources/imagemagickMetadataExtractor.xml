@@ -35,28 +35,77 @@
     	  <entry key="Image/Channel statistics/Image statistics/Compression" value="Compression"/>
     	  <entry key="Image/Channel statistics/Image statistics/Filesize" value="File size"/>
     	  <entry key="Image/Channel statistics/Image statistics/Quality" value="Compression quality"/>
-
-	  <entry key="Image/Channel statistics/Green/kurtosis" value="Color/G/kurtosis"/>
-	  <entry key="Image/Channel statistics/Green/max" value="Color/G/max"/>
-	  <entry key="Image/Channel statistics/Green/min" value="Color/G/min"/>
-	  <entry key="Image/Channel statistics/Green/mean" value="Color/G/mean"/>
-	  <entry key="Image/Channel statistics/Green/skewness" value="Color/G/skewness"/>
-	  <entry key="Image/Channel statistics/Green/standard deviation" value="Color/G/standard deviation"/>
-
-	  <entry key="Image/Channel statistics/Red/kurtosis" value="Color/R/kurtosis"/>
-	  <entry key="Image/Channel statistics/Red/max" value="Color/R/max"/>
-	  <entry key="Image/Channel statistics/Red/min" value="Color/R/min"/>
-	  <entry key="Image/Channel statistics/Red/mean" value="Color/R/mean"/>
-	  <entry key="Image/Channel statistics/Red/skewness" value="Color/R/skewness"/>
-	  <entry key="Image/Channel statistics/Red/standard deviation" value="Color/R/standard deviation"/>
-
-	  <entry key="Image/Channel statistics/Blue/kurtosis" value="Color/B/kurtosis"/>
-	  <entry key="Image/Channel statistics/Blue/max" value="Color/B/max"/>
-	  <entry key="Image/Channel statistics/Blue/min" value="Color/B/min"/>
-	  <entry key="Image/Channel statistics/Blue/mean" value="Color/B/mean"/>
-	  <entry key="Image/Channel statistics/Blue/skewness" value="Color/B/skewness"/>
-	  <entry key="Image/Channel statistics/Blue/standard deviation" value="Color/B/standard deviation"/>
+	  <entry key="Image/Channel statistics/Image statistics/Properties/exif/ImageLength" value="Image height"/>
+	  <entry key="Image/Channel statistics/Image statistics/Properties/exif/ImageWidth" value="Image width"/>
+	  <entry key="Image/Channel statistics/Green/kurtosis" value="Green kurtosis"/>
+	  <entry key="Image/Channel statistics/Green/max" value="Green max"/>
+	  <entry key="Image/Channel statistics/Green/min" value="Green min"/>
+	  <entry key="Image/Channel statistics/Green/mean" value="Green mean"/>
+	  <entry key="Image/Channel statistics/Green/skewness" value="Green skewness"/>
+	  <entry key="Image/Channel statistics/Green/standard deviation" value="Green standard deviation"/>
+	  <entry key="Image/Channel statistics/Red/kurtosis" value="Red kurtosis"/>
+	  <entry key="Image/Channel statistics/Red/max" value="Red max"/>
+	  <entry key="Image/Channel statistics/Red/min" value="Red min"/>
+	  <entry key="Image/Channel statistics/Red/mean" value="Red mean"/>
+	  <entry key="Image/Channel statistics/Red/skewness" value="Red skewness"/>
+	  <entry key="Image/Channel statistics/Red/standard deviation" value="Red standard deviation"/>
+	  <entry key="Image/Channel statistics/Blue/kurtosis" value="Blue kurtosis"/>
+	  <entry key="Image/Channel statistics/Blue/max" value="Blue max"/>
+	  <entry key="Image/Channel statistics/Blue/min" value="Blue min"/>
+	  <entry key="Image/Channel statistics/Blue/mean" value="Blue mean"/>
+	  <entry key="Image/Channel statistics/Blue/skewness" value="Blue skewness"/>
+	  <entry key="Image/Channel statistics/Blue/standard deviation" value="Blue standard deviation"/>
 	  <entry key="Image/Channel statistics/Image statistics/Properties/dc/format" value="MIME type"/>
+	  <entry key="Image/Channel depth/blue" value="Depth of blue channel"/>
+	  <entry key="Image/Channel depth/green" value="Depth of green channel"/>
+	  <entry key="Image/Channel depth/red" value="Depth of red channel"/>
+	  <entry key="Image/Channel statistics/Image statistics/Background color" value="Background color"/>
+	  <entry key="Image/Channel statistics/Image statistics/Border color" value="Border color"/>
+	  <entry key="Image/Channel statistics/Image statistics/Chromaticity/blue primary" value="Primary blue"/>
+	  <entry key="Image/Channel statistics/Image statistics/Chromaticity/green primary" value="Primary green"/>
+	  <entry key="Image/Channel statistics/Image statistics/Chromaticity/red primary" value="Primary red"/>
+	  <entry key="Image/Channel statistics/Image statistics/Chromaticity/white point" value="White point"/>
+	  <entry key="Image/Channel statistics/Image statistics/Compose" value="Compose"/>
+	  <entry key="Image/Channel statistics/Image statistics/Dispose" value="Dispose"/>
+	  <entry key="Image/Channel statistics/Image statistics/Gamma" value="Gamma"/>
+	  <entry key="Image/Channel statistics/Image statistics/Interlace" value="Interlace"/>
+	  <entry key="Image/Channel statistics/Image statistics/Iterations" value="Iterations"/>
+	  <entry key="Image/Channel statistics/Image statistics/Matte color" value="Matte color"/>
+	  <entry key="Image/Channel statistics/Image statistics/Orientation" value="Orientation"/>
+	  <entry key="Image/Channel statistics/Image statistics/Overall/kurtosis" value="Overall kurtosis"/>
+	  <entry key="Image/Channel statistics/Image statistics/Overall/max" value="Overall max"/>
+	  <entry key="Image/Channel statistics/Image statistics/Overall/mean" value="Overall mean"/>
+	  <entry key="Image/Channel statistics/Image statistics/Overall/min" value="Overall min"/>
+	  <entry key="Image/Channel statistics/Image statistics/Overall/skewness" value="Overall skewness"/>
+	  <entry key="Image/Channel statistics/Image statistics/Overall/standard deviation" value="Overall stdev"/>
+	  <entry key="Image/Channel statistics/Image statistics/Page geometry" value="Page geometry"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Artifacts/filename" value="File name"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Artifacts/verbose" value="verbose"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Elapsed time" value="Elapsed time"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Filesize" value="File size"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Number pixels" value="Num of pixels"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Pixels per second" value="Pixels per second"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc" value="ICC Profile"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Copyright" value="Copyright"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Description" value="Description"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Manufacturer" value="ICC Profile manufacturer"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Model" value="ICC Profile model"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Tainted" value="Tainted"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/User time" value="User time"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Version" value="Version"/>
+	  <entry key="Image/Channel statistics/Image statistics/Properties/png" value="PNG"/>
+	  <entry key="Image/Channel statistics/Image statistics/Rendering intent" value="Rendering intent"/>
+	  <entry key="Image/Channel statistics/Image statistics/Transparent color" value="Transparent color"/>
+	  <entry key="Image/Class" value="Class"/>
+	  <entry key="Image/Endianess" value="Endianess"/>
+	  <entry key="Image/Print size" value="Print size"/>
+	  <entry key="Image/Type" value="Color type"/>
+	  <entry key="Image/Units" value="Units"/>
+	  <entry key="Image/Channel statistics/Image statistics/Properties/png/cHRM" value="PNG chrm"/>
+	  <entry key="Image/Channel statistics/Image statistics/Properties/png/gAMA" value="PNG gama"/>
+	  <entry key="Image/Channel statistics/Image statistics/Properties/png/iCCP" value="PNG iccp"/>
+	  <entry key="Image/Channel statistics/Image statistics/Properties/png/pHYs" value="PNG phys"/>
+	  <entry key="Image/Channel statistics/Image statistics/Properties/png/sRGB" value="PNG sRGB"/>
 	</map>
       </property>
 
@@ -64,6 +113,12 @@
 	<map>
 	  <entry key="Type of format" value-ref="typeOfFormatNormalizer"/>
 	  <entry key="Color depth" value-ref="justNumbersNormalizer"/>
+	  <entry key="File name" value-ref="fileNameNormalizer"/>
+	  <entry key="File last modified" value-ref="dateNormalizer"/>
+	  <entry key="File created" value-ref="dateNormalizer"/>
+	  <entry key="Depth of blue channel" value-ref="justNumbersNormalizer"/>
+	  <entry key="Depth of red channel" value-ref="justNumbersNormalizer"/>
+	  <entry key="Depth of green channel" value-ref="justNumbersNormalizer"/>
 	</map>
       </property>
 
@@ -100,6 +155,7 @@
 	  <value>jpf</value>
 	  <value>jpp</value>
 	  <value>djvu</value>
+	  <value>png</value>
 	</list>
       </property>
     </bean>

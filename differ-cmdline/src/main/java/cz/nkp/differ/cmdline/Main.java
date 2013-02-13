@@ -30,12 +30,14 @@ public class Main {
 	 */
 	public static String processFile(ApplicationContext context, File file, ImageProcessorResult result, Boolean isComparison) throws Exception {
 		Jaxb2Marshaller marshaller = (Jaxb2Marshaller) context.getBean("jaxb2Marshaller");
-		TextResultTransformer textResultTransformer = new TextResultTransformer(	new TheSameNameOutputNamer(),
-																					commandArgs.saveOutputs,
-																					commandArgs.saveReport,
-																					commandArgs.saveProperties,
-																					false
-																					);
+		TextResultTransformer textResultTransformer = new TextResultTransformer(
+                context,
+                new TheSameNameOutputNamer(),
+				commandArgs.saveOutputs,
+				commandArgs.saveReport,
+				commandArgs.saveProperties,
+				false
+		);
 		String output = textResultTransformer.transform(file, result);
 		if ( commandArgs.saveReport ) {
 			FileWriter writer = new FileWriter(textResultTransformer.outputNamer.textName(file,result).toString());

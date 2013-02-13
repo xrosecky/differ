@@ -48,7 +48,7 @@ public class ImagemagickTransformer implements ResultTransformer {
         public String value;
 
         public Pattern linePartsRegexp = Pattern.compile("^([ ]*)([A-Za-z0-9\\[\\], \\-_]+):[\\ \\t]*(.*)$");
-        public Pattern subNameRegexp = Pattern.compile("^([a-zA-Z0-9\\[\\],\\-_]+):[ \\t]+(.*)$");
+        public Pattern subNameRegexp = Pattern.compile("^([a-zA-Z0-9\\[\\],\\-_]+)[ ]*:[ \\t]+(.*)$");
 
         LineParts(String line) {
             Matcher headMatcher = linePartsRegexp.matcher(line);

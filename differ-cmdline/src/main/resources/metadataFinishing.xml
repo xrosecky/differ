@@ -19,6 +19,9 @@
     </property>
   </bean>
 
+  <bean id="fileNameNormalizer" class="cz.nkp.differ.compare.metadata.external.result.FileNameNormalizer"/>
+  <bean id="dateNormalizer" class="cz.nkp.differ.compare.metadata.external.result.DateNormalizer"/>
+
   <bean id="typeOfFormatNormalizer" class="cz.nkp.differ.compare.metadata.external.result.RegexpNormalizer">
     <property name="regexp" value="(JPEG|TIFF|PNG|png|jpeg|jpg)"/>
   </bean>
@@ -26,7 +29,7 @@
   <bean id="justNumbersNormalizer" class="cz.nkp.differ.compare.metadata.external.result.RegexpNormalizer">
     <property name="regexp" value="^[ ]*([0-9]+)"/>
   </bean>
-  
+
   <bean id="geometryReplacer" class="cz.nkp.differ.compare.metadata.external.result.RegexpReplacer">
     <property name="regexp" value="([0-9]+)[ ]*x[ ]*([0-9]+)"/>
     <property name="entryNames">
@@ -37,7 +40,5 @@
     </property>
   </bean>
 
-  <bean id="finishingTransformer" class="cz.nkp.differ.compare.metadata.external.ResultFinishingTransformer">
-  </bean>
-  
+  <bean id="finishingTransformer" class="cz.nkp.differ.compare.metadata.external.ResultFinishingTransformer"/>
 </beans>
