@@ -63,7 +63,6 @@ public class TextResultTransformer implements ResultTransformer{
         }
         return "";
     };
-
     @Override
     public String transform(File file, ImageProcessorResult result) {
         String fileName = null;
@@ -72,8 +71,31 @@ public class TextResultTransformer implements ResultTransformer{
         Integer unitLength = "Unit".length();
         Integer valueLength = "Value".length();
         PropertiesSummary propertiesSummary = new PropertiesSummary();
+        List<ImageMetadata>  metadataList = result.getMetadata();
 
-        for(ImageMetadata metadata: result.getMetadata()){
+        /* save special elements */
+        List<ImageMetadata> toRemove = new ArrayList<ImageMetadata>();
+
+        for(ImageMetadata metadata: metadataList){
+            if(metadata.getKey().equalsIgnoreCase("Histogram")){
+                toRemove.add(metadata);
+                saveHistogram(metadata);
+            } else {
+                if( metadata.getKey().equalsIgnoreCase("Clipping path")){
+                    toRemove.add(metadata);
+                    saveClippingPath(metadata);
+                } else {
+                    if (metadata.getKey().equalsIgnoreCase("Colormap")){
+                        toRemove.add(metadata);
+                        saveColorMap(metadata);
+                    }
+                }
+            }
+        }
+        if( !toRemove.isEmpty() ){
+            metadataList.removeAll(toRemove);
+        }
+        for(ImageMetadata metadata: metadataList){
             if( metadata.getKey().equals("File name") ){
                 fileName = (String) metadata.getValue();
             };
@@ -153,12 +175,23 @@ public class TextResultTransformer implements ResultTransformer{
         }
         if( this.saveProperties ){
             output += "\nUsed significant properties";
-            output += "\n===========================\n\n";
-            TreeSet<String> properties = propertiesSummary.getProperties();
-            for(String property: properties){
-                output += String.format("   %s\n", property);
-            }
+            output += "\n===========================\n";
+            output += String.format("\n  `used properties <%s>`_",
+                        this.outputNamer.propertiesSummaryName(file, result)
+            );
         }
         return output;
+    }
+
+    private void saveHistogram(ImageMetadata metadata){
+           /* Todo: doplnit ukladani histogramu do souboru */
+    }
+
+    private void saveClippingPath(ImageMetadata metadata){
+        /* Todo: doplnit ukladani clipping path */
+    }
+
+    private void saveColorMap(ImageMetadata metadata) {
+        /* Todo: */
     }
 }

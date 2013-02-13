@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+  
+  
+  <bean id="resolutionReplacer" class="cz.nkp.differ.compare.metadata.external.result.RegexpReplacer">
+    <property name="regexp" value="([0-9]+)[ ]*x[ ]*([0-9]+)"/>
+    <property name="entryNames">
+      <list>
+	<value>Resolution horizontal</value>
+	<value>Resolution vertical</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="typeOfFormatNormalizer" class="cz.nkp.differ.compare.metadata.external.result.RegexpNormalizer">
+    <property name="regexp" value="(JPEG|TIFF|PNG|png|jpeg|jpg)"/>
+  </bean>
+
+  <bean id="justNumbersNormalizer" class="cz.nkp.differ.compare.metadata.external.result.RegexpNormalizer">
+    <property name="regexp" value="^[ ]*([0-9]+)"/>
+  </bean>
+  
+  <bean id="geometryReplacer" class="cz.nkp.differ.compare.metadata.external.result.RegexpReplacer">
+    <property name="regexp" value="([0-9]+)[ ]*x[ ]*([0-9]+)"/>
+    <property name="entryNames">
+      <list>
+	<value>Image width</value>
+	<value>Image height</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="finishingTransformer" class="cz.nkp.differ.compare.metadata.external.ResultFinishingTransformer">
+  </bean>
+  
+</beans>

@@ -24,7 +24,7 @@
   <xsl:template match="premis:object/premis:objectCharacteristics">
     <property name = "Universal unique identifier (UUID)"><xsl:value-of select="premis:fixity/premis:messageDigest"/></property>
     <property name = "File size"><xsl:value-of select="premis:size"/></property>
-    <property name = "Type of Format"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatName"/></property>    
+    <property name = "Type of format"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatName"/></property>    
     <property name = "Format version"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatVersion"/></property>    
     <xsl:apply-templates/>
   </xsl:template>
@@ -35,8 +35,8 @@
     <property name = "Image height"><xsl:value-of select="mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageHeight"/></property>
     <property name = "Image height"><xsl:value-of select="mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageHeight"/></property>
     <property name = "Color space"><xsl:value-of select="mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:PhotometricInterpretation/mix:colorSpace"/></property>
-    <property name = "Sampling frequency x"><xsl:value-of select="mix:ImageAssessmentMetadata/mix:SpatialMetrics/mix:xSamplingFrequency/mix:numerator"/></property>
-    <property name = "Sampling frequency y"><xsl:value-of select="mix:ImageAssessmentMetadata/mix:SpatialMetrics/mix:ySamplingFrequency/mix:numerator"/></property>
+    <property name = "Resolution horizontal"><xsl:value-of select="mix:ImageAssessmentMetadata/mix:SpatialMetrics/mix:xSamplingFrequency/mix:numerator"/></property>
+    <property name = "Resolution vertical"><xsl:value-of select="mix:ImageAssessmentMetadata/mix:SpatialMetrics/mix:ySamplingFrequency/mix:numerator"/></property>
     <property name = "Bits per sample"><xsl:value-of select="str:concat(mix:ImageAssessmentMetadata/mix:ImageColorEncoding/mix:BitsPerSample/mix:bitsPerSampleValue)"/></property>
     <property name = "Samples per pixel"><xsl:value-of select="mix:ImageAssessmentMetadata/mix:ImageColorEncoding/mix:samplesPerPixel"/></property>
   </xsl:template>

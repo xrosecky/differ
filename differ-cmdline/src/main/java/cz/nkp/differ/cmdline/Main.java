@@ -1,6 +1,7 @@
 package cz.nkp.differ.cmdline;
 
 import com.beust.jcommander.JCommander;
+import cz.nkp.differ.compare.metadata.external.ImagemagickInChainTransformer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
@@ -145,7 +146,7 @@ public class Main {
 		ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"appCtx-differ-cmdline.xml"});
         ImageProcessor processor = (ImageProcessor) context.getBean("imageProcessor");
 
-		JCommander jcommander = new JCommander(commandArgs,args);
+        JCommander jcommander = new JCommander(commandArgs,args);
 		jcommander.setAcceptUnknownOptions(true);
 		if( commandArgs.files.size() > 1){
 			File files[] = new File[2];
@@ -174,5 +175,5 @@ public class Main {
                 System.out.println(processFile(context, file, result, false));
 			}
 		}
-	}
+   }
 }
