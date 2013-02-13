@@ -59,6 +59,30 @@
    * - .. literalinclude:: examples/images_01/02/used-properties.txt
      - .. literalinclude:: examples/images_02/02/used-properties.txt
 
+   * - .. image:: examples/images_01/04.tif
+     - .. image:: examples/images_02/04.jpg
+
+   * - .. literalinclude:: examples/images_01/04/output-exiftool.raw
+     - .. literalinclude:: examples/images_02/04/output-exiftool.raw
+
+   * - .. literalinclude:: examples/images_01/04/output-exiv2.raw
+     - .. literalinclude:: examples/images_02/04/output-exiv2.raw
+
+   * - .. literalinclude:: examples/images_01/04/output-fits.raw
+     - .. literalinclude:: examples/images_02/04/output-fits.raw
+
+   * - .. literalinclude:: examples/images_01/04/output-jhove.raw
+     - .. literalinclude:: examples/images_02/04/output-jhove.raw
+
+   * - .. literalinclude:: examples/images_01/04/output-imagemagick.raw
+     - .. literalinclude:: examples/images_02/04/output-imagemagick.raw
+
+   * - .. literalinclude:: examples/images_01/04/report.txt
+     - .. literalinclude:: examples/images_02/04/report.txt
+
+   * - .. literalinclude:: examples/images_01/04/used-properties.txt
+     - .. literalinclude:: examples/images_02/04/used-properties.txt
+
      
    
 		
