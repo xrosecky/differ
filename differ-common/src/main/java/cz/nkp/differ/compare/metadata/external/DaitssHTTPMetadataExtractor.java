@@ -1,5 +1,6 @@
 package cz.nkp.differ.compare.metadata.external;
 
+import cz.nkp.differ.compare.metadata.AbstractMetadataExtractor;
 import cz.nkp.differ.compare.metadata.ImageMetadata;
 import cz.nkp.differ.compare.metadata.MetadataExtractor;
 import cz.nkp.differ.compare.metadata.MetadataSource;
@@ -14,19 +15,15 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
  * User: stavel
  * Date: 23.1.13
  * Time: 18:41
- * To change this template use File | Settings | File Templates.
  */
-public class DaitssHTTPMetadataExtractor implements MetadataExtractor {
+public class DaitssHTTPMetadataExtractor extends AbstractMetadataExtractor {
     private String url;
     private ResultTransformer transformer;
     private Map<String, String> units;
@@ -59,6 +56,9 @@ public class DaitssHTTPMetadataExtractor implements MetadataExtractor {
 
     @Override
     public List<ImageMetadata> getMetadata(File imageFile) {
+        if ( !super.isSupported(imageFile)) {
+            return Collections.emptyList();
+        };
         HttpPost httpPost = new HttpPost(this.url);
         httpPost.setEntity(this.getEntity(imageFile));
         HttpClient client = new DefaultHttpClient();

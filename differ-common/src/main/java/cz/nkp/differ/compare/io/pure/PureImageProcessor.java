@@ -95,7 +95,7 @@ public class PureImageProcessor extends ImageProcessor {
 
         String fileName = image.toString();
         String fileExtension = fileName.substring(fileName.lastIndexOf(".")+1).toLowerCase();
-        for (MetadataExtractor extractor : extractors.getExtractorsByFileExtension().get(fileExtension)) {
+        for (MetadataExtractor extractor : extractors.getExtractors()) {
             tasks.add(new ImageMetadataTask(extractor, image));
         }
         List<Future<List<ImageMetadata>>> futures = execute(tasks);

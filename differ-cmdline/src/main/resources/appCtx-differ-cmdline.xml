@@ -124,6 +124,19 @@
     	</list>
       </property>
       <property name="units" ref="units"/>
+      <property name="supportedFileExtensions">
+	<list>
+	  <value>tiff</value>
+	  <value>tif</value>
+	  <value>jpeg</value>
+	  <value>jpg</value>
+	  <value>jp2000</value>
+	  <value>jp2</value>
+	  <value>jpf</value>
+	  <value>jpp</value>
+	  <value>djvu</value>
+	</list>
+      </property>
     </bean>
     
     <!-- imagemagick (identify) -->
@@ -157,6 +170,12 @@
     	    </list>
     	</property>
     	<property name="units" ref="units"/>
+      <property name="supportedFileExtensions">
+	<list>
+	  <value>djvu</value>
+	</list>
+      </property>
+
     </bean>
 
     <!-- exiv2 -->
@@ -190,6 +209,20 @@
 	</list>
       </property>
       <property name="units" ref="units"/>
+      <property name="supportedFileExtensions">
+	<list>
+	  <value>tiff</value>
+	  <value>tif</value>
+	  <value>jpeg</value>
+	  <value>jpg</value>
+	  <value>jp2000</value>
+	  <value>jp2</value>
+	  <value>jpf</value>
+	  <value>jpp</value>
+	  <value>djvu</value>
+	</list>
+      </property>
+
     </bean>
 
 
@@ -211,6 +244,20 @@
 	</list>
       </property>
       <property name="units" ref="units"/>
+      <property name="supportedFileExtensions">
+	<list>
+	  <value>tiff</value>
+	  <value>tif</value>
+	  <value>jpeg</value>
+	  <value>jpg</value>
+	  <value>jp2000</value>
+	  <value>jp2</value>
+	  <value>jpf</value>
+	  <value>jpp</value>
+	  <value>djvu</value>
+	</list>
+      </property>
+
     </bean>
 
     <!-- jpylyzer -->
@@ -228,6 +275,15 @@
 	</list>
       </property>
       <property name="units" ref="units"/>
+      <property name="supportedFileExtensions">
+	<list>
+	  <value>jp2000</value>
+	  <value>jp2</value>
+	  <value>jpf</value>
+	  <value>jpp</value>
+	</list>
+      </property>
+
     </bean>
     
     <!-- Jhove -->
@@ -247,25 +303,20 @@
 	</list>
       </property>
       <property name="units" ref="units"/>
+      <property name="supportedFileExtensions">
+	<list>
+	  <value>tiff</value>
+	  <value>tif</value>
+	  <value>jpeg</value>
+	  <value>jpg</value>
+	  <value>jp2000</value>
+	  <value>jp2</value>
+	  <value>jpf</value>
+	  <value>jpp</value>
+	  <value>djvu</value>
+	</list>
+      </property>
     </bean>
-
-    <util:list id="tiffExtractors">
-      <ref bean="imagemagickMetadataExtractor"/>
-      <ref bean="daitssHTTPMetadataExtractor"/>
-      <ref bean="exiftoolMetadataExtractor"/>
-      <ref bean="exiv2MetadataExtractor"/>
-      <ref bean="fitsMetadataExtractor"/>
-      <ref bean="jhoveMetadataExtractor"/>
-    </util:list>
-
-    <util:list id="jpegExtractors">
-      <ref bean="imagemagickMetadataExtractor"/>
-      <ref bean="daitssHTTPMetadataExtractor"/>
-      <ref bean="exiftoolMetadataExtractor"/>
-      <ref bean="exiv2MetadataExtractor"/>
-      <ref bean="fitsMetadataExtractor"/>
-      <ref bean="jhoveMetadataExtractor"/>
-    </util:list>
 
     <bean id="metadataExtractors" class="cz.nkp.differ.compare.metadata.MetadataExtractors">
 	<property name="extractors">
@@ -279,14 +330,6 @@
 	      <ref bean="daitssHTTPMetadataExtractor"/>
 	      <ref bean="imagemagickMetadataExtractor"/>
 	    </list>
-	</property>
-	<property name="extractorsByFileExtension">
-	  <map>
-	    <entry key="tif"  value-ref="tiffExtractors"/>
-	    <entry key="tiff" value-ref="tiffExtractors"/>
-	    <entry key="jpg"  value-ref="jpegExtractors"/>
-	    <entry key="jpeg" value-ref="jpegExtractors"/>
-	  </map>
 	</property>
     </bean>
 
