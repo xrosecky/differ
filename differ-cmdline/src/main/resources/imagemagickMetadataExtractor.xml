@@ -96,6 +96,7 @@
 	  <entry key="Image/Channel statistics/Image statistics/Properties/png" value="PNG"/>
 	  <entry key="Image/Channel statistics/Image statistics/Rendering intent" value="Rendering intent"/>
 	  <entry key="Image/Channel statistics/Image statistics/Transparent color" value="Transparent color"/>
+	  <entry key="Image/Channel statistics/Image statistics/Artifacts/verbose" value="Verbose"/>
 	  <entry key="Image/Class" value="Class"/>
 	  <entry key="Image/Endianess" value="Endianess"/>
 	  <entry key="Image/Print size" value="Print size"/>
@@ -126,8 +127,11 @@
 	<map>
 	  <entry key="Image/Resolution" value-ref="resolutionReplacer"/>
 	  <entry key="Image/Geometry" value-ref="geometryReplacer"/>
+	  <entry key="Image/Channel statistics/Image statistics/Properties/exif/NativeDigest" value-ref="entryRemover"/>
+	  <entry key="Image/Channel statistics/Image statistics/Properties/tiff/NativeDigest" value-ref="entryRemover"/>
 	</map>
       </property>
+
     </bean>
 
     

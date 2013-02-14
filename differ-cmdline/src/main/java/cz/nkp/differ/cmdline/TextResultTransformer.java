@@ -111,7 +111,7 @@ public class TextResultTransformer implements ResultTransformer{
         String output = "";
         output += "Identification\n";
         output += "==============\n\n";
-        output += file.getName() + "\n\n";
+        output += String.format("%s: %sx%s\n\n",file.getName().toString(),result.getWidth(),result.getHeight());
         output += reportMetadataList(identificationMetadata);
 
         output += "\nValidation";

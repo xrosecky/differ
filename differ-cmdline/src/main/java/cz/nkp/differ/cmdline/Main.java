@@ -64,7 +64,8 @@ public class Main {
 	public static String processFiles(ApplicationContext context, File file[], ImageProcessorResult results[]) throws Exception {
 		String output = "";
 		Jaxb2Marshaller marshaller = (Jaxb2Marshaller) context.getBean("jaxb2Marshaller");
-		TextCompareResultTransformer textCompareResultTransformer =	new TextCompareResultTransformer( new TheSameNameOutputNamer(),
+		TextCompareResultTransformer textCompareResultTransformer =	new TextCompareResultTransformer(context,
+                new TheSameNameOutputNamer(),
 																									  commandArgs.saveOutputs,
 																									  commandArgs.saveReport,
 																									  commandArgs.saveProperties,
@@ -81,7 +82,9 @@ public class Main {
 
             List<SerializableImageProcessorResult> resultsForSerialization = new ArrayList<SerializableImageProcessorResult>();
             for (ImageProcessorResult result : results) {
-                resultsForSerialization.add(SerializableImageProcessorResult.create(result, false));
+                if( result != null ){
+                    resultsForSerialization.add(SerializableImageProcessorResult.create(result, false));
+                };
             }
             SerializableImageProcessorResults serializableResults = new SerializableImageProcessorResults(resultsForSerialization);
             StreamResult streamResult = new StreamResult(writer);
@@ -157,12 +160,15 @@ public class Main {
 			if( files[0].isDirectory() && files[1].isDirectory()){
 				ArrayList<File[]> pairs = getPairsToCompare(files);
 				for( File[] fpair: pairs){
+                    System.out.println(String.format("processing: \t%s\n\t\t%s", fpair[0], fpair[1]));
                     ImageProcessorResult[] results = processor.processImages(fpair[0], fpair[1]);
-					System.out.println(String.format("processing: \t%s\n\t\t%s\n", fpair[0], fpair[1]));
+					System.out.println(String.format("   process results: \t%s",fpair[0]));
                     processFile(context, fpair[0], results[0], true);
+                    System.out.println(String.format("   process results: \t%s",fpair[1]));
                     processFile(context, fpair[1], results[1], true);
+                    System.out.println(String.format("   process compare results"));
                     processFiles(context, fpair, results);
-				}
+ 				}
 				System.out.println("Done\n");
 			} else {
                 ImageProcessorResult[] results = processor.processImages(files[0], files[1]);

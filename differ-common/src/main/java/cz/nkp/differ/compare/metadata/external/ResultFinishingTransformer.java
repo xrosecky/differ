@@ -3,6 +3,7 @@ package cz.nkp.differ.compare.metadata.external;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,6 +17,7 @@ public class ResultFinishingTransformer {
     private HashMap<String,String> mapOfEntryNames;
     private HashMap<String,ResultEntryValueTransformer> entryTransformers;
     private HashMap<String,ResultEntryReplacer> entryReplacers;
+    private Set<String> aux = null;
 
     public List<ResultTransformer.Entry> transform(List<ResultTransformer.Entry> metadataList){
         List<ResultTransformer.Entry> toRemove = new ArrayList<ResultTransformer.Entry>();
@@ -23,21 +25,25 @@ public class ResultFinishingTransformer {
 
         for(ResultTransformer.Entry entry: metadataList){
             String key=entry.getKey();
-            String newKey = mapOfEntryNames.get(key);
-            if( newKey != null ){
-                key = newKey;
-                entry.setKey(newKey);
-            }
-            String value=entry.getValue();
-            if( entryTransformers.containsKey(key) ){
-                String newValue = entryTransformers.get(key).transform(value);
-                if ( newValue != null ){
-                    entry.setValue(newValue);
-                };
-            }
-            if( entryReplacers.containsKey(key)){
-                toAdd.addAll(entryReplacers.get(key).replace(entry));
+            if( aux != null && aux.contains(key)){
                 toRemove.add(entry);
+            } else {
+                String newKey = mapOfEntryNames.get(key);
+                if( newKey != null ){
+                    key = newKey;
+                    entry.setKey(newKey);
+                }
+                String value=entry.getValue();
+                if( entryTransformers.containsKey(key) ){
+                    String newValue = entryTransformers.get(key).transform(value);
+                    if ( newValue != null ){
+                        entry.setValue(newValue);
+                    };
+                }
+                if( entryReplacers.containsKey(key)){
+                    toAdd.addAll(entryReplacers.get(key).replace(entry));
+                    toRemove.add(entry);
+                }
             }
         }
         if( ! toRemove.isEmpty() ){
@@ -66,6 +72,4 @@ public class ResultFinishingTransformer {
     public HashMap<String,ResultEntryReplacer> getEntryReplacers(){
         return entryReplacers;
     }
-
-
 }

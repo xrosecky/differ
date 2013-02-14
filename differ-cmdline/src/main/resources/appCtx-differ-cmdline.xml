@@ -87,58 +87,7 @@
     </bean>
 
     <!-- exiftool -->
-    <bean id="exiftoolMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
-      <property name="mapOfRegexp">
-    	<map>
-    	  <entry key="File size"        value="File Size[\ \t]*:[\ \t]*(.+)"/>
-    	  <entry key="Type of format"        value="File Type[\ \t]*:[\ \t]*(.+)"/>
-    	  <entry key="MIME type"        value="MIME Type[\ \t]*:[\ \t]*(.+)"/>
-    	  <entry key="Software type"    value="Software[\ \t]*:[\ \t]*(.+)"/>
-    	  <entry key="File last modified"    value="File Modification Date/Time[\ \t]*:[\ \t]*(.+)"/>
-    	  <entry key="Image width"      value="^[\ \t]*Image Width[\ \t]*:[\ \t]*([0-9]+)"/>
-    	  <entry key="Image height"     value="^[\ \t]*Image Height[\ \t]*:[\ \t]*([0-9]+)"/>
-    	  <entry key="Resolution horizontal"     value="X Resolution[\ \t]*:[\ \t]*(.*)"/>
-    	  <entry key="Resolution vertical"     value="Y Resolution[\ \t]*:[\ \t]*(.*)"/>
-    	  <entry key="Resolution unit"  value="Resolution Unit[\ \t]*:[\ \t]*(.*)"/>
-    	  <entry key="Univerzal unique identifier (UUID)"   value="Image Unique ID[\ \t]*:[\ \t]*(.*)"/>
-    	  <entry key="Compression" value="Compression[\ \t]*:[\ \t]*(.*)"/>
-    	  <entry key="Encoding process" value="Encoding Process[\ \t]*:[\ \t]*(.*)"/>
-    	  <entry key="Color depth"   value="Bits Per Sample[\ \t]*:[\ \t]*([0-9]*)"/>
-    	  <entry key="Number of channels"   value="Color Components[\ \t]*:[\ \t]*([0-9]*)"/>
-    	  <entry key="Color space"   value="Color Space[\ \t]*:[\ \t]*(.*)"/>
-    	</map>
-      </property>
-      <property name="listOfRegexp">
-    	<list>
-	  <value>([^:]+):([^:]+)</value>
-    	</list>
-      </property>
-    </bean>
-    
-    <bean id="exiftoolMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-      <property name="source" value="exiftool"/>
-      <property name="transformer" ref="exiftoolMetadataTransformer"/>
-      <property name="programArguments">
-    	<list>
-    	  <value>${exiftool.binary}</value>
-    	  <value>{file}</value>
-    	</list>
-      </property>
-      <property name="units" ref="units"/>
-      <property name="supportedFileExtensions">
-	<list>
-	  <value>tiff</value>
-	  <value>tif</value>
-	  <value>jpeg</value>
-	  <value>jpg</value>
-	  <value>jp2000</value>
-	  <value>jp2</value>
-	  <value>jpf</value>
-	  <value>jpp</value>
-	  <value>djvu</value>
-	</list>
-      </property>
-    </bean>
+    <import resource="exiftoolMetadataExtractor.xml"/>
     
     <!-- imagemagick (identify) -->
     <import resource="imagemagickMetadataExtractor.xml"/>
@@ -180,52 +129,7 @@
     </bean>
 
     <!-- exiv2 -->
-    <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
-      <property name="mapOfRegexp">
-	<map>
-	  <entry key="Image width"            value="Image size      : ([0-9]+) x [0-9]+"/>
-	  <entry key="Image height"           value="Image size      : [0-9]+ x ([0-9]+)"/>
-	  <entry key="Resolution horizontal"     value="Exif Resolution : ([0-9]+) x [0-9]+"/>
-	  <entry key="Resolution vertical"       value="Exif Resolution : [0-9]+ x ([0-9]+)"/>
-	  <entry key="MIME type"                       value="MIME type       : (.*)"/>
-	  <entry key="File name"                       value="File name       : (.*)"/>
-	  <entry key="File path"                       value="File name       : (.*)"/>
-	  <entry key="File size"                       value="File size       : ([0-9]+)"/>
-	</map>
-      </property>
-      <property name="listOfRegexp">
-	<list>
-	  <value>([^:]+):([^:]+)</value>
-	</list>
-      </property>
-    </bean>
-    <bean id="exiv2MetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-      <property name="source" value="exiv2"/>
-      <property name="transformer" ref="exiv2MetadataTransformer"/>
-      <property name="programArguments">
-	<list>
-	  <value>${exiv2.binary}</value>
-	  <value>print</value>
-	  <value>{file}</value>
-	</list>
-      </property>
-      <property name="units" ref="units"/>
-      <property name="supportedFileExtensions">
-	<list>
-	  <value>tiff</value>
-	  <value>tif</value>
-	  <value>jpeg</value>
-	  <value>jpg</value>
-	  <value>jp2000</value>
-	  <value>jp2</value>
-	  <value>jpf</value>
-	  <value>jpp</value>
-	  <value>djvu</value>
-	</list>
-      </property>
-
-    </bean>
-
+    <import resource="exiv2MetadataExtractor.xml"/>
 
     <!-- daitss -->
     <import resource="daitssMetadataExtractor.xml"/>
