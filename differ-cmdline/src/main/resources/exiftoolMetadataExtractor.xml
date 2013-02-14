@@ -59,16 +59,19 @@
     	  <entry key="Univerzal unique identifier (UUID)"   value="Image Unique ID[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Compression" value="Compression[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Encoding process" value="Encoding Process[\ \t]*:[\ \t]*(.*)"/>
-    	  <entry key="Color depth"   value="Bits Per Sample[\ \t]*:[\ \t]*([0-9]*)"/>
+    	  <entry key="Color depth"   value="Bit Depth[\ \t]*:[\ \t]*([0-9]*)"/>
+   	  <entry key="Color depth"   value="Bits Per Sample[\ \t]*:[\ \t]*([0-9]*)"/>
     	  <entry key="Number of channels"   value="Color Components[\ \t]*:[\ \t]*([0-9]*)"/>
     	  <entry key="Color space"   value="Color Space[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Compression quality"   value="Photoshop Quality[\ \t]*:[\ \t]*([0-9]*)"/>
     	  <entry key="File path"   value="Directory[\ \t]*:[\ \t]*([0-9]*)"/>
+    	  <entry key="ICC Profile"   value="Profile Description[\ \t]*:[\ \t]*([0-9]*)"/>
+	  <entry key="Color space"   value="Device Model[\ \t]*:[\ \t]*([0-9]*)"/>
     	</map>
       </property>
       <property name="listOfRegexp">
     	<list>
-	  <value>([^:]+):([^:]+)</value>
+	  <value>([^:]+)[\ \t]*:[ \t]*([^:]+)</value>
     	</list>
       </property>
     </bean>
