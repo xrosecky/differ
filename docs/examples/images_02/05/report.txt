@@ -121,13 +121,13 @@ Code block width                                                                
 Color Mode                                                                            exiftool     RGB                                                             
 Color Transform                                                                       exiftool     YCbCr                                                           
 Compose                                                                               imagemagick  Over                                                            
-Compression quality                                                                   imagemagick  99                                                              
+Compression quality                                                                   exiftool     12                                                              
+                                                                                      imagemagick  99                                                              
 Create Date                                                                           exiftool     2012                                                            
 DCT Encode Version                                                                    exiftool     100                                                             
 Depth of blue channel                                                                 imagemagick  8                                                               
 Depth of green channel                                                                imagemagick  8                                                               
 Depth of red channel                                                                  imagemagick  8                                                               
-Directory                                                                             exiftool     /opt/differ/differ-cmdline/../docs/examples/images_02           
 Displayed Units X                                                                     exiftool     inches                                                          
 Displayed Units Y                                                                     exiftool     inches                                                          
 Dispose                                                                               imagemagick  Undefined                                                       
@@ -162,9 +162,9 @@ History Instance ID                                                             
 History When                                                                          exiftool     2012                                                            
 ICC Profile Version                                                                   fits                                                                         
 Image Size                                                                            exiftool     512x512                                                         
-Image/Channel statistics/Image statistics/Elapsed time                                imagemagick  0:01.040                                                        
+Image/Channel statistics/Image statistics/Elapsed time                                imagemagick  0:01.070                                                        
 Image/Channel statistics/Image statistics/Number pixels                               imagemagick  262K                                                            
-Image/Channel statistics/Image statistics/Pixels per second                           imagemagick  6.554MB                                                         
+Image/Channel statistics/Image statistics/Pixels per second                           imagemagick  3.745MB                                                         
 Image/Channel statistics/Image statistics/Profiles/Profile-8bim                       imagemagick  9594 bytes                                                      
 Image/Channel statistics/Image statistics/Profiles/Profile-exif                       imagemagick  7892 bytes                                                      
 Image/Channel statistics/Image statistics/Profiles/Profile-xmp                        imagemagick  3502 bytes                                                      
@@ -188,7 +188,7 @@ Image/Channel statistics/Image statistics/Properties/exif/YResolution           
 Image/Channel statistics/Image statistics/Properties/jpeg/colorspace                  imagemagick  2                                                               
 Image/Channel statistics/Image statistics/Properties/jpeg/sampling-factor             imagemagick  1x1,1x1,1x1                                                     
 Image/Channel statistics/Image statistics/Tainted                                     imagemagick  False                                                           
-Image/Channel statistics/Image statistics/User time                                   imagemagick  0.030u                                                          
+Image/Channel statistics/Image statistics/User time                                   imagemagick  0.020u                                                          
 Image/Channel statistics/Image statistics/Version                                     imagemagick  ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org  
 Instance ID                                                                           exiftool     xmp.iid                                                         
 Interlace                                                                             imagemagick  None                                                            
@@ -213,7 +213,6 @@ Overall stdev                                                                   
 Page geometry                                                                         imagemagick  512x512+0+0                                                     
 Photometric Interpretation                                                            exiftool     RGB                                                             
 Photoshop Format                                                                      exiftool     Standard                                                        
-Photoshop Quality                                                                     exiftool     12                                                              
 Photoshop Thumbnail                                                                   exiftool     (Binary data 7496 bytes, use -b option to extract)              
 Planar Configuration                                                                  exiftool     Chunky                                                          
 Primary blue                                                                          imagemagick  (0.15,0.06)                                                     

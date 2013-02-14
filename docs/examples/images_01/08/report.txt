@@ -120,7 +120,8 @@ Code block width                                                                
 Color Mode                                                                            exiftool     RGB                                                             
 Color Transform                                                                       exiftool     YCbCr                                                           
 Compose                                                                               imagemagick  Over                                                            
-Compression quality                                                                   imagemagick  91                                                              
+Compression quality                                                                   exiftool     8                                                               
+                                                                                      imagemagick  91                                                              
 Copyright Flag                                                                        exiftool     False                                                           
 Create Date                                                                           exiftool     2010                                                            
 Creator Tool                                                                          exiftool     Adobe Photoshop CS2 Windows                                     
@@ -130,7 +131,6 @@ Depth of green channel                                                          
 Depth of red channel                                                                  imagemagick  8                                                               
 Derived From Document ID                                                              exiftool     uuid                                                            
 Derived From Instance ID                                                              exiftool     uuid                                                            
-Directory                                                                             exiftool     /opt/differ/differ-cmdline/../docs/examples/images_01           
 Displayed Units X                                                                     exiftool     inches                                                          
 Displayed Units Y                                                                     exiftool     inches                                                          
 Dispose                                                                               imagemagick  Undefined                                                       
@@ -162,9 +162,9 @@ Green skewness                                                                  
 Green standard deviation                                                              imagemagick  72.1208 (0.282826)                                              
 ICC Profile Version                                                                   fits                                                                         
 Image Size                                                                            exiftool     1810x2126                                                       
-Image/Channel statistics/Image statistics/Elapsed time                                imagemagick  0:01.519                                                        
+Image/Channel statistics/Image statistics/Elapsed time                                imagemagick  0:01.719                                                        
 Image/Channel statistics/Image statistics/Number pixels                               imagemagick  3.848M                                                          
-Image/Channel statistics/Image statistics/Pixels per second                           imagemagick  7.4MB                                                           
+Image/Channel statistics/Image statistics/Pixels per second                           imagemagick  5.345MB                                                         
 Image/Channel statistics/Image statistics/Profiles/Profile-8bim                       imagemagick  6992 bytes                                                      
 Image/Channel statistics/Image statistics/Profiles/Profile-exif                       imagemagick  5045 bytes                                                      
 Image/Channel statistics/Image statistics/Profiles/Profile-xmp                        imagemagick  14912 bytes                                                     
@@ -222,7 +222,6 @@ Overall skewness                                                                
 Overall stdev                                                                         imagemagick  65.3822 (0.256401)                                              
 Page geometry                                                                         imagemagick  1810x2126+0+0                                                   
 Photoshop Format                                                                      exiftool     Progressive                                                     
-Photoshop Quality                                                                     exiftool     8                                                               
 Photoshop Thumbnail                                                                   exiftool     (Binary data 4737 bytes, use -b option to extract)              
 Primary blue                                                                          imagemagick  (0.15,0.06)                                                     
 Primary green                                                                         imagemagick  (0.3,0.6)                                                       

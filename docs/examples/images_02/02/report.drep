@@ -109,12 +109,6 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Directory</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_02</value>
-            <conflict>false</conflict>
-            <source>exiftool</source>
-        </metadata>
-        <metadata>
             <key>File size</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">154 kB</value>
             <conflict>true</conflict>
@@ -279,7 +273,7 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Photoshop Quality</key>
+            <key>Compression quality</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12</value>
             <conflict>false</conflict>
             <source>exiftool</source>
@@ -1187,19 +1181,19 @@
         </metadata>
         <metadata>
             <key>Image/Channel statistics/Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">6.554MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">13.11MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Image/Channel statistics/User time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.000u</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.010u</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Image/Channel statistics/Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.039</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.019</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1777,9 +1771,9 @@
   Tainted: False
   Filesize: 158KB
   Number pixels: 262K
-  Pixels per second: 6.554MB
-  User time: 0.000u
-  Elapsed time: 0:01.039
+  Pixels per second: 13.11MB
+  User time: 0.010u
+  Elapsed time: 0:01.019
   Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
 </stdout>
             <stderr></stderr>
@@ -1787,7 +1781,7 @@
         <source source="jhove" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-02-14T14:14:21+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-14T15:48:00+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_02/02.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-13T06:21:49+01:00&lt;/lastModified&gt;
@@ -1962,7 +1956,7 @@
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130214-1949-vxmmp4-0.jpg&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130214-1949-vlzc44-0.jpg&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -2049,7 +2043,7 @@
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-14T08:18:22-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-02-14T09:52:01-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -2061,7 +2055,7 @@
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130214-1949-vxmmp4-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130214-1949-vlzc44-0.jpg&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
@@ -2142,6 +2136,10 @@ Thumbnail Image                 : (Binary data 6527 bytes, use -b option to extr
 </stdout>
             <stderr></stderr>
         </source>
+        <source source="core" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
         <source source="exiv2" exitCode="0">
             <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_02/02.jpg
 File size       : 158027 Bytes
@@ -2172,13 +2170,9 @@ Exif comment    :
 </stdout>
             <stderr></stderr>
         </source>
-        <source source="core" exitCode="0">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
         <source source="fits" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 14:14"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 15:48"&gt;
   &lt;identification&gt;
     &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.11" /&gt;

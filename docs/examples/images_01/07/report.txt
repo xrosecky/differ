@@ -125,7 +125,8 @@ Code block width                                                                
 Color Space Data                                                                      exiftool     RGB                                                             
 Color Transform                                                                       exiftool     YCbCr                                                           
 Compose                                                                               imagemagick  Over                                                            
-Compression quality                                                                   imagemagick  92                                                              
+Compression quality                                                                   exiftool     9                                                               
+                                                                                      imagemagick  92                                                              
 Connection Space Illuminant                                                           exiftool     0.9642 1 0.82491                                                
 Copyright                                                                             imagemagick  Copyright (c) 1998 Hewlett-Packard Company                      
 Copyright Flag                                                                        exiftool     False                                                           
@@ -143,7 +144,6 @@ Device Manufacturer                                                             
 Device Mfg Desc                                                                       exiftool     IEC http                                                        
 Device Model                                                                          exiftool     sRGB                                                            
 Device Model Desc                                                                     exiftool     IEC 61966-2.1 Default RGB colour space - sRGB                   
-Directory                                                                             exiftool     /opt/differ/differ-cmdline/../docs/examples/images_01           
 Displayed Units X                                                                     exiftool     inches                                                          
 Displayed Units Y                                                                     exiftool     inches                                                          
 Dispose                                                                               imagemagick  Undefined                                                       
@@ -179,9 +179,9 @@ ICC Profile manufacturer                                                        
 ICC Profile model                                                                     imagemagick  IEC 61966-2.1 Default RGB colour space - sRGB                   
 ICC Profile Version                                                                   fits         2.1.0                                                           
 Image Size                                                                            exiftool     2000x1346                                                       
-Image/Channel statistics/Image statistics/Elapsed time                                imagemagick  0:01.519                                                        
+Image/Channel statistics/Image statistics/Elapsed time                                imagemagick  0:01.469                                                        
 Image/Channel statistics/Image statistics/Number pixels                               imagemagick  2.692M                                                          
-Image/Channel statistics/Image statistics/Pixels per second                           imagemagick  5.177MB                                                         
+Image/Channel statistics/Image statistics/Pixels per second                           imagemagick  5.728MB                                                         
 Image/Channel statistics/Image statistics/Profiles/Profile-8bim                       imagemagick  9692 bytes                                                      
 Image/Channel statistics/Image statistics/Profiles/Profile-exif                       imagemagick  8479 bytes                                                      
 Image/Channel statistics/Image statistics/Profiles/Profile-xmp                        imagemagick  6425 bytes                                                      
@@ -244,7 +244,6 @@ Overall skewness                                                                
 Overall stdev                                                                         imagemagick  54.527 (0.213831)                                               
 Page geometry                                                                         imagemagick  2000x1346+0+0                                                   
 Photoshop Format                                                                      exiftool     Optimised                                                       
-Photoshop Quality                                                                     exiftool     9                                                               
 Photoshop Thumbnail                                                                   exiftool     (Binary data 8171 bytes, use -b option to extract)              
 Primary blue                                                                          imagemagick  (0.15,0.06)                                                     
 Primary green                                                                         imagemagick  (0.3,0.6)                                                       

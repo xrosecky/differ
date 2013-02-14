@@ -109,12 +109,6 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Directory</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/opt/differ/differ-cmdline/../docs/examples/images_01</value>
-            <conflict>false</conflict>
-            <source>exiftool</source>
-        </metadata>
-        <metadata>
             <key>File size</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">768 kB</value>
             <conflict>true</conflict>
@@ -774,7 +768,7 @@
         </metadata>
         <metadata>
             <key>Image/Channel statistics/Image statistics/Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">26.21MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">13.11MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -786,7 +780,7 @@
         </metadata>
         <metadata>
             <key>Image/Channel statistics/Image statistics/Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.009</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.019</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -826,60 +820,62 @@
         </metadata>
     </metadata-list>
     <sources-list>
-        <source source="fits" exitCode="0">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 14:16"&gt;
-  &lt;identification&gt;
-    &lt;identity format="Tagged Image File Format" mimetype="image/tiff" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="Jhove" toolversion="1.5" /&gt;
-      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;tool toolname="ffident" toolversion="0.2" /&gt;
-      &lt;version toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;5.0&lt;/version&gt;
-      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;3&lt;/version&gt;
-      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;4&lt;/version&gt;
-      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;6&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/7&lt;/externalIdentifier&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/8&lt;/externalIdentifier&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/9&lt;/externalIdentifier&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/10&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;786572&lt;/size&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:13 06:21:48+01:00&lt;/lastmodified&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/06.tif&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/06.tif&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7278246cf26b76e0ca398e7f739b527e&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360732908000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus&gt;
-    &lt;well-formed toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/well-formed&gt;
-    &lt;valid toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/valid&gt;
-  &lt;/filestatus&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;byteOrder toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;big endian&lt;/byteOrder&gt;
-      &lt;compressionScheme toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;Uncompressed&lt;/compressionScheme&gt;
-      &lt;compressionScheme toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;65536&lt;/compressionScheme&gt;
-      &lt;imageWidth toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageWidth&gt;
-      &lt;imageWidth toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageHeight&gt;
-      &lt;imageHeight toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageHeight&gt;
-      &lt;colorSpace toolname="Jhove" toolversion="1.5"&gt;RGB&lt;/colorSpace&gt;
-      &lt;referenceBlackWhite toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;0.0 255.0 0.0 255.0 0.0 255.0&lt;/referenceBlackWhite&gt;
-      &lt;orientation toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;normal*&lt;/orientation&gt;
-      &lt;samplingFrequencyUnit toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;bitsPerSample toolname="Jhove" toolversion="1.5"&gt;8 8 8&lt;/bitsPerSample&gt;
-      &lt;samplesPerPixel toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;3&lt;/samplesPerPixel&gt;
-      &lt;samplesPerPixel toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;196608&lt;/samplesPerPixel&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
+        <source source="exiftool" exitCode="0">
+            <stdout>ExifTool Version Number         : 8.60
+File Name                       : 06.tif
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
+File Size                       : 768 kB
+File Modification Date/Time     : 2013:02:13 06:21:48+01:00
+File Permissions                : rw-r--r--
+File Type                       : TIFF
+MIME Type                       : image/tiff
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Subfile Type                    : Full-resolution Image
+Image Width                     : 512
+Image Height                    : 512
+Bits Per Sample                 : 8 8 8
+Compression                     : Uncompressed
+Photometric Interpretation      : RGB
+Strip Offsets                   : 8
+Samples Per Pixel               : 3
+Strip Byte Counts               : 786432
+Planar Configuration            : Chunky
+Image Size                      : 512x512
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="exiv2" exitCode="0">
+            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif
+File size       : 786572 Bytes
+MIME type       : image/tiff
+Image size      : 512 x 512
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 512 x 512
+White balance   : 
+Thumbnail       : None
+Copyright       : 
+Exif comment    : 
 
 </stdout>
+            <stderr></stderr>
+        </source>
+        <source source="core" exitCode="0">
+            <stdout></stdout>
             <stderr></stderr>
         </source>
         <source source="imagemagick" exitCode="0">
@@ -960,9 +956,9 @@
   Tainted: False
   Filesize: 787KB
   Number pixels: 262K
-  Pixels per second: 26.21MB
+  Pixels per second: 13.11MB
   User time: 0.000u
-  Elapsed time: 0:01.009
+  Elapsed time: 0:01.019
   Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
 </stdout>
             <stderr></stderr>
@@ -970,7 +966,7 @@
         <source source="jhove" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-02-14T14:16:25+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-14T15:49:51+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/06.tif"&gt;
   &lt;reportingModule release="1.5" date="2007-10-02"&gt;TIFF-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-13T06:21:48+01:00&lt;/lastModified&gt;
@@ -1197,62 +1193,60 @@
 </stdout>
             <stderr></stderr>
         </source>
-        <source source="exiv2" exitCode="0">
-            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/06.tif
-File size       : 786572 Bytes
-MIME type       : image/tiff
-Image size      : 512 x 512
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 512 x 512
-White balance   : 
-Thumbnail       : None
-Copyright       : 
-Exif comment    : 
+        <source source="fits" exitCode="0">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 15:49"&gt;
+  &lt;identification&gt;
+    &lt;identity format="Tagged Image File Format" mimetype="image/tiff" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="Jhove" toolversion="1.5" /&gt;
+      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;tool toolname="ffident" toolversion="0.2" /&gt;
+      &lt;version toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;5.0&lt;/version&gt;
+      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;3&lt;/version&gt;
+      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;4&lt;/version&gt;
+      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;6&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/7&lt;/externalIdentifier&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/8&lt;/externalIdentifier&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/9&lt;/externalIdentifier&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/10&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;786572&lt;/size&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:13 06:21:48+01:00&lt;/lastmodified&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/06.tif&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/06.tif&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7278246cf26b76e0ca398e7f739b527e&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360732908000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus&gt;
+    &lt;well-formed toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/well-formed&gt;
+    &lt;valid toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/valid&gt;
+  &lt;/filestatus&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;byteOrder toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;big endian&lt;/byteOrder&gt;
+      &lt;compressionScheme toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;Uncompressed&lt;/compressionScheme&gt;
+      &lt;compressionScheme toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;65536&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageWidth&gt;
+      &lt;imageWidth toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageHeight&gt;
+      &lt;imageHeight toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageHeight&gt;
+      &lt;colorSpace toolname="Jhove" toolversion="1.5"&gt;RGB&lt;/colorSpace&gt;
+      &lt;referenceBlackWhite toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;0.0 255.0 0.0 255.0 0.0 255.0&lt;/referenceBlackWhite&gt;
+      &lt;orientation toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;bitsPerSample toolname="Jhove" toolversion="1.5"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;samplesPerPixel toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;3&lt;/samplesPerPixel&gt;
+      &lt;samplesPerPixel toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;196608&lt;/samplesPerPixel&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
 
 </stdout>
-            <stderr></stderr>
-        </source>
-        <source source="exiftool" exitCode="0">
-            <stdout>ExifTool Version Number         : 8.60
-File Name                       : 06.tif
-Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
-File Size                       : 768 kB
-File Modification Date/Time     : 2013:02:13 06:21:48+01:00
-File Permissions                : rw-r--r--
-File Type                       : TIFF
-MIME Type                       : image/tiff
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Subfile Type                    : Full-resolution Image
-Image Width                     : 512
-Image Height                    : 512
-Bits Per Sample                 : 8 8 8
-Compression                     : Uncompressed
-Photometric Interpretation      : RGB
-Strip Offsets                   : 8
-Samples Per Pixel               : 3
-Strip Byte Counts               : 786432
-Planar Configuration            : Chunky
-Image Size                      : 512x512
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="core" exitCode="0">
-            <stdout></stdout>
             <stderr></stderr>
         </source>
     </sources-list>
