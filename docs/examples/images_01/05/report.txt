@@ -102,11 +102,12 @@ Device Manufacturer           exiftool     IEC
 Device Mfg Desc               exiftool     IEC http                                                        
 Device Model Desc             exiftool     IEC 61966-2.1 Default RGB colour space - sRGB                   
 Dispose                       imagemagick  Undefined                                                       
-Elapsed time                  imagemagick  0:02.299                                                        
+Elapsed time                  imagemagick  0:02.350                                                        
 Endianess                     imagemagick  Undefined                                                       
 ExifTool Version Number       exiftool     8.60                                                            
 exit-code                     daitss       OK                                                              
                               exiftool     ok                                                              
+                              exiv2        error (253)                                                     
                               fits         ok                                                              
                               imagemagick  ok                                                              
                               jhove        ok                                                              
@@ -151,7 +152,7 @@ Overall skewness              imagemagick  0.259575
 Overall stdev                 imagemagick  62.0411 (0.243298)                                              
 Page geometry                 imagemagick  3776x2520+0+0                                                   
 Pixel Units                   exiftool     Meters                                                          
-Pixels per second             imagemagick  7.32MB                                                          
+Pixels per second             imagemagick  7.049MB                                                         
 Pixels Per Unit X             exiftool     7087                                                            
 Pixels Per Unit Y             exiftool     7087                                                            
 PNG                           imagemagick  IHDR.bit_depth       : 8                                        
@@ -193,7 +194,7 @@ Tainted                       imagemagick  False
 Technology                    exiftool     Cathode Ray Tube Display                                        
 Transparent color             imagemagick  black                                                           
 Units                         imagemagick  PixelsPerCentimeter                                             
-User time                     imagemagick  0.850u                                                          
+User time                     imagemagick  0.860u                                                          
 verbose                       imagemagick  true                                                            
 Version                       imagemagick  ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org  
 Viewing Cond Desc             exiftool     Reference Viewing Condition in IEC61966-2.1                     
@@ -211,6 +212,7 @@ Raw outputs of extractors
    fits         'output <../docs/examples/images_01/05/output-fits.raw>'_
    exiftool     'output <../docs/examples/images_01/05/output-exiftool.raw>'_
    jhove        'output <../docs/examples/images_01/05/output-jhove.raw>'_
+   exiv2        'output <../docs/examples/images_01/05/output-exiv2.raw>'_
    daitss       'output <../docs/examples/images_01/05/output-daitss.raw>'_
    imagemagick   'output <../docs/examples/images_01/05/output-imagemagick.raw>'_
 
