@@ -1161,7 +1161,7 @@
         </metadata>
         <metadata>
             <key>Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">6.657MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">7.737MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1173,7 +1173,7 @@
         </metadata>
         <metadata>
             <key>Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.429</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.369</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1213,140 +1213,6 @@
         </metadata>
     </metadata-list>
     <sources-list>
-        <source source="imagemagick" exitCode="0">
-            <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg
-  Format: JPEG (Joint Photographic Experts Group JFIF format)
-  Class: DirectClass
-  Geometry: 2202x1300+0+0
-  Resolution: 72x72
-  Print size: 30.5833x18.0556
-  Units: PixelsPerInch
-  Type: TrueColor
-  Endianess: Undefined
-  Colorspace: sRGB
-  Depth: 8-bit
-  Channel depth:
-    red: 8-bit
-    green: 8-bit
-    blue: 8-bit
-  Channel statistics:
-    Red:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 117.069 (0.459094)
-      standard deviation: 93.4968 (0.366654)
-      kurtosis: -1.37073
-      skewness: 0.378414
-    Green:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 233.816 (0.916925)
-      standard deviation: 42.2908 (0.165846)
-      kurtosis: 1.81701
-      skewness: -1.83352
-    Blue:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 130.168 (0.510464)
-      standard deviation: 101.218 (0.396934)
-      kurtosis: -1.77823
-      skewness: -0.0345008
-  Image statistics:
-    Overall:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 160.351 (0.628828)
-      standard deviation: 83.2171 (0.326342)
-      kurtosis: -0.0542099
-      skewness: -0.720608
-  Rendering intent: Perceptual
-  Gamma: 0.454545
-  Chromaticity:
-    red primary: (0.64,0.33)
-    green primary: (0.3,0.6)
-    blue primary: (0.15,0.06)
-    white point: (0.3127,0.329)
-  Interlace: None
-  Background color: white
-  Border color: srgb(223,223,223)
-  Matte color: grey74
-  Transparent color: black
-  Compose: Over
-  Page geometry: 2202x1300+0+0
-  Dispose: Undefined
-  Iterations: 0
-  Compression: JPEG
-  Quality: 93
-  Orientation: Undefined
-  Properties:
-    date:create: 2013-02-13T06:21:52+01:00
-    date:modify: 2013-02-13T06:21:52+01:00
-    exif:ExifOffset: 26
-    exif:UserComment: File written by Adobe Photoshop. 5.0
-    jpeg:colorspace: 2
-    jpeg:sampling-factor: 2x2,1x1,1x1
-    signature: 26053715cc6976edd8d78a71a670ea663306cc1dd6229a1a50a27365f2fbe8ba
-  Profiles:
-    Profile-exif: 88 bytes
-    Profile-icc: 540 bytes
-      Description: Apple RGB
-      Manufacturer: Apple RGB
-      Model: Apple RGB
-      Copyright: (c) 2006 Adobe Systems Inc.
-  Artifacts:
-    filename: /opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg
-    verbose: true
-  Tainted: False
-  Filesize: 1.277MB
-  Number pixels: 2.863M
-  Pixels per second: 6.657MB
-  User time: 0.170u
-  Elapsed time: 0:01.429
-  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="fits" exitCode="0">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 12:55"&gt;
-  &lt;identification&gt;
-    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;version toolname="file utility" toolversion="5.11"&gt;1.01&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;1276581&lt;/size&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:13 06:21:52+01:00&lt;/lastmodified&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7389cd432b739b2b944a63b11b3a66a1&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360732912000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus /&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;2202&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1300&lt;/imageHeight&gt;
-      &lt;iccProfileName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Apple RGB&lt;/iccProfileName&gt;
-      &lt;iccProfileVersion toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2.1.0&lt;/iccProfileVersion&gt;
-      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
-      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;72&lt;/xSamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;72&lt;/ySamplingFrequency&gt;
-      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
-      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
-
-</stdout>
-            <stderr></stderr>
-        </source>
         <source source="exiv2" exitCode="0">
             <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg
 File size       : 1276581 Bytes
@@ -1377,10 +1243,62 @@ Exif comment    : File written by Adobe Photoshop� 5.0
 </stdout>
             <stderr></stderr>
         </source>
+        <source source="exiftool" exitCode="0">
+            <stdout>ExifTool Version Number         : 8.60
+File Name                       : 10.jpg
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 1247 kB
+File Modification Date/Time     : 2013:02:13 06:21:52+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Resolution Unit                 : inches
+X Resolution                    : 72
+Y Resolution                    : 72
+Exif Byte Order                 : Little-endian (Intel, II)
+Warning                         : Invalid EXIF text encoding
+User Comment                    : File written by Adobe Photoshop� 5.0
+Profile CMM Type                : ADBE
+Profile Version                 : 2.1.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 0011:2006:08 20:22:21
+Profile File Signature          : acsp
+Primary Platform                : Microsoft Corporation
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : none
+Device Model                    : 
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.9642 1 0.82491
+Profile Creator                 : ADBE
+Profile ID                      : 0
+Profile Copyright               : (c) 2006 Adobe Systems Inc.
+Profile Description             : Apple RGB
+Media White Point               : 0.95045 1 1.08905
+Media Black Point               : 0 0 0
+Red Tone Reproduction Curve     : (Binary data 14 bytes, use -b option to extract)
+Green Tone Reproduction Curve   : (Binary data 14 bytes, use -b option to extract)
+Blue Tone Reproduction Curve    : (Binary data 14 bytes, use -b option to extract)
+Red Matrix Column               : 0.47554 0.25516 0.01845
+Green Matrix Column             : 0.33972 0.67259 0.11333
+Blue Matrix Column              : 0.14896 0.07225 0.69312
+Image Width                     : 2202
+Image Height                    : 1300
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Image Size                      : 2202x1300
+</stdout>
+            <stderr></stderr>
+        </source>
         <source source="jhove" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-02-14T12:55:44+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-14T14:18:49+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-13T06:21:52+01:00&lt;/lastModified&gt;
@@ -1551,55 +1469,137 @@ Exif comment    : File written by Adobe Photoshop� 5.0
 </stdout>
             <stderr></stderr>
         </source>
-        <source source="exiftool" exitCode="0">
-            <stdout>ExifTool Version Number         : 8.60
-File Name                       : 10.jpg
-Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_02
-File Size                       : 1247 kB
-File Modification Date/Time     : 2013:02:13 06:21:52+01:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-JFIF Version                    : 1.01
-Resolution Unit                 : inches
-X Resolution                    : 72
-Y Resolution                    : 72
-Exif Byte Order                 : Little-endian (Intel, II)
-Warning                         : Invalid EXIF text encoding
-User Comment                    : File written by Adobe Photoshop� 5.0
-Profile CMM Type                : ADBE
-Profile Version                 : 2.1.0
-Profile Class                   : Display Device Profile
-Color Space Data                : RGB
-Profile Connection Space        : XYZ
-Profile Date Time               : 0011:2006:08 20:22:21
-Profile File Signature          : acsp
-Primary Platform                : Microsoft Corporation
-CMM Flags                       : Not Embedded, Independent
-Device Manufacturer             : none
-Device Model                    : 
-Device Attributes               : Reflective, Glossy, Positive, Color
-Rendering Intent                : Perceptual
-Connection Space Illuminant     : 0.9642 1 0.82491
-Profile Creator                 : ADBE
-Profile ID                      : 0
-Profile Copyright               : (c) 2006 Adobe Systems Inc.
-Profile Description             : Apple RGB
-Media White Point               : 0.95045 1 1.08905
-Media Black Point               : 0 0 0
-Red Tone Reproduction Curve     : (Binary data 14 bytes, use -b option to extract)
-Green Tone Reproduction Curve   : (Binary data 14 bytes, use -b option to extract)
-Blue Tone Reproduction Curve    : (Binary data 14 bytes, use -b option to extract)
-Red Matrix Column               : 0.47554 0.25516 0.01845
-Green Matrix Column             : 0.33972 0.67259 0.11333
-Blue Matrix Column              : 0.14896 0.07225 0.69312
-Image Width                     : 2202
-Image Height                    : 1300
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
-Image Size                      : 2202x1300
+        <source source="imagemagick" exitCode="0">
+            <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Class: DirectClass
+  Geometry: 2202x1300+0+0
+  Resolution: 72x72
+  Print size: 30.5833x18.0556
+  Units: PixelsPerInch
+  Type: TrueColor
+  Endianess: Undefined
+  Colorspace: sRGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Red:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 117.069 (0.459094)
+      standard deviation: 93.4968 (0.366654)
+      kurtosis: -1.37073
+      skewness: 0.378414
+    Green:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 233.816 (0.916925)
+      standard deviation: 42.2908 (0.165846)
+      kurtosis: 1.81701
+      skewness: -1.83352
+    Blue:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 130.168 (0.510464)
+      standard deviation: 101.218 (0.396934)
+      kurtosis: -1.77823
+      skewness: -0.0345008
+  Image statistics:
+    Overall:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 160.351 (0.628828)
+      standard deviation: 83.2171 (0.326342)
+      kurtosis: -0.0542099
+      skewness: -0.720608
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Interlace: None
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Compose: Over
+  Page geometry: 2202x1300+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 93
+  Orientation: Undefined
+  Properties:
+    date:create: 2013-02-13T06:21:52+01:00
+    date:modify: 2013-02-13T06:21:52+01:00
+    exif:ExifOffset: 26
+    exif:UserComment: File written by Adobe Photoshop. 5.0
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 2x2,1x1,1x1
+    signature: 26053715cc6976edd8d78a71a670ea663306cc1dd6229a1a50a27365f2fbe8ba
+  Profiles:
+    Profile-exif: 88 bytes
+    Profile-icc: 540 bytes
+      Description: Apple RGB
+      Manufacturer: Apple RGB
+      Model: Apple RGB
+      Copyright: (c) 2006 Adobe Systems Inc.
+  Artifacts:
+    filename: /opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 1.277MB
+  Number pixels: 2.863M
+  Pixels per second: 7.737MB
+  User time: 0.170u
+  Elapsed time: 0:01.369
+  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="fits" exitCode="0">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 14:18"&gt;
+  &lt;identification&gt;
+    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;version toolname="file utility" toolversion="5.11"&gt;1.01&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;1276581&lt;/size&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:13 06:21:52+01:00&lt;/lastmodified&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7389cd432b739b2b944a63b11b3a66a1&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360732912000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;2202&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1300&lt;/imageHeight&gt;
+      &lt;iccProfileName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Apple RGB&lt;/iccProfileName&gt;
+      &lt;iccProfileVersion toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2.1.0&lt;/iccProfileVersion&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;72&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;72&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
 </stdout>
             <stderr></stderr>
         </source>
@@ -1612,7 +1612,7 @@ Image Size                      : 2202x1300
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130214-1949-6jr7r7-0.jpg&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130214-1949-1tovn8n-0.jpg&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -1715,7 +1715,7 @@ Image Size                      : 2202x1300
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-14T06:59:46-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-02-14T08:22:51-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -1727,7 +1727,7 @@ Image Size                      : 2202x1300
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130214-1949-6jr7r7-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130214-1949-1tovn8n-0.jpg&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
