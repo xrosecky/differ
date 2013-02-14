@@ -4,48 +4,47 @@
 1;About
 1;Aperture
 1;Auxiliary Lens
+1;Background color
 1;Bits per sample
+1;Blue kurtosis
+1;Blue max
+1;Blue mean
+1;Blue min
+1;Blue skewness
+1;Blue standard deviation
+1;Border color
 1;Camera Model Name
 1;Camera make
 1;Camera model
 1;Circle Of Confusion
+1;Class
 1;Code block height
 1;Code block width
 1;Color Mode
 1;Color depth
 1;Color space
-1;Color/B/kurtosis
-1;Color/B/max
-1;Color/B/mean
-1;Color/B/min
-1;Color/B/skewness
-1;Color/B/standard deviation
-1;Color/G/kurtosis
-1;Color/G/max
-1;Color/G/mean
-1;Color/G/min
-1;Color/G/skewness
-1;Color/G/standard deviation
-1;Color/R/kurtosis
-1;Color/R/max
-1;Color/R/mean
-1;Color/R/min
-1;Color/R/skewness
-1;Color/R/standard deviation
+1;Color type
 1;Components Configuration
+1;Compose
 1;Compressed Bits Per Pixel
 1;Compression
 1;Compression quality
+1;Compression scheme
 1;Contrast
 1;Create Date
 1;Creatortool
 1;Custom Rendered
 1;Data Dump
 1;Date/Time Original
+1;Depth of blue channel
+1;Depth of green channel
+1;Depth of red channel
 1;Digital Zoom
 1;Digital Zoom Ratio
 1;Directory
+1;Dispose
 1;Encoding process
+1;Endianess
 1;Exif Byte Order
 1;Exif Image Height
 1;Exif Image Width
@@ -82,7 +81,16 @@
 1;Focus Mode
 1;Format version
 1;Gain Control
+1;Gamma
+1;Green kurtosis
+1;Green max
+1;Green mean
+1;Green min
+1;Green skewness
+1;Green standard deviation
 1;Hyperfocal Distance
+1;ICC Profile
+1;ICC Profile Version
 1;ISO
 1;ISO Selection
 1;ISO Speed
@@ -93,32 +101,8 @@
 1;Image quality
 1;Image timestamp
 1;Image width
-1;Image/Channel depth/blue
-1;Image/Channel depth/green
-1;Image/Channel depth/red
-1;Image/Channel statistics/Image statistics/Artifacts/verbose
-1;Image/Channel statistics/Image statistics/Background color
-1;Image/Channel statistics/Image statistics/Border color
-1;Image/Channel statistics/Image statistics/Chromaticity/blue primary
-1;Image/Channel statistics/Image statistics/Chromaticity/green primary
-1;Image/Channel statistics/Image statistics/Chromaticity/red primary
-1;Image/Channel statistics/Image statistics/Chromaticity/white point
-1;Image/Channel statistics/Image statistics/Compose
-1;Image/Channel statistics/Image statistics/Dispose
 1;Image/Channel statistics/Image statistics/Elapsed time
-1;Image/Channel statistics/Image statistics/Gamma
-1;Image/Channel statistics/Image statistics/Interlace
-1;Image/Channel statistics/Image statistics/Iterations
-1;Image/Channel statistics/Image statistics/Matte color
 1;Image/Channel statistics/Image statistics/Number pixels
-1;Image/Channel statistics/Image statistics/Orientation
-1;Image/Channel statistics/Image statistics/Overall/kurtosis
-1;Image/Channel statistics/Image statistics/Overall/max
-1;Image/Channel statistics/Image statistics/Overall/mean
-1;Image/Channel statistics/Image statistics/Overall/min
-1;Image/Channel statistics/Image statistics/Overall/skewness
-1;Image/Channel statistics/Image statistics/Overall/standard deviation
-1;Image/Channel statistics/Image statistics/Page geometry
 1;Image/Channel statistics/Image statistics/Pixels per second
 1;Image/Channel statistics/Image statistics/Profiles/Profile-exif
 1;Image/Channel statistics/Image statistics/Profiles/Profile-xmp
@@ -174,16 +158,11 @@
 1;Image/Channel statistics/Image statistics/Properties/tiff/software
 1;Image/Channel statistics/Image statistics/Properties/unknown
 1;Image/Channel statistics/Image statistics/Properties/xmp/creatortool
-1;Image/Channel statistics/Image statistics/Rendering intent
 1;Image/Channel statistics/Image statistics/Tainted
-1;Image/Channel statistics/Image statistics/Transparent color
 1;Image/Channel statistics/Image statistics/User time
 1;Image/Channel statistics/Image statistics/Version
-1;Image/Class
-1;Image/Endianess
-1;Image/Print size
-1;Image/Type
-1;Image/Units
+1;Interlace
+1;Iterations
 1;JFIF Version
 1;Light Source
 1;Light Value
@@ -191,6 +170,7 @@
 1;Make
 1;Maker Note Version
 1;Manual Focus Distance
+1;Matte color
 1;Max Aperture Value
 1;Metering Mode
 1;Metering mode
@@ -204,14 +184,32 @@
 1;Number of tiles
 1;Offset Schema
 1;Orientation
+1;Overall kurtosis
+1;Overall max
+1;Overall mean
+1;Overall min
+1;Overall skewness
+1;Overall stdev
 1;Padding
+1;Page geometry
 1;Preview Image
 1;Preview Image Length
 1;Preview Image Start
+1;Primary blue
+1;Primary green
+1;Primary red
+1;Print size
 1;Program Mode
 1;Progression order
 1;Quality
 1;Quantization style
+1;Red kurtosis
+1;Red max
+1;Red mean
+1;Red min
+1;Red skewness
+1;Red standard deviation
+1;Rendering intent
 1;Resolution horizontal
 1;Resolution unit
 1;Resolution vertical
@@ -229,11 +227,16 @@
 1;Tile size X
 1;Tile size Y
 1;Transformation
+1;Transparent color
 1;Type of format
+1;Units
 1;Universal unique identifier (UUID)
 1;Validation (well formed and valid)
+1;Verbose
 1;Warning
 1;White Balance
 1;White balance
+1;White point
 1;Y Cb Cr Positioning
 1;Y Cb Cr Sub Sampling
+1;exit-code
