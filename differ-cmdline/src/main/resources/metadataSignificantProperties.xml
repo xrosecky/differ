@@ -8,16 +8,8 @@
 			   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
   
   <util:set id="identificationProperties">
-    <value>File created</value>
-    <value>File last modified</value>
-    <value>File name</value>
-    <value>File path</value>
-    <value>File size</value>
     <value>MIME type</value>
     <value>Type of format</value>
-    <value>Universal unique identifier (UUID)</value>
-    <value>Image height</value>
-    <value>Image width</value>
   </util:set>
   
   <util:set id="validationProperties">
@@ -25,9 +17,17 @@
   </util:set>
   
   <util:set id="characterizationProperties">
+    <value>File name</value>
+    <value>File path</value>
     <value>Color depth</value>
     <value>Color space</value>
     <value>Color type</value>
+    <value>Universal unique identifier (UUID)</value>
+    <value>File size</value>
+    <value>Image height</value>
+    <value>Image width</value>
+    <value>File created</value>
+    <value>File last modified</value>
     <value>Compression</value>
     <value>Compression scheme</value>
     <value>Resolution horizontal</value>

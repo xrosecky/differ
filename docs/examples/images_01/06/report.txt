@@ -3,8 +3,39 @@ Identification
 
 06.tif: 512x512
 
+Significant Property Source       Value       Unit
+-------------------- -----------  ----------  ----
+MIME type            exiftool     image/tiff  
+                     exiv2        image/tiff  
+                     jhove        image/tiff  
+Type of format       exiftool     TIFF        
+                     imagemagick  TIFF        
+                     jhove        TIFF        
+-------------------- -----------  ----------  ----
+
+Validation
+==========
+
+Significant Property               Source  Value                  Unit
+---------------------------------- ------  ---------------------  ----
+Validation (well formed and valid) jhove   Well-Formed and valid  
+---------------------------------- ------  ---------------------  ----
+
+Characterization
+================
+
 Significant Property               Source       Value                                                             Unit
 ---------------------------------- -----------  ----------------------------------------------------------------  ----
+Color depth                        exiftool     8                                                                 
+                                   imagemagick  8                                                                 
+                                   jhove        8                                                                 
+Color space                        imagemagick  sRGB                                                              
+                                   jhove        RGB                                                               
+Color type                         imagemagick  TrueColor                                                         
+Compression                        exiftool     Uncompressed                                                      
+                                   imagemagick  None                                                              
+                                   jhove        Uncompressed                                                      
+Compression scheme                 fits         Uncompressed                                                      
 File created                       imagemagick  2013-02-13 06:21:48+01:00                                         
 File last modified                 exiftool     2013:02:13 06:21:48+01:00                                         
                                    fits         2013:02:13 06:21:48+01:00                                         
@@ -24,6 +55,7 @@ File size                          exiftool     768 kB
                                    fits         786572                                                            
                                    imagemagick  787KB                                                             
                                    jhove        786572                                                            
+ICC Profile                        fits                                                                           
 Image height                       core         512                                                               
                                    exiftool     512                                                               px
                                    exiv2        512                                                               px
@@ -36,47 +68,15 @@ Image width                        core         512
                                    fits         512                                                               px
                                    imagemagick  512                                                               px
                                    jhove        512                                                               px
-MIME type                          exiftool     image/tiff                                                        
-                                   exiv2        image/tiff                                                        
-                                   jhove        image/tiff                                                        
-Type of format                     exiftool     TIFF                                                              
-                                   imagemagick  TIFF                                                              
-                                   jhove        TIFF                                                              
+Number of channels                 jhove        3                                                                 
+Resolution horizontal              exiv2        512                                                               PPI
+                                   imagemagick  72                                                                PPI
+                                   jhove                                                                          PPI
+Resolution vertical                exiv2        512                                                               PPI
+                                   imagemagick  72                                                                PPI
+                                   jhove                                                                          PPI
 Universal unique identifier (UUID) imagemagick  01f8ff0e23a809255ae52a9857a7aeb0f89d92610205fef29c36c3d359ac3339  
 ---------------------------------- -----------  ----------------------------------------------------------------  ----
-
-Validation
-==========
-
-Significant Property               Source  Value                  Unit
----------------------------------- ------  ---------------------  ----
-Validation (well formed and valid) jhove   Well-Formed and valid  
----------------------------------- ------  ---------------------  ----
-
-Characterization
-================
-
-Significant Property  Source       Value         Unit
---------------------- -----------  ------------  ----
-Color depth           exiftool     8             
-                      imagemagick  8             
-                      jhove        8             
-Color space           imagemagick  sRGB          
-                      jhove        RGB           
-Color type            imagemagick  TrueColor     
-Compression           exiftool     Uncompressed  
-                      imagemagick  None          
-                      jhove        Uncompressed  
-Compression scheme    fits         Uncompressed  
-ICC Profile           fits                       
-Number of channels    jhove        3             
-Resolution horizontal exiv2        512           PPI
-                      imagemagick  72            PPI
-                      jhove                      PPI
-Resolution vertical   exiv2        512           PPI
-                      imagemagick  72            PPI
-                      jhove                      PPI
---------------------- -----------  ------------  ----
 
 Other properties
 ================
@@ -117,9 +117,9 @@ Green standard deviation                                                 imagema
 ICC Profile Version                                                      fits                                                                         
 Image Size                                                               exiftool     512x512                                                         
 Image/Base type                                                          imagemagick  TrueColor                                                       
-Image/Channel statistics/Image statistics/Elapsed time                   imagemagick  0:01.019                                                        
+Image/Channel statistics/Image statistics/Elapsed time                   imagemagick  0:01.009                                                        
 Image/Channel statistics/Image statistics/Number pixels                  imagemagick  262K                                                            
-Image/Channel statistics/Image statistics/Pixels per second              imagemagick  13.11MB                                                         
+Image/Channel statistics/Image statistics/Pixels per second              imagemagick  26.21MB                                                         
 Image/Channel statistics/Image statistics/Properties/tiff/endian         imagemagick  msb                                                             
 Image/Channel statistics/Image statistics/Properties/tiff/photometric    imagemagick  RGB                                                             
 Image/Channel statistics/Image statistics/Properties/tiff/rows-per-strip imagemagick  5                                                               

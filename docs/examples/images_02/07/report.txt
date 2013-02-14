@@ -3,8 +3,46 @@ Identification
 
 07.jpg: 2000x1346
 
+Significant Property Source       Value       Unit
+-------------------- -----------  ----------  ----
+MIME type            exiftool     image/jpeg  
+                     exiv2        image/jpeg  
+                     imagemagick  image/jpeg  
+                     jhove        image/jpeg  
+Type of format       daitss       JPEG        
+                     exiftool     JPEG        
+                     imagemagick  JPEG        
+                     jhove        JPEG        
+-------------------- -----------  ----------  ----
+
+Validation
+==========
+
+Significant Property               Source  Value                  Unit
+---------------------------------- ------  ---------------------  ----
+Validation (well formed and valid) daitss  Well-Formed and valid  
+                                   jhove   Well-Formed and valid  
+---------------------------------- ------  ---------------------  ----
+
+Characterization
+================
+
 Significant Property               Source       Value                                                             Unit
 ---------------------------------- -----------  ----------------------------------------------------------------  ----
+Color depth                        exiftool     8                                                                 
+                                   imagemagick  8                                                                 
+                                   jhove        8                                                                 
+Color space                        daitss       YCbCr                                                             
+                                   exiftool     sRGB                                                              
+                                   imagemagick  sRGB                                                              
+                                   jhove                                                                          
+                                   jhove        YCbCr                                                             
+Color type                         imagemagick  TrueColor                                                         
+Compression                        daitss       JPEG                                                              
+                                   exiftool     JPEG (old-style)                                                  
+                                   imagemagick  JPEG                                                              
+                                   jhove        JPEG                                                              
+Compression scheme                 fits         JPEG (old-style)                                                  
 File created                       imagemagick  2013-02-13 06:21:51+01:00                                         
 File last modified                 exiftool     2013:02:13 06:21:51+01:00                                         
                                    fits         2013:02:13 06:21:51+01:00                                         
@@ -27,6 +65,8 @@ File size                          daitss       1085698
                                    fits         1085698                                                           
                                    imagemagick  1.086MB                                                           
                                    jhove        1085698                                                           
+ICC Profile                        fits         sRGB IEC61966-2.1                                                 
+                                   imagemagick  3144 bytes                                                        
 Image height                       core         1346                                                              
                                    daitss       1346                                                              px
                                    daitss       1346                                                              px
@@ -42,62 +82,22 @@ Image width                        core         2000
                                    fits         2000                                                              px
                                    imagemagick  2000                                                              px
                                    jhove        2000                                                              px
-MIME type                          exiftool     image/jpeg                                                        
-                                   exiv2        image/jpeg                                                        
-                                   imagemagick  image/jpeg                                                        
-                                   jhove        image/jpeg                                                        
-Type of format                     daitss       JPEG                                                              
-                                   exiftool     JPEG                                                              
-                                   imagemagick  JPEG                                                              
-                                   jhove        JPEG                                                              
+Number of channels                 exiftool     3                                                                 
+                                   jhove        3                                                                 
+Resolution horizontal              daitss       300                                                               PPI
+                                   exiftool     300                                                               PPI
+                                   exiv2        2000                                                              PPI
+                                   imagemagick  300                                                               PPI
+                                   jhove        300                                                               PPI
+Resolution vertical                daitss       300                                                               PPI
+                                   exiftool     300                                                               PPI
+                                   exiv2        1346                                                              PPI
+                                   imagemagick  300                                                               PPI
+                                   jhove        300                                                               PPI
 Universal unique identifier (UUID) daitss       79009a4d6a14a2c3d49b859964925a35                                  
                                    imagemagick  0f5c8dbe87da7cef045342ff90efedad208f4db0bfcb600e9075a11e2a3c2e03  
                                    jhove                                                                          
 ---------------------------------- -----------  ----------------------------------------------------------------  ----
-
-Validation
-==========
-
-Significant Property               Source  Value                  Unit
----------------------------------- ------  ---------------------  ----
-Validation (well formed and valid) daitss  Well-Formed and valid  
-                                   jhove   Well-Formed and valid  
----------------------------------- ------  ---------------------  ----
-
-Characterization
-================
-
-Significant Property  Source       Value              Unit
---------------------- -----------  -----------------  ----
-Color depth           exiftool     8                  
-                      imagemagick  8                  
-                      jhove        8                  
-Color space           daitss       YCbCr              
-                      exiftool     sRGB               
-                      imagemagick  sRGB               
-                      jhove                           
-                      jhove        YCbCr              
-Color type            imagemagick  TrueColor          
-Compression           daitss       JPEG               
-                      exiftool     JPEG (old-style)   
-                      imagemagick  JPEG               
-                      jhove        JPEG               
-Compression scheme    fits         JPEG (old-style)   
-ICC Profile           fits         sRGB IEC61966-2.1  
-                      imagemagick  3144 bytes         
-Number of channels    exiftool     3                  
-                      jhove        3                  
-Resolution horizontal daitss       300                PPI
-                      exiftool     300                PPI
-                      exiv2        2000               PPI
-                      imagemagick  300                PPI
-                      jhove        300                PPI
-Resolution vertical   daitss       300                PPI
-                      exiftool     300                PPI
-                      exiv2        1346               PPI
-                      imagemagick  300                PPI
-                      jhove        300                PPI
---------------------- -----------  -----------------  ----
 
 Other properties
 ================
@@ -179,9 +179,9 @@ ICC Profile manufacturer                                                        
 ICC Profile model                                                                     imagemagick  IEC 61966-2.1 Default RGB colour space - sRGB                   
 ICC Profile Version                                                                   fits         2.1.0                                                           
 Image Size                                                                            exiftool     2000x1346                                                       
-Image/Channel statistics/Image statistics/Elapsed time                                imagemagick  0:01.410                                                        
+Image/Channel statistics/Image statistics/Elapsed time                                imagemagick  0:01.480                                                        
 Image/Channel statistics/Image statistics/Number pixels                               imagemagick  2.692M                                                          
-Image/Channel statistics/Image statistics/Pixels per second                           imagemagick  6.566MB                                                         
+Image/Channel statistics/Image statistics/Pixels per second                           imagemagick  5.608MB                                                         
 Image/Channel statistics/Image statistics/Profiles/Profile-8bim                       imagemagick  9692 bytes                                                      
 Image/Channel statistics/Image statistics/Profiles/Profile-exif                       imagemagick  8479 bytes                                                      
 Image/Channel statistics/Image statistics/Profiles/Profile-xmp                        imagemagick  6425 bytes                                                      
