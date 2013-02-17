@@ -20,26 +20,19 @@ public class ImagemagickTransformer implements ResultTransformer {
 
     public class HeaderPartsGetter {
         private ArrayDeque<String> parts = new ArrayDeque<String>();
+        private ArrayDeque<Integer> depths = new ArrayDeque<Integer>();
         private int depth = 0;
 
         public ArrayDeque<String> get(LineParts lineParts){
-            if( this.depth == lineParts.depth ){
-                if( !this.parts.isEmpty() ){
-                    this.parts.removeLast();
-                }
-            } else {
-                if( this.depth > lineParts.depth ){
-                    if( !this.parts.isEmpty() ){
-                        this.parts.removeLast();
-                        if( !this.parts.isEmpty()){
-                            this.parts.removeLast();
-                        }
-                    }
-                }
+            while( this.depth >= lineParts.depth && !this.parts.isEmpty() ){
+                 this.parts.removeLast();
+                 this.depths.removeLast();
+                 this.depth = this.depths.getLast();
             }
 			if( lineParts.name != null ){
 				this.parts.addLast(lineParts.name);
 				this.depth = lineParts.depth;
+                this.depths.addLast(lineParts.depth);
 			};
             return parts;
         }
