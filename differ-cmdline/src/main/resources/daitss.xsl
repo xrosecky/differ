@@ -30,7 +30,7 @@
     <!-- <property name = "Universal unique identifier (UUID)"><xsl:value-of select="premis:fixity/premis:messageDigest"/></property> -->
     <property name = "File size"><xsl:value-of select="premis:size"/></property>
     <property name = "Type of format"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatName"/></property>    
-    <property name = "Format version"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatVersion"/></property>    
+    <property name = "Version of format"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatVersion"/></property>    
     <xsl:apply-templates/>
   </xsl:template>
 
