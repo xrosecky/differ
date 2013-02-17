@@ -24,16 +24,16 @@
     <bean id="imagemagickResultFinishingTransformer" class="cz.nkp.differ.compare.metadata.external.ResultFinishingTransformer">
       <property name="mapOfEntryNames">
 	<map>
-    	  <entry key="Image/Channel statistics/Image statistics/Artifacts/filename" value="File path"/>
+    	  <entry key="Image/Artifacts/filename" value="File path"/>
     	  <entry key="Image" value="File name"/>
     	  <entry key="Image/Colorspace" value="Color space"/>
     	  <entry key="Image/Format" value="Type of format"/>
     	  <entry key="Image/Depth" value="Color depth"/>
-    	  <entry key="Image/Channel statistics/Image statistics/Properties/date/create" value="File created"/>
-    	  <entry key="Image/Channel statistics/Image statistics/Properties/date/modify" value="File last modified"/>
-    	  <entry key="Image/Channel statistics/Image statistics/Properties/signature" value="Universal unique identifier (UUID)"/>
-    	  <entry key="Image/Channel statistics/Image statistics/Compression" value="Compression scheme"/>
-    	  <entry key="Image/Channel statistics/Image statistics/Filesize" value="File size"/>
+    	  <entry key="Image/Properties/date/create" value="File created"/>
+    	  <entry key="Image/Properties/date/modify" value="File last modified"/>
+    	  <entry key="Image/Properties/signature" value="Universal unique identifier (UUID)"/>
+    	  <entry key="Image/Compression" value="Compression scheme"/>
+    	  <entry key="Image/Filesize" value="File size"/>
     	  <entry key="Image/Channel statistics/Image statistics/Quality" value="Compression quality"/>
 	  <entry key="Image/Channel statistics/Image statistics/Properties/exif/ImageLength" value="Image height"/>
 	  <entry key="Image/Channel statistics/Image statistics/Properties/exif/ImageWidth" value="Image width"/>
@@ -59,54 +59,54 @@
 	  <entry key="Image/Channel depth/blue" value="Depth of blue channel"/>
 	  <entry key="Image/Channel depth/green" value="Depth of green channel"/>
 	  <entry key="Image/Channel depth/red" value="Depth of red channel"/>
-	  <entry key="Image/Channel statistics/Image statistics/Background color" value="Background color"/>
-	  <entry key="Image/Channel statistics/Image statistics/Border color" value="Border color"/>
-	  <entry key="Image/Channel statistics/Image statistics/Chromaticity/blue primary" value="Primary blue"/>
-	  <entry key="Image/Channel statistics/Image statistics/Chromaticity/green primary" value="Primary green"/>
-	  <entry key="Image/Channel statistics/Image statistics/Chromaticity/red primary" value="Primary red"/>
-	  <entry key="Image/Channel statistics/Image statistics/Chromaticity/white point" value="White point"/>
-	  <entry key="Image/Channel statistics/Image statistics/Compose" value="Compose"/>
-	  <entry key="Image/Channel statistics/Image statistics/Dispose" value="Dispose"/>
-	  <entry key="Image/Channel statistics/Image statistics/Gamma" value="Gamma"/>
-	  <entry key="Image/Channel statistics/Image statistics/Interlace" value="Interlace"/>
-	  <entry key="Image/Channel statistics/Image statistics/Iterations" value="Iterations"/>
-	  <entry key="Image/Channel statistics/Image statistics/Matte color" value="Matte color"/>
-	  <entry key="Image/Channel statistics/Image statistics/Orientation" value="Orientation"/>
-	  <entry key="Image/Channel statistics/Image statistics/Overall/kurtosis" value="Overall kurtosis"/>
-	  <entry key="Image/Channel statistics/Image statistics/Overall/max" value="Overall max"/>
-	  <entry key="Image/Channel statistics/Image statistics/Overall/mean" value="Overall mean"/>
-	  <entry key="Image/Channel statistics/Image statistics/Overall/min" value="Overall min"/>
-	  <entry key="Image/Channel statistics/Image statistics/Overall/skewness" value="Overall skewness"/>
-	  <entry key="Image/Channel statistics/Image statistics/Overall/standard deviation" value="Overall stdev"/>
-	  <entry key="Image/Channel statistics/Image statistics/Page geometry" value="Page geometry"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Artifacts/filename" value="File name"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Artifacts/verbose" value="verbose"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Elapsed time" value="Elapsed time"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Filesize" value="File size"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Number pixels" value="Num of pixels"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Pixels per second" value="Pixels per second"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc" value="ICC profile size"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Copyright" value="Copyright"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Description" value="ICC profile"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Manufacturer" value="ICC profile manufacturer"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Model" value="ICC Profile model"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Tainted" value="Tainted"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/User time" value="User time"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Version" value="Version"/>
-	  <entry key="Image/Channel statistics/Image statistics/Properties/png" value="PNG"/>
-	  <entry key="Image/Channel statistics/Image statistics/Rendering intent" value="Rendering intent"/>
-	  <entry key="Image/Channel statistics/Image statistics/Transparent color" value="Transparent color"/>
-	  <entry key="Image/Channel statistics/Image statistics/Artifacts/verbose" value="Verbose"/>
+	  <entry key="Image/Background color" value="Background color"/>
+	  <entry key="Image/Border color" value="Border color"/>
+	  <entry key="Image/Chromaticity/blue primary" value="Primary blue"/>
+	  <entry key="Image/Chromaticity/green primary" value="Primary green"/>
+	  <entry key="Image/Chromaticity/red primary" value="Primary red"/>
+	  <entry key="Image/Chromaticity/white point" value="White point"/>
+	  <entry key="Image/Compose" value="Compose"/>
+	  <entry key="Image/Dispose" value="Dispose"/>
+	  <entry key="Image/Gamma" value="Gamma"/>
+	  <entry key="Image/Interlace" value="Interlace"/>
+	  <entry key="Image/Iterations" value="Iterations"/>
+	  <entry key="Image/Matte color" value="Matte color"/>
+	  <entry key="Image/Orientation" value="Orientation"/>
+	  <entry key="Image/Image statistics/Overall/kurtosis" value="Overall kurtosis"/>
+	  <entry key="Image/Image statistics/Overall/max" value="Overall max"/>
+	  <entry key="Image/Image statistics/Overall/mean" value="Overall mean"/>
+	  <entry key="Image/Image statistics/Overall/min" value="Overall min"/>
+	  <entry key="Image/Image statistics/Overall/skewness" value="Overall skewness"/>
+	  <entry key="Image/Image statistics/Overall/standard deviation" value="Overall stdev"/>
+	  <entry key="Image/Page geometry" value="Page geometry"/>
+	  <entry key="Image/Artifacts/filename" value="File name"/>
+	  <entry key="Image/Artifacts/verbose" value="verbose"/>
+	  <entry key="Image/Elapsed time" value="Elapsed time"/>
+	  <entry key="Image/Filesize" value="File size"/>
+	  <entry key="Image/Number pixels" value="Num of pixels"/>
+	  <entry key="Image/Pixels per second" value="Pixels per second"/>
+	  <entry key="Image/Profiles/Profile-icc" value="ICC profile size"/>
+	  <entry key="Image/Profiles/Profile-icc/Copyright" value="Copyright"/>
+	  <entry key="Image/Profiles/Profile-icc/Description" value="ICC profile"/>
+	  <entry key="Image/Profiles/Profile-icc/Manufacturer" value="ICC profile manufacturer"/>
+	  <entry key="Image/Profiles/Profile-icc/Model" value="ICC Profile model"/>
+	  <entry key="Image/Tainted" value="Tainted"/>
+	  <entry key="Image/User time" value="User time"/>
+	  <entry key="Image/Version" value="Version"/>
+	  <entry key="Image/Properties/png" value="PNG"/>
+	  <entry key="Image/Rendering intent" value="Rendering intent"/>
+	  <entry key="Image/Transparent color" value="Transparent color"/>
+	  <entry key="Image/Artifacts/verbose" value="Verbose"/>
 	  <entry key="Image/Class" value="Class"/>
 	  <entry key="Image/Endianess" value="Endianess"/>
 	  <entry key="Image/Print size" value="Print size"/>
 	  <entry key="Image/Type" value="Color type"/>
 	  <entry key="Image/Units" value="Units"/>
-	  <entry key="Image/Channel statistics/Image statistics/Properties/png/cHRM" value="PNG chrm"/>
-	  <entry key="Image/Channel statistics/Image statistics/Properties/png/gAMA" value="PNG gama"/>
-	  <entry key="Image/Channel statistics/Image statistics/Properties/png/iCCP" value="PNG iccp"/>
-	  <entry key="Image/Channel statistics/Image statistics/Properties/png/pHYs" value="PNG phys"/>
-	  <entry key="Image/Channel statistics/Image statistics/Properties/png/sRGB" value="PNG sRGB"/>
+	  <entry key="Image/Properties/png/cHRM" value="PNG chrm"/>
+	  <entry key="Image/Properties/png/gAMA" value="PNG gama"/>
+	  <entry key="Image/Properties/png/iCCP" value="PNG iccp"/>
+	  <entry key="Image/Properties/png/pHYs" value="PNG phys"/>
+	  <entry key="Image/Properties/png/sRGB" value="PNG sRGB"/>
 	</map>
       </property>
 
