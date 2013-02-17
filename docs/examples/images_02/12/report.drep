@@ -7,19 +7,19 @@
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:int" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1600</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>core</source>
         </metadata>
         <metadata>
             <key>Image width</key>
             <value xsi:type="xs:int" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>core</source>
         </metadata>
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>core</source>
         </metadata>
         <metadata>
@@ -43,7 +43,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
@@ -62,30 +62,30 @@
             <key>Image width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200</value>
             <unit>px</unit>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1600</value>
             <unit>px</unit>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
             <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG (old-style)</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
-            <key>ICC Profile</key>
+            <key>ICC profile</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <conflict>false</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
-            <key>ICC Profile Version</key>
+            <key>ICC profile version</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <conflict>false</conflict>
             <source>fits</source>
@@ -103,9 +103,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>File Name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>false</conflict>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12</value>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -133,7 +133,7 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>MIME type</key>
+            <key>MIME Type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
             <conflict>false</conflict>
             <source>exiftool</source>
@@ -223,9 +223,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Create Date</key>
+            <key>File created</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -319,7 +319,7 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Compression</key>
+            <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG (old-style)</value>
             <conflict>true</conflict>
             <source>exiftool</source>
@@ -328,14 +328,14 @@
             <key>Resolution horizontal</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
             <key>Resolution vertical</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -417,7 +417,7 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Color space</key>
+            <key>Color Space</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">sRGB</value>
             <conflict>false</conflict>
             <source>exiftool</source>
@@ -465,9 +465,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Focal Length In 35mm Format</key>
+            <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">36 mm</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -582,14 +582,14 @@
             <key>Image width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200</value>
             <unit>px</unit>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1600</value>
             <unit>px</unit>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -697,7 +697,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
@@ -715,20 +715,12 @@
         <metadata>
             <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
-            <key>Image width</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200</value>
-            <unit>px</unit>
-            <conflict>false</conflict>
-            <source>exiv2</source>
-        </metadata>
-        <metadata>
-            <key>Image height</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1600</value>
-            <unit>px</unit>
+            <key>Image size</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200 x 1600</value>
             <conflict>false</conflict>
             <source>exiv2</source>
         </metadata>
@@ -799,16 +791,16 @@
             <source>exiv2</source>
         </metadata>
         <metadata>
-            <key>Resolution horizontal</key>
+            <key>Image width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1600</value>
-            <unit>PPI</unit>
+            <unit>px</unit>
             <conflict>true</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
-            <key>Resolution vertical</key>
+            <key>Image height</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200</value>
-            <unit>PPI</unit>
+            <unit>px</unit>
             <conflict>true</conflict>
             <source>exiv2</source>
         </metadata>
@@ -827,7 +819,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -845,7 +837,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1149,7 +1141,7 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Compression</key>
+            <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
             <conflict>true</conflict>
             <source>imagemagick</source>
@@ -1169,7 +1161,7 @@
         <metadata>
             <key>File created</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-13 06:21:52+01:00</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1534,7 +1526,7 @@
         </metadata>
         <metadata>
             <key>Image/Channel statistics/Image statistics/Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8.727MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1546,7 +1538,7 @@
         </metadata>
         <metadata>
             <key>Image/Channel statistics/Image statistics/Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.239</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.219</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1560,32 +1552,172 @@
             <key>Image width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200</value>
             <unit>px</unit>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Image height</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1600</value>
             <unit>px</unit>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Resolution horizontal</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Resolution vertical</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
     </metadata-list>
     <sources-list>
+        <source source="core" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
+        <source source="imagemagick" exitCode="0">
+            <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Class: DirectClass
+  Geometry: 1200x1600+0+0
+  Resolution: 300x300
+  Print size: 4x5.33333
+  Units: PixelsPerInch
+  Type: TrueColor
+  Endianess: Undefined
+  Colorspace: sRGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Red:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 43.9137 (0.17221)
+      standard deviation: 64.3708 (0.252434)
+      kurtosis: 1.32817
+      skewness: 1.47259
+    Green:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 129.902 (0.509418)
+      standard deviation: 84.4627 (0.331226)
+      kurtosis: -1.22993
+      skewness: 0.205018
+    Blue:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 74.9115 (0.293771)
+      standard deviation: 99.0172 (0.388303)
+      kurtosis: -1.14432
+      skewness: 0.772633
+  Image statistics:
+    Overall:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 82.9089 (0.325133)
+      standard deviation: 83.8291 (0.328742)
+      kurtosis: -0.137887
+      skewness: 0.903147
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Interlace: None
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Compose: Over
+  Page geometry: 1200x1600+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 83
+  Orientation: TopLeft
+  Properties:
+    date:create: 2013-02-13T06:21:52+01:00
+    date:modify: 2013-02-13T06:21:52+01:00
+    exif:ColorSpace: 1
+    exif:ComponentsConfiguration: 1, 2, 3, 0
+    exif:CompressedBitsPerPixel: 2/1
+    exif:Contrast: 0
+    exif:CustomRendered: 0
+    exif:DateTime: 0000:00:00 00:00:00
+    exif:DateTimeDigitized: 0000:00:00 00:00:00
+    exif:DateTimeOriginal: 0000:00:00 00:00:00
+    exif:DigitalZoomRatio: 0/100
+    exif:ExifImageLength: 1200
+    exif:ExifImageWidth: 1600
+    exif:ExifOffset: 2236
+    exif:ExifVersion: 0220
+    exif:ExposureBiasValue: 0/10
+    exif:ExposureMode: 0
+    exif:ExposureProgram: 2
+    exif:ExposureTime: 10/601
+    exif:FileSource: 3
+    exif:Flash: 25
+    exif:FlashPixVersion: 48, 49, 48, 48
+    exif:FNumber: 26/10
+    exif:FocalLength: 47/10
+    exif:FocalLengthIn35mmFilm: 36
+    exif:GainControl: 0
+    exif:ImageDescription:           
+    exif:ISOSpeed: 100
+    exif:ISOSpeedRatings: 100
+    exif:LightSource: 0
+    exif:Make: NIKON
+    exif:MakerNote: 78, 105, 107, 111, 110, 0, 2, 0, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 24, 0, 1, 0, 7, 0, 4, 0, 0, 0, 0, 2, 0, 0, 2, 0, 3, 0, 2, 0, 0, 0, 0, 0, 0, 0, 3, 0, 2, 0, 6, 0, 0, 0, 46, 1, 0, 0, 4, 0, 2, 0, 7, 0, 0, 0, 52, 1, 0, 0, 5, 0, 2, 0, 13, 0, 0, 0, 60, 1, 0, 0, 6, 0, 2, 0, 7, 0, 0, 0, 74, 1, 0, 0, 7, 0, 2, 0, 7, 0, 0, 0, 82, 1, 0, 0, 8, 0, 2, 0, 8, 0, 0, 0, 90, 1, 0, 0, 10, 0, 5, 0, 1, 0, 0, 0, 98, 1, 0, 0, 15, 0, 2, 0, 7, 0, 0, 0, 106, 1, 0, 0, 16, 0, 7, 0, 238, 1, 0, 0, 114, 1, 0, 0, 17, 0, 4, 0, 1, 0, 0, 0, 194, 3, 0, 0, 128, 0, 2, 0, 14, 0, 0, 0, 96, 3, 0, 0, 130, 0, 2, 0, 13, 0, 0, 0, 110, 3, 0, 0, 133, 0, 5, 0, 1, 0, 0, 0, 124, 3, 0, 0, 134, 0, 5, 0, 1, 0, 0, 0, 132, 3, 0, 0, 136, 0, 7, 0, 4, 0, 0, 0, 0, 0, 0, 0, 143, 0, 2, 0, 16, 0, 0, 0, 140, 3, 0, 0, 148, 0, 8, 0, 1, 0, 0, 0, 0, 0, 0, 0, 149, 0, 2, 0, 5, 0, 0, 0, 156, 3, 0, 0, 155, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 156, 0, 2, 0, 20, 0, 0, 0, 162, 3, 0, 0, 157, 0, 3, 0, 1, 0, 0, 0, 0, 0, 0, 0, 158, 0, 7, 0, 10, 0, 0, 0, 182, 3, 0, 0, 0, 0, 0, 0, 67, 79, 76, 79, 82, 0, 78, 79, 82, 77, 65, 76, 0, 0, 65, 85, 84, 79, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 65, 85, 84, 79, 32, 32, 0, 0, 65, 70, 45, 83, 32, 32, 0, 0, 78, 79, 82, 77, 65, 76, 32, 0, 128, 34, 0, 0, 232, 3, 0, 0, 65, 85, 84, 79, 32, 32, 0, 0, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 255, 1, 0, 0, 25, 97, 18, 49, 0, 0, 130, 85, 0, 0, 1, 121, 0, 12, 87, 113, 0, 12, 87, 113, 0, 12, 87, 113, 0, 52, 98, 48, 99, 0, 64, 232, 0, 100, 0, 175, 0, 100, 0, 28, 0, 31, 0, 1, 0, 0, 57, 247, 0, 0, 0, 179, 0, 0, 1, 55, 0, 0, 0, 0, 0, 0, 112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 12, 0, 0, 69, 5, 22, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 17, 17, 17, 1, 187, 3, 159, 3, 249, 1, 117, 2, 4, 2, 6, 1, 48, 2, 0, 1, 1, 240, 92, 0, 0, 3, 32, 0, 0, 0, 15, 0, 16, 0, 13, 0, 5, 0, 6, 0, 0, 0, 0, 0, 16, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 175, 1, 107, 1, 236, 2, 136, 3, 52, 15, 15, 1, 29, 2, 4, 1, 233, 0, 0, 16, 55, 16, 249, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 136, 136, 0, 0, 3, 242, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 171, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 242, 17, 0, 0, 0, 1, 50, 1, 116, 1, 162, 2, 171, 2, 106, 1, 235, 0, 0, 0, 0, 1, 100, 2, 1, 2, 98, 5, 88, 4, 214, 3, 140, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 119, 119, 119, 119, 8, 29, 8, 27, 8, 27, 17, 30, 14, 23, 39, 0, 212, 0, 0, 0, 16, 0, 14, 6, 0, 5, 1, 2, 50, 15, 66, 64, 82, 14, 0, 100, 4, 31, 0, 97, 12, 25, 8, 32, 1, 232, 1, 38, 255, 234, 0, 17, 0, 0, 0, 45, 0, 70, 0, 13, 2, 6, 1, 48, 102, 102, 102, 102, 0, 0, 0, 8, 0, 0, 0, 9, 0, 0, 0, 10, 65, 85, 84, 79, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 79, 70, 70, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 79, 70, 70, 32, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 3, 1, 3, 0, 1, 0, 0, 0, 6, 0, 0, 0, 26, 1, 5, 0, 1, 0, 0, 0, 28, 4, 0, 0, 27, 1, 5, 0, 1, 0, 0, 0, 36, 4, 0, 0, 40, 1, 3, 0, 1, 0, 0, 0, 2, 0, 0, 0, 1, 2, 4, 0, 1, 0, 0, 0, 19, 52, 0, 0, 2, 2, 4, 0, 1, 0, 0, 0, 27, 64, 0, 0, 19, 2, 3, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 44, 1, 0, 0, 1, 0, 0, 0, 44, 1, 0, 0, 1, 0, 0, 0
+    exif:MaxApertureValue: 30/10
+    exif:MeteringMode: 5
+    exif:Orientation: 1
+    exif:ProgramMode: 2
+    exif:Saturation: 0
+    exif:SceneCaptureType: 0
+    exif:SceneType: 1
+    exif:Sharpness: 0
+    exif:Software: E2100v1.1
+    exif:SubjectDistanceRange: 0
+    exif:UserComment: 0, 0, 0, 0, 0, 0, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32
+    exif:WhiteBalance: 0
+    exif:YCbCrPositioning: 2
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 2x2,1x1,1x1
+    rdf:Description: 
+    signature: 5437f12e07f090f2183d464ef4a1068a0bd2f5d394b946884c80b27f3242bb55
+    tiff:make: NIKON
+    tiff:model: E2100
+    tiff:software: E2100v1.1
+    unknown: 28, 234, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    xmp:creatortool: E2100v1.1
+  Profiles:
+    Profile-exif: 6040 bytes
+    Profile-xmp: 3990 bytes
+  Artifacts:
+    filename: /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 384KB
+  Number pixels: 1.92M
+  Pixels per second: 8.727MB
+  User time: 0.100u
+  Elapsed time: 0:01.219
+  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
+</stdout>
+            <stderr></stderr>
+        </source>
         <source source="exiftool" exitCode="0">
             <stdout>ExifTool Version Number         : 8.60
 File Name                       : 12.jpg
@@ -1730,9 +1862,28 @@ Error: XMP Toolkit error 203: Mismatched top level rdf:about values
 Warning: Failed to decode XMP metadata.
 </stderr>
         </source>
+        <source source="jhove" exitCode="1">
+            <stdout></stdout>
+            <stderr>Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at edu.harvard.hul.ois.jhove.module.tiff.IFD.readASCII(IFD.java:557)
+	at edu.harvard.hul.ois.jhove.module.tiff.ExifIFD.lookupTag(ExifIFD.java:935)
+	at edu.harvard.hul.ois.jhove.module.tiff.IFD.parse(IFD.java:320)
+	at edu.harvard.hul.ois.jhove.module.tiff.IFD.parse(IFD.java:218)
+	at edu.harvard.hul.ois.jhove.module.TiffModule.parseIFDChain(TiffModule.java:1149)
+	at edu.harvard.hul.ois.jhove.module.TiffModule.parseIFDs(TiffModule.java:1121)
+	at edu.harvard.hul.ois.jhove.module.TiffModule.exifParse(TiffModule.java:636)
+	at edu.harvard.hul.ois.jhove.module.jpeg.JpegExif.readExifData(JpegExif.java:100)
+	at edu.harvard.hul.ois.jhove.module.JpegModule.readAPP1(JpegModule.java:1118)
+	at edu.harvard.hul.ois.jhove.module.JpegModule.parse(JpegModule.java:620)
+	at edu.harvard.hul.ois.jhove.JhoveBase.processFile(JhoveBase.java:840)
+	at edu.harvard.hul.ois.jhove.JhoveBase.process(JhoveBase.java:614)
+	at edu.harvard.hul.ois.jhove.JhoveBase.dispatch(JhoveBase.java:465)
+	at Jhove.main(Jhove.java:296)
+</stderr>
+        </source>
         <source source="fits" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 15:55"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 17:31"&gt;
   &lt;identification&gt;
     &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.11" /&gt;
@@ -1790,165 +1941,6 @@ Warning: Failed to decode XMP metadata.
 
 </stdout>
             <stderr></stderr>
-        </source>
-        <source source="core" exitCode="0">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
-        <source source="imagemagick" exitCode="0">
-            <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
-  Format: JPEG (Joint Photographic Experts Group JFIF format)
-  Class: DirectClass
-  Geometry: 1200x1600+0+0
-  Resolution: 300x300
-  Print size: 4x5.33333
-  Units: PixelsPerInch
-  Type: TrueColor
-  Endianess: Undefined
-  Colorspace: sRGB
-  Depth: 8-bit
-  Channel depth:
-    red: 8-bit
-    green: 8-bit
-    blue: 8-bit
-  Channel statistics:
-    Red:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 43.9137 (0.17221)
-      standard deviation: 64.3708 (0.252434)
-      kurtosis: 1.32817
-      skewness: 1.47259
-    Green:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 129.902 (0.509418)
-      standard deviation: 84.4627 (0.331226)
-      kurtosis: -1.22993
-      skewness: 0.205018
-    Blue:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 74.9115 (0.293771)
-      standard deviation: 99.0172 (0.388303)
-      kurtosis: -1.14432
-      skewness: 0.772633
-  Image statistics:
-    Overall:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 82.9089 (0.325133)
-      standard deviation: 83.8291 (0.328742)
-      kurtosis: -0.137887
-      skewness: 0.903147
-  Rendering intent: Perceptual
-  Gamma: 0.454545
-  Chromaticity:
-    red primary: (0.64,0.33)
-    green primary: (0.3,0.6)
-    blue primary: (0.15,0.06)
-    white point: (0.3127,0.329)
-  Interlace: None
-  Background color: white
-  Border color: srgb(223,223,223)
-  Matte color: grey74
-  Transparent color: black
-  Compose: Over
-  Page geometry: 1200x1600+0+0
-  Dispose: Undefined
-  Iterations: 0
-  Compression: JPEG
-  Quality: 83
-  Orientation: TopLeft
-  Properties:
-    date:create: 2013-02-13T06:21:52+01:00
-    date:modify: 2013-02-13T06:21:52+01:00
-    exif:ColorSpace: 1
-    exif:ComponentsConfiguration: 1, 2, 3, 0
-    exif:CompressedBitsPerPixel: 2/1
-    exif:Contrast: 0
-    exif:CustomRendered: 0
-    exif:DateTime: 0000:00:00 00:00:00
-    exif:DateTimeDigitized: 0000:00:00 00:00:00
-    exif:DateTimeOriginal: 0000:00:00 00:00:00
-    exif:DigitalZoomRatio: 0/100
-    exif:ExifImageLength: 1200
-    exif:ExifImageWidth: 1600
-    exif:ExifOffset: 2236
-    exif:ExifVersion: 0220
-    exif:ExposureBiasValue: 0/10
-    exif:ExposureMode: 0
-    exif:ExposureProgram: 2
-    exif:ExposureTime: 10/601
-    exif:FileSource: 3
-    exif:Flash: 25
-    exif:FlashPixVersion: 48, 49, 48, 48
-    exif:FNumber: 26/10
-    exif:FocalLength: 47/10
-    exif:FocalLengthIn35mmFilm: 36
-    exif:GainControl: 0
-    exif:ImageDescription:           
-    exif:ISOSpeed: 100
-    exif:ISOSpeedRatings: 100
-    exif:LightSource: 0
-    exif:Make: NIKON
-    exif:MakerNote: 78, 105, 107, 111, 110, 0, 2, 0, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 24, 0, 1, 0, 7, 0, 4, 0, 0, 0, 0, 2, 0, 0, 2, 0, 3, 0, 2, 0, 0, 0, 0, 0, 0, 0, 3, 0, 2, 0, 6, 0, 0, 0, 46, 1, 0, 0, 4, 0, 2, 0, 7, 0, 0, 0, 52, 1, 0, 0, 5, 0, 2, 0, 13, 0, 0, 0, 60, 1, 0, 0, 6, 0, 2, 0, 7, 0, 0, 0, 74, 1, 0, 0, 7, 0, 2, 0, 7, 0, 0, 0, 82, 1, 0, 0, 8, 0, 2, 0, 8, 0, 0, 0, 90, 1, 0, 0, 10, 0, 5, 0, 1, 0, 0, 0, 98, 1, 0, 0, 15, 0, 2, 0, 7, 0, 0, 0, 106, 1, 0, 0, 16, 0, 7, 0, 238, 1, 0, 0, 114, 1, 0, 0, 17, 0, 4, 0, 1, 0, 0, 0, 194, 3, 0, 0, 128, 0, 2, 0, 14, 0, 0, 0, 96, 3, 0, 0, 130, 0, 2, 0, 13, 0, 0, 0, 110, 3, 0, 0, 133, 0, 5, 0, 1, 0, 0, 0, 124, 3, 0, 0, 134, 0, 5, 0, 1, 0, 0, 0, 132, 3, 0, 0, 136, 0, 7, 0, 4, 0, 0, 0, 0, 0, 0, 0, 143, 0, 2, 0, 16, 0, 0, 0, 140, 3, 0, 0, 148, 0, 8, 0, 1, 0, 0, 0, 0, 0, 0, 0, 149, 0, 2, 0, 5, 0, 0, 0, 156, 3, 0, 0, 155, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 156, 0, 2, 0, 20, 0, 0, 0, 162, 3, 0, 0, 157, 0, 3, 0, 1, 0, 0, 0, 0, 0, 0, 0, 158, 0, 7, 0, 10, 0, 0, 0, 182, 3, 0, 0, 0, 0, 0, 0, 67, 79, 76, 79, 82, 0, 78, 79, 82, 77, 65, 76, 0, 0, 65, 85, 84, 79, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 65, 85, 84, 79, 32, 32, 0, 0, 65, 70, 45, 83, 32, 32, 0, 0, 78, 79, 82, 77, 65, 76, 32, 0, 128, 34, 0, 0, 232, 3, 0, 0, 65, 85, 84, 79, 32, 32, 0, 0, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 255, 1, 0, 0, 25, 97, 18, 49, 0, 0, 130, 85, 0, 0, 1, 121, 0, 12, 87, 113, 0, 12, 87, 113, 0, 12, 87, 113, 0, 52, 98, 48, 99, 0, 64, 232, 0, 100, 0, 175, 0, 100, 0, 28, 0, 31, 0, 1, 0, 0, 57, 247, 0, 0, 0, 179, 0, 0, 1, 55, 0, 0, 0, 0, 0, 0, 112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 12, 0, 0, 69, 5, 22, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 17, 17, 17, 1, 187, 3, 159, 3, 249, 1, 117, 2, 4, 2, 6, 1, 48, 2, 0, 1, 1, 240, 92, 0, 0, 3, 32, 0, 0, 0, 15, 0, 16, 0, 13, 0, 5, 0, 6, 0, 0, 0, 0, 0, 16, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 175, 1, 107, 1, 236, 2, 136, 3, 52, 15, 15, 1, 29, 2, 4, 1, 233, 0, 0, 16, 55, 16, 249, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 136, 136, 0, 0, 3, 242, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 171, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 242, 17, 0, 0, 0, 1, 50, 1, 116, 1, 162, 2, 171, 2, 106, 1, 235, 0, 0, 0, 0, 1, 100, 2, 1, 2, 98, 5, 88, 4, 214, 3, 140, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 119, 119, 119, 119, 8, 29, 8, 27, 8, 27, 17, 30, 14, 23, 39, 0, 212, 0, 0, 0, 16, 0, 14, 6, 0, 5, 1, 2, 50, 15, 66, 64, 82, 14, 0, 100, 4, 31, 0, 97, 12, 25, 8, 32, 1, 232, 1, 38, 255, 234, 0, 17, 0, 0, 0, 45, 0, 70, 0, 13, 2, 6, 1, 48, 102, 102, 102, 102, 0, 0, 0, 8, 0, 0, 0, 9, 0, 0, 0, 10, 65, 85, 84, 79, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 79, 70, 70, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 79, 70, 70, 32, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 3, 1, 3, 0, 1, 0, 0, 0, 6, 0, 0, 0, 26, 1, 5, 0, 1, 0, 0, 0, 28, 4, 0, 0, 27, 1, 5, 0, 1, 0, 0, 0, 36, 4, 0, 0, 40, 1, 3, 0, 1, 0, 0, 0, 2, 0, 0, 0, 1, 2, 4, 0, 1, 0, 0, 0, 19, 52, 0, 0, 2, 2, 4, 0, 1, 0, 0, 0, 27, 64, 0, 0, 19, 2, 3, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 44, 1, 0, 0, 1, 0, 0, 0, 44, 1, 0, 0, 1, 0, 0, 0
-    exif:MaxApertureValue: 30/10
-    exif:MeteringMode: 5
-    exif:Orientation: 1
-    exif:ProgramMode: 2
-    exif:Saturation: 0
-    exif:SceneCaptureType: 0
-    exif:SceneType: 1
-    exif:Sharpness: 0
-    exif:Software: E2100v1.1
-    exif:SubjectDistanceRange: 0
-    exif:UserComment: 0, 0, 0, 0, 0, 0, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32
-    exif:WhiteBalance: 0
-    exif:YCbCrPositioning: 2
-    jpeg:colorspace: 2
-    jpeg:sampling-factor: 2x2,1x1,1x1
-    rdf:Description: 
-    signature: 5437f12e07f090f2183d464ef4a1068a0bd2f5d394b946884c80b27f3242bb55
-    tiff:make: NIKON
-    tiff:model: E2100
-    tiff:software: E2100v1.1
-    unknown: 28, 234, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-    xmp:creatortool: E2100v1.1
-  Profiles:
-    Profile-exif: 6040 bytes
-    Profile-xmp: 3990 bytes
-  Artifacts:
-    filename: /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
-    verbose: true
-  Tainted: False
-  Filesize: 384KB
-  Number pixels: 1.92M
-  Pixels per second: 8MB
-  User time: 0.100u
-  Elapsed time: 0:01.239
-  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="jhove" exitCode="1">
-            <stdout></stdout>
-            <stderr>Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
-	at edu.harvard.hul.ois.jhove.module.tiff.IFD.readASCII(IFD.java:557)
-	at edu.harvard.hul.ois.jhove.module.tiff.ExifIFD.lookupTag(ExifIFD.java:935)
-	at edu.harvard.hul.ois.jhove.module.tiff.IFD.parse(IFD.java:320)
-	at edu.harvard.hul.ois.jhove.module.tiff.IFD.parse(IFD.java:218)
-	at edu.harvard.hul.ois.jhove.module.TiffModule.parseIFDChain(TiffModule.java:1149)
-	at edu.harvard.hul.ois.jhove.module.TiffModule.parseIFDs(TiffModule.java:1121)
-	at edu.harvard.hul.ois.jhove.module.TiffModule.exifParse(TiffModule.java:636)
-	at edu.harvard.hul.ois.jhove.module.jpeg.JpegExif.readExifData(JpegExif.java:100)
-	at edu.harvard.hul.ois.jhove.module.JpegModule.readAPP1(JpegModule.java:1118)
-	at edu.harvard.hul.ois.jhove.module.JpegModule.parse(JpegModule.java:620)
-	at edu.harvard.hul.ois.jhove.JhoveBase.processFile(JhoveBase.java:840)
-	at edu.harvard.hul.ois.jhove.JhoveBase.process(JhoveBase.java:614)
-	at edu.harvard.hul.ois.jhove.JhoveBase.dispatch(JhoveBase.java:465)
-	at Jhove.main(Jhove.java:296)
-</stderr>
         </source>
     </sources-list>
     <histogram-list>

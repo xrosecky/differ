@@ -6,7 +6,7 @@ Identification
 
 Significant Property  Source       Value for Image A          Value for Image B        
 --------------------  -----------  -------------------------  -------------------------
-MIME type             exiftool     image/png                  image/jpeg               
+MIME type             exiftool                                image/jpeg               
                       exiv2                                   image/jpeg               
                       jhove        application/octet-stream   image/jpeg               
 Type of format        exiftool     PNG                        JPEG                     
@@ -36,17 +36,25 @@ Color space                         imagemagick  sRGB                           
                                     daitss                                                                                                                                         
                                     jhove                                                                                                                                          
 Color type                          imagemagick  TrueColor                                                         TrueColor                                                       
+Compression quality                 exiftool                                                                       12                                                              
+                                    imagemagick                                                                    99                                                              
 Compression scheme                  fits         Deflate/Inflate                                                   Uncompressed                                                    
                                     exiftool     Deflate/Inflate                                                   Uncompressed                                                    
                                     imagemagick  Zip                                                               JPEG                                                            
                                     daitss                                                                         JPEG                                                            
                                     jhove                                                                          JPEG                                                            
-File created                        imagemagick  2013-02-13 16:42:12+01:00                                         2013-02-13 06:21:50+01:00                                       
+Copyright                           imagemagick  Copyright (c) 1998 Hewlett-Packard Company                                                                                        
+Depth of blue channel               imagemagick  8                                                                 8                                                               
+Depth of green channel              imagemagick  8                                                                 8                                                               
+Depth of red channel                imagemagick  8                                                                 8                                                               
+File created                        exiftool                                                                       2012                                                            
+                                    imagemagick  2013-02-13 16:42:12+01:00                                         2013-02-13 06:21:50+01:00                                       
 File last modified                  fits         2013:02:13 16:42:12+01:00                                         2013:02:13 06:21:50+01:00                                       
                                     exiftool     2013:02:13 16:42:12+01:00                                         2013:02:13 06:21:50+01:00                                       
                                     imagemagick  2013-02-13 16:42:12+01:00                                         2013-02-13 06:21:50+01:00                                       
                                     jhove        2013-02-13T16:42:12+01:00                                         2013-02-13T06:21:50+01:00                                       
 File name                           fits         05.png                                                            05.jpg                                                          
+                                    exiftool     05                                                                05                                                              
                                     imagemagick  05.png                                                            05.jpg                                                          
                                     exiv2                                                                          05.jpg                                                          
                                     core         05.png                                                            05.jpg                                                          
@@ -62,8 +70,9 @@ File size                           fits         11977006                       
                                     exiv2                                                                          347724                                                          
                                     daitss       11977006                                                          347724                                                          
                                     jhove        11977006                                                          347724                                                          
-ICC Profile                         fits         sRGB IEC61966-2.1                                                                                                                 
-                                    imagemagick  3144 bytes                                                                                                                        
+Gamma                               imagemagick  0.454545                                                          0.454545                                                        
+ICC profile                         fits         sRGB IEC61966-2.1                                                                                                                 
+                                    imagemagick  sRGB IEC61966-2.1                                                                                                                 
 Image height                        fits         2520  px                                                          512   px                                                        
                                     exiftool     2520  px                                                          512   px                                                        
                                     imagemagick  2520  px                                                          512   px                                                        
@@ -82,12 +91,10 @@ Number of channels                  exiftool                                    
                                     jhove                                                                          3                                                               
 Resolution horizontal               exiftool           PPI                                                         72    PPI                                                       
                                     imagemagick  87    PPI                                                         72    PPI                                                       
-                                    exiv2              PPI                                                         512   PPI                                                       
                                     daitss             PPI                                                               PPI                                                       
                                     jhove              PPI                                                               PPI                                                       
 Resolution vertical                 exiftool           PPI                                                         72    PPI                                                       
                                     imagemagick  70    PPI                                                         72    PPI                                                       
-                                    exiv2              PPI                                                         512   PPI                                                       
                                     daitss             PPI                                                               PPI                                                       
                                     jhove              PPI                                                               PPI                                                       
 Universal unique identifier (UUID)  imagemagick  1a1828533ed75721672c34005de1c6402ccd30ba29edecd70ba50762d3df157e   49cc94003d852f4aec505f214a5e94249ceb30a030c5c7e58f26b82ca4a597b4 
@@ -126,37 +133,25 @@ Color Space Data                                                                
 Color Transform                                                                        exiftool                                                                     YCbCr                                                         
 Color Type                                                                             exiftool     RGB                                                                                                                           
 Compose                                                                                imagemagick  Over                                                            Over                                                          
-Compression quality                                                                    exiftool                                                                     12                                                            
-                                                                                       imagemagick                                                                  99                                                            
 Connection Space Illuminant                                                            exiftool     0.9642 1 0.82491                                                                                                              
-Copyright                                                                              imagemagick  Copyright (c) 1998 Hewlett-Packard Company                                                                                    
-Create Date                                                                            exiftool                                                                     2012                                                          
 DCT Encode Version                                                                     exiftool                                                                     100                                                           
-Depth of blue channel                                                                  imagemagick  8                                                               8                                                             
-Depth of green channel                                                                 imagemagick  8                                                               8                                                             
-Depth of red channel                                                                   imagemagick  8                                                               8                                                             
-Description                                                                            imagemagick  sRGB IEC61966-2.1                                                                                                             
 Device Attributes                                                                      exiftool     Reflective, Glossy, Positive, Color                                                                                           
 Device Manufacturer                                                                    exiftool     IEC                                                                                                                           
 Device Mfg Desc                                                                        exiftool     IEC http                                                                                                                      
-Device Model Desc                                                                      exiftool     IEC 61966-2.1 Default RGB colour space - sRGB                                                                                 
 Displayed Units X                                                                      exiftool                                                                     inches                                                        
 Displayed Units Y                                                                      exiftool                                                                     inches                                                        
 Dispose                                                                                imagemagick  Undefined                                                       Undefined                                                     
 Document ID                                                                            exiftool                                                                     xmp.did                                                       
-Elapsed time                                                                           imagemagick  0:02.609                                                                                                                      
+Elapsed time                                                                           imagemagick  0:01.890                                                                                                                      
 Encoding process                                                                       exiftool                                                                     Baseline DCT, Huffman coding                                  
 Endianess                                                                              imagemagick  Undefined                                                       Undefined                                                     
 Exif Byte Order                                                                        exiftool                                                                     Big-endian (Motorola, MM)                                     
 Exif Image Height                                                                      exiftool                                                                     512                                                           
 Exif Image Width                                                                       exiftool                                                                     512                                                           
 ExifTool Version Number                                                                exiftool     8.60                                                            8.60                                                          
-File Name                                                                              exiftool     05.png                                                          05.jpg                                                        
 File Permissions                                                                       exiftool     rw-r--r--                                                       rw-r--r--                                                     
 Filter                                                                                 exiftool     Adaptive                                                                                                                      
-Format                                                                                 exiftool                                                                     image/jpeg                                                    
 Format version                                                                         daitss       1.1                                                                                                                           
-Gamma                                                                                  imagemagick  0.454545                                                        0.454545                                                      
 Global Altitude                                                                        exiftool                                                                     30                                                            
 Global Angle                                                                           exiftool                                                                     30                                                            
 Green Matrix Column                                                                    exiftool     0.38515 0.71687 0.09708                                                                                                       
@@ -172,14 +167,16 @@ Green standard deviation                                                        
 History Changed                                                                        exiftool                                                                     /                                                             
 History Instance ID                                                                    exiftool                                                                     xmp.iid                                                       
 History When                                                                           exiftool                                                                     2012                                                          
-ICC Profile Version                                                                    fits         2.1.0                                                                                                                         
-ICC Profile manufacturer                                                               imagemagick  IEC http://www.iec.ch                                                                                                         
 ICC Profile model                                                                      imagemagick  IEC 61966-2.1 Default RGB colour space - sRGB                                                                                 
+ICC profile manufacturer                                                               imagemagick  IEC http://www.iec.ch                                                                                                         
+ICC profile size                                                                       imagemagick  3144 bytes                                                                                                                    
+ICC profile version                                                                    fits         2.1.0                                                                                                                         
 IPTC Digest                                                                            exiftool                                                                     00000000000000000000000000000000                              
 Image Size                                                                             exiftool     3776x2520                                                       512x512                                                       
-Image/Channel statistics/Image statistics/Elapsed time                                 imagemagick                                                                  0:01.100                                                      
+Image size                                                                             exiv2                                                                        512 x 512                                                     
+Image/Channel statistics/Image statistics/Elapsed time                                 imagemagick                                                                  0:01.129                                                      
 Image/Channel statistics/Image statistics/Number pixels                                imagemagick                                                                  262K                                                          
-Image/Channel statistics/Image statistics/Pixels per second                            imagemagick                                                                  2.621MB                                                       
+Image/Channel statistics/Image statistics/Pixels per second                            imagemagick                                                                  2.016MB                                                       
 Image/Channel statistics/Image statistics/Profiles/Profile-8bim                        imagemagick                                                                  9594 bytes                                                    
 Image/Channel statistics/Image statistics/Profiles/Profile-exif                        imagemagick                                                                  7892 bytes                                                    
 Image/Channel statistics/Image statistics/Profiles/Profile-xmp                         imagemagick                                                                  3502 bytes                                                    
@@ -203,13 +200,14 @@ Image/Channel statistics/Image statistics/Properties/exif/YResolution           
 Image/Channel statistics/Image statistics/Properties/jpeg/colorspace                   imagemagick                                                                  2                                                             
 Image/Channel statistics/Image statistics/Properties/jpeg/sampling-factor              imagemagick                                                                  1x1,1x1,1x1                                                   
 Image/Channel statistics/Image statistics/Tainted                                      imagemagick                                                                  False                                                         
-Image/Channel statistics/Image statistics/User time                                    imagemagick                                                                  0.030u                                                        
+Image/Channel statistics/Image statistics/User time                                    imagemagick                                                                  0.020u                                                        
 Image/Channel statistics/Image statistics/Version                                      imagemagick                                                                  ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org 
 Instance ID                                                                            exiftool                                                                     xmp.iid                                                       
 Interlace                                                                              exiftool     Noninterlaced                                                                                                                 
                                                                                        imagemagick  None                                                            None                                                          
 Iterations                                                                             imagemagick  0                                                               0                                                             
 Luminance                                                                              exiftool     76.03647 80 87.12462                                                                                                          
+MIME Type                                                                              exiftool     image/png                                                       image/jpeg                                                    
 Matte color                                                                            imagemagick  grey74                                                          grey74                                                        
 Measurement Backing                                                                    exiftool     0 0 0                                                                                                                         
 Measurement Flare                                                                      exiftool     0.999%                                                                                                                        
@@ -242,12 +240,11 @@ PNG phys                                                                        
 PNG sRGB                                                                               imagemagick  intent=0 (See Rendering intent)                                                                                               
 Page geometry                                                                          imagemagick  3776x2520+0+0                                                   512x512+0+0                                                   
 Photometric Interpretation                                                             exiftool                                                                     RGB                                                           
-Photoshop Format                                                                       exiftool                                                                     Standard                                                      
 Photoshop Thumbnail                                                                    exiftool                                                                     (Binary data 7496 bytes, use -b option to extract)            
 Pixel Units                                                                            exiftool     Meters                                                                                                                        
 Pixels Per Unit X                                                                      exiftool     7087                                                                                                                          
 Pixels Per Unit Y                                                                      exiftool     7087                                                                                                                          
-Pixels per second                                                                      imagemagick  5.91MB                                                                                                                        
+Pixels per second                                                                      imagemagick  10.69MB                                                                                                                       
 Planar Configuration                                                                   exiftool                                                                     Chunky                                                        
 Primary Platform                                                                       exiftool     Microsoft Corporation                                                                                                         
 Primary blue                                                                           imagemagick  (0.15,0.05999)                                                  (0.15,0.06)                                                   
@@ -260,6 +257,7 @@ Profile Connection Space                                                        
 Profile Copyright                                                                      exiftool     Copyright (c) 1998 Hewlett-Packard Company                                                                                    
 Profile Creator                                                                        exiftool     HP                                                                                                                            
 Profile Date Time                                                                      exiftool     1998                                                                                                                          
+Profile Description                                                                    exiftool     sRGB IEC61966-2.1                                                                                                             
 Profile File Signature                                                                 exiftool     acsp                                                                                                                          
 Profile ID                                                                             exiftool     0                                                                                                                             
 Profile Version                                                                        exiftool     2.1.0                                                                                                                         

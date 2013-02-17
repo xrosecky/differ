@@ -5,8 +5,7 @@ Identification
 
 Significant Property Source       Value       Unit
 -------------------- -----------  ----------  ----
-MIME type            exiftool     image/tiff  
-                     exiv2        image/tiff  
+MIME type            exiv2        image/tiff  
                      jhove        image/tiff  
 Type of format       exiftool     TIFF        
                      imagemagick  TIFF        
@@ -32,16 +31,20 @@ Color depth                        exiftool     8
 Color space                        imagemagick  sRGB                                                              
                                    jhove        RGB                                                               
 Color type                         imagemagick  TrueColor                                                         
-Compression                        exiftool     Uncompressed                                                      
+Compression scheme                 exiftool     Uncompressed                                                      
+                                   fits         Uncompressed                                                      
                                    imagemagick  None                                                              
                                    jhove        Uncompressed                                                      
-Compression scheme                 fits         Uncompressed                                                      
+Depth of blue channel              imagemagick  8                                                                 
+Depth of green channel             imagemagick  8                                                                 
+Depth of red channel               imagemagick  8                                                                 
 File created                       imagemagick  2013-02-13 06:21:48+01:00                                         
 File last modified                 exiftool     2013:02:13 06:21:48+01:00                                         
                                    fits         2013:02:13 06:21:48+01:00                                         
                                    imagemagick  2013-02-13 06:21:48+01:00                                         
                                    jhove        2013-02-13T06:21:48+01:00                                         
 File name                          core         06.tif                                                            
+                                   exiftool     06                                                                
                                    exiv2        06.tif                                                            
                                    fits         06.tif                                                            
                                    imagemagick  06.tif                                                            
@@ -55,7 +58,8 @@ File size                          exiftool     768 kB
                                    fits         786572                                                            
                                    imagemagick  787KB                                                             
                                    jhove        786572                                                            
-ICC Profile                        fits                                                                           
+Gamma                              imagemagick  0.454545                                                          
+ICC profile                        fits                                                                           
 Image height                       core         512                                                               
                                    exiftool     512                                                               px
                                    exiv2        512                                                               px
@@ -69,11 +73,9 @@ Image width                        core         512
                                    imagemagick  512                                                               px
                                    jhove        512                                                               px
 Number of channels                 jhove        3                                                                 
-Resolution horizontal              exiv2        512                                                               PPI
-                                   imagemagick  72                                                                PPI
+Resolution horizontal              imagemagick  72                                                                PPI
                                    jhove                                                                          PPI
-Resolution vertical                exiv2        512                                                               PPI
-                                   imagemagick  72                                                                PPI
+Resolution vertical                imagemagick  72                                                                PPI
                                    jhove                                                                          PPI
 Universal unique identifier (UUID) imagemagick  01f8ff0e23a809255ae52a9857a7aeb0f89d92610205fef29c36c3d359ac3339  
 ---------------------------------- -----------  ----------------------------------------------------------------  ----
@@ -93,9 +95,6 @@ Blue standard deviation                                                  imagema
 Border color                                                             imagemagick  srgb(223,223,223)                                               
 Class                                                                    imagemagick  DirectClass                                                     
 Compose                                                                  imagemagick  Over                                                            
-Depth of blue channel                                                    imagemagick  8                                                               
-Depth of green channel                                                   imagemagick  8                                                               
-Depth of red channel                                                     imagemagick  8                                                               
 Dispose                                                                  imagemagick  Undefined                                                       
 Endianess                                                                imagemagick  MSB                                                             
 Exif Byte Order                                                          exiftool     Big-endian (Motorola, MM)                                       
@@ -105,21 +104,20 @@ exit-code                                                                exiftoo
                                                                          fits         ok                                                              
                                                                          imagemagick  ok                                                              
                                                                          jhove        ok                                                              
-File Name                                                                exiftool     06.tif                                                          
 File Permissions                                                         exiftool     rw-r--r--                                                       
-Gamma                                                                    imagemagick  0.454545                                                        
 Green kurtosis                                                           imagemagick  -0.755494                                                       
 Green max                                                                imagemagick  248 (0.972549)                                                  
 Green mean                                                               imagemagick  99.0512 (0.388436)                                              
 Green min                                                                imagemagick  3 (0.0117647)                                                   
 Green skewness                                                           imagemagick  0.222995                                                        
 Green standard deviation                                                 imagemagick  52.8775 (0.207363)                                              
-ICC Profile Version                                                      fits                                                                         
+ICC profile version                                                      fits                                                                         
 Image Size                                                               exiftool     512x512                                                         
+Image size                                                               exiv2        512 x 512                                                       
 Image/Base type                                                          imagemagick  TrueColor                                                       
-Image/Channel statistics/Image statistics/Elapsed time                   imagemagick  0:01.009                                                        
+Image/Channel statistics/Image statistics/Elapsed time                   imagemagick  0:01.019                                                        
 Image/Channel statistics/Image statistics/Number pixels                  imagemagick  262K                                                            
-Image/Channel statistics/Image statistics/Pixels per second              imagemagick  26.21MB                                                         
+Image/Channel statistics/Image statistics/Pixels per second              imagemagick  13.11MB                                                         
 Image/Channel statistics/Image statistics/Properties/tiff/endian         imagemagick  msb                                                             
 Image/Channel statistics/Image statistics/Properties/tiff/photometric    imagemagick  RGB                                                             
 Image/Channel statistics/Image statistics/Properties/tiff/rows-per-strip imagemagick  5                                                               
@@ -129,6 +127,7 @@ Image/Channel statistics/Image statistics/Version                        imagema
 Interlace                                                                imagemagick  None                                                            
 Iterations                                                               imagemagick  0                                                               
 Matte color                                                              imagemagick  grey74                                                          
+MIME Type                                                                exiftool     image/tiff                                                      
 Orientation                                                              imagemagick  TopLeft                                                         
 Overall kurtosis                                                         imagemagick  2.62729                                                         
 Overall max                                                              imagemagick  255 (1)                                                         

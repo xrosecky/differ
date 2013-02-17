@@ -19,7 +19,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">07.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>core</source>
         </metadata>
         <metadata>
@@ -43,7 +43,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">07.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
@@ -75,17 +75,17 @@
         <metadata>
             <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG (old-style)</value>
-            <conflict>false</conflict>
-            <source>fits</source>
-        </metadata>
-        <metadata>
-            <key>ICC Profile</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">sRGB IEC61966-2.1</value>
             <conflict>true</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
-            <key>ICC Profile Version</key>
+            <key>ICC profile</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">sRGB IEC61966-2.1</value>
+            <conflict>false</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
+            <key>ICC profile version</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2.1.0</value>
             <conflict>false</conflict>
             <source>fits</source>
@@ -103,9 +103,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>File Name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">07.jpg</value>
-            <conflict>false</conflict>
+            <key>File name</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">07</value>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -133,7 +133,7 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>MIME type</key>
+            <key>MIME Type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
             <conflict>false</conflict>
             <source>exiftool</source>
@@ -160,14 +160,14 @@
             <key>Resolution horizontal</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
             <key>Resolution vertical</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -189,9 +189,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Color space</key>
+            <key>Color Space</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">sRGB</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -207,7 +207,7 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Compression</key>
+            <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG (old-style)</value>
             <conflict>true</conflict>
             <source>exiftool</source>
@@ -273,9 +273,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Photoshop Format</key>
+            <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Optimised</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -297,9 +297,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Create Date</key>
+            <key>File created</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2004</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -333,9 +333,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Format</key>
+            <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -395,12 +395,6 @@
         <metadata>
             <key>Device Manufacturer</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">IEC</value>
-            <conflict>false</conflict>
-            <source>exiftool</source>
-        </metadata>
-        <metadata>
-            <key>Device Model</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">sRGB</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
@@ -479,12 +473,6 @@
         <metadata>
             <key>Device Mfg Desc</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">IEC http</value>
-            <conflict>false</conflict>
-            <source>exiftool</source>
-        </metadata>
-        <metadata>
-            <key>Device Model Desc</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">IEC 61966-2.1 Default RGB colour space - sRGB</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
@@ -673,7 +661,7 @@
         <metadata>
             <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
@@ -771,7 +759,7 @@
             <source>jhove</source>
         </metadata>
         <metadata>
-            <key>Compression</key>
+            <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
             <conflict>true</conflict>
             <source>jhove</source>
@@ -812,14 +800,14 @@
             <key>Resolution vertical</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
             <key>Resolution horizontal</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
@@ -831,7 +819,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">07.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
@@ -849,6 +837,12 @@
         <metadata>
             <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
+            <conflict>true</conflict>
+            <source>exiv2</source>
+        </metadata>
+        <metadata>
+            <key>Image size</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2000 x 1346</value>
             <conflict>false</conflict>
             <source>exiv2</source>
         </metadata>
@@ -867,20 +861,6 @@
             <source>exiv2</source>
         </metadata>
         <metadata>
-            <key>Resolution horizontal</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2000</value>
-            <unit>PPI</unit>
-            <conflict>true</conflict>
-            <source>exiv2</source>
-        </metadata>
-        <metadata>
-            <key>Resolution vertical</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1346</value>
-            <unit>PPI</unit>
-            <conflict>true</conflict>
-            <source>exiv2</source>
-        </metadata>
-        <metadata>
             <key>Thumbnail</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg, 8171 Bytes</value>
             <conflict>false</conflict>
@@ -889,7 +869,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">07.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -901,7 +881,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">07.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -935,7 +915,7 @@
             <source>daitss</source>
         </metadata>
         <metadata>
-            <key>Compression</key>
+            <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
             <conflict>true</conflict>
             <source>daitss</source>
@@ -971,14 +951,14 @@
             <key>Resolution horizontal</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
             <key>Resolution vertical</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -1002,7 +982,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">07.jpg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1306,7 +1286,7 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Compression</key>
+            <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
             <conflict>true</conflict>
             <source>imagemagick</source>
@@ -1326,7 +1306,7 @@
         <metadata>
             <key>File created</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-13 06:21:48+01:00</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1338,7 +1318,7 @@
         <metadata>
             <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1522,19 +1502,19 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>ICC Profile</key>
+            <key>ICC profile size</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3144 bytes</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Description</key>
+            <key>ICC profile</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">sRGB IEC61966-2.1</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>ICC Profile manufacturer</key>
+            <key>ICC profile manufacturer</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">IEC http://www.iec.ch</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
@@ -1589,7 +1569,7 @@
         </metadata>
         <metadata>
             <key>Image/Channel statistics/Image statistics/Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5.852MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">6.41MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1601,7 +1581,7 @@
         </metadata>
         <metadata>
             <key>Image/Channel statistics/Image statistics/Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.460</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.419</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1629,141 +1609,52 @@
             <key>Resolution horizontal</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Resolution vertical</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
     </metadata-list>
     <sources-list>
-        <source source="imagemagick" exitCode="0">
-            <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg
-  Format: JPEG (Joint Photographic Experts Group JFIF format)
-  Class: DirectClass
-  Geometry: 2000x1346+0+0
-  Resolution: 300x300
-  Print size: 6.66667x4.48667
-  Units: PixelsPerInch
-  Type: TrueColor
-  Endianess: Undefined
-  Colorspace: sRGB
-  Depth: 8-bit
-  Channel depth:
-    red: 8-bit
-    green: 8-bit
-    blue: 8-bit
-  Channel statistics:
-    Red:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 119.406 (0.46826)
-      standard deviation: 54.2171 (0.212616)
-      kurtosis: -0.990601
-      skewness: 0.0606509
-    Green:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 110.083 (0.4317)
-      standard deviation: 52.8979 (0.207443)
-      kurtosis: -0.819806
-      skewness: 0.202475
-    Blue:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 115.548 (0.45313)
-      standard deviation: 56.4082 (0.221209)
-      kurtosis: -1.04651
-      skewness: 0.359468
-  Image statistics:
-    Overall:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 115.013 (0.45103)
-      standard deviation: 54.527 (0.213831)
-      kurtosis: -0.938013
-      skewness: 0.219179
-  Rendering intent: Perceptual
-  Gamma: 0.454545
-  Chromaticity:
-    red primary: (0.64,0.33)
-    green primary: (0.3,0.6)
-    blue primary: (0.15,0.06)
-    white point: (0.3127,0.329)
-  Interlace: None
-  Background color: white
-  Border color: srgb(223,223,223)
-  Matte color: grey74
-  Transparent color: black
-  Compose: Over
-  Page geometry: 2000x1346+0+0
-  Dispose: Undefined
-  Iterations: 0
-  Compression: JPEG
-  Quality: 92
-  Orientation: TopLeft
-  Properties:
-    date:create: 2013-02-13T06:21:48+01:00
-    date:modify: 2013-02-13T06:21:48+01:00
-    dc:format: image/jpeg
-    exif:ColorSpace: 1
-    exif:Compression: 6
-    exif:DateTime: 2004:12:07 14:38:49
-    exif:ExifImageLength: 1346
-    exif:ExifImageWidth: 2000
-    exif:ExifOffset: 164
-    exif:JPEGInterchangeFormat: 302
-    exif:JPEGInterchangeFormatLength: 8171
-    exif:Orientation: 1
-    exif:PixelXDimension: 2000
-    exif:PixelYDimension: 1346
-    exif:ResolutionUnit: 2
-    exif:Software: Adobe Photoshop CS Windows
-    exif:XResolution: 300/1
-    exif:YResolution: 300/1
-    jpeg:colorspace: 2
-    jpeg:sampling-factor: 1x1,1x1,1x1
-    photoshop:History: 
-    signature: 1cd6a0b4c38638c4ca85d32b2d3a4d743d9ebb448c7ac81a21d8b1daf1d61d90
-    stRef:documentID: adobe:docid:photoshop:e911ff70-489e-11d9-90f4-c22daedd6e5a
-    stRef:instanceID: uuid:164b2632-48a0-11d9-90f4-c22daedd6e5a
-    tiff:XResolution: 300/1
-    tiff:YResolution: 300/1
-    xap:CreateDate: 2004-12-07T14:38:49-08:00
-    xap:CreatorTool: Adobe Photoshop CS Windows
-    xap:MetadataDate: 2004-12-07T14:38:49-08:00
-    xap:ModifyDate: 2004-12-07T14:38:49-08:00
-    xapMM:DocumentID: adobe:docid:photoshop:164b2635-48a0-11d9-90f4-c22daedd6e5a
-  Profiles:
-    Profile-8bim: 9692 bytes
-    Profile-exif: 8479 bytes
-    Profile-icc: 3144 bytes
-      Description: sRGB IEC61966-2.1
-      Manufacturer: IEC http://www.iec.ch
-      Model: IEC 61966-2.1 Default RGB colour space - sRGB
-      Copyright: Copyright (c) 1998 Hewlett-Packard Company
-    Profile-xmp: 6425 bytes
-  Artifacts:
-    filename: /opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg
-    verbose: true
-  Tainted: False
-  Filesize: 1.086MB
-  Number pixels: 2.692M
-  Pixels per second: 5.852MB
-  User time: 0.200u
-  Elapsed time: 0:01.460
-  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
+        <source source="exiv2" exitCode="0">
+            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg
+File size       : 1085698 Bytes
+MIME type       : image/jpeg
+Image size      : 2000 x 1346
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 2000 x 1346
+White balance   : 
+Thumbnail       : image/jpeg, 8171 Bytes
+Copyright       : 
+Exif comment    : 
+
 </stdout>
             <stderr></stderr>
         </source>
         <source source="jhove" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-02-14T16:20:27+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-14T17:25:46+01:00&lt;/date&gt;
  &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-13T06:21:48+01:00&lt;/lastModified&gt;
@@ -2083,33 +1974,173 @@ Thumbnail Image                 : (Binary data 8171 bytes, use -b option to extr
 </stdout>
             <stderr></stderr>
         </source>
-        <source source="exiv2" exitCode="0">
-            <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg
-File size       : 1085698 Bytes
-MIME type       : image/jpeg
-Image size      : 2000 x 1346
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 2000 x 1346
-White balance   : 
-Thumbnail       : image/jpeg, 8171 Bytes
-Copyright       : 
-Exif comment    : 
+        <source source="core" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
+        <source source="fits" exitCode="0">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 17:25"&gt;
+  &lt;identification&gt;
+    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;version toolname="file utility" toolversion="5.11"&gt;1.02&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/44&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;1085698&lt;/size&gt;
+    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;Adobe Photoshop CS Windows&lt;/creatingApplicationName&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:13 06:21:48+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2004:12:07 14:38:49-08:00&lt;/created&gt;
+    &lt;created toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;2004:12:07 14:38:49&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;3aa98d6c4a9e130bd778a809d0fc09ec&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360732908000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;2000&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1346&lt;/imageHeight&gt;
+      &lt;iccProfileName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;sRGB IEC61966-2.1&lt;/iccProfileName&gt;
+      &lt;iccProfileVersion toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2.1.0&lt;/iccProfileVersion&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;1 1&lt;/YCbCrSubSampling&gt;
+      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;300&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;300&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Adobe Photoshop CS Windows&lt;/scanningSoftwareName&gt;
+      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
 
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="imagemagick" exitCode="0">
+            <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Class: DirectClass
+  Geometry: 2000x1346+0+0
+  Resolution: 300x300
+  Print size: 6.66667x4.48667
+  Units: PixelsPerInch
+  Type: TrueColor
+  Endianess: Undefined
+  Colorspace: sRGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Red:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 119.406 (0.46826)
+      standard deviation: 54.2171 (0.212616)
+      kurtosis: -0.990601
+      skewness: 0.0606509
+    Green:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 110.083 (0.4317)
+      standard deviation: 52.8979 (0.207443)
+      kurtosis: -0.819806
+      skewness: 0.202475
+    Blue:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 115.548 (0.45313)
+      standard deviation: 56.4082 (0.221209)
+      kurtosis: -1.04651
+      skewness: 0.359468
+  Image statistics:
+    Overall:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 115.013 (0.45103)
+      standard deviation: 54.527 (0.213831)
+      kurtosis: -0.938013
+      skewness: 0.219179
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Interlace: None
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Compose: Over
+  Page geometry: 2000x1346+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 92
+  Orientation: TopLeft
+  Properties:
+    date:create: 2013-02-13T06:21:48+01:00
+    date:modify: 2013-02-13T06:21:48+01:00
+    dc:format: image/jpeg
+    exif:ColorSpace: 1
+    exif:Compression: 6
+    exif:DateTime: 2004:12:07 14:38:49
+    exif:ExifImageLength: 1346
+    exif:ExifImageWidth: 2000
+    exif:ExifOffset: 164
+    exif:JPEGInterchangeFormat: 302
+    exif:JPEGInterchangeFormatLength: 8171
+    exif:Orientation: 1
+    exif:PixelXDimension: 2000
+    exif:PixelYDimension: 1346
+    exif:ResolutionUnit: 2
+    exif:Software: Adobe Photoshop CS Windows
+    exif:XResolution: 300/1
+    exif:YResolution: 300/1
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 1x1,1x1,1x1
+    photoshop:History: 
+    signature: 1cd6a0b4c38638c4ca85d32b2d3a4d743d9ebb448c7ac81a21d8b1daf1d61d90
+    stRef:documentID: adobe:docid:photoshop:e911ff70-489e-11d9-90f4-c22daedd6e5a
+    stRef:instanceID: uuid:164b2632-48a0-11d9-90f4-c22daedd6e5a
+    tiff:XResolution: 300/1
+    tiff:YResolution: 300/1
+    xap:CreateDate: 2004-12-07T14:38:49-08:00
+    xap:CreatorTool: Adobe Photoshop CS Windows
+    xap:MetadataDate: 2004-12-07T14:38:49-08:00
+    xap:ModifyDate: 2004-12-07T14:38:49-08:00
+    xapMM:DocumentID: adobe:docid:photoshop:164b2635-48a0-11d9-90f4-c22daedd6e5a
+  Profiles:
+    Profile-8bim: 9692 bytes
+    Profile-exif: 8479 bytes
+    Profile-icc: 3144 bytes
+      Description: sRGB IEC61966-2.1
+      Manufacturer: IEC http://www.iec.ch
+      Model: IEC 61966-2.1 Default RGB colour space - sRGB
+      Copyright: Copyright (c) 1998 Hewlett-Packard Company
+    Profile-xmp: 6425 bytes
+  Artifacts:
+    filename: /opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 1.086MB
+  Number pixels: 2.692M
+  Pixels per second: 6.41MB
+  User time: 0.200u
+  Elapsed time: 0:01.419
+  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
 </stdout>
             <stderr></stderr>
         </source>
@@ -2122,7 +2153,7 @@ Exif comment    :
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130214-1949-19bvitk-0.jpg&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130214-1949-1vpwlj2-0.jpg&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -2225,7 +2256,7 @@ Exif comment    :
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-14T10:24:29-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-02-14T11:29:48-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -2245,7 +2276,7 @@ Exif comment    :
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130214-1949-19bvitk-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130214-1949-1vpwlj2-0.jpg&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
@@ -2260,57 +2291,6 @@ Exif comment    :
 	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
 &lt;/agent&gt;
 &lt;/premis&gt;
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="core" exitCode="0">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
-        <source source="fits" exitCode="0">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 16:20"&gt;
-  &lt;identification&gt;
-    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;version toolname="file utility" toolversion="5.11"&gt;1.02&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/44&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;1085698&lt;/size&gt;
-    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;Adobe Photoshop CS Windows&lt;/creatingApplicationName&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:13 06:21:48+01:00&lt;/lastmodified&gt;
-    &lt;created toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2004:12:07 14:38:49-08:00&lt;/created&gt;
-    &lt;created toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;2004:12:07 14:38:49&lt;/created&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/07.jpg&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;3aa98d6c4a9e130bd778a809d0fc09ec&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360732908000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus /&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
-      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;2000&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1346&lt;/imageHeight&gt;
-      &lt;iccProfileName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;sRGB IEC61966-2.1&lt;/iccProfileName&gt;
-      &lt;iccProfileVersion toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2.1.0&lt;/iccProfileVersion&gt;
-      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;1 1&lt;/YCbCrSubSampling&gt;
-      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
-      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;300&lt;/xSamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;300&lt;/ySamplingFrequency&gt;
-      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
-      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Adobe Photoshop CS Windows&lt;/scanningSoftwareName&gt;
-      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
-
 </stdout>
             <stderr></stderr>
         </source>

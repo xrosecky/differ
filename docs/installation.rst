@@ -1,16 +1,135 @@
 Installation
 ............
 
+Exiftool
+~~~~~~~~
 
-DROID
+`home page <http://www.sno.phy.queensu.ca/~phil/exiftool/>`_
+
+http://www.stahuj.centrum.cz/utility_a_ostatni/ostatni/exiftool/
+
+::
+   
+   # for debian linux
+   root@treebeard:~# aptitude install libimage-exiftool-perl 
+
+
+set in file =differ-common/common.properties=
+a path to exiftool binary.
+
+It depends on operating system.
+
+::
+
+   exiftool.binary=/usr/bin/exiftool
+
+   
+   
+Exiv2
 ~~~~~
 
-`Home page <http://digital-preservation.github.com/droid/>`_
+`home page <http://www.exiv2.org/>`_
 
-Download `Zip file with binary <https://github.com/downloads/digital-preservation/droid/droid-binary-6.1-bin.zip>`_.
+`download <http://www.exiv2.org/download.html>`_
+
+::
+
+   # for debian linux
+   root@treebeard:~# aptitude install exiv2 
+   
+
+set in file =differ-common/common.properties=
+a path to exiv2 binary.
+
+It depends on operating system.
+
+::
+
+   exiv2.binary=/usr/bin/exiv2
 
 
-PRONOM
-~~~~~~
+JHOVE
+~~~~~
 
-http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new
+`home page <http://jhove.sourceforge.net>`_
+
+`download page <http://http://jhove.sourceforge.net/distribution.html>`_
+
+::
+
+   # for debian linux
+   root@treebeard:~# aptitude install jhove
+
+
+set in file =differ-common/common.properties=
+a path to jhove binary.
+
+It depends on operating system.
+
+::
+
+   jhove.binary=/usr/bin/jhove
+
+
+Imagemagick
+~~~~~~~~~~~
+
+
+`home page <http://www.imagemagick.org/script/index.php>`_
+
+`download page <http://www.imagemagick.org/script/binary-releases.php>`_
+
+::
+
+   # for debian linux
+   root@treebeard:~# aptitude install imagemagick
+
+
+set in file =differ-common/common.properties=
+a path to imagemagick binary.
+
+It depends on operating system.
+
+::
+
+   imagemagic.binary=/usr/bin/identify
+
+FITS
+~~~~
+
+`home page <http://code.google.com/p/fits/>`_
+`download page <http://code.google.com/p/fits/downloads/list>`_
+
+
+::
+   
+   stavel@treebeard:~/lib$ wget http://fits.googlecode.com/files/fits-0.6.1.zip
+   stavel@treebeard:~/lib$ unzip fits-0.6.1.zip 
+   stavel@treebeard:~/lib$ chmod 755 fits-0.6.1/fits.sh 
+
+
+set in file =differ-common/common.properties=
+a path to fits binary.
+
+It depends on operating system.
+
+::
+
+   fits.binary=/home/stavel/lib/fits-0.6.1/fits.sh
+   
+
+
+..
+
+   DROID
+   ~~~~~
+
+   `Home page <http://digital-preservation.github.com/droid/>`_
+
+   Download `Zip file with binary <https://github.com/downloads/digital-preservation/droid/droid-binary-6.1-bin.zip>`_.
+
+
+   PRONOM
+   ~~~~~~
+
+   http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new
