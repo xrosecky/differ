@@ -4,7 +4,6 @@
 1;About
 1;Aperture
 1;Auxiliary Lens
-1;Background color
 1;Bits per sample
 1;Blue kurtosis
 1;Blue max
@@ -12,7 +11,6 @@
 1;Blue min
 1;Blue skewness
 1;Blue standard deviation
-1;Border color
 1;Camera Model Name
 1;Camera make
 1;Camera model
@@ -21,17 +19,14 @@
 1;Code block height
 1;Code block width
 1;Color Mode
+1;Color Space
 1;Color depth
 1;Color space
 1;Color type
 1;Components Configuration
-1;Compose
 1;Compressed Bits Per Pixel
-1;Compression
-1;Compression quality
 1;Compression scheme
 1;Contrast
-1;Create Date
 1;Creatortool
 1;Custom Rendered
 1;Data Dump
@@ -41,7 +36,6 @@
 1;Depth of red channel
 1;Digital Zoom
 1;Digital Zoom Ratio
-1;Dispose
 1;Encoding process
 1;Endianess
 1;Exif Byte Order
@@ -58,7 +52,6 @@
 1;Exposure time
 1;F Number
 1;Field Of View
-1;File Name
 1;File Permissions
 1;File Source
 1;File created
@@ -75,12 +68,10 @@
 1;Flash Setting
 1;Flashpix Version
 1;Focal Length
-1;Focal Length In 35mm Format
 1;Focal length
 1;Focus Mode
 1;Format version
 1;Gain Control
-1;Gamma
 1;Green kurtosis
 1;Green max
 1;Green mean
@@ -88,8 +79,8 @@
 1;Green skewness
 1;Green standard deviation
 1;Hyperfocal Distance
-1;ICC Profile
-1;ICC Profile Version
+1;ICC profile
+1;ICC profile version
 1;ISO
 1;ISO Selection
 1;ISO Speed
@@ -98,78 +89,101 @@
 1;Image Size
 1;Image height
 1;Image quality
+1;Image size
 1;Image timestamp
 1;Image width
-1;Image/Channel statistics/Image statistics/Elapsed time
-1;Image/Channel statistics/Image statistics/Number pixels
-1;Image/Channel statistics/Image statistics/Pixels per second
-1;Image/Channel statistics/Image statistics/Profiles/Profile-exif
-1;Image/Channel statistics/Image statistics/Profiles/Profile-xmp
-1;Image/Channel statistics/Image statistics/Properties/exif
-1;Image/Channel statistics/Image statistics/Properties/exif/ColorSpace
-1;Image/Channel statistics/Image statistics/Properties/exif/ComponentsConfiguration
-1;Image/Channel statistics/Image statistics/Properties/exif/CompressedBitsPerPixel
-1;Image/Channel statistics/Image statistics/Properties/exif/Contrast
-1;Image/Channel statistics/Image statistics/Properties/exif/CustomRendered
-1;Image/Channel statistics/Image statistics/Properties/exif/DateTime
-1;Image/Channel statistics/Image statistics/Properties/exif/DateTimeDigitized
-1;Image/Channel statistics/Image statistics/Properties/exif/DateTimeOriginal
-1;Image/Channel statistics/Image statistics/Properties/exif/DigitalZoomRatio
-1;Image/Channel statistics/Image statistics/Properties/exif/ExifImageLength
-1;Image/Channel statistics/Image statistics/Properties/exif/ExifImageWidth
-1;Image/Channel statistics/Image statistics/Properties/exif/ExifOffset
-1;Image/Channel statistics/Image statistics/Properties/exif/ExifVersion
-1;Image/Channel statistics/Image statistics/Properties/exif/ExposureBiasValue
-1;Image/Channel statistics/Image statistics/Properties/exif/ExposureMode
-1;Image/Channel statistics/Image statistics/Properties/exif/ExposureProgram
-1;Image/Channel statistics/Image statistics/Properties/exif/ExposureTime
-1;Image/Channel statistics/Image statistics/Properties/exif/FNumber
-1;Image/Channel statistics/Image statistics/Properties/exif/FileSource
-1;Image/Channel statistics/Image statistics/Properties/exif/Flash
-1;Image/Channel statistics/Image statistics/Properties/exif/FlashPixVersion
-1;Image/Channel statistics/Image statistics/Properties/exif/FocalLength
-1;Image/Channel statistics/Image statistics/Properties/exif/FocalLengthIn35mmFilm
-1;Image/Channel statistics/Image statistics/Properties/exif/GainControl
-1;Image/Channel statistics/Image statistics/Properties/exif/ISOSpeed
-1;Image/Channel statistics/Image statistics/Properties/exif/ISOSpeedRatings
-1;Image/Channel statistics/Image statistics/Properties/exif/LightSource
-1;Image/Channel statistics/Image statistics/Properties/exif/Make
-1;Image/Channel statistics/Image statistics/Properties/exif/MakerNote
-1;Image/Channel statistics/Image statistics/Properties/exif/MaxApertureValue
-1;Image/Channel statistics/Image statistics/Properties/exif/MeteringMode
-1;Image/Channel statistics/Image statistics/Properties/exif/Model
-1;Image/Channel statistics/Image statistics/Properties/exif/Orientation
-1;Image/Channel statistics/Image statistics/Properties/exif/ProgramMode
-1;Image/Channel statistics/Image statistics/Properties/exif/Saturation
-1;Image/Channel statistics/Image statistics/Properties/exif/SceneCaptureType
-1;Image/Channel statistics/Image statistics/Properties/exif/SceneType
-1;Image/Channel statistics/Image statistics/Properties/exif/Sharpness
-1;Image/Channel statistics/Image statistics/Properties/exif/Software
-1;Image/Channel statistics/Image statistics/Properties/exif/SubjectDistanceRange
-1;Image/Channel statistics/Image statistics/Properties/exif/UserComment
-1;Image/Channel statistics/Image statistics/Properties/exif/WhiteBalance
-1;Image/Channel statistics/Image statistics/Properties/exif/YCbCrPositioning
-1;Image/Channel statistics/Image statistics/Properties/jpeg/colorspace
-1;Image/Channel statistics/Image statistics/Properties/jpeg/sampling-factor
-1;Image/Channel statistics/Image statistics/Properties/rdf
-1;Image/Channel statistics/Image statistics/Properties/tiff/make
-1;Image/Channel statistics/Image statistics/Properties/tiff/model
-1;Image/Channel statistics/Image statistics/Properties/tiff/software
-1;Image/Channel statistics/Image statistics/Properties/unknown
-1;Image/Channel statistics/Image statistics/Properties/xmp/creatortool
-1;Image/Channel statistics/Image statistics/Tainted
-1;Image/Channel statistics/Image statistics/User time
-1;Image/Channel statistics/Image statistics/Version
-1;Interlace
-1;Iterations
+1;Image/Artifacts/verbose
+1;Image/Background color
+1;Image/Border color
+1;Image/Compose
+1;Image/Compression
+1;Image/Dispose
+1;Image/Elapsed time
+1;Image/Filesize
+1;Image/Image statistics/Overall/kurtosis
+1;Image/Image statistics/Overall/max
+1;Image/Image statistics/Overall/mean
+1;Image/Image statistics/Overall/min
+1;Image/Image statistics/Overall/skewness
+1;Image/Image statistics/Overall/standard deviation
+1;Image/Interlace
+1;Image/Iterations
+1;Image/Matte color
+1;Image/Number pixels
+1;Image/Orientation
+1;Image/Page geometry
+1;Image/Pixels per second
+1;Image/Profiles/Profile-exif
+1;Image/Profiles/Profile-xmp
+1;Image/Properties/date/create
+1;Image/Properties/date/modify
+1;Image/Properties/exif
+1;Image/Properties/exif/ColorSpace
+1;Image/Properties/exif/ComponentsConfiguration
+1;Image/Properties/exif/CompressedBitsPerPixel
+1;Image/Properties/exif/Contrast
+1;Image/Properties/exif/CustomRendered
+1;Image/Properties/exif/DateTime
+1;Image/Properties/exif/DateTimeDigitized
+1;Image/Properties/exif/DateTimeOriginal
+1;Image/Properties/exif/DigitalZoomRatio
+1;Image/Properties/exif/ExifImageLength
+1;Image/Properties/exif/ExifImageWidth
+1;Image/Properties/exif/ExifOffset
+1;Image/Properties/exif/ExifVersion
+1;Image/Properties/exif/ExposureBiasValue
+1;Image/Properties/exif/ExposureMode
+1;Image/Properties/exif/ExposureProgram
+1;Image/Properties/exif/ExposureTime
+1;Image/Properties/exif/FNumber
+1;Image/Properties/exif/FileSource
+1;Image/Properties/exif/Flash
+1;Image/Properties/exif/FlashPixVersion
+1;Image/Properties/exif/FocalLength
+1;Image/Properties/exif/FocalLengthIn35mmFilm
+1;Image/Properties/exif/GainControl
+1;Image/Properties/exif/ISOSpeed
+1;Image/Properties/exif/ISOSpeedRatings
+1;Image/Properties/exif/LightSource
+1;Image/Properties/exif/Make
+1;Image/Properties/exif/MakerNote
+1;Image/Properties/exif/MaxApertureValue
+1;Image/Properties/exif/MeteringMode
+1;Image/Properties/exif/Model
+1;Image/Properties/exif/Orientation
+1;Image/Properties/exif/ProgramMode
+1;Image/Properties/exif/Saturation
+1;Image/Properties/exif/SceneCaptureType
+1;Image/Properties/exif/SceneType
+1;Image/Properties/exif/Sharpness
+1;Image/Properties/exif/Software
+1;Image/Properties/exif/SubjectDistanceRange
+1;Image/Properties/exif/UserComment
+1;Image/Properties/exif/WhiteBalance
+1;Image/Properties/exif/YCbCrPositioning
+1;Image/Properties/jpeg/colorspace
+1;Image/Properties/jpeg/sampling-factor
+1;Image/Properties/rdf
+1;Image/Properties/signature
+1;Image/Properties/tiff/make
+1;Image/Properties/tiff/model
+1;Image/Properties/tiff/software
+1;Image/Properties/unknown
+1;Image/Properties/xmp/creatortool
+1;Image/Quality
+1;Image/Rendering intent
+1;Image/Tainted
+1;Image/Transparent color
+1;Image/User time
+1;Image/Version
 1;JFIF Version
 1;Light Source
 1;Light Value
+1;MIME Type
 1;MIME type
 1;Make
 1;Maker Note Version
 1;Manual Focus Distance
-1;Matte color
 1;Max Aperture Value
 1;Metering Mode
 1;Metering mode
@@ -183,20 +197,10 @@
 1;Number of tiles
 1;Offset Schema
 1;Orientation
-1;Overall kurtosis
-1;Overall max
-1;Overall mean
-1;Overall min
-1;Overall skewness
-1;Overall stdev
 1;Padding
-1;Page geometry
 1;Preview Image
 1;Preview Image Length
 1;Preview Image Start
-1;Primary blue
-1;Primary green
-1;Primary red
 1;Print size
 1;Program Mode
 1;Progression order
@@ -208,7 +212,6 @@
 1;Red min
 1;Red skewness
 1;Red standard deviation
-1;Rendering intent
 1;Resolution horizontal
 1;Resolution unit
 1;Resolution vertical
@@ -226,16 +229,13 @@
 1;Tile size X
 1;Tile size Y
 1;Transformation
-1;Transparent color
 1;Type of format
 1;Units
 1;Universal unique identifier (UUID)
 1;Validation (well formed and valid)
-1;Verbose
 1;Warning
 1;White Balance
 1;White balance
-1;White point
 1;Y Cb Cr Positioning
 1;Y Cb Cr Sub Sampling
 1;exit-code

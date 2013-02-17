@@ -1,6 +1,5 @@
 1;APP14 Flags 0
 1;APP14 Flags 1
-1;Background color
 1;Bit Depth
 1;Bits per sample
 1;Blue Matrix Column
@@ -13,7 +12,6 @@
 1;Blue min
 1;Blue skewness
 1;Blue standard deviation
-1;Border color
 1;CMM Flags
 1;Class
 1;Code block height
@@ -26,34 +24,25 @@
 1;Color depth
 1;Color space
 1;Color type
-1;Compose
-1;Compression
 1;Compression quality
 1;Compression scheme
 1;Connection Space Illuminant
-1;Copyright
-1;Create Date
 1;DCT Encode Version
 1;Depth of blue channel
 1;Depth of green channel
 1;Depth of red channel
-1;Description
 1;Device Attributes
 1;Device Manufacturer
 1;Device Mfg Desc
-1;Device Model Desc
 1;Displayed Units X
 1;Displayed Units Y
-1;Dispose
 1;Document ID
-1;Elapsed time
 1;Encoding process
 1;Endianess
 1;Exif Byte Order
 1;Exif Image Height
 1;Exif Image Width
 1;ExifTool Version Number
-1;File Name
 1;File Permissions
 1;File created
 1;File last modified
@@ -61,9 +50,7 @@
 1;File path
 1;File size
 1;Filter
-1;Format
 1;Format version
-1;Gamma
 1;Global Altitude
 1;Global Angle
 1;Green Matrix Column
@@ -79,48 +66,77 @@
 1;History Changed
 1;History Instance ID
 1;History When
-1;ICC Profile
-1;ICC Profile Version
-1;ICC Profile manufacturer
-1;ICC Profile model
+1;ICC profile
+1;ICC profile version
 1;IPTC Digest
 1;Image Size
 1;Image height
+1;Image size
 1;Image width
-1;Image/Channel statistics/Image statistics/Elapsed time
-1;Image/Channel statistics/Image statistics/Number pixels
-1;Image/Channel statistics/Image statistics/Pixels per second
-1;Image/Channel statistics/Image statistics/Profiles/Profile-8bim
-1;Image/Channel statistics/Image statistics/Profiles/Profile-exif
-1;Image/Channel statistics/Image statistics/Profiles/Profile-xmp
-1;Image/Channel statistics/Image statistics/Properties/exif/BitsPerSample
-1;Image/Channel statistics/Image statistics/Properties/exif/ColorSpace
-1;Image/Channel statistics/Image statistics/Properties/exif/Compression
-1;Image/Channel statistics/Image statistics/Properties/exif/DateTime
-1;Image/Channel statistics/Image statistics/Properties/exif/ExifImageLength
-1;Image/Channel statistics/Image statistics/Properties/exif/ExifImageWidth
-1;Image/Channel statistics/Image statistics/Properties/exif/ExifOffset
-1;Image/Channel statistics/Image statistics/Properties/exif/JPEGInterchangeFormat
-1;Image/Channel statistics/Image statistics/Properties/exif/JPEGInterchangeFormatLength
-1;Image/Channel statistics/Image statistics/Properties/exif/Orientation
-1;Image/Channel statistics/Image statistics/Properties/exif/PhotometricInterpretation
-1;Image/Channel statistics/Image statistics/Properties/exif/PlanarConfiguration
-1;Image/Channel statistics/Image statistics/Properties/exif/ResolutionUnit
-1;Image/Channel statistics/Image statistics/Properties/exif/SamplesPerPixel
-1;Image/Channel statistics/Image statistics/Properties/exif/Software
-1;Image/Channel statistics/Image statistics/Properties/exif/XResolution
-1;Image/Channel statistics/Image statistics/Properties/exif/YResolution
-1;Image/Channel statistics/Image statistics/Properties/jpeg/colorspace
-1;Image/Channel statistics/Image statistics/Properties/jpeg/sampling-factor
-1;Image/Channel statistics/Image statistics/Tainted
-1;Image/Channel statistics/Image statistics/User time
-1;Image/Channel statistics/Image statistics/Version
+1;Image/Artifacts/verbose
+1;Image/Background color
+1;Image/Border color
+1;Image/Chromaticity/blue primary
+1;Image/Chromaticity/green primary
+1;Image/Chromaticity/red primary
+1;Image/Chromaticity/white point
+1;Image/Compose
+1;Image/Compression
+1;Image/Dispose
+1;Image/Elapsed time
+1;Image/Filesize
+1;Image/Image statistics/Overall/kurtosis
+1;Image/Image statistics/Overall/max
+1;Image/Image statistics/Overall/mean
+1;Image/Image statistics/Overall/min
+1;Image/Image statistics/Overall/skewness
+1;Image/Image statistics/Overall/standard deviation
+1;Image/Interlace
+1;Image/Iterations
+1;Image/Matte color
+1;Image/Number pixels
+1;Image/Orientation
+1;Image/Page geometry
+1;Image/Pixels per second
+1;Image/Profiles/Profile-8bim
+1;Image/Profiles/Profile-exif
+1;Image/Profiles/Profile-icc
+1;Image/Profiles/Profile-xmp
+1;Image/Properties/date/create
+1;Image/Properties/date/modify
+1;Image/Properties/exif/BitsPerSample
+1;Image/Properties/exif/ColorSpace
+1;Image/Properties/exif/Compression
+1;Image/Properties/exif/DateTime
+1;Image/Properties/exif/ExifImageLength
+1;Image/Properties/exif/ExifImageWidth
+1;Image/Properties/exif/ExifOffset
+1;Image/Properties/exif/ImageLength
+1;Image/Properties/exif/ImageWidth
+1;Image/Properties/exif/JPEGInterchangeFormat
+1;Image/Properties/exif/JPEGInterchangeFormatLength
+1;Image/Properties/exif/Orientation
+1;Image/Properties/exif/PhotometricInterpretation
+1;Image/Properties/exif/PlanarConfiguration
+1;Image/Properties/exif/ResolutionUnit
+1;Image/Properties/exif/SamplesPerPixel
+1;Image/Properties/exif/Software
+1;Image/Properties/exif/XResolution
+1;Image/Properties/exif/YResolution
+1;Image/Properties/jpeg/colorspace
+1;Image/Properties/jpeg/sampling-factor
+1;Image/Properties/signature
+1;Image/Quality
+1;Image/Rendering intent
+1;Image/Tainted
+1;Image/Transparent color
+1;Image/User time
+1;Image/Version
 1;Instance ID
 1;Interlace
-1;Iterations
 1;Luminance
+1;MIME Type
 1;MIME type
-1;Matte color
 1;Measurement Backing
 1;Measurement Flare
 1;Measurement Geometry
@@ -131,38 +147,19 @@
 1;Metadata Date
 1;Modify Date
 1;Multiple Component Transformation
-1;Num of pixels
 1;Number of channels
 1;Number of decomposition levels
 1;Number of quality layers
 1;Number of tiles
 1;Orientation
 1;Original Document ID
-1;Overall kurtosis
-1;Overall max
-1;Overall mean
-1;Overall min
-1;Overall skewness
-1;Overall stdev
-1;PNG
-1;PNG chrm
-1;PNG gama
-1;PNG iccp
-1;PNG phys
-1;PNG sRGB
-1;Page geometry
 1;Photometric Interpretation
-1;Photoshop Format
 1;Photoshop Thumbnail
 1;Pixel Units
 1;Pixels Per Unit X
 1;Pixels Per Unit Y
-1;Pixels per second
 1;Planar Configuration
 1;Primary Platform
-1;Primary blue
-1;Primary green
-1;Primary red
 1;Print size
 1;Profile CMM Type
 1;Profile Class
@@ -170,6 +167,7 @@
 1;Profile Copyright
 1;Profile Creator
 1;Profile Date Time
+1;Profile Description
 1;Profile File Signature
 1;Profile ID
 1;Profile Version
@@ -187,14 +185,12 @@
 1;Red skewness
 1;Red standard deviation
 1;Rendering Intent
-1;Rendering intent
 1;Resolution horizontal
 1;Resolution unit
 1;Resolution vertical
 1;Samples Per Pixel
 1;Samples per pixel
 1;Software type
-1;Tainted
 1;Technology
 1;Thumbnail
 1;Thumbnail Image
@@ -203,22 +199,16 @@
 1;Tile size X
 1;Tile size Y
 1;Transformation
-1;Transparent color
 1;Type of format
 1;Units
 1;Universal unique identifier (UUID)
-1;User time
 1;Validation (well formed and valid)
-1;Verbose
-1;Version
 1;Viewing Cond Desc
 1;Viewing Cond Illuminant
 1;Viewing Cond Illuminant Type
 1;Viewing Cond Surround
 1;White Point X
 1;White Point Y
-1;White point
 1;XMP Toolkit
 1;Y Cb Cr Sub Sampling
 1;exit-code
-1;verbose

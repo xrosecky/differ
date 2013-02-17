@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04">
- <date>2013-02-14T16:18:45+01:00</date>
- <repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/04.tif">
+<jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30">
+ <date>2013-02-17T17:23:36+01:00</date>
+ <repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif">
   <reportingModule release="1.5" date="2007-10-02">TIFF-hul</reportingModule>
-  <lastModified>2013-02-13T06:21:48+01:00</lastModified>
+  <lastModified>2013-02-15T17:56:10+01:00</lastModified>
   <size>286116</size>
   <format>TIFF</format>
   <version>5.0</version>
@@ -57,55 +57,49 @@
         <name>NisoImageMetadata</name>
         <values arity="Scalar" type="NISOImageMetadata">
          <value>
-       <mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd">
-        <mix:BasicDigitalObjectInformation>
-         <mix:ObjectIdentifier>
-          <mix:objectIdentifierType>JHOVE</mix:objectIdentifierType>
-         </mix:ObjectIdentifier>
-         <mix:byteOrder>big endian</mix:byteOrder>
-         <mix:Compression>
-          <mix:compressionScheme>Uncompressed</mix:compressionScheme>
-         </mix:Compression>
-        </mix:BasicDigitalObjectInformation>
-        <mix:BasicImageInformation>
-         <mix:BasicImageCharacteristics>
-          <mix:imageWidth>512</mix:imageWidth>
-          <mix:imageHeight>512</mix:imageHeight>
+       <mix:mix xmlns:mix="http://www.loc.gov/mix/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/ http://www.loc.gov/mix/mix02.xsd">
+        <mix:BasicImageParameters>
+         <mix:Format>
+          <mix:MIMEType>image/tiff</mix:MIMEType>
+          <mix:ByteOrder>big-endian</mix:ByteOrder>
+          <mix:Compression>
+           <mix:CompressionScheme>1</mix:CompressionScheme>
+          </mix:Compression>
           <mix:PhotometricInterpretation>
-           <mix:colorSpace>BlackIsZero</mix:colorSpace>
+           <mix:ColorSpace>1</mix:ColorSpace>
           </mix:PhotometricInterpretation>
-         </mix:BasicImageCharacteristics>
-        </mix:BasicImageInformation>
-        <mix:ImageCaptureMetadata>
-         <mix:GeneralCaptureInformation>
-         <mix:dateTimeCreated>2012-02-12T12:10:26</mix:dateTimeCreated>
-         </mix:GeneralCaptureInformation>
-         <mix:ScannerCapture>
+          <mix:Segments>
+           <mix:StripOffsets>23928</mix:StripOffsets>
+           <mix:RowsPerStrip>512</mix:RowsPerStrip>
+           <mix:StripByteCounts>262144</mix:StripByteCounts>
+          </mix:Segments>
+          <mix:PlanarConfiguration>1</mix:PlanarConfiguration>
+         </mix:Format>
+         <mix:File>
+          <mix:Orientation>1</mix:Orientation>
+         </mix:File>
+        </mix:BasicImageParameters>
+        <mix:ImageCreation>
+         <mix:ScanningSystemCapture>
           <mix:ScanningSystemSoftware>
-           <mix:scanningSoftwareName>Adobe Photoshop CS5 Windows</mix:scanningSoftwareName>
+           <mix:ScanningSoftware>Adobe Photoshop CS5 Windows</mix:ScanningSoftware>
           </mix:ScanningSystemSoftware>
-         </mix:ScannerCapture>
-         <mix:orientation>normal*</mix:orientation>
-        </mix:ImageCaptureMetadata>
-        <mix:ImageAssessmentMetadata>
-         <mix:SpatialMetrics>
-          <mix:samplingFrequencyUnit>in.</mix:samplingFrequencyUnit>
-          <mix:xSamplingFrequency>
-           <mix:numerator>720000</mix:numerator>
-           <mix:denominator>10000</mix:denominator>
-          </mix:xSamplingFrequency>
-          <mix:ySamplingFrequency>
-           <mix:numerator>720000</mix:numerator>
-           <mix:denominator>10000</mix:denominator>
-          </mix:ySamplingFrequency>
+         </mix:ScanningSystemCapture>
+         <mix:DateTimeCreated>2012-02-12T12:10:26</mix:DateTimeCreated>
+        </mix:ImageCreation>
+         <mix:ImagingPerformanceAssessment>
+          <mix:SpatialMetrics>
+           <mix:SamplingFrequencyUnit>2</mix:SamplingFrequencyUnit>
+           <mix:XSamplingFrequency>72</mix:XSamplingFrequency>
+           <mix:YSamplingFrequency>72</mix:YSamplingFrequency>
+           <mix:ImageWidth>512</mix:ImageWidth>
+           <mix:ImageLength>512</mix:ImageLength>
          </mix:SpatialMetrics>
-         <mix:ImageColorEncoding>
-          <mix:BitsPerSample>
-           <mix:bitsPerSampleUnit>integer</mix:bitsPerSampleUnit>
-          </mix:BitsPerSample>
-          <mix:samplesPerPixel>1</mix:samplesPerPixel>
-         </mix:ImageColorEncoding>
-        </mix:ImageAssessmentMetadata>
+         <mix:Energetics>
+          <mix:BitsPerSample>8</mix:BitsPerSample>
+          <mix:SamplesPerPixel>1</mix:SamplesPerPixel>
+         </mix:Energetics>
+        </mix:ImagingPerformanceAssessment>
        </mix:mix>
          </value>
         </values>
@@ -9545,9 +9539,75 @@
         </values>
        </property>
        <property>
+        <name>ExposureProgram</name>
+        <values arity="Scalar" type="String">
+         <value>unidentified</value>
+        </values>
+       </property>
+       <property>
+        <name>MeteringMode</name>
+        <values arity="Scalar" type="String">
+         <value>unidentified</value>
+        </values>
+       </property>
+       <property>
+        <name>LightSource</name>
+        <values arity="Scalar" type="String">
+         <value>unknown</value>
+        </values>
+       </property>
+       <property>
         <name>FocalPlaneResolutionUnit</name>
         <values arity="Scalar" type="String">
          <value>inches</value>
+        </values>
+       </property>
+       <property>
+        <name>FileSource</name>
+        <values arity="Scalar" type="String">
+         <value>DSC</value>
+        </values>
+       </property>
+       <property>
+        <name>SceneType</name>
+        <values arity="Scalar" type="String">
+         <value>directly photographed image</value>
+        </values>
+       </property>
+       <property>
+        <name>CustomRendered</name>
+        <values arity="Scalar" type="String">
+         <value>normal</value>
+        </values>
+       </property>
+       <property>
+        <name>FocalLengthIn35mmFilm</name>
+        <values arity="Scalar" type="Integer">
+         <value>0</value>
+        </values>
+       </property>
+       <property>
+        <name>SceneCaptureType</name>
+        <values arity="Scalar" type="String">
+         <value>standard</value>
+        </values>
+       </property>
+       <property>
+        <name>Saturation</name>
+        <values arity="Scalar" type="String">
+         <value>normal</value>
+        </values>
+       </property>
+       <property>
+        <name>Sharpness</name>
+        <values arity="Scalar" type="String">
+         <value>normal</value>
+        </values>
+       </property>
+       <property>
+        <name>SubjectDistanceRange</name>
+        <values arity="Scalar" type="String">
+         <value>unknown</value>
         </values>
        </property>
        </values>

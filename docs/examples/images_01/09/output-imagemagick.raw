@@ -1,4 +1,4 @@
-Image: /opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg
+Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_01/09.jpg
   Format: JPEG (Joint Photographic Experts Group JFIF format)
   Class: DirectClass
   Geometry: 3509x2550+0+0
@@ -7,7 +7,7 @@ Image: /opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg
   Units: PixelsPerInch
   Type: TrueColor
   Endianess: Undefined
-  Colorspace: sRGB
+  Colorspace: RGB
   Depth: 8-bit
   Channel depth:
     red: 8-bit
@@ -17,42 +17,36 @@ Image: /opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg
     Red:
       min: 0 (0)
       max: 255 (1)
-      mean: 102.189 (0.40074)
-      standard deviation: 81.4037 (0.31923)
-      kurtosis: -1.25126
-      skewness: 0.46888
+      mean: 102.19 (0.400744)
+      standard deviation: 81.3481 (0.319012)
+      kurtosis: -1.24773
+      skewness: 0.47094
     Green:
       min: 0 (0)
       max: 255 (1)
-      mean: 90.2403 (0.353883)
-      standard deviation: 74.6282 (0.29266)
-      kurtosis: -0.805209
-      skewness: 0.771417
+      mean: 90.2387 (0.353877)
+      standard deviation: 74.6079 (0.29258)
+      kurtosis: -0.804962
+      skewness: 0.771319
     Blue:
       min: 0 (0)
       max: 255 (1)
-      mean: 78.1971 (0.306655)
-      standard deviation: 69.3965 (0.272143)
-      kurtosis: -0.313021
-      skewness: 0.992405
+      mean: 78.1941 (0.306644)
+      standard deviation: 69.2396 (0.271528)
+      kurtosis: -0.31667
+      skewness: 0.992781
   Image statistics:
     Overall:
       min: 0 (0)
       max: 255 (1)
-      mean: 90.2087 (0.353759)
-      standard deviation: 75.3034 (0.295307)
-      kurtosis: -0.788599
-      skewness: 0.757468
-  Rendering intent: Perceptual
-  Gamma: 0.454545
-  Chromaticity:
-    red primary: (0.64,0.33)
-    green primary: (0.3,0.6)
-    blue primary: (0.15,0.06)
-    white point: (0.3127,0.329)
+      mean: 67.6556 (0.265316)
+      standard deviation: 76.4345 (0.299743)
+      kurtosis: -0.257005
+      skewness: 1.04236
+  Rendering intent: Undefined
   Interlace: None
   Background color: white
-  Border color: srgb(223,223,223)
+  Border color: rgb(223,223,223)
   Matte color: grey74
   Transparent color: black
   Compose: Over
@@ -63,8 +57,8 @@ Image: /opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg
   Quality: 93
   Orientation: TopLeft
   Properties:
-    date:create: 2013-02-13T06:21:49+01:00
-    date:modify: 2013-02-13T06:21:49+01:00
+    date:create: 2013-02-15T17:56:10+01:00
+    date:modify: 2013-02-15T17:56:10+01:00
     exif:ExifImageLength: 2550
     exif:ExifImageWidth: 3509
     exif:ExifOffset: 90
@@ -74,16 +68,15 @@ Image: /opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg
     exif:YResolution: 300/1
     jpeg:colorspace: 2
     jpeg:sampling-factor: 2x2,1x1,1x1
-    signature: 7555b69263a7a9ca3ce766b08b0206c4d02635f9aebb9bdd9b5ba36632bd9e59
+    signature: 749023479923072d2dfd6ae4f685c7f85dc3e7c2d30103ebcbd5735a90a65c96
   Profiles:
     Profile-exif: 126 bytes
   Artifacts:
-    filename: /opt/differ/differ-cmdline/../docs/examples/images_01/09.jpg
     verbose: true
   Tainted: False
   Filesize: 5.074MB
-  Number pixels: 8.948M
-  Pixels per second: 6.991MB
-  User time: 0.590u
-  Elapsed time: 0:02.279
-  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
+  Number pixels: 8.948MB
+  Pixels per second: 23.55MB
+  User time: 0.370u
+  Elapsed time: 0:01.380
+  Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
