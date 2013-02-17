@@ -19,7 +19,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>core</source>
         </metadata>
         <metadata>
@@ -43,7 +43,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
@@ -91,6 +91,24 @@
             <source>fits</source>
         </metadata>
         <metadata>
+            <key>Type of format</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
+            <conflict>false</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
+            <key>MIME type</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
+            <conflict>false</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
+            <key>Version</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FITS 0.6.1</value>
+            <conflict>true</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
             <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ok</value>
             <conflict>true</conflict>
@@ -104,8 +122,14 @@
         </metadata>
         <metadata>
             <key>File name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10</value>
-            <conflict>true</conflict>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10.jpg</value>
+            <conflict>false</conflict>
+            <source>exiftool</source>
+        </metadata>
+        <metadata>
+            <key>Directory</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/home/stavel/differ/differ-cmdline/../docs/examples/images_02</value>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -133,7 +157,7 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>MIME Type</key>
+            <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
             <conflict>false</conflict>
             <source>exiftool</source>
@@ -201,9 +225,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Color Space Data</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">RGB</value>
-            <conflict>false</conflict>
+            <key>Color space</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">: RGB</value>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -214,7 +238,7 @@
         </metadata>
         <metadata>
             <key>Profile Date Time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0011</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0011:2006:08 20:22:21</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
@@ -371,9 +395,17 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Image Size</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2202x1300</value>
-            <conflict>false</conflict>
+            <key>Image width</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2202</value>
+            <unit>px</unit>
+            <conflict>true</conflict>
+            <source>exiftool</source>
+        </metadata>
+        <metadata>
+            <key>Image height</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1300</value>
+            <unit>px</unit>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -427,7 +459,7 @@
         <metadata>
             <key>Universal unique identifier (UUID)</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
@@ -561,7 +593,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
@@ -603,7 +635,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -615,19 +647,13 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
             <key>Validation (well formed and valid)</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Well-Formed and valid</value>
             <conflict>false</conflict>
-            <source>daitss</source>
-        </metadata>
-        <metadata>
-            <key>Universal unique identifier (UUID)</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">7389cd432b739b2b944a63b11b3a66a1</value>
-            <conflict>true</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -643,7 +669,7 @@
             <source>daitss</source>
         </metadata>
         <metadata>
-            <key>Format version</key>
+            <key>Version of format</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.01</value>
             <conflict>false</conflict>
             <source>daitss</source>
@@ -708,6 +734,12 @@
             <source>daitss</source>
         </metadata>
         <metadata>
+            <key>Version</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
+        </metadata>
+        <metadata>
             <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ok</value>
             <conflict>true</conflict>
@@ -716,7 +748,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -912,7 +944,7 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Overall stdev</key>
+            <key>Overall standard deviation</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">109.794 (0.430566)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
@@ -1044,12 +1076,6 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Universal unique identifier (UUID)</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">25a2662995c50e4caac2cd85716d489621ad0fb62601c7299aaf74aa4697eb23</value>
-            <conflict>true</conflict>
-            <source>imagemagick</source>
-        </metadata>
-        <metadata>
             <key>Image/Profiles/Profile-exif</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">88 bytes</value>
             <conflict>false</conflict>
@@ -1093,19 +1119,19 @@
         </metadata>
         <metadata>
             <key>Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">28.63MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">23.86MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>User time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.100u</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.120u</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.099</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.119</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1145,47 +1171,6 @@
         </metadata>
     </metadata-list>
     <sources-list>
-        <source exitCode="0" source="fits">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 20:56"&gt;
-  &lt;identification&gt;
-    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;version toolname="file utility" toolversion="5.04"&gt;1.01&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;1276581&lt;/size&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/10.jpg&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/10.jpg&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7389cd432b739b2b944a63b11b3a66a1&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus /&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;2202&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1300&lt;/imageHeight&gt;
-      &lt;iccProfileName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Apple RGB&lt;/iccProfileName&gt;
-      &lt;iccProfileVersion toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2.1.0&lt;/iccProfileVersion&gt;
-      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
-      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;72&lt;/xSamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;72&lt;/ySamplingFrequency&gt;
-      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
-      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
-
-</stdout>
-            <stderr></stderr>
-        </source>
         <source exitCode="0" source="daitss">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
@@ -1195,7 +1180,7 @@
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130217-1938-tea3tk-0.jpg&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130217-1938-1xlk7et-0.jpg&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -1298,7 +1283,7 @@
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-17T14:56:04-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-02-17T16:04:13-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -1310,7 +1295,7 @@
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130217-1938-tea3tk-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130217-1938-1xlk7et-0.jpg&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
@@ -1328,123 +1313,62 @@
 </stdout>
             <stderr></stderr>
         </source>
-        <source exitCode="0" source="imagemagick">
-            <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_02/10.jpg
-  Format: JPEG (Joint Photographic Experts Group JFIF format)
-  Class: DirectClass
-  Geometry: 2202x1300+0+0
-  Resolution: 72x72
-  Print size: 30.5833x18.0556
-  Units: PixelsPerInch
-  Type: TrueColor
-  Endianess: Undefined
-  Colorspace: RGB
-  Depth: 8-bit
-  Channel depth:
-    red: 8-bit
-    green: 8-bit
-    blue: 8-bit
-  Channel statistics:
-    Red:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 117.108 (0.459246)
-      standard deviation: 93.4855 (0.36661)
-      kurtosis: -1.37064
-      skewness: 0.377417
-    Green:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 233.835 (0.917001)
-      standard deviation: 42.2667 (0.165752)
-      kurtosis: 1.81765
-      skewness: -1.83402
-    Blue:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 130.269 (0.510859)
-      standard deviation: 101.1 (0.396471)
-      kurtosis: -1.77706
-      skewness: -0.0358748
-  Image statistics:
-    Overall:
-      min: 0 (0)
-      max: 255 (1)
-      mean: 120.303 (0.471777)
-      standard deviation: 109.794 (0.430566)
-      kurtosis: -1.76188
-      skewness: 0.129633
-  Rendering intent: Undefined
-  Interlace: None
-  Background color: white
-  Border color: rgb(223,223,223)
-  Matte color: grey74
-  Transparent color: black
-  Compose: Over
-  Page geometry: 2202x1300+0+0
-  Dispose: Undefined
-  Iterations: 0
-  Compression: JPEG
-  Quality: 93
-  Orientation: Undefined
-  Properties:
-    date:create: 2013-02-15T17:56:11+01:00
-    date:modify: 2013-02-15T17:56:11+01:00
-    exif:ExifOffset: 26
-    exif:UserComment: File written by Adobe Photoshop. 5.0
-    jpeg:colorspace: 2
-    jpeg:sampling-factor: 2x2,1x1,1x1
-    signature: 25a2662995c50e4caac2cd85716d489621ad0fb62601c7299aaf74aa4697eb23
-  Profiles:
-    Profile-exif: 88 bytes
-    Profile-icc: 540 bytes
-      Apple RGB
-  Artifacts:
-    verbose: true
-  Tainted: False
-  Filesize: 1.277MB
-  Number pixels: 2.863MB
-  Pixels per second: 28.63MB
-  User time: 0.100u
-  Elapsed time: 0:01.099
-  Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="exiv2">
-            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/10.jpg
-File size       : 1276581 Bytes
-MIME type       : image/jpeg
-Image size      : 2202 x 1300
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 
-White balance   : 
-Thumbnail       : None
-Copyright       : 
-Exif comment    : File written by Adobe Photoshop� 5.0
-
+        <source exitCode="0" source="exiftool">
+            <stdout>ExifTool Version Number         : 8.15
+File Name                       : 10.jpg
+Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 1247 kB
+File Modification Date/Time     : 2013:02:15 17:56:11+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Resolution Unit                 : inches
+X Resolution                    : 72
+Y Resolution                    : 72
+Exif Byte Order                 : Little-endian (Intel, II)
+Warning                         : Invalid EXIF text encoding
+User Comment                    : File written by Adobe Photoshop� 5.0
+Profile CMM Type                : ADBE
+Profile Version                 : 2.1.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 0011:2006:08 20:22:21
+Profile File Signature          : acsp
+Primary Platform                : Microsoft Corporation
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : none
+Device Model                    : 
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.9642 1 0.82491
+Profile Creator                 : ADBE
+Profile ID                      : 0
+Profile Copyright               : (c) 2006 Adobe Systems Inc.
+Profile Description             : Apple RGB
+Media White Point               : 0.95045 1 1.08905
+Media Black Point               : 0 0 0
+Red Tone Reproduction Curve     : (Binary data 14 bytes, use -b option to extract)
+Green Tone Reproduction Curve   : (Binary data 14 bytes, use -b option to extract)
+Blue Tone Reproduction Curve    : (Binary data 14 bytes, use -b option to extract)
+Red Matrix Column               : 0.47554 0.25516 0.01845
+Green Matrix Column             : 0.33972 0.67259 0.11333
+Blue Matrix Column              : 0.14896 0.07225 0.69312
+Image Width                     : 2202
+Image Height                    : 1300
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Image Size                      : 2202x1300
 </stdout>
             <stderr></stderr>
         </source>
         <source exitCode="0" source="jhove">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-17T20:56:00+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-17T22:04:08+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/10.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
@@ -1674,60 +1598,162 @@ Exif comment    : File written by Adobe Photoshop� 5.0
 </stdout>
             <stderr></stderr>
         </source>
-        <source exitCode="0" source="exiftool">
-            <stdout>ExifTool Version Number         : 8.15
-File Name                       : 10.jpg
-Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
-File Size                       : 1247 kB
-File Modification Date/Time     : 2013:02:15 17:56:11+01:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-JFIF Version                    : 1.01
-Resolution Unit                 : inches
-X Resolution                    : 72
-Y Resolution                    : 72
-Exif Byte Order                 : Little-endian (Intel, II)
-Warning                         : Invalid EXIF text encoding
-User Comment                    : File written by Adobe Photoshop� 5.0
-Profile CMM Type                : ADBE
-Profile Version                 : 2.1.0
-Profile Class                   : Display Device Profile
-Color Space Data                : RGB
-Profile Connection Space        : XYZ
-Profile Date Time               : 0011:2006:08 20:22:21
-Profile File Signature          : acsp
-Primary Platform                : Microsoft Corporation
-CMM Flags                       : Not Embedded, Independent
-Device Manufacturer             : none
-Device Model                    : 
-Device Attributes               : Reflective, Glossy, Positive, Color
-Rendering Intent                : Perceptual
-Connection Space Illuminant     : 0.9642 1 0.82491
-Profile Creator                 : ADBE
-Profile ID                      : 0
-Profile Copyright               : (c) 2006 Adobe Systems Inc.
-Profile Description             : Apple RGB
-Media White Point               : 0.95045 1 1.08905
-Media Black Point               : 0 0 0
-Red Tone Reproduction Curve     : (Binary data 14 bytes, use -b option to extract)
-Green Tone Reproduction Curve   : (Binary data 14 bytes, use -b option to extract)
-Blue Tone Reproduction Curve    : (Binary data 14 bytes, use -b option to extract)
-Red Matrix Column               : 0.47554 0.25516 0.01845
-Green Matrix Column             : 0.33972 0.67259 0.11333
-Blue Matrix Column              : 0.14896 0.07225 0.69312
-Image Width                     : 2202
-Image Height                    : 1300
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
-Image Size                      : 2202x1300
+        <source exitCode="0" source="core">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="exiv2">
+            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/10.jpg
+File size       : 1276581 Bytes
+MIME type       : image/jpeg
+Image size      : 2202 x 1300
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 
+White balance   : 
+Thumbnail       : None
+Copyright       : 
+Exif comment    : File written by Adobe Photoshop� 5.0
+
 </stdout>
             <stderr></stderr>
         </source>
-        <source exitCode="0" source="core">
-            <stdout></stdout>
+        <source exitCode="0" source="fits">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 22:04"&gt;
+  &lt;identification&gt;
+    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;version toolname="file utility" toolversion="5.04"&gt;1.01&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;1276581&lt;/size&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/10.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/10.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7389cd432b739b2b944a63b11b3a66a1&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;2202&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1300&lt;/imageHeight&gt;
+      &lt;iccProfileName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Apple RGB&lt;/iccProfileName&gt;
+      &lt;iccProfileVersion toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2.1.0&lt;/iccProfileVersion&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;72&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;72&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="imagemagick">
+            <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_02/10.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Class: DirectClass
+  Geometry: 2202x1300+0+0
+  Resolution: 72x72
+  Print size: 30.5833x18.0556
+  Units: PixelsPerInch
+  Type: TrueColor
+  Endianess: Undefined
+  Colorspace: RGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Red:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 117.108 (0.459246)
+      standard deviation: 93.4855 (0.36661)
+      kurtosis: -1.37064
+      skewness: 0.377417
+    Green:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 233.835 (0.917001)
+      standard deviation: 42.2667 (0.165752)
+      kurtosis: 1.81765
+      skewness: -1.83402
+    Blue:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 130.269 (0.510859)
+      standard deviation: 101.1 (0.396471)
+      kurtosis: -1.77706
+      skewness: -0.0358748
+  Image statistics:
+    Overall:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 120.303 (0.471777)
+      standard deviation: 109.794 (0.430566)
+      kurtosis: -1.76188
+      skewness: 0.129633
+  Rendering intent: Undefined
+  Interlace: None
+  Background color: white
+  Border color: rgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Compose: Over
+  Page geometry: 2202x1300+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 93
+  Orientation: Undefined
+  Properties:
+    date:create: 2013-02-15T17:56:11+01:00
+    date:modify: 2013-02-15T17:56:11+01:00
+    exif:ExifOffset: 26
+    exif:UserComment: File written by Adobe Photoshop. 5.0
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 2x2,1x1,1x1
+    signature: 25a2662995c50e4caac2cd85716d489621ad0fb62601c7299aaf74aa4697eb23
+  Profiles:
+    Profile-exif: 88 bytes
+    Profile-icc: 540 bytes
+      Apple RGB
+  Artifacts:
+    verbose: true
+  Tainted: False
+  Filesize: 1.277MB
+  Number pixels: 2.863MB
+  Pixels per second: 23.86MB
+  User time: 0.120u
+  Elapsed time: 0:01.119
+  Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
+</stdout>
             <stderr></stderr>
         </source>
     </sources-list>

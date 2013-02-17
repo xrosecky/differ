@@ -19,7 +19,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>core</source>
         </metadata>
         <metadata>
@@ -43,7 +43,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
@@ -91,6 +91,24 @@
             <source>fits</source>
         </metadata>
         <metadata>
+            <key>Type of format</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
+            <conflict>false</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
+            <key>MIME type</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
+            <conflict>false</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
+            <key>Version</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FITS 0.6.1</value>
+            <conflict>true</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
             <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ok</value>
             <conflict>true</conflict>
@@ -104,8 +122,14 @@
         </metadata>
         <metadata>
             <key>File name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12</value>
-            <conflict>true</conflict>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
+            <conflict>false</conflict>
+            <source>exiftool</source>
+        </metadata>
+        <metadata>
+            <key>Directory</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/home/stavel/differ/differ-cmdline/../docs/examples/images_01</value>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -133,7 +157,7 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>MIME Type</key>
+            <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
             <conflict>false</conflict>
             <source>exiftool</source>
@@ -176,7 +200,7 @@
         </metadata>
         <metadata>
             <key>Modify Date</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000:00:00 00:00:00</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
@@ -218,13 +242,13 @@
         </metadata>
         <metadata>
             <key>Date/Time Original</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000:00:00 00:00:00</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
             <key>File created</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000:00:00 00:00:00</value>
             <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
@@ -471,9 +495,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>MIME type</key>
+            <key>Focal Length In 35mm Format</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">36 mm</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -526,7 +550,7 @@
         </metadata>
         <metadata>
             <key>About</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">uuid</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
@@ -623,12 +647,6 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Image Size</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200x1600</value>
-            <conflict>false</conflict>
-            <source>exiftool</source>
-        </metadata>
-        <metadata>
             <key>Preview Image</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">(Binary data 16411 bytes, use -b option to extract)</value>
             <conflict>false</conflict>
@@ -660,7 +678,7 @@
         </metadata>
         <metadata>
             <key>Focal Length</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">4.7 mm (35 mm equivalent</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">4.7 mm (35 mm equivalent: 36.0 mm)</value>
             <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
@@ -674,6 +692,20 @@
             <key>Light Value</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8.7</value>
             <conflict>false</conflict>
+            <source>exiftool</source>
+        </metadata>
+        <metadata>
+            <key>Image width</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200</value>
+            <unit>px</unit>
+            <conflict>true</conflict>
+            <source>exiftool</source>
+        </metadata>
+        <metadata>
+            <key>Image height</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1600</value>
+            <unit>px</unit>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -703,7 +735,7 @@
         <metadata>
             <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
@@ -727,7 +759,7 @@
         <metadata>
             <key>Universal unique identifier (UUID)</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
@@ -861,7 +893,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
@@ -879,7 +911,7 @@
         <metadata>
             <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
@@ -989,7 +1021,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -1001,19 +1033,13 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
             <key>Validation (well formed and valid)</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Well-Formed and valid</value>
             <conflict>false</conflict>
-            <source>daitss</source>
-        </metadata>
-        <metadata>
-            <key>Universal unique identifier (UUID)</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">7da5d79d536210a36efb2618e6bcb0c9</value>
-            <conflict>true</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -1029,7 +1055,7 @@
             <source>daitss</source>
         </metadata>
         <metadata>
-            <key>Format version</key>
+            <key>Version of format</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.01</value>
             <conflict>false</conflict>
             <source>daitss</source>
@@ -1094,6 +1120,12 @@
             <source>daitss</source>
         </metadata>
         <metadata>
+            <key>Version</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.</value>
+            <conflict>true</conflict>
+            <source>daitss</source>
+        </metadata>
+        <metadata>
             <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ok</value>
             <conflict>true</conflict>
@@ -1102,7 +1134,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1298,7 +1330,7 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Overall stdev</key>
+            <key>Overall standard deviation</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">78.4441 (0.307624)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
@@ -1688,12 +1720,6 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Universal unique identifier (UUID)</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ef34b0697d7a2662bc64d4945eaad2499a3feaf08927a16d616fc94e572ce5dc</value>
-            <conflict>true</conflict>
-            <source>imagemagick</source>
-        </metadata>
-        <metadata>
             <key>Image/Properties/tiff/make</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">NIKON</value>
             <conflict>false</conflict>
@@ -1761,19 +1787,19 @@
         </metadata>
         <metadata>
             <key>Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">27.43MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">38.4MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>User time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.060u</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.050u</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.069</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.049</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1936,10 +1962,71 @@
   Tainted: False
   Filesize: 384KB
   Number pixels: 1.92MB
-  Pixels per second: 27.43MB
-  User time: 0.060u
-  Elapsed time: 0:01.069
+  Pixels per second: 38.4MB
+  User time: 0.050u
+  Elapsed time: 0:01.049
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="fits">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 22:04"&gt;
+  &lt;identification&gt;
+    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;version toolname="file utility" toolversion="5.04"&gt;1.01&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;383559&lt;/size&gt;
+    &lt;creatingApplicationName toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;E2100&lt;/creatingApplicationName&gt;
+    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;E2100v1.1&lt;/creatingApplicationName&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74"&gt;0000:00:00 00:00:00&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/12.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/12.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7da5d79d536210a36efb2618e6bcb0c9&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;1200&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1600&lt;/imageHeight&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
+      &lt;YCbCrPositioning toolname="Exiftool" toolversion="7.74"&gt;2&lt;/YCbCrPositioning&gt;
+      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;captureDevice toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;digital still camera&lt;/captureDevice&gt;
+      &lt;digitalCameraManufacturer toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;NIKON&lt;/digitalCameraManufacturer&gt;
+      &lt;digitalCameraModelName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100&lt;/digitalCameraModelName&gt;
+      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100v1.1&lt;/scanningSoftwareName&gt;
+      &lt;fNumber toolname="Exiftool" toolversion="7.74"&gt;2.6&lt;/fNumber&gt;
+      &lt;exposureTime toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;1/60&lt;/exposureTime&gt;
+      &lt;exposureTime toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;0.016638935108153077&lt;/exposureTime&gt;
+      &lt;exposureProgram toolname="Exiftool" toolversion="7.74"&gt;Normal program&lt;/exposureProgram&gt;
+      &lt;isoSpeedRating toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;100&lt;/isoSpeedRating&gt;
+      &lt;exifVersion toolname="Exiftool" toolversion="7.74"&gt;0220&lt;/exifVersion&gt;
+      &lt;exposureBiasValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;0&lt;/exposureBiasValue&gt;
+      &lt;maxApertureValue toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2.8&lt;/maxApertureValue&gt;
+      &lt;maxApertureValue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;3.0&lt;/maxApertureValue&gt;
+      &lt;meteringMode toolname="Exiftool" toolversion="7.74"&gt;Pattern&lt;/meteringMode&gt;
+      &lt;lightSource toolname="Exiftool" toolversion="7.74"&gt;unknown&lt;/lightSource&gt;
+      &lt;flash toolname="Exiftool" toolversion="7.74"&gt;Flash fired, auto mode&lt;/flash&gt;
+      &lt;focalLength toolname="Exiftool" toolversion="7.74"&gt;4.7&lt;/focalLength&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
 </stdout>
             <stderr></stderr>
         </source>
@@ -1952,7 +2039,7 @@
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130217-1938-15fb0x6-0.jpg&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130217-1938-oi44a9-0.jpg&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -2063,7 +2150,7 @@
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-17T14:56:32-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-02-17T16:04:41-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -2075,7 +2162,7 @@
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130217-1938-15fb0x6-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130217-1938-oi44a9-0.jpg&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
@@ -2091,6 +2178,10 @@
 &lt;/agent&gt;
 &lt;/premis&gt;
 </stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="core">
+            <stdout></stdout>
             <stderr></stderr>
         </source>
         <source exitCode="0" source="exiv2">
@@ -2127,7 +2218,7 @@ Exif comment    :
         <source exitCode="0" source="jhove">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-17T20:56:30+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-17T22:04:39+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/12.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
@@ -3804,71 +3895,6 @@ Focal Length                    : 4.7 mm (35 mm equivalent: 36.0 mm)
 Hyperfocal Distance             : 2.17 m
 Light Value                     : 8.7
 </stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="fits">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 20:56"&gt;
-  &lt;identification&gt;
-    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;version toolname="file utility" toolversion="5.04"&gt;1.01&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;383559&lt;/size&gt;
-    &lt;creatingApplicationName toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;E2100&lt;/creatingApplicationName&gt;
-    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;E2100v1.1&lt;/creatingApplicationName&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
-    &lt;created toolname="Exiftool" toolversion="7.74"&gt;0000:00:00 00:00:00&lt;/created&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/12.jpg&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/12.jpg&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7da5d79d536210a36efb2618e6bcb0c9&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus /&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
-      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;1200&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1600&lt;/imageHeight&gt;
-      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
-      &lt;YCbCrPositioning toolname="Exiftool" toolversion="7.74"&gt;2&lt;/YCbCrPositioning&gt;
-      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
-      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/xSamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/ySamplingFrequency&gt;
-      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
-      &lt;captureDevice toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;digital still camera&lt;/captureDevice&gt;
-      &lt;digitalCameraManufacturer toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;NIKON&lt;/digitalCameraManufacturer&gt;
-      &lt;digitalCameraModelName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100&lt;/digitalCameraModelName&gt;
-      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100v1.1&lt;/scanningSoftwareName&gt;
-      &lt;fNumber toolname="Exiftool" toolversion="7.74"&gt;2.6&lt;/fNumber&gt;
-      &lt;exposureTime toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;1/60&lt;/exposureTime&gt;
-      &lt;exposureTime toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;0.016638935108153077&lt;/exposureTime&gt;
-      &lt;exposureProgram toolname="Exiftool" toolversion="7.74"&gt;Normal program&lt;/exposureProgram&gt;
-      &lt;isoSpeedRating toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;100&lt;/isoSpeedRating&gt;
-      &lt;exifVersion toolname="Exiftool" toolversion="7.74"&gt;0220&lt;/exifVersion&gt;
-      &lt;exposureBiasValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;0&lt;/exposureBiasValue&gt;
-      &lt;maxApertureValue toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2.8&lt;/maxApertureValue&gt;
-      &lt;maxApertureValue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;3.0&lt;/maxApertureValue&gt;
-      &lt;meteringMode toolname="Exiftool" toolversion="7.74"&gt;Pattern&lt;/meteringMode&gt;
-      &lt;lightSource toolname="Exiftool" toolversion="7.74"&gt;unknown&lt;/lightSource&gt;
-      &lt;flash toolname="Exiftool" toolversion="7.74"&gt;Flash fired, auto mode&lt;/flash&gt;
-      &lt;focalLength toolname="Exiftool" toolversion="7.74"&gt;4.7&lt;/focalLength&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
-
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="core">
-            <stdout></stdout>
             <stderr></stderr>
         </source>
     </sources-list>

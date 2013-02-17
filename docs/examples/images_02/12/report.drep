@@ -19,7 +19,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>core</source>
         </metadata>
         <metadata>
@@ -43,7 +43,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
@@ -91,6 +91,24 @@
             <source>fits</source>
         </metadata>
         <metadata>
+            <key>Type of format</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
+            <conflict>false</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
+            <key>MIME type</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
+            <conflict>false</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
+            <key>Version</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FITS 0.6.1</value>
+            <conflict>true</conflict>
+            <source>fits</source>
+        </metadata>
+        <metadata>
             <key>exit-code</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ok</value>
             <conflict>true</conflict>
@@ -104,8 +122,14 @@
         </metadata>
         <metadata>
             <key>File name</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12</value>
-            <conflict>true</conflict>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
+            <conflict>false</conflict>
+            <source>exiftool</source>
+        </metadata>
+        <metadata>
+            <key>Directory</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/home/stavel/differ/differ-cmdline/../docs/examples/images_02</value>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -133,7 +157,7 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>MIME Type</key>
+            <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
             <conflict>false</conflict>
             <source>exiftool</source>
@@ -176,7 +200,7 @@
         </metadata>
         <metadata>
             <key>Modify Date</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000:00:00 00:00:00</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
@@ -218,13 +242,13 @@
         </metadata>
         <metadata>
             <key>Date/Time Original</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000:00:00 00:00:00</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
             <key>File created</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000:00:00 00:00:00</value>
             <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
@@ -471,9 +495,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>MIME type</key>
+            <key>Focal Length In 35mm Format</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">36 mm</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -568,7 +592,7 @@
         </metadata>
         <metadata>
             <key>About</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">uuid</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
@@ -629,12 +653,6 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Image Size</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200x1600</value>
-            <conflict>false</conflict>
-            <source>exiftool</source>
-        </metadata>
-        <metadata>
             <key>Preview Image</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">(Binary data 16411 bytes, use -b option to extract)</value>
             <conflict>false</conflict>
@@ -666,7 +684,7 @@
         </metadata>
         <metadata>
             <key>Focal Length</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">4.7 mm (35 mm equivalent</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">4.7 mm (35 mm equivalent: 36.0 mm)</value>
             <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
@@ -680,6 +698,20 @@
             <key>Light Value</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8.7</value>
             <conflict>false</conflict>
+            <source>exiftool</source>
+        </metadata>
+        <metadata>
+            <key>Image width</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1200</value>
+            <unit>px</unit>
+            <conflict>true</conflict>
+            <source>exiftool</source>
+        </metadata>
+        <metadata>
+            <key>Image height</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1600</value>
+            <unit>px</unit>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -709,7 +741,7 @@
         <metadata>
             <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
@@ -733,7 +765,7 @@
         <metadata>
             <key>Universal unique identifier (UUID)</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
@@ -867,7 +899,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
@@ -885,7 +917,7 @@
         <metadata>
             <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiv2</source>
         </metadata>
         <metadata>
@@ -989,7 +1021,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -1007,7 +1039,7 @@
         <metadata>
             <key>File name</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.jpg</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1203,7 +1235,7 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Overall stdev</key>
+            <key>Overall standard deviation</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">86.6921 (0.339969)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
@@ -1587,12 +1619,6 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Universal unique identifier (UUID)</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">6aea14121f8501dd9e0ce77d56e5b25a1fdd0a84f504d529a7198f5511f82f04</value>
-            <conflict>true</conflict>
-            <source>imagemagick</source>
-        </metadata>
-        <metadata>
             <key>Image/Properties/tiff/make</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">NIKON</value>
             <conflict>false</conflict>
@@ -1660,19 +1686,19 @@
         </metadata>
         <metadata>
             <key>Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">38.4MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>User time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.060u</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.050u</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.059</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.050</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1712,44 +1738,14 @@
         </metadata>
     </metadata-list>
     <sources-list>
-        <source exitCode="0" source="exiv2">
-            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg
-File size       : 383559 Bytes
-MIME type       : image/jpeg
-Image size      : 1200 x 1600
-Camera make     : NIKON
-Camera model    : 
-Image timestamp : 0000:00:00 00:00:00
-Image number    : 
-Exposure time   : 1/60 s
-Aperture        : F2.6
-Exposure bias   : 0 EV
-Flash           : Yes, auto
-Flash bias      : 
-Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
-Subject distance: 
-ISO speed       : 100
-Exposure mode   : Auto
-Metering mode   : Multi-segment
-Macro mode      : 
-Image quality   : NORMAL
-Exif Resolution : 1600 x 1200
-White balance   : AUTO        
-Thumbnail       : None
-Copyright       : 
-Exif comment    :                                                                                                                      
-
-</stdout>
-            <stderr>Error: Directory Image, entry 0x0110 has invalid size 825637217*1; skipping entry.
-Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
-XMP Toolkit error 203: Mismatched top level rdf:about values
-Warning: Failed to decode XMP metadata.
-</stderr>
+        <source exitCode="0" source="daitss">
+            <stdout></stdout>
+            <stderr></stderr>
         </source>
         <source exitCode="0" source="jhove">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-17T20:56:33+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-17T22:04:42+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
@@ -3323,116 +3319,6 @@ Warning: Failed to decode XMP metadata.
 </stdout>
             <stderr></stderr>
         </source>
-        <source exitCode="0" source="exiftool">
-            <stdout>ExifTool Version Number         : 8.15
-File Name                       : 12.jpg
-Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
-File Size                       : 375 kB
-File Modification Date/Time     : 2013:02:15 17:56:11+01:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-JFIF Version                    : 1.01
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Image Description               : 
-Make                            : NIKON
-Warning                         : Bad IFD0 offset for Model
-Orientation                     : Horizontal (normal)
-Software                        : E2100v1.1
-Modify Date                     : 0000:00:00 00:00:00
-Y Cb Cr Positioning             : Co-sited
-Exposure Time                   : 1/60
-F Number                        : 2.6
-Exposure Program                : Program AE
-ISO                             : 100
-Exif Version                    : 0220
-Date/Time Original              : 0000:00:00 00:00:00
-Create Date                     : 0000:00:00 00:00:00
-Components Configuration        : Y, Cb, Cr, -
-Compressed Bits Per Pixel       : 2
-Exposure Compensation           : 0
-Max Aperture Value              : 2.8
-Metering Mode                   : Multi-segment
-Light Source                    : Unknown
-Flash                           : Auto, Fired
-Focal Length                    : 4.7 mm
-Maker Note Version              : 2.00
-Color Mode                      : Color
-Quality                         : Normal
-White Balance                   : Auto
-Focus Mode                      : AF-S
-Flash Setting                   : Normal
-ISO Selection                   : Auto
-Data Dump                       : (Binary data 494 bytes, use -b option to extract)
-Compression                     : JPEG (old-style)
-X Resolution                    : 300
-Y Resolution                    : 300
-Resolution Unit                 : inches
-Preview Image Start             : 18193
-Preview Image Length            : 16411
-Image Adjustment                : Auto
-Auxiliary Lens                  : Off
-Manual Focus Distance           : undef
-Digital Zoom                    : 1
-AF Area Mode                    : Single Area
-AF Point                        : Center
-AF Points In Focus              : (none)
-Scene Mode                      : 
-Noise Reduction                 : Off
-Scene Assist                    : 
-Retouch History                 : Unknown ()
-User Comment                    : 
-Flashpix Version                : 0100
-Color Space                     : sRGB
-Exif Image Width                : 1600
-Exif Image Height               : 1200
-File Source                     : Digital Camera
-Scene Type                      : Directly photographed
-Custom Rendered                 : Normal
-Exposure Mode                   : Auto
-Digital Zoom Ratio              : 0
-Focal Length In 35mm Format     : 36 mm
-Scene Capture Type              : Standard
-Gain Control                    : None
-Contrast                        : Normal
-Saturation                      : Normal
-Sharpness                       : Normal
-Subject Distance Range          : Unknown
-Offset Schema                   : 4168
-Padding                         : (Binary data 2060 bytes, use -b option to extract)
-Program Mode                    : 2
-Flash Fired                     : True
-Flash Return                    : No return detection
-Flash Mode                      : Auto
-Flash Function                  : False
-Flash Red Eye Mode              : False
-ISO Speed                       : 100
-About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
-Model                           : E2100
-Creatortool                     : E2100v1.1
-Image Width                     : 1200
-Image Height                    : 1600
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
-Aperture                        : 2.6
-Image Size                      : 1200x1600
-Preview Image                   : (Binary data 16411 bytes, use -b option to extract)
-Scale Factor To 35 mm Equivalent: 7.7
-Shutter Speed                   : 1/60
-Circle Of Confusion             : 0.004 mm
-Field Of View                   : 53.1 deg
-Focal Length                    : 4.7 mm (35 mm equivalent: 36.0 mm)
-Hyperfocal Distance             : 2.17 m
-Light Value                     : 8.7
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="daitss">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
         <source exitCode="0" source="imagemagick">
             <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg
   Format: JPEG (Joint Photographic Experts Group JFIF format)
@@ -3555,16 +3441,160 @@ Light Value                     : 8.7
   Tainted: False
   Filesize: 384KB
   Number pixels: 1.92MB
-  Pixels per second: 32MB
-  User time: 0.060u
-  Elapsed time: 0:01.059
+  Pixels per second: 38.4MB
+  User time: 0.050u
+  Elapsed time: 0:01.050
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
 </stdout>
             <stderr></stderr>
         </source>
+        <source exitCode="0" source="exiv2">
+            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+File size       : 383559 Bytes
+MIME type       : image/jpeg
+Image size      : 1200 x 1600
+Camera make     : NIKON
+Camera model    : 
+Image timestamp : 0000:00:00 00:00:00
+Image number    : 
+Exposure time   : 1/60 s
+Aperture        : F2.6
+Exposure bias   : 0 EV
+Flash           : Yes, auto
+Flash bias      : 
+Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Subject distance: 
+ISO speed       : 100
+Exposure mode   : Auto
+Metering mode   : Multi-segment
+Macro mode      : 
+Image quality   : NORMAL
+Exif Resolution : 1600 x 1200
+White balance   : AUTO        
+Thumbnail       : None
+Copyright       : 
+Exif comment    :                                                                                                                      
+
+</stdout>
+            <stderr>Error: Directory Image, entry 0x0110 has invalid size 825637217*1; skipping entry.
+Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
+XMP Toolkit error 203: Mismatched top level rdf:about values
+Warning: Failed to decode XMP metadata.
+</stderr>
+        </source>
+        <source exitCode="0" source="exiftool">
+            <stdout>ExifTool Version Number         : 8.15
+File Name                       : 12.jpg
+Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 375 kB
+File Modification Date/Time     : 2013:02:15 17:56:11+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : 
+Make                            : NIKON
+Warning                         : Bad IFD0 offset for Model
+Orientation                     : Horizontal (normal)
+Software                        : E2100v1.1
+Modify Date                     : 0000:00:00 00:00:00
+Y Cb Cr Positioning             : Co-sited
+Exposure Time                   : 1/60
+F Number                        : 2.6
+Exposure Program                : Program AE
+ISO                             : 100
+Exif Version                    : 0220
+Date/Time Original              : 0000:00:00 00:00:00
+Create Date                     : 0000:00:00 00:00:00
+Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 2
+Exposure Compensation           : 0
+Max Aperture Value              : 2.8
+Metering Mode                   : Multi-segment
+Light Source                    : Unknown
+Flash                           : Auto, Fired
+Focal Length                    : 4.7 mm
+Maker Note Version              : 2.00
+Color Mode                      : Color
+Quality                         : Normal
+White Balance                   : Auto
+Focus Mode                      : AF-S
+Flash Setting                   : Normal
+ISO Selection                   : Auto
+Data Dump                       : (Binary data 494 bytes, use -b option to extract)
+Compression                     : JPEG (old-style)
+X Resolution                    : 300
+Y Resolution                    : 300
+Resolution Unit                 : inches
+Preview Image Start             : 18193
+Preview Image Length            : 16411
+Image Adjustment                : Auto
+Auxiliary Lens                  : Off
+Manual Focus Distance           : undef
+Digital Zoom                    : 1
+AF Area Mode                    : Single Area
+AF Point                        : Center
+AF Points In Focus              : (none)
+Scene Mode                      : 
+Noise Reduction                 : Off
+Scene Assist                    : 
+Retouch History                 : Unknown ()
+User Comment                    : 
+Flashpix Version                : 0100
+Color Space                     : sRGB
+Exif Image Width                : 1600
+Exif Image Height               : 1200
+File Source                     : Digital Camera
+Scene Type                      : Directly photographed
+Custom Rendered                 : Normal
+Exposure Mode                   : Auto
+Digital Zoom Ratio              : 0
+Focal Length In 35mm Format     : 36 mm
+Scene Capture Type              : Standard
+Gain Control                    : None
+Contrast                        : Normal
+Saturation                      : Normal
+Sharpness                       : Normal
+Subject Distance Range          : Unknown
+Offset Schema                   : 4168
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+Program Mode                    : 2
+Flash Fired                     : True
+Flash Return                    : No return detection
+Flash Mode                      : Auto
+Flash Function                  : False
+Flash Red Eye Mode              : False
+ISO Speed                       : 100
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Model                           : E2100
+Creatortool                     : E2100v1.1
+Image Width                     : 1200
+Image Height                    : 1600
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Aperture                        : 2.6
+Image Size                      : 1200x1600
+Preview Image                   : (Binary data 16411 bytes, use -b option to extract)
+Scale Factor To 35 mm Equivalent: 7.7
+Shutter Speed                   : 1/60
+Circle Of Confusion             : 0.004 mm
+Field Of View                   : 53.1 deg
+Focal Length                    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Hyperfocal Distance             : 2.17 m
+Light Value                     : 8.7
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="core">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
         <source exitCode="0" source="fits">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 20:56"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 22:04"&gt;
   &lt;identification&gt;
     &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.04" /&gt;
@@ -3621,10 +3651,6 @@ Light Value                     : 8.7
 &lt;/fits&gt;
 
 </stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="core">
-            <stdout></stdout>
             <stderr></stderr>
         </source>
     </sources-list>
