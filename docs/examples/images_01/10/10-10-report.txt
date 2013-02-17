@@ -13,7 +13,6 @@ Type of format        exiftool     JPEG        JPEG
                       daitss       JPEG        JPEG      
                       jhove        JPEG        JPEG      
 --------------------  -----------  ----------  ----------
-<<<<<<< HEAD
 
 Validation
 ==========
@@ -133,7 +132,7 @@ Image/Border color                                 imagemagick  rgb(223,223,223)
 Image/Compose                                      imagemagick  Over                                                              Over                                                            
 Image/Compression                                  imagemagick  JPEG                                                              JPEG                                                            
 Image/Dispose                                      imagemagick  Undefined                                                         Undefined                                                       
-Image/Elapsed time                                 imagemagick  0:01.120                                                          0:01.109                                                        
+Image/Elapsed time                                 imagemagick  0:01.100                                                          0:01.109                                                        
 Image/Filesize                                     imagemagick  1.277MB                                                           1.277MB                                                         
 Image/Image statistics/Overall/kurtosis            imagemagick  -1.1539                                                           -1.76188                                                        
 Image/Image statistics/Overall/max                 imagemagick  255 (1)                                                           255 (1)                                                         
@@ -147,7 +146,7 @@ Image/Matte color                                  imagemagick  grey74          
 Image/Number pixels                                imagemagick  2.863MB                                                           2.863MB                                                         
 Image/Orientation                                  imagemagick  Undefined                                                         Undefined                                                       
 Image/Page geometry                                imagemagick  2202x1300+0+0                                                     2202x1300+0+0                                                   
-Image/Pixels per second                            imagemagick  23.86MB                                                           26.02MB                                                         
+Image/Pixels per second                            imagemagick  28.63MB                                                           26.02MB                                                         
 Image/Profiles/Profile-exif                        imagemagick  88 bytes                                                          88 bytes                                                        
 Image/Profiles/Profile-icc                         imagemagick  Apple RGB                                                         Apple RGB                                                       
 Image/Properties/date/create                       imagemagick  2013-02-15T17:56:10+01:00                                         2013-02-15T17:56:11+01:00                                       
@@ -205,208 +204,6 @@ User Comment                                       exiftool     File written by 
 Warning                                            exiftool     Invalid EXIF text encoding                                        Invalid EXIF text encoding                                      
 Y Cb Cr Sub Sampling                               exiftool     YCbCr4                                                            YCbCr4                                                          
 -------------------------------------------------  -----------  ----------------------------------------------------------------  ----------------------------------------------------------------
-=======
-
-Validation
-==========
-
-Significant Property                Source  Value for Image A      Value for Image B    
-----------------------------------  ------  ---------------------  ---------------------
-Validation (well formed and valid)  daitss  Well-Formed and valid   Well-Formed and valid 
-                                    jhove   Well-Formed and valid   Well-Formed and valid 
-----------------------------------  ------  ---------------------  ---------------------
-
-Characterization
-================
-
-Significant Property                Source       Value for Image A                                                 Value for Image B                                               
-----------------------------------  -----------  ----------------------------------------------------------------  ----------------------------------------------------------------
-Color depth                         exiftool     8                                                                 8                                                               
-                                    imagemagick  8                                                                 8                                                               
-                                    jhove        8                                                                 8                                                               
-Color space                         imagemagick  sRGB                                                              sRGB                                                            
-                                    daitss       YCbCr                                                             YCbCr                                                           
-                                    jhove        YCbCr                                                             YCbCr                                                           
-Color type                          imagemagick  TrueColor                                                         TrueColor                                                       
-Compression quality                 imagemagick  93                                                                93                                                              
-Compression scheme                  fits                                                                                                                                           
-                                    imagemagick  JPEG                                                              JPEG                                                            
-                                    daitss       JPEG                                                              JPEG                                                            
-                                    jhove        JPEG                                                              JPEG                                                            
-Copyright                           imagemagick  (c) 2006 Adobe Systems Inc.                                       (c) 2006 Adobe Systems Inc.                                     
-Depth of blue channel               imagemagick  8                                                                 8                                                               
-Depth of green channel              imagemagick  8                                                                 8                                                               
-Depth of red channel                imagemagick  8                                                                 8                                                               
-File created                        imagemagick  2013-02-13 06:21:49+01:00                                         2013-02-13 06:21:52+01:00                                       
-File last modified                  fits         2013:02:13 06:21:49+01:00                                         2013:02:13 06:21:52+01:00                                       
-                                    exiftool     2013:02:13 06:21:49+01:00                                         2013:02:13 06:21:52+01:00                                       
-                                    imagemagick  2013-02-13 06:21:49+01:00                                         2013-02-13 06:21:52+01:00                                       
-                                    jhove        2013-02-13T06:21:49+01:00                                         2013-02-13T06:21:52+01:00                                       
-File name                           fits         10.jpg                                                            10.jpg                                                          
-                                    exiftool     10                                                                10                                                              
-                                    imagemagick  10.jpg                                                            10.jpg                                                          
-                                    exiv2        10.jpg                                                            10.jpg                                                          
-                                    core         10.jpg                                                            10.jpg                                                          
-                                    daitss       10.jpg                                                            10.jpg                                                          
-File path                           fits         /opt/differ/differ-cmdline/../docs/examples/images_01/10.jpg      /opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg    
-                                    exiv2        /opt/differ/differ-cmdline/../docs/examples/images_01/10.jpg      /opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg    
-                                    core         /opt/differ/differ-cmdline/../docs/examples/images_01/10.jpg      /opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg    
-                                    jhove        /opt/differ/differ-cmdline/../docs/examples/images_01/10.jpg      /opt/differ/differ-cmdline/../docs/examples/images_02/10.jpg    
-File size                           fits         1276581                                                           1276581                                                         
-                                    exiftool     1247 kB                                                           1247 kB                                                         
-                                    imagemagick  1.277MB                                                           1.277MB                                                         
-                                    exiv2        1276581                                                           1276581                                                         
-                                    daitss       1276581                                                           1276581                                                         
-                                    jhove        1276581                                                           1276581                                                         
-Gamma                               imagemagick  0.454545                                                          0.454545                                                        
-ICC profile                         fits         Apple RGB                                                         Apple RGB                                                       
-                                    imagemagick  Apple RGB                                                         Apple RGB                                                       
-Image height                        fits         1300  px                                                          1300  px                                                        
-                                    exiftool     1300  px                                                          1300  px                                                        
-                                    imagemagick  1300  px                                                          1300  px                                                        
-                                    core         1300                                                              1300                                                            
-                                    daitss       1300  px                                                          1300  px                                                        
-                                    jhove        1300  px                                                          1300  px                                                        
-Image width                         fits         2202  px                                                          2202  px                                                        
-                                    exiftool     2202  px                                                          2202  px                                                        
-                                    imagemagick  2202  px                                                          2202  px                                                        
-                                    core         2202                                                              2202                                                            
-                                    daitss       2202  px                                                          2202  px                                                        
-                                    jhove        2202  px                                                          2202  px                                                        
-Number of channels                  exiftool     3                                                                 3                                                               
-                                    jhove        3                                                                 3                                                               
-Resolution horizontal               exiftool     72    PPI                                                         72    PPI                                                       
-                                    imagemagick  72    PPI                                                         72    PPI                                                       
-                                    daitss       72    PPI                                                         72    PPI                                                       
-                                    jhove        72    PPI                                                         72    PPI                                                       
-Resolution vertical                 exiftool     72    PPI                                                         72    PPI                                                       
-                                    imagemagick  72    PPI                                                         72    PPI                                                       
-                                    daitss       72    PPI                                                         72    PPI                                                       
-                                    jhove        72    PPI                                                         72    PPI                                                       
-Universal unique identifier (UUID)  imagemagick  e4416894509823c2a60e5dd661e2726610eb849d14c24ade56cbc4b83e30c74d   26053715cc6976edd8d78a71a670ea663306cc1dd6229a1a50a27365f2fbe8ba 
-                                    daitss       333c04ffa2a2188793c8a5c503ca8c63                                  7389cd432b739b2b944a63b11b3a66a1                                
-                                    jhove                                                                                                                                          
-----------------------------------  -----------  ----------------------------------------------------------------  ----------------------------------------------------------------
-
-Other properties
-================
-
-Significant Property                                                       Source       Value for Image A                                               Value for Image B                                             
--------------------------------------------------------------------------  -----------  --------------------------------------------------------------  --------------------------------------------------------------
-Background color                                                           imagemagick  white                                                           white                                                         
-Bits per sample                                                            daitss       88                                                              88                                                            
-Blue Matrix Column                                                         exiftool     0.14896 0.07225 0.69312                                         0.14896 0.07225 0.69312                                       
-Blue Tone Reproduction Curve                                               exiftool     (Binary data 14 bytes, use -b option to extract)                (Binary data 14 bytes, use -b option to extract)              
-Blue kurtosis                                                              imagemagick  -0.87919                                                        -1.77823                                                      
-Blue max                                                                   imagemagick  255 (1)                                                         255 (1)                                                       
-Blue mean                                                                  imagemagick  110.312 (0.432595)                                              130.168 (0.510464)                                            
-Blue min                                                                   imagemagick  0 (0)                                                           0 (0)                                                         
-Blue skewness                                                              imagemagick  0.692132                                                        -0.0345008                                                    
-Blue standard deviation                                                    imagemagick  68.1801 (0.267373)                                              101.218 (0.396934)                                            
-Border color                                                               imagemagick  srgb(223,223,223)                                               srgb(223,223,223)                                             
-CMM Flags                                                                  exiftool     Not Embedded, Independent                                       Not Embedded, Independent                                     
-Class                                                                      imagemagick  DirectClass                                                     DirectClass                                                   
-Code block height                                                          jhove              px                                                              px                                                      
-Code block width                                                           jhove              px                                                              px                                                      
-Color Space Data                                                           exiftool     RGB                                                             RGB                                                           
-Compose                                                                    imagemagick  Over                                                            Over                                                          
-Connection Space Illuminant                                                exiftool     0.9642 1 0.82491                                                0.9642 1 0.82491                                              
-Device Attributes                                                          exiftool     Reflective, Glossy, Positive, Color                             Reflective, Glossy, Positive, Color                           
-Device Manufacturer                                                        exiftool     none                                                            none                                                          
-Dispose                                                                    imagemagick  Undefined                                                       Undefined                                                     
-Elapsed time                                                               imagemagick  0:01.410                                                        0:01.469                                                      
-Encoding process                                                           exiftool     Baseline DCT, Huffman coding                                    Baseline DCT, Huffman coding                                  
-Endianess                                                                  imagemagick  Undefined                                                       Undefined                                                     
-Exif Byte Order                                                            exiftool     Little-endian (Intel, II)                                       Little-endian (Intel, II)                                     
-Exif comment                                                               exiv2        File written by Adobe Photoshop� 5.0                            File written by Adobe Photoshop� 5.0                          
-ExifTool Version Number                                                    exiftool     8.60                                                            8.60                                                          
-File Permissions                                                           exiftool     rw-r--r--                                                       rw-r--r--                                                     
-Format version                                                             daitss       1.01                                                            1.01                                                          
-Green Matrix Column                                                        exiftool     0.33972 0.67259 0.11333                                         0.33972 0.67259 0.11333                                       
-Green Tone Reproduction Curve                                              exiftool     (Binary data 14 bytes, use -b option to extract)                (Binary data 14 bytes, use -b option to extract)              
-Green kurtosis                                                             imagemagick  -1.27606                                                        1.81701                                                       
-Green max                                                                  imagemagick  255 (1)                                                         255 (1)                                                       
-Green mean                                                                 imagemagick  139.008 (0.545128)                                              233.816 (0.916925)                                            
-Green min                                                                  imagemagick  3 (0.0117647)                                                   0 (0)                                                         
-Green skewness                                                             imagemagick  0.321342                                                        -1.83352                                                      
-Green standard deviation                                                   imagemagick  70.8953 (0.278021)                                              42.2908 (0.165846)                                            
-ICC Profile model                                                          imagemagick  Apple RGB                                                       Apple RGB                                                     
-ICC profile manufacturer                                                   imagemagick  Apple RGB                                                       Apple RGB                                                     
-ICC profile size                                                           imagemagick  540 bytes                                                       540 bytes                                                     
-ICC profile version                                                        fits         2.1.0                                                           2.1.0                                                         
-Image Size                                                                 exiftool     2202x1300                                                       2202x1300                                                     
-Image size                                                                 exiv2        2202 x 1300                                                     2202 x 1300                                                   
-Image/Channel statistics/Image statistics/Profiles/Profile-exif            imagemagick  88 bytes                                                        88 bytes                                                      
-Image/Channel statistics/Image statistics/Properties/exif/ExifOffset       imagemagick  26                                                              26                                                            
-Image/Channel statistics/Image statistics/Properties/exif/UserComment      imagemagick  File written by Adobe Photoshop. 5.0                            File written by Adobe Photoshop. 5.0                          
-Image/Channel statistics/Image statistics/Properties/jpeg/colorspace       imagemagick  2                                                               2                                                             
-Image/Channel statistics/Image statistics/Properties/jpeg/sampling-factor  imagemagick  2x2,1x1,1x1                                                     2x2,1x1,1x1                                                   
-Interlace                                                                  imagemagick  None                                                            None                                                          
-Iterations                                                                 imagemagick  0                                                               0                                                             
-JFIF Version                                                               exiftool     1.01                                                            1.01                                                          
-MIME Type                                                                  exiftool     image/jpeg                                                      image/jpeg                                                    
-Matte color                                                                imagemagick  grey74                                                          grey74                                                        
-Media Black Point                                                          exiftool     0 0 0                                                           0 0 0                                                         
-Media White Point                                                          exiftool     0.95045 1 1.08905                                               0.95045 1 1.08905                                             
-Multiple Component Transformation                                          jhove                                                                                                                                      
-Num of pixels                                                              imagemagick  2.863M                                                          2.863M                                                        
-Number of decomposition levels                                             jhove                                                                                                                                      
-Number of quality layers                                                   jhove                                                                                                                                      
-Number of tiles                                                            jhove        0                                                               0                                                             
-Orientation                                                                imagemagick  Undefined                                                       Undefined                                                     
-Overall kurtosis                                                           imagemagick  -1.09683                                                        -0.0542099                                                    
-Overall max                                                                imagemagick  255 (1)                                                         255 (1)                                                       
-Overall mean                                                               imagemagick  134.65 (0.528039)                                               160.351 (0.628828)                                            
-Overall min                                                                imagemagick  0 (0)                                                           0 (0)                                                         
-Overall skewness                                                           imagemagick  0.306605                                                        -0.720608                                                     
-Overall stdev                                                              imagemagick  71.6843 (0.281115)                                              83.2171 (0.326342)                                            
-Page geometry                                                              imagemagick  2202x1300+0+0                                                   2202x1300+0+0                                                 
-Pixels per second                                                          imagemagick  6.982MB                                                         6.091MB                                                       
-Primary Platform                                                           exiftool     Microsoft Corporation                                           Microsoft Corporation                                         
-Primary blue                                                               imagemagick  (0.15,0.06)                                                     (0.15,0.06)                                                   
-Primary green                                                              imagemagick  (0.3,0.6)                                                       (0.3,0.6)                                                     
-Primary red                                                                imagemagick  (0.64,0.33)                                                     (0.64,0.33)                                                   
-Print size                                                                 imagemagick  30.5833x18.0556                                                 30.5833x18.0556                                               
-Profile CMM Type                                                           exiftool     ADBE                                                            ADBE                                                          
-Profile Class                                                              exiftool     Display Device Profile                                          Display Device Profile                                        
-Profile Connection Space                                                   exiftool     XYZ                                                             XYZ                                                           
-Profile Copyright                                                          exiftool     (c) 2006 Adobe Systems Inc.                                     (c) 2006 Adobe Systems Inc.                                   
-Profile Creator                                                            exiftool     ADBE                                                            ADBE                                                          
-Profile Date Time                                                          exiftool     0011                                                            0011                                                          
-Profile Description                                                        exiftool     Apple RGB                                                       Apple RGB                                                     
-Profile File Signature                                                     exiftool     acsp                                                            acsp                                                          
-Profile ID                                                                 exiftool     0                                                               0                                                             
-Profile Version                                                            exiftool     2.1.0                                                           2.1.0                                                         
-Progression order                                                          jhove                                                                                                                                      
-Quantization style                                                         jhove                                                                                                                                      
-Red Matrix Column                                                          exiftool     0.47554 0.25516 0.01845                                         0.47554 0.25516 0.01845                                       
-Red Tone Reproduction Curve                                                exiftool     (Binary data 14 bytes, use -b option to extract)                (Binary data 14 bytes, use -b option to extract)              
-Red kurtosis                                                               imagemagick  -1.35832                                                        -1.37073                                                      
-Red max                                                                    imagemagick  255 (1)                                                         255 (1)                                                       
-Red mean                                                                   imagemagick  154.631 (0.606395)                                              117.069 (0.459094)                                            
-Red min                                                                    imagemagick  0 (0)                                                           0 (0)                                                         
-Red skewness                                                               imagemagick  -0.135907                                                       0.378414                                                      
-Red standard deviation                                                     imagemagick  75.7709 (0.297141)                                              93.4968 (0.366654)                                            
-Rendering Intent                                                           exiftool     Perceptual                                                      Perceptual                                                    
-Rendering intent                                                           imagemagick  Perceptual                                                      Perceptual                                                    
-Resolution unit                                                            exiftool     inches                                                          inches                                                        
-Samples per pixel                                                          daitss       3                                                               3                                                             
-Tainted                                                                    imagemagick  False                                                           False                                                         
-Thumbnail                                                                  exiv2        None                                                            None                                                          
-Tile size X                                                                jhove              PPI                                                             PPI                                                     
-Tile size Y                                                                jhove              PPI                                                             PPI                                                     
-Transformation                                                             jhove                                                                                                                                      
-Transparent color                                                          imagemagick  black                                                           black                                                         
-Units                                                                      imagemagick  PixelsPerInch                                                   PixelsPerInch                                                 
-User Comment                                                               exiftool     File written by Adobe Photoshop� 5.0                            File written by Adobe Photoshop� 5.0                          
-User time                                                                  imagemagick  0.170u                                                          0.170u                                                        
-Version                                                                    imagemagick  ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org   ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org 
-Warning                                                                    exiftool     Invalid EXIF text encoding                                      Invalid EXIF text encoding                                    
-White point                                                                imagemagick  (0.3127,0.329)                                                  (0.3127,0.329)                                                
-Y Cb Cr Sub Sampling                                                       exiftool     YCbCr4                                                          YCbCr4                                                        
-verbose                                                                    imagemagick  true                                                            true                                                          
--------------------------------------------------------------------------  -----------  --------------------------------------------------------------  --------------------------------------------------------------
->>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
 
 Raw outputs of extractors
 =========================
