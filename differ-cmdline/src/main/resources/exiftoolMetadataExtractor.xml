@@ -71,6 +71,9 @@
 	  <entry key="ICC profile"    value="Device Model Desc[\ \t]*:[\ \t]*([0-9]*)"/>
 	  <entry key="File name"      value="File Name[\ \t]*:[\ \t]*([0-9]*)"/>
 	  <entry key="File created"   value="Create Date[\ \t]*:[\ \t]*([0-9]*)"/>
+	  <entry key="Version"        value="ExifTool Version Number[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Color transformation" value="Y Cb Cr Sub Sampling[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Samples per pixel" value="Samples Per Pixel[\ \t]*:[\ \t]*(.*)"/>
     	</map>
       </property>
       <property name="listOfRegexp">
