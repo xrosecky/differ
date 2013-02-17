@@ -64,11 +64,11 @@
     	  <entry key="Color depth"   value="Bit Depth[\ \t]*:[\ \t]*(.*)"/>
    	  <entry key="Color depth"   value="Bits Per Sample[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Number of channels"   value="Color Components[\ \t]*:[\ \t]*(.*)"/>
-    	  <entry key="Color space"   value="Color Space[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Compression quality"   value="Photoshop Quality[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="ICC profile"   value="Profile Description[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="Color space"   value="Device Model[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="Color space"   value="Color Space Data[\ \t]*[\ \t]*(.*)"/>
+    	  <entry key="Color space"   value="Color Space[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="ICC profile"    value="Device Model Desc[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="File name"      value="File Name[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="File created"   value="Create Date[\ \t]*:[\ \t]*(.*)"/>
@@ -76,6 +76,19 @@
 	  <entry key="Color transformation" value="Y Cb Cr Sub Sampling[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="Samples per pixel" value="Samples Per Pixel[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="MIME type" value="MIME Type[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Media black point" value="Media Black Point[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Media white point" value="Media White Point[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Thumbnail" value="Photoshop Thumbnail[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Thumbnail" value="Thumbnail Image[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Measurement backing" value="Measurement Backing[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Measurement flare" value="Measurement Flare[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Measurement geometry" value="Measurement Geometry[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Measurement illuminant" value="Measurement Illuminant[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Measurement observer" value="Measurement Observer[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Pixel units" value="Pixel Units[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Pixels per unit x" value="Pixels Per Unit X[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Pixels per unit y" value="Pixels Per Unit Y[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="Profile file signature" value="Profile File Signature[\ \t]*:[\ \t]*(.*)"/>
     	</map>
       </property>
       <property name="listOfRegexp">
