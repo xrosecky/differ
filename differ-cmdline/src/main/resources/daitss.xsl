@@ -30,7 +30,7 @@
   </xsl:template>
 
   <xsl:template match="premis:objectCharacteristicsExtension/mix:mix">
-    <property name = "Compression"><xsl:value-of select="mix:BasicDigitalObjectInformation/mix:Compression/mix:compressionScheme"/></property>
+    <property name = "Compression scheme"><xsl:value-of select="mix:BasicDigitalObjectInformation/mix:Compression/mix:compressionScheme"/></property>
     <property name = "Image width"><xsl:value-of select="mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageWidth"/></property>
     <property name = "Image height"><xsl:value-of select="mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageHeight"/></property>
     <property name = "Image height"><xsl:value-of select="mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageHeight"/></property>

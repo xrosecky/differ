@@ -13,15 +13,15 @@
 
   <xsl:template match="/fits:fits">
       <properties>
-      <property name = "File last modified"><xsl:value-of select="fits:fileinfo/fits:lastmodified"/></property>
-      <property name = "File name"><xsl:value-of select="fits:fileinfo/fits:filename"/></property>
-      <property name = "File path"><xsl:value-of select="fits:fileinfo/fits:filepath"/></property>
-      <property name = "File size"><xsl:value-of select="fits:fileinfo/fits:size"/></property>
-      <property name = "Image width"><xsl:value-of select="fits:metadata/fits:image/fits:imageWidth"/></property>
-      <property name = "Image height"><xsl:value-of select="fits:metadata/fits:image/fits:imageHeight"/></property>
-      <property name= "Compression scheme"><xsl:value-of select="fits:metadata/fits:image/fits:compressionScheme"/></property>
-      <property name= "ICC Profile"><xsl:value-of select="fits:metadata/fits:image/fits:iccProfileName"/></property>
-      <property name= "ICC Profile Version"><xsl:value-of select="fits:metadata/fits:image/fits:iccProfileVersion"/></property>
-   </properties>  
+	<property name = "File last modified"><xsl:value-of select="fits:fileinfo/fits:lastmodified"/></property>
+	<property name = "File name"><xsl:value-of select="fits:fileinfo/fits:filename"/></property>
+	<property name = "File path"><xsl:value-of select="fits:fileinfo/fits:filepath"/></property>
+	<property name = "File size"><xsl:value-of select="fits:fileinfo/fits:size"/></property>
+	<property name = "Image width"><xsl:value-of select="fits:metadata/fits:image/fits:imageWidth"/></property>
+	<property name = "Image height"><xsl:value-of select="fits:metadata/fits:image/fits:imageHeight"/></property>
+	<property name= "Compression scheme"><xsl:value-of select="fits:metadata/fits:image/fits:compressionScheme"/></property>
+	<property name= "ICC profile"><xsl:value-of select="fits:metadata/fits:image/fits:iccProfileName"/></property>
+	<property name= "ICC profile version"><xsl:value-of select="fits:metadata/fits:image/fits:iccProfileVersion"/></property>
+      </properties>  
   </xsl:template>
 </xsl:stylesheet>

@@ -49,6 +49,7 @@
     	  <entry key="File size"        value="File Size[\ \t]*:[\ \t]*(.+)"/>
     	  <entry key="Type of format"        value="File Type[\ \t]*:[\ \t]*(.+)"/>
     	  <entry key="MIME type"        value="MIME Type[\ \t]*:[\ \t]*(.+)"/>
+	  <entry key="MIME type"        value="Format[\ \t]*:[\ \t]*(.+)"/>
     	  <entry key="Software type"    value="Software[\ \t]*:[\ \t]*(.+)"/>
     	  <entry key="File last modified"    value="File Modification Date/Time[\ \t]*:[\ \t]*(.+)"/>
     	  <entry key="Image width"      value="^[\ \t]*Image Width[\ \t]*:[\ \t]*([0-9]+)"/>
@@ -57,7 +58,7 @@
     	  <entry key="Resolution vertical"     value="Y Resolution[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Resolution unit"  value="Resolution Unit[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Univerzal unique identifier (UUID)"   value="Image Unique ID[\ \t]*:[\ \t]*(.*)"/>
-    	  <entry key="Compression" value="Compression[\ \t]*:[\ \t]*(.*)"/>
+    	  <entry key="Compression scheme" value="Compression[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Encoding process" value="Encoding Process[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Color depth"   value="Bit Depth[\ \t]*:[\ \t]*([0-9]*)"/>
    	  <entry key="Color depth"   value="Bits Per Sample[\ \t]*:[\ \t]*([0-9]*)"/>
@@ -65,13 +66,16 @@
     	  <entry key="Color space"   value="Color Space[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Compression quality"   value="Photoshop Quality[\ \t]*:[\ \t]*([0-9]*)"/>
     	  <entry key="File path"   value="Directory[\ \t]*:[\ \t]*([0-9]*)"/>
-    	  <entry key="ICC Profile"   value="Profile Description[\ \t]*:[\ \t]*([0-9]*)"/>
+    	  <entry key="ICC profile"   value="Profile Description[\ \t]*:[\ \t]*([0-9]*)"/>
 	  <entry key="Color space"   value="Device Model[\ \t]*:[\ \t]*([0-9]*)"/>
+	  <entry key="ICC profile"    value="Device Model Desc[\ \t]*:[\ \t]*([0-9]*)"/>
+	  <entry key="File name"      value="File Name[\ \t]*:[\ \t]*([0-9]*)"/>
+	  <entry key="File created"   value="Create Date[\ \t]*:[\ \t]*([0-9]*)"/>
     	</map>
       </property>
       <property name="listOfRegexp">
     	<list>
-	  <value>([^:]+)[\ \t]*:[ \t]*([^:]+)</value>
+	  <value>([^:]+):([^:]+)</value>
     	</list>
       </property>
     </bean>

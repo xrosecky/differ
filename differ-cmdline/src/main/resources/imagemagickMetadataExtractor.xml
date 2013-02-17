@@ -32,7 +32,7 @@
     	  <entry key="Image/Channel statistics/Image statistics/Properties/date/create" value="File created"/>
     	  <entry key="Image/Channel statistics/Image statistics/Properties/date/modify" value="File last modified"/>
     	  <entry key="Image/Channel statistics/Image statistics/Properties/signature" value="Universal unique identifier (UUID)"/>
-    	  <entry key="Image/Channel statistics/Image statistics/Compression" value="Compression"/>
+    	  <entry key="Image/Channel statistics/Image statistics/Compression" value="Compression scheme"/>
     	  <entry key="Image/Channel statistics/Image statistics/Filesize" value="File size"/>
     	  <entry key="Image/Channel statistics/Image statistics/Quality" value="Compression quality"/>
 	  <entry key="Image/Channel statistics/Image statistics/Properties/exif/ImageLength" value="Image height"/>
@@ -85,10 +85,10 @@
 	  <entry key="Image/Channel statistics/Image statistics/Profiles/Filesize" value="File size"/>
 	  <entry key="Image/Channel statistics/Image statistics/Profiles/Number pixels" value="Num of pixels"/>
 	  <entry key="Image/Channel statistics/Image statistics/Profiles/Pixels per second" value="Pixels per second"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc" value="ICC Profile"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc" value="ICC profile size"/>
 	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Copyright" value="Copyright"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Description" value="Description"/>
-	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Manufacturer" value="ICC Profile manufacturer"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Description" value="ICC profile"/>
+	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Manufacturer" value="ICC profile manufacturer"/>
 	  <entry key="Image/Channel statistics/Image statistics/Profiles/Profile-icc/Model" value="ICC Profile model"/>
 	  <entry key="Image/Channel statistics/Image statistics/Profiles/Tainted" value="Tainted"/>
 	  <entry key="Image/Channel statistics/Image statistics/Profiles/User time" value="User time"/>
@@ -129,6 +129,7 @@
 	  <entry key="Image/Geometry" value-ref="geometryReplacer"/>
 	  <entry key="Image/Channel statistics/Image statistics/Properties/exif/NativeDigest" value-ref="entryRemover"/>
 	  <entry key="Image/Channel statistics/Image statistics/Properties/tiff/NativeDigest" value-ref="entryRemover"/>
+	  <entry key="Image/Channel statistics/Image statistics/Elapsed time" value-ref="entryRemover"/>
 	</map>
       </property>
 

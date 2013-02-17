@@ -46,7 +46,7 @@
      <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="jhove:property[./jhove:name/text()='NisoImageMetadata']/jhove:values/jhove:value">
-     <property name = "Compression"><xsl:value-of select=".//mix:Compression/mix:compressionScheme"/></property>
+     <property name = "Compression scheme"><xsl:value-of select=".//mix:Compression/mix:compressionScheme"/></property>
      <property name = "Image width"><xsl:value-of select=".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageWidth"/></property>
      <property name = "Image height"><xsl:value-of select=".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageHeight"/></property>
      <property name = "Color space"><xsl:value-of select=".//mix:mix/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:PhotometricInterpretation/mix:colorSpace"/></property>

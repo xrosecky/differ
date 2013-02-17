@@ -10,6 +10,7 @@
   <util:set id="identificationProperties">
     <value>MIME type</value>
     <value>Type of format</value>
+    <value>Version of format</value>
   </util:set>
   
   <util:set id="validationProperties">
@@ -17,6 +18,13 @@
   </util:set>
   
   <util:set id="characterizationProperties">
+    <value>Pixels per second</value>
+    <value>Gamma</value>
+    <value>Depth of blue channel</value>
+    <value>Depth of green channel</value>
+    <value>Depth of red channel</value>
+    <value>Copyright</value>
+    <value>Compression quality</value>
     <value>File name</value>
     <value>File path</value>
     <value>Color depth</value>
@@ -33,7 +41,10 @@
     <value>Resolution horizontal</value>
     <value>Resolution vertical</value>
     <value>Number of channels</value>
-    <value>ICC Profile</value>
+    <value>Num of pixels</value>
+    <value>Bits per sample</value>
+    <value>ICC profile</value>
+    
   </util:set>
 
 </beans>

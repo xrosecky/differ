@@ -47,14 +47,14 @@
     <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
       <property name="mapOfRegexp">
 	<map>
-	  <entry key="Image width"            value="Image size      : ([0-9]+) x [0-9]+"/>
-	  <entry key="Image height"           value="Image size      : [0-9]+ x ([0-9]+)"/>
-	  <entry key="Resolution horizontal"     value="Exif Resolution : ([0-9]+) x [0-9]+"/>
-	  <entry key="Resolution vertical"       value="Exif Resolution : [0-9]+ x ([0-9]+)"/>
-	  <entry key="MIME type"                       value="MIME type       : (.*)"/>
-	  <entry key="File name"                       value="File name       : (.*)"/>
-	  <entry key="File path"                       value="File name       : (.*)"/>
-	  <entry key="File size"                       value="File size       : ([0-9]+)"/>
+	  <entry key="Image width"            value="Image size [ \t]*: ([0-9]+) x [0-9]+"/>
+	  <entry key="Image height"           value="Image size [ \t]*: [0-9]+ x ([0-9]+)"/>
+	  <entry key="Image width"           value="Exif Resolution [ \t]*: ([0-9]+) x [0-9]+"/>
+	  <entry key="Image height"            value="Exif Resolution [ \t]*: [0-9]+ x ([0-9]+)"/>
+	  <entry key="MIME type"                       value="MIME type [ \t]*: (.*)"/>
+	  <entry key="File name"                       value="File name [ \t]*: (.*)"/>
+	  <entry key="File path"                       value="File name [ \t]*: (.*)"/>
+	  <entry key="File size"                       value="File size [ \t]*: ([0-9]+)"/>
 	</map>
       </property>
       <property name="listOfRegexp">
@@ -85,6 +85,7 @@
 	  <value>jpf</value>
 	  <value>jpp</value>
 	  <value>djvu</value>
+	  <value>png</value>
 	</list>
       </property>
 
