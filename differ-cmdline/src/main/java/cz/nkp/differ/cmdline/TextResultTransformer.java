@@ -194,7 +194,7 @@ public class TextResultTransformer implements ResultTransformer{
         });
         TheSameValueHider propertyNameHider = new TheSameValueHider();
         String output = "";
-        String format = String.format("%%-%ds %%-%ds  %%-%ds  %%s\n", keyLength, sourceLength, valueLength);
+        String format = String.format("   %%-%ds %%-%ds  %%-%ds  %%s\n", keyLength, sourceLength, valueLength);
         output += String.format(format, "Significant Property", "Source", "Value", "Unit");
         output += String.format(format,
                 getStringGivenLength(keyLength,'-'),
