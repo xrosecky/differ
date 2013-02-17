@@ -39,6 +39,7 @@
 	  <entry key="History Software Agent" value-ref="entryRemover"/>
 	  <entry key="History Parameters" value-ref="entryRemover"/>
 	  <entry key="History Action" value-ref="entryRemover"/>
+	  <entry key="Image Size" value-ref="geometryReplacer"/>
     	</map>
       </property>
     </bean>
@@ -74,6 +75,7 @@
 	  <entry key="Version"        value="ExifTool Version Number[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="Color transformation" value="Y Cb Cr Sub Sampling[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="Samples per pixel" value="Samples Per Pixel[\ \t]*:[\ \t]*(.*)"/>
+	  <entry key="MIME type" value="MIME Type[\ \t]*:[\ \t]*(.*)"/>
     	</map>
       </property>
       <property name="listOfRegexp">

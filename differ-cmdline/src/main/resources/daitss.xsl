@@ -20,9 +20,14 @@
 	<xsl:apply-templates/>
       </properties>
   </xsl:template>
+  
+  <xsl:template match="premis:agent">
+    <property name="Version"><xsl:value-of select="premis:agentNote"/></property>
+    <xsl:apply-templates/>
+  </xsl:template>
 
   <xsl:template match="premis:object/premis:objectCharacteristics">
-    <property name = "Universal unique identifier (UUID)"><xsl:value-of select="premis:fixity/premis:messageDigest"/></property>
+    <!-- <property name = "Universal unique identifier (UUID)"><xsl:value-of select="premis:fixity/premis:messageDigest"/></property> -->
     <property name = "File size"><xsl:value-of select="premis:size"/></property>
     <property name = "Type of format"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatName"/></property>    
     <property name = "Format version"><xsl:value-of select="premis:format/premis:formatDesignation/premis:formatVersion"/></property>    
