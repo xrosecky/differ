@@ -4,6 +4,7 @@
 1;About
 1;Aperture
 1;Auxiliary Lens
+1;Background color
 1;Bits per sample
 1;Blue kurtosis
 1;Blue max
@@ -11,6 +12,7 @@
 1;Blue min
 1;Blue skewness
 1;Blue standard deviation
+1;Border color
 1;Camera Model Name
 1;Camera make
 1;Camera model
@@ -24,6 +26,7 @@
 1;Color space
 1;Color type
 1;Components Configuration
+1;Compose
 1;Compressed Bits Per Pixel
 1;Compression scheme
 1;Contrast
@@ -36,6 +39,8 @@
 1;Depth of red channel
 1;Digital Zoom
 1;Digital Zoom Ratio
+1;Dispose
+1;Elapsed time
 1;Encoding process
 1;Endianess
 1;Exif Byte Order
@@ -92,31 +97,8 @@
 1;Image size
 1;Image timestamp
 1;Image width
-1;Image/Artifacts/verbose
-1;Image/Background color
-1;Image/Border color
-1;Image/Compose
-1;Image/Compression
-1;Image/Dispose
-1;Image/Elapsed time
-1;Image/Filesize
-1;Image/Image statistics/Overall/kurtosis
-1;Image/Image statistics/Overall/max
-1;Image/Image statistics/Overall/mean
-1;Image/Image statistics/Overall/min
-1;Image/Image statistics/Overall/skewness
-1;Image/Image statistics/Overall/standard deviation
-1;Image/Interlace
-1;Image/Iterations
-1;Image/Matte color
-1;Image/Number pixels
-1;Image/Orientation
-1;Image/Page geometry
-1;Image/Pixels per second
 1;Image/Profiles/Profile-exif
 1;Image/Profiles/Profile-xmp
-1;Image/Properties/date/create
-1;Image/Properties/date/modify
 1;Image/Properties/exif
 1;Image/Properties/exif/ColorSpace
 1;Image/Properties/exif/ComponentsConfiguration
@@ -164,18 +146,14 @@
 1;Image/Properties/jpeg/colorspace
 1;Image/Properties/jpeg/sampling-factor
 1;Image/Properties/rdf
-1;Image/Properties/signature
 1;Image/Properties/tiff/make
 1;Image/Properties/tiff/model
 1;Image/Properties/tiff/software
 1;Image/Properties/unknown
 1;Image/Properties/xmp/creatortool
 1;Image/Quality
-1;Image/Rendering intent
-1;Image/Tainted
-1;Image/Transparent color
-1;Image/User time
-1;Image/Version
+1;Interlace
+1;Iterations
 1;JFIF Version
 1;Light Source
 1;Light Value
@@ -184,6 +162,7 @@
 1;Make
 1;Maker Note Version
 1;Manual Focus Distance
+1;Matte color
 1;Max Aperture Value
 1;Metering Mode
 1;Metering mode
@@ -191,13 +170,22 @@
 1;Modify Date
 1;Multiple Component Transformation
 1;Noise Reduction
+1;Num of pixels
 1;Number of channels
 1;Number of decomposition levels
 1;Number of quality layers
 1;Number of tiles
 1;Offset Schema
 1;Orientation
+1;Overall kurtosis
+1;Overall max
+1;Overall mean
+1;Overall min
+1;Overall skewness
+1;Overall stdev
 1;Padding
+1;Page geometry
+1;Pixels per second
 1;Preview Image
 1;Preview Image Length
 1;Preview Image Start
@@ -212,6 +200,7 @@
 1;Red min
 1;Red skewness
 1;Red standard deviation
+1;Rendering intent
 1;Resolution horizontal
 1;Resolution unit
 1;Resolution vertical
@@ -225,14 +214,19 @@
 1;Shutter Speed
 1;Software type
 1;Subject Distance Range
+1;Tainted
 1;Thumbnail
 1;Tile size X
 1;Tile size Y
 1;Transformation
+1;Transparent color
 1;Type of format
 1;Units
 1;Universal unique identifier (UUID)
+1;User time
 1;Validation (well formed and valid)
+1;Verbose
+1;Version
 1;Warning
 1;White Balance
 1;White balance

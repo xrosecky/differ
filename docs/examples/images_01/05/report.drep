@@ -75,7 +75,7 @@
         <metadata>
             <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Deflate/Inflate</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>fits</source>
         </metadata>
         <metadata>
@@ -167,7 +167,7 @@
         <metadata>
             <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Deflate/Inflate</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -179,7 +179,7 @@
         <metadata>
             <key>Interlace</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Noninterlaced</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -551,7 +551,7 @@
         <metadata>
             <key>Universal unique identifier (UUID)</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">06acb32b0cc4a16c4b159795609359cf</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -759,211 +759,211 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Image statistics/Overall/min</key>
+            <key>Overall min</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0 (0)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Image statistics/Overall/max</key>
+            <key>Overall max</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">255 (1)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Image statistics/Overall/mean</key>
+            <key>Overall mean</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">91.8303 (0.360119)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Image statistics/Overall/standard deviation</key>
+            <key>Overall stdev</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">75.7718 (0.297144)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Image statistics/Overall/kurtosis</key>
+            <key>Overall kurtosis</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-0.893724</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Image statistics/Overall/skewness</key>
+            <key>Overall skewness</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.329874</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Rendering intent</key>
+            <key>Rendering intent</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Undefined</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Chromaticity/red primary</key>
+            <key>Primary red</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">(0.63999,0.33001)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Chromaticity/green primary</key>
+            <key>Primary green</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">(0.3,0.6)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Chromaticity/blue primary</key>
+            <key>Primary blue</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">(0.15,0.05999)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Chromaticity/white point</key>
+            <key>White point</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">(0.31269,0.32899)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Interlace</key>
+            <key>Interlace</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">None</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Background color</key>
+            <key>Background color</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">white</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Border color</key>
+            <key>Border color</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">rgb(223,223,223)</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Matte color</key>
+            <key>Matte color</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">grey74</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Transparent color</key>
+            <key>Transparent color</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">black</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Compose</key>
+            <key>Compose</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Over</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Page geometry</key>
+            <key>Page geometry</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3776x2520+0+0</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Dispose</key>
+            <key>Dispose</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Undefined</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Iterations</key>
+            <key>Iterations</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Compression</key>
+            <key>Compression scheme</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Zip</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Orientation</key>
+            <key>Orientation</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Undefined</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Properties/date/create</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-15T17:56:10+01:00</value>
+            <key>File created</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-15 17:56:10+01:00</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Properties/date/modify</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-15T17:56:10+01:00</value>
-            <conflict>false</conflict>
+            <key>File last modified</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-15 17:56:10+01:00</value>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Properties/signature</key>
+            <key>Universal unique identifier (UUID)</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1a1828533ed75721672c34005de1c6402ccd30ba29edecd70ba50762d3df157e</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Profiles/Profile-icc</key>
+            <key>ICC profile size</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3144 bytes</value>
             <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Profiles/Profile-icc</key>
+            <key>ICC profile size</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">IEC 61966-2.1 Default RGB colour space - sRGB</value>
             <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Artifacts/verbose</key>
+            <key>Verbose</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Tainted</key>
+            <key>Tainted</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">False</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Filesize</key>
+            <key>File size</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">11.98MB</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Number pixels</key>
+            <key>Num of pixels</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9.516MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">17.95MB</value>
+            <key>Pixels per second</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">17.3MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/User time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.530u</value>
+            <key>User time</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.540u</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.529</value>
+            <key>Elapsed time</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.550</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Version</key>
+            <key>Version</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
@@ -998,13 +998,208 @@
         </metadata>
     </metadata-list>
     <sources-list>
+        <source exitCode="253" source="exiv2">
+            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png
+File size       : 11977006 Bytes
+MIME type       : image/png
+Image size      : 3776 x 2520
+</stdout>
+            <stderr>/home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png: No Exif data found in the file
+</stderr>
+        </source>
+        <source exitCode="0" source="exiftool">
+            <stdout>ExifTool Version Number         : 8.15
+File Name                       : 05.png
+Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01
+File Size                       : 11 MB
+File Modification Date/Time     : 2013:02:15 17:56:10+01:00
+File Permissions                : rw-r--r--
+File Type                       : PNG
+MIME Type                       : image/png
+Image Width                     : 3776
+Image Height                    : 2520
+Bit Depth                       : 8
+Color Type                      : RGB
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Pixels Per Unit X               : 7087
+Pixels Per Unit Y               : 7087
+Pixel Units                     : Meters
+Profile CMM Type                : Lino
+Profile Version                 : 2.1.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 1998:02:09 06:49:00
+Profile File Signature          : acsp
+Primary Platform                : Microsoft Corporation
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : IEC
+Device Model                    : sRGB
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.9642 1 0.82491
+Profile Creator                 : HP
+Profile ID                      : 0
+Profile Copyright               : Copyright (c) 1998 Hewlett-Packard Company
+Profile Description             : sRGB IEC61966-2.1
+Media White Point               : 0.95045 1 1.08905
+Media Black Point               : 0 0 0
+Red Matrix Column               : 0.43607 0.22249 0.01392
+Green Matrix Column             : 0.38515 0.71687 0.09708
+Blue Matrix Column              : 0.14307 0.06061 0.7141
+Device Mfg Desc                 : IEC http://www.iec.ch
+Device Model Desc               : IEC 61966-2.1 Default RGB colour space - sRGB
+Viewing Cond Desc               : Reference Viewing Condition in IEC61966-2.1
+Viewing Cond Illuminant         : 19.6445 20.3718 16.8089
+Viewing Cond Surround           : 3.92889 4.07439 3.36179
+Viewing Cond Illuminant Type    : D50
+Luminance                       : 76.03647 80 87.12462
+Measurement Observer            : CIE 1931
+Measurement Backing             : 0 0 0
+Measurement Geometry            : Unknown (0)
+Measurement Flare               : 0.999%
+Measurement Illuminant          : D65
+Technology                      : Cathode Ray Tube Display
+Red Tone Reproduction Curve     : (Binary data 2060 bytes, use -b option to extract)
+Green Tone Reproduction Curve   : (Binary data 2060 bytes, use -b option to extract)
+Blue Tone Reproduction Curve    : (Binary data 2060 bytes, use -b option to extract)
+White Point X                   : 0.31269
+White Point Y                   : 0.32899
+Red X                           : 0.63999
+Red Y                           : 0.33001
+Green X                         : 0.3
+Green Y                         : 0.6
+Blue X                          : 0.15
+Blue Y                          : 0.05999
+Image Size                      : 3776x2520
+</stdout>
+            <stderr></stderr>
+        </source>
         <source exitCode="0" source="core">
             <stdout></stdout>
             <stderr></stderr>
         </source>
+        <source exitCode="0" source="daitss">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
+	
+	&lt;!-- premis file object --&gt;
+	&lt;object xsi:type="file"&gt;
+		&lt;objectIdentifier&gt;
+			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130217-1938-zmdnit-0.png&lt;/objectIdentifierValue&gt;
+		&lt;/objectIdentifier&gt;
+		&lt;objectCharacteristics&gt;
+			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;06acb32b0cc4a16c4b159795609359cf&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;761af562b9d946c2b446d984335a1ee9b5be0ff3&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;size&gt;11977006&lt;/size&gt;
+			
+			&lt;format&gt;
+				&lt;formatDesignation&gt;
+					&lt;formatName&gt;Portable Network Graphics&lt;/formatName&gt;
+					
+					&lt;formatVersion&gt;1.1&lt;/formatVersion&gt;
+					
+				&lt;/formatDesignation&gt;
+				
+				&lt;formatRegistry&gt;
+					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
+					&lt;formatRegistryKey&gt;fmt/12&lt;/formatRegistryKey&gt;
+				&lt;/formatRegistry&gt;
+				
+				
+			&lt;/format&gt;
+			
+			
+			
+			
+		&lt;/objectCharacteristics&gt;
+		
+		&lt;originalName&gt;05.png&lt;/originalName&gt;
+		
+		
+		
+		
+		&lt;linkingEventIdentifier&gt;
+			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
+			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
+		&lt;/linkingEventIdentifier&gt;
+	&lt;/object&gt;
+	
+
+	
+	&lt;!-- premis bitstream object --&gt;
+	
+	
+
+	&lt;!-- premis event --&gt;
+	&lt;event&gt;
+		&lt;eventIdentifier&gt;
+			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
+			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
+		&lt;/eventIdentifier&gt;
+		&lt;eventType&gt;describe&lt;/eventType&gt;
+		&lt;eventDateTime&gt;2013-02-17T11:49:22-05:00&lt;/eventDateTime&gt;
+		&lt;eventDetail&gt;format identified&lt;/eventDetail&gt;
+		&lt;eventOutcomeInformation&gt;
+			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
+			
+		&lt;/eventOutcomeInformation&gt;
+		&lt;linkingAgentIdentifier&gt;
+			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
+			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
+		&lt;/linkingAgentIdentifier&gt;
+		&lt;linkingObjectIdentifier&gt;
+			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130217-1938-zmdnit-0.png&lt;/linkingObjectIdentifierValue&gt;
+		&lt;/linkingObjectIdentifier&gt;
+	&lt;/event&gt;
+
+&lt;!-- premis agent --&gt;
+&lt;agent&gt;
+	&lt;agentIdentifier&gt;
+		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
+		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
+	&lt;/agentIdentifier&gt;
+	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
+	&lt;agentType&gt;Web Service&lt;/agentType&gt;
+	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
+&lt;/agent&gt;
+&lt;/premis&gt;
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="jhove">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
+ &lt;date&gt;2013-02-17T17:49:07+01:00&lt;/date&gt;
+ &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png"&gt;
+  &lt;reportingModule release="1.3" date="2007-04-10"&gt;BYTESTREAM&lt;/reportingModule&gt;
+  &lt;lastModified&gt;2013-02-15T17:56:10+01:00&lt;/lastModified&gt;
+  &lt;size&gt;11977006&lt;/size&gt;
+  &lt;format&gt;bytestream&lt;/format&gt;
+  &lt;status&gt;Well-Formed and valid&lt;/status&gt;
+  &lt;mimeType&gt;application/octet-stream&lt;/mimeType&gt;
+ &lt;/repInfo&gt;
+&lt;/jhove&gt;
+</stdout>
+            <stderr></stderr>
+        </source>
         <source exitCode="0" source="fits">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 17:38"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 17:49"&gt;
   &lt;identification&gt;
     &lt;identity format="Portable Network Graphics" mimetype="image/png" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
@@ -1034,31 +1229,6 @@
   &lt;/metadata&gt;
 &lt;/fits&gt;
 
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="253" source="exiv2">
-            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png
-File size       : 11977006 Bytes
-MIME type       : image/png
-Image size      : 3776 x 2520
-</stdout>
-            <stderr>/home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png: No Exif data found in the file
-</stderr>
-        </source>
-        <source exitCode="0" source="jhove">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-17T17:38:03+01:00&lt;/date&gt;
- &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png"&gt;
-  &lt;reportingModule release="1.3" date="2007-04-10"&gt;BYTESTREAM&lt;/reportingModule&gt;
-  &lt;lastModified&gt;2013-02-15T17:56:10+01:00&lt;/lastModified&gt;
-  &lt;size&gt;11977006&lt;/size&gt;
-  &lt;format&gt;bytestream&lt;/format&gt;
-  &lt;status&gt;Well-Formed and valid&lt;/status&gt;
-  &lt;mimeType&gt;application/octet-stream&lt;/mimeType&gt;
- &lt;/repInfo&gt;
-&lt;/jhove&gt;
 </stdout>
             <stderr></stderr>
         </source>
@@ -1137,180 +1307,10 @@ Image size      : 3776 x 2520
   Tainted: False
   Filesize: 11.98MB
   Number pixels: 9.516MB
-  Pixels per second: 17.95MB
-  User time: 0.530u
-  Elapsed time: 0:01.529
+  Pixels per second: 17.3MB
+  User time: 0.540u
+  Elapsed time: 0:01.550
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="daitss">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-
-&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
-	
-	&lt;!-- premis file object --&gt;
-	&lt;object xsi:type="file"&gt;
-		&lt;objectIdentifier&gt;
-			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130217-1938-1xomm6g-0.png&lt;/objectIdentifierValue&gt;
-		&lt;/objectIdentifier&gt;
-		&lt;objectCharacteristics&gt;
-			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;06acb32b0cc4a16c4b159795609359cf&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;761af562b9d946c2b446d984335a1ee9b5be0ff3&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;size&gt;11977006&lt;/size&gt;
-			
-			&lt;format&gt;
-				&lt;formatDesignation&gt;
-					&lt;formatName&gt;Portable Network Graphics&lt;/formatName&gt;
-					
-					&lt;formatVersion&gt;1.1&lt;/formatVersion&gt;
-					
-				&lt;/formatDesignation&gt;
-				
-				&lt;formatRegistry&gt;
-					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
-					&lt;formatRegistryKey&gt;fmt/12&lt;/formatRegistryKey&gt;
-				&lt;/formatRegistry&gt;
-				
-				
-			&lt;/format&gt;
-			
-			
-			
-			
-		&lt;/objectCharacteristics&gt;
-		
-		&lt;originalName&gt;05.png&lt;/originalName&gt;
-		
-		
-		
-		
-		&lt;linkingEventIdentifier&gt;
-			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
-			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
-		&lt;/linkingEventIdentifier&gt;
-	&lt;/object&gt;
-	
-
-	
-	&lt;!-- premis bitstream object --&gt;
-	
-	
-
-	&lt;!-- premis event --&gt;
-	&lt;event&gt;
-		&lt;eventIdentifier&gt;
-			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
-			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
-		&lt;/eventIdentifier&gt;
-		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-17T11:38:19-05:00&lt;/eventDateTime&gt;
-		&lt;eventDetail&gt;format identified&lt;/eventDetail&gt;
-		&lt;eventOutcomeInformation&gt;
-			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
-			
-		&lt;/eventOutcomeInformation&gt;
-		&lt;linkingAgentIdentifier&gt;
-			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
-			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
-		&lt;/linkingAgentIdentifier&gt;
-		&lt;linkingObjectIdentifier&gt;
-			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130217-1938-1xomm6g-0.png&lt;/linkingObjectIdentifierValue&gt;
-		&lt;/linkingObjectIdentifier&gt;
-	&lt;/event&gt;
-
-&lt;!-- premis agent --&gt;
-&lt;agent&gt;
-	&lt;agentIdentifier&gt;
-		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
-		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
-	&lt;/agentIdentifier&gt;
-	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
-	&lt;agentType&gt;Web Service&lt;/agentType&gt;
-	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
-&lt;/agent&gt;
-&lt;/premis&gt;
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="exiftool">
-            <stdout>ExifTool Version Number         : 8.15
-File Name                       : 05.png
-Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01
-File Size                       : 11 MB
-File Modification Date/Time     : 2013:02:15 17:56:10+01:00
-File Permissions                : rw-r--r--
-File Type                       : PNG
-MIME Type                       : image/png
-Image Width                     : 3776
-Image Height                    : 2520
-Bit Depth                       : 8
-Color Type                      : RGB
-Compression                     : Deflate/Inflate
-Filter                          : Adaptive
-Interlace                       : Noninterlaced
-Pixels Per Unit X               : 7087
-Pixels Per Unit Y               : 7087
-Pixel Units                     : Meters
-Profile CMM Type                : Lino
-Profile Version                 : 2.1.0
-Profile Class                   : Display Device Profile
-Color Space Data                : RGB
-Profile Connection Space        : XYZ
-Profile Date Time               : 1998:02:09 06:49:00
-Profile File Signature          : acsp
-Primary Platform                : Microsoft Corporation
-CMM Flags                       : Not Embedded, Independent
-Device Manufacturer             : IEC
-Device Model                    : sRGB
-Device Attributes               : Reflective, Glossy, Positive, Color
-Rendering Intent                : Perceptual
-Connection Space Illuminant     : 0.9642 1 0.82491
-Profile Creator                 : HP
-Profile ID                      : 0
-Profile Copyright               : Copyright (c) 1998 Hewlett-Packard Company
-Profile Description             : sRGB IEC61966-2.1
-Media White Point               : 0.95045 1 1.08905
-Media Black Point               : 0 0 0
-Red Matrix Column               : 0.43607 0.22249 0.01392
-Green Matrix Column             : 0.38515 0.71687 0.09708
-Blue Matrix Column              : 0.14307 0.06061 0.7141
-Device Mfg Desc                 : IEC http://www.iec.ch
-Device Model Desc               : IEC 61966-2.1 Default RGB colour space - sRGB
-Viewing Cond Desc               : Reference Viewing Condition in IEC61966-2.1
-Viewing Cond Illuminant         : 19.6445 20.3718 16.8089
-Viewing Cond Surround           : 3.92889 4.07439 3.36179
-Viewing Cond Illuminant Type    : D50
-Luminance                       : 76.03647 80 87.12462
-Measurement Observer            : CIE 1931
-Measurement Backing             : 0 0 0
-Measurement Geometry            : Unknown (0)
-Measurement Flare               : 0.999%
-Measurement Illuminant          : D65
-Technology                      : Cathode Ray Tube Display
-Red Tone Reproduction Curve     : (Binary data 2060 bytes, use -b option to extract)
-Green Tone Reproduction Curve   : (Binary data 2060 bytes, use -b option to extract)
-Blue Tone Reproduction Curve    : (Binary data 2060 bytes, use -b option to extract)
-White Point X                   : 0.31269
-White Point Y                   : 0.32899
-Red X                           : 0.63999
-Red Y                           : 0.33001
-Green X                         : 0.3
-Green Y                         : 0.6
-Blue X                          : 0.15
-Blue Y                          : 0.05999
-Image Size                      : 3776x2520
 </stdout>
             <stderr></stderr>
         </source>

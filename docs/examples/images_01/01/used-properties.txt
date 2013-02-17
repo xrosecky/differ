@@ -1,5 +1,6 @@
 1;APP14 Flags 0
 1;APP14 Flags 1
+1;Background color
 1;Bits per sample
 1;Blue kurtosis
 1;Blue max
@@ -7,6 +8,7 @@
 1;Blue min
 1;Blue skewness
 1;Blue standard deviation
+1;Border color
 1;Class
 1;Code block height
 1;Code block width
@@ -16,6 +18,7 @@
 1;Color depth
 1;Color space
 1;Color type
+1;Compose
 1;Compression quality
 1;Compression scheme
 1;Creator Tool
@@ -28,8 +31,10 @@
 1;Derived From Original Document ID
 1;Displayed Units X
 1;Displayed Units Y
+1;Dispose
 1;Document Ancestors
 1;Document ID
+1;Elapsed time
 1;Encoding process
 1;Endianess
 1;Exif Byte Order
@@ -62,32 +67,9 @@
 1;Image height
 1;Image size
 1;Image width
-1;Image/Artifacts/verbose
-1;Image/Background color
-1;Image/Border color
-1;Image/Compose
-1;Image/Compression
-1;Image/Dispose
-1;Image/Elapsed time
-1;Image/Filesize
-1;Image/Image statistics/Overall/kurtosis
-1;Image/Image statistics/Overall/max
-1;Image/Image statistics/Overall/mean
-1;Image/Image statistics/Overall/min
-1;Image/Image statistics/Overall/skewness
-1;Image/Image statistics/Overall/standard deviation
-1;Image/Interlace
-1;Image/Iterations
-1;Image/Matte color
-1;Image/Number pixels
-1;Image/Orientation
-1;Image/Page geometry
-1;Image/Pixels per second
 1;Image/Profiles/Profile-8bim
 1;Image/Profiles/Profile-exif
 1;Image/Profiles/Profile-xmp
-1;Image/Properties/date/create
-1;Image/Properties/date/modify
 1;Image/Properties/exif/BitsPerSample
 1;Image/Properties/exif/ColorSpace
 1;Image/Properties/exif/Compression
@@ -110,28 +92,34 @@
 1;Image/Properties/jpeg/colorspace
 1;Image/Properties/jpeg/sampling-factor
 1;Image/Properties/rdf
-1;Image/Properties/signature
 1;Image/Properties/xmpMM
 1;Image/Quality
-1;Image/Rendering intent
-1;Image/Tainted
-1;Image/Transparent color
-1;Image/User time
-1;Image/Version
 1;Instance ID
+1;Interlace
+1;Iterations
 1;MIME Type
 1;MIME type
+1;Matte color
 1;Metadata Date
 1;Modify Date
 1;Multiple Component Transformation
+1;Num of pixels
 1;Number of channels
 1;Number of decomposition levels
 1;Number of quality layers
 1;Number of tiles
 1;Orientation
 1;Original Document ID
+1;Overall kurtosis
+1;Overall max
+1;Overall mean
+1;Overall min
+1;Overall skewness
+1;Overall stdev
+1;Page geometry
 1;Photometric Interpretation
 1;Photoshop Thumbnail
+1;Pixels per second
 1;Planar Configuration
 1;Print size
 1;Progression order
@@ -143,12 +131,14 @@
 1;Red min
 1;Red skewness
 1;Red standard deviation
+1;Rendering intent
 1;Resolution horizontal
 1;Resolution unit
 1;Resolution vertical
 1;Samples Per Pixel
 1;Samples per pixel
 1;Software type
+1;Tainted
 1;Thumbnail
 1;Thumbnail Image
 1;Thumbnail Length
@@ -156,10 +146,14 @@
 1;Tile size X
 1;Tile size Y
 1;Transformation
+1;Transparent color
 1;Type of format
 1;Units
 1;Universal unique identifier (UUID)
+1;User time
 1;Validation (well formed and valid)
+1;Verbose
+1;Version
 1;XMP Toolkit
 1;Y Cb Cr Sub Sampling
 1;exit-code
