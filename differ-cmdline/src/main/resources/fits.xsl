@@ -22,6 +22,12 @@
 	<property name= "Compression scheme"><xsl:value-of select="fits:metadata/fits:image/fits:compressionScheme"/></property>
 	<property name= "ICC profile"><xsl:value-of select="fits:metadata/fits:image/fits:iccProfileName"/></property>
 	<property name= "ICC profile version"><xsl:value-of select="fits:metadata/fits:image/fits:iccProfileVersion"/></property>
+	<xsl:apply-templates/>
       </properties>  
+  </xsl:template>
+  <xsl:template match="fits:identification">
+    <property name="Type of format"><xsl:value-of select="fits:identity/@format"/></property>
+    <property name="MIME type"><xsl:value-of select="fits:identity/@mimetype"/></property>
+    <property name="Version"><xsl:value-of select="concat(fits:identity/@toolname,' ',fits:identity/@toolversion)"/></property>
   </xsl:template>
 </xsl:stylesheet>
