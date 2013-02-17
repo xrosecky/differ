@@ -1827,253 +1827,36 @@
         </metadata>
     </metadata-list>
     <sources-list>
-        <source exitCode="0" source="daitss">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+        <source exitCode="0" source="exiv2">
+            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg
+File size       : 157041 Bytes
+MIME type       : image/jpeg
+Image size      : 1846 x 2677
+Camera make     : SONY 
+Camera model    : DSLR-A200
+Image timestamp : 2010:03:07 21:07:11
+Image number    : 
+Exposure time   : 1/30 s
+Aperture        : F8.8e+07
+Exposure bias   : 0 EV
+Flash           : No, compulsory
+Flash bias      : 
+Focal length    : 18.0 mm (35 mm equivalent: 27.0 mm)
+Subject distance: 
+ISO speed       : 400
+Exposure mode   : Auto
+Metering mode   : Multi-segment
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 1846 x 2677
+White balance   : Auto
+Thumbnail       : image/jpeg, 1636 Bytes
+Copyright       : 
+Exif comment    :                                                         
 
-&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
-	
-	&lt;!-- premis file object --&gt;
-	&lt;object xsi:type="file"&gt;
-		&lt;objectIdentifier&gt;
-			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130217-1938-rgenn8-0.jpg&lt;/objectIdentifierValue&gt;
-		&lt;/objectIdentifier&gt;
-		&lt;objectCharacteristics&gt;
-			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;b2e5f4593bbae30280184568b8b0455a&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;2042a60891644612934dd9a393a953593ecebb4d&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;size&gt;157041&lt;/size&gt;
-			
-			&lt;format&gt;
-				&lt;formatDesignation&gt;
-					&lt;formatName&gt;JPEG File Interchange Format&lt;/formatName&gt;
-					
-					&lt;formatVersion&gt;1.01&lt;/formatVersion&gt;
-					
-				&lt;/formatDesignation&gt;
-				
-				&lt;formatRegistry&gt;
-					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
-					&lt;formatRegistryKey&gt;fmt/43&lt;/formatRegistryKey&gt;
-				&lt;/formatRegistry&gt;
-				
-				
-			&lt;/format&gt;
-			
-			
-			
-			
-			&lt;objectCharacteristicsExtension&gt;
-				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
-  &lt;mix:BasicDigitalObjectInformation&gt;
-    &lt;mix:ObjectIdentifier&gt;
-      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
-    &lt;/mix:ObjectIdentifier&gt;
-    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
-    &lt;mix:Compression&gt;
-      &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
-    &lt;/mix:Compression&gt;
-  &lt;/mix:BasicDigitalObjectInformation&gt;
-  &lt;mix:BasicImageInformation&gt;
-    &lt;mix:BasicImageCharacteristics&gt;
-      &lt;mix:imageWidth&gt;1846&lt;/mix:imageWidth&gt;
-      &lt;mix:imageHeight&gt;2677&lt;/mix:imageHeight&gt;
-      &lt;mix:PhotometricInterpretation&gt;
-        &lt;mix:colorSpace&gt;YCbCr&lt;/mix:colorSpace&gt;
-      &lt;/mix:PhotometricInterpretation&gt;
-    &lt;/mix:BasicImageCharacteristics&gt;
-  &lt;/mix:BasicImageInformation&gt;
-  &lt;mix:ImageAssessmentMetadata&gt;
-    &lt;mix:SpatialMetrics&gt;
-      &lt;mix:samplingFrequencyUnit&gt;in.&lt;/mix:samplingFrequencyUnit&gt;
-      &lt;mix:xSamplingFrequency&gt;
-        &lt;mix:numerator&gt;72&lt;/mix:numerator&gt;
-      &lt;/mix:xSamplingFrequency&gt;
-      &lt;mix:ySamplingFrequency&gt;
-        &lt;mix:numerator&gt;72&lt;/mix:numerator&gt;
-      &lt;/mix:ySamplingFrequency&gt;
-    &lt;/mix:SpatialMetrics&gt;
-    &lt;mix:ImageColorEncoding&gt;
-      &lt;mix:BitsPerSample&gt;
-        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
-        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
-      &lt;/mix:BitsPerSample&gt;
-      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
-    &lt;/mix:ImageColorEncoding&gt;
-  &lt;/mix:ImageAssessmentMetadata&gt;
-&lt;/mix:mix&gt;
-			&lt;/objectCharacteristicsExtension&gt;
-			
-		&lt;/objectCharacteristics&gt;
-		
-		&lt;originalName&gt;11.jpg&lt;/originalName&gt;
-		
-		
-		
-		
-		&lt;linkingEventIdentifier&gt;
-			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
-			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
-		&lt;/linkingEventIdentifier&gt;
-	&lt;/object&gt;
-	
-
-	
-	&lt;!-- premis bitstream object --&gt;
-	
-	
-
-	&lt;!-- premis event --&gt;
-	&lt;event&gt;
-		&lt;eventIdentifier&gt;
-			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
-			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
-		&lt;/eventIdentifier&gt;
-		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-17T14:31:19-05:00&lt;/eventDateTime&gt;
-		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
-		&lt;eventOutcomeInformation&gt;
-			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
-			
-		&lt;/eventOutcomeInformation&gt;
-		&lt;linkingAgentIdentifier&gt;
-			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
-			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
-		&lt;/linkingAgentIdentifier&gt;
-		&lt;linkingObjectIdentifier&gt;
-			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130217-1938-rgenn8-0.jpg&lt;/linkingObjectIdentifierValue&gt;
-		&lt;/linkingObjectIdentifier&gt;
-	&lt;/event&gt;
-
-&lt;!-- premis agent --&gt;
-&lt;agent&gt;
-	&lt;agentIdentifier&gt;
-		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
-		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
-	&lt;/agentIdentifier&gt;
-	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
-	&lt;agentType&gt;Web Service&lt;/agentType&gt;
-	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
-&lt;/agent&gt;
-&lt;/premis&gt;
 </stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="exiftool">
-            <stdout>ExifTool Version Number         : 8.15
-File Name                       : 11.jpg
-Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
-File Size                       : 153 kB
-File Modification Date/Time     : 2013:02:15 17:56:11+01:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-JFIF Version                    : 1.01
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Image Description               : SONY DSC
-Make                            : SONY
-Camera Model Name               : DSLR-A200
-Orientation                     : Horizontal (normal)
-X Resolution                    : 72
-Y Resolution                    : 72
-Resolution Unit                 : inches
-Software                        : Microsoft Windows Photo Gallery 6.0.6001.18000
-Modify Date                     : 2010:03:07 20:16:11
-Y Cb Cr Positioning             : Co-sited
-Exposure Time                   : 1/30
-F Number                        : 87616466.3
-Exposure Program                : Program AE
-ISO                             : 400
-Exif Version                    : 0221
-Date/Time Original              : 2010:03:07 21:07:11
-Create Date                     : 2010:03:07 21:07:11
-Components Configuration        : Y, Cb, Cr, -
-Compressed Bits Per Pixel       : 8
-Brightness Value                : 1.75
-Exposure Compensation           : 0
-Max Aperture Value              : 3.5
-Light Source                    : Unknown
-Flash                           : Off, Did not fire
-Focal Length                    : 18.0 mm
-Warning                         : [minor] Possibly incorrect maker notes offsets (fix by 3958?)
-Flash Exposure Compensation     : -0.5578225782
-Teleconverter                   : None
-White Balance Fine Tune         : 0
-Focus Mode                      : Unknown (64445)
-AF Area Mode                    : Unknown (63231)
-Local AF Area Point             : Unknown (64494)
-Metering Mode                   : Unknown (64381)
-ISO Setting                     : inf
-Dynamic Range Optimizer Mode    : Unknown (65535)
-Dynamic Range Optimizer Level   : 64374
-Creative Style                  : Unknown (63227)
-Zone Matching Value             : +55217
-Brightness                      : +31629
-Flash Mode                      : Unknown (65270)
-Rotation                        : Unknown (49151)
-Sony Image Size                 : Unknown (49151)
-Aspect Ratio                    : Unknown (28655)
-Quality                         : Unknown (64459)
-Exposure Level Increments       : Unknown (60156)
-White Balance                   : Auto
-Preview Image                   : (Binary data 467747 bytes, use -b option to extract)
-Color Temperature               : Auto
-Color Compensation Filter       : 0
-Scene Mode                      : Auto
-Zone Matching                   : ISO Setting Used
-Dynamic Range Optimizer         : Advanced Auto
-Image Stabilization             : On
-Lens Type                       : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or 18-200m F3.5-6.3
-Color Mode                      : Standard
-User Comment                    : 
-Flashpix Version                : 0100
-Exif Image Width                : 1846
-Exif Image Height               : 2677
-Interoperability Version        : 0100
-File Source                     : Digital Camera
-Scene Type                      : Directly photographed
-Custom Rendered                 : Normal
-Exposure Mode                   : Auto
-Focal Length In 35mm Format     : 27 mm
-Scene Capture Type              : Standard
-Contrast                        : Normal
-Saturation                      : Normal
-Sharpness                       : Normal
-Image Unique ID                 : 347AA785BFCA46758249245D37EAD703
-Offset Schema                   : 3958
-Padding                         : (Binary data 2060 bytes, use -b option to extract)
-Compression                     : JPEG (old-style)
-Thumbnail Offset                : 34912
-Thumbnail Length                : 1636
-Image Width                     : 1846
-Image Height                    : 2677
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
-Aperture                        : 87616466.3
-Image Size                      : 1846x2677
-Lens ID                         : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or Sony AF DT 18-200mm F3.5-6.3
-Scale Factor To 35 mm Equivalent: 1.5
-Shutter Speed                   : 1/30
-Thumbnail Image                 : (Binary data 1636 bytes, use -b option to extract)
-Circle Of Confusion             : 0.020 mm
-Field Of View                   : 67.4 deg
-Focal Length                    : 18.0 mm (35 mm equivalent: 27.0 mm)
-Hyperfocal Distance             : 0.00 m
-Light Value                     : 55.7
-</stdout>
-            <stderr></stderr>
+            <stderr>Error: Directory Sony1 with 5632 entries considered invalid; not read.
+</stderr>
         </source>
         <source exitCode="0" source="imagemagick">
             <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg
@@ -2204,13 +1987,9 @@ Light Value                     : 55.7
 </stdout>
             <stderr></stderr>
         </source>
-        <source exitCode="0" source="core">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
         <source exitCode="0" source="fits">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 20:31"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 20:56"&gt;
   &lt;identification&gt;
     &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.04" /&gt;
@@ -2273,10 +2052,152 @@ Light Value                     : 55.7
 </stdout>
             <stderr></stderr>
         </source>
+        <source exitCode="0" source="daitss">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
+	
+	&lt;!-- premis file object --&gt;
+	&lt;object xsi:type="file"&gt;
+		&lt;objectIdentifier&gt;
+			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130217-1938-1r6253r-0.jpg&lt;/objectIdentifierValue&gt;
+		&lt;/objectIdentifier&gt;
+		&lt;objectCharacteristics&gt;
+			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;b2e5f4593bbae30280184568b8b0455a&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;2042a60891644612934dd9a393a953593ecebb4d&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;size&gt;157041&lt;/size&gt;
+			
+			&lt;format&gt;
+				&lt;formatDesignation&gt;
+					&lt;formatName&gt;JPEG File Interchange Format&lt;/formatName&gt;
+					
+					&lt;formatVersion&gt;1.01&lt;/formatVersion&gt;
+					
+				&lt;/formatDesignation&gt;
+				
+				&lt;formatRegistry&gt;
+					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
+					&lt;formatRegistryKey&gt;fmt/43&lt;/formatRegistryKey&gt;
+				&lt;/formatRegistry&gt;
+				
+				
+			&lt;/format&gt;
+			
+			
+			
+			
+			&lt;objectCharacteristicsExtension&gt;
+				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+  &lt;mix:BasicDigitalObjectInformation&gt;
+    &lt;mix:ObjectIdentifier&gt;
+      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+    &lt;/mix:ObjectIdentifier&gt;
+    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+    &lt;mix:Compression&gt;
+      &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
+    &lt;/mix:Compression&gt;
+  &lt;/mix:BasicDigitalObjectInformation&gt;
+  &lt;mix:BasicImageInformation&gt;
+    &lt;mix:BasicImageCharacteristics&gt;
+      &lt;mix:imageWidth&gt;1846&lt;/mix:imageWidth&gt;
+      &lt;mix:imageHeight&gt;2677&lt;/mix:imageHeight&gt;
+      &lt;mix:PhotometricInterpretation&gt;
+        &lt;mix:colorSpace&gt;YCbCr&lt;/mix:colorSpace&gt;
+      &lt;/mix:PhotometricInterpretation&gt;
+    &lt;/mix:BasicImageCharacteristics&gt;
+  &lt;/mix:BasicImageInformation&gt;
+  &lt;mix:ImageAssessmentMetadata&gt;
+    &lt;mix:SpatialMetrics&gt;
+      &lt;mix:samplingFrequencyUnit&gt;in.&lt;/mix:samplingFrequencyUnit&gt;
+      &lt;mix:xSamplingFrequency&gt;
+        &lt;mix:numerator&gt;72&lt;/mix:numerator&gt;
+      &lt;/mix:xSamplingFrequency&gt;
+      &lt;mix:ySamplingFrequency&gt;
+        &lt;mix:numerator&gt;72&lt;/mix:numerator&gt;
+      &lt;/mix:ySamplingFrequency&gt;
+    &lt;/mix:SpatialMetrics&gt;
+    &lt;mix:ImageColorEncoding&gt;
+      &lt;mix:BitsPerSample&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+      &lt;/mix:BitsPerSample&gt;
+      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+    &lt;/mix:ImageColorEncoding&gt;
+  &lt;/mix:ImageAssessmentMetadata&gt;
+&lt;/mix:mix&gt;
+			&lt;/objectCharacteristicsExtension&gt;
+			
+		&lt;/objectCharacteristics&gt;
+		
+		&lt;originalName&gt;11.jpg&lt;/originalName&gt;
+		
+		
+		
+		
+		&lt;linkingEventIdentifier&gt;
+			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
+			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
+		&lt;/linkingEventIdentifier&gt;
+	&lt;/object&gt;
+	
+
+	
+	&lt;!-- premis bitstream object --&gt;
+	
+	
+
+	&lt;!-- premis event --&gt;
+	&lt;event&gt;
+		&lt;eventIdentifier&gt;
+			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
+			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
+		&lt;/eventIdentifier&gt;
+		&lt;eventType&gt;describe&lt;/eventType&gt;
+		&lt;eventDateTime&gt;2013-02-17T14:56:16-05:00&lt;/eventDateTime&gt;
+		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
+		&lt;eventOutcomeInformation&gt;
+			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
+			
+		&lt;/eventOutcomeInformation&gt;
+		&lt;linkingAgentIdentifier&gt;
+			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
+			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
+		&lt;/linkingAgentIdentifier&gt;
+		&lt;linkingObjectIdentifier&gt;
+			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130217-1938-1r6253r-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+		&lt;/linkingObjectIdentifier&gt;
+	&lt;/event&gt;
+
+&lt;!-- premis agent --&gt;
+&lt;agent&gt;
+	&lt;agentIdentifier&gt;
+		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
+		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
+	&lt;/agentIdentifier&gt;
+	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
+	&lt;agentType&gt;Web Service&lt;/agentType&gt;
+	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
+&lt;/agent&gt;
+&lt;/premis&gt;
+</stdout>
+            <stderr></stderr>
+        </source>
         <source exitCode="0" source="jhove">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-17T20:31:18+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-17T20:56:15+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
@@ -32298,36 +32219,115 @@ Light Value                     : 55.7
 </stdout>
             <stderr></stderr>
         </source>
-        <source exitCode="0" source="exiv2">
-            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg
-File size       : 157041 Bytes
-MIME type       : image/jpeg
-Image size      : 1846 x 2677
-Camera make     : SONY 
-Camera model    : DSLR-A200
-Image timestamp : 2010:03:07 21:07:11
-Image number    : 
-Exposure time   : 1/30 s
-Aperture        : F8.8e+07
-Exposure bias   : 0 EV
-Flash           : No, compulsory
-Flash bias      : 
-Focal length    : 18.0 mm (35 mm equivalent: 27.0 mm)
-Subject distance: 
-ISO speed       : 400
-Exposure mode   : Auto
-Metering mode   : Multi-segment
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 1846 x 2677
-White balance   : Auto
-Thumbnail       : image/jpeg, 1636 Bytes
-Copyright       : 
-Exif comment    :                                                         
-
+        <source exitCode="0" source="exiftool">
+            <stdout>ExifTool Version Number         : 8.15
+File Name                       : 11.jpg
+Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 153 kB
+File Modification Date/Time     : 2013:02:15 17:56:11+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : SONY DSC
+Make                            : SONY
+Camera Model Name               : DSLR-A200
+Orientation                     : Horizontal (normal)
+X Resolution                    : 72
+Y Resolution                    : 72
+Resolution Unit                 : inches
+Software                        : Microsoft Windows Photo Gallery 6.0.6001.18000
+Modify Date                     : 2010:03:07 20:16:11
+Y Cb Cr Positioning             : Co-sited
+Exposure Time                   : 1/30
+F Number                        : 87616466.3
+Exposure Program                : Program AE
+ISO                             : 400
+Exif Version                    : 0221
+Date/Time Original              : 2010:03:07 21:07:11
+Create Date                     : 2010:03:07 21:07:11
+Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 8
+Brightness Value                : 1.75
+Exposure Compensation           : 0
+Max Aperture Value              : 3.5
+Light Source                    : Unknown
+Flash                           : Off, Did not fire
+Focal Length                    : 18.0 mm
+Warning                         : [minor] Possibly incorrect maker notes offsets (fix by 3958?)
+Flash Exposure Compensation     : -0.5578225782
+Teleconverter                   : None
+White Balance Fine Tune         : 0
+Focus Mode                      : Unknown (64445)
+AF Area Mode                    : Unknown (63231)
+Local AF Area Point             : Unknown (64494)
+Metering Mode                   : Unknown (64381)
+ISO Setting                     : inf
+Dynamic Range Optimizer Mode    : Unknown (65535)
+Dynamic Range Optimizer Level   : 64374
+Creative Style                  : Unknown (63227)
+Zone Matching Value             : +55217
+Brightness                      : +31629
+Flash Mode                      : Unknown (65270)
+Rotation                        : Unknown (49151)
+Sony Image Size                 : Unknown (49151)
+Aspect Ratio                    : Unknown (28655)
+Quality                         : Unknown (64459)
+Exposure Level Increments       : Unknown (60156)
+White Balance                   : Auto
+Preview Image                   : (Binary data 467747 bytes, use -b option to extract)
+Color Temperature               : Auto
+Color Compensation Filter       : 0
+Scene Mode                      : Auto
+Zone Matching                   : ISO Setting Used
+Dynamic Range Optimizer         : Advanced Auto
+Image Stabilization             : On
+Lens Type                       : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or 18-200m F3.5-6.3
+Color Mode                      : Standard
+User Comment                    : 
+Flashpix Version                : 0100
+Exif Image Width                : 1846
+Exif Image Height               : 2677
+Interoperability Version        : 0100
+File Source                     : Digital Camera
+Scene Type                      : Directly photographed
+Custom Rendered                 : Normal
+Exposure Mode                   : Auto
+Focal Length In 35mm Format     : 27 mm
+Scene Capture Type              : Standard
+Contrast                        : Normal
+Saturation                      : Normal
+Sharpness                       : Normal
+Image Unique ID                 : 347AA785BFCA46758249245D37EAD703
+Offset Schema                   : 3958
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+Compression                     : JPEG (old-style)
+Thumbnail Offset                : 34912
+Thumbnail Length                : 1636
+Image Width                     : 1846
+Image Height                    : 2677
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Aperture                        : 87616466.3
+Image Size                      : 1846x2677
+Lens ID                         : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or Sony AF DT 18-200mm F3.5-6.3
+Scale Factor To 35 mm Equivalent: 1.5
+Shutter Speed                   : 1/30
+Thumbnail Image                 : (Binary data 1636 bytes, use -b option to extract)
+Circle Of Confusion             : 0.020 mm
+Field Of View                   : 67.4 deg
+Focal Length                    : 18.0 mm (35 mm equivalent: 27.0 mm)
+Hyperfocal Distance             : 0.00 m
+Light Value                     : 55.7
 </stdout>
-            <stderr>Error: Directory Sony1 with 5632 entries considered invalid; not read.
-</stderr>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="core">
+            <stdout></stdout>
+            <stderr></stderr>
         </source>
     </sources-list>
     <histogram-list>
