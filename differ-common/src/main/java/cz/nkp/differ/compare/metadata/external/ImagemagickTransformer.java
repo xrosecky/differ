@@ -51,7 +51,7 @@ public class ImagemagickTransformer implements ResultTransformer {
 
         public Pattern linePartsRegexp = Pattern.compile("^([ ]*)([A-Za-z0-9\\[\\], \\-_]+):[\\ \\t]*(.*)$");
         public Pattern subNameRegexp = Pattern.compile("^([a-zA-Z0-9\\[\\],\\-_]+)[ ]*:[ \\t]+(.*)$");
-
+        public Pattern lineWithoutName = Pattern.compile("^([ ]+)(.*)");
         LineParts(String line) {
             Matcher headMatcher = linePartsRegexp.matcher(line);
             if( headMatcher.find() ){
@@ -68,7 +68,13 @@ public class ImagemagickTransformer implements ResultTransformer {
                     this.value = value;
                 }
             } else {
-                this.value = line;
+                Matcher withoutNameMatcher = lineWithoutName.matcher(line);
+                if( withoutNameMatcher.find() ){
+                    this.value = withoutNameMatcher.group(2);
+                    this.depth = withoutNameMatcher.group(1).length();
+                } else {
+                    this.value = line;
+                }
             }
         }
     }
