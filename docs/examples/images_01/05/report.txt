@@ -6,13 +6,16 @@ Identification
 Significant Property Source       Value                                                                                               Unit
 -------------------- -----------  --------------------------------------------------------------------------------------------------  ----
 MIME type            exiftool     image/png                                                                                           
+                     fits         image/png                                                                                           
                      jhove        application/octet-stream                                                                            
 Type of format       daitss       Portable Network Graphics                                                                           
                      exiftool     PNG                                                                                                 
+                     fits         Portable Network Graphics                                                                           
                      imagemagick  PNG                                                                                                 
                      jhove        bytestream                                                                                          
 Version              daitss       built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.  
                      exiftool     8.15                                                                                                
+                     fits         FITS 0.6.1                                                                                          
                      imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                       
 -------------------- -----------  --------------------------------------------------------------------------------------------------  ----
 
@@ -76,7 +79,7 @@ Interlace              exiftool     Noninterlaced
                        imagemagick  None                                                                  
 Num of pixels          imagemagick  9.516MB                                                               
 Orientation            imagemagick  Undefined                                                             
-Pixels per second      imagemagick  15.1MB                                                                
+Pixels per second      imagemagick  15.86MB                                                               
 Resolution horizontal  imagemagick  87                                                                    PPI
 Resolution vertical    imagemagick  70                                                                    PPI
 ---------------------- -----------  --------------------------------------------------------------------  ----
@@ -109,7 +112,7 @@ Device Attributes             exiftool     Reflective, Glossy, Positive, Color
 Device Manufacturer           exiftool     IEC                                                 
 Device Mfg Desc               exiftool     IEC http://www.iec.ch                               
 Dispose                       imagemagick  Undefined                                           
-Elapsed time                  imagemagick  0:01.629                                            
+Elapsed time                  imagemagick  0:01.599                                            
 Endianess                     imagemagick  Undefined                                           
 exit-code                     daitss       OK                                                  
                               exiftool     ok                                                  
@@ -184,7 +187,7 @@ Tainted                       imagemagick  False
 Technology                    exiftool     Cathode Ray Tube Display                            
 Transparent color             imagemagick  black                                               
 Units                         imagemagick  PixelsPerCentimeter                                 
-User time                     imagemagick  0.620u                                              
+User time                     imagemagick  0.590u                                              
 Verbose                       imagemagick  true                                                
 Viewing Cond Desc             exiftool     Reference Viewing Condition in IEC61966-2.1         
 Viewing Cond Illuminant       exiftool     19.6445 20.3718 16.8089                             
