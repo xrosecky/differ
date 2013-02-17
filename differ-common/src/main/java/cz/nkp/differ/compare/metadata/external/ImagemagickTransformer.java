@@ -37,8 +37,10 @@ public class ImagemagickTransformer implements ResultTransformer {
                     }
                 }
             }
-            this.parts.addLast(lineParts.name);
-            this.depth = lineParts.depth;
+			if( lineParts.name != null ){
+				this.parts.addLast(lineParts.name);
+				this.depth = lineParts.depth;
+			};
             return parts;
         }
     }
