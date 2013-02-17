@@ -97,9 +97,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>ExifTool Version Number</key>
+            <key>Version</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8.15</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -617,8 +617,8 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Y Cb Cr Sub Sampling</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">YCbCr4</value>
+            <key>Color transformation</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">YCbCr4:2:0 (2 2)</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
@@ -1287,7 +1287,7 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Quality</key>
+            <key>Compression quality</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">83</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
@@ -1311,9 +1311,9 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Properties/exif/ColorSpace</key>
+            <key>Color space</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1503,9 +1503,9 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Properties/exif/Orientation</key>
+            <key>Orientation</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1569,9 +1569,9 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Image/Properties/jpeg/colorspace</key>
+            <key>Color space</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1666,7 +1666,7 @@
         </metadata>
         <metadata>
             <key>User time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.050u</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.040u</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1679,7 +1679,7 @@
         <metadata>
             <key>Version</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1712,154 +1712,10 @@
         </metadata>
     </metadata-list>
     <sources-list>
-        <source exitCode="0" source="exiftool">
-            <stdout>ExifTool Version Number         : 8.15
-File Name                       : 12.jpg
-Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
-File Size                       : 375 kB
-File Modification Date/Time     : 2013:02:15 17:56:11+01:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-JFIF Version                    : 1.01
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Image Description               : 
-Make                            : NIKON
-Warning                         : Bad IFD0 offset for Model
-Orientation                     : Horizontal (normal)
-Software                        : E2100v1.1
-Modify Date                     : 0000:00:00 00:00:00
-Y Cb Cr Positioning             : Co-sited
-Exposure Time                   : 1/60
-F Number                        : 2.6
-Exposure Program                : Program AE
-ISO                             : 100
-Exif Version                    : 0220
-Date/Time Original              : 0000:00:00 00:00:00
-Create Date                     : 0000:00:00 00:00:00
-Components Configuration        : Y, Cb, Cr, -
-Compressed Bits Per Pixel       : 2
-Exposure Compensation           : 0
-Max Aperture Value              : 2.8
-Metering Mode                   : Multi-segment
-Light Source                    : Unknown
-Flash                           : Auto, Fired
-Focal Length                    : 4.7 mm
-Maker Note Version              : 2.00
-Color Mode                      : Color
-Quality                         : Normal
-White Balance                   : Auto
-Focus Mode                      : AF-S
-Flash Setting                   : Normal
-ISO Selection                   : Auto
-Data Dump                       : (Binary data 494 bytes, use -b option to extract)
-Compression                     : JPEG (old-style)
-X Resolution                    : 300
-Y Resolution                    : 300
-Resolution Unit                 : inches
-Preview Image Start             : 18193
-Preview Image Length            : 16411
-Image Adjustment                : Auto
-Auxiliary Lens                  : Off
-Manual Focus Distance           : undef
-Digital Zoom                    : 1
-AF Area Mode                    : Single Area
-AF Point                        : Center
-AF Points In Focus              : (none)
-Scene Mode                      : 
-Noise Reduction                 : Off
-Scene Assist                    : 
-Retouch History                 : Unknown ()
-User Comment                    : 
-Flashpix Version                : 0100
-Color Space                     : sRGB
-Exif Image Width                : 1600
-Exif Image Height               : 1200
-File Source                     : Digital Camera
-Scene Type                      : Directly photographed
-Custom Rendered                 : Normal
-Exposure Mode                   : Auto
-Digital Zoom Ratio              : 0
-Focal Length In 35mm Format     : 36 mm
-Scene Capture Type              : Standard
-Gain Control                    : None
-Contrast                        : Normal
-Saturation                      : Normal
-Sharpness                       : Normal
-Subject Distance Range          : Unknown
-Offset Schema                   : 4168
-Padding                         : (Binary data 2060 bytes, use -b option to extract)
-Program Mode                    : 2
-Flash Fired                     : True
-Flash Return                    : No return detection
-Flash Mode                      : Auto
-Flash Function                  : False
-Flash Red Eye Mode              : False
-ISO Speed                       : 100
-About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
-Model                           : E2100
-Creatortool                     : E2100v1.1
-Image Width                     : 1200
-Image Height                    : 1600
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
-Aperture                        : 2.6
-Image Size                      : 1200x1600
-Preview Image                   : (Binary data 16411 bytes, use -b option to extract)
-Scale Factor To 35 mm Equivalent: 7.7
-Shutter Speed                   : 1/60
-Circle Of Confusion             : 0.004 mm
-Field Of View                   : 53.1 deg
-Focal Length                    : 4.7 mm (35 mm equivalent: 36.0 mm)
-Hyperfocal Distance             : 2.17 m
-Light Value                     : 8.7
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="core">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="exiv2">
-            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg
-File size       : 383559 Bytes
-MIME type       : image/jpeg
-Image size      : 1200 x 1600
-Camera make     : NIKON
-Camera model    : 
-Image timestamp : 0000:00:00 00:00:00
-Image number    : 
-Exposure time   : 1/60 s
-Aperture        : F2.6
-Exposure bias   : 0 EV
-Flash           : Yes, auto
-Flash bias      : 
-Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
-Subject distance: 
-ISO speed       : 100
-Exposure mode   : Auto
-Metering mode   : Multi-segment
-Macro mode      : 
-Image quality   : NORMAL
-Exif Resolution : 1600 x 1200
-White balance   : AUTO        
-Thumbnail       : None
-Copyright       : 
-Exif comment    :                                                                                                                      
-
-</stdout>
-            <stderr>Error: Directory Image, entry 0x0110 has invalid size 825637217*1; skipping entry.
-Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
-XMP Toolkit error 203: Mismatched top level rdf:about values
-Warning: Failed to decode XMP metadata.
-</stderr>
-        </source>
         <source exitCode="0" source="jhove">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-17T17:51:39+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-17T20:31:37+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
@@ -3556,10 +3412,14 @@ Warning: Failed to decode XMP metadata.
   Filesize: 384KB
   Number pixels: 1.92MB
   Pixels per second: 38.4MB
-  User time: 0.050u
+  User time: 0.040u
   Elapsed time: 0:01.050
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
 </stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="core">
+            <stdout></stdout>
             <stderr></stderr>
         </source>
         <source exitCode="0" source="daitss">
@@ -3568,7 +3428,7 @@ Warning: Failed to decode XMP metadata.
         </source>
         <source exitCode="0" source="fits">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 17:51"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 20:31"&gt;
   &lt;identification&gt;
     &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.04" /&gt;
@@ -3626,6 +3486,146 @@ Warning: Failed to decode XMP metadata.
 
 </stdout>
             <stderr></stderr>
+        </source>
+        <source exitCode="0" source="exiftool">
+            <stdout>ExifTool Version Number         : 8.15
+File Name                       : 12.jpg
+Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 375 kB
+File Modification Date/Time     : 2013:02:15 17:56:11+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : 
+Make                            : NIKON
+Warning                         : Bad IFD0 offset for Model
+Orientation                     : Horizontal (normal)
+Software                        : E2100v1.1
+Modify Date                     : 0000:00:00 00:00:00
+Y Cb Cr Positioning             : Co-sited
+Exposure Time                   : 1/60
+F Number                        : 2.6
+Exposure Program                : Program AE
+ISO                             : 100
+Exif Version                    : 0220
+Date/Time Original              : 0000:00:00 00:00:00
+Create Date                     : 0000:00:00 00:00:00
+Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 2
+Exposure Compensation           : 0
+Max Aperture Value              : 2.8
+Metering Mode                   : Multi-segment
+Light Source                    : Unknown
+Flash                           : Auto, Fired
+Focal Length                    : 4.7 mm
+Maker Note Version              : 2.00
+Color Mode                      : Color
+Quality                         : Normal
+White Balance                   : Auto
+Focus Mode                      : AF-S
+Flash Setting                   : Normal
+ISO Selection                   : Auto
+Data Dump                       : (Binary data 494 bytes, use -b option to extract)
+Compression                     : JPEG (old-style)
+X Resolution                    : 300
+Y Resolution                    : 300
+Resolution Unit                 : inches
+Preview Image Start             : 18193
+Preview Image Length            : 16411
+Image Adjustment                : Auto
+Auxiliary Lens                  : Off
+Manual Focus Distance           : undef
+Digital Zoom                    : 1
+AF Area Mode                    : Single Area
+AF Point                        : Center
+AF Points In Focus              : (none)
+Scene Mode                      : 
+Noise Reduction                 : Off
+Scene Assist                    : 
+Retouch History                 : Unknown ()
+User Comment                    : 
+Flashpix Version                : 0100
+Color Space                     : sRGB
+Exif Image Width                : 1600
+Exif Image Height               : 1200
+File Source                     : Digital Camera
+Scene Type                      : Directly photographed
+Custom Rendered                 : Normal
+Exposure Mode                   : Auto
+Digital Zoom Ratio              : 0
+Focal Length In 35mm Format     : 36 mm
+Scene Capture Type              : Standard
+Gain Control                    : None
+Contrast                        : Normal
+Saturation                      : Normal
+Sharpness                       : Normal
+Subject Distance Range          : Unknown
+Offset Schema                   : 4168
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+Program Mode                    : 2
+Flash Fired                     : True
+Flash Return                    : No return detection
+Flash Mode                      : Auto
+Flash Function                  : False
+Flash Red Eye Mode              : False
+ISO Speed                       : 100
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Model                           : E2100
+Creatortool                     : E2100v1.1
+Image Width                     : 1200
+Image Height                    : 1600
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Aperture                        : 2.6
+Image Size                      : 1200x1600
+Preview Image                   : (Binary data 16411 bytes, use -b option to extract)
+Scale Factor To 35 mm Equivalent: 7.7
+Shutter Speed                   : 1/60
+Circle Of Confusion             : 0.004 mm
+Field Of View                   : 53.1 deg
+Focal Length                    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Hyperfocal Distance             : 2.17 m
+Light Value                     : 8.7
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="exiv2">
+            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+File size       : 383559 Bytes
+MIME type       : image/jpeg
+Image size      : 1200 x 1600
+Camera make     : NIKON
+Camera model    : 
+Image timestamp : 0000:00:00 00:00:00
+Image number    : 
+Exposure time   : 1/60 s
+Aperture        : F2.6
+Exposure bias   : 0 EV
+Flash           : Yes, auto
+Flash bias      : 
+Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Subject distance: 
+ISO speed       : 100
+Exposure mode   : Auto
+Metering mode   : Multi-segment
+Macro mode      : 
+Image quality   : NORMAL
+Exif Resolution : 1600 x 1200
+White balance   : AUTO        
+Thumbnail       : None
+Copyright       : 
+Exif comment    :                                                                                                                      
+
+</stdout>
+            <stderr>Error: Directory Image, entry 0x0110 has invalid size 825637217*1; skipping entry.
+Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
+XMP Toolkit error 203: Mismatched top level rdf:about values
+Warning: Failed to decode XMP metadata.
+</stderr>
         </source>
     </sources-list>
     <histogram-list>

@@ -11,7 +11,8 @@ MIME type            exiftool     image/tiff
 Type of format       exiftool     TIFF                                                           
                      imagemagick  TIFF                                                           
                      jhove        TIFF                                                           
-Version              imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org  
+Version              exiftool     8.15                                                           
+                     imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org  
 -------------------- -----------  -------------------------------------------------------------  ----
 
 Validation
@@ -79,6 +80,7 @@ Resolution horizontal              exiftool     72                              
 Resolution vertical                exiftool     72                                                                    PPI
                                    imagemagick  72                                                                    PPI
                                    jhove                                                                              PPI
+Samples per pixel                  exiftool     1                                                                     
 Universal unique identifier (UUID) imagemagick  c83b83944e73db24e7f1a8887bdd7be1f7770c34d0b11965a073c06d1a7b6e22      
 ---------------------------------- -----------  --------------------------------------------------------------------  ----
 
@@ -97,12 +99,11 @@ Displayed Units X                                exiftool     inches
 Displayed Units Y                                exiftool     inches                                              
 Dispose                                          imagemagick  Undefined                                           
 Document ID                                      exiftool     xmp.did                                             
-Elapsed time                                     imagemagick  0:01.009                                            
+Elapsed time                                     imagemagick  0:01.010                                            
 Endianess                                        imagemagick  MSB                                                 
 Exif Byte Order                                  exiftool     Big-endian (Motorola, MM)                           
 Exif Image Height                                exiftool     512                                                 
 Exif Image Width                                 exiftool     512                                                 
-ExifTool Version Number                          exiftool     8.15                                                
 exit-code                                        exiftool     ok                                                  
                                                  exiv2        ok                                                  
                                                  fits         ok                                                  
@@ -157,7 +158,6 @@ Print size                                       imagemagick  7.11111x7.11111
 Rendering intent                                 imagemagick  Undefined                                           
 Resolution unit                                  exiftool     inches                                              
 Rows Per Strip                                   exiftool     512                                                 
-Samples Per Pixel                                exiftool     1                                                   
 Software type                                    exiftool     Adobe Photoshop CS5 Windows                         
 Strip Byte Counts                                exiftool     262144                                              
 Strip Offsets                                    exiftool     23928                                               

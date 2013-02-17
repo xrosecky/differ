@@ -10,7 +10,8 @@ MIME type            exiv2        image/tiff
 Type of format       exiftool     TIFF                                                           
                      imagemagick  TIFF                                                           
                      jhove        TIFF                                                           
-Version              imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org  
+Version              exiftool     8.15                                                           
+                     imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org  
 -------------------- -----------  -------------------------------------------------------------  ----
 
 Validation
@@ -78,6 +79,7 @@ Resolution horizontal              imagemagick  72                              
                                    jhove                                                                              PPI
 Resolution vertical                imagemagick  72                                                                    PPI
                                    jhove                                                                              PPI
+Samples per pixel                  exiftool     3                                                                     
 Universal unique identifier (UUID) imagemagick  01f8ff0e23a809255ae52a9857a7aeb0f89d92610205fef29c36c3d359ac3339      
 ---------------------------------- -----------  --------------------------------------------------------------------  ----
 
@@ -100,7 +102,6 @@ Dispose                              imagemagick  Undefined
 Elapsed time                         imagemagick  0:01.000                   
 Endianess                            imagemagick  MSB                        
 Exif Byte Order                      exiftool     Big-endian (Motorola, MM)  
-ExifTool Version Number              exiftool     8.15                       
 exit-code                            exiftool     ok                         
                                      exiv2        ok                         
                                      fits         ok                         
@@ -141,7 +142,6 @@ Red min                              imagemagick  54 (0.211765)
 Red skewness                         imagemagick  -0.701058                  
 Red standard deviation               imagemagick  49.0488 (0.192348)         
 Rendering intent                     imagemagick  Undefined                  
-Samples Per Pixel                    exiftool     3                          
 Strip Byte Counts                    exiftool     786432                     
 Strip Offsets                        exiftool     8                          
 Subfile Type                         exiftool     Full-resolution Image      

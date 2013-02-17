@@ -17,6 +17,7 @@
 1;Color Transform
 1;Color depth
 1;Color space
+1;Color transformation
 1;Color type
 1;Compose
 1;Compression quality
@@ -40,7 +41,6 @@
 1;Exif Byte Order
 1;Exif Image Height
 1;Exif Image Width
-1;ExifTool Version Number
 1;File Permissions
 1;File created
 1;File last modified
@@ -79,26 +79,17 @@
 1;Image/Profiles/Profile-exif
 1;Image/Profiles/Profile-xmp
 1;Image/Properties/dc/format
-1;Image/Properties/exif/BitsPerSample
-1;Image/Properties/exif/ColorSpace
 1;Image/Properties/exif/Compression
 1;Image/Properties/exif/DateTime
 1;Image/Properties/exif/ExifImageLength
 1;Image/Properties/exif/ExifImageWidth
 1;Image/Properties/exif/ExifOffset
-1;Image/Properties/exif/ImageLength
-1;Image/Properties/exif/ImageWidth
 1;Image/Properties/exif/JPEGInterchangeFormat
 1;Image/Properties/exif/JPEGInterchangeFormatLength
-1;Image/Properties/exif/Orientation
 1;Image/Properties/exif/PhotometricInterpretation
 1;Image/Properties/exif/PlanarConfiguration
 1;Image/Properties/exif/ResolutionUnit
-1;Image/Properties/exif/SamplesPerPixel
 1;Image/Properties/exif/Software
-1;Image/Properties/exif/XResolution
-1;Image/Properties/exif/YResolution
-1;Image/Properties/jpeg/colorspace
 1;Image/Properties/jpeg/sampling-factor
 1;Image/Properties/photoshop/ColorMode
 1;Image/Properties/rdf
@@ -113,7 +104,6 @@
 1;Image/Properties/xmpMM/DocumentID
 1;Image/Properties/xmpMM/InstanceID
 1;Image/Properties/xmpMM/OriginalDocumentID
-1;Image/Quality
 1;Instance ID
 1;Interlace
 1;Iterations
@@ -156,7 +146,6 @@
 1;Resolution unit
 1;Resolution vertical
 1;Rows Per Strip
-1;Samples Per Pixel
 1;Samples per pixel
 1;Software type
 1;Strip Byte Counts
@@ -179,5 +168,4 @@
 1;Verbose
 1;Version
 1;XMP Toolkit
-1;Y Cb Cr Sub Sampling
 1;exit-code
