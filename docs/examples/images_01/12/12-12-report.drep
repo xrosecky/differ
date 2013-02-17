@@ -226,7 +226,7 @@
             <metadata>
                 <key>File created</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000</value>
-                <conflict>false</conflict>
+                <conflict>true</conflict>
                 <source>exiftool</source>
             </metadata>
             <metadata>
@@ -335,14 +335,14 @@
                 <key>Resolution horizontal</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>exiftool</source>
             </metadata>
             <metadata>
                 <key>Resolution vertical</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>exiftool</source>
             </metadata>
             <metadata>
@@ -803,7 +803,11 @@
             </metadata>
             <metadata>
                 <key>Compression scheme</key>
+<<<<<<< HEAD
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+=======
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>true</conflict>
                 <source>jhove</source>
             </metadata>
@@ -843,14 +847,14 @@
                 <key>Resolution vertical</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>jhove</source>
             </metadata>
             <metadata>
                 <key>Resolution horizontal</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>jhove</source>
             </metadata>
             <metadata>
@@ -1072,14 +1076,14 @@
                 <key>Resolution horizontal</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>daitss</source>
             </metadata>
             <metadata>
                 <key>Resolution vertical</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>daitss</source>
             </metadata>
             <metadata>
@@ -1377,7 +1381,11 @@
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Compression</key>
+=======
+                <key>Compression scheme</key>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
@@ -1395,9 +1403,15 @@
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Properties/date/create</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-15T17:56:11+01:00</value>
                 <conflict>false</conflict>
+=======
+                <key>File created</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-13 06:21:49+01:00</value>
+                <conflict>true</conflict>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <source>imagemagick</source>
             </metadata>
             <metadata>
@@ -1761,8 +1775,13 @@
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Pixels per second</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32MB</value>
+=======
+                <key>Image/Channel statistics/Image statistics/Pixels per second</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8.727MB</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -1773,8 +1792,13 @@
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Elapsed time</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.059</value>
+=======
+                <key>Image/Channel statistics/Image statistics/Elapsed time</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.219</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -1802,23 +1826,519 @@
                 <key>Resolution horizontal</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
             <metadata>
                 <key>Resolution vertical</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
         </metadata-list>
         <sources-list>
+<<<<<<< HEAD
             <source exitCode="0" source="jhove">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
  &lt;date&gt;2013-02-17T17:26:26+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/12.jpg"&gt;
+=======
+            <source source="fits" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 17:29"&gt;
+  &lt;identification&gt;
+    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;version toolname="file utility" toolversion="5.11"&gt;1.01&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;383559&lt;/size&gt;
+    &lt;creatingApplicationName toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;E2100&lt;/creatingApplicationName&gt;
+    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;E2100v1.1&lt;/creatingApplicationName&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:13 06:21:49+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74"&gt;0000:00:00 00:00:00&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7da5d79d536210a36efb2618e6bcb0c9&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360732909000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;1200&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1600&lt;/imageHeight&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
+      &lt;YCbCrPositioning toolname="Exiftool" toolversion="7.74"&gt;2&lt;/YCbCrPositioning&gt;
+      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;captureDevice toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;digital still camera&lt;/captureDevice&gt;
+      &lt;digitalCameraManufacturer toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;NIKON&lt;/digitalCameraManufacturer&gt;
+      &lt;digitalCameraModelName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100&lt;/digitalCameraModelName&gt;
+      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100v1.1&lt;/scanningSoftwareName&gt;
+      &lt;fNumber toolname="Exiftool" toolversion="7.74"&gt;2.6&lt;/fNumber&gt;
+      &lt;exposureTime toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;1/60&lt;/exposureTime&gt;
+      &lt;exposureTime toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;0.016638935108153077&lt;/exposureTime&gt;
+      &lt;exposureProgram toolname="Exiftool" toolversion="7.74"&gt;Normal program&lt;/exposureProgram&gt;
+      &lt;isoSpeedRating toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;100&lt;/isoSpeedRating&gt;
+      &lt;exifVersion toolname="Exiftool" toolversion="7.74"&gt;0220&lt;/exifVersion&gt;
+      &lt;exposureBiasValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;0&lt;/exposureBiasValue&gt;
+      &lt;maxApertureValue toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2.8&lt;/maxApertureValue&gt;
+      &lt;maxApertureValue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;3.0&lt;/maxApertureValue&gt;
+      &lt;meteringMode toolname="Exiftool" toolversion="7.74"&gt;Pattern&lt;/meteringMode&gt;
+      &lt;lightSource toolname="Exiftool" toolversion="7.74"&gt;unknown&lt;/lightSource&gt;
+      &lt;flash toolname="Exiftool" toolversion="7.74"&gt;Flash fired, auto mode&lt;/flash&gt;
+      &lt;focalLength toolname="Exiftool" toolversion="7.74"&gt;4.7&lt;/focalLength&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="exiv2" exitCode="0">
+                <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg
+File size       : 383559 Bytes
+MIME type       : image/jpeg
+Image size      : 1200 x 1600
+Camera make     : NIKON
+Camera model    : E2100
+Image timestamp : 0000:00:00 00:00:00
+Image number    : 
+Exposure time   : 1/60 s
+Aperture        : F2.6
+Exposure bias   : 0 EV
+Flash           : Yes, auto
+Flash bias      : 
+Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Subject distance: 
+ISO speed       : 100
+Exposure mode   : Auto
+Metering mode   : Multi-segment
+Macro mode      : 
+Image quality   : NORMAL
+Exif Resolution : 1600 x 1200
+White balance   : AUTO        
+Thumbnail       : None
+Copyright       : 
+Exif comment    :                                                                                                                      
+
+</stdout>
+                <stderr>Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
+</stderr>
+            </source>
+            <source source="core" exitCode="0">
+                <stdout></stdout>
+                <stderr></stderr>
+            </source>
+            <source source="imagemagick" exitCode="0">
+                <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Class: DirectClass
+  Geometry: 1200x1600+0+0
+  Resolution: 300x300
+  Print size: 4x5.33333
+  Units: PixelsPerInch
+  Type: TrueColor
+  Endianess: Undefined
+  Colorspace: sRGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Red:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 80.5519 (0.31589)
+      standard deviation: 68.6198 (0.269097)
+      kurtosis: -0.444368
+      skewness: 0.863616
+    Green:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 111.388 (0.436814)
+      standard deviation: 64.2312 (0.251887)
+      kurtosis: -0.842224
+      skewness: 0.287732
+    Blue:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 135.321 (0.530671)
+      standard deviation: 73.1861 (0.287004)
+      kurtosis: -1.24506
+      skewness: 0.00535571
+  Image statistics:
+    Overall:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 109.087 (0.427792)
+      standard deviation: 68.7763 (0.269711)
+      kurtosis: -0.628267
+      skewness: 0.408987
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Interlace: None
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Compose: Over
+  Page geometry: 1200x1600+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 83
+  Orientation: TopLeft
+  Properties:
+    date:create: 2013-02-13T06:21:49+01:00
+    date:modify: 2013-02-13T06:21:49+01:00
+    exif:ColorSpace: 1
+    exif:ComponentsConfiguration: 1, 2, 3, 0
+    exif:CompressedBitsPerPixel: 2/1
+    exif:Contrast: 0
+    exif:CustomRendered: 0
+    exif:DateTime: 0000:00:00 00:00:00
+    exif:DateTimeDigitized: 0000:00:00 00:00:00
+    exif:DateTimeOriginal: 0000:00:00 00:00:00
+    exif:DigitalZoomRatio: 0/100
+    exif:ExifImageLength: 1200
+    exif:ExifImageWidth: 1600
+    exif:ExifOffset: 2236
+    exif:ExifVersion: 0220
+    exif:ExposureBiasValue: 0/10
+    exif:ExposureMode: 0
+    exif:ExposureProgram: 2
+    exif:ExposureTime: 10/601
+    exif:FileSource: 3
+    exif:Flash: 25
+    exif:FlashPixVersion: 48, 49, 48, 48
+    exif:FNumber: 26/10
+    exif:FocalLength: 47/10
+    exif:FocalLengthIn35mmFilm: 36
+    exif:GainControl: 0
+    exif:ImageDescription:           
+    exif:ISOSpeed: 100
+    exif:ISOSpeedRatings: 100
+    exif:LightSource: 0
+    exif:Make: NIKON
+    exif:MakerNote: 78, 105, 107, 111, 110, 0, 2, 0, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 24, 0, 1, 0, 7, 0, 4, 0, 0, 0, 0, 2, 0, 0, 2, 0, 3, 0, 2, 0, 0, 0, 0, 0, 0, 0, 3, 0, 2, 0, 6, 0, 0, 0, 46, 1, 0, 0, 4, 0, 2, 0, 7, 0, 0, 0, 52, 1, 0, 0, 5, 0, 2, 0, 13, 0, 0, 0, 60, 1, 0, 0, 6, 0, 2, 0, 7, 0, 0, 0, 74, 1, 0, 0, 7, 0, 2, 0, 7, 0, 0, 0, 82, 1, 0, 0, 8, 0, 2, 0, 8, 0, 0, 0, 90, 1, 0, 0, 10, 0, 5, 0, 1, 0, 0, 0, 98, 1, 0, 0, 15, 0, 2, 0, 7, 0, 0, 0, 106, 1, 0, 0, 16, 0, 7, 0, 238, 1, 0, 0, 114, 1, 0, 0, 17, 0, 4, 0, 1, 0, 0, 0, 194, 3, 0, 0, 128, 0, 2, 0, 14, 0, 0, 0, 96, 3, 0, 0, 130, 0, 2, 0, 13, 0, 0, 0, 110, 3, 0, 0, 133, 0, 5, 0, 1, 0, 0, 0, 124, 3, 0, 0, 134, 0, 5, 0, 1, 0, 0, 0, 132, 3, 0, 0, 136, 0, 7, 0, 4, 0, 0, 0, 0, 0, 0, 0, 143, 0, 2, 0, 16, 0, 0, 0, 140, 3, 0, 0, 148, 0, 8, 0, 1, 0, 0, 0, 0, 0, 0, 0, 149, 0, 2, 0, 5, 0, 0, 0, 156, 3, 0, 0, 155, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 156, 0, 2, 0, 20, 0, 0, 0, 162, 3, 0, 0, 157, 0, 3, 0, 1, 0, 0, 0, 0, 0, 0, 0, 158, 0, 7, 0, 10, 0, 0, 0, 182, 3, 0, 0, 0, 0, 0, 0, 67, 79, 76, 79, 82, 0, 78, 79, 82, 77, 65, 76, 0, 0, 65, 85, 84, 79, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 65, 85, 84, 79, 32, 32, 0, 0, 65, 70, 45, 83, 32, 32, 0, 0, 78, 79, 82, 77, 65, 76, 32, 0, 128, 34, 0, 0, 232, 3, 0, 0, 65, 85, 84, 79, 32, 32, 0, 0, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 255, 1, 0, 0, 25, 97, 18, 49, 0, 0, 130, 85, 0, 0, 1, 121, 0, 12, 87, 113, 0, 12, 87, 113, 0, 12, 87, 113, 0, 3, 208, 174, 0, 0, 64, 232, 0, 100, 0, 175, 0, 100, 0, 28, 0, 31, 0, 1, 0, 0, 57, 247, 0, 0, 0, 179, 0, 0, 1, 55, 0, 0, 0, 0, 0, 0, 112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 12, 0, 0, 69, 5, 22, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 17, 17, 17, 1, 187, 3, 159, 3, 249, 1, 117, 2, 4, 2, 6, 1, 48, 2, 0, 1, 1, 240, 92, 0, 0, 3, 32, 0, 0, 0, 15, 0, 16, 0, 13, 0, 5, 0, 6, 0, 0, 0, 0, 0, 16, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 175, 1, 107, 1, 236, 2, 136, 3, 52, 15, 15, 1, 29, 2, 4, 1, 233, 0, 0, 16, 55, 16, 249, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 136, 136, 0, 0, 3, 242, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 171, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 242, 17, 0, 0, 0, 1, 50, 1, 116, 1, 162, 2, 171, 2, 106, 1, 235, 0, 0, 0, 0, 1, 100, 2, 1, 2, 98, 5, 88, 4, 214, 3, 140, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 119, 119, 119, 119, 8, 29, 8, 27, 8, 27, 17, 30, 14, 23, 39, 0, 212, 0, 0, 0, 16, 0, 14, 6, 0, 5, 1, 2, 50, 15, 66, 64, 82, 14, 0, 100, 4, 31, 0, 97, 12, 25, 8, 32, 1, 232, 1, 38, 255, 234, 0, 17, 0, 0, 0, 45, 0, 70, 0, 13, 2, 6, 1, 48, 102, 102, 102, 102, 0, 0, 0, 8, 0, 0, 0, 9, 0, 0, 0, 10, 65, 85, 84, 79, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 79, 70, 70, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 79, 70, 70, 32, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 3, 1, 3, 0, 1, 0, 0, 0, 6, 0, 0, 0, 26, 1, 5, 0, 1, 0, 0, 0, 28, 4, 0, 0, 27, 1, 5, 0, 1, 0, 0, 0, 36, 4, 0, 0, 40, 1, 3, 0, 1, 0, 0, 0, 2, 0, 0, 0, 1, 2, 4, 0, 1, 0, 0, 0, 19, 52, 0, 0, 2, 2, 4, 0, 1, 0, 0, 0, 27, 64, 0, 0, 19, 2, 3, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 44, 1, 0, 0, 1, 0, 0, 0, 44, 1, 0, 0, 1, 0, 0, 0
+    exif:MaxApertureValue: 30/10
+    exif:MeteringMode: 5
+    exif:Model: E2100
+    exif:Orientation: 1
+    exif:ProgramMode: 2
+    exif:Saturation: 0
+    exif:SceneCaptureType: 0
+    exif:SceneType: 1
+    exif:Sharpness: 0
+    exif:Software: E2100v1.1
+    exif:SubjectDistanceRange: 0
+    exif:UserComment: 0, 0, 0, 0, 0, 0, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32
+    exif:WhiteBalance: 0
+    exif:YCbCrPositioning: 2
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 2x2,1x1,1x1
+    rdf:Description: 
+    signature: c35e9a6564d00d1088b6cf96506e692d1eee90e5fdf87db6b8a6330db9405149
+    tiff:make: NIKON
+    tiff:model: E2100
+    tiff:software: E2100v1.1
+    unknown: 28, 234, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    xmp:creatortool: E2100v1.1
+  Profiles:
+    Profile-exif: 6040 bytes
+    Profile-xmp: 3990 bytes
+  Artifacts:
+    filename: /opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 384KB
+  Number pixels: 1.92M
+  Pixels per second: 8.727MB
+  User time: 0.100u
+  Elapsed time: 0:01.219
+  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="exiftool" exitCode="0">
+                <stdout>ExifTool Version Number         : 8.60
+File Name                       : 12.jpg
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
+File Size                       : 375 kB
+File Modification Date/Time     : 2013:02:13 06:21:49+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : 
+Make                            : NIKON
+Camera Model Name               : E2100
+Orientation                     : Horizontal (normal)
+Software                        : E2100v1.1
+Modify Date                     : 0000:00:00 00:00:00
+Y Cb Cr Positioning             : Co-sited
+Exposure Time                   : 1/60
+F Number                        : 2.6
+Exposure Program                : Program AE
+ISO                             : 100
+Exif Version                    : 0220
+Date/Time Original              : 0000:00:00 00:00:00
+Create Date                     : 0000:00:00 00:00:00
+Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 2
+Exposure Compensation           : 0
+Max Aperture Value              : 2.8
+Metering Mode                   : Multi-segment
+Light Source                    : Unknown
+Focal Length                    : 4.7 mm
+Maker Note Version              : 2.00
+Color Mode                      : Color
+Quality                         : Normal
+White Balance                   : Auto
+Focus Mode                      : AF-S
+Flash Setting                   : Normal
+ISO Selection                   : Auto
+Data Dump                       : (Binary data 494 bytes, use -b option to extract)
+Compression                     : JPEG (old-style)
+X Resolution                    : 300
+Y Resolution                    : 300
+Resolution Unit                 : inches
+Preview Image Start             : 18193
+Preview Image Length            : 16411
+Image Adjustment                : Auto
+Auxiliary Lens                  : Off
+Manual Focus Distance           : undef
+Digital Zoom                    : 1
+AF Area Mode                    : Single Area
+AF Point                        : Center
+AF Points In Focus              : (none)
+Scene Mode                      : 
+Noise Reduction                 : Off
+Scene Assist                    : 
+Retouch History                 : Unknown ()
+User Comment                    : 
+Flashpix Version                : 0100
+Color Space                     : sRGB
+Exif Image Width                : 1600
+Exif Image Height               : 1200
+File Source                     : Digital Camera
+Scene Type                      : Directly photographed
+Custom Rendered                 : Normal
+Exposure Mode                   : Auto
+Digital Zoom Ratio              : 0
+Focal Length In 35mm Format     : 36 mm
+Scene Capture Type              : Standard
+Gain Control                    : None
+Contrast                        : Normal
+Saturation                      : Normal
+Sharpness                       : Normal
+Subject Distance Range          : Unknown
+Offset Schema                   : 4168
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Program Mode                    : 2
+Flash Fired                     : True
+Flash Return                    : No return detection
+Flash Mode                      : Auto
+Flash Function                  : False
+Flash Red Eye Mode              : False
+ISO Speed                       : 100
+Creatortool                     : E2100v1.1
+Image Width                     : 1200
+Image Height                    : 1600
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Aperture                        : 2.6
+Flash                           : Auto, Fired
+Image Size                      : 1200x1600
+Preview Image                   : (Binary data 16411 bytes, use -b option to extract)
+Scale Factor To 35 mm Equivalent: 7.7
+Shutter Speed                   : 1/60
+Circle Of Confusion             : 0.004 mm
+Field Of View                   : 53.1 deg
+Focal Length                    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Hyperfocal Distance             : 2.17 m
+Light Value                     : 8.7
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="daitss" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
+	
+	&lt;!-- premis file object --&gt;
+	&lt;object xsi:type="file"&gt;
+		&lt;objectIdentifier&gt;
+			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130214-1949-1todje6-0.jpg&lt;/objectIdentifierValue&gt;
+		&lt;/objectIdentifier&gt;
+		&lt;objectCharacteristics&gt;
+			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;7da5d79d536210a36efb2618e6bcb0c9&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;efb581d97724f17f00029ddd5c416a64750dd24f&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;size&gt;383559&lt;/size&gt;
+			
+			&lt;format&gt;
+				&lt;formatDesignation&gt;
+					&lt;formatName&gt;JPEG File Interchange Format&lt;/formatName&gt;
+					
+					&lt;formatVersion&gt;1.01&lt;/formatVersion&gt;
+					
+				&lt;/formatDesignation&gt;
+				
+				&lt;formatRegistry&gt;
+					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
+					&lt;formatRegistryKey&gt;fmt/43&lt;/formatRegistryKey&gt;
+				&lt;/formatRegistry&gt;
+				
+				
+			&lt;/format&gt;
+			
+			
+			
+			
+			&lt;objectCharacteristicsExtension&gt;
+				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+  &lt;mix:BasicDigitalObjectInformation&gt;
+    &lt;mix:ObjectIdentifier&gt;
+      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+    &lt;/mix:ObjectIdentifier&gt;
+    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+    &lt;mix:Compression&gt;
+      &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
+    &lt;/mix:Compression&gt;
+  &lt;/mix:BasicDigitalObjectInformation&gt;
+  &lt;mix:BasicImageInformation&gt;
+    &lt;mix:BasicImageCharacteristics&gt;
+      &lt;mix:imageWidth&gt;1200&lt;/mix:imageWidth&gt;
+      &lt;mix:imageHeight&gt;1600&lt;/mix:imageHeight&gt;
+      &lt;mix:PhotometricInterpretation&gt;
+        &lt;mix:colorSpace&gt;YCbCr&lt;/mix:colorSpace&gt;
+      &lt;/mix:PhotometricInterpretation&gt;
+    &lt;/mix:BasicImageCharacteristics&gt;
+  &lt;/mix:BasicImageInformation&gt;
+  &lt;mix:ImageCaptureMetadata&gt;
+    &lt;mix:ScannerCapture&gt;
+      &lt;mix:scannerManufacturer&gt;NIKON&lt;/mix:scannerManufacturer&gt;
+      &lt;mix:ScannerModel&gt;
+        &lt;mix:scannerModelName&gt;E2100&lt;/mix:scannerModelName&gt;
+      &lt;/mix:ScannerModel&gt;
+    &lt;/mix:ScannerCapture&gt;
+  &lt;/mix:ImageCaptureMetadata&gt;
+  &lt;mix:ImageAssessmentMetadata&gt;
+    &lt;mix:SpatialMetrics&gt;
+      &lt;mix:samplingFrequencyUnit&gt;in.&lt;/mix:samplingFrequencyUnit&gt;
+      &lt;mix:xSamplingFrequency&gt;
+        &lt;mix:numerator&gt;300&lt;/mix:numerator&gt;
+      &lt;/mix:xSamplingFrequency&gt;
+      &lt;mix:ySamplingFrequency&gt;
+        &lt;mix:numerator&gt;300&lt;/mix:numerator&gt;
+      &lt;/mix:ySamplingFrequency&gt;
+    &lt;/mix:SpatialMetrics&gt;
+    &lt;mix:ImageColorEncoding&gt;
+      &lt;mix:BitsPerSample&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+      &lt;/mix:BitsPerSample&gt;
+      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+    &lt;/mix:ImageColorEncoding&gt;
+  &lt;/mix:ImageAssessmentMetadata&gt;
+&lt;/mix:mix&gt;
+			&lt;/objectCharacteristicsExtension&gt;
+			
+		&lt;/objectCharacteristics&gt;
+		
+		&lt;originalName&gt;12.jpg&lt;/originalName&gt;
+		
+		
+		
+		
+		&lt;linkingEventIdentifier&gt;
+			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
+			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
+		&lt;/linkingEventIdentifier&gt;
+	&lt;/object&gt;
+	
+
+	
+	&lt;!-- premis bitstream object --&gt;
+	
+	
+
+	&lt;!-- premis event --&gt;
+	&lt;event&gt;
+		&lt;eventIdentifier&gt;
+			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
+			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
+		&lt;/eventIdentifier&gt;
+		&lt;eventType&gt;describe&lt;/eventType&gt;
+		&lt;eventDateTime&gt;2013-02-14T11:33:46-05:00&lt;/eventDateTime&gt;
+		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
+		&lt;eventOutcomeInformation&gt;
+			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
+			
+		&lt;/eventOutcomeInformation&gt;
+		&lt;linkingAgentIdentifier&gt;
+			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
+			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
+		&lt;/linkingAgentIdentifier&gt;
+		&lt;linkingObjectIdentifier&gt;
+			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130214-1949-1todje6-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+		&lt;/linkingObjectIdentifier&gt;
+	&lt;/event&gt;
+
+&lt;!-- premis agent --&gt;
+&lt;agent&gt;
+	&lt;agentIdentifier&gt;
+		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
+		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
+	&lt;/agentIdentifier&gt;
+	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
+	&lt;agentType&gt;Web Service&lt;/agentType&gt;
+	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
+&lt;/agent&gt;
+&lt;/premis&gt;
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="jhove" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
+ &lt;date&gt;2013-02-14T17:29:45+01:00&lt;/date&gt;
+ &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/12.jpg"&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
   &lt;size&gt;383559&lt;/size&gt;
@@ -3391,6 +3911,7 @@
 </stdout>
                 <stderr></stderr>
             </source>
+<<<<<<< HEAD
             <source exitCode="0" source="exiv2">
                 <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01/12.jpg
 File size       : 383559 Bytes
@@ -3872,6 +4393,8 @@ Light Value                     : 8.7
 </stdout>
                 <stderr></stderr>
             </source>
+=======
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
         </sources-list>
         <histogram-list>
             <histogram>
@@ -4879,7 +5402,7 @@ Light Value                     : 8.7
             <metadata>
                 <key>File created</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0000</value>
-                <conflict>false</conflict>
+                <conflict>true</conflict>
                 <source>exiftool</source>
             </metadata>
             <metadata>
@@ -4988,14 +5511,14 @@ Light Value                     : 8.7
                 <key>Resolution horizontal</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>exiftool</source>
             </metadata>
             <metadata>
                 <key>Resolution vertical</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>exiftool</source>
             </metadata>
             <metadata>
@@ -5935,7 +6458,11 @@ Light Value                     : 8.7
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Compression</key>
+=======
+                <key>Compression scheme</key>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
@@ -5953,9 +6480,15 @@ Light Value                     : 8.7
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Properties/date/create</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-15T17:56:11+01:00</value>
                 <conflict>false</conflict>
+=======
+                <key>File created</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-13 06:21:52+01:00</value>
+                <conflict>true</conflict>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <source>imagemagick</source>
             </metadata>
             <metadata>
@@ -6313,8 +6846,13 @@ Light Value                     : 8.7
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Pixels per second</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32MB</value>
+=======
+                <key>Image/Channel statistics/Image statistics/Pixels per second</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8.727MB</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -6325,8 +6863,13 @@ Light Value                     : 8.7
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Elapsed time</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.059</value>
+=======
+                <key>Image/Channel statistics/Image statistics/Elapsed time</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.219</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -6354,18 +6897,19 @@ Light Value                     : 8.7
                 <key>Resolution horizontal</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
             <metadata>
                 <key>Resolution vertical</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
                 <unit>PPI</unit>
-                <conflict>true</conflict>
+                <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
         </metadata-list>
         <sources-list>
+<<<<<<< HEAD
             <source exitCode="0" source="core">
                 <stdout></stdout>
                 <stderr></stderr>
@@ -6376,6 +6920,150 @@ Light Value                     : 8.7
             </source>
             <source exitCode="0" source="exiftool">
                 <stdout>ExifTool Version Number         : 8.15
+=======
+            <source source="core" exitCode="0">
+                <stdout></stdout>
+                <stderr></stderr>
+            </source>
+            <source source="imagemagick" exitCode="0">
+                <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Class: DirectClass
+  Geometry: 1200x1600+0+0
+  Resolution: 300x300
+  Print size: 4x5.33333
+  Units: PixelsPerInch
+  Type: TrueColor
+  Endianess: Undefined
+  Colorspace: sRGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Red:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 43.9137 (0.17221)
+      standard deviation: 64.3708 (0.252434)
+      kurtosis: 1.32817
+      skewness: 1.47259
+    Green:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 129.902 (0.509418)
+      standard deviation: 84.4627 (0.331226)
+      kurtosis: -1.22993
+      skewness: 0.205018
+    Blue:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 74.9115 (0.293771)
+      standard deviation: 99.0172 (0.388303)
+      kurtosis: -1.14432
+      skewness: 0.772633
+  Image statistics:
+    Overall:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 82.9089 (0.325133)
+      standard deviation: 83.8291 (0.328742)
+      kurtosis: -0.137887
+      skewness: 0.903147
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Interlace: None
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Compose: Over
+  Page geometry: 1200x1600+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 83
+  Orientation: TopLeft
+  Properties:
+    date:create: 2013-02-13T06:21:52+01:00
+    date:modify: 2013-02-13T06:21:52+01:00
+    exif:ColorSpace: 1
+    exif:ComponentsConfiguration: 1, 2, 3, 0
+    exif:CompressedBitsPerPixel: 2/1
+    exif:Contrast: 0
+    exif:CustomRendered: 0
+    exif:DateTime: 0000:00:00 00:00:00
+    exif:DateTimeDigitized: 0000:00:00 00:00:00
+    exif:DateTimeOriginal: 0000:00:00 00:00:00
+    exif:DigitalZoomRatio: 0/100
+    exif:ExifImageLength: 1200
+    exif:ExifImageWidth: 1600
+    exif:ExifOffset: 2236
+    exif:ExifVersion: 0220
+    exif:ExposureBiasValue: 0/10
+    exif:ExposureMode: 0
+    exif:ExposureProgram: 2
+    exif:ExposureTime: 10/601
+    exif:FileSource: 3
+    exif:Flash: 25
+    exif:FlashPixVersion: 48, 49, 48, 48
+    exif:FNumber: 26/10
+    exif:FocalLength: 47/10
+    exif:FocalLengthIn35mmFilm: 36
+    exif:GainControl: 0
+    exif:ImageDescription:           
+    exif:ISOSpeed: 100
+    exif:ISOSpeedRatings: 100
+    exif:LightSource: 0
+    exif:Make: NIKON
+    exif:MakerNote: 78, 105, 107, 111, 110, 0, 2, 0, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 24, 0, 1, 0, 7, 0, 4, 0, 0, 0, 0, 2, 0, 0, 2, 0, 3, 0, 2, 0, 0, 0, 0, 0, 0, 0, 3, 0, 2, 0, 6, 0, 0, 0, 46, 1, 0, 0, 4, 0, 2, 0, 7, 0, 0, 0, 52, 1, 0, 0, 5, 0, 2, 0, 13, 0, 0, 0, 60, 1, 0, 0, 6, 0, 2, 0, 7, 0, 0, 0, 74, 1, 0, 0, 7, 0, 2, 0, 7, 0, 0, 0, 82, 1, 0, 0, 8, 0, 2, 0, 8, 0, 0, 0, 90, 1, 0, 0, 10, 0, 5, 0, 1, 0, 0, 0, 98, 1, 0, 0, 15, 0, 2, 0, 7, 0, 0, 0, 106, 1, 0, 0, 16, 0, 7, 0, 238, 1, 0, 0, 114, 1, 0, 0, 17, 0, 4, 0, 1, 0, 0, 0, 194, 3, 0, 0, 128, 0, 2, 0, 14, 0, 0, 0, 96, 3, 0, 0, 130, 0, 2, 0, 13, 0, 0, 0, 110, 3, 0, 0, 133, 0, 5, 0, 1, 0, 0, 0, 124, 3, 0, 0, 134, 0, 5, 0, 1, 0, 0, 0, 132, 3, 0, 0, 136, 0, 7, 0, 4, 0, 0, 0, 0, 0, 0, 0, 143, 0, 2, 0, 16, 0, 0, 0, 140, 3, 0, 0, 148, 0, 8, 0, 1, 0, 0, 0, 0, 0, 0, 0, 149, 0, 2, 0, 5, 0, 0, 0, 156, 3, 0, 0, 155, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 156, 0, 2, 0, 20, 0, 0, 0, 162, 3, 0, 0, 157, 0, 3, 0, 1, 0, 0, 0, 0, 0, 0, 0, 158, 0, 7, 0, 10, 0, 0, 0, 182, 3, 0, 0, 0, 0, 0, 0, 67, 79, 76, 79, 82, 0, 78, 79, 82, 77, 65, 76, 0, 0, 65, 85, 84, 79, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 65, 85, 84, 79, 32, 32, 0, 0, 65, 70, 45, 83, 32, 32, 0, 0, 78, 79, 82, 77, 65, 76, 32, 0, 128, 34, 0, 0, 232, 3, 0, 0, 65, 85, 84, 79, 32, 32, 0, 0, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 255, 1, 0, 0, 25, 97, 18, 49, 0, 0, 130, 85, 0, 0, 1, 121, 0, 12, 87, 113, 0, 12, 87, 113, 0, 12, 87, 113, 0, 52, 98, 48, 99, 0, 64, 232, 0, 100, 0, 175, 0, 100, 0, 28, 0, 31, 0, 1, 0, 0, 57, 247, 0, 0, 0, 179, 0, 0, 1, 55, 0, 0, 0, 0, 0, 0, 112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 12, 0, 0, 69, 5, 22, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 17, 17, 17, 1, 187, 3, 159, 3, 249, 1, 117, 2, 4, 2, 6, 1, 48, 2, 0, 1, 1, 240, 92, 0, 0, 3, 32, 0, 0, 0, 15, 0, 16, 0, 13, 0, 5, 0, 6, 0, 0, 0, 0, 0, 16, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 175, 1, 107, 1, 236, 2, 136, 3, 52, 15, 15, 1, 29, 2, 4, 1, 233, 0, 0, 16, 55, 16, 249, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 136, 136, 0, 0, 3, 242, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 171, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 242, 17, 0, 0, 0, 1, 50, 1, 116, 1, 162, 2, 171, 2, 106, 1, 235, 0, 0, 0, 0, 1, 100, 2, 1, 2, 98, 5, 88, 4, 214, 3, 140, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 119, 119, 119, 119, 8, 29, 8, 27, 8, 27, 17, 30, 14, 23, 39, 0, 212, 0, 0, 0, 16, 0, 14, 6, 0, 5, 1, 2, 50, 15, 66, 64, 82, 14, 0, 100, 4, 31, 0, 97, 12, 25, 8, 32, 1, 232, 1, 38, 255, 234, 0, 17, 0, 0, 0, 45, 0, 70, 0, 13, 2, 6, 1, 48, 102, 102, 102, 102, 0, 0, 0, 8, 0, 0, 0, 9, 0, 0, 0, 10, 65, 85, 84, 79, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 79, 70, 70, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 79, 70, 70, 32, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 3, 1, 3, 0, 1, 0, 0, 0, 6, 0, 0, 0, 26, 1, 5, 0, 1, 0, 0, 0, 28, 4, 0, 0, 27, 1, 5, 0, 1, 0, 0, 0, 36, 4, 0, 0, 40, 1, 3, 0, 1, 0, 0, 0, 2, 0, 0, 0, 1, 2, 4, 0, 1, 0, 0, 0, 19, 52, 0, 0, 2, 2, 4, 0, 1, 0, 0, 0, 27, 64, 0, 0, 19, 2, 3, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 44, 1, 0, 0, 1, 0, 0, 0, 44, 1, 0, 0, 1, 0, 0, 0
+    exif:MaxApertureValue: 30/10
+    exif:MeteringMode: 5
+    exif:Orientation: 1
+    exif:ProgramMode: 2
+    exif:Saturation: 0
+    exif:SceneCaptureType: 0
+    exif:SceneType: 1
+    exif:Sharpness: 0
+    exif:Software: E2100v1.1
+    exif:SubjectDistanceRange: 0
+    exif:UserComment: 0, 0, 0, 0, 0, 0, 0, 0, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32
+    exif:WhiteBalance: 0
+    exif:YCbCrPositioning: 2
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 2x2,1x1,1x1
+    rdf:Description: 
+    signature: 5437f12e07f090f2183d464ef4a1068a0bd2f5d394b946884c80b27f3242bb55
+    tiff:make: NIKON
+    tiff:model: E2100
+    tiff:software: E2100v1.1
+    unknown: 28, 234, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    xmp:creatortool: E2100v1.1
+  Profiles:
+    Profile-exif: 6040 bytes
+    Profile-xmp: 3990 bytes
+  Artifacts:
+    filename: /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 384KB
+  Number pixels: 1.92M
+  Pixels per second: 8.727MB
+  User time: 0.100u
+  Elapsed time: 0:01.219
+  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="exiftool" exitCode="0">
+                <stdout>ExifTool Version Number         : 8.60
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
 File Name                       : 12.jpg
 Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
 File Size                       : 375 kB
@@ -6480,9 +7168,72 @@ Light Value                     : 8.7
 </stdout>
                 <stderr></stderr>
             </source>
+<<<<<<< HEAD
             <source exitCode="0" source="fits">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 17:26"&gt;
+=======
+            <source source="daitss" exitCode="0">
+                <stdout></stdout>
+                <stderr></stderr>
+            </source>
+            <source source="exiv2" exitCode="0">
+                <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+File size       : 383559 Bytes
+MIME type       : image/jpeg
+Image size      : 1200 x 1600
+Camera make     : NIKON
+Camera model    : 
+Image timestamp : 0000:00:00 00:00:00
+Image number    : 
+Exposure time   : 1/60 s
+Aperture        : F2.6
+Exposure bias   : 0 EV
+Flash           : Yes, auto
+Flash bias      : 
+Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Subject distance: 
+ISO speed       : 100
+Exposure mode   : Auto
+Metering mode   : Multi-segment
+Macro mode      : 
+Image quality   : NORMAL
+Exif Resolution : 1600 x 1200
+White balance   : AUTO        
+Thumbnail       : None
+Copyright       : 
+Exif comment    :                                                                                                                      
+
+</stdout>
+                <stderr>Error: Directory Image, entry 0x0110 has invalid size 825637217*1; skipping entry.
+Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
+Error: XMP Toolkit error 203: Mismatched top level rdf:about values
+Warning: Failed to decode XMP metadata.
+</stderr>
+            </source>
+            <source source="jhove" exitCode="1">
+                <stdout></stdout>
+                <stderr>Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at edu.harvard.hul.ois.jhove.module.tiff.IFD.readASCII(IFD.java:557)
+	at edu.harvard.hul.ois.jhove.module.tiff.ExifIFD.lookupTag(ExifIFD.java:935)
+	at edu.harvard.hul.ois.jhove.module.tiff.IFD.parse(IFD.java:320)
+	at edu.harvard.hul.ois.jhove.module.tiff.IFD.parse(IFD.java:218)
+	at edu.harvard.hul.ois.jhove.module.TiffModule.parseIFDChain(TiffModule.java:1149)
+	at edu.harvard.hul.ois.jhove.module.TiffModule.parseIFDs(TiffModule.java:1121)
+	at edu.harvard.hul.ois.jhove.module.TiffModule.exifParse(TiffModule.java:636)
+	at edu.harvard.hul.ois.jhove.module.jpeg.JpegExif.readExifData(JpegExif.java:100)
+	at edu.harvard.hul.ois.jhove.module.JpegModule.readAPP1(JpegModule.java:1118)
+	at edu.harvard.hul.ois.jhove.module.JpegModule.parse(JpegModule.java:620)
+	at edu.harvard.hul.ois.jhove.JhoveBase.processFile(JhoveBase.java:840)
+	at edu.harvard.hul.ois.jhove.JhoveBase.process(JhoveBase.java:614)
+	at edu.harvard.hul.ois.jhove.JhoveBase.dispatch(JhoveBase.java:465)
+	at Jhove.main(Jhove.java:296)
+</stderr>
+            </source>
+            <source source="fits" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 17:31"&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
   &lt;identification&gt;
     &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.04" /&gt;
@@ -6541,6 +7292,7 @@ Light Value                     : 8.7
 </stdout>
                 <stderr></stderr>
             </source>
+<<<<<<< HEAD
             <source exitCode="0" source="exiv2">
                 <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg
 File size       : 383559 Bytes
@@ -8281,6 +9033,8 @@ Warning: Failed to decode XMP metadata.
 </stdout>
                 <stderr></stderr>
             </source>
+=======
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
         </sources-list>
         <histogram-list>
             <histogram>
@@ -9105,11 +9859,19 @@ Warning: Failed to decode XMP metadata.
             </metadata>
         </metadata-list>
         <sources-list>
+<<<<<<< HEAD
             <source exitCode="0" source="MSE">
                 <stdout></stdout>
                 <stderr></stderr>
             </source>
             <source exitCode="0" source="PSNR">
+=======
+            <source source="PSNR" exitCode="0">
+                <stdout></stdout>
+                <stderr></stderr>
+            </source>
+            <source source="MSE" exitCode="0">
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <stdout></stdout>
                 <stderr></stderr>
             </source>

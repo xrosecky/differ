@@ -160,14 +160,14 @@
             <key>Resolution horizontal</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
             <key>Resolution vertical</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -317,7 +317,7 @@
         <metadata>
             <key>File created</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2010</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -544,7 +544,11 @@
         </metadata>
         <metadata>
             <key>Compression scheme</key>
+<<<<<<< HEAD
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+=======
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
             <conflict>true</conflict>
             <source>jhove</source>
         </metadata>
@@ -584,14 +588,14 @@
             <key>Resolution vertical</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
             <key>Resolution horizontal</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>jhove</source>
         </metadata>
         <metadata>
@@ -622,6 +626,8 @@
             <key>MIME type</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
             <conflict>true</conflict>
+<<<<<<< HEAD
+=======
             <source>exiv2</source>
         </metadata>
         <metadata>
@@ -631,6 +637,21 @@
             <source>exiv2</source>
         </metadata>
         <metadata>
+            <key>Image width</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1810</value>
+            <unit>px</unit>
+            <conflict>false</conflict>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
+            <source>exiv2</source>
+        </metadata>
+        <metadata>
+            <key>Image size</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1810 x 2126</value>
+            <conflict>false</conflict>
+            <source>exiv2</source>
+        </metadata>
+        <metadata>
+<<<<<<< HEAD
             <key>Image width</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1810</value>
             <unit>px</unit>
@@ -645,6 +666,8 @@
             <source>exiv2</source>
         </metadata>
         <metadata>
+=======
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
             <key>Thumbnail</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg, 4737 Bytes</value>
             <conflict>false</conflict>
@@ -735,14 +758,14 @@
             <key>Resolution horizontal</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
             <key>Resolution vertical</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>daitss</source>
         </metadata>
         <metadata>
@@ -1040,7 +1063,11 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
+<<<<<<< HEAD
             <key>Image/Compression</key>
+=======
+            <key>Compression scheme</key>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
@@ -1058,9 +1085,15 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
+<<<<<<< HEAD
             <key>Image/Properties/date/create</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-15T17:56:10+01:00</value>
             <conflict>false</conflict>
+=======
+            <key>File created</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-13 06:21:49+01:00</value>
+            <conflict>true</conflict>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1072,7 +1105,7 @@
         <metadata>
             <key>Image/Properties/dc/format</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
@@ -1333,20 +1366,35 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
             <source>imagemagick</source>
         </metadata>
         <metadata>
+<<<<<<< HEAD
             <key>Image/Pixels per second</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">25.65MB</value>
+=======
+            <key>Image/Channel statistics/Image statistics/Pixels per second</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">4.324MB</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
+<<<<<<< HEAD
             <key>Image/User time</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.150u</value>
+=======
+            <key>Image/Channel statistics/Image statistics/User time</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.310u</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
+<<<<<<< HEAD
             <key>Image/Elapsed time</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.149</value>
+=======
+            <key>Image/Channel statistics/Image statistics/Elapsed time</key>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.890</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1374,14 +1422,14 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
             <key>Resolution horizontal</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Resolution vertical</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">300</value>
             <unit>PPI</unit>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
     </metadata-list>
@@ -1420,6 +1468,7 @@ Exif comment    :
 </stdout>
             <stderr></stderr>
         </source>
+<<<<<<< HEAD
         <source exitCode="0" source="exiftool">
             <stdout>ExifTool Version Number         : 8.15
 File Name                       : 08.jpg
@@ -1483,6 +1532,11 @@ Thumbnail Image                 : (Binary data 4737 bytes, use -b option to extr
         <source exitCode="0" source="fits">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 17:24"&gt;
+=======
+        <source source="fits" exitCode="0">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 17:26"&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
   &lt;identification&gt;
     &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.04" /&gt;
@@ -1525,8 +1579,17 @@ Thumbnail Image                 : (Binary data 4737 bytes, use -b option to extr
 </stdout>
             <stderr></stderr>
         </source>
+<<<<<<< HEAD
         <source exitCode="0" source="imagemagick">
             <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_01/08.jpg
+=======
+        <source source="core" exitCode="0">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
+        <source source="imagemagick" exitCode="0">
+            <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_01/08.jpg
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
   Format: JPEG (Joint Photographic Experts Group JFIF format)
   Class: DirectClass
   Geometry: 1810x2126+0+0
@@ -1657,6 +1720,7 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
     verbose: true
   Tainted: False
   Filesize: 1.361MB
+<<<<<<< HEAD
   Number pixels: 3.848MB
   Pixels per second: 25.65MB
   User time: 0.150u
@@ -1672,6 +1736,23 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/08.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:10+01:00&lt;/lastModified&gt;
+=======
+  Number pixels: 3.848M
+  Pixels per second: 4.324MB
+  User time: 0.310u
+  Elapsed time: 0:01.890
+  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="jhove" exitCode="0">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
+ &lt;date&gt;2013-02-14T17:26:18+01:00&lt;/date&gt;
+ &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/08.jpg"&gt;
+  &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
+  &lt;lastModified&gt;2013-02-13T06:21:49+01:00&lt;/lastModified&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
   &lt;size&gt;1360693&lt;/size&gt;
   &lt;format&gt;JPEG&lt;/format&gt;
   &lt;version&gt;1.02&lt;/version&gt;
@@ -1709,6 +1790,7 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
        &lt;name&gt;NisoImageMetadata&lt;/name&gt;
        &lt;values arity="Scalar" type="NISOImageMetadata"&gt;
         &lt;value&gt;
+<<<<<<< HEAD
       &lt;mix:mix xmlns:mix="http://www.loc.gov/mix/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/ http://www.loc.gov/mix/mix02.xsd"&gt;
        &lt;mix:BasicImageParameters&gt;
         &lt;mix:Format&gt;
@@ -1737,6 +1819,46 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
          &lt;mix:SamplesPerPixel&gt;3&lt;/mix:SamplesPerPixel&gt;
         &lt;/mix:Energetics&gt;
        &lt;/mix:ImagingPerformanceAssessment&gt;
+=======
+      &lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+       &lt;mix:BasicDigitalObjectInformation&gt;
+        &lt;mix:ObjectIdentifier&gt;
+         &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+        &lt;/mix:ObjectIdentifier&gt;
+        &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+        &lt;mix:Compression&gt;
+         &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
+        &lt;/mix:Compression&gt;
+       &lt;/mix:BasicDigitalObjectInformation&gt;
+       &lt;mix:BasicImageInformation&gt;
+        &lt;mix:BasicImageCharacteristics&gt;
+         &lt;mix:imageWidth&gt;1810&lt;/mix:imageWidth&gt;
+         &lt;mix:imageHeight&gt;2126&lt;/mix:imageHeight&gt;
+         &lt;mix:PhotometricInterpretation&gt;
+          &lt;mix:colorSpace&gt;YCbCr&lt;/mix:colorSpace&gt;
+         &lt;/mix:PhotometricInterpretation&gt;
+        &lt;/mix:BasicImageCharacteristics&gt;
+       &lt;/mix:BasicImageInformation&gt;
+       &lt;mix:ImageAssessmentMetadata&gt;
+        &lt;mix:SpatialMetrics&gt;
+         &lt;mix:samplingFrequencyUnit&gt;in.&lt;/mix:samplingFrequencyUnit&gt;
+         &lt;mix:xSamplingFrequency&gt;
+          &lt;mix:numerator&gt;300&lt;/mix:numerator&gt;
+         &lt;/mix:xSamplingFrequency&gt;
+         &lt;mix:ySamplingFrequency&gt;
+          &lt;mix:numerator&gt;300&lt;/mix:numerator&gt;
+         &lt;/mix:ySamplingFrequency&gt;
+        &lt;/mix:SpatialMetrics&gt;
+        &lt;mix:ImageColorEncoding&gt;
+         &lt;mix:BitsPerSample&gt;
+          &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+          &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+          &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+         &lt;/mix:BitsPerSample&gt;
+         &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+        &lt;/mix:ImageColorEncoding&gt;
+       &lt;/mix:ImageAssessmentMetadata&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
       &lt;/mix:mix&gt;
         &lt;/value&gt;
        &lt;/values&gt;
@@ -1785,6 +1907,7 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
         &lt;/values&gt;
        &lt;/property&gt;
        &lt;property&gt;
+<<<<<<< HEAD
         &lt;name&gt;ColorSpace&lt;/name&gt;
         &lt;values arity="Scalar" type="String"&gt;
          &lt;value&gt;uncalibrated&lt;/value&gt;
@@ -1821,11 +1944,14 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
         &lt;/values&gt;
        &lt;/property&gt;
        &lt;property&gt;
+=======
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
         &lt;name&gt;FocalPlaneResolutionUnit&lt;/name&gt;
         &lt;values arity="Scalar" type="String"&gt;
          &lt;value&gt;inches&lt;/value&gt;
         &lt;/values&gt;
        &lt;/property&gt;
+<<<<<<< HEAD
        &lt;property&gt;
         &lt;name&gt;FileSource&lt;/name&gt;
         &lt;values arity="Scalar" type="String"&gt;
@@ -1874,6 +2000,8 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
          &lt;value&gt;unknown&lt;/value&gt;
         &lt;/values&gt;
        &lt;/property&gt;
+=======
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
        &lt;/values&gt;
       &lt;/property&gt;
       &lt;property&gt;
@@ -1957,7 +2085,11 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+<<<<<<< HEAD
 			&lt;objectIdentifierValue&gt;/tmp/object20130217-1938-1yzxtjs-0.jpg&lt;/objectIdentifierValue&gt;
+=======
+			&lt;objectIdentifierValue&gt;/tmp/object20130214-1949-a64zrj-0.jpg&lt;/objectIdentifierValue&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -2060,7 +2192,11 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
+<<<<<<< HEAD
 		&lt;eventDateTime&gt;2013-02-17T11:25:01-05:00&lt;/eventDateTime&gt;
+=======
+		&lt;eventDateTime&gt;2013-02-14T11:30:20-05:00&lt;/eventDateTime&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -2072,7 +2208,11 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
+<<<<<<< HEAD
 			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130217-1938-1yzxtjs-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+=======
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130214-1949-a64zrj-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
@@ -2087,6 +2227,66 @@ C 1763.33,2076.41 1768.22,2077.13 1768.74,2072.6
 	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
 &lt;/agent&gt;
 &lt;/premis&gt;
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source source="exiftool" exitCode="0">
+            <stdout>ExifTool Version Number         : 8.60
+File Name                       : 08.jpg
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
+File Size                       : 1329 kB
+File Modification Date/Time     : 2013:02:13 06:21:49+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.02
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Orientation                     : Horizontal (normal)
+X Resolution                    : 300
+Y Resolution                    : 300
+Resolution Unit                 : inches
+Software                        : Adobe Photoshop CS2 Windows
+Modify Date                     : 2010:12:14 11:54:08
+Color Space                     : Uncalibrated
+Exif Image Width                : 1810
+Exif Image Height               : 2126
+Compression                     : JPEG (old-style)
+Thumbnail Offset                : 332
+Thumbnail Length                : 4737
+IPTC Digest                     : 00000000000000000000000000000000
+Displayed Units X               : inches
+Displayed Units Y               : inches
+Global Angle                    : 30
+Global Altitude                 : 30
+Copyright Flag                  : False
+Photoshop Thumbnail             : (Binary data 4737 bytes, use -b option to extract)
+Photoshop Quality               : 8
+Photoshop Format                : Progressive
+Progressive Scans               : 3 Scans
+XMP Toolkit                     : 3.1.1-112
+Document ID                     : uuid:D3596EAF7807E011B337EC427BA3BC23
+Instance ID                     : uuid:1BF96BD47807E011B337EC427BA3BC23
+Derived From Instance ID        : uuid:73B41C887807E011B337EC427BA3BC23
+Derived From Document ID        : uuid:73B41C887807E011B337EC427BA3BC23
+Create Date                     : 2010:12:14 11:53:56Z
+Metadata Date                   : 2010:12:14 11:54:08Z
+Creator Tool                    : Adobe Photoshop CS2 Windows
+Format                          : image/jpeg
+Color Mode                      : RGB
+History                         : 
+Native Digest                   : 256,257,258,259,262,274,277,284,530,531,282,283,296,301,318,319,529,532,306,270,271,272,305,315,33432;B9700DBA26D22C5956BFC7AF2605E2C8
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Image Width                     : 1810
+Image Height                    : 2126
+Encoding Process                : Progressive DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
+Image Size                      : 1810x2126
+Thumbnail Image                 : (Binary data 4737 bytes, use -b option to extract)
 </stdout>
             <stderr></stderr>
         </source>

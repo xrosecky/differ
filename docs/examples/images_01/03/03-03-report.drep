@@ -300,7 +300,7 @@
             <metadata>
                 <key>File created</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2012</value>
-                <conflict>false</conflict>
+                <conflict>true</conflict>
                 <source>exiftool</source>
             </metadata>
             <metadata>
@@ -587,7 +587,11 @@
             </metadata>
             <metadata>
                 <key>Compression scheme</key>
+<<<<<<< HEAD
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+=======
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>true</conflict>
                 <source>jhove</source>
             </metadata>
@@ -665,6 +669,15 @@
                 <key>MIME type</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
                 <conflict>true</conflict>
+<<<<<<< HEAD
+=======
+                <source>exiv2</source>
+            </metadata>
+            <metadata>
+                <key>Image size</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512 x 512</value>
+                <conflict>false</conflict>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <source>exiv2</source>
             </metadata>
             <metadata>
@@ -677,6 +690,7 @@
                 <key>Image width</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
                 <unit>px</unit>
+<<<<<<< HEAD
                 <conflict>true</conflict>
                 <source>exiv2</source>
             </metadata>
@@ -685,6 +699,9 @@
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
                 <unit>px</unit>
                 <conflict>true</conflict>
+=======
+                <conflict>false</conflict>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <source>exiv2</source>
             </metadata>
             <metadata>
@@ -1089,7 +1106,11 @@
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Compression</key>
+=======
+                <key>Compression scheme</key>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
@@ -1107,9 +1128,15 @@
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Properties/date/create</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-15T17:56:10+01:00</value>
                 <conflict>false</conflict>
+=======
+                <key>File created</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-13 06:21:48+01:00</value>
+                <conflict>true</conflict>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <source>imagemagick</source>
             </metadata>
             <metadata>
@@ -1305,20 +1332,35 @@
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Pixels per second</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">26.21MB</value>
+=======
+                <key>Image/Channel statistics/Image statistics/Pixels per second</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5.243MB</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/User time</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.010u</value>
+=======
+                <key>Image/Channel statistics/Image statistics/User time</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.020u</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Elapsed time</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.010</value>
+=======
+                <key>Image/Channel statistics/Image statistics/Elapsed time</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.050</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -1358,12 +1400,462 @@
             </metadata>
         </metadata-list>
         <sources-list>
+<<<<<<< HEAD
             <source exitCode="0" source="core">
                 <stdout></stdout>
                 <stderr></stderr>
             </source>
             <source exitCode="0" source="imagemagick">
                 <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_01/03.jpg
+=======
+            <source source="jhove" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
+ &lt;date&gt;2013-02-14T17:23:32+01:00&lt;/date&gt;
+ &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg"&gt;
+  &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
+  &lt;lastModified&gt;2013-02-13T06:21:48+01:00&lt;/lastModified&gt;
+  &lt;size&gt;176853&lt;/size&gt;
+  &lt;format&gt;JPEG&lt;/format&gt;
+  &lt;status&gt;Well-Formed and valid&lt;/status&gt;
+  &lt;sigMatch&gt;
+  &lt;module&gt;JPEG-hul&lt;/module&gt;
+  &lt;/sigMatch&gt;
+  &lt;mimeType&gt;image/jpeg&lt;/mimeType&gt;
+  &lt;properties&gt;
+   &lt;property&gt;
+    &lt;name&gt;JPEGMetadata&lt;/name&gt;
+    &lt;values arity="List" type="Property"&gt;
+    &lt;property&gt;
+     &lt;name&gt;CompressionType&lt;/name&gt;
+     &lt;values arity="Scalar" type="String"&gt;
+      &lt;value&gt;Huffman coding, Baseline DCT&lt;/value&gt;
+     &lt;/values&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+     &lt;name&gt;Images&lt;/name&gt;
+     &lt;values arity="List" type="Property"&gt;
+     &lt;property&gt;
+      &lt;name&gt;Number&lt;/name&gt;
+      &lt;values arity="Scalar" type="Integer"&gt;
+       &lt;value&gt;1&lt;/value&gt;
+      &lt;/values&gt;
+     &lt;/property&gt;
+     &lt;property&gt;
+      &lt;name&gt;Image&lt;/name&gt;
+      &lt;values arity="List" type="Property"&gt;
+      &lt;property&gt;
+       &lt;name&gt;NisoImageMetadata&lt;/name&gt;
+       &lt;values arity="Scalar" type="NISOImageMetadata"&gt;
+        &lt;value&gt;
+      &lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+       &lt;mix:BasicDigitalObjectInformation&gt;
+        &lt;mix:ObjectIdentifier&gt;
+         &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+        &lt;/mix:ObjectIdentifier&gt;
+        &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+        &lt;mix:Compression&gt;
+         &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
+        &lt;/mix:Compression&gt;
+       &lt;/mix:BasicDigitalObjectInformation&gt;
+       &lt;mix:BasicImageInformation&gt;
+        &lt;mix:BasicImageCharacteristics&gt;
+         &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
+         &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
+        &lt;/mix:BasicImageCharacteristics&gt;
+       &lt;/mix:BasicImageInformation&gt;
+       &lt;mix:ImageAssessmentMetadata&gt;
+        &lt;mix:ImageColorEncoding&gt;
+         &lt;mix:BitsPerSample&gt;
+          &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+          &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+          &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+         &lt;/mix:BitsPerSample&gt;
+         &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+        &lt;/mix:ImageColorEncoding&gt;
+       &lt;/mix:ImageAssessmentMetadata&gt;
+      &lt;/mix:mix&gt;
+        &lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;PixelAspectRatio&lt;/name&gt;
+       &lt;values arity="List" type="Property"&gt;
+       &lt;property&gt;
+        &lt;name&gt;PixelAspectRatioX&lt;/name&gt;
+        &lt;values arity="Scalar" type="Integer"&gt;
+         &lt;value&gt;0&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;property&gt;
+        &lt;name&gt;PixelAspectRatioY&lt;/name&gt;
+        &lt;values arity="Scalar" type="Integer"&gt;
+         &lt;value&gt;0&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;RestartInterval&lt;/name&gt;
+       &lt;values arity="Scalar" type="Integer"&gt;
+        &lt;value&gt;64&lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;Scans&lt;/name&gt;
+       &lt;values arity="Scalar" type="Integer"&gt;
+        &lt;value&gt;1&lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;QuantizationTables&lt;/name&gt;
+       &lt;values arity="List" type="Property"&gt;
+       &lt;property&gt;
+        &lt;name&gt;QuantizationTable&lt;/name&gt;
+        &lt;values arity="Array" type="Property"&gt;
+        &lt;property&gt;
+         &lt;name&gt;Precision&lt;/name&gt;
+         &lt;values arity="Scalar" type="String"&gt;
+          &lt;value&gt;8-bit&lt;/value&gt;
+         &lt;/values&gt;
+        &lt;/property&gt;
+        &lt;property&gt;
+         &lt;name&gt;DestinationIdentifier&lt;/name&gt;
+         &lt;values arity="Scalar" type="Integer"&gt;
+          &lt;value&gt;0&lt;/value&gt;
+         &lt;/values&gt;
+        &lt;/property&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;Exif&lt;/name&gt;
+       &lt;values arity="List" type="Property"&gt;
+       &lt;property&gt;
+        &lt;name&gt;ExifVersion&lt;/name&gt;
+        &lt;values arity="Scalar" type="String"&gt;
+         &lt;value&gt;0220&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;property&gt;
+        &lt;name&gt;FlashpixVersion&lt;/name&gt;
+        &lt;values arity="Scalar" type="String"&gt;
+         &lt;value&gt;0100&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;property&gt;
+        &lt;name&gt;FocalPlaneResolutionUnit&lt;/name&gt;
+        &lt;values arity="Scalar" type="String"&gt;
+         &lt;value&gt;inches&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;XMP&lt;/name&gt;
+       &lt;values arity="Scalar" type="String"&gt;
+        &lt;value&gt;&amp;lt;x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00        "&amp;gt; &amp;lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&amp;gt; &amp;lt;rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreateDate="2012-02-12T12:09:13+01:00" xmp:ModifyDate="2012-02-12T12:23:55+01:00" xmp:MetadataDate="2012-02-12T12:23:55+01:00" xmp:CreatorTool="Adobe Photoshop CS5 Windows" dc:format="image/jpeg" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:F7B79AEC6A55E11180A5EF7BDC084C3E" xmpMM:DocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E" xmpMM:OriginalDocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E"&amp;gt; &amp;lt;photoshop:DocumentAncestors&amp;gt; &amp;lt;rdf:Bag&amp;gt; &amp;lt;rdf:li&amp;gt;xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E&amp;lt;/rdf:li&amp;gt; &amp;lt;/rdf:Bag&amp;gt; &amp;lt;/photoshop:DocumentAncestors&amp;gt; &amp;lt;xmpMM:History&amp;gt; &amp;lt;rdf:Seq&amp;gt; &amp;lt;rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:09:13+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from image/tiff to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:16+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:40+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:40+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:15:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from image/jpeg to application/vnd.adobe.photoshop"/&amp;gt; &amp;lt;rdf:li stEvt:action="derived" stEvt:parameters="converted from image/jpeg to application/vnd.adobe.photoshop"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:15:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F6B79AEC6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:23:55+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:F7B79AEC6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:23:55+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;/rdf:Seq&amp;gt; &amp;lt;/xmpMM:History&amp;gt; &amp;lt;xmpMM:DerivedFrom stRef:instanceID="xmp.iid:F6B79AEC6A55E11180A5EF7BDC084C3E" stRef:documentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E" stRef:originalDocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E"/&amp;gt; &amp;lt;/rdf:Description&amp;gt; &amp;lt;/rdf:RDF&amp;gt; &amp;lt;/x:xmpmeta&amp;gt;&lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;/values&gt;
+     &lt;/property&gt;
+     &lt;/values&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+     &lt;name&gt;ApplicationSegments&lt;/name&gt;
+     &lt;values arity="List" type="String"&gt;
+      &lt;value&gt;APP1&lt;/value&gt;
+      &lt;value&gt;APP13&lt;/value&gt;
+      &lt;value&gt;APP1&lt;/value&gt;
+      &lt;value&gt;APP14&lt;/value&gt;
+     &lt;/values&gt;
+    &lt;/property&gt;
+    &lt;/values&gt;
+   &lt;/property&gt;
+  &lt;/properties&gt;
+ &lt;/repInfo&gt;
+&lt;/jhove&gt;
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="core" exitCode="0">
+                <stdout></stdout>
+                <stderr></stderr>
+            </source>
+            <source source="daitss" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
+	
+	&lt;!-- premis file object --&gt;
+	&lt;object xsi:type="file"&gt;
+		&lt;objectIdentifier&gt;
+			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130214-1949-17utpg-0.jpg&lt;/objectIdentifierValue&gt;
+		&lt;/objectIdentifier&gt;
+		&lt;objectCharacteristics&gt;
+			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;2d403ce7b556b39fc5c740905e4d2e4b&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;e7431131ff0830984c47cd1635a64f25821e6af5&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;size&gt;176853&lt;/size&gt;
+			
+			&lt;format&gt;
+				&lt;formatDesignation&gt;
+					&lt;formatName&gt;Raw JPEG Stream&lt;/formatName&gt;
+					
+				&lt;/formatDesignation&gt;
+				
+				&lt;formatRegistry&gt;
+					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
+					&lt;formatRegistryKey&gt;fmt/41&lt;/formatRegistryKey&gt;
+				&lt;/formatRegistry&gt;
+				
+				
+			&lt;/format&gt;
+			
+			
+			
+			
+			&lt;objectCharacteristicsExtension&gt;
+				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+  &lt;mix:BasicDigitalObjectInformation&gt;
+    &lt;mix:ObjectIdentifier&gt;
+      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+    &lt;/mix:ObjectIdentifier&gt;
+    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+    &lt;mix:Compression&gt;
+      &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
+    &lt;/mix:Compression&gt;
+  &lt;/mix:BasicDigitalObjectInformation&gt;
+  &lt;mix:BasicImageInformation&gt;
+    &lt;mix:BasicImageCharacteristics&gt;
+      &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
+      &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
+    &lt;/mix:BasicImageCharacteristics&gt;
+  &lt;/mix:BasicImageInformation&gt;
+  &lt;mix:ImageAssessmentMetadata&gt;
+    &lt;mix:ImageColorEncoding&gt;
+      &lt;mix:BitsPerSample&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+      &lt;/mix:BitsPerSample&gt;
+      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+    &lt;/mix:ImageColorEncoding&gt;
+  &lt;/mix:ImageAssessmentMetadata&gt;
+&lt;/mix:mix&gt;
+			&lt;/objectCharacteristicsExtension&gt;
+			
+		&lt;/objectCharacteristics&gt;
+		
+		&lt;originalName&gt;03.jpg&lt;/originalName&gt;
+		
+		
+		
+		
+		&lt;linkingEventIdentifier&gt;
+			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
+			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
+		&lt;/linkingEventIdentifier&gt;
+	&lt;/object&gt;
+	
+
+	
+	&lt;!-- premis bitstream object --&gt;
+	
+	
+
+	&lt;!-- premis event --&gt;
+	&lt;event&gt;
+		&lt;eventIdentifier&gt;
+			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
+			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
+		&lt;/eventIdentifier&gt;
+		&lt;eventType&gt;describe&lt;/eventType&gt;
+		&lt;eventDateTime&gt;2013-02-14T11:27:33-05:00&lt;/eventDateTime&gt;
+		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
+		&lt;eventOutcomeInformation&gt;
+			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
+			
+		&lt;/eventOutcomeInformation&gt;
+		&lt;linkingAgentIdentifier&gt;
+			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
+			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
+		&lt;/linkingAgentIdentifier&gt;
+		&lt;linkingObjectIdentifier&gt;
+			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130214-1949-17utpg-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+		&lt;/linkingObjectIdentifier&gt;
+	&lt;/event&gt;
+
+&lt;!-- premis agent --&gt;
+&lt;agent&gt;
+	&lt;agentIdentifier&gt;
+		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
+		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
+	&lt;/agentIdentifier&gt;
+	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
+	&lt;agentType&gt;Web Service&lt;/agentType&gt;
+	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
+&lt;/agent&gt;
+&lt;/premis&gt;
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="fits" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 17:23"&gt;
+  &lt;identification&gt;
+    &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;176853&lt;/size&gt;
+    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;Adobe Photoshop CS5 Windows&lt;/creatingApplicationName&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:13 06:21:48+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2012:02:12 12:09:13+01:00&lt;/created&gt;
+    &lt;created toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;2012:02:12 12:23:55&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;2d403ce7b556b39fc5c740905e4d2e4b&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360732908000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Uncompressed&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;512&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;512&lt;/imageHeight&gt;
+      &lt;colorSpace toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;RGB&lt;/colorSpace&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;1 1&lt;/YCbCrSubSampling&gt;
+      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;72&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;72&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;samplesPerPixel toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;3&lt;/samplesPerPixel&gt;
+      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Adobe Photoshop CS5 Windows&lt;/scanningSoftwareName&gt;
+      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="exiv2" exitCode="0">
+                <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg
+File size       : 176853 Bytes
+MIME type       : image/jpeg
+Image size      : 512 x 512
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 512 x 512
+White balance   : 
+Thumbnail       : image/jpeg, 6963 Bytes
+Copyright       : 
+Exif comment    : 
+
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="exiftool" exitCode="0">
+                <stdout>ExifTool Version Number         : 8.60
+File Name                       : 03.jpg
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_01
+File Size                       : 173 kB
+File Modification Date/Time     : 2013:02:13 06:21:48+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Compression                     : Uncompressed
+Photometric Interpretation      : RGB
+Orientation                     : Horizontal (normal)
+Samples Per Pixel               : 3
+X Resolution                    : 72
+Y Resolution                    : 72
+Planar Configuration            : Chunky
+Resolution Unit                 : inches
+Software                        : Adobe Photoshop CS5 Windows
+Modify Date                     : 2012:02:12 12:23:55
+Color Space                     : Uncalibrated
+Exif Image Width                : 512
+Exif Image Height               : 512
+Thumbnail Offset                : 402
+Thumbnail Length                : 6963
+IPTC Digest                     : 00000000000000000000000000000000
+Displayed Units X               : inches
+Displayed Units Y               : inches
+Global Angle                    : 30
+Global Altitude                 : 30
+Photoshop Thumbnail             : (Binary data 6963 bytes, use -b option to extract)
+Photoshop Quality               : 12
+Photoshop Format                : Standard
+Progressive Scans               : 3 Scans
+XMP Toolkit                     : Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00
+Create Date                     : 2012:02:12 12:09:13+01:00
+Metadata Date                   : 2012:02:12 12:23:55+01:00
+Creator Tool                    : Adobe Photoshop CS5 Windows
+Format                          : image/jpeg
+Color Mode                      : RGB
+Instance ID                     : xmp.iid:F7B79AEC6A55E11180A5EF7BDC084C3E
+Document ID                     : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Original Document ID            : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Document Ancestors              : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+History Action                  : created, converted, saved, saved, saved, saved, converted, derived, saved, saved, converted, derived, saved
+History Instance ID             : xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:F6B79AEC6A55E11180A5EF7BDC084C3E, xmp.iid:F7B79AEC6A55E11180A5EF7BDC084C3E
+History When                    : 2012:02:12 12:09:13+01:00, 2012:02:12 12:11:16+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:23:55+01:00, 2012:02:12 12:23:55+01:00
+History Software Agent          : Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows
+History Parameters              : from image/tiff to image/jpeg, from image/jpeg to application/vnd.adobe.photoshop, converted from image/jpeg to application/vnd.adobe.photoshop, from application/vnd.adobe.photoshop to image/jpeg, converted from application/vnd.adobe.photoshop to image/jpeg
+History Changed                 : /, /, /, /, /, /, /
+Derived From Instance ID        : xmp.iid:F6B79AEC6A55E11180A5EF7BDC084C3E
+Derived From Document ID        : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Derived From Original Document ID: xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+DCT Encode Version              : 100
+APP14 Flags 0                   : [14]
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Image Width                     : 512
+Image Height                    : 512
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
+Image Size                      : 512x512
+Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extract)
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="imagemagick" exitCode="0">
+                <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_01/03.jpg
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
   Format: JPEG (Joint Photographic Experts Group JFIF format)
   Class: DirectClass
   Geometry: 512x512+0+0
@@ -1922,6 +2414,7 @@
     verbose: true
   Tainted: False
   Filesize: 177KB
+<<<<<<< HEAD
   Number pixels: 262KB
   Pixels per second: 26.21MB
   User time: 0.010u
@@ -2451,6 +2944,16 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
 </stdout>
                 <stderr></stderr>
             </source>
+=======
+  Number pixels: 262K
+  Pixels per second: 5.243MB
+  User time: 0.020u
+  Elapsed time: 0:01.050
+  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
+</stdout>
+                <stderr></stderr>
+            </source>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
         </sources-list>
         <histogram-list>
             <histogram>
@@ -3532,7 +4035,7 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
             <metadata>
                 <key>File created</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2012</value>
-                <conflict>false</conflict>
+                <conflict>true</conflict>
                 <source>exiftool</source>
             </metadata>
             <metadata>
@@ -3819,7 +4322,11 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
             </metadata>
             <metadata>
                 <key>Compression scheme</key>
+<<<<<<< HEAD
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+=======
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>true</conflict>
                 <source>jhove</source>
             </metadata>
@@ -3897,6 +4404,15 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
                 <key>MIME type</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">image/jpeg</value>
                 <conflict>true</conflict>
+<<<<<<< HEAD
+=======
+                <source>exiv2</source>
+            </metadata>
+            <metadata>
+                <key>Image size</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512 x 512</value>
+                <conflict>false</conflict>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <source>exiv2</source>
             </metadata>
             <metadata>
@@ -3909,6 +4425,7 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
                 <key>Image width</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
                 <unit>px</unit>
+<<<<<<< HEAD
                 <conflict>true</conflict>
                 <source>exiv2</source>
             </metadata>
@@ -3917,6 +4434,9 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
                 <unit>px</unit>
                 <conflict>true</conflict>
+=======
+                <conflict>false</conflict>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <source>exiv2</source>
             </metadata>
             <metadata>
@@ -4321,7 +4841,11 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Compression</key>
+=======
+                <key>Compression scheme</key>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
@@ -4339,9 +4863,15 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Properties/date/create</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-15T17:56:11+01:00</value>
                 <conflict>false</conflict>
+=======
+                <key>File created</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2013-02-13 06:21:49+01:00</value>
+                <conflict>true</conflict>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <source>imagemagick</source>
             </metadata>
             <metadata>
@@ -4543,14 +5073,23 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/User time</key>
+=======
+                <key>Image/Channel statistics/Image statistics/User time</key>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.010u</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
             <metadata>
+<<<<<<< HEAD
                 <key>Image/Elapsed time</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.010</value>
+=======
+                <key>Image/Channel statistics/Image statistics/Elapsed time</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.059</value>
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -4590,6 +5129,7 @@ Thumbnail Image                 : (Binary data 6963 bytes, use -b option to extr
             </metadata>
         </metadata-list>
         <sources-list>
+<<<<<<< HEAD
             <source exitCode="0" source="exiftool">
                 <stdout>ExifTool Version Number         : 8.15
 File Name                       : 03.jpg
@@ -4668,6 +5208,189 @@ Thumbnail Image                 : (Binary data 6635 bytes, use -b option to extr
   &lt;identification&gt;
     &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.04" /&gt;
+=======
+            <source source="jhove" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
+ &lt;date&gt;2013-02-14T17:23:39+01:00&lt;/date&gt;
+ &lt;repInfo uri="/opt/differ/differ-cmdline/../docs/examples/images_02/03.jpg"&gt;
+  &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
+  &lt;lastModified&gt;2013-02-13T06:21:49+01:00&lt;/lastModified&gt;
+  &lt;size&gt;176086&lt;/size&gt;
+  &lt;format&gt;JPEG&lt;/format&gt;
+  &lt;status&gt;Well-Formed and valid&lt;/status&gt;
+  &lt;sigMatch&gt;
+  &lt;module&gt;JPEG-hul&lt;/module&gt;
+  &lt;/sigMatch&gt;
+  &lt;mimeType&gt;image/jpeg&lt;/mimeType&gt;
+  &lt;properties&gt;
+   &lt;property&gt;
+    &lt;name&gt;JPEGMetadata&lt;/name&gt;
+    &lt;values arity="List" type="Property"&gt;
+    &lt;property&gt;
+     &lt;name&gt;CompressionType&lt;/name&gt;
+     &lt;values arity="Scalar" type="String"&gt;
+      &lt;value&gt;Huffman coding, Baseline DCT&lt;/value&gt;
+     &lt;/values&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+     &lt;name&gt;Images&lt;/name&gt;
+     &lt;values arity="List" type="Property"&gt;
+     &lt;property&gt;
+      &lt;name&gt;Number&lt;/name&gt;
+      &lt;values arity="Scalar" type="Integer"&gt;
+       &lt;value&gt;1&lt;/value&gt;
+      &lt;/values&gt;
+     &lt;/property&gt;
+     &lt;property&gt;
+      &lt;name&gt;Image&lt;/name&gt;
+      &lt;values arity="List" type="Property"&gt;
+      &lt;property&gt;
+       &lt;name&gt;NisoImageMetadata&lt;/name&gt;
+       &lt;values arity="Scalar" type="NISOImageMetadata"&gt;
+        &lt;value&gt;
+      &lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+       &lt;mix:BasicDigitalObjectInformation&gt;
+        &lt;mix:ObjectIdentifier&gt;
+         &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+        &lt;/mix:ObjectIdentifier&gt;
+        &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+        &lt;mix:Compression&gt;
+         &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
+        &lt;/mix:Compression&gt;
+       &lt;/mix:BasicDigitalObjectInformation&gt;
+       &lt;mix:BasicImageInformation&gt;
+        &lt;mix:BasicImageCharacteristics&gt;
+         &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
+         &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
+        &lt;/mix:BasicImageCharacteristics&gt;
+       &lt;/mix:BasicImageInformation&gt;
+       &lt;mix:ImageAssessmentMetadata&gt;
+        &lt;mix:ImageColorEncoding&gt;
+         &lt;mix:BitsPerSample&gt;
+          &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+          &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+          &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+         &lt;/mix:BitsPerSample&gt;
+         &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+        &lt;/mix:ImageColorEncoding&gt;
+       &lt;/mix:ImageAssessmentMetadata&gt;
+      &lt;/mix:mix&gt;
+        &lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;PixelAspectRatio&lt;/name&gt;
+       &lt;values arity="List" type="Property"&gt;
+       &lt;property&gt;
+        &lt;name&gt;PixelAspectRatioX&lt;/name&gt;
+        &lt;values arity="Scalar" type="Integer"&gt;
+         &lt;value&gt;0&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;property&gt;
+        &lt;name&gt;PixelAspectRatioY&lt;/name&gt;
+        &lt;values arity="Scalar" type="Integer"&gt;
+         &lt;value&gt;0&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;RestartInterval&lt;/name&gt;
+       &lt;values arity="Scalar" type="Integer"&gt;
+        &lt;value&gt;64&lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;Scans&lt;/name&gt;
+       &lt;values arity="Scalar" type="Integer"&gt;
+        &lt;value&gt;1&lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;QuantizationTables&lt;/name&gt;
+       &lt;values arity="List" type="Property"&gt;
+       &lt;property&gt;
+        &lt;name&gt;QuantizationTable&lt;/name&gt;
+        &lt;values arity="Array" type="Property"&gt;
+        &lt;property&gt;
+         &lt;name&gt;Precision&lt;/name&gt;
+         &lt;values arity="Scalar" type="String"&gt;
+          &lt;value&gt;8-bit&lt;/value&gt;
+         &lt;/values&gt;
+        &lt;/property&gt;
+        &lt;property&gt;
+         &lt;name&gt;DestinationIdentifier&lt;/name&gt;
+         &lt;values arity="Scalar" type="Integer"&gt;
+          &lt;value&gt;0&lt;/value&gt;
+         &lt;/values&gt;
+        &lt;/property&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;Exif&lt;/name&gt;
+       &lt;values arity="List" type="Property"&gt;
+       &lt;property&gt;
+        &lt;name&gt;ExifVersion&lt;/name&gt;
+        &lt;values arity="Scalar" type="String"&gt;
+         &lt;value&gt;0220&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;property&gt;
+        &lt;name&gt;FlashpixVersion&lt;/name&gt;
+        &lt;values arity="Scalar" type="String"&gt;
+         &lt;value&gt;0100&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;property&gt;
+        &lt;name&gt;FocalPlaneResolutionUnit&lt;/name&gt;
+        &lt;values arity="Scalar" type="String"&gt;
+         &lt;value&gt;inches&lt;/value&gt;
+        &lt;/values&gt;
+       &lt;/property&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+       &lt;name&gt;XMP&lt;/name&gt;
+       &lt;values arity="Scalar" type="String"&gt;
+        &lt;value&gt;&amp;lt;x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00        "&amp;gt; &amp;lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&amp;gt; &amp;lt;rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreateDate="2012-02-12T12:09:13+01:00" xmp:ModifyDate="2012-02-12T12:29:07+01:00" xmp:MetadataDate="2012-02-12T12:29:07+01:00" xmp:CreatorTool="Adobe Photoshop CS5 Windows" dc:format="image/jpeg" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:1733E21B6C55E11180A5EF7BDC084C3E" xmpMM:DocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E" xmpMM:OriginalDocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E"&amp;gt; &amp;lt;photoshop:DocumentAncestors&amp;gt; &amp;lt;rdf:Bag&amp;gt; &amp;lt;rdf:li&amp;gt;xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E&amp;lt;/rdf:li&amp;gt; &amp;lt;/rdf:Bag&amp;gt; &amp;lt;/photoshop:DocumentAncestors&amp;gt; &amp;lt;xmpMM:History&amp;gt; &amp;lt;rdf:Seq&amp;gt; &amp;lt;rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:09:13+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from image/tiff to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:16+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:40+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:40+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:15:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from image/jpeg to application/vnd.adobe.photoshop"/&amp;gt; &amp;lt;rdf:li stEvt:action="derived" stEvt:parameters="converted from image/jpeg to application/vnd.adobe.photoshop"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:15:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:1233E21B6C55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:24:41+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:1333E21B6C55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:24:41+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:1633E21B6C55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:29:07+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/jpeg"/&amp;gt; &amp;lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:1733E21B6C55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:29:07+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&amp;gt; &amp;lt;/rdf:Seq&amp;gt; &amp;lt;/xmpMM:History&amp;gt; &amp;lt;xmpMM:DerivedFrom stRef:instanceID="xmp.iid:1633E21B6C55E11180A5EF7BDC084C3E" stRef:documentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E" stRef:originalDocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E"/&amp;gt; &amp;lt;/rdf:Description&amp;gt; &amp;lt;/rdf:RDF&amp;gt; &amp;lt;/x:xmpmeta&amp;gt;&lt;/value&gt;
+       &lt;/values&gt;
+      &lt;/property&gt;
+      &lt;/values&gt;
+     &lt;/property&gt;
+     &lt;/values&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+     &lt;name&gt;ApplicationSegments&lt;/name&gt;
+     &lt;values arity="List" type="String"&gt;
+      &lt;value&gt;APP1&lt;/value&gt;
+      &lt;value&gt;APP13&lt;/value&gt;
+      &lt;value&gt;APP1&lt;/value&gt;
+      &lt;value&gt;APP14&lt;/value&gt;
+     &lt;/values&gt;
+    &lt;/property&gt;
+    &lt;/values&gt;
+   &lt;/property&gt;
+  &lt;/properties&gt;
+ &lt;/repInfo&gt;
+&lt;/jhove&gt;
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="core" exitCode="0">
+                <stdout></stdout>
+                <stderr></stderr>
+            </source>
+            <source source="fits" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="14.2.13 17:23"&gt;
+  &lt;identification&gt;
+    &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.11" /&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
       &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
       &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
     &lt;/identity&gt;
@@ -4675,6 +5398,7 @@ Thumbnail Image                 : (Binary data 6635 bytes, use -b option to extr
   &lt;fileinfo&gt;
     &lt;size toolname="Jhove" toolversion="1.5"&gt;176086&lt;/size&gt;
     &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;Adobe Photoshop CS5 Windows&lt;/creatingApplicationName&gt;
+<<<<<<< HEAD
     &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
     &lt;created toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2012:02:12 12:09:13+01:00&lt;/created&gt;
     &lt;created toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;2012:02:12 12:29:07&lt;/created&gt;
@@ -4682,6 +5406,15 @@ Thumbnail Image                 : (Binary data 6635 bytes, use -b option to extr
     &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/03.jpg&lt;/filename&gt;
     &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;8306bb6f1ead073bee187c5b826445fc&lt;/md5checksum&gt;
     &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
+=======
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:13 06:21:49+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2012:02:12 12:09:13+01:00&lt;/created&gt;
+    &lt;created toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;2012:02:12 12:29:07&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_02/03.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/opt/differ/differ-cmdline/../docs/examples/images_02/03.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;8306bb6f1ead073bee187c5b826445fc&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360732909000&lt;/fslastmodified&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
   &lt;/fileinfo&gt;
   &lt;filestatus /&gt;
   &lt;metadata&gt;
@@ -4702,10 +5435,142 @@ Thumbnail Image                 : (Binary data 6635 bytes, use -b option to extr
     &lt;/image&gt;
   &lt;/metadata&gt;
 &lt;/fits&gt;
+<<<<<<< HEAD
+=======
 
 </stdout>
                 <stderr></stderr>
             </source>
+            <source source="daitss" exitCode="0">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
+	
+	&lt;!-- premis file object --&gt;
+	&lt;object xsi:type="file"&gt;
+		&lt;objectIdentifier&gt;
+			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130214-1949-1liuaau-0.jpg&lt;/objectIdentifierValue&gt;
+		&lt;/objectIdentifier&gt;
+		&lt;objectCharacteristics&gt;
+			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;8306bb6f1ead073bee187c5b826445fc&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;7a755de9eb36ecdce141379b86eb8bbad646b55d&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;size&gt;176086&lt;/size&gt;
+			
+			&lt;format&gt;
+				&lt;formatDesignation&gt;
+					&lt;formatName&gt;Raw JPEG Stream&lt;/formatName&gt;
+					
+				&lt;/formatDesignation&gt;
+				
+				&lt;formatRegistry&gt;
+					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
+					&lt;formatRegistryKey&gt;fmt/41&lt;/formatRegistryKey&gt;
+				&lt;/formatRegistry&gt;
+				
+				
+			&lt;/format&gt;
+			
+			
+			
+			
+			&lt;objectCharacteristicsExtension&gt;
+				&lt;mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd"&gt;
+  &lt;mix:BasicDigitalObjectInformation&gt;
+    &lt;mix:ObjectIdentifier&gt;
+      &lt;mix:objectIdentifierType&gt;JHOVE&lt;/mix:objectIdentifierType&gt;
+    &lt;/mix:ObjectIdentifier&gt;
+    &lt;mix:byteOrder&gt;big endian&lt;/mix:byteOrder&gt;
+    &lt;mix:Compression&gt;
+      &lt;mix:compressionScheme&gt;JPEG&lt;/mix:compressionScheme&gt;
+    &lt;/mix:Compression&gt;
+  &lt;/mix:BasicDigitalObjectInformation&gt;
+  &lt;mix:BasicImageInformation&gt;
+    &lt;mix:BasicImageCharacteristics&gt;
+      &lt;mix:imageWidth&gt;512&lt;/mix:imageWidth&gt;
+      &lt;mix:imageHeight&gt;512&lt;/mix:imageHeight&gt;
+    &lt;/mix:BasicImageCharacteristics&gt;
+  &lt;/mix:BasicImageInformation&gt;
+  &lt;mix:ImageAssessmentMetadata&gt;
+    &lt;mix:ImageColorEncoding&gt;
+      &lt;mix:BitsPerSample&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleValue&gt;8&lt;/mix:bitsPerSampleValue&gt;
+        &lt;mix:bitsPerSampleUnit&gt;integer&lt;/mix:bitsPerSampleUnit&gt;
+      &lt;/mix:BitsPerSample&gt;
+      &lt;mix:samplesPerPixel&gt;3&lt;/mix:samplesPerPixel&gt;
+    &lt;/mix:ImageColorEncoding&gt;
+  &lt;/mix:ImageAssessmentMetadata&gt;
+&lt;/mix:mix&gt;
+			&lt;/objectCharacteristicsExtension&gt;
+			
+		&lt;/objectCharacteristics&gt;
+		
+		&lt;originalName&gt;03.jpg&lt;/originalName&gt;
+		
+		
+		
+		
+		&lt;linkingEventIdentifier&gt;
+			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
+			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
+		&lt;/linkingEventIdentifier&gt;
+	&lt;/object&gt;
+	
+
+	
+	&lt;!-- premis bitstream object --&gt;
+	
+	
+
+	&lt;!-- premis event --&gt;
+	&lt;event&gt;
+		&lt;eventIdentifier&gt;
+			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
+			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
+		&lt;/eventIdentifier&gt;
+		&lt;eventType&gt;describe&lt;/eventType&gt;
+		&lt;eventDateTime&gt;2013-02-14T11:27:39-05:00&lt;/eventDateTime&gt;
+		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
+		&lt;eventOutcomeInformation&gt;
+			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
+			
+		&lt;/eventOutcomeInformation&gt;
+		&lt;linkingAgentIdentifier&gt;
+			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
+			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/linkingAgentIdentifierValue&gt;
+		&lt;/linkingAgentIdentifier&gt;
+		&lt;linkingObjectIdentifier&gt;
+			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130214-1949-1liuaau-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+		&lt;/linkingObjectIdentifier&gt;
+	&lt;/event&gt;
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
+
+&lt;!-- premis agent --&gt;
+&lt;agent&gt;
+	&lt;agentIdentifier&gt;
+		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
+		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.2.0&lt;/agentIdentifierValue&gt;
+	&lt;/agentIdentifier&gt;
+	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
+	&lt;agentType&gt;Web Service&lt;/agentType&gt;
+	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
+&lt;/agent&gt;
+&lt;/premis&gt;
+</stdout>
+                <stderr></stderr>
+            </source>
+<<<<<<< HEAD
             <source exitCode="0" source="jhove">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
@@ -4954,6 +5819,519 @@ Thumbnail Image                 : (Binary data 6635 bytes, use -b option to extr
   &lt;/properties&gt;
  &lt;/repInfo&gt;
 &lt;/jhove&gt;
+=======
+            <source source="imagemagick" exitCode="0">
+                <stdout>Image: /opt/differ/differ-cmdline/../docs/examples/images_02/03.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Class: DirectClass
+  Geometry: 512x512+0+0
+  Resolution: 72x72
+  Print size: 7.11111x7.11111
+  Units: PixelsPerInch
+  Type: TrueColor
+  Endianess: Undefined
+  Colorspace: sRGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Red:
+      min: 28 (0.109804)
+      max: 247 (0.968627)
+      mean: 125.531 (0.49228)
+      standard deviation: 46.824 (0.183624)
+      kurtosis: -0.803082
+      skewness: -0.0728972
+    Green:
+      min: 0 (0)
+      max: 247 (0.968627)
+      mean: 125.16 (0.490823)
+      standard deviation: 46.88 (0.183843)
+      kurtosis: -0.785873
+      skewness: -0.0997605
+    Blue:
+      min: 28 (0.109804)
+      max: 247 (0.968627)
+      mean: 125.379 (0.491682)
+      standard deviation: 46.6202 (0.182824)
+      kurtosis: -0.815959
+      skewness: -0.085172
+  Image statistics:
+    Overall:
+      min: 0 (0)
+      max: 247 (0.968627)
+      mean: 125.357 (0.491595)
+      standard deviation: 46.7749 (0.183431)
+      kurtosis: -0.80127
+      skewness: -0.0859781
+  Colors: 305
+  Histogram:
+         1: ( 28, 28, 28) #1C1C1C grey11
+         2: ( 29, 29, 29) #1D1D1D srgb(29,29,29)
+         7: ( 30, 30, 30) #1E1E1E srgb(30,30,30)
+        12: ( 31, 31, 31) #1F1F1F grey12
+        28: ( 32, 32, 32) #202020 srgb(32,32,32)
+        61: ( 33, 33, 33) #212121 grey13
+        69: ( 34, 34, 34) #222222 srgb(34,34,34)
+       116: ( 35, 35, 35) #232323 srgb(35,35,35)
+       168: ( 36, 36, 36) #242424 grey14
+       217: ( 37, 37, 37) #252525 srgb(37,37,37)
+       310: ( 38, 38, 38) #262626 grey15
+       396: ( 39, 39, 39) #272727 srgb(39,39,39)
+       516: ( 40, 40, 40) #282828 srgb(40,40,40)
+       642: ( 41, 41, 41) #292929 grey16
+         1: ( 42, 40, 43) #2A282B srgb(42,40,43)
+       868: ( 42, 42, 42) #2A2A2A srgb(42,42,42)
+       972: ( 43, 43, 43) #2B2B2B grey17
+         1: ( 43, 44, 46) #2B2C2E srgb(43,44,46)
+      1233: ( 44, 44, 44) #2C2C2C srgb(44,44,44)
+      1422: ( 45, 45, 45) #2D2D2D srgb(45,45,45)
+         1: ( 46, 46, 44) #2E2E2C srgb(46,46,44)
+      1683: ( 46, 46, 46) #2E2E2E grey18
+         1: ( 46, 48, 47) #2E302F srgb(46,48,47)
+      1798: ( 47, 47, 47) #2F2F2F srgb(47,47,47)
+         1: ( 48, 46, 47) #302E2F srgb(48,46,47)
+      2018: ( 48, 48, 48) #303030 grey19
+         1: ( 48, 49, 53) #303135 srgb(48,49,53)
+      2194: ( 49, 49, 49) #313131 srgb(49,49,49)
+         1: ( 50, 50, 48) #323230 srgb(50,50,48)
+      2215: ( 50, 50, 50) #323232 srgb(50,50,50)
+         1: ( 51, 50, 48) #333230 srgb(51,50,48)
+      2239: ( 51, 51, 51) #333333 grey20
+      2375: ( 52, 52, 52) #343434 srgb(52,52,52)
+      2507: ( 53, 53, 53) #353535 srgb(53,53,53)
+         1: ( 54, 52, 53) #363435 srgb(54,52,53)
+      2187: ( 54, 54, 54) #363636 grey21
+         1: ( 54, 56, 55) #363837 srgb(54,56,55)
+      2098: ( 55, 55, 55) #373737 srgb(55,55,55)
+      1949: ( 56, 56, 56) #383838 grey22
+      1930: ( 57, 57, 57) #393939 srgb(57,57,57)
+      1728: ( 58, 58, 58) #3A3A3A srgb(58,58,58)
+         1: ( 59, 59, 57) #3B3B39 srgb(59,59,57)
+      1545: ( 59, 59, 59) #3B3B3B grey23
+      1401: ( 60, 60, 60) #3C3C3C srgb(60,60,60)
+         1: ( 60, 62, 61) #3C3E3D srgb(60,62,61)
+      1312: ( 61, 61, 61) #3D3D3D grey24
+      1142: ( 62, 62, 62) #3E3E3E srgb(62,62,62)
+      1122: ( 63, 63, 63) #3F3F3F srgb(63,63,63)
+      1058: ( 64, 64, 64) #404040 grey25
+      1034: ( 65, 65, 65) #414141 srgb(65,65,65)
+       896: ( 66, 66, 66) #424242 grey26
+         1: ( 66, 68, 67) #424443 srgb(66,68,67)
+         1: ( 67, 65, 66) #434142 srgb(67,65,66)
+       832: ( 67, 67, 67) #434343 srgb(67,67,67)
+       797: ( 68, 68, 68) #444444 srgb(68,68,68)
+       805: ( 69, 69, 69) #454545 grey27
+       752: ( 70, 70, 70) #464646 srgb(70,70,70)
+       802: ( 71, 71, 71) #474747 grey28
+       781: ( 72, 72, 72) #484848 srgb(72,72,72)
+       741: ( 73, 73, 73) #494949 srgb(73,73,73)
+       751: ( 74, 74, 74) #4A4A4A grey29
+       763: ( 75, 75, 75) #4B4B4B srgb(75,75,75)
+       859: ( 76, 76, 76) #4C4C4C srgb(76,76,76)
+       818: ( 77, 77, 77) #4D4D4D grey30
+         1: ( 78, 78, 76) #4E4E4C srgb(78,78,76)
+       835: ( 78, 78, 78) #4E4E4E srgb(78,78,78)
+       920: ( 79, 79, 79) #4F4F4F grey31
+       947: ( 80, 80, 80) #505050 srgb(80,80,80)
+       908: ( 81, 81, 81) #515151 srgb(81,81,81)
+         1: ( 81, 83, 82) #515352 srgb(81,83,82)
+       908: ( 82, 82, 82) #525252 grey32
+       992: ( 83, 83, 83) #535353 srgb(83,83,83)
+       925: ( 84, 84, 84) #545454 grey33
+       944: ( 85, 85, 85) #555555 srgb(85,85,85)
+         1: ( 86, 85, 83) #565553 srgb(86,85,83)
+       903: ( 86, 86, 86) #565656 srgb(86,86,86)
+       991: ( 87, 87, 87) #575757 grey34
+       972: ( 88, 88, 88) #585858 srgb(88,88,88)
+       983: ( 89, 89, 89) #595959 grey35
+      1060: ( 90, 90, 90) #5A5A5A srgb(90,90,90)
+      1070: ( 91, 91, 91) #5B5B5B srgb(91,91,91)
+      1059: ( 92, 92, 92) #5C5C5C grey36
+         1: ( 92, 94, 93) #5C5E5D srgb(92,94,93)
+      1120: ( 93, 93, 93) #5D5D5D srgb(93,93,93)
+      1238: ( 94, 94, 94) #5E5E5E grey37
+      1256: ( 95, 95, 95) #5F5F5F srgb(95,95,95)
+      1244: ( 96, 96, 96) #606060 srgb(96,96,96)
+         1: ( 96, 97, 99) #606163 srgb(96,97,99)
+         1: ( 97, 96, 94) #61605E srgb(97,96,94)
+      1288: ( 97, 97, 97) #616161 grey38
+      1314: ( 98, 98, 98) #626262 srgb(98,98,98)
+         1: ( 98,102,103) #626667 srgb(98,102,103)
+      1479: ( 99, 99, 99) #636363 grey39
+         1: ( 99, 99,101) #636365 srgb(99,99,101)
+      1553: (100,100,100) #646464 srgb(100,100,100)
+      1701: (101,101,101) #656565 srgb(101,101,101)
+      1993: (102,102,102) #666666 grey40
+      2098: (103,103,103) #676767 srgb(103,103,103)
+      2207: (104,104,104) #686868 srgb(104,104,104)
+      2140: (105,105,105) #696969 DimGray
+      2016: (106,106,106) #6A6A6A srgb(106,106,106)
+      1954: (107,107,107) #6B6B6B grey42
+      1828: (108,108,108) #6C6C6C srgb(108,108,108)
+         1: (109,105,106) #6D696A srgb(109,105,106)
+      1669: (109,109,109) #6D6D6D srgb(109,109,109)
+      1627: (110,110,110) #6E6E6E grey43
+         1: (110,112,111) #6E706F srgb(110,112,111)
+      1463: (111,111,111) #6F6F6F srgb(111,111,111)
+         1: (111,113,112) #6F7170 srgb(111,113,112)
+      1416: (112,112,112) #707070 grey44
+      1336: (113,113,113) #717171 srgb(113,113,113)
+      1390: (114,114,114) #727272 srgb(114,114,114)
+         1: (114,116,115) #727473 srgb(114,116,115)
+      1387: (115,115,115) #737373 grey45
+      1439: (116,116,116) #747474 srgb(116,116,116)
+      1446: (117,117,117) #757575 grey46
+         1: (117,119,118) #757776 srgb(117,119,118)
+         1: (118,116,117) #767475 srgb(118,116,117)
+      1456: (118,118,118) #767676 srgb(118,118,118)
+      1449: (119,119,119) #777777 srgb(119,119,119)
+      1530: (120,120,120) #787878 grey47
+         1: (120,122,121) #787A79 srgb(120,122,121)
+         1: (121,117,118) #797576 srgb(121,117,118)
+      1568: (121,121,121) #797979 srgb(121,121,121)
+         2: (121,121,123) #79797B srgb(121,121,123)
+         1: (121,123,122) #797B7A srgb(121,123,122)
+      1685: (122,122,122) #7A7A7A grey48
+         1: (123,121,122) #7B797A srgb(123,121,122)
+         1: (123,122,120) #7B7A78 srgb(123,122,120)
+      1714: (123,123,123) #7B7B7B srgb(123,123,123)
+         1: (123,123,125) #7B7B7D srgb(123,123,125)
+         1: (123,125,124) #7B7D7C srgb(123,125,124)
+      1799: (124,124,124) #7C7C7C srgb(124,124,124)
+      1822: (125,125,125) #7D7D7D grey49
+         1: (126,126,124) #7E7E7C srgb(126,126,124)
+      2002: (126,126,126) #7E7E7E gray
+         1: (126,128,127) #7E807F srgb(126,128,127)
+      2031: (127,127,127) #7F7F7F grey50
+         1: (128,127,125) #807F7D srgb(128,127,125)
+      2257: (128,128,128) #808080 fractal
+         1: (129,125,126) #817D7E srgb(129,125,126)
+      2446: (129,129,129) #818181 srgb(129,129,129)
+      2635: (130,130,130) #828282 grey51
+      2607: (131,131,131) #838383 srgb(131,131,131)
+      2706: (132,132,132) #848484 srgb(132,132,132)
+      2657: (133,133,133) #858585 grey52
+      2348: (134,134,134) #868686 srgb(134,134,134)
+      2391: (135,135,135) #878787 grey53
+      2056: (136,136,136) #888888 srgb(136,136,136)
+      2042: (137,137,137) #898989 srgb(137,137,137)
+      2031: (138,138,138) #8A8A8A grey54
+      2122: (139,139,139) #8B8B8B srgb(139,139,139)
+      2178: (140,140,140) #8C8C8C grey55
+      2344: (141,141,141) #8D8D8D srgb(141,141,141)
+      2471: (142,142,142) #8E8E8E srgb(142,142,142)
+      2631: (143,143,143) #8F8F8F grey56
+      2662: (144,144,144) #909090 srgb(144,144,144)
+      2580: (145,145,145) #919191 grey57
+      2684: (146,146,146) #929292 srgb(146,146,146)
+      2599: (147,147,147) #939393 srgb(147,147,147)
+      2481: (148,148,148) #949494 grey58
+      2483: (149,149,149) #959595 srgb(149,149,149)
+      2331: (150,150,150) #969696 grey59
+      2464: (151,151,151) #979797 srgb(151,151,151)
+         1: (152,150,151) #989697 srgb(152,150,151)
+      2514: (152,152,152) #989898 srgb(152,152,152)
+      2669: (153,153,153) #999999 grey60
+         1: (153,155,154) #999B9A srgb(153,155,154)
+      2757: (154,154,154) #9A9A9A srgb(154,154,154)
+         1: (154,154,156) #9A9A9C srgb(154,154,156)
+         1: (155, 31,104) #9B1F68 srgb(155,31,104)
+      2773: (155,155,155) #9B9B9B srgb(155,155,155)
+         1: (155,155,157) #9B9B9D srgb(155,155,157)
+      2694: (156,156,156) #9C9C9C grey61
+         1: (156,156,158) #9C9C9E srgb(156,156,158)
+         1: (157,156,154) #9D9C9A srgb(157,156,154)
+      2646: (157,157,157) #9D9D9D srgb(157,157,157)
+         1: (157,158,160) #9D9EA0 srgb(157,158,160)
+      2386: (158,158,158) #9E9E9E grey62
+         1: (158,158,160) #9E9EA0 srgb(158,158,160)
+         1: (159,157,158) #9F9D9E srgb(159,157,158)
+         1: (159,159,157) #9F9F9D srgb(159,159,157)
+      2264: (159,159,159) #9F9F9F srgb(159,159,159)
+      2059: (160,160,160) #A0A0A0 srgb(160,160,160)
+         1: (161,155,155) #A19B9B srgb(161,155,155)
+         2: (161,161,159) #A1A19F srgb(161,161,159)
+      1827: (161,161,161) #A1A1A1 grey63
+         1: (161,162,164) #A1A2A4 srgb(161,162,164)
+         1: (161,163,160) #A1A3A0 srgb(161,163,160)
+         1: (161,163,162) #A1A3A2 srgb(161,163,162)
+         1: (162,162,160) #A2A2A0 srgb(162,162,160)
+      1652: (162,162,162) #A2A2A2 srgb(162,162,162)
+         1: (162,166,165) #A2A6A5 srgb(162,166,165)
+         1: (163,163,161) #A3A3A1 srgb(163,163,161)
+      1554: (163,163,163) #A3A3A3 grey64
+         2: (163,163,165) #A3A3A5 srgb(163,163,165)
+         1: (163,165,164) #A3A5A4 srgb(163,165,164)
+         1: (164,163,168) #A4A3A8 srgb(164,163,168)
+      1498: (164,164,164) #A4A4A4 srgb(164,164,164)
+         2: (164,164,166) #A4A4A6 srgb(164,164,166)
+         1: (164,165,167) #A4A5A7 srgb(164,165,167)
+         3: (164,166,165) #A4A6A5 srgb(164,166,165)
+         2: (165,163,164) #A5A3A4 srgb(165,163,164)
+         1: (165,164,160) #A5A4A0 srgb(165,164,160)
+         1: (165,165,163) #A5A5A3 srgb(165,165,163)
+      1366: (165,165,165) #A5A5A5 srgb(165,165,165)
+         3: (165,165,167) #A5A5A7 srgb(165,165,167)
+         1: (165,167,166) #A5A7A6 srgb(165,167,166)
+         1: (166,164,167) #A6A4A7 srgb(166,164,167)
+         1: (166,165,163) #A6A5A3 srgb(166,165,163)
+      1331: (166,166,166) #A6A6A6 grey65
+         1: (166,166,168) #A6A6A8 srgb(166,166,168)
+         1: (166,167,169) #A6A7A9 srgb(166,167,169)
+         1: (166,168,165) #A6A8A5 srgb(166,168,165)
+      1226: (167,167,167) #A7A7A7 srgb(167,167,167)
+         1: (168,167,163) #A8A7A3 srgb(168,167,163)
+      1268: (168,168,168) #A8A8A8 grey66
+         1: (169,167,168) #A9A7A8 srgb(169,167,168)
+      1265: (169,169,169) #A9A9A9 DarkGray
+         1: (170,166,167) #AAA6A7 srgb(170,166,167)
+      1166: (170,170,170) #AAAAAA srgb(170,170,170)
+      1244: (171,171,171) #ABABAB grey67
+      1288: (172,172,172) #ACACAC srgb(172,172,172)
+      1271: (173,173,173) #ADADAD grey68
+      1265: (174,174,174) #AEAEAE srgb(174,174,174)
+      1218: (175,175,175) #AFAFAF srgb(175,175,175)
+      1215: (176,176,176) #B0B0B0 grey69
+      1183: (177,177,177) #B1B1B1 srgb(177,177,177)
+      1107: (178,178,178) #B2B2B2 srgb(178,178,178)
+       962: (179,179,179) #B3B3B3 grey70
+       936: (180,180,180) #B4B4B4 srgb(180,180,180)
+       816: (181,181,181) #B5B5B5 grey71
+       716: (182,182,182) #B6B6B6 srgb(182,182,182)
+       724: (183,183,183) #B7B7B7 srgb(183,183,183)
+       632: (184,184,184) #B8B8B8 grey72
+       649: (185,185,185) #B9B9B9 srgb(185,185,185)
+       647: (186,186,186) #BABABA grey73
+       641: (187,187,187) #BBBBBB srgb(187,187,187)
+       647: (188,188,188) #BCBCBC srgb(188,188,188)
+       667: (189,189,189) #BDBDBD grey74
+       796: (190,190,190) #BEBEBE grey
+       809: (191,191,191) #BFBFBF grey75
+       840: (192,192,192) #C0C0C0 silver
+       860: (193,193,193) #C1C1C1 srgb(193,193,193)
+       881: (194,194,194) #C2C2C2 grey76
+       944: (195,195,195) #C3C3C3 srgb(195,195,195)
+       924: (196,196,196) #C4C4C4 grey77
+       878: (197,197,197) #C5C5C5 srgb(197,197,197)
+         1: (198, 84,153) #C65499 srgb(198,84,153)
+       928: (198,198,198) #C6C6C6 srgb(198,198,198)
+       893: (199,199,199) #C7C7C7 grey78
+       816: (200,200,200) #C8C8C8 srgb(200,200,200)
+       844: (201,201,201) #C9C9C9 grey79
+       819: (202,202,202) #CACACA srgb(202,202,202)
+       799: (203,203,203) #CBCBCB srgb(203,203,203)
+       819: (204,204,204) #CCCCCC grey80
+       831: (205,205,205) #CDCDCD srgb(205,205,205)
+       927: (206,206,206) #CECECE srgb(206,206,206)
+       958: (207,207,207) #CFCFCF grey81
+      1042: (208,208,208) #D0D0D0 srgb(208,208,208)
+       925: (209,209,209) #D1D1D1 grey82
+       995: (210,210,210) #D2D2D2 srgb(210,210,210)
+      1015: (211,211,211) #D3D3D3 LightGray
+       839: (212,212,212) #D4D4D4 grey83
+       802: (213,213,213) #D5D5D5 srgb(213,213,213)
+       696: (214,214,214) #D6D6D6 grey84
+       616: (215,215,215) #D7D7D7 srgb(215,215,215)
+       441: (216,216,216) #D8D8D8 srgb(216,216,216)
+       393: (217,217,217) #D9D9D9 grey85
+       353: (218,218,218) #DADADA srgb(218,218,218)
+       332: (219,219,219) #DBDBDB grey86
+       286: (220,220,220) #DCDCDC gainsboro
+       242: (221,221,221) #DDDDDD srgb(221,221,221)
+       205: (222,222,222) #DEDEDE grey87
+       169: (223,223,223) #DFDFDF srgb(223,223,223)
+       151: (224,224,224) #E0E0E0 grey88
+        95: (225,225,225) #E1E1E1 srgb(225,225,225)
+        82: (226,226,226) #E2E2E2 srgb(226,226,226)
+        49: (227,227,227) #E3E3E3 grey89
+        53: (228,228,228) #E4E4E4 srgb(228,228,228)
+        37: (229,229,229) #E5E5E5 grey90
+        22: (230,230,230) #E6E6E6 srgb(230,230,230)
+        17: (231,231,231) #E7E7E7 srgb(231,231,231)
+         6: (232,232,232) #E8E8E8 grey91
+         7: (233,233,233) #E9E9E9 srgb(233,233,233)
+         1: (234,  2,138) #EA028A srgb(234,2,138)
+         7: (234,234,234) #EAEAEA srgb(234,234,234)
+        14: (235,  0,138) #EB008A srgb(235,0,138)
+         2: (235,  1,136) #EB0188 srgb(235,1,136)
+         1: (236,  0,136) #EC0088 srgb(236,0,136)
+       181: (236,  0,139) #EC008B srgb(236,0,139)
+         1: (236,  0,144) #EC0090 srgb(236,0,144)
+         1: (236,  1,138) #EC018A srgb(236,1,138)
+         2: (236,  1,140) #EC018C srgb(236,1,140)
+         1: (236,236,236) #ECECEC srgb(236,236,236)
+       186: (237,  0,140) #ED008C srgb(237,0,140)
+         1: (237,  0,141) #ED008D srgb(237,0,141)
+         1: (237,  2,141) #ED028D srgb(237,2,141)
+         1: (238,  0,142) #EE008E srgb(238,0,142)
+        19: (238,  1,141) #EE018D srgb(238,1,141)
+         1: (239,239,239) #EFEFEF srgb(239,239,239)
+         1: (243,243,243) #F3F3F3 srgb(243,243,243)
+         1: (244,244,244) #F4F4F4 srgb(244,244,244)
+         1: (246,246,246) #F6F6F6 srgb(246,246,246)
+         1: (247,247,247) #F7F7F7 grey97
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Interlace: None
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Compose: Over
+  Page geometry: 512x512+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 99
+  Orientation: TopLeft
+  Properties:
+    date:create: 2013-02-13T06:21:49+01:00
+    date:modify: 2013-02-13T06:21:49+01:00
+    exif:BitsPerSample: 8, 8, 8
+    exif:ColorSpace: 65535
+    exif:Compression: 1
+    exif:DateTime: 2012:02:12 12:29:07
+    exif:ExifImageLength: 512
+    exif:ExifImageWidth: 512
+    exif:ExifOffset: 252
+    exif:ImageLength: 512
+    exif:ImageWidth: 512
+    exif:JPEGInterchangeFormat: 390
+    exif:JPEGInterchangeFormatLength: 6635
+    exif:Orientation: 1
+    exif:PhotometricInterpretation: 2
+    exif:PlanarConfiguration: 1
+    exif:ResolutionUnit: 2
+    exif:SamplesPerPixel: 3
+    exif:Software: Adobe Photoshop CS5 Windows
+    exif:XResolution: 720000/10000
+    exif:YResolution: 720000/10000
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 1x1,1x1,1x1
+    rdf:Bag:   
+    signature: a6004e90c641c2638de7c9d48599a410d09c272e053bc8eea8eb3e9f9fe06e88
+    xmpMM:DerivedFrom: 
+  Profiles:
+    Profile-8bim: 8848 bytes
+    Profile-exif: 7031 bytes
+    Profile-xmp: 5978 bytes
+  Artifacts:
+    filename: /opt/differ/differ-cmdline/../docs/examples/images_02/03.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 176KB
+  Number pixels: 262K
+  Pixels per second: 4.369MB
+  User time: 0.010u
+  Elapsed time: 0:01.059
+  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="exiftool" exitCode="0">
+                <stdout>ExifTool Version Number         : 8.60
+File Name                       : 03.jpg
+Directory                       : /opt/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 172 kB
+File Modification Date/Time     : 2013:02:13 06:21:49+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Compression                     : Uncompressed
+Photometric Interpretation      : RGB
+Orientation                     : Horizontal (normal)
+Samples Per Pixel               : 3
+X Resolution                    : 72
+Y Resolution                    : 72
+Planar Configuration            : Chunky
+Resolution Unit                 : inches
+Software                        : Adobe Photoshop CS5 Windows
+Modify Date                     : 2012:02:12 12:29:07
+Color Space                     : Uncalibrated
+Exif Image Width                : 512
+Exif Image Height               : 512
+Thumbnail Offset                : 402
+Thumbnail Length                : 6635
+IPTC Digest                     : 00000000000000000000000000000000
+Displayed Units X               : inches
+Displayed Units Y               : inches
+Global Angle                    : 30
+Global Altitude                 : 30
+Photoshop Thumbnail             : (Binary data 6635 bytes, use -b option to extract)
+Photoshop Quality               : 12
+Photoshop Format                : Standard
+Progressive Scans               : 3 Scans
+XMP Toolkit                     : Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00
+Create Date                     : 2012:02:12 12:09:13+01:00
+Metadata Date                   : 2012:02:12 12:29:07+01:00
+Creator Tool                    : Adobe Photoshop CS5 Windows
+Format                          : image/jpeg
+Color Mode                      : RGB
+Instance ID                     : xmp.iid:1733E21B6C55E11180A5EF7BDC084C3E
+Document ID                     : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Original Document ID            : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Document Ancestors              : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+History Action                  : created, converted, saved, saved, saved, saved, converted, derived, saved, saved, saved, saved, converted, derived, saved
+History Instance ID             : xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:1233E21B6C55E11180A5EF7BDC084C3E, xmp.iid:1333E21B6C55E11180A5EF7BDC084C3E, xmp.iid:1633E21B6C55E11180A5EF7BDC084C3E, xmp.iid:1733E21B6C55E11180A5EF7BDC084C3E
+History When                    : 2012:02:12 12:09:13+01:00, 2012:02:12 12:11:16+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:24:41+01:00, 2012:02:12 12:24:41+01:00, 2012:02:12 12:29:07+01:00, 2012:02:12 12:29:07+01:00
+History Software Agent          : Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows
+History Parameters              : from image/tiff to image/jpeg, from image/jpeg to application/vnd.adobe.photoshop, converted from image/jpeg to application/vnd.adobe.photoshop, from application/vnd.adobe.photoshop to image/jpeg, converted from application/vnd.adobe.photoshop to image/jpeg
+History Changed                 : /, /, /, /, /, /, /, /, /
+Derived From Instance ID        : xmp.iid:1633E21B6C55E11180A5EF7BDC084C3E
+Derived From Document ID        : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Derived From Original Document ID: xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+DCT Encode Version              : 100
+APP14 Flags 0                   : [14]
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Image Width                     : 512
+Image Height                    : 512
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
+Image Size                      : 512x512
+Thumbnail Image                 : (Binary data 6635 bytes, use -b option to extract)
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source source="exiv2" exitCode="0">
+                <stdout>File name       : /opt/differ/differ-cmdline/../docs/examples/images_02/03.jpg
+File size       : 176086 Bytes
+MIME type       : image/jpeg
+Image size      : 512 x 512
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 512 x 512
+White balance   : 
+Thumbnail       : image/jpeg, 6635 Bytes
+Copyright       : 
+Exif comment    : 
+
+>>>>>>> 515d2fa9a9f4496de303bdf34fb69543b747a358
 </stdout>
                 <stderr></stderr>
             </source>
