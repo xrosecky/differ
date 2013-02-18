@@ -1801,7 +1801,7 @@
         </metadata>
         <metadata>
             <key>Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">49.42MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">44.92MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1813,7 +1813,7 @@
         </metadata>
         <metadata>
             <key>Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.099</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.109</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1862,7 +1862,7 @@
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130217-1938-19a7w2q-0.jpg&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130218-1938-jrs2fd-0.jpg&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -1965,7 +1965,7 @@
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-17T17:04:58-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-02-18T03:24:12-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -1977,7 +1977,7 @@
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130217-1938-19a7w2q-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130218-1938-jrs2fd-0.jpg&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
@@ -1995,72 +1995,140 @@
 </stdout>
             <stderr></stderr>
         </source>
-        <source exitCode="0" source="core">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="fits">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 23:05"&gt;
-  &lt;identification&gt;
-    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;version toolname="file utility" toolversion="5.04"&gt;1.01&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;157041&lt;/size&gt;
-    &lt;creatingApplicationName toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;DSLR-A200&lt;/creatingApplicationName&gt;
-    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;Microsoft Windows Photo Gallery 6.0.6001.18000&lt;/creatingApplicationName&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
-    &lt;created toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2010:03:07 21:07:11&lt;/created&gt;
-    &lt;created toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;2010:03:07 20:16:11&lt;/created&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;b2e5f4593bbae30280184568b8b0455a&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus /&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
-      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;1846&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;2677&lt;/imageHeight&gt;
-      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
-      &lt;YCbCrPositioning toolname="Exiftool" toolversion="7.74"&gt;2&lt;/YCbCrPositioning&gt;
-      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
-      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;72&lt;/xSamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;72&lt;/ySamplingFrequency&gt;
-      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
-      &lt;captureDevice toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;digital still camera&lt;/captureDevice&gt;
-      &lt;digitalCameraManufacturer toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;SONY&lt;/digitalCameraManufacturer&gt;
-      &lt;digitalCameraModelName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;DSLR-A200&lt;/digitalCameraModelName&gt;
-      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Microsoft Windows Photo Gallery 6.0.6001.18000&lt;/scanningSoftwareName&gt;
-      &lt;fNumber toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;87616466.3&lt;/fNumber&gt;
-      &lt;fNumber toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;8.76164663E7&lt;/fNumber&gt;
-      &lt;exposureTime toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;1/30&lt;/exposureTime&gt;
-      &lt;exposureTime toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;0.03333333333333333&lt;/exposureTime&gt;
-      &lt;exposureProgram toolname="Exiftool" toolversion="7.74"&gt;Normal program&lt;/exposureProgram&gt;
-      &lt;isoSpeedRating toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;400&lt;/isoSpeedRating&gt;
-      &lt;exifVersion toolname="Exiftool" toolversion="7.74"&gt;0221&lt;/exifVersion&gt;
-      &lt;brightnessValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;1.75&lt;/brightnessValue&gt;
-      &lt;exposureBiasValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;0&lt;/exposureBiasValue&gt;
-      &lt;maxApertureValue toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;3.5&lt;/maxApertureValue&gt;
-      &lt;maxApertureValue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;3.61&lt;/maxApertureValue&gt;
-      &lt;meteringMode toolname="Exiftool" toolversion="7.74"&gt;Pattern&lt;/meteringMode&gt;
-      &lt;lightSource toolname="Exiftool" toolversion="7.74"&gt;unknown&lt;/lightSource&gt;
-      &lt;flash toolname="Exiftool" toolversion="7.74"&gt;Flash did not fire, compulsory flash mode&lt;/flash&gt;
-      &lt;focalLength toolname="Exiftool" toolversion="7.74"&gt;18.0&lt;/focalLength&gt;
-      &lt;brightnessvalue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;3737910&lt;/brightnessvalue&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
+        <source exitCode="0" source="exiv2">
+            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg
+File size       : 157041 Bytes
+MIME type       : image/jpeg
+Image size      : 1846 x 2677
+Camera make     : SONY 
+Camera model    : DSLR-A200
+Image timestamp : 2010:03:07 21:07:11
+Image number    : 
+Exposure time   : 1/30 s
+Aperture        : F8.8e+07
+Exposure bias   : 0 EV
+Flash           : No, compulsory
+Flash bias      : 
+Focal length    : 18.0 mm (35 mm equivalent: 27.0 mm)
+Subject distance: 
+ISO speed       : 400
+Exposure mode   : Auto
+Metering mode   : Multi-segment
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 1846 x 2677
+White balance   : Auto
+Thumbnail       : image/jpeg, 1636 Bytes
+Copyright       : 
+Exif comment    :                                                         
 
+</stdout>
+            <stderr>Error: Directory Sony1 with 5632 entries considered invalid; not read.
+</stderr>
+        </source>
+        <source exitCode="0" source="exiftool">
+            <stdout>ExifTool Version Number         : 8.15
+File Name                       : 11.jpg
+Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 153 kB
+File Modification Date/Time     : 2013:02:15 17:56:11+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : SONY DSC
+Make                            : SONY
+Camera Model Name               : DSLR-A200
+Orientation                     : Horizontal (normal)
+X Resolution                    : 72
+Y Resolution                    : 72
+Resolution Unit                 : inches
+Software                        : Microsoft Windows Photo Gallery 6.0.6001.18000
+Modify Date                     : 2010:03:07 20:16:11
+Y Cb Cr Positioning             : Co-sited
+Exposure Time                   : 1/30
+F Number                        : 87616466.3
+Exposure Program                : Program AE
+ISO                             : 400
+Exif Version                    : 0221
+Date/Time Original              : 2010:03:07 21:07:11
+Create Date                     : 2010:03:07 21:07:11
+Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 8
+Brightness Value                : 1.75
+Exposure Compensation           : 0
+Max Aperture Value              : 3.5
+Light Source                    : Unknown
+Flash                           : Off, Did not fire
+Focal Length                    : 18.0 mm
+Warning                         : [minor] Possibly incorrect maker notes offsets (fix by 3958?)
+Flash Exposure Compensation     : -0.5578225782
+Teleconverter                   : None
+White Balance Fine Tune         : 0
+Focus Mode                      : Unknown (64445)
+AF Area Mode                    : Unknown (63231)
+Local AF Area Point             : Unknown (64494)
+Metering Mode                   : Unknown (64381)
+ISO Setting                     : inf
+Dynamic Range Optimizer Mode    : Unknown (65535)
+Dynamic Range Optimizer Level   : 64374
+Creative Style                  : Unknown (63227)
+Zone Matching Value             : +55217
+Brightness                      : +31629
+Flash Mode                      : Unknown (65270)
+Rotation                        : Unknown (49151)
+Sony Image Size                 : Unknown (49151)
+Aspect Ratio                    : Unknown (28655)
+Quality                         : Unknown (64459)
+Exposure Level Increments       : Unknown (60156)
+White Balance                   : Auto
+Preview Image                   : (Binary data 467747 bytes, use -b option to extract)
+Color Temperature               : Auto
+Color Compensation Filter       : 0
+Scene Mode                      : Auto
+Zone Matching                   : ISO Setting Used
+Dynamic Range Optimizer         : Advanced Auto
+Image Stabilization             : On
+Lens Type                       : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or 18-200m F3.5-6.3
+Color Mode                      : Standard
+User Comment                    : 
+Flashpix Version                : 0100
+Exif Image Width                : 1846
+Exif Image Height               : 2677
+Interoperability Version        : 0100
+File Source                     : Digital Camera
+Scene Type                      : Directly photographed
+Custom Rendered                 : Normal
+Exposure Mode                   : Auto
+Focal Length In 35mm Format     : 27 mm
+Scene Capture Type              : Standard
+Contrast                        : Normal
+Saturation                      : Normal
+Sharpness                       : Normal
+Image Unique ID                 : 347AA785BFCA46758249245D37EAD703
+Offset Schema                   : 3958
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+Compression                     : JPEG (old-style)
+Thumbnail Offset                : 34912
+Thumbnail Length                : 1636
+Image Width                     : 1846
+Image Height                    : 2677
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Aperture                        : 87616466.3
+Image Size                      : 1846x2677
+Lens ID                         : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or Sony AF DT 18-200mm F3.5-6.3
+Scale Factor To 35 mm Equivalent: 1.5
+Shutter Speed                   : 1/30
+Thumbnail Image                 : (Binary data 1636 bytes, use -b option to extract)
+Circle Of Confusion             : 0.020 mm
+Field Of View                   : 67.4 deg
+Focal Length                    : 18.0 mm (35 mm equivalent: 27.0 mm)
+Hyperfocal Distance             : 0.00 m
+Light Value                     : 55.7
 </stdout>
             <stderr></stderr>
         </source>
@@ -2186,17 +2254,86 @@
   Tainted: False
   Filesize: 157KB
   Number pixels: 4.942MB
-  Pixels per second: 49.42MB
+  Pixels per second: 44.92MB
   User time: 0.100u
-  Elapsed time: 0:01.099
+  Elapsed time: 0:01.109
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
 </stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="fits">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="18.2.13 9:24"&gt;
+  &lt;identification&gt;
+    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;version toolname="file utility" toolversion="5.04"&gt;1.01&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;157041&lt;/size&gt;
+    &lt;creatingApplicationName toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;DSLR-A200&lt;/creatingApplicationName&gt;
+    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;Microsoft Windows Photo Gallery 6.0.6001.18000&lt;/creatingApplicationName&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2010:03:07 21:07:11&lt;/created&gt;
+    &lt;created toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;2010:03:07 20:16:11&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;b2e5f4593bbae30280184568b8b0455a&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;1846&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;2677&lt;/imageHeight&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
+      &lt;YCbCrPositioning toolname="Exiftool" toolversion="7.74"&gt;2&lt;/YCbCrPositioning&gt;
+      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;72&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;72&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;captureDevice toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;digital still camera&lt;/captureDevice&gt;
+      &lt;digitalCameraManufacturer toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;SONY&lt;/digitalCameraManufacturer&gt;
+      &lt;digitalCameraModelName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;DSLR-A200&lt;/digitalCameraModelName&gt;
+      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Microsoft Windows Photo Gallery 6.0.6001.18000&lt;/scanningSoftwareName&gt;
+      &lt;fNumber toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;87616466.3&lt;/fNumber&gt;
+      &lt;fNumber toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;8.76164663E7&lt;/fNumber&gt;
+      &lt;exposureTime toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;1/30&lt;/exposureTime&gt;
+      &lt;exposureTime toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;0.03333333333333333&lt;/exposureTime&gt;
+      &lt;exposureProgram toolname="Exiftool" toolversion="7.74"&gt;Normal program&lt;/exposureProgram&gt;
+      &lt;isoSpeedRating toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;400&lt;/isoSpeedRating&gt;
+      &lt;exifVersion toolname="Exiftool" toolversion="7.74"&gt;0221&lt;/exifVersion&gt;
+      &lt;brightnessValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;1.75&lt;/brightnessValue&gt;
+      &lt;exposureBiasValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;0&lt;/exposureBiasValue&gt;
+      &lt;maxApertureValue toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;3.5&lt;/maxApertureValue&gt;
+      &lt;maxApertureValue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;3.61&lt;/maxApertureValue&gt;
+      &lt;meteringMode toolname="Exiftool" toolversion="7.74"&gt;Pattern&lt;/meteringMode&gt;
+      &lt;lightSource toolname="Exiftool" toolversion="7.74"&gt;unknown&lt;/lightSource&gt;
+      &lt;flash toolname="Exiftool" toolversion="7.74"&gt;Flash did not fire, compulsory flash mode&lt;/flash&gt;
+      &lt;focalLength toolname="Exiftool" toolversion="7.74"&gt;18.0&lt;/focalLength&gt;
+      &lt;brightnessvalue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;3737910&lt;/brightnessvalue&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="core">
+            <stdout></stdout>
             <stderr></stderr>
         </source>
         <source exitCode="0" source="jhove">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-17T23:04:57+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-18T09:24:09+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
@@ -32215,143 +32352,6 @@
   &lt;/properties&gt;
  &lt;/repInfo&gt;
 &lt;/jhove&gt;
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="exiv2">
-            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/11.jpg
-File size       : 157041 Bytes
-MIME type       : image/jpeg
-Image size      : 1846 x 2677
-Camera make     : SONY 
-Camera model    : DSLR-A200
-Image timestamp : 2010:03:07 21:07:11
-Image number    : 
-Exposure time   : 1/30 s
-Aperture        : F8.8e+07
-Exposure bias   : 0 EV
-Flash           : No, compulsory
-Flash bias      : 
-Focal length    : 18.0 mm (35 mm equivalent: 27.0 mm)
-Subject distance: 
-ISO speed       : 400
-Exposure mode   : Auto
-Metering mode   : Multi-segment
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 1846 x 2677
-White balance   : Auto
-Thumbnail       : image/jpeg, 1636 Bytes
-Copyright       : 
-Exif comment    :                                                         
-
-</stdout>
-            <stderr>Error: Directory Sony1 with 5632 entries considered invalid; not read.
-</stderr>
-        </source>
-        <source exitCode="0" source="exiftool">
-            <stdout>ExifTool Version Number         : 8.15
-File Name                       : 11.jpg
-Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
-File Size                       : 153 kB
-File Modification Date/Time     : 2013:02:15 17:56:11+01:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-JFIF Version                    : 1.01
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Image Description               : SONY DSC
-Make                            : SONY
-Camera Model Name               : DSLR-A200
-Orientation                     : Horizontal (normal)
-X Resolution                    : 72
-Y Resolution                    : 72
-Resolution Unit                 : inches
-Software                        : Microsoft Windows Photo Gallery 6.0.6001.18000
-Modify Date                     : 2010:03:07 20:16:11
-Y Cb Cr Positioning             : Co-sited
-Exposure Time                   : 1/30
-F Number                        : 87616466.3
-Exposure Program                : Program AE
-ISO                             : 400
-Exif Version                    : 0221
-Date/Time Original              : 2010:03:07 21:07:11
-Create Date                     : 2010:03:07 21:07:11
-Components Configuration        : Y, Cb, Cr, -
-Compressed Bits Per Pixel       : 8
-Brightness Value                : 1.75
-Exposure Compensation           : 0
-Max Aperture Value              : 3.5
-Light Source                    : Unknown
-Flash                           : Off, Did not fire
-Focal Length                    : 18.0 mm
-Warning                         : [minor] Possibly incorrect maker notes offsets (fix by 3958?)
-Flash Exposure Compensation     : -0.5578225782
-Teleconverter                   : None
-White Balance Fine Tune         : 0
-Focus Mode                      : Unknown (64445)
-AF Area Mode                    : Unknown (63231)
-Local AF Area Point             : Unknown (64494)
-Metering Mode                   : Unknown (64381)
-ISO Setting                     : inf
-Dynamic Range Optimizer Mode    : Unknown (65535)
-Dynamic Range Optimizer Level   : 64374
-Creative Style                  : Unknown (63227)
-Zone Matching Value             : +55217
-Brightness                      : +31629
-Flash Mode                      : Unknown (65270)
-Rotation                        : Unknown (49151)
-Sony Image Size                 : Unknown (49151)
-Aspect Ratio                    : Unknown (28655)
-Quality                         : Unknown (64459)
-Exposure Level Increments       : Unknown (60156)
-White Balance                   : Auto
-Preview Image                   : (Binary data 467747 bytes, use -b option to extract)
-Color Temperature               : Auto
-Color Compensation Filter       : 0
-Scene Mode                      : Auto
-Zone Matching                   : ISO Setting Used
-Dynamic Range Optimizer         : Advanced Auto
-Image Stabilization             : On
-Lens Type                       : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or 18-200m F3.5-6.3
-Color Mode                      : Standard
-User Comment                    : 
-Flashpix Version                : 0100
-Exif Image Width                : 1846
-Exif Image Height               : 2677
-Interoperability Version        : 0100
-File Source                     : Digital Camera
-Scene Type                      : Directly photographed
-Custom Rendered                 : Normal
-Exposure Mode                   : Auto
-Focal Length In 35mm Format     : 27 mm
-Scene Capture Type              : Standard
-Contrast                        : Normal
-Saturation                      : Normal
-Sharpness                       : Normal
-Image Unique ID                 : 347AA785BFCA46758249245D37EAD703
-Offset Schema                   : 3958
-Padding                         : (Binary data 2060 bytes, use -b option to extract)
-Compression                     : JPEG (old-style)
-Thumbnail Offset                : 34912
-Thumbnail Length                : 1636
-Image Width                     : 1846
-Image Height                    : 2677
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
-Aperture                        : 87616466.3
-Image Size                      : 1846x2677
-Lens ID                         : Minolta/Sony AF DT 18-70mm F3.5-5.6 (D) or Sony AF DT 18-200mm F3.5-6.3
-Scale Factor To 35 mm Equivalent: 1.5
-Shutter Speed                   : 1/30
-Thumbnail Image                 : (Binary data 1636 bytes, use -b option to extract)
-Circle Of Confusion             : 0.020 mm
-Field Of View                   : 67.4 deg
-Focal Length                    : 18.0 mm (35 mm equivalent: 27.0 mm)
-Hyperfocal Distance             : 0.00 m
-Light Value                     : 55.7
 </stdout>
             <stderr></stderr>
         </source>
