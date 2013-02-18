@@ -14,7 +14,7 @@ http://www.stahuj.centrum.cz/utility_a_ostatni/ostatni/exiftool/
    root@treebeard:~# aptitude install libimage-exiftool-perl 
 
 
-set in file =differ-common/common.properties=
+set in file ``differ-common/common.properties``
 a path to exiftool binary.
 
 It depends on operating system.
@@ -38,7 +38,7 @@ Exiv2
    root@treebeard:~# aptitude install exiv2 
    
 
-set in file =differ-common/common.properties=
+set in file ``differ-common/common.properties``
 a path to exiv2 binary.
 
 It depends on operating system.
@@ -61,7 +61,7 @@ JHOVE
    root@treebeard:~# aptitude install jhove
 
 
-set in file =differ-common/common.properties=
+set in file ``differ-common/common.properties``
 a path to jhove binary.
 
 It depends on operating system.
@@ -85,7 +85,7 @@ Imagemagick
    root@treebeard:~# aptitude install imagemagick
 
 
-set in file =differ-common/common.properties=
+set in file ``differ-common/common.properties``
 a path to imagemagick binary.
 
 It depends on operating system.
@@ -108,7 +108,7 @@ FITS
    stavel@treebeard:~/lib$ chmod 755 fits-0.6.1/fits.sh 
 
 
-set in file =differ-common/common.properties=
+set in file ``differ-common/common.properties``
 a path to fits binary.
 
 It depends on operating system.
