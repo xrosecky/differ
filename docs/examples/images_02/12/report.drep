@@ -447,9 +447,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Color Space</key>
+            <key>Color space</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">sRGB</value>
-            <conflict>false</conflict>
+            <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -1679,14 +1679,14 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Num of pixels</key>
+            <key>Number of pixels</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.92MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">38.4MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1698,7 +1698,7 @@
         </metadata>
         <metadata>
             <key>Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.050</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.060</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1742,10 +1742,44 @@
             <stdout></stdout>
             <stderr></stderr>
         </source>
+        <source exitCode="0" source="exiv2">
+            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg
+File size       : 383559 Bytes
+MIME type       : image/jpeg
+Image size      : 1200 x 1600
+Camera make     : NIKON
+Camera model    : 
+Image timestamp : 0000:00:00 00:00:00
+Image number    : 
+Exposure time   : 1/60 s
+Aperture        : F2.6
+Exposure bias   : 0 EV
+Flash           : Yes, auto
+Flash bias      : 
+Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Subject distance: 
+ISO speed       : 100
+Exposure mode   : Auto
+Metering mode   : Multi-segment
+Macro mode      : 
+Image quality   : NORMAL
+Exif Resolution : 1600 x 1200
+White balance   : AUTO        
+Thumbnail       : None
+Copyright       : 
+Exif comment    :                                                                                                                      
+
+</stdout>
+            <stderr>Error: Directory Image, entry 0x0110 has invalid size 825637217*1; skipping entry.
+Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
+XMP Toolkit error 203: Mismatched top level rdf:about values
+Warning: Failed to decode XMP metadata.
+</stderr>
+        </source>
         <source exitCode="0" source="jhove">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-17T22:04:42+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-18T09:24:27+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
@@ -3319,6 +3353,173 @@
 </stdout>
             <stderr></stderr>
         </source>
+        <source exitCode="0" source="exiftool">
+            <stdout>ExifTool Version Number         : 8.15
+File Name                       : 12.jpg
+Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 375 kB
+File Modification Date/Time     : 2013:02:15 17:56:11+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Image Description               : 
+Make                            : NIKON
+Warning                         : Bad IFD0 offset for Model
+Orientation                     : Horizontal (normal)
+Software                        : E2100v1.1
+Modify Date                     : 0000:00:00 00:00:00
+Y Cb Cr Positioning             : Co-sited
+Exposure Time                   : 1/60
+F Number                        : 2.6
+Exposure Program                : Program AE
+ISO                             : 100
+Exif Version                    : 0220
+Date/Time Original              : 0000:00:00 00:00:00
+Create Date                     : 0000:00:00 00:00:00
+Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 2
+Exposure Compensation           : 0
+Max Aperture Value              : 2.8
+Metering Mode                   : Multi-segment
+Light Source                    : Unknown
+Flash                           : Auto, Fired
+Focal Length                    : 4.7 mm
+Maker Note Version              : 2.00
+Color Mode                      : Color
+Quality                         : Normal
+White Balance                   : Auto
+Focus Mode                      : AF-S
+Flash Setting                   : Normal
+ISO Selection                   : Auto
+Data Dump                       : (Binary data 494 bytes, use -b option to extract)
+Compression                     : JPEG (old-style)
+X Resolution                    : 300
+Y Resolution                    : 300
+Resolution Unit                 : inches
+Preview Image Start             : 18193
+Preview Image Length            : 16411
+Image Adjustment                : Auto
+Auxiliary Lens                  : Off
+Manual Focus Distance           : undef
+Digital Zoom                    : 1
+AF Area Mode                    : Single Area
+AF Point                        : Center
+AF Points In Focus              : (none)
+Scene Mode                      : 
+Noise Reduction                 : Off
+Scene Assist                    : 
+Retouch History                 : Unknown ()
+User Comment                    : 
+Flashpix Version                : 0100
+Color Space                     : sRGB
+Exif Image Width                : 1600
+Exif Image Height               : 1200
+File Source                     : Digital Camera
+Scene Type                      : Directly photographed
+Custom Rendered                 : Normal
+Exposure Mode                   : Auto
+Digital Zoom Ratio              : 0
+Focal Length In 35mm Format     : 36 mm
+Scene Capture Type              : Standard
+Gain Control                    : None
+Contrast                        : Normal
+Saturation                      : Normal
+Sharpness                       : Normal
+Subject Distance Range          : Unknown
+Offset Schema                   : 4168
+Padding                         : (Binary data 2060 bytes, use -b option to extract)
+Program Mode                    : 2
+Flash Fired                     : True
+Flash Return                    : No return detection
+Flash Mode                      : Auto
+Flash Function                  : False
+Flash Red Eye Mode              : False
+ISO Speed                       : 100
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Model                           : E2100
+Creatortool                     : E2100v1.1
+Image Width                     : 1200
+Image Height                    : 1600
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Aperture                        : 2.6
+Image Size                      : 1200x1600
+Preview Image                   : (Binary data 16411 bytes, use -b option to extract)
+Scale Factor To 35 mm Equivalent: 7.7
+Shutter Speed                   : 1/60
+Circle Of Confusion             : 0.004 mm
+Field Of View                   : 53.1 deg
+Focal Length                    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Hyperfocal Distance             : 2.17 m
+Light Value                     : 8.7
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="fits">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="18.2.13 9:24"&gt;
+  &lt;identification&gt;
+    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;version toolname="file utility" toolversion="5.04"&gt;1.01&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;383559&lt;/size&gt;
+    &lt;creatingApplicationName toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;E2100&lt;/creatingApplicationName&gt;
+    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;E2100v1.1&lt;/creatingApplicationName&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74"&gt;0000:00:00 00:00:00&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;f30d95b7f39a05585ae31da8498ce3c0&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;1200&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1600&lt;/imageHeight&gt;
+      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
+      &lt;YCbCrPositioning toolname="Exiftool" toolversion="7.74"&gt;2&lt;/YCbCrPositioning&gt;
+      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;captureDevice toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;digital still camera&lt;/captureDevice&gt;
+      &lt;digitalCameraManufacturer toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;NIKON&lt;/digitalCameraManufacturer&gt;
+      &lt;digitalCameraModelName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100&lt;/digitalCameraModelName&gt;
+      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100v1.1&lt;/scanningSoftwareName&gt;
+      &lt;fNumber toolname="Exiftool" toolversion="7.74"&gt;2.6&lt;/fNumber&gt;
+      &lt;exposureTime toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;1/60&lt;/exposureTime&gt;
+      &lt;exposureTime toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;0.016638935108153077&lt;/exposureTime&gt;
+      &lt;exposureProgram toolname="Exiftool" toolversion="7.74"&gt;Normal program&lt;/exposureProgram&gt;
+      &lt;isoSpeedRating toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;100&lt;/isoSpeedRating&gt;
+      &lt;exifVersion toolname="Exiftool" toolversion="7.74"&gt;0220&lt;/exifVersion&gt;
+      &lt;exposureBiasValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;0&lt;/exposureBiasValue&gt;
+      &lt;maxApertureValue toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2.8&lt;/maxApertureValue&gt;
+      &lt;maxApertureValue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;3.0&lt;/maxApertureValue&gt;
+      &lt;meteringMode toolname="Exiftool" toolversion="7.74"&gt;Pattern&lt;/meteringMode&gt;
+      &lt;lightSource toolname="Exiftool" toolversion="7.74"&gt;unknown&lt;/lightSource&gt;
+      &lt;flash toolname="Exiftool" toolversion="7.74"&gt;Flash fired, auto mode&lt;/flash&gt;
+      &lt;focalLength toolname="Exiftool" toolversion="7.74"&gt;4.7&lt;/focalLength&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
+</stdout>
+            <stderr></stderr>
+        </source>
         <source exitCode="0" source="imagemagick">
             <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg
   Format: JPEG (Joint Photographic Experts Group JFIF format)
@@ -3441,216 +3642,15 @@
   Tainted: False
   Filesize: 384KB
   Number pixels: 1.92MB
-  Pixels per second: 38.4MB
+  Pixels per second: 32MB
   User time: 0.050u
-  Elapsed time: 0:01.050
+  Elapsed time: 0:01.060
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="exiv2">
-            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg
-File size       : 383559 Bytes
-MIME type       : image/jpeg
-Image size      : 1200 x 1600
-Camera make     : NIKON
-Camera model    : 
-Image timestamp : 0000:00:00 00:00:00
-Image number    : 
-Exposure time   : 1/60 s
-Aperture        : F2.6
-Exposure bias   : 0 EV
-Flash           : Yes, auto
-Flash bias      : 
-Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
-Subject distance: 
-ISO speed       : 100
-Exposure mode   : Auto
-Metering mode   : Multi-segment
-Macro mode      : 
-Image quality   : NORMAL
-Exif Resolution : 1600 x 1200
-White balance   : AUTO        
-Thumbnail       : None
-Copyright       : 
-Exif comment    :                                                                                                                      
-
-</stdout>
-            <stderr>Error: Directory Image, entry 0x0110 has invalid size 825637217*1; skipping entry.
-Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
-XMP Toolkit error 203: Mismatched top level rdf:about values
-Warning: Failed to decode XMP metadata.
-</stderr>
-        </source>
-        <source exitCode="0" source="exiftool">
-            <stdout>ExifTool Version Number         : 8.15
-File Name                       : 12.jpg
-Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
-File Size                       : 375 kB
-File Modification Date/Time     : 2013:02:15 17:56:11+01:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-JFIF Version                    : 1.01
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Image Description               : 
-Make                            : NIKON
-Warning                         : Bad IFD0 offset for Model
-Orientation                     : Horizontal (normal)
-Software                        : E2100v1.1
-Modify Date                     : 0000:00:00 00:00:00
-Y Cb Cr Positioning             : Co-sited
-Exposure Time                   : 1/60
-F Number                        : 2.6
-Exposure Program                : Program AE
-ISO                             : 100
-Exif Version                    : 0220
-Date/Time Original              : 0000:00:00 00:00:00
-Create Date                     : 0000:00:00 00:00:00
-Components Configuration        : Y, Cb, Cr, -
-Compressed Bits Per Pixel       : 2
-Exposure Compensation           : 0
-Max Aperture Value              : 2.8
-Metering Mode                   : Multi-segment
-Light Source                    : Unknown
-Flash                           : Auto, Fired
-Focal Length                    : 4.7 mm
-Maker Note Version              : 2.00
-Color Mode                      : Color
-Quality                         : Normal
-White Balance                   : Auto
-Focus Mode                      : AF-S
-Flash Setting                   : Normal
-ISO Selection                   : Auto
-Data Dump                       : (Binary data 494 bytes, use -b option to extract)
-Compression                     : JPEG (old-style)
-X Resolution                    : 300
-Y Resolution                    : 300
-Resolution Unit                 : inches
-Preview Image Start             : 18193
-Preview Image Length            : 16411
-Image Adjustment                : Auto
-Auxiliary Lens                  : Off
-Manual Focus Distance           : undef
-Digital Zoom                    : 1
-AF Area Mode                    : Single Area
-AF Point                        : Center
-AF Points In Focus              : (none)
-Scene Mode                      : 
-Noise Reduction                 : Off
-Scene Assist                    : 
-Retouch History                 : Unknown ()
-User Comment                    : 
-Flashpix Version                : 0100
-Color Space                     : sRGB
-Exif Image Width                : 1600
-Exif Image Height               : 1200
-File Source                     : Digital Camera
-Scene Type                      : Directly photographed
-Custom Rendered                 : Normal
-Exposure Mode                   : Auto
-Digital Zoom Ratio              : 0
-Focal Length In 35mm Format     : 36 mm
-Scene Capture Type              : Standard
-Gain Control                    : None
-Contrast                        : Normal
-Saturation                      : Normal
-Sharpness                       : Normal
-Subject Distance Range          : Unknown
-Offset Schema                   : 4168
-Padding                         : (Binary data 2060 bytes, use -b option to extract)
-Program Mode                    : 2
-Flash Fired                     : True
-Flash Return                    : No return detection
-Flash Mode                      : Auto
-Flash Function                  : False
-Flash Red Eye Mode              : False
-ISO Speed                       : 100
-About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
-Model                           : E2100
-Creatortool                     : E2100v1.1
-Image Width                     : 1200
-Image Height                    : 1600
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 3
-Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
-Aperture                        : 2.6
-Image Size                      : 1200x1600
-Preview Image                   : (Binary data 16411 bytes, use -b option to extract)
-Scale Factor To 35 mm Equivalent: 7.7
-Shutter Speed                   : 1/60
-Circle Of Confusion             : 0.004 mm
-Field Of View                   : 53.1 deg
-Focal Length                    : 4.7 mm (35 mm equivalent: 36.0 mm)
-Hyperfocal Distance             : 2.17 m
-Light Value                     : 8.7
 </stdout>
             <stderr></stderr>
         </source>
         <source exitCode="0" source="core">
             <stdout></stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="fits">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="17.2.13 22:04"&gt;
-  &lt;identification&gt;
-    &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;version toolname="file utility" toolversion="5.04"&gt;1.01&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/43&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;383559&lt;/size&gt;
-    &lt;creatingApplicationName toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;E2100&lt;/creatingApplicationName&gt;
-    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;E2100v1.1&lt;/creatingApplicationName&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
-    &lt;created toolname="Exiftool" toolversion="7.74"&gt;0000:00:00 00:00:00&lt;/created&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/12.jpg&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;f30d95b7f39a05585ae31da8498ce3c0&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus /&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;JPEG (old-style)&lt;/compressionScheme&gt;
-      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;1200&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;1600&lt;/imageHeight&gt;
-      &lt;YCbCrSubSampling toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2 2&lt;/YCbCrSubSampling&gt;
-      &lt;YCbCrPositioning toolname="Exiftool" toolversion="7.74"&gt;2&lt;/YCbCrPositioning&gt;
-      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
-      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/xSamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;300&lt;/ySamplingFrequency&gt;
-      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8 8 8&lt;/bitsPerSample&gt;
-      &lt;captureDevice toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;digital still camera&lt;/captureDevice&gt;
-      &lt;digitalCameraManufacturer toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;NIKON&lt;/digitalCameraManufacturer&gt;
-      &lt;digitalCameraModelName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100&lt;/digitalCameraModelName&gt;
-      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;E2100v1.1&lt;/scanningSoftwareName&gt;
-      &lt;fNumber toolname="Exiftool" toolversion="7.74"&gt;2.6&lt;/fNumber&gt;
-      &lt;exposureTime toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;1/60&lt;/exposureTime&gt;
-      &lt;exposureTime toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;0.016638935108153077&lt;/exposureTime&gt;
-      &lt;exposureProgram toolname="Exiftool" toolversion="7.74"&gt;Normal program&lt;/exposureProgram&gt;
-      &lt;isoSpeedRating toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;100&lt;/isoSpeedRating&gt;
-      &lt;exifVersion toolname="Exiftool" toolversion="7.74"&gt;0220&lt;/exifVersion&gt;
-      &lt;exposureBiasValue toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;0&lt;/exposureBiasValue&gt;
-      &lt;maxApertureValue toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2.8&lt;/maxApertureValue&gt;
-      &lt;maxApertureValue toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;3.0&lt;/maxApertureValue&gt;
-      &lt;meteringMode toolname="Exiftool" toolversion="7.74"&gt;Pattern&lt;/meteringMode&gt;
-      &lt;lightSource toolname="Exiftool" toolversion="7.74"&gt;unknown&lt;/lightSource&gt;
-      &lt;flash toolname="Exiftool" toolversion="7.74"&gt;Flash fired, auto mode&lt;/flash&gt;
-      &lt;focalLength toolname="Exiftool" toolversion="7.74"&gt;4.7&lt;/focalLength&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
-
-</stdout>
             <stderr></stderr>
         </source>
     </sources-list>

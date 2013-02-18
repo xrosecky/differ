@@ -94,24 +94,34 @@ Characterization
                                       imagemagick  3509                                                                  px
                                       jhove                                                                              px
    Interlace                          imagemagick  None                                                                  
-   Num of pixels                      imagemagick  8.948MB                                                               
    Number of channels                 exiftool     3                                                                     
                                       jhove                                                                              
+   Number of pixels                   imagemagick  8.948MB                                                               
    Orientation                        exiftool     Horizontal (normal)                                                   
                                       imagemagick  TopLeft                                                               
                                       imagemagick  1                                                                     
-   Pixels per second                  imagemagick  21.82MB                                                               
+   Overall kurtosis                   imagemagick  -0.257005                                                             
+   Overall max                        imagemagick  255 (1)                                                               
+   Overall mean                       imagemagick  67.6556 (0.265316)                                                    
+   Overall min                        imagemagick  0 (0)                                                                 
+   Overall standard deviation         imagemagick  76.4345 (0.299743)                                                    
+   Page geometry                      imagemagick  3509x2550+0+0                                                         
+   Pixels per second                  imagemagick  23.55MB                                                               
    Resolution horizontal              daitss       300                                                                   PPI
                                       exiftool     300                                                                   PPI
                                       imagemagick  300/1                                                                 PPI
                                       imagemagick  300                                                                   PPI
                                       jhove                                                                              PPI
+   Resolution unit                    exiftool     inches                                                                
    Resolution vertical                daitss       300                                                                   PPI
                                       exiftool     300                                                                   PPI
                                       imagemagick  300/1                                                                 PPI
                                       imagemagick  300                                                                   PPI
                                       jhove                                                                              PPI
    Samples per pixel                  daitss       3                                                                     
+   Thumbnail                          exiv2        None                                                                  
+   Transparent color                  imagemagick  black                                                                 
+   Units                              imagemagick  PixelsPerInch                                                         
    Universal unique identifier (UUID) jhove                                                                              
    ---------------------------------- -----------  --------------------------------------------------------------------  ----
 
@@ -135,7 +145,7 @@ Other properties
    Compose                               imagemagick  Over                                                           
    Directory                             exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_01  
    Dispose                               imagemagick  Undefined                                                      
-   Elapsed time                          imagemagick  0:01.409                                                       
+   Elapsed time                          imagemagick  0:01.380                                                       
    Encoding process                      exiftool     Baseline DCT, Huffman coding                                   
    Endianess                             imagemagick  Undefined                                                      
    Exif Byte Order                       exiftool     Big-endian (Motorola, MM)                                      
@@ -169,13 +179,7 @@ Other properties
    Number of decomposition levels        jhove                                                                       
    Number of quality layers              jhove                                                                       
    Number of tiles                       jhove        0                                                              
-   Overall kurtosis                      imagemagick  -0.257005                                                      
-   Overall max                           imagemagick  255 (1)                                                        
-   Overall mean                          imagemagick  67.6556 (0.265316)                                             
-   Overall min                           imagemagick  0 (0)                                                          
    Overall skewness                      imagemagick  1.04236                                                        
-   Overall standard deviation            imagemagick  76.4345 (0.299743)                                             
-   Page geometry                         imagemagick  3509x2550+0+0                                                  
    Print size                            imagemagick  11.6967x8.5                                                    
    Progression order                     jhove                                                                       
    Quantization style                    jhove                                                                       
@@ -186,15 +190,11 @@ Other properties
    Red skewness                          imagemagick  0.47094                                                        
    Red standard deviation                imagemagick  81.3481 (0.319012)                                             
    Rendering intent                      imagemagick  Undefined                                                      
-   Resolution unit                       exiftool     inches                                                         
    Tainted                               imagemagick  False                                                          
-   Thumbnail                             exiv2        None                                                           
    Tile size X                           jhove                                                                       PPI
    Tile size Y                           jhove                                                                       PPI
    Transformation                        jhove                                                                       
-   Transparent color                     imagemagick  black                                                          
-   Units                                 imagemagick  PixelsPerInch                                                  
-   User time                             imagemagick  0.400u                                                         
+   User time                             imagemagick  0.380u                                                         
    Verbose                               imagemagick  true                                                           
    ------------------------------------- -----------  -------------------------------------------------------------  ----
 

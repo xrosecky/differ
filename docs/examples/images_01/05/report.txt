@@ -32,57 +32,76 @@ Validation
 Characterization
 ================
 
-   Significant Property   Source       Value                                                                 Unit
-   ---------------------- -----------  --------------------------------------------------------------------  ----
-   Color depth            imagemagick  8                                                                     
-   Color space            exiftool     : RGB                                                                 
-                          imagemagick  RGB                                                                   
-   Color type             imagemagick  TrueColor                                                             
-   Compression scheme     exiftool     Deflate/Inflate                                                       
-                          fits         Deflate/Inflate                                                       
-                          imagemagick  Zip                                                                   
-   Depth of blue channel  imagemagick  8                                                                     
-   Depth of green channel imagemagick  8                                                                     
-   Depth of red channel   imagemagick  8                                                                     
-   File created           imagemagick  2013-02-15 17:56:10+01:00                                             
-   File last modified     exiftool     2013:02:15 17:56:10+01:00                                             
-                          fits         2013:02:15 17:56:10+01:00                                             
-                          imagemagick  2013-02-15 17:56:10+01:00                                             
-                          jhove        2013-02-15T17:56:10+01:00                                             
-   File name              core         05.png                                                                
-                          daitss       05.png                                                                
-                          daitss       05.png                                                                
-                          exiftool     05.png                                                                
-                          fits         05.png                                                                
-                          imagemagick  05.png                                                                
-   File path              core         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png  
-                          fits         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png  
-                          jhove        /home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png  
-   File size              daitss       11977006                                                              
-                          exiftool     11 MB                                                                 
-                          fits         11977006                                                              
-                          imagemagick  11.98MB                                                               
-                          jhove        11977006                                                              
-   ICC profile            exiftool     IEC 61966-2.1 Default RGB colour space - sRGB                         
-                          fits         sRGB IEC61966-2.1                                                     
-   Image height           core         2520                                                                  
-                          exiftool     2520                                                                  px
-                          exiftool     2520                                                                  px
-                          fits         2520                                                                  px
-                          imagemagick  2520                                                                  px
-   Image width            core         3776                                                                  
-                          exiftool     3776                                                                  px
-                          exiftool     3776                                                                  px
-                          fits         3776                                                                  px
-                          imagemagick  3776                                                                  px
-   Interlace              exiftool     Noninterlaced                                                         
-                          imagemagick  None                                                                  
-   Num of pixels          imagemagick  9.516MB                                                               
-   Orientation            imagemagick  Undefined                                                             
-   Pixels per second      imagemagick  16.99MB                                                               
-   Resolution horizontal  imagemagick  87                                                                    PPI
-   Resolution vertical    imagemagick  70                                                                    PPI
-   ---------------------- -----------  --------------------------------------------------------------------  ----
+   Significant Property       Source       Value                                                                 Unit
+   -------------------------- -----------  --------------------------------------------------------------------  ----
+   Color depth                imagemagick  8                                                                     
+   Color space                imagemagick  RGB                                                                   
+   Color type                 imagemagick  TrueColor                                                             
+   Compression scheme         exiftool     Deflate/Inflate                                                       
+                              fits         Deflate/Inflate                                                       
+                              imagemagick  Zip                                                                   
+   Depth of blue channel      imagemagick  8                                                                     
+   Depth of green channel     imagemagick  8                                                                     
+   Depth of red channel       imagemagick  8                                                                     
+   File created               imagemagick  2013-02-15 17:56:10+01:00                                             
+   File last modified         exiftool     2013:02:15 17:56:10+01:00                                             
+                              fits         2013:02:15 17:56:10+01:00                                             
+                              imagemagick  2013-02-15 17:56:10+01:00                                             
+                              jhove        2013-02-15T17:56:10+01:00                                             
+   File name                  core         05.png                                                                
+                              daitss       05.png                                                                
+                              daitss       05.png                                                                
+                              exiftool     05.png                                                                
+                              fits         05.png                                                                
+                              imagemagick  05.png                                                                
+   File path                  core         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png  
+                              fits         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png  
+                              jhove        /home/stavel/differ/differ-cmdline/../docs/examples/images_01/05.png  
+   File size                  daitss       11977006                                                              
+                              exiftool     11 MB                                                                 
+                              fits         11977006                                                              
+                              imagemagick  11.98MB                                                               
+                              jhove        11977006                                                              
+   ICC profile                exiftool     IEC 61966-2.1 Default RGB colour space - sRGB                         
+                              fits         sRGB IEC61966-2.1                                                     
+   Image height               core         2520                                                                  
+                              exiftool     2520                                                                  px
+                              exiftool     2520                                                                  px
+                              fits         2520                                                                  px
+                              imagemagick  2520                                                                  px
+   Image width                core         3776                                                                  
+                              exiftool     3776                                                                  px
+                              exiftool     3776                                                                  px
+                              fits         3776                                                                  px
+                              imagemagick  3776                                                                  px
+   Interlace                  exiftool     Noninterlaced                                                         
+                              imagemagick  None                                                                  
+   Luminance                  exiftool     76.03647 80 87.12462                                                  
+   Measurement backing        exiftool     0 0 0                                                                 
+   Measurement flare          exiftool     0.999%                                                                
+   Measurement geometry       exiftool     Unknown (0)                                                           
+   Measurement illuminant     exiftool     D65                                                                   
+   Measurement observer       exiftool     CIE 1931                                                              
+   Media black point          exiftool     0 0 0                                                                 
+   Media white point          exiftool     0.95045 1 1.08905                                                     
+   Number of pixels           imagemagick  9.516MB                                                               
+   Orientation                imagemagick  Undefined                                                             
+   Overall kurtosis           imagemagick  -0.893724                                                             
+   Overall max                imagemagick  255 (1)                                                               
+   Overall mean               imagemagick  91.8303 (0.360119)                                                    
+   Overall min                imagemagick  0 (0)                                                                 
+   Overall standard deviation imagemagick  75.7718 (0.297144)                                                    
+   Page geometry              imagemagick  3776x2520+0+0                                                         
+   Pixel units                exiftool     Meters                                                                
+   Pixels per second          imagemagick  17.3MB                                                                
+   Pixels per unit x          exiftool     7087                                                                  
+   Pixels per unit y          exiftool     7087                                                                  
+   Profile file signature     exiftool     acsp                                                                  
+   Resolution horizontal      imagemagick  87                                                                    PPI
+   Resolution vertical        imagemagick  70                                                                    PPI
+   Transparent color          imagemagick  black                                                                 
+   Units                      imagemagick  PixelsPerCentimeter                                                   
+   -------------------------- -----------  --------------------------------------------------------------------  ----
 
 Other properties
 ================
@@ -104,6 +123,7 @@ Other properties
    Border color                  imagemagick  rgb(223,223,223)                                               
    Class                         imagemagick  DirectClass                                                    
    CMM Flags                     exiftool     Not Embedded, Independent                                      
+   Color Space Data              exiftool     RGB                                                            
    Color Type                    exiftool     RGB                                                            
    Compose                       imagemagick  Over                                                           
    Connection Space Illuminant   exiftool     0.9642 1 0.82491                                               
@@ -113,7 +133,7 @@ Other properties
    Device Model                  exiftool     sRGB                                                           
    Directory                     exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_01  
    Dispose                       imagemagick  Undefined                                                      
-   Elapsed time                  imagemagick  0:01.559                                                       
+   Elapsed time                  imagemagick  0:01.549                                                       
    Endianess                     imagemagick  Undefined                                                      
    exit-code                     daitss       OK                                                             
                                  exiftool     ok                                                             
@@ -137,25 +157,8 @@ Other properties
                                  imagemagick  IEC 61966-2.1 Default RGB colour space - sRGB                  
    ICC profile version           fits         2.1.0                                                          
    Iterations                    imagemagick  0                                                              
-   Luminance                     exiftool     76.03647 80 87.12462                                           
    Matte color                   imagemagick  grey74                                                         
-   Measurement Backing           exiftool     0 0 0                                                          
-   Measurement Flare             exiftool     0.999%                                                         
-   Measurement Geometry          exiftool     Unknown (0)                                                    
-   Measurement Illuminant        exiftool     D65                                                            
-   Measurement Observer          exiftool     CIE 1931                                                       
-   Media Black Point             exiftool     0 0 0                                                          
-   Media White Point             exiftool     0.95045 1 1.08905                                              
-   Overall kurtosis              imagemagick  -0.893724                                                      
-   Overall max                   imagemagick  255 (1)                                                        
-   Overall mean                  imagemagick  91.8303 (0.360119)                                             
-   Overall min                   imagemagick  0 (0)                                                          
    Overall skewness              imagemagick  0.329874                                                       
-   Overall standard deviation    imagemagick  75.7718 (0.297144)                                             
-   Page geometry                 imagemagick  3776x2520+0+0                                                  
-   Pixel Units                   exiftool     Meters                                                         
-   Pixels Per Unit X             exiftool     7087                                                           
-   Pixels Per Unit Y             exiftool     7087                                                           
    Primary blue                  imagemagick  (0.15,0.05999)                                                 
    Primary green                 imagemagick  (0.3,0.6)                                                      
    Primary Platform              exiftool     Microsoft Corporation                                          
@@ -168,7 +171,6 @@ Other properties
    Profile Creator               exiftool     HP                                                             
    Profile Date Time             exiftool     1998:02:09 06:49:00                                            
    Profile Description           exiftool     sRGB IEC61966-2.1                                              
-   Profile File Signature        exiftool     acsp                                                           
    Profile ID                    exiftool     0                                                              
    Profile Version               exiftool     2.1.0                                                          
    Red kurtosis                  imagemagick  -0.518951                                                      
@@ -185,9 +187,7 @@ Other properties
    Rendering intent              imagemagick  Undefined                                                      
    Tainted                       imagemagick  False                                                          
    Technology                    exiftool     Cathode Ray Tube Display                                       
-   Transparent color             imagemagick  black                                                          
-   Units                         imagemagick  PixelsPerCentimeter                                            
-   User time                     imagemagick  0.560u                                                         
+   User time                     imagemagick  0.540u                                                         
    Verbose                       imagemagick  true                                                           
    Viewing Cond Desc             exiftool     Reference Viewing Condition in IEC61966-2.1                    
    Viewing Cond Illuminant       exiftool     19.6445 20.3718 16.8089                                        
