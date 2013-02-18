@@ -1,20 +1,29 @@
 package cz.nkp.differ.cmdline;
 
+import org.apache.commons.codec.binary.Base64;
 import org.apache.http.HttpResponse;
+import org.apache.http.auth.AuthState;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.auth.params.AuthPNames;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.params.AuthPolicy;
+import org.apache.http.client.protocol.ClientContext;
 import org.apache.http.entity.FileEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.protocol.BasicHttpContext;
+import org.apache.http.protocol.HttpContext;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
  * User: stavel
  * Date: 30.1.13
  * Time: 6:51
- * To change this template use File | Settings | File Templates.
  */
 public class ReportHTTPSender {
     private String url;
@@ -44,6 +53,10 @@ public class ReportHTTPSender {
         HttpResponse response = null;
         HttpPost httpPost = new HttpPost(this.url);
         HttpClient client = new DefaultHttpClient();
+
+        String basic_auth = new String(Base64.encodeBase64((user + ":" + password).getBytes()));
+        httpPost.addHeader("Authorization", "Basic " + basic_auth);
+
         FileEntity input = new FileEntity(report);
 	    input.setContentType("application/xml");
 		httpPost.setEntity(input);
