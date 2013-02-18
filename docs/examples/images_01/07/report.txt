@@ -40,7 +40,7 @@ Characterization
                                       imagemagick  8                                                                     
                                       jhove                                                                              
    Color space                        daitss       YCbCr                                                                 
-                                      exiftool     : RGB                                                                 
+                                      exiftool     sRGB                                                                  
                                       imagemagick  RGB                                                                   
                                       imagemagick  1                                                                     
                                       imagemagick  2                                                                     
@@ -100,24 +100,44 @@ Characterization
                                       imagemagick  2000                                                                  px
                                       jhove                                                                              px
    Interlace                          imagemagick  None                                                                  
-   Num of pixels                      imagemagick  2.692MB                                                               
+   Luminance                          exiftool     76.03647 80 87.12462                                                  
+   Measurement backing                exiftool     0 0 0                                                                 
+   Measurement flare                  exiftool     0.999%                                                                
+   Measurement geometry               exiftool     Unknown (0)                                                           
+   Measurement illuminant             exiftool     D65                                                                   
+   Measurement observer               exiftool     CIE 1931                                                              
+   Media black point                  exiftool     0 0 0                                                                 
+   Media white point                  exiftool     0.95045 1 1.08905                                                     
    Number of channels                 exiftool     3                                                                     
                                       jhove                                                                              
+   Number of pixels                   imagemagick  2.692MB                                                               
    Orientation                        exiftool     Horizontal (normal)                                                   
                                       imagemagick  TopLeft                                                               
                                       imagemagick  1                                                                     
-   Pixels per second                  imagemagick  24.47MB                                                               
+   Overall kurtosis                   imagemagick  -1.10644                                                              
+   Overall max                        imagemagick  255 (1)                                                               
+   Overall mean                       imagemagick  86.2596 (0.338273)                                                    
+   Overall min                        imagemagick  0 (0)                                                                 
+   Overall standard deviation         imagemagick  68.7104 (0.269452)                                                    
+   Page geometry                      imagemagick  2000x1346+0+0                                                         
+   Pixels per second                  imagemagick  19.23MB                                                               
+   Profile file signature             exiftool     acsp                                                                  
    Resolution horizontal              daitss       300                                                                   PPI
                                       exiftool     300                                                                   PPI
                                       imagemagick  300/1                                                                 PPI
                                       imagemagick  300                                                                   PPI
                                       jhove                                                                              PPI
+   Resolution unit                    exiftool     inches                                                                
    Resolution vertical                daitss       300                                                                   PPI
                                       exiftool     300                                                                   PPI
                                       imagemagick  300/1                                                                 PPI
                                       imagemagick  300                                                                   PPI
                                       jhove                                                                              PPI
    Samples per pixel                  daitss       3                                                                     
+   Thumbnail                          exiftool     (Binary data 8171 bytes, use -b option to extract)                    
+                                      exiv2        image/jpeg, 8171 Bytes                                                
+   Transparent color                  imagemagick  black                                                                 
+   Units                              imagemagick  PixelsPerInch                                                         
    Universal unique identifier (UUID) jhove                                                                              
    ---------------------------------- -----------  --------------------------------------------------------------------  ----
 
@@ -143,7 +163,7 @@ Other properties
    CMM Flags                                         exiftool     Not Embedded, Independent                                      
    Code block height                                 jhove                                                                       px
    Code block width                                  jhove                                                                       px
-   Color Space                                       exiftool     sRGB                                                           
+   Color Space Data                                  exiftool     RGB                                                            
    Color Transform                                   exiftool     YCbCr                                                          
    Color transformation                              exiftool     YCbCr4:4:4 (1 1)                                               
    Compose                                           imagemagick  Over                                                           
@@ -162,7 +182,7 @@ Other properties
    Displayed Units Y                                 exiftool     inches                                                         
    Dispose                                           imagemagick  Undefined                                                      
    Document ID                                       exiftool     adobe:docid:photoshop:164b2635-48a0-11d9-90f4-c22daedd6e5a     
-   Elapsed time                                      imagemagick  0:01.109                                                       
+   Elapsed time                                      imagemagick  0:01.140                                                       
    Encoding process                                  exiftool     Baseline DCT, Huffman coding                                   
    Endianess                                         imagemagick  Undefined                                                      
    Exif Byte Order                                   exiftool     Big-endian (Motorola, MM)                                      
@@ -217,28 +237,14 @@ Other properties
    IPTC Digest                                       exiftool     00000000000000000000000000000000                               
    Iterations                                        imagemagick  0                                                              
    JFIF Version                                      exiftool     1.02                                                           
-   Luminance                                         exiftool     76.03647 80 87.12462                                           
    Matte color                                       imagemagick  grey74                                                         
-   Measurement Backing                               exiftool     0 0 0                                                          
-   Measurement Flare                                 exiftool     0.999%                                                         
-   Measurement Geometry                              exiftool     Unknown (0)                                                    
-   Measurement Illuminant                            exiftool     D65                                                            
-   Measurement Observer                              exiftool     CIE 1931                                                       
-   Media Black Point                                 exiftool     0 0 0                                                          
-   Media White Point                                 exiftool     0.95045 1 1.08905                                              
    Metadata Date                                     exiftool     2004:12:07 14:38:49-08:00                                      
    Modify Date                                       exiftool     2004:12:07 14:38:49                                            
    Multiple Component Transformation                 jhove                                                                       
    Number of decomposition levels                    jhove                                                                       
    Number of quality layers                          jhove                                                                       
    Number of tiles                                   jhove        0                                                              
-   Overall kurtosis                                  imagemagick  -1.10644                                                       
-   Overall max                                       imagemagick  255 (1)                                                        
-   Overall mean                                      imagemagick  86.2596 (0.338273)                                             
-   Overall min                                       imagemagick  0 (0)                                                          
    Overall skewness                                  imagemagick  0.238344                                                       
-   Overall standard deviation                        imagemagick  68.7104 (0.269452)                                             
-   Page geometry                                     imagemagick  2000x1346+0+0                                                  
    Photoshop Format                                  exiftool     Optimised                                                      
    Photoshop Thumbnail                               exiftool     (Binary data 8171 bytes, use -b option to extract)             
    Primary Platform                                  exiftool     Microsoft Corporation                                          
@@ -250,7 +256,6 @@ Other properties
    Profile Creator                                   exiftool     HP                                                             
    Profile Date Time                                 exiftool     1998:02:09 06:49:00                                            
    Profile Description                               exiftool     sRGB IEC61966-2.1                                              
-   Profile File Signature                            exiftool     acsp                                                           
    Profile ID                                        exiftool     0                                                              
    Profile Version                                   exiftool     2.1.0                                                          
    Progression order                                 jhove                                                                       
@@ -266,20 +271,15 @@ Other properties
    Red Tone Reproduction Curve                       exiftool     (Binary data 2060 bytes, use -b option to extract)             
    Rendering Intent                                  exiftool     Perceptual                                                     
    Rendering intent                                  imagemagick  Undefined                                                      
-   Resolution unit                                   exiftool     inches                                                         
    Software type                                     exiftool     Adobe Photoshop CS Windows                                     
    Tainted                                           imagemagick  False                                                          
    Technology                                        exiftool     Cathode Ray Tube Display                                       
-   Thumbnail                                         exiv2        image/jpeg, 8171 Bytes                                         
-   Thumbnail Image                                   exiftool     (Binary data 8171 bytes, use -b option to extract)             
    Thumbnail Length                                  exiftool     8171                                                           
    Thumbnail Offset                                  exiftool     332                                                            
    Tile size X                                       jhove                                                                       PPI
    Tile size Y                                       jhove                                                                       PPI
    Transformation                                    jhove                                                                       
-   Transparent color                                 imagemagick  black                                                          
-   Units                                             imagemagick  PixelsPerInch                                                  
-   User time                                         imagemagick  0.100u                                                         
+   User time                                         imagemagick  0.130u                                                         
    Verbose                                           imagemagick  true                                                           
    Viewing Cond Desc                                 exiftool     Reference Viewing Condition in IEC61966-2.1                    
    Viewing Cond Illuminant                           exiftool     19.6445 20.3718 16.8089                                        

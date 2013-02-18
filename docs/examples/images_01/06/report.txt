@@ -29,66 +29,75 @@ Validation
 Characterization
 ================
 
-   Significant Property   Source       Value                                                                 Unit
-   ---------------------- -----------  --------------------------------------------------------------------  ----
-   Color depth            exiftool     8 8 8                                                                 
-                          imagemagick  8                                                                     
-                          jhove                                                                              
-   Color space            imagemagick  RGB                                                                   
-                          jhove                                                                              
-   Color type             imagemagick  TrueColor                                                             
-   Compression scheme     exiftool     Uncompressed                                                          
-                          fits         Uncompressed                                                          
-                          imagemagick  None                                                                  
-                          jhove                                                                              
-   Depth of blue channel  imagemagick  8                                                                     
-   Depth of green channel imagemagick  8                                                                     
-   Depth of red channel   imagemagick  8                                                                     
-   File created           imagemagick  2013-02-15 17:56:10+01:00                                             
-   File last modified     exiftool     2013:02:15 17:56:10+01:00                                             
-                          fits         2013:02:15 17:56:10+01:00                                             
-                          imagemagick  2013-02-15 17:56:10+01:00                                             
-                          jhove        2013-02-15T17:56:10+01:00                                             
-   File name              core         06.tif                                                                
-                          exiftool     06.tif                                                                
-                          exiv2        06.tif                                                                
-                          fits         06.tif                                                                
-                          imagemagick  06.tif                                                                
-   File path              core         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/06.tif  
-                          exiv2        /home/stavel/differ/differ-cmdline/../docs/examples/images_01/06.tif  
-                          fits         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/06.tif  
-                          jhove        /home/stavel/differ/differ-cmdline/../docs/examples/images_01/06.tif  
-   File size              exiftool     768 kB                                                                
-                          exiv2        786572                                                                
-                          fits         786572                                                                
-                          imagemagick  787KB                                                                 
-                          jhove        786572                                                                
-   ICC profile            fits                                                                               
-   Image height           core         512                                                                   
-                          exiftool     512                                                                   px
-                          exiftool     512                                                                   px
-                          exiv2        512                                                                   px
-                          fits         512                                                                   px
-                          imagemagick  512                                                                   px
-                          jhove                                                                              px
-   Image width            core         512                                                                   
-                          exiftool     512                                                                   px
-                          exiftool     512                                                                   px
-                          exiv2        512                                                                   px
-                          fits         512                                                                   px
-                          imagemagick  512                                                                   px
-                          jhove                                                                              px
-   Interlace              imagemagick  None                                                                  
-   Num of pixels          imagemagick  262KB                                                                 
-   Number of channels     jhove                                                                              
-   Orientation            imagemagick  TopLeft                                                               
-   Pixels per second      imagemagick  26.21MB                                                               
-   Resolution horizontal  imagemagick  72                                                                    PPI
-                          jhove                                                                              PPI
-   Resolution vertical    imagemagick  72                                                                    PPI
-                          jhove                                                                              PPI
-   Samples per pixel      exiftool     3                                                                     
-   ---------------------- -----------  --------------------------------------------------------------------  ----
+   Significant Property       Source       Value                                                                 Unit
+   -------------------------- -----------  --------------------------------------------------------------------  ----
+   Color depth                exiftool     8 8 8                                                                 
+                              imagemagick  8                                                                     
+                              jhove                                                                              
+   Color space                imagemagick  RGB                                                                   
+                              jhove                                                                              
+   Color type                 imagemagick  TrueColor                                                             
+   Compression scheme         exiftool     Uncompressed                                                          
+                              fits         Uncompressed                                                          
+                              imagemagick  None                                                                  
+                              jhove                                                                              
+   Depth of blue channel      imagemagick  8                                                                     
+   Depth of green channel     imagemagick  8                                                                     
+   Depth of red channel       imagemagick  8                                                                     
+   File created               imagemagick  2013-02-15 17:56:10+01:00                                             
+   File last modified         exiftool     2013:02:15 17:56:10+01:00                                             
+                              fits         2013:02:15 17:56:10+01:00                                             
+                              imagemagick  2013-02-15 17:56:10+01:00                                             
+                              jhove        2013-02-15T17:56:10+01:00                                             
+   File name                  core         06.tif                                                                
+                              exiftool     06.tif                                                                
+                              exiv2        06.tif                                                                
+                              fits         06.tif                                                                
+                              imagemagick  06.tif                                                                
+   File path                  core         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/06.tif  
+                              exiv2        /home/stavel/differ/differ-cmdline/../docs/examples/images_01/06.tif  
+                              fits         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/06.tif  
+                              jhove        /home/stavel/differ/differ-cmdline/../docs/examples/images_01/06.tif  
+   File size                  exiftool     768 kB                                                                
+                              exiv2        786572                                                                
+                              fits         786572                                                                
+                              imagemagick  787KB                                                                 
+                              jhove        786572                                                                
+   ICC profile                fits                                                                               
+   Image height               core         512                                                                   
+                              exiftool     512                                                                   px
+                              exiftool     512                                                                   px
+                              exiv2        512                                                                   px
+                              fits         512                                                                   px
+                              imagemagick  512                                                                   px
+                              jhove                                                                              px
+   Image width                core         512                                                                   
+                              exiftool     512                                                                   px
+                              exiftool     512                                                                   px
+                              exiv2        512                                                                   px
+                              fits         512                                                                   px
+                              imagemagick  512                                                                   px
+                              jhove                                                                              px
+   Interlace                  imagemagick  None                                                                  
+   Number of channels         jhove                                                                              
+   Number of pixels           imagemagick  262KB                                                                 
+   Orientation                imagemagick  TopLeft                                                               
+   Overall kurtosis           imagemagick  -1.10259                                                              
+   Overall max                imagemagick  255 (1)                                                               
+   Overall mean               imagemagick  96.1713 (0.377142)                                                    
+   Overall min                imagemagick  3 (0.0117647)                                                         
+   Overall standard deviation imagemagick  75.4472 (0.295871)                                                    
+   Page geometry              imagemagick  512x512+0+0                                                           
+   Pixels per second          imagemagick  26.21MB                                                               
+   Resolution horizontal      imagemagick  72                                                                    PPI
+                              jhove                                                                              PPI
+   Resolution vertical        imagemagick  72                                                                    PPI
+                              jhove                                                                              PPI
+   Samples per pixel          exiftool     3                                                                     
+   Thumbnail                  exiv2        None                                                                  
+   Transparent color          imagemagick  black                                                                 
+   Units                      imagemagick  PixelsPerInch                                                         
+   -------------------------- -----------  --------------------------------------------------------------------  ----
 
 Other properties
 ================
@@ -129,13 +138,7 @@ Other properties
    Image/Properties/tiff/rows-per-strip imagemagick  5                                                              
    Iterations                           imagemagick  0                                                              
    Matte color                          imagemagick  grey74                                                         
-   Overall kurtosis                     imagemagick  -1.10259                                                       
-   Overall max                          imagemagick  255 (1)                                                        
-   Overall mean                         imagemagick  96.1713 (0.377142)                                             
-   Overall min                          imagemagick  3 (0.0117647)                                                  
    Overall skewness                     imagemagick  0.20095                                                        
-   Overall standard deviation           imagemagick  75.4472 (0.295871)                                             
-   Page geometry                        imagemagick  512x512+0+0                                                    
    Photometric Interpretation           exiftool     RGB                                                            
    Planar Configuration                 exiftool     Chunky                                                         
    Print size                           imagemagick  7.11111x7.11111                                                
@@ -150,9 +153,6 @@ Other properties
    Strip Offsets                        exiftool     8                                                              
    Subfile Type                         exiftool     Full-resolution Image                                          
    Tainted                              imagemagick  False                                                          
-   Thumbnail                            exiv2        None                                                           
-   Transparent color                    imagemagick  black                                                          
-   Units                                imagemagick  PixelsPerInch                                                  
    User time                            imagemagick  0.000u                                                         
    Verbose                              imagemagick  true                                                           
    ------------------------------------ -----------  -------------------------------------------------------------  ----
