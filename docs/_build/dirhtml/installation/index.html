@@ -45,14 +45,76 @@
             
   <div class="section" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="droid">
-<h2>DROID<a class="headerlink" href="#droid" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="http://digital-preservation.github.com/droid/">Home page</a></p>
-<p>Download <a class="reference external" href="https://github.com/downloads/digital-preservation/droid/droid-binary-6.1-bin.zip">Zip file with binary</a>.</p>
+<div class="section" id="exiftool">
+<h2>Exiftool<a class="headerlink" href="#exiftool" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://www.sno.phy.queensu.ca/~phil/exiftool/">home page</a></p>
+<p><a class="reference external" href="http://www.stahuj.centrum.cz/utility_a_ostatni/ostatni/exiftool/">http://www.stahuj.centrum.cz/utility_a_ostatni/ostatni/exiftool/</a></p>
+<div class="highlight-python"><pre># for debian linux
+root@treebeard:~# aptitude install libimage-exiftool-perl</pre>
 </div>
-<div class="section" id="pronom">
-<h2>PRONOM<a class="headerlink" href="#pronom" title="Permalink to this headline">¶</a></h2>
+<p>set in file =differ-common/common.properties=
+a path to exiftool binary.</p>
+<p>It depends on operating system.</p>
+<div class="highlight-python"><pre>exiftool.binary=/usr/bin/exiftool</pre>
+</div>
+</div>
+<div class="section" id="exiv2">
+<h2>Exiv2<a class="headerlink" href="#exiv2" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://www.exiv2.org/">home page</a></p>
+<p><a class="reference external" href="http://www.exiv2.org/download.html">download</a></p>
+<div class="highlight-python"><pre># for debian linux
+root@treebeard:~# aptitude install exiv2</pre>
+</div>
+<p>set in file =differ-common/common.properties=
+a path to exiv2 binary.</p>
+<p>It depends on operating system.</p>
+<div class="highlight-python"><pre>exiv2.binary=/usr/bin/exiv2</pre>
+</div>
+</div>
+<div class="section" id="jhove">
+<h2>JHOVE<a class="headerlink" href="#jhove" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://jhove.sourceforge.net">home page</a></p>
+<p><a class="reference external" href="http://http://jhove.sourceforge.net/distribution.html">download page</a></p>
+<div class="highlight-python"><pre># for debian linux
+root@treebeard:~# aptitude install jhove</pre>
+</div>
+<p>set in file =differ-common/common.properties=
+a path to jhove binary.</p>
+<p>It depends on operating system.</p>
+<div class="highlight-python"><pre>jhove.binary=/usr/bin/jhove</pre>
+</div>
+</div>
+<div class="section" id="imagemagick">
+<h2>Imagemagick<a class="headerlink" href="#imagemagick" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://www.imagemagick.org/script/index.php">home page</a></p>
+<p><a class="reference external" href="http://www.imagemagick.org/script/binary-releases.php">download page</a></p>
+<div class="highlight-python"><pre># for debian linux
+root@treebeard:~# aptitude install imagemagick</pre>
+</div>
+<p>set in file =differ-common/common.properties=
+a path to imagemagick binary.</p>
+<p>It depends on operating system.</p>
+<div class="highlight-python"><pre>imagemagic.binary=/usr/bin/identify</pre>
+</div>
+</div>
+<div class="section" id="fits">
+<h2>FITS<a class="headerlink" href="#fits" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://code.google.com/p/fits/">home page</a>
+<a class="reference external" href="http://code.google.com/p/fits/downloads/list">download page</a></p>
+<div class="highlight-python"><pre>stavel@treebeard:~/lib$ wget http://fits.googlecode.com/files/fits-0.6.1.zip
+stavel@treebeard:~/lib$ unzip fits-0.6.1.zip
+stavel@treebeard:~/lib$ chmod 755 fits-0.6.1/fits.sh</pre>
+</div>
+<p>set in file =differ-common/common.properties=
+a path to fits binary.</p>
+<p>It depends on operating system.</p>
+<div class="highlight-python"><pre>fits.binary=/home/stavel/lib/fits-0.6.1/fits.sh</pre>
+</div>
+<blockquote>
+<div><p><a class="reference external" href="http://digital-preservation.github.com/droid/">Home page</a></p>
+<p>Download <a class="reference external" href="https://github.com/downloads/digital-preservation/droid/droid-binary-6.1-bin.zip">Zip file with binary</a>.</p>
 <p><a class="reference external" href="http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new">http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new</a></p>
+</div></blockquote>
 </div>
 </div>
 
@@ -65,8 +127,11 @@
   <h3><a href="../">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Installation</a><ul>
-<li><a class="reference internal" href="#droid">DROID</a></li>
-<li><a class="reference internal" href="#pronom">PRONOM</a></li>
+<li><a class="reference internal" href="#exiftool">Exiftool</a></li>
+<li><a class="reference internal" href="#exiv2">Exiv2</a></li>
+<li><a class="reference internal" href="#jhove">JHOVE</a></li>
+<li><a class="reference internal" href="#imagemagick">Imagemagick</a></li>
+<li><a class="reference internal" href="#fits">FITS</a></li>
 </ul>
 </li>
 </ul>
