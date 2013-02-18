@@ -23,6 +23,20 @@
 
     <bean id="djvuImageLoader" class="cz.nkp.differ.images.DjvuImageLoader"/>
 
+    <bean id="jp2ImageLoader" class="cz.nkp.differ.images.ExternalImageLoader">
+      <property name="programArguments">
+        <list>
+          <value>${kakadu.binary}</value>
+          <value>-i</value>
+          <value>{input_file}</value>
+          <value>-o</value>
+          <value>{output_file}</value>
+        </list>
+      </property>
+      <property name="imageLoader" ref="genericImageLoader"/>
+      <property name="prefix" value="bmp"/>
+    </bean>
+    
     <bean id="tiffImageLoader" class="cz.nkp.differ.images.ExternalImageLoader">
       <property name="programArguments">
 	<list>
@@ -41,6 +55,10 @@
 	  <entry key="djvu" value-ref="djvuImageLoader"/>
 	  <entry key="tiff" value-ref="tiffImageLoader"/>
 	  <entry key="tif" value-ref="tiffImageLoader"/>
+	  <entry key="tiff" value-ref="tiffImageLoader"/>
+	  <entry key="jpf" value-ref="jp2ImageLoader"/>
+	  <entry key="jp2" value-ref="jp2ImageLoader"/>
+	  <entry key="jpp" value-ref="jp2ImageLoader"/>
 	</map>
       </property>
       <property name="defaultImageLoader" ref="genericImageLoader"/>
