@@ -62,7 +62,7 @@
     	  <entry key="Resolution vertical"     value="Y Resolution[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Resolution unit"  value="Resolution Unit[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Univerzal unique identifier (UUID)"   value="Image Unique ID[\ \t]*:[\ \t]*(.*)"/>
-    	  <entry key="Compression scheme" value="Compression[\ \t]*:[\ \t]*(.*)"/>
+    	  <entry key="Compression" value="Compression[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Encoding process" value="Encoding Process[\ \t]*:[\ \t]*(.*)"/>
     	  <entry key="Color depth"   value="Bit Depth[\ \t]*:[\ \t]*(.*)"/>
    	  <entry key="Color depth"   value="Bits Per Sample[\ \t]*:[\ \t]*(.*)"/>
@@ -72,6 +72,7 @@
 	  <entry key="Color space"   value="Device Model[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="Color space"   value="Color Space Data[\ \t]*[\ \t]*(.*)"/>
     	  <entry key="Color space"   value="Color Space[\ \t]*:[\ \t]*(.*)"/>
+    	  <entry key="Color space"   value="Colorspace[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="ICC profile"    value="Device Model Desc[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="File name"      value="File Name[\ \t]*:[\ \t]*(.*)"/>
 	  <entry key="File created"   value="Create Date[\ \t]*:[\ \t]*(.*)"/>

@@ -19,7 +19,7 @@
 	<property name = "File size"><xsl:value-of select="fits:fileinfo/fits:size"/></property>
 	<property name = "Image width"><xsl:value-of select="fits:metadata/fits:image/fits:imageWidth"/></property>
 	<property name = "Image height"><xsl:value-of select="fits:metadata/fits:image/fits:imageHeight"/></property>
-	<property name= "Compression scheme"><xsl:value-of select="fits:metadata/fits:image/fits:compressionScheme"/></property>
+	<property name= "Compression"><xsl:value-of select="fits:metadata/fits:image/fits:compressionScheme"/></property>
 	<property name= "ICC profile"><xsl:value-of select="fits:metadata/fits:image/fits:iccProfileName"/></property>
 	<property name= "ICC profile version"><xsl:value-of select="fits:metadata/fits:image/fits:iccProfileVersion"/></property>
 	<xsl:apply-templates/>
