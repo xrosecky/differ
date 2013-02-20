@@ -42,8 +42,14 @@
       <property name="mapOfRegexp">
     	<map>
     	  <entry key="Color depth"   value="Sprecision=[\ \t]*(.*)"/>
+	  <entry key="Size" value="Ssize=[\ \t]*(.*)"/>
+	  <entry key="Components" value="Scomponents=[\ \t]*(.*)"/>
+	  <entry key="Origin" value="Sorigin=[\ \t]*(.*)"/>
+	  <entry key="Tile origin" value="Stile_origin=[\ \t]*(.*)"/>
+	  <entry key="Tiles" value="Stiles=[\ \t]*(.*)"/>
     	  <entry key="Sampling"   value="Ssampling=[\ \t]*(.*)"/>
     	  <entry key="Dimensions"   value="Sdims=[\ \t]*(.*)"/>
+    	  <entry key="Dimensions"   value="Dimensions=[\ \t]*(.*)"/>
     	  <entry key="Transformation"   value="Cycc=[\ \t]*(.*)"/>
     	  <entry key="CMCT"   value="Ccmct=[\ \t]*(.*)"/>
     	  <entry key="Number of quality layers"   value="Clayers=[\ \t]*(.*)"/>
@@ -55,11 +61,12 @@
 	  <entry key="Decomp" value="Cdecomp=[\ \t]*(.*)"/>
 	  <entry key="Compression" value="Creversible=[\ \t]*(.*)"/>
 	  <entry key="Type of algorithm" value="Ckernels=[\ \t]*(.*)"/>
-	  <entry key="ATK" value="Catrk=[\ \t]*(.*)"/>
-	  <entry key="Precints" value="Cuse_precints=[\ \t]*(.*)"/>
+	  <entry key="ATK" value="Catk=[\ \t]*(.*)"/>
+	  <entry key="Precints" value="Cuse_precincts=[\ \t]*(.*)"/>
 	  <entry key="Code block size" value="Cblk=[\ \t]*(.*)"/>
 	  <entry key="Bypass" value="Cmodes=[\ \t]*(.*)"/>
 	  <entry key="Derived" value="Cabs_steps=[\ \t]*(.*)"/>
+	  <entry key="Consumed" value="Consumed[\ \t]+(.*)"/>
     	</map>
       </property>
       <property name="listOfRegexp">
