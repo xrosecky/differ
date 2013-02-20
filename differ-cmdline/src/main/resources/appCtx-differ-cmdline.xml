@@ -104,6 +104,12 @@
       <property name="user" value="${reportingWeb.user}"/>
     </bean>
 
+    <!-- kakadu -->
+    <import resource="kakaduMetadataExtractor.xml"/>
+
+    <!-- exiftool -->
+    <import resource="exiftoolMetadataExtractor.xml"/>
+
     <!-- exiftool -->
     <import resource="exiftoolMetadataExtractor.xml"/>
     
@@ -210,6 +216,7 @@
 	  <value>jpp</value>
 	  <value>djvu</value>
 	  <value>png</value>
+	  <value>pdf</value>
 	</list>
       </property>
     </bean>
