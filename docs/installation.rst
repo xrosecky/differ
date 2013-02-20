@@ -111,12 +111,48 @@ FITS
 set in file ``differ-common/common.properties``
 a path to fits binary.
 
-It depends on operating system.
-
 ::
 
    fits.binary=/home/stavel/lib/fits-0.6.1/fits.sh
-   
+
+It depends on operating system.
+
+There is necessary to fix incorrect string that invalidates xml output.
+
+Please add into fits.sh something like:
+
+:: 
+
+   # for windows:
+   java edu.harvard.hul.ois.fits.Fits %* | find /V "READBOX"
+
+   # for linux:
+   eval "exec $cmd" | grep -v "READBOX"
+
+
+Kakadu
+~~~~~~~
+
+This library is necessary to handle jp2000 images.
+
+`home page <http://www.kakadusoftware.com/>`_
+
+Download binaries from their `download page <http://www.kakadusoftware.com/index.php?option=com_content&task=view&id=26&Itemid=22>`_
+
+Do not forget to set in file ``differ-common/common.properties`` a path to kakadu binary.
+
+To identify and load images it is used ``kdu_expand`` binary.
+
+::
+
+   kakadu.binary=/home/stavel/bin/kdu_expand.sh
+
+JPylyzer
+~~~~~~~~
+
+`home page <http://www.openplanetsfoundation.org/software/jpylyzer>`_
+
+Download binary installation from home page. And install it as usual in your operating system.
 
 
 ..
