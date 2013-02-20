@@ -73,7 +73,7 @@
             <source>fits</source>
         </metadata>
         <metadata>
-            <key>Compression scheme</key>
+            <key>Compression</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Uncompressed</value>
             <conflict>true</conflict>
             <source>fits</source>
@@ -169,7 +169,7 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Compression scheme</key>
+            <key>Compression</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Uncompressed</value>
             <conflict>true</conflict>
             <source>exiftool</source>
@@ -231,9 +231,9 @@
             <source>exiftool</source>
         </metadata>
         <metadata>
-            <key>Color space</key>
+            <key>Color Space</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Uncalibrated</value>
-            <conflict>true</conflict>
+            <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
         <metadata>
@@ -371,24 +371,6 @@
         <metadata>
             <key>Document Ancestors</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E</value>
-            <conflict>false</conflict>
-            <source>exiftool</source>
-        </metadata>
-        <metadata>
-            <key>History Instance ID</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E, xmp.iid:EEB79AEC6A55E11180A5EF7BDC084C3E, xmp.iid:EFB79AEC6A55E11180A5EF7BDC084C3E</value>
-            <conflict>false</conflict>
-            <source>exiftool</source>
-        </metadata>
-        <metadata>
-            <key>History When</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2012:02:12 12:09:13+01:00, 2012:02:12 12:11:16+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:15:34+01:00, 2012:02:12 12:15:52+01:00, 2012:02:12 12:15:52+01:00</value>
-            <conflict>false</conflict>
-            <source>exiftool</source>
-        </metadata>
-        <metadata>
-            <key>History Changed</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/, /, /, /, /, /, /</value>
             <conflict>false</conflict>
             <source>exiftool</source>
         </metadata>
@@ -617,7 +599,7 @@
             <source>jhove</source>
         </metadata>
         <metadata>
-            <key>Compression scheme</key>
+            <key>Compression</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
             <conflict>true</conflict>
             <source>jhove</source>
@@ -767,7 +749,7 @@
             <source>daitss</source>
         </metadata>
         <metadata>
-            <key>Compression scheme</key>
+            <key>Compression</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
             <conflict>true</conflict>
             <source>daitss</source>
@@ -1120,7 +1102,7 @@
             <source>imagemagick</source>
         </metadata>
         <metadata>
-            <key>Compression scheme</key>
+            <key>Compression</key>
             <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">JPEG</value>
             <conflict>true</conflict>
             <source>imagemagick</source>
@@ -1335,7 +1317,7 @@
         </metadata>
         <metadata>
             <key>Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">13.11MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">26.21MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1347,7 +1329,7 @@
         </metadata>
         <metadata>
             <key>Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.019</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.009</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1387,6 +1369,36 @@
         </metadata>
     </metadata-list>
     <sources-list>
+        <source exitCode="0" source="exiv2">
+            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/04.jpg
+File size       : 176940 Bytes
+MIME type       : image/jpeg
+Image size      : 512 x 512
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 512 x 512
+White balance   : 
+Thumbnail       : image/jpeg, 7012 Bytes
+Copyright       : 
+Exif comment    : 
+
+</stdout>
+            <stderr></stderr>
+        </source>
         <source exitCode="0" source="imagemagick">
             <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_02/04.jpg
   Format: JPEG (Joint Photographic Experts Group JFIF format)
@@ -1991,40 +2003,10 @@
   Tainted: False
   Filesize: 177KB
   Number pixels: 262KB
-  Pixels per second: 13.11MB
+  Pixels per second: 26.21MB
   User time: 0.010u
-  Elapsed time: 0:01.019
+  Elapsed time: 0:01.009
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source exitCode="0" source="exiv2">
-            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/04.jpg
-File size       : 176940 Bytes
-MIME type       : image/jpeg
-Image size      : 512 x 512
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 512 x 512
-White balance   : 
-Thumbnail       : image/jpeg, 7012 Bytes
-Copyright       : 
-Exif comment    : 
-
 </stdout>
             <stderr></stderr>
         </source>
@@ -2099,7 +2081,7 @@ Thumbnail Image                 : (Binary data 7012 bytes, use -b option to extr
         <source exitCode="0" source="jhove">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-18T09:21:15+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-19T20:58:14+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/04.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
@@ -2349,7 +2331,7 @@ Thumbnail Image                 : (Binary data 7012 bytes, use -b option to extr
         </source>
         <source exitCode="0" source="fits">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="18.2.13 9:21"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="19.2.13 20:58"&gt;
   &lt;identification&gt;
     &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.04" /&gt;
@@ -2404,7 +2386,7 @@ Thumbnail Image                 : (Binary data 7012 bytes, use -b option to extr
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130218-1938-wii0oj-0.jpg&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130219-1938-i9jwrk-0.jpg&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -2493,7 +2475,7 @@ Thumbnail Image                 : (Binary data 7012 bytes, use -b option to extr
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-18T03:21:16-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-02-19T14:58:15-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -2505,7 +2487,7 @@ Thumbnail Image                 : (Binary data 7012 bytes, use -b option to extr
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130218-1938-wii0oj-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130219-1938-i9jwrk-0.jpg&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 

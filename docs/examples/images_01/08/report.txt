@@ -40,20 +40,19 @@ Characterization
                                       imagemagick  8                                                                     
                                       jhove                                                                              
    Color space                        daitss       YCbCr                                                                 
-                                      exiftool     Uncalibrated                                                          
                                       imagemagick  RGB                                                                   
                                       imagemagick  -1                                                                    
                                       imagemagick  2                                                                     
                                       jhove                                                                              
                                       jhove                                                                              
    Color type                         imagemagick  TrueColor                                                             
-   Compression quality                exiftool     8                                                                     
-                                      imagemagick  91                                                                    
-   Compression scheme                 daitss       JPEG                                                                  
+   Compression                        daitss       JPEG                                                                  
                                       exiftool     JPEG (old-style)                                                      
                                       fits         JPEG (old-style)                                                      
                                       imagemagick  JPEG                                                                  
                                       jhove                                                                              
+   Compression quality                exiftool     8                                                                     
+                                      imagemagick  91                                                                    
    Depth of blue channel              imagemagick  8                                                                     
    Depth of green channel             imagemagick  8                                                                     
    Depth of red channel               imagemagick  8                                                                     
@@ -150,6 +149,7 @@ Other properties
    Code block height                                 jhove                                                                       px
    Code block width                                  jhove                                                                       px
    Color Mode                                        exiftool     3                                                              
+   Color Space                                       exiftool     Uncalibrated                                                   
    Color Transform                                   exiftool     YCbCr                                                          
    Color transformation                              exiftool     YCbCr4:4:4 (1 1)                                               
    Compose                                           imagemagick  Over                                                           

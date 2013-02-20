@@ -44,11 +44,11 @@ Characterization
                                        daitss          YCbCr                                                                 YCbCr                                                            
                                        jhove                                                                                                                                                  
    Color type                          imagemagick     TrueColor                                                             TrueColor                                                        
-   Compression quality                 imagemagick     93                                                                    93                                                               
-   Compression scheme                  fits                                                                                                                                                   
+   Compression                         fits                                                                                                                                                   
                                        imagemagick     JPEG                                                                  JPEG                                                             
                                        daitss          JPEG                                                                  JPEG                                                             
                                        jhove                                                                                                                                                  
+   Compression quality                 imagemagick     93                                                                    93                                                               
    Depth of blue channel               imagemagick     8                                                                     8                                                                
    Depth of green channel              imagemagick     8                                                                     8                                                                
    Depth of red channel                imagemagick     8                                                                     8                                                                
@@ -99,7 +99,7 @@ Characterization
    Overall min                         imagemagick     0 (0)                                                                 0 (0)                                                            
    Overall standard deviation          imagemagick     86.6113 (0.339652)                                                    109.794 (0.430566)                                               
    Page geometry                       imagemagick     2202x1300+0+0                                                         2202x1300+0+0                                                    
-   Pixels per second                   imagemagick     28.63MB                                                               28.63MB                                                          
+   Pixels per second                   imagemagick     22.02MB                                                               20.45MB                                                          
    Profile file signature              exiftool        acsp                                                                  acsp                                                             
    Resolution horizontal               exiftool        72    PPI                                                             72    PPI                                                        
                                        imagemagick     72    PPI                                                             72    PPI                                                        
@@ -144,7 +144,7 @@ Other properties
    Device Manufacturer                    exiftool        none                                                           none                                                      
    Directory                              exiftool        /home/stavel/differ/differ-cmdline/../docs/examples/images_01      /home/stavel/differ/differ-cmdline/../docs/examples/images_02 
    Dispose                                imagemagick     Undefined                                                      Undefined                                                 
-   Elapsed time                           imagemagick     0:01.100                                                       0:01.099                                                  
+   Elapsed time                           imagemagick     0:01.129                                                       0:01.139                                                  
    Encoding process                       exiftool        Baseline DCT, Huffman coding                                   Baseline DCT, Huffman coding                              
    Endianess                              imagemagick     Undefined                                                      Undefined                                                 
    Exif Byte Order                        exiftool        Little-endian (Intel, II)                                      Little-endian (Intel, II)                                 
@@ -201,7 +201,7 @@ Other properties
    Tile size Y                            jhove                 PPI                                                            PPI                                                 
    Transformation                         jhove                                                                                                                                    
    User Comment                           exiftool        File written by Adobe Photoshop� 5.0                           File written by Adobe Photoshop� 5.0                      
-   User time                              imagemagick     0.100u                                                         0.090u                                                    
+   User time                              imagemagick     0.120u                                                         0.130u                                                    
    Verbose                                imagemagick     true                                                           true                                                      
    Warning                                exiftool        Invalid EXIF text encoding                                     Invalid EXIF text encoding                                
    -------------------------------------  -----------  -------------------------------------------------------------  -------------------------------------------------------------

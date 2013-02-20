@@ -40,18 +40,17 @@ Characterization
    Color depth                         exiftool        8                                                                     8                                                                
                                        imagemagick     8                                                                     8                                                                
                                        jhove                                                                                                                                                  
-   Color space                         exiftool        sRGB                                                                  sRGB                                                             
-                                       imagemagick     2                                                                     2                                                                
+   Color space                         imagemagick     2                                                                     2                                                                
                                        daitss          YCbCr                                                                 YCbCr                                                            
                                        jhove                                                                                                                                                  
    Color type                          imagemagick     TrueColor                                                             TrueColor                                                        
-   Compression quality                 exiftool        9                                                                     9                                                                
-                                       imagemagick     92                                                                    92                                                               
-   Compression scheme                  fits            JPEG (old-style)                                                      JPEG (old-style)                                                 
+   Compression                         fits            JPEG (old-style)                                                      JPEG (old-style)                                                 
                                        exiftool        JPEG (old-style)                                                      JPEG (old-style)                                                 
                                        imagemagick     JPEG                                                                  JPEG                                                             
                                        daitss          JPEG                                                                  JPEG                                                             
                                        jhove                                                                                                                                                  
+   Compression quality                 exiftool        9                                                                     9                                                                
+                                       imagemagick     92                                                                    92                                                               
    Depth of blue channel               imagemagick     8                                                                     8                                                                
    Depth of green channel              imagemagick     8                                                                     8                                                                
    Depth of red channel                imagemagick     8                                                                     8                                                                
@@ -113,7 +112,7 @@ Characterization
    Overall min                         imagemagick     0 (0)                                                                 0 (0)                                                            
    Overall standard deviation          imagemagick     68.7104 (0.269452)                                                    70.3469 (0.27587)                                                
    Page geometry                       imagemagick     2000x1346+0+0                                                         2000x1346+0+0                                                    
-   Pixels per second                   imagemagick     22.43MB                                                               24.47MB                                                          
+   Pixels per second                   imagemagick     20.71MB                                                               24.47MB                                                          
    Profile file signature              exiftool        acsp                                                                  acsp                                                             
    Resolution horizontal               exiftool        300   PPI                                                             300   PPI                                                        
                                        imagemagick     300   PPI                                                             300   PPI                                                        
@@ -154,6 +153,7 @@ Other properties
    Class                                              imagemagick     DirectClass                                                    DirectClass                                               
    Code block height                                  jhove                 px                                                             px                                                  
    Code block width                                   jhove                 px                                                             px                                                  
+   Color Space                                        exiftool        sRGB                                                           sRGB                                                      
    Color Space Data                                   exiftool        RGB                                                            RGB                                                       
    Color Transform                                    exiftool        YCbCr                                                          YCbCr                                                     
    Color transformation                               exiftool        YCbCr4:4:4 (1 1)                                               YCbCr4:4:4 (1 1)                                          
@@ -173,7 +173,7 @@ Other properties
    Displayed Units Y                                  exiftool        inches                                                         inches                                                    
    Dispose                                            imagemagick     Undefined                                                      Undefined                                                 
    Document ID                                        exiftool        adobe:docid:photoshop:164b2635-48a0-11d9-90f4-c22daedd6e5a      adobe:docid:photoshop:164b2635-48a0-11d9-90f4-c22daedd6e5a 
-   Elapsed time                                       imagemagick     0:01.120                                                       0:01.109                                                  
+   Elapsed time                                       imagemagick     0:01.129                                                       0:01.109                                                  
    Encoding process                                   exiftool        Baseline DCT, Huffman coding                                   Baseline DCT, Huffman coding                              
    Endianess                                          imagemagick     Undefined                                                      Undefined                                                 
    Exif Byte Order                                    exiftool        Big-endian (Motorola, MM)                                      Big-endian (Motorola, MM)                                 
@@ -263,7 +263,7 @@ Other properties
    Tile size X                                        jhove                 PPI                                                            PPI                                                 
    Tile size Y                                        jhove                 PPI                                                            PPI                                                 
    Transformation                                     jhove                                                                                                                                    
-   User time                                          imagemagick     0.110u                                                         0.090u                                                    
+   User time                                          imagemagick     0.120u                                                         0.110u                                                    
    Verbose                                            imagemagick     true                                                           true                                                      
    Viewing Cond Desc                                  exiftool        Reference Viewing Condition in IEC61966-2.1                    Reference Viewing Condition in IEC61966-2.1               
    Viewing Cond Illuminant                            exiftool        19.6445 20.3718 16.8089                                        19.6445 20.3718 16.8089                                   

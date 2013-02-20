@@ -6,13 +6,16 @@ Identification
    Significant Property Source       Value                                                                                               Unit
    -------------------- -----------  --------------------------------------------------------------------------------------------------  ----
    MIME type            exiftool     image/jp2                                                                                           
+                        fits         image/jp2                                                                                           
    Type of format       daitss       JPEG                                                                                                
                         daitss       Unknown                                                                                             
                         exiftool     JP2                                                                                                 
+                        fits         JPEG                                                                                                
                         imagemagick  JPEG                                                                                                
                         jpylyzer     jpeg2000                                                                                            
    Version              daitss       built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.  
                         exiftool     8.15                                                                                                
+                        fits         FITS 0.6.1                                                                                          
                         imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                       
    Version of format    daitss                                                                                                           
                         daitss                                                                                                           
@@ -41,42 +44,50 @@ Characterization
                                       imagemagick  RGB                                                                   
                                       jpylyzer     sRGB                                                                  
    Color type                         imagemagick  TrueColor                                                             
-   Compression                        jpylyzer                                                                           
-   Compression scheme                 daitss       Unknown                                                               
+   Compression                        daitss       Unknown                                                               
                                       exiftool     JPEG 2000                                                             
+                                      fits         JPEG 2000 Lossy                                                       
                                       imagemagick  JPEG2000                                                              
+                                      jpylyzer                                                                           
    Depth of blue channel              imagemagick  8                                                                     
    Depth of green channel             imagemagick  8                                                                     
    Depth of red channel               imagemagick  8                                                                     
    File created                       exiftool     2012:02:12 12:27:13+01:00                                             
                                       imagemagick  2013-02-18 12:59:06+01:00                                             
    File last modified                 exiftool     2013:01:11 14:47:36+01:00                                             
+                                      fits         2013:01:11 14:47:36+01:00                                             
                                       imagemagick  2013-01-11 14:47:36+01:00                                             
                                       jpylyzer     Fri Jan 11 14:47:36 2013                                              
    File name                          core         14.jpf                                                                
                                       daitss       14.jpf                                                                
                                       daitss       14.jpf                                                                
                                       exiftool     14.jpf                                                                
+                                      fits         14.jpf                                                                
                                       imagemagick  14.jpf                                                                
                                       jpylyzer     14.jpf                                                                
    File path                          core         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/14.jpf  
+                                      fits         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/14.jpf  
                                       jpylyzer     /home/stavel/differ/docs/examples/images_01/14.jpf                    
    File size                          daitss       33879                                                                 
                                       daitss                                                                             
                                       exiftool     33 kB                                                                 
+                                      fits         33879                                                                 
                                       imagemagick  33.9KB                                                                
                                       jpylyzer     33879                                                                 
+   ICC profile                        fits                                                                               
    Image height                       core         512                                                                   
                                       daitss       512                                                                   px
                                       daitss       512                                                                   px
                                       exiftool     512                                                                   px
                                       exiftool     512                                                                   px
+                                      fits         512                                                                   px
                                       imagemagick  512                                                                   px
                                       jpylyzer                                                                           px
    Image width                        core         512                                                                   
                                       daitss       512                                                                   px
                                       exiftool     512                                                                   px
                                       exiftool     512                                                                   px
+                                      fits         512                                                                   px
                                       imagemagick  512                                                                   px
                                       jpylyzer                                                                           px
    Interlace                          imagemagick  None                                                                  
@@ -90,7 +101,7 @@ Characterization
    Overall min                        imagemagick  0 (0)                                                                 
    Overall standard deviation         imagemagick  75.4944 (0.296057)                                                    
    Page geometry                      imagemagick  512x512+0+0                                                           
-   Pixels per second                  imagemagick  3.277MB                                                               
+   Pixels per second                  imagemagick  2.913MB                                                               
    Resolution horizontal              daitss       2834                                                                  PPI
                                       exiftool     2834                                                                  PPI
                                       exiftool     72                                                                    PPI
@@ -130,7 +141,7 @@ Other properties
    Code block width               jpylyzer                                                                    px
    Coding bypass                  jpylyzer                                                                    
    Color Mode                     exiftool     3                                                              
-   Colorspace                     exiftool     sRGB                                                           
+   Color Space                    exiftool     sRGB                                                           
    Commentary                     jpylyzer                                                                    
    Compatible Brands              exiftool     jp2 , jpxb, jpx                                                
    Compose                        imagemagick  Over                                                           
@@ -141,7 +152,7 @@ Other properties
    Display resolution vertical    jpylyzer                                                                    PPI
    Dispose                        imagemagick  Undefined                                                      
    Document ID                    exiftool     xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                       
-   Elapsed time                   imagemagick  0:01.079                                                       
+   Elapsed time                   imagemagick  0:01.089                                                       
    End of packet header           jpylyzer                                                                    
    Endianess                      imagemagick  Undefined                                                      
    Exif Image Height              exiftool     512                                                            
@@ -163,6 +174,7 @@ Other properties
    Green standard deviation       imagemagick  52.4249 (0.205588)                                             
    ICC profile size               imagemagick  3024 bytes                                                     
                                   imagemagick  IEC 61966-2.1 Default RGB colour space - sRGB                  
+   ICC profile version            fits                                                                        
    Instance ID                    exiftool     xmp.iid:46CDF60AA959E111B6D8F36F074F6F1F                       
    Iterations                     imagemagick  0                                                              
    Major Brand                    exiftool     JPEG 2000 Image (.JP2)                                         
@@ -191,7 +203,7 @@ Other properties
    Start of packet header         jpylyzer                                                                    
    Tainted                        imagemagick  False                                                          
    Transformation                 jpylyzer                                                                    
-   User time                      imagemagick  0.080u                                                         
+   User time                      imagemagick  0.090u                                                         
    Verbose                        imagemagick  true                                                           
    XMP Toolkit                    exiftool     Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00         
    ------------------------------ -----------  -------------------------------------------------------------  ----
