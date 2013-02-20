@@ -41,5 +41,15 @@
     </property>
   </bean>
 
+  <bean id="sizeInBracketsReplacer" class="cz.nkp.differ.compare.metadata.external.result.RegexpReplacer">
+    <property name="regexp" value="{([0-9]+)[ ]*,[ ]*([0-9]+)}"/>
+    <property name="entryNames">
+      <list>
+	<value>Image width</value>
+	<value>Image height</value>
+      </list>
+    </property>
+  </bean>
+
   <bean id="finishingTransformer" class="cz.nkp.differ.compare.metadata.external.ResultFinishingTransformer"/>
 </beans>
