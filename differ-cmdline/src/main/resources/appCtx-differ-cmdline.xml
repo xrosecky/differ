@@ -110,9 +110,6 @@
     <!-- exiftool -->
     <import resource="exiftoolMetadataExtractor.xml"/>
 
-    <!-- exiftool -->
-    <import resource="exiftoolMetadataExtractor.xml"/>
-    
     <!-- imagemagick (identify) -->
     <import resource="imagemagickMetadataExtractor.xml"/>
 
@@ -162,31 +159,8 @@
     <import resource="fitsMetadataExtractor.xml"/>
 
     <!-- jpylyzer -->
-    <bean id="jpylyzerMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-    	<property name="stylesheet" value="${jpylyzer.xsl}"/>
-    </bean>
-    <bean id="jpylyzerMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-      <property name="source" value="jpylyzer"/>
-      <property name="transformer" ref="jpylyzerMetadataTransformer"/>
-      <property name="programArguments">
-	<list>
-	  <value>${jpylyzer.binary}</value>
-	  <value>--verbose</value>
-	  <value>{file}</value>
-	</list>
-      </property>
-      <property name="units" ref="units"/>
-      <property name="supportedFileExtensions">
-	<list>
-	  <value>jp2000</value>
-	  <value>jp2</value>
-	  <value>jpp</value>
-	  <value>jpf</value>
-	</list>
-      </property>
+    <import resource="jpylyzerMetadataExtractor.xml"/>
 
-    </bean>
-    
     <!-- Jhove -->
     <bean id="jhoveMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
       <property name="stylesheet" value="${jhove.xsl}"/>
