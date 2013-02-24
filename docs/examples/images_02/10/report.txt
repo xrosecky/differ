@@ -213,7 +213,7 @@ Tainted                               imagemagick  False
 Tile size X                           jhove                                                                       PPI
 Tile size Y                           jhove                                                                       PPI
 User Comment                          exiftool     File written by Adobe Photoshop� 5.0                           
-User time                             imagemagick  0.110u                                                         
+User time                             imagemagick  0.100u                                                         
 Verbose                               imagemagick  true                                                           
 Warning                               exiftool     Invalid EXIF text encoding                                     
 ------------------------------------- -----------  -------------------------------------------------------------  ----
@@ -222,11 +222,17 @@ Raw outputs of extractors
 =========================
 
    fits         'output <../docs/examples/images_02/10/output-fits.raw>'_
+   fits         'stderr output <../docs/examples/images_02/10/output-fits.raw>'_
    exiftool     'output <../docs/examples/images_02/10/output-exiftool.raw>'_
+   exiftool     'stderr output <../docs/examples/images_02/10/output-exiftool.raw>'_
    jhove        'output <../docs/examples/images_02/10/output-jhove.raw>'_
+   jhove        'stderr output <../docs/examples/images_02/10/output-jhove.raw>'_
    exiv2        'output <../docs/examples/images_02/10/output-exiv2.raw>'_
+   exiv2        'stderr output <../docs/examples/images_02/10/output-exiv2.raw>'_
    daitss       'output <../docs/examples/images_02/10/output-daitss.raw>'_
+   daitss       'stderr output <../docs/examples/images_02/10/output-daitss.raw>'_
    imagemagick   'output <../docs/examples/images_02/10/output-imagemagick.raw>'_
+   imagemagick   'stderr output <../docs/examples/images_02/10/output-imagemagick.raw>'_
 
 Text report
 ===========

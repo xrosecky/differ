@@ -112,7 +112,7 @@ Overall mean                       imagemagick  50.7176 (0.198892)
 Overall min                        imagemagick  0 (0)                                                                 
 Overall standard deviation         imagemagick  66.9819 (0.262674)                                                    
 Page geometry                      imagemagick  1810x2126+0+0                                                         
-Pixels per second                  imagemagick  22.64MB                                                               
+Pixels per second                  imagemagick  25.65MB                                                               
 Progression order                  jhove                                                                              
 Resolution horizontal              daitss       300                                                                   PPI
                                    exiftool     300                                                                   PPI
@@ -167,7 +167,7 @@ Displayed Units X                                 exiftool     inches
 Displayed Units Y                                 exiftool     inches                                                         
 Dispose                                           imagemagick  Undefined                                                      
 Document ID                                       exiftool     uuid:D3596EAF7807E011B337EC427BA3BC23                          
-Elapsed time                                      imagemagick  0:01.170                                                       
+Elapsed time                                      imagemagick  0:01.150                                                       
 Encoding process                                  exiftool     Progressive DCT, Huffman coding                                
 Endianess                                         imagemagick  Undefined                                                      
 Exif Byte Order                                   exiftool     Big-endian (Motorola, MM)                                      
@@ -245,7 +245,7 @@ Thumbnail Length                                  exiftool     4737
 Thumbnail Offset                                  exiftool     332                                                            
 Tile size X                                       jhove                                                                       PPI
 Tile size Y                                       jhove                                                                       PPI
-User time                                         imagemagick  0.170u                                                         
+User time                                         imagemagick  0.140u                                                         
 Verbose                                           imagemagick  true                                                           
 XMP Toolkit                                       exiftool     3.1.1-112                                                      
 ------------------------------------------------- -----------  -------------------------------------------------------------  ----
@@ -254,11 +254,17 @@ Raw outputs of extractors
 =========================
 
    fits         'output <../docs/examples/images_02/08/output-fits.raw>'_
+   fits         'stderr output <../docs/examples/images_02/08/output-fits.raw>'_
    exiftool     'output <../docs/examples/images_02/08/output-exiftool.raw>'_
+   exiftool     'stderr output <../docs/examples/images_02/08/output-exiftool.raw>'_
    jhove        'output <../docs/examples/images_02/08/output-jhove.raw>'_
+   jhove        'stderr output <../docs/examples/images_02/08/output-jhove.raw>'_
    exiv2        'output <../docs/examples/images_02/08/output-exiv2.raw>'_
+   exiv2        'stderr output <../docs/examples/images_02/08/output-exiv2.raw>'_
    daitss       'output <../docs/examples/images_02/08/output-daitss.raw>'_
+   daitss       'stderr output <../docs/examples/images_02/08/output-daitss.raw>'_
    imagemagick   'output <../docs/examples/images_02/08/output-imagemagick.raw>'_
+   imagemagick   'stderr output <../docs/examples/images_02/08/output-imagemagick.raw>'_
 
 Text report
 ===========

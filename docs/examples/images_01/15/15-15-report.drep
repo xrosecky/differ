@@ -745,7 +745,7 @@
             </metadata>
             <metadata>
                 <key>Pixels per second</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">26.21MB</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0b</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -757,7 +757,7 @@
             </metadata>
             <metadata>
                 <key>Elapsed time</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.009</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.000</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -797,32 +797,163 @@
             </metadata>
         </metadata-list>
         <sources-list>
-            <source exitCode="0" source="exiv2">
-                <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff
-File size       : 786572 Bytes
-MIME type       : image/tiff
-Image size      : 512 x 512
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 512 x 512
-White balance   : 
-Thumbnail       : None
-Copyright       : 
-Exif comment    : 
+            <source exitCode="0" source="imagemagick">
+                <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff
+  Format: TIFF (Tagged Image File Format)
+  Class: DirectClass
+  Geometry: 512x512+0+0
+  Resolution: 72x72
+  Print size: 7.11111x7.11111
+  Units: PixelsPerInch
+  Type: TrueColor
+  Base type: TrueColor
+  Endianess: MSB
+  Colorspace: RGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Red:
+      min: 54 (0.211765)
+      max: 255 (1)
+      mean: 180.224 (0.706759)
+      standard deviation: 49.0488 (0.192348)
+      kurtosis: -0.783163
+      skewness: -0.701058
+    Green:
+      min: 3 (0.0117647)
+      max: 248 (0.972549)
+      mean: 99.0512 (0.388436)
+      standard deviation: 52.8775 (0.207363)
+      kurtosis: -0.755494
+      skewness: 0.222995
+    Blue:
+      min: 8 (0.0313725)
+      max: 225 (0.882353)
+      mean: 105.41 (0.413374)
+      standard deviation: 34.0579 (0.13356)
+      kurtosis: -0.168544
+      skewness: 0.680268
+  Image statistics:
+    Overall:
+      min: 3 (0.0117647)
+      max: 255 (1)
+      mean: 96.1713 (0.377142)
+      standard deviation: 75.4472 (0.295871)
+      kurtosis: -1.10259
+      skewness: 0.20095
+  Rendering intent: Undefined
+  Interlace: None
+  Background color: white
+  Border color: rgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Compose: Over
+  Page geometry: 512x512+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: None
+  Orientation: TopLeft
+  Properties:
+    date:create: 2013-02-24T19:54:11+01:00
+    date:modify: 2013-02-24T19:54:11+01:00
+    signature: 01f8ff0e23a809255ae52a9857a7aeb0f89d92610205fef29c36c3d359ac3339
+    tiff:photometric: RGB
+    tiff:rows-per-strip: 5
+  Artifacts:
+    verbose: true
+  Tainted: False
+  Filesize: 787KB
+  Number pixels: 262KB
+  Pixels per second: 0b
+  User time: 0.000u
+  Elapsed time: 0:01.000
+  Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source exitCode="0" source="exiftool">
+                <stdout>ExifTool Version Number         : 8.15
+File Name                       : 15.tiff
+Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01
+File Size                       : 768 kB
+File Modification Date/Time     : 2013:02:24 19:54:11+01:00
+File Permissions                : rw-r--r--
+File Type                       : TIFF
+MIME Type                       : image/tiff
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Subfile Type                    : Full-resolution Image
+Image Width                     : 512
+Image Height                    : 512
+Bits Per Sample                 : 8 8 8
+Compression                     : Uncompressed
+Photometric Interpretation      : RGB
+Strip Offsets                   : 8
+Samples Per Pixel               : 3
+Strip Byte Counts               : 786432
+Planar Configuration            : Chunky
+Image Size                      : 512x512
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source exitCode="0" source="core">
+                <stdout></stdout>
+                <stderr></stderr>
+            </source>
+            <source exitCode="0" source="fits">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="24.2.13 21:49"&gt;
+  &lt;identification&gt;
+    &lt;identity format="Tagged Image File Format" mimetype="image/tiff" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="Jhove" toolversion="1.5" /&gt;
+      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;tool toolname="ffident" toolversion="0.2" /&gt;
+      &lt;version toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;5.0&lt;/version&gt;
+      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;3&lt;/version&gt;
+      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;4&lt;/version&gt;
+      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;6&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/7&lt;/externalIdentifier&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/8&lt;/externalIdentifier&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/9&lt;/externalIdentifier&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/10&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;786572&lt;/size&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:24 19:54:11+01:00&lt;/lastmodified&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7278246cf26b76e0ca398e7f739b527e&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1361732051000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus&gt;
+    &lt;well-formed toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/well-formed&gt;
+    &lt;valid toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/valid&gt;
+  &lt;/filestatus&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;byteOrder toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;big endian&lt;/byteOrder&gt;
+      &lt;compressionScheme toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;Uncompressed&lt;/compressionScheme&gt;
+      &lt;compressionScheme toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;65536&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageWidth&gt;
+      &lt;imageWidth toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageHeight&gt;
+      &lt;imageHeight toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageHeight&gt;
+      &lt;colorSpace toolname="Jhove" toolversion="1.5"&gt;RGB&lt;/colorSpace&gt;
+      &lt;referenceBlackWhite toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;0.0 255.0 0.0 255.0 0.0 255.0&lt;/referenceBlackWhite&gt;
+      &lt;orientation toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;bitsPerSample toolname="Jhove" toolversion="1.5"&gt;8 8 8&lt;/bitsPerSample&gt;
+      &lt;samplesPerPixel toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;3&lt;/samplesPerPixel&gt;
+      &lt;samplesPerPixel toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;196608&lt;/samplesPerPixel&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
 
 </stdout>
                 <stderr></stderr>
@@ -830,7 +961,7 @@ Exif comment    :
             <source exitCode="0" source="jhove">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-24T19:59:25+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-24T21:49:38+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff"&gt;
   &lt;reportingModule release="1.5" date="2007-10-02"&gt;TIFF-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-24T19:54:11+01:00&lt;/lastModified&gt;
@@ -1031,164 +1162,33 @@ Exif comment    :
 </stdout>
                 <stderr></stderr>
             </source>
-            <source exitCode="0" source="core">
-                <stdout></stdout>
-                <stderr></stderr>
-            </source>
-            <source exitCode="0" source="exiftool">
-                <stdout>ExifTool Version Number         : 8.15
-File Name                       : 15.tiff
-Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01
-File Size                       : 768 kB
-File Modification Date/Time     : 2013:02:24 19:54:11+01:00
-File Permissions                : rw-r--r--
-File Type                       : TIFF
-MIME Type                       : image/tiff
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Subfile Type                    : Full-resolution Image
-Image Width                     : 512
-Image Height                    : 512
-Bits Per Sample                 : 8 8 8
-Compression                     : Uncompressed
-Photometric Interpretation      : RGB
-Strip Offsets                   : 8
-Samples Per Pixel               : 3
-Strip Byte Counts               : 786432
-Planar Configuration            : Chunky
-Image Size                      : 512x512
-</stdout>
-                <stderr></stderr>
-            </source>
-            <source exitCode="0" source="fits">
-                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="24.2.13 19:59"&gt;
-  &lt;identification&gt;
-    &lt;identity format="Tagged Image File Format" mimetype="image/tiff" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="Jhove" toolversion="1.5" /&gt;
-      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;tool toolname="ffident" toolversion="0.2" /&gt;
-      &lt;version toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;5.0&lt;/version&gt;
-      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;3&lt;/version&gt;
-      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;4&lt;/version&gt;
-      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;6&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/7&lt;/externalIdentifier&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/8&lt;/externalIdentifier&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/9&lt;/externalIdentifier&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/10&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;786572&lt;/size&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:24 19:54:11+01:00&lt;/lastmodified&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;7278246cf26b76e0ca398e7f739b527e&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1361732051000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus&gt;
-    &lt;well-formed toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/well-formed&gt;
-    &lt;valid toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/valid&gt;
-  &lt;/filestatus&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;byteOrder toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;big endian&lt;/byteOrder&gt;
-      &lt;compressionScheme toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;Uncompressed&lt;/compressionScheme&gt;
-      &lt;compressionScheme toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;65536&lt;/compressionScheme&gt;
-      &lt;imageWidth toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageWidth&gt;
-      &lt;imageWidth toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageHeight&gt;
-      &lt;imageHeight toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageHeight&gt;
-      &lt;colorSpace toolname="Jhove" toolversion="1.5"&gt;RGB&lt;/colorSpace&gt;
-      &lt;referenceBlackWhite toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;0.0 255.0 0.0 255.0 0.0 255.0&lt;/referenceBlackWhite&gt;
-      &lt;orientation toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;normal*&lt;/orientation&gt;
-      &lt;samplingFrequencyUnit toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;bitsPerSample toolname="Jhove" toolversion="1.5"&gt;8 8 8&lt;/bitsPerSample&gt;
-      &lt;samplesPerPixel toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;3&lt;/samplesPerPixel&gt;
-      &lt;samplesPerPixel toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;196608&lt;/samplesPerPixel&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
+            <source exitCode="0" source="exiv2">
+                <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff
+File size       : 786572 Bytes
+MIME type       : image/tiff
+Image size      : 512 x 512
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 512 x 512
+White balance   : 
+Thumbnail       : None
+Copyright       : 
+Exif comment    : 
 
-</stdout>
-                <stderr></stderr>
-            </source>
-            <source exitCode="0" source="imagemagick">
-                <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff
-  Format: TIFF (Tagged Image File Format)
-  Class: DirectClass
-  Geometry: 512x512+0+0
-  Resolution: 72x72
-  Print size: 7.11111x7.11111
-  Units: PixelsPerInch
-  Type: TrueColor
-  Base type: TrueColor
-  Endianess: MSB
-  Colorspace: RGB
-  Depth: 8-bit
-  Channel depth:
-    red: 8-bit
-    green: 8-bit
-    blue: 8-bit
-  Channel statistics:
-    Red:
-      min: 54 (0.211765)
-      max: 255 (1)
-      mean: 180.224 (0.706759)
-      standard deviation: 49.0488 (0.192348)
-      kurtosis: -0.783163
-      skewness: -0.701058
-    Green:
-      min: 3 (0.0117647)
-      max: 248 (0.972549)
-      mean: 99.0512 (0.388436)
-      standard deviation: 52.8775 (0.207363)
-      kurtosis: -0.755494
-      skewness: 0.222995
-    Blue:
-      min: 8 (0.0313725)
-      max: 225 (0.882353)
-      mean: 105.41 (0.413374)
-      standard deviation: 34.0579 (0.13356)
-      kurtosis: -0.168544
-      skewness: 0.680268
-  Image statistics:
-    Overall:
-      min: 3 (0.0117647)
-      max: 255 (1)
-      mean: 96.1713 (0.377142)
-      standard deviation: 75.4472 (0.295871)
-      kurtosis: -1.10259
-      skewness: 0.20095
-  Rendering intent: Undefined
-  Interlace: None
-  Background color: white
-  Border color: rgb(223,223,223)
-  Matte color: grey74
-  Transparent color: black
-  Compose: Over
-  Page geometry: 512x512+0+0
-  Dispose: Undefined
-  Iterations: 0
-  Compression: None
-  Orientation: TopLeft
-  Properties:
-    date:create: 2013-02-24T19:54:11+01:00
-    date:modify: 2013-02-24T19:54:11+01:00
-    signature: 01f8ff0e23a809255ae52a9857a7aeb0f89d92610205fef29c36c3d359ac3339
-    tiff:photometric: RGB
-    tiff:rows-per-strip: 5
-  Artifacts:
-    verbose: true
-  Tainted: False
-  Filesize: 787KB
-  Number pixels: 262KB
-  Pixels per second: 26.21MB
-  User time: 0.000u
-  Elapsed time: 0:01.009
-  Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
 </stdout>
                 <stderr></stderr>
             </source>
@@ -1999,7 +1999,7 @@ Image Size                      : 512x512
             <metadata>
                 <key>File path</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/home/stavel/differ/differ-cmdline/../docs/examples/images_02/15.jp2</value>
-                <conflict>false</conflict>
+                <conflict>true</conflict>
                 <source>core</source>
             </metadata>
             <metadata>
@@ -2023,7 +2023,7 @@ Image Size                      : 512x512
             <metadata>
                 <key>File path</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/home/stavel/differ/differ-cmdline/../docs/examples/images_02/15.jp2</value>
-                <conflict>false</conflict>
+                <conflict>true</conflict>
                 <source>fits</source>
             </metadata>
             <metadata>
@@ -2368,14 +2368,834 @@ Image Size                      : 512x512
             </metadata>
             <metadata>
                 <key>exit-code</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">error (253)</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ok</value>
                 <conflict>true</conflict>
-                <source>exiv2</source>
+                <source>jpylyzer</source>
             </metadata>
             <metadata>
-                <key>exit-code</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">error (2)</value>
+                <key>Version</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">jpylyzer 1.6.0</value>
                 <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Valid and Well formed</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">False</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Contains signature box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Contains file type box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Contains JP2 header box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Contains contiguous codestream box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>First box is signature box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Second box is file type box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Location JP2 header box is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more than one signature box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more than one file type box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more tna one JP2 header box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Heigt consistent with SIZ</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Width consistent with SIZ</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>NC consistent with SIZ</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>bPC sign consistent with SIZ</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>bPC depth consistent with SIZ</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>File last modified</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Fri Jan 11 14:47:26 2013</value>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>File name</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">15.jp2</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>File path</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/home/stavel/differ/docs/examples/images_02/15.jp2</value>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>File size</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">476756</value>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Signature box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Signature is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Brand is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Minor version is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Compatibility list is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Image header box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Image header box height is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Image header box width is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>nC is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>bPC is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>C is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>unkC is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>iPR is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Meth is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Prec is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Approximation is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">False</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Enum CS is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Capture resolution box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>vRcN is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>vRcD is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>hRcN is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>hRcD is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>vRcE is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>hRcE is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Contains capture or display resolution box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more than one capture resolution box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more than one display resolution box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Contains image header box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Contains colour specification box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>First jp2 header box is image header box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more than one image header box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more than one bits pre component box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more than one palette box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more than one component mapping box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more than one channel definition box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>No more than one resolution box</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Colour specification boxes are contiguous</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Palette and component mapping boxes only together</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Box length is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Codestream start with SOC marker</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Found SIZ marker</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>l size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>r size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>x size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>y size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>xO size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>yO size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>xT size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>yT size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>xTO size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>yTO size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>c size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>l size consistency with c size</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>s size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>xR size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>yR size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>s size is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>l cod is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>cod order is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Cod layers is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Multiple component transformation is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Cod levels is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>l cod consistent with levels precincts</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Code block with exponent is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Code block height exponent is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Sum height width exponent is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Cod transformation is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>l qcd is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>q style is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Found COD marker</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Found QCD marker</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Quantization consistent with levels</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Found expected number of tiles</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Found expected number of tile parts</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>l sot is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>i sot is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>p sot is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>tp sot is valid</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Found SOD marker</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Fount next tile part or EOC</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Found EOC marker</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">True</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Image width</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
+                <unit>px</unit>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Image height</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">512</value>
+                <unit>px</unit>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Color depth</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8</value>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Number of channels</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Color space</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">sRGB</value>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Resolution vertical</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+                <unit>PPI</unit>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Resolution horizontal</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+                <unit>PPI</unit>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Resolution vertical</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2834</value>
+                <unit>PPI</unit>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Resolution horizontal</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2834</value>
+                <unit>PPI</unit>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Display resolution horizontal</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+                <unit>PPI</unit>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Display resolution vertical</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+                <unit>PPI</unit>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Type of format</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">jpeg</value>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Universal unique identifier (UUID)</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3a0d0218-0ae9-4115-b376-4bca41ce0e71</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Commentary</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Number of tiles</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Transformation</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5-3 reversible</value>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Compression</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5-3 reversible</value>
+                <conflict>true</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Compression ratio</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.65</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Number of decomposition levels</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Number of quality layers</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Progression order</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">RLCP</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Code block width</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32</value>
+                <unit>px</unit>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Code block height</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32</value>
+                <unit>px</unit>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Coding bypass</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">no</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Start of packet header</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">no</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>End of packet header</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">no</value>
+                <conflict>false</conflict>
+                <source>jpylyzer</source>
+            </metadata>
+            <metadata>
+                <key>Precincts</key>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">no</value>
+                <conflict>false</conflict>
                 <source>jpylyzer</source>
             </metadata>
             <metadata>
@@ -2847,19 +3667,19 @@ Image Size                      : 512x512
             </metadata>
             <metadata>
                 <key>Pixels per second</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.092MB</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.049MB</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
             <metadata>
                 <key>User time</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.240u</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.250u</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
             <metadata>
                 <key>Elapsed time</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.240</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.250</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -2972,7 +3792,7 @@ Image Size                      : 512x512
             <metadata>
                 <key>Transformation</key>
                 <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">yes</value>
-                <conflict>false</conflict>
+                <conflict>true</conflict>
                 <source>kakadu</source>
             </metadata>
             <metadata>
@@ -3111,77 +3931,57 @@ Image Size                      : 512x512
             </metadata>
         </metadata-list>
         <sources-list>
-            <source exitCode="2" source="jpylyzer">
+            <source exitCode="0" source="core">
                 <stdout></stdout>
-                <stderr>usage: jpylyzer [-h] [-v] [--verbose] jp2In
-jpylyzer: error: argument -v/--version: ignored explicit argument 'erbose'
-</stderr>
+                <stderr></stderr>
             </source>
-            <source exitCode="253" source="exiv2">
-                <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/15.jp2
-File size       : 476756 Bytes
-MIME type       : image/jp2
-Image size      : 512 x 512
-</stdout>
-                <stderr>/home/stavel/differ/differ-cmdline/../docs/examples/images_02/15.jp2: No Exif data found in the file
-</stderr>
-            </source>
-            <source exitCode="0" source="exiftool">
-                <stdout>ExifTool Version Number         : 8.15
-File Name                       : 15.jp2
-Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
-File Size                       : 466 kB
-File Modification Date/Time     : 2013:01:11 14:47:26+01:00
-File Permissions                : rw-r--r--
-File Type                       : JP2
-MIME Type                       : image/jp2
-Major Brand                     : JPEG 2000 Image (.JP2)
-Minor Version                   : 0.0.0
-Compatible Brands               : jp2 , jpxb, jpx
-Image Height                    : 512
-Image Width                     : 512
-Number Of Components            : 3
-Bits Per Component              : 8 Bits, Unsigned
-Compression                     : JPEG 2000
-Colorspace                      : sRGB
-Capture Y Resolution            : 2834
-Capture X Resolution            : 2834
-Capture Y Resolution Unit       : m
-Capture X Resolution Unit       : m
-XMP Toolkit                     : Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00
-Create Date                     : 2012:02:12 12:27:13+01:00
-Modify Date                     : 2012:02:17 22:07:36+01:00
-Metadata Date                   : 2012:02:17 22:07:36+01:00
-Creator Tool                    : Adobe Photoshop CS5 Windows
-Format                          : image/jpx
-Color Mode                      : 3
-Instance ID                     : xmp.iid:44CDF60AA959E111B6D8F36F074F6F1F
-Document ID                     : xmp.did:41CDF60AA959E111B6D8F36F074F6F1F
-Original Document ID            : xmp.did:41CDF60AA959E111B6D8F36F074F6F1F
-History Action                  : created, converted, saved, saved, saved
-History Instance ID             : xmp.iid:41CDF60AA959E111B6D8F36F074F6F1F, xmp.iid:42CDF60AA959E111B6D8F36F074F6F1F, xmp.iid:43CDF60AA959E111B6D8F36F074F6F1F, xmp.iid:44CDF60AA959E111B6D8F36F074F6F1F
-History When                    : 2012:02:12 12:27:13+01:00, 2012:02:17 22:04:21+01:00, 2012:02:17 22:07:36+01:00, 2012:02:17 22:07:36+01:00
-History Software Agent          : Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows
-History Parameters              : from image/tiff to image/jpx
-History Changed                 : /, /, /
-Bits Per Sample                 : 8, 8, 8
-Photometric Interpretation      : RGB
-Orientation                     : Horizontal (normal)
-Samples Per Pixel               : 3
-Planar Configuration            : Chunky
-X Resolution                    : 72
-Y Resolution                    : 72
-Resolution Unit                 : inches
-Color Space                     : sRGB
-Exif Image Width                : 512
-Exif Image Height               : 512
-Image Size                      : 512x512
+            <source exitCode="0" source="kakadu">
+                <stdout>Sprofile=PROFILE2
+Sextensions=0
+Scap=no
+Ssize={512,512}
+Sorigin={0,0}
+Stiles={1024,1024}
+Stile_origin={0,0}
+Scomponents=3
+Ssigned=no,no,no
+Sprecision=8,8,8
+Ssampling={1,1},{1,1},{1,1}
+Sdims={512,512},{512,512},{512,512}
+Cycc=yes
+Cmct=0
+Clayers=1
+Cuse_sop=no
+Cuse_eph=no
+Corder=RLCP
+Calign_blk_last={no,no}
+Clevels=5
+Cads=0
+Cdfs=0
+Cdecomp=B(-:-:-)
+Creversible=yes
+Ckernels=W5X3
+Catk=0
+Cuse_precincts=no
+Cblk={32,32}
+Cmodes=0
+Qguard=2
+Qabs_ranges=8,9,9,10,9,9,10,9,9,10,9,9,10,9,9,10
+
+Consumed 0 tile-part(s) from a total of 1 tile(s).
+Consumed 98 codestream bytes (excluding any file format) = 0.002991 bits/pel.
 </stdout>
                 <stderr></stderr>
             </source>
+            <source exitCode="0" source="jpylyzer">
+                <stdout>&lt;?xml version='1.0' encoding='ascii'?&gt;
+&lt;jpylyzer&gt;&lt;toolInfo&gt;&lt;toolName&gt;jpylyzer&lt;/toolName&gt;&lt;toolVersion&gt;1.6.0&lt;/toolVersion&gt;&lt;/toolInfo&gt;&lt;fileInfo&gt;&lt;fileName&gt;15.jp2&lt;/fileName&gt;&lt;filePath&gt;/home/stavel/differ/docs/examples/images_02/15.jp2&lt;/filePath&gt;&lt;fileSizeInBytes&gt;476756&lt;/fileSizeInBytes&gt;&lt;fileLastModified&gt;Fri Jan 11 14:47:26 2013&lt;/fileLastModified&gt;&lt;/fileInfo&gt;&lt;isValidJP2&gt;False&lt;/isValidJP2&gt;&lt;tests&gt;&lt;signatureBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;signatureIsValid&gt;True&lt;/signatureIsValid&gt;&lt;/signatureBox&gt;&lt;fileTypeBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;brandIsValid&gt;True&lt;/brandIsValid&gt;&lt;minorVersionIsValid&gt;True&lt;/minorVersionIsValid&gt;&lt;compatibilityListIsValid&gt;True&lt;/compatibilityListIsValid&gt;&lt;/fileTypeBox&gt;&lt;jp2HeaderBox&gt;&lt;imageHeaderBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;heightIsValid&gt;True&lt;/heightIsValid&gt;&lt;widthIsValid&gt;True&lt;/widthIsValid&gt;&lt;nCIsValid&gt;True&lt;/nCIsValid&gt;&lt;bPCIsValid&gt;True&lt;/bPCIsValid&gt;&lt;cIsValid&gt;True&lt;/cIsValid&gt;&lt;unkCIsValid&gt;True&lt;/unkCIsValid&gt;&lt;iPRIsValid&gt;True&lt;/iPRIsValid&gt;&lt;/imageHeaderBox&gt;&lt;colourSpecificationBox&gt;&lt;methIsValid&gt;True&lt;/methIsValid&gt;&lt;precIsValid&gt;True&lt;/precIsValid&gt;&lt;approxIsValid&gt;False&lt;/approxIsValid&gt;&lt;enumCSIsValid&gt;True&lt;/enumCSIsValid&gt;&lt;/colourSpecificationBox&gt;&lt;resolutionBox&gt;&lt;captureResolutionBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;vRcNIsValid&gt;True&lt;/vRcNIsValid&gt;&lt;vRcDIsValid&gt;True&lt;/vRcDIsValid&gt;&lt;hRcNIsValid&gt;True&lt;/hRcNIsValid&gt;&lt;hRcDIsValid&gt;True&lt;/hRcDIsValid&gt;&lt;vRcEIsValid&gt;True&lt;/vRcEIsValid&gt;&lt;hRcEIsValid&gt;True&lt;/hRcEIsValid&gt;&lt;/captureResolutionBox&gt;&lt;containsCaptureOrDisplayResolutionBox&gt;True&lt;/containsCaptureOrDisplayResolutionBox&gt;&lt;noMoreThanOneCaptureResolutionBox&gt;True&lt;/noMoreThanOneCaptureResolutionBox&gt;&lt;noMoreThanOneDisplayResolutionBox&gt;True&lt;/noMoreThanOneDisplayResolutionBox&gt;&lt;/resolutionBox&gt;&lt;containsImageHeaderBox&gt;True&lt;/containsImageHeaderBox&gt;&lt;containsColourSpecificationBox&gt;True&lt;/containsColourSpecificationBox&gt;&lt;firstJP2HeaderBoxIsImageHeaderBox&gt;True&lt;/firstJP2HeaderBoxIsImageHeaderBox&gt;&lt;noMoreThanOneImageHeaderBox&gt;True&lt;/noMoreThanOneImageHeaderBox&gt;&lt;noMoreThanOneBitsPerComponentBox&gt;True&lt;/noMoreThanOneBitsPerComponentBox&gt;&lt;noMoreThanOnePaletteBox&gt;True&lt;/noMoreThanOnePaletteBox&gt;&lt;noMoreThanOneComponentMappingBox&gt;True&lt;/noMoreThanOneComponentMappingBox&gt;&lt;noMoreThanOneChannelDefinitionBox&gt;True&lt;/noMoreThanOneChannelDefinitionBox&gt;&lt;noMoreThanOneResolutionBox&gt;True&lt;/noMoreThanOneResolutionBox&gt;&lt;colourSpecificationBoxesAreContiguous&gt;True&lt;/colourSpecificationBoxesAreContiguous&gt;&lt;paletteAndComponentMappingBoxesOnlyTogether&gt;True&lt;/paletteAndComponentMappingBoxesOnlyTogether&gt;&lt;/jp2HeaderBox&gt;&lt;uuidBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;boxLengthIsValid&gt;True&lt;/boxLengthIsValid&gt;&lt;/uuidBox&gt;&lt;contiguousCodestreamBox&gt;&lt;codestreamStartsWithSOCMarker&gt;True&lt;/codestreamStartsWithSOCMarker&gt;&lt;foundSIZMarker&gt;True&lt;/foundSIZMarker&gt;&lt;siz&gt;&lt;lsizIsValid&gt;True&lt;/lsizIsValid&gt;&lt;rsizIsValid&gt;True&lt;/rsizIsValid&gt;&lt;xsizIsValid&gt;True&lt;/xsizIsValid&gt;&lt;ysizIsValid&gt;True&lt;/ysizIsValid&gt;&lt;xOsizIsValid&gt;True&lt;/xOsizIsValid&gt;&lt;yOsizIsValid&gt;True&lt;/yOsizIsValid&gt;&lt;xTsizIsValid&gt;True&lt;/xTsizIsValid&gt;&lt;yTsizIsValid&gt;True&lt;/yTsizIsValid&gt;&lt;xTOsizIsValid&gt;True&lt;/xTOsizIsValid&gt;&lt;yTOsizIsValid&gt;True&lt;/yTOsizIsValid&gt;&lt;csizIsValid&gt;True&lt;/csizIsValid&gt;&lt;lsizConsistentWithCsiz&gt;True&lt;/lsizConsistentWithCsiz&gt;&lt;ssizIsValid&gt;True&lt;/ssizIsValid&gt;&lt;xRsizIsValid&gt;True&lt;/xRsizIsValid&gt;&lt;yRsizIsValid&gt;True&lt;/yRsizIsValid&gt;&lt;ssizIsValid&gt;True&lt;/ssizIsValid&gt;&lt;xRsizIsValid&gt;True&lt;/xRsizIsValid&gt;&lt;yRsizIsValid&gt;True&lt;/yRsizIsValid&gt;&lt;ssizIsValid&gt;True&lt;/ssizIsValid&gt;&lt;xRsizIsValid&gt;True&lt;/xRsizIsValid&gt;&lt;yRsizIsValid&gt;True&lt;/yRsizIsValid&gt;&lt;/siz&gt;&lt;cod&gt;&lt;lcodIsValid&gt;True&lt;/lcodIsValid&gt;&lt;orderIsValid&gt;True&lt;/orderIsValid&gt;&lt;layersIsValid&gt;True&lt;/layersIsValid&gt;&lt;multipleComponentTransformationIsValid&gt;True&lt;/multipleComponentTransformationIsValid&gt;&lt;levelsIsValid&gt;True&lt;/levelsIsValid&gt;&lt;lcodConsistentWithLevelsPrecincts&gt;True&lt;/lcodConsistentWithLevelsPrecincts&gt;&lt;codeBlockWidthExponentIsValid&gt;True&lt;/codeBlockWidthExponentIsValid&gt;&lt;codeBlockHeightExponentIsValid&gt;True&lt;/codeBlockHeightExponentIsValid&gt;&lt;sumHeightWidthExponentIsValid&gt;True&lt;/sumHeightWidthExponentIsValid&gt;&lt;transformationIsValid&gt;True&lt;/transformationIsValid&gt;&lt;/cod&gt;&lt;qcd&gt;&lt;lqcdIsValid&gt;True&lt;/lqcdIsValid&gt;&lt;qStyleIsValid&gt;True&lt;/qStyleIsValid&gt;&lt;/qcd&gt;&lt;foundCODMarker&gt;True&lt;/foundCODMarker&gt;&lt;foundQCDMarker&gt;True&lt;/foundQCDMarker&gt;&lt;quantizationConsistentWithLevels&gt;True&lt;/quantizationConsistentWithLevels&gt;&lt;foundExpectedNumberOfTiles&gt;True&lt;/foundExpectedNumberOfTiles&gt;&lt;foundExpectedNumberOfTileParts&gt;True&lt;/foundExpectedNumberOfTileParts&gt;&lt;tileParts&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsotIsValid&gt;True&lt;/lsotIsValid&gt;&lt;isotIsValid&gt;True&lt;/isotIsValid&gt;&lt;psotIsValid&gt;True&lt;/psotIsValid&gt;&lt;tpsotIsValid&gt;True&lt;/tpsotIsValid&gt;&lt;/sot&gt;&lt;foundSODMarker&gt;True&lt;/foundSODMarker&gt;&lt;foundNextTilePartOrEOC&gt;True&lt;/foundNextTilePartOrEOC&gt;&lt;/tilePart&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsotIsValid&gt;True&lt;/lsotIsValid&gt;&lt;isotIsValid&gt;True&lt;/isotIsValid&gt;&lt;psotIsValid&gt;True&lt;/psotIsValid&gt;&lt;tpsotIsValid&gt;True&lt;/tpsotIsValid&gt;&lt;/sot&gt;&lt;foundSODMarker&gt;True&lt;/foundSODMarker&gt;&lt;foundNextTilePartOrEOC&gt;True&lt;/foundNextTilePartOrEOC&gt;&lt;/tilePart&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsotIsValid&gt;True&lt;/lsotIsValid&gt;&lt;isotIsValid&gt;True&lt;/isotIsValid&gt;&lt;psotIsValid&gt;True&lt;/psotIsValid&gt;&lt;tpsotIsValid&gt;True&lt;/tpsotIsValid&gt;&lt;/sot&gt;&lt;foundSODMarker&gt;True&lt;/foundSODMarker&gt;&lt;foundNextTilePartOrEOC&gt;True&lt;/foundNextTilePartOrEOC&gt;&lt;/tilePart&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsotIsValid&gt;True&lt;/lsotIsValid&gt;&lt;isotIsValid&gt;True&lt;/isotIsValid&gt;&lt;psotIsValid&gt;True&lt;/psotIsValid&gt;&lt;tpsotIsValid&gt;True&lt;/tpsotIsValid&gt;&lt;/sot&gt;&lt;foundSODMarker&gt;True&lt;/foundSODMarker&gt;&lt;foundNextTilePartOrEOC&gt;True&lt;/foundNextTilePartOrEOC&gt;&lt;/tilePart&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsotIsValid&gt;True&lt;/lsotIsValid&gt;&lt;isotIsValid&gt;True&lt;/isotIsValid&gt;&lt;psotIsValid&gt;True&lt;/psotIsValid&gt;&lt;tpsotIsValid&gt;True&lt;/tpsotIsValid&gt;&lt;/sot&gt;&lt;foundSODMarker&gt;True&lt;/foundSODMarker&gt;&lt;foundNextTilePartOrEOC&gt;True&lt;/foundNextTilePartOrEOC&gt;&lt;/tilePart&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsotIsValid&gt;True&lt;/lsotIsValid&gt;&lt;isotIsValid&gt;True&lt;/isotIsValid&gt;&lt;psotIsValid&gt;True&lt;/psotIsValid&gt;&lt;tpsotIsValid&gt;True&lt;/tpsotIsValid&gt;&lt;/sot&gt;&lt;foundSODMarker&gt;True&lt;/foundSODMarker&gt;&lt;foundNextTilePartOrEOC&gt;True&lt;/foundNextTilePartOrEOC&gt;&lt;/tilePart&gt;&lt;/tileParts&gt;&lt;foundEOCMarker&gt;True&lt;/foundEOCMarker&gt;&lt;/contiguousCodestreamBox&gt;&lt;containsSignatureBox&gt;True&lt;/containsSignatureBox&gt;&lt;containsFileTypeBox&gt;True&lt;/containsFileTypeBox&gt;&lt;containsJP2HeaderBox&gt;True&lt;/containsJP2HeaderBox&gt;&lt;containsContiguousCodestreamBox&gt;True&lt;/containsContiguousCodestreamBox&gt;&lt;firstBoxIsSignatureBox&gt;True&lt;/firstBoxIsSignatureBox&gt;&lt;secondBoxIsFileTypeBox&gt;True&lt;/secondBoxIsFileTypeBox&gt;&lt;locationJP2HeaderBoxIsValid&gt;True&lt;/locationJP2HeaderBoxIsValid&gt;&lt;noMoreThanOneSignatureBox&gt;True&lt;/noMoreThanOneSignatureBox&gt;&lt;noMoreThanOneFileTypeBox&gt;True&lt;/noMoreThanOneFileTypeBox&gt;&lt;noMoreThanOneJP2HeaderBox&gt;True&lt;/noMoreThanOneJP2HeaderBox&gt;&lt;heightConsistentWithSIZ&gt;True&lt;/heightConsistentWithSIZ&gt;&lt;widthConsistentWithSIZ&gt;True&lt;/widthConsistentWithSIZ&gt;&lt;nCConsistentWithSIZ&gt;True&lt;/nCConsistentWithSIZ&gt;&lt;bPCSignConsistentWithSIZ&gt;True&lt;/bPCSignConsistentWithSIZ&gt;&lt;bPCDepthConsistentWithSIZ&gt;True&lt;/bPCDepthConsistentWithSIZ&gt;&lt;/tests&gt;&lt;properties&gt;&lt;signatureBox /&gt;&lt;fileTypeBox&gt;&lt;br&gt;jp2 &lt;/br&gt;&lt;minV&gt;0&lt;/minV&gt;&lt;cL&gt;jp2 &lt;/cL&gt;&lt;cL&gt;jpxb&lt;/cL&gt;&lt;cL&gt;jpx &lt;/cL&gt;&lt;/fileTypeBox&gt;&lt;unknownBox&gt;&lt;boxType&gt;rreq&lt;/boxType&gt;&lt;/unknownBox&gt;&lt;jp2HeaderBox&gt;&lt;imageHeaderBox&gt;&lt;height&gt;512&lt;/height&gt;&lt;width&gt;512&lt;/width&gt;&lt;nC&gt;3&lt;/nC&gt;&lt;bPCSign&gt;unsigned&lt;/bPCSign&gt;&lt;bPCDepth&gt;8&lt;/bPCDepth&gt;&lt;c&gt;jpeg2000&lt;/c&gt;&lt;unkC&gt;yes&lt;/unkC&gt;&lt;iPR&gt;no&lt;/iPR&gt;&lt;/imageHeaderBox&gt;&lt;colourSpecificationBox&gt;&lt;meth&gt;Enumerated&lt;/meth&gt;&lt;prec&gt;0&lt;/prec&gt;&lt;approx&gt;1&lt;/approx&gt;&lt;enumCS&gt;sRGB&lt;/enumCS&gt;&lt;/colourSpecificationBox&gt;&lt;resolutionBox&gt;&lt;captureResolutionBox&gt;&lt;vRcN&gt;2834&lt;/vRcN&gt;&lt;vRcD&gt;1&lt;/vRcD&gt;&lt;hRcN&gt;2834&lt;/hRcN&gt;&lt;hRcD&gt;1&lt;/hRcD&gt;&lt;vRcE&gt;0&lt;/vRcE&gt;&lt;hRcE&gt;0&lt;/hRcE&gt;&lt;vRescInPixelsPerMeter&gt;2834.0&lt;/vRescInPixelsPerMeter&gt;&lt;hRescInPixelsPerMeter&gt;2834.0&lt;/hRescInPixelsPerMeter&gt;&lt;vRescInPixelsPerInch&gt;71.98&lt;/vRescInPixelsPerInch&gt;&lt;hRescInPixelsPerInch&gt;71.98&lt;/hRescInPixelsPerInch&gt;&lt;/captureResolutionBox&gt;&lt;/resolutionBox&gt;&lt;/jp2HeaderBox&gt;&lt;uuidBox&gt;&lt;uuid&gt;3a0d0218-0ae9-4115-b376-4bca41ce0e71&lt;/uuid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;uuid&gt;47c92ccc-d1a1-4581-b904-38bb5467713b&lt;/uuid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;uuid&gt;bc45a774-dd50-4ec6-a9f6-f3a137f47e90&lt;/uuid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;uuid&gt;d7c8c5ef-951f-43b2-8757-042500f538e8&lt;/uuid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;uuid&gt;0537cdab-9d0c-4431-a72a-fa561f2a113e&lt;/uuid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;uuid&gt;be7acfcb-97a9-42e8-9c71-999491e3afac&lt;/uuid&gt;&lt;/uuidBox&gt;&lt;uuidBox&gt;&lt;uuid&gt;2c4c0100-8504-40b9-a03e-562148d6dfeb&lt;/uuid&gt;&lt;/uuidBox&gt;&lt;contiguousCodestreamBox&gt;&lt;siz&gt;&lt;lsiz&gt;47&lt;/lsiz&gt;&lt;rsiz&gt;ISO/IEC 15444-1&lt;/rsiz&gt;&lt;xsiz&gt;512&lt;/xsiz&gt;&lt;ysiz&gt;512&lt;/ysiz&gt;&lt;xOsiz&gt;0&lt;/xOsiz&gt;&lt;yOsiz&gt;0&lt;/yOsiz&gt;&lt;xTsiz&gt;1024&lt;/xTsiz&gt;&lt;yTsiz&gt;1024&lt;/yTsiz&gt;&lt;xTOsiz&gt;0&lt;/xTOsiz&gt;&lt;yTOsiz&gt;0&lt;/yTOsiz&gt;&lt;numberOfTiles&gt;1&lt;/numberOfTiles&gt;&lt;csiz&gt;3&lt;/csiz&gt;&lt;ssizSign&gt;unsigned&lt;/ssizSign&gt;&lt;ssizDepth&gt;8&lt;/ssizDepth&gt;&lt;xRsiz&gt;1&lt;/xRsiz&gt;&lt;yRsiz&gt;1&lt;/yRsiz&gt;&lt;ssizSign&gt;unsigned&lt;/ssizSign&gt;&lt;ssizDepth&gt;8&lt;/ssizDepth&gt;&lt;xRsiz&gt;1&lt;/xRsiz&gt;&lt;yRsiz&gt;1&lt;/yRsiz&gt;&lt;ssizSign&gt;unsigned&lt;/ssizSign&gt;&lt;ssizDepth&gt;8&lt;/ssizDepth&gt;&lt;xRsiz&gt;1&lt;/xRsiz&gt;&lt;yRsiz&gt;1&lt;/yRsiz&gt;&lt;/siz&gt;&lt;cod&gt;&lt;lcod&gt;12&lt;/lcod&gt;&lt;precincts&gt;no&lt;/precincts&gt;&lt;sop&gt;no&lt;/sop&gt;&lt;eph&gt;no&lt;/eph&gt;&lt;order&gt;RLCP&lt;/order&gt;&lt;layers&gt;1&lt;/layers&gt;&lt;multipleComponentTransformation&gt;yes&lt;/multipleComponentTransformation&gt;&lt;levels&gt;5&lt;/levels&gt;&lt;codeBlockWidth&gt;32&lt;/codeBlockWidth&gt;&lt;codeBlockHeight&gt;32&lt;/codeBlockHeight&gt;&lt;codingBypass&gt;no&lt;/codingBypass&gt;&lt;resetOnBoundaries&gt;no&lt;/resetOnBoundaries&gt;&lt;termOnEachPass&gt;no&lt;/termOnEachPass&gt;&lt;vertCausalContext&gt;no&lt;/vertCausalContext&gt;&lt;predTermination&gt;no&lt;/predTermination&gt;&lt;segmentationSymbols&gt;no&lt;/segmentationSymbols&gt;&lt;transformation&gt;5-3 reversible&lt;/transformation&gt;&lt;/cod&gt;&lt;qcd&gt;&lt;lqcd&gt;19&lt;/lqcd&gt;&lt;qStyle&gt;no quantization&lt;/qStyle&gt;&lt;guardBits&gt;2&lt;/guardBits&gt;&lt;epsilon&gt;8&lt;/epsilon&gt;&lt;epsilon&gt;9&lt;/epsilon&gt;&lt;epsilon&gt;9&lt;/epsilon&gt;&lt;epsilon&gt;10&lt;/epsilon&gt;&lt;epsilon&gt;9&lt;/epsilon&gt;&lt;/qcd&gt;&lt;tileParts&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsot&gt;10&lt;/lsot&gt;&lt;isot&gt;0&lt;/isot&gt;&lt;psot&gt;693&lt;/psot&gt;&lt;tpsot&gt;0&lt;/tpsot&gt;&lt;tnsot&gt;6&lt;/tnsot&gt;&lt;/sot&gt;&lt;/tilePart&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsot&gt;10&lt;/lsot&gt;&lt;isot&gt;0&lt;/isot&gt;&lt;psot&gt;1851&lt;/psot&gt;&lt;tpsot&gt;1&lt;/tpsot&gt;&lt;tnsot&gt;6&lt;/tnsot&gt;&lt;/sot&gt;&lt;/tilePart&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsot&gt;10&lt;/lsot&gt;&lt;isot&gt;0&lt;/isot&gt;&lt;psot&gt;6288&lt;/psot&gt;&lt;tpsot&gt;2&lt;/tpsot&gt;&lt;tnsot&gt;6&lt;/tnsot&gt;&lt;/sot&gt;&lt;/tilePart&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsot&gt;10&lt;/lsot&gt;&lt;isot&gt;0&lt;/isot&gt;&lt;psot&gt;22845&lt;/psot&gt;&lt;tpsot&gt;3&lt;/tpsot&gt;&lt;tnsot&gt;6&lt;/tnsot&gt;&lt;/sot&gt;&lt;/tilePart&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsot&gt;10&lt;/lsot&gt;&lt;isot&gt;0&lt;/isot&gt;&lt;psot&gt;86991&lt;/psot&gt;&lt;tpsot&gt;4&lt;/tpsot&gt;&lt;tnsot&gt;6&lt;/tnsot&gt;&lt;/sot&gt;&lt;/tilePart&gt;&lt;tilePart&gt;&lt;sot&gt;&lt;lsot&gt;10&lt;/lsot&gt;&lt;isot&gt;0&lt;/isot&gt;&lt;psot&gt;330919&lt;/psot&gt;&lt;tpsot&gt;5&lt;/tpsot&gt;&lt;tnsot&gt;6&lt;/tnsot&gt;&lt;/sot&gt;&lt;/tilePart&gt;&lt;/tileParts&gt;&lt;/contiguousCodestreamBox&gt;&lt;compressionRatio&gt;1.65&lt;/compressionRatio&gt;&lt;/properties&gt;&lt;/jpylyzer&gt;</stdout>
+                <stderr>User warning: ignoring unknown box
+</stderr>
+            </source>
             <source exitCode="0" source="fits">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="24.2.13 19:59"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="24.2.13 21:49"&gt;
   &lt;identification status="SINGLE_RESULT"&gt;
     &lt;identity format="JPEG 2000 JP2" mimetype="image/jp2" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="Jhove" toolversion="1.5" /&gt;
@@ -3293,22 +4093,18 @@ Image Size                      : 512x512
   Tainted: False
   Filesize: 477KB
   Number pixels: 262KB
-  Pixels per second: 1.092MB
-  User time: 0.240u
-  Elapsed time: 0:01.240
+  Pixels per second: 1.049MB
+  User time: 0.250u
+  Elapsed time: 0:01.250
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
 </stdout>
-                <stderr></stderr>
-            </source>
-            <source exitCode="0" source="core">
-                <stdout></stdout>
                 <stderr></stderr>
             </source>
             <source exitCode="0" source="jhove">
                 <stdout>READBOX seen=true
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-24T19:59:28+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-24T21:49:41+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/15.jp2"&gt;
   &lt;reportingModule release="1.3" date="2007-01-08"&gt;JPEG2000-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-01-11T14:47:26+01:00&lt;/lastModified&gt;
@@ -30579,44 +31375,6 @@ Image Size                      : 512x512
 </stdout>
                 <stderr></stderr>
             </source>
-            <source exitCode="0" source="kakadu">
-                <stdout>Sprofile=PROFILE2
-Sextensions=0
-Scap=no
-Ssize={512,512}
-Sorigin={0,0}
-Stiles={1024,1024}
-Stile_origin={0,0}
-Scomponents=3
-Ssigned=no,no,no
-Sprecision=8,8,8
-Ssampling={1,1},{1,1},{1,1}
-Sdims={512,512},{512,512},{512,512}
-Cycc=yes
-Cmct=0
-Clayers=1
-Cuse_sop=no
-Cuse_eph=no
-Corder=RLCP
-Calign_blk_last={no,no}
-Clevels=5
-Cads=0
-Cdfs=0
-Cdecomp=B(-:-:-)
-Creversible=yes
-Ckernels=W5X3
-Catk=0
-Cuse_precincts=no
-Cblk={32,32}
-Cmodes=0
-Qguard=2
-Qabs_ranges=8,9,9,10,9,9,10,9,9,10,9,9,10,9,9,10
-
-Consumed 0 tile-part(s) from a total of 1 tile(s).
-Consumed 98 codestream bytes (excluding any file format) = 0.002991 bits/pel.
-</stdout>
-                <stderr></stderr>
-            </source>
             <source exitCode="0" source="daitss">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
@@ -30626,7 +31384,7 @@ Consumed 98 codestream bytes (excluding any file format) = 0.002991 bits/pel.
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130224-1938-tb5dy3-0.jp2&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130224-1938-1bfmaab-0.jp2&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -30670,7 +31428,7 @@ Consumed 98 codestream bytes (excluding any file format) = 0.002991 bits/pel.
 			&lt;relationshipSubType&gt;includes&lt;/relationshipSubType&gt;
 			&lt;relatedObjectIdentification&gt;
 				&lt;relatedObjectIdentifierType&gt;URI&lt;/relatedObjectIdentifierType&gt;
-				&lt;relatedObjectIdentifierValue&gt;/tmp/object20130224-1938-tb5dy3-0.jp2/1&lt;/relatedObjectIdentifierValue&gt;
+				&lt;relatedObjectIdentifierValue&gt;/tmp/object20130224-1938-1bfmaab-0.jp2/1&lt;/relatedObjectIdentifierValue&gt;
 			&lt;/relatedObjectIdentification&gt;
 		&lt;/relationship&gt;
 		
@@ -30688,7 +31446,7 @@ Consumed 98 codestream bytes (excluding any file format) = 0.002991 bits/pel.
 	&lt;object xsi:type="bitstream"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130224-1938-tb5dy3-0.jp2/1&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130224-1938-1bfmaab-0.jp2/1&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -30751,7 +31509,7 @@ Consumed 98 codestream bytes (excluding any file format) = 0.002991 bits/pel.
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-24T13:59:30-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-02-24T15:49:43-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -30763,7 +31521,7 @@ Consumed 98 codestream bytes (excluding any file format) = 0.002991 bits/pel.
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130224-1938-tb5dy3-0.jp2&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130224-1938-1bfmaab-0.jp2&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
@@ -30778,6 +31536,59 @@ Consumed 98 codestream bytes (excluding any file format) = 0.002991 bits/pel.
 	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
 &lt;/agent&gt;
 &lt;/premis&gt;
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source exitCode="0" source="exiftool">
+                <stdout>ExifTool Version Number         : 8.15
+File Name                       : 15.jp2
+Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 466 kB
+File Modification Date/Time     : 2013:01:11 14:47:26+01:00
+File Permissions                : rw-r--r--
+File Type                       : JP2
+MIME Type                       : image/jp2
+Major Brand                     : JPEG 2000 Image (.JP2)
+Minor Version                   : 0.0.0
+Compatible Brands               : jp2 , jpxb, jpx
+Image Height                    : 512
+Image Width                     : 512
+Number Of Components            : 3
+Bits Per Component              : 8 Bits, Unsigned
+Compression                     : JPEG 2000
+Colorspace                      : sRGB
+Capture Y Resolution            : 2834
+Capture X Resolution            : 2834
+Capture Y Resolution Unit       : m
+Capture X Resolution Unit       : m
+XMP Toolkit                     : Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00
+Create Date                     : 2012:02:12 12:27:13+01:00
+Modify Date                     : 2012:02:17 22:07:36+01:00
+Metadata Date                   : 2012:02:17 22:07:36+01:00
+Creator Tool                    : Adobe Photoshop CS5 Windows
+Format                          : image/jpx
+Color Mode                      : 3
+Instance ID                     : xmp.iid:44CDF60AA959E111B6D8F36F074F6F1F
+Document ID                     : xmp.did:41CDF60AA959E111B6D8F36F074F6F1F
+Original Document ID            : xmp.did:41CDF60AA959E111B6D8F36F074F6F1F
+History Action                  : created, converted, saved, saved, saved
+History Instance ID             : xmp.iid:41CDF60AA959E111B6D8F36F074F6F1F, xmp.iid:42CDF60AA959E111B6D8F36F074F6F1F, xmp.iid:43CDF60AA959E111B6D8F36F074F6F1F, xmp.iid:44CDF60AA959E111B6D8F36F074F6F1F
+History When                    : 2012:02:12 12:27:13+01:00, 2012:02:17 22:04:21+01:00, 2012:02:17 22:07:36+01:00, 2012:02:17 22:07:36+01:00
+History Software Agent          : Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows
+History Parameters              : from image/tiff to image/jpx
+History Changed                 : /, /, /
+Bits Per Sample                 : 8, 8, 8
+Photometric Interpretation      : RGB
+Orientation                     : Horizontal (normal)
+Samples Per Pixel               : 3
+Planar Configuration            : Chunky
+X Resolution                    : 72
+Y Resolution                    : 72
+Resolution Unit                 : inches
+Color Space                     : sRGB
+Exif Image Width                : 512
+Exif Image Height               : 512
+Image Size                      : 512x512
 </stdout>
                 <stderr></stderr>
             </source>

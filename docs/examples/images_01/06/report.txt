@@ -88,7 +88,7 @@ Overall mean               imagemagick  96.1713 (0.377142)
 Overall min                imagemagick  3 (0.0117647)                                                         
 Overall standard deviation imagemagick  75.4472 (0.295871)                                                    
 Page geometry              imagemagick  512x512+0+0                                                           
-Pixels per second          imagemagick  0b                                                                    
+Pixels per second          imagemagick  26.21MB                                                               
 Resolution horizontal      imagemagick  72                                                                    PPI
                            jhove                                                                              PPI
 Resolution vertical        imagemagick  72                                                                    PPI
@@ -116,7 +116,7 @@ Class                                imagemagick  DirectClass
 Compose                              imagemagick  Over                                                           
 Directory                            exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_01  
 Dispose                              imagemagick  Undefined                                                      
-Elapsed time                         imagemagick  0:01.000                                                       
+Elapsed time                         imagemagick  0:01.009                                                       
 Endianess                            imagemagick  MSB                                                            
 Exif Byte Order                      exiftool     Big-endian (Motorola, MM)                                      
 exit-code                            exiftool     ok                                                             
@@ -161,10 +161,15 @@ Raw outputs of extractors
 =========================
 
    fits         'output <../docs/examples/images_01/06/output-fits.raw>'_
+   fits         'stderr output <../docs/examples/images_01/06/output-fits.raw>'_
    exiftool     'output <../docs/examples/images_01/06/output-exiftool.raw>'_
+   exiftool     'stderr output <../docs/examples/images_01/06/output-exiftool.raw>'_
    jhove        'output <../docs/examples/images_01/06/output-jhove.raw>'_
+   jhove        'stderr output <../docs/examples/images_01/06/output-jhove.raw>'_
    exiv2        'output <../docs/examples/images_01/06/output-exiv2.raw>'_
+   exiv2        'stderr output <../docs/examples/images_01/06/output-exiv2.raw>'_
    imagemagick   'output <../docs/examples/images_01/06/output-imagemagick.raw>'_
+   imagemagick   'stderr output <../docs/examples/images_01/06/output-imagemagick.raw>'_
 
 Text report
 ===========
