@@ -14,6 +14,22 @@
       <properties>
 	<property name="Version"><xsl:value-of select="concat(toolInfo/toolName,' ',toolInfo/toolVersion)"/></property>
 	<property name="Valid and Well formed"><xsl:value-of select="isValidJP2"/></property>
+	
+	<property name="Contains signature box"><xsl:value-of select="tests/containsSignatureBox"/></property>
+	<property name="Contains file type box"><xsl:value-of select="tests/containsFileTypeBox"/></property>
+	<property name="Contains JP2 header box"><xsl:value-of select="tests/containsJP2HeaderBox"/></property>
+	<property name="Contains contiguous codestream box"><xsl:value-of select="tests/containsContiguousCodestreamBox"/></property>
+	<property name="First box is signature box"><xsl:value-of select="tests/firstBoxIsSignatureBox"/></property>
+	<property name="Second box is file type box"><xsl:value-of select="tests/secondBoxIsFileTypeBox"/></property>
+	<property name="Location JP2 header box is valid"><xsl:value-of select="tests/locationJP2HeaderBoxIsValid"/></property>
+	<property name="No more than one signature box"><xsl:value-of select="tests/noMoreThanOneSignatureBox"/></property>
+	<property name="No more than one file type box"><xsl:value-of select="tests/noMoreThanOneFileTypeBox"/></property>
+	<property name="No more tna one JP2 header box"><xsl:value-of select="tests/noMoreThanOneJP2HeaderBox"/></property>
+	<property name="Heigt consistent with SIZ"><xsl:value-of select="tests/heightConsistentWithSIZ"/></property>
+	<property name="Width consistent with SIZ"><xsl:value-of select="tests/widthConsistentWithSIZ"/></property>
+	<property name="NC consistent with SIZ"><xsl:value-of select="tests/nCConsistentWithSIZ"/></property>
+	<property name="bPC sign consistent with SIZ"><xsl:value-of select="tests/bPCSignConsistentWithSIZ"/></property>
+	<property name="bPC depth consistent with SIZ"><xsl:value-of select="tests/bPCDepthConsistentWithSIZ"/></property>
 	<xsl:apply-templates/>
       </properties>  
   </xsl:template>
@@ -123,53 +139,34 @@
     <property name="Found EOC marker"><xsl:value-of select="foundEOCMarker"/></property>
   </xsl:template>
 
-  <xsl:template match="tests">
-    <property name="Contains signature box"><xsl:value-of select="containsSignatureBox"/></property>
-    <property name="Contains file type box"><xsl:value-of select="containsFileTypeBox"/></property>
-    <property name="Contains JP2 header box"><xsl:value-of select="containsJP2HeaderBox"/></property>
-    <property name="Contains contiguous codestream box"><xsl:value-of select="containsContiguousCodestreamBox"/></property>
-    <property name="First box is signature box"><xsl:value-of select="firstBoxIsSignatureBox"/></property>
-    <property name="Second box is file type box"><xsl:value-of select="secondBoxIsFileTypeBox"/></property>
-    <property name="Location JP2 header box is valid"><xsl:value-of select="locationJP2HeaderBoxIsValid"/></property>
-    <property name="No more than one signature box"><xsl:value-of select="noMoreThanOneSignatureBox"/></property>
-    <property name="No more than one file type box"><xsl:value-of select="noMoreThanOneFileTypeBox"/></property>
-    <property name="No more tna one JP2 header box"><xsl:value-of select="noMoreThanOneJP2HeaderBox"/></property>
-    <property name="Heigt consistent with SIZ"><xsl:value-of select="heightConsistentWithSIZ"/></property>
-    <property name="Width consistent with SIZ"><xsl:value-of select="widthConsistentWithSIZ"/></property>
-    <property name="NC consistent with SIZ"><xsl:value-of select="nCConsistentWithSIZ"/></property>
-    <property name="bPC sign consistent with SIZ"><xsl:value-of select="bPCSignConsistentWithSIZ"/></property>
-    <property name="bPC depth consistent with SIZ"><xsl:value-of select="bPCDepthConsistentWithSIZ"/></property>
-
-  </xsl:template>
-
   <xsl:template match="properties">
-    <property name = "Image width"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/width"/></property>
-    <property name = "Image height"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/height"/></property>
-    <property name = "Color depth"><xsl:value-of select="contiguousCodestreamBox/siz/ssizDepth"/></property>
-    <property name = "Number of channels"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/nC"/></property>
-    <property name = "Color space"><xsl:value-of select="jp2HeaderBox/colourSpecificationBox/enumCS"/></property>
-    <property name = "Resolution vertical"><xsl:value-of select="jp2HeaderBox/resolutionBox/displayResolutionBox/vResdInPixelsPerInch"/></property>
-    <property name = "Resolution horizontal"><xsl:value-of select="jp2HeaderBox/resolutionBox/displayResolutionBox/hResdInPixelsPerInch"/></property>
-    <property name = "Resolution vertical"><xsl:value-of select="jp2HeaderBox/resolutionBox/captureResolutionBox/vRcN"/></property>
-    <property name = "Resolution horizontal"><xsl:value-of select="jp2HeaderBox/resolutionBox/captureResolutionBox/hRcN"/></property>
-    <property name = "Display resolution horizontal"><xsl:value-of select="jp2HeaderBox/resolutionBox/displayResolutionBox/hResdInPixelsPerInch"/></property>
-    <property name = "Display resolution vertical"><xsl:value-of select="jp2HeaderBox/resolutionBox/displayResolutionBox/vResdInPixelsPerInch"/></property>
-    <property name = "Type of format"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/c"/></property>
-    <property name = "Universal unique identifier (UUID)"><xsl:value-of select="uuidBox/uuid"/></property>
-    <property name = "Commentary"><xsl:value-of select="contiguousCodestreamBox/com/comment"/></property>
-    <property name = "Number of tiles"><xsl:value-of select="contiguousCodestreamBox/siz/numberOfTiles"/></property>
-    <property name = "Transformation"><xsl:value-of select="contiguousCodestreamBox/cod/transformation"/></property>
-    <property name = "Compression"><xsl:value-of select="contiguousCodestreamBox/cod/transformation"/></property>
-    <property name = "Compression ratio"><xsl:value-of select="compressionRatio"/></property>
-    <property name = "Number of decomposition levels"><xsl:value-of select="contiguousCodestreamBox/cod/levels"/></property>
-    <property name = "Number of quality layers"><xsl:value-of select="contiguousCodestreamBox/cod/layers"/></property>
-    <property name = "Progression order"><xsl:value-of select="contiguousCodestreamBox/cod/order"/></property>
-    <property name = "Code block width"><xsl:value-of select="contiguousCodestreamBox/cod/codeBlockWidth"/></property>
-    <property name = "Code block height"><xsl:value-of select="contiguousCodestreamBox/cod/codeBlockHeight"/></property>
-    <property name = "Coding bypass"><xsl:value-of select="contiguousCodestreamBox/cod/codingBypass"/></property>
-    <property name = "Start of packet header"><xsl:value-of select="contiguousCodestreamBox/cod/sop"/></property>
-    <property name = "End of packet header"><xsl:value-of select="contiguousCodestreamBox/cod/eph"/></property>
-    <property name = "Precincts"><xsl:value-of select="contiguousCodestreamBox/cod/precincts"/></property>
+    <property name="Image width"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/width"/></property>
+    <property name="Image height"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/height"/></property>
+    <property name="Color depth"><xsl:value-of select="contiguousCodestreamBox/siz/ssizDepth"/></property>
+    <property name="Number of channels"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/nC"/></property>
+    <property name="Color space"><xsl:value-of select="jp2HeaderBox/colourSpecificationBox/enumCS"/></property>
+    <property name="Resolution vertical"><xsl:value-of select="jp2HeaderBox/resolutionBox/displayResolutionBox/vResdInPixelsPerInch"/></property>
+    <property name="Resolution horizontal"><xsl:value-of select="jp2HeaderBox/resolutionBox/displayResolutionBox/hResdInPixelsPerInch"/></property>
+    <property name="Resolution vertical"><xsl:value-of select="jp2HeaderBox/resolutionBox/captureResolutionBox/vRcN"/></property>
+    <property name="Resolution horizontal"><xsl:value-of select="jp2HeaderBox/resolutionBox/captureResolutionBox/hRcN"/></property>
+    <property name="Display resolution horizontal"><xsl:value-of select="jp2HeaderBox/resolutionBox/displayResolutionBox/hResdInPixelsPerInch"/></property>
+    <property name="Display resolution vertical"><xsl:value-of select="jp2HeaderBox/resolutionBox/displayResolutionBox/vResdInPixelsPerInch"/></property>
+    <property name="Type of format"><xsl:value-of select="jp2HeaderBox/imageHeaderBox/c"/></property>
+    <property name="Universal unique identifier (UUID)"><xsl:value-of select="uuidBox/uuid"/></property>
+    <property name="Commentary"><xsl:value-of select="contiguousCodestreamBox/com/comment"/></property>
+    <property name="Number of tiles"><xsl:value-of select="contiguousCodestreamBox/siz/numberOfTiles"/></property>
+    <property name="Transformation"><xsl:value-of select="contiguousCodestreamBox/cod/transformation"/></property>
+    <property name="Compression"><xsl:value-of select="contiguousCodestreamBox/cod/transformation"/></property>
+    <property name="Compression ratio"><xsl:value-of select="compressionRatio"/></property>
+    <property name="Number of decomposition levels"><xsl:value-of select="contiguousCodestreamBox/cod/levels"/></property>
+    <property name="Number of quality layers"><xsl:value-of select="contiguousCodestreamBox/cod/layers"/></property>
+    <property name="Progression order"><xsl:value-of select="contiguousCodestreamBox/cod/order"/></property>
+    <property name="Code block width"><xsl:value-of select="contiguousCodestreamBox/cod/codeBlockWidth"/></property>
+    <property name="Code block height"><xsl:value-of select="contiguousCodestreamBox/cod/codeBlockHeight"/></property>
+    <property name="Coding bypass"><xsl:value-of select="contiguousCodestreamBox/cod/codingBypass"/></property>
+    <property name="Start of packet header"><xsl:value-of select="contiguousCodestreamBox/cod/sop"/></property>
+    <property name="End of packet header"><xsl:value-of select="contiguousCodestreamBox/cod/eph"/></property>
+    <property name="Precincts"><xsl:value-of select="contiguousCodestreamBox/cod/precincts"/></property>
     <xsl:apply-templates/>
   </xsl:template>
 
