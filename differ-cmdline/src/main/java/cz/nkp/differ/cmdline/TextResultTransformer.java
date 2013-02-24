@@ -152,7 +152,7 @@ public class TextResultTransformer implements ResultTransformer{
                                 outFile
                         );
                         writer = new FileWriter(errorOutputFile);
-                        writer.write(metadata.getSource().getStdout());
+                        writer.write(metadata.getSource().getStderr());
                         writer.close();
                     } catch (IOException e) {
                         e.printStackTrace();
