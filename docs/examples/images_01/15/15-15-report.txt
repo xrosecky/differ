@@ -13,11 +13,13 @@ MIME type             fits            image/tiff                                
 Type of format        fits            Tagged Image File Format                                                                            JPEG                                                                                           
                       exiftool        TIFF                                                                                                JP2                                                                                            
                       imagemagick     TIFF                                                                                                JPEG                                                                                           
+                      jpylyzer                                                                                                            jpeg                                                                                           
                       daitss                                                                                                              Unknown                                                                                        
                       jhove           TIFF                                                                                                                                                                                               
 Version               fits            FITS 0.6.1                                                                                          FITS 0.6.1                                                                                     
                       exiftool        8.15                                                                                                8.15                                                                                           
                       imagemagick     ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                       ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                  
+                      jpylyzer                                                                                                            jpylyzer 1.6.0                                                                                 
                       daitss                                                                                                              built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63. 
 Version of format     daitss                                                                                                                                                                                                             
 --------------------  -----------  --------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------
@@ -25,114 +27,229 @@ Version of format     daitss
 Validation
 ==========
 
-Significant Property                Source  Value for Image A      Value for Image B    
-----------------------------------  ------  ---------------------  ---------------------
-Validation (well formed and valid)  daitss                            Well-Formed and valid 
-                                    jhove      Well-Formed and valid                        
-----------------------------------  ------  ---------------------  ---------------------
+Significant Property                               Source    Value for Image A      Value for Image B    
+-------------------------------------------------  --------  ---------------------  ---------------------
+Approximation is valid                             jpylyzer                            False             
+Box length is valid                                jpylyzer                            True              
+Brand is valid                                     jpylyzer                            True              
+C is valid                                         jpylyzer                            True              
+Capture resolution box length is valid             jpylyzer                            True              
+Cod layers is valid                                jpylyzer                            True              
+Cod levels is valid                                jpylyzer                            True              
+Cod transformation is valid                        jpylyzer                            True              
+Code block height exponent is valid                jpylyzer                            True              
+Code block with exponent is valid                  jpylyzer                            True              
+Codestream start with SOC marker                   jpylyzer                            True              
+Colour specification boxes are contiguous          jpylyzer                            True              
+Compatibility list is valid                        jpylyzer                            True              
+Contains JP2 header box                            jpylyzer                            True              
+Contains capture or display resolution box         jpylyzer                            True              
+Contains colour specification box                  jpylyzer                            True              
+Contains contiguous codestream box                 jpylyzer                            True              
+Contains file type box                             jpylyzer                            True              
+Contains image header box                          jpylyzer                            True              
+Contains signature box                             jpylyzer                            True              
+Enum CS is valid                                   jpylyzer                            True              
+First box is signature box                         jpylyzer                            True              
+First jp2 header box is image header box           jpylyzer                            True              
+Found COD marker                                   jpylyzer                            True              
+Found EOC marker                                   jpylyzer                            True              
+Found QCD marker                                   jpylyzer                            True              
+Found SIZ marker                                   jpylyzer                            True              
+Found SOD marker                                   jpylyzer                            True              
+Found expected number of tile parts                jpylyzer                            True              
+Found expected number of tiles                     jpylyzer                            True              
+Fount next tile part or EOC                        jpylyzer                            True              
+Heigt consistent with SIZ                          jpylyzer                            True              
+Image header box height is valid                   jpylyzer                            True              
+Image header box length is valid                   jpylyzer                            True              
+Image header box width is valid                    jpylyzer                            True              
+Location JP2 header box is valid                   jpylyzer                            True              
+Meth is valid                                      jpylyzer                            True              
+Minor version is valid                             jpylyzer                            True              
+Multiple component transformation is valid         jpylyzer                            True              
+NC consistent with SIZ                             jpylyzer                            True              
+No more than one bits pre component box            jpylyzer                            True              
+No more than one capture resolution box            jpylyzer                            True              
+No more than one channel definition box            jpylyzer                            True              
+No more than one component mapping box             jpylyzer                            True              
+No more than one display resolution box            jpylyzer                            True              
+No more than one file type box                     jpylyzer                            True              
+No more than one image header box                  jpylyzer                            True              
+No more than one palette box                       jpylyzer                            True              
+No more than one resolution box                    jpylyzer                            True              
+No more than one signature box                     jpylyzer                            True              
+No more tna one JP2 header box                     jpylyzer                            True              
+Palette and component mapping boxes only together  jpylyzer                            True              
+Prec is valid                                      jpylyzer                            True              
+Quantization consistent with levels                jpylyzer                            True              
+Second box is file type box                        jpylyzer                            True              
+Signature box length is valid                      jpylyzer                            True              
+Signature is valid                                 jpylyzer                            True              
+Sum height width exponent is valid                 jpylyzer                            True              
+Validation (well formed and valid)                 daitss                              Well-Formed and valid 
+                                                   jhove        Well-Formed and valid                        
+Width consistent with SIZ                          jpylyzer                            True              
+bPC depth consistent with SIZ                      jpylyzer                            True              
+bPC is valid                                       jpylyzer                            True              
+bPC sign consistent with SIZ                       jpylyzer                            True              
+c size is valid                                    jpylyzer                            True              
+cod order is valid                                 jpylyzer                            True              
+hRcD is valid                                      jpylyzer                            True              
+hRcE is valid                                      jpylyzer                            True              
+hRcN is valid                                      jpylyzer                            True              
+i sot is valid                                     jpylyzer                            True              
+iPR is valid                                       jpylyzer                            True              
+l cod consistent with levels precincts             jpylyzer                            True              
+l cod is valid                                     jpylyzer                            True              
+l qcd is valid                                     jpylyzer                            True              
+l size consistency with c size                     jpylyzer                            True              
+l size is valid                                    jpylyzer                            True              
+l sot is valid                                     jpylyzer                            True              
+nC is valid                                        jpylyzer                            True              
+p sot is valid                                     jpylyzer                            True              
+q style is valid                                   jpylyzer                            True              
+r size is valid                                    jpylyzer                            True              
+s size is valid                                    jpylyzer                            True              
+tp sot is valid                                    jpylyzer                            True              
+unkC is valid                                      jpylyzer                            True              
+vRcD is valid                                      jpylyzer                            True              
+vRcE is valid                                      jpylyzer                            True              
+vRcN is valid                                      jpylyzer                            True              
+x size is valid                                    jpylyzer                            True              
+xO size is valid                                   jpylyzer                            True              
+xR size is valid                                   jpylyzer                            True              
+xT size is valid                                   jpylyzer                            True              
+xTO size is valid                                  jpylyzer                            True              
+y size is valid                                    jpylyzer                            True              
+yO size is valid                                   jpylyzer                            True              
+yR size is valid                                   jpylyzer                            True              
+yT size is valid                                   jpylyzer                            True              
+yTO size is valid                                  jpylyzer                            True              
+-------------------------------------------------  --------  ---------------------  ---------------------
 
 Characterization
 ================
 
-Significant Property            Source       Value for Image A                                                      Value for Image B                                                    
-------------------------------  -----------  ---------------------------------------------------------------------  ---------------------------------------------------------------------
-ADS                             kakadu                                                                                 0                                                                 
-ATK                             kakadu                                                                                 0                                                                 
-Bits per sample                 daitss                                                                                 88                                                                
-Bypass                          kakadu                                                                                 0                                                                 
-Code block size                 kakadu                                                                                 {32,32}                                                           
-Color depth                     exiftool        8 8 8                                                                  8, 8, 8                                                           
-                                imagemagick     8                                                                      8                                                                 
-                                kakadu                                                                                 8,8,8                                                             
-                                jhove                                                                                                                                                    
-Color space                     exiftool                                                                               sRGB                                                              
-                                imagemagick     RGB                                                                    RGB                                                               
-                                daitss                                                                                                                                                   
-                                jhove                                                                                                                                                    
-Color type                      imagemagick     TrueColor                                                              TrueColor                                                         
-Compression                     fits            Uncompressed                                                           JPEG 2000 Lossless                                                
-                                exiftool        Uncompressed                                                           JPEG 2000                                                         
-                                imagemagick     None                                                                   JPEG2000                                                          
-                                daitss                                                                                 Unknown                                                           
-                                jhove                                                                                                                                                    
-Decomp                          kakadu                                                                                 B(-:-:-)                                                          
-Depth of blue channel           imagemagick     8                                                                      8                                                                 
-Depth of green channel          imagemagick     8                                                                      8                                                                 
-Depth of red channel            imagemagick     8                                                                      8                                                                 
-End of packet header            kakadu                                                                                 no                                                                
-File created                    exiftool                                                                               2012:02:12 12:27:13+01:00                                         
-                                imagemagick     2013-02-24 19:54:11+01:00                                              2013-02-24 19:54:52+01:00                                         
-File last modified              fits            2013:02:24 19:54:11+01:00                                              2013:01:11 14:47:26+01:00                                         
-                                exiftool        2013:02:24 19:54:11+01:00                                              2013:01:11 14:47:26+01:00                                         
-                                imagemagick     2013-02-24 19:54:11+01:00                                              2013-01-11 14:47:26+01:00                                         
-                                jhove           2013-02-24T19:54:11+01:00                                                                                                                
-File name                       fits            15.tiff                                                                15.jp2                                                            
-                                exiftool        15.tiff                                                                15.jp2                                                            
-                                imagemagick     15.tiff                                                                15.jp2                                                            
-                                exiv2           15.tiff                                                                                                                                  
-                                core            15.tiff                                                                15.jp2                                                            
-                                daitss                                                                                 15.jp2                                                            
-File path                       fits            /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff      /home/stavel/differ/differ-cmdline/../docs/examples/images_02/15.jp2 
-                                exiv2           /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff                                                                        
-                                core            /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff      /home/stavel/differ/differ-cmdline/../docs/examples/images_02/15.jp2 
-                                jhove           /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff                                                                        
-File size                       fits            786572                                                                 476756                                                            
-                                exiftool        768 kB                                                                 466 kB                                                            
-                                imagemagick     787KB                                                                  477KB                                                             
-                                exiv2           786572                                                                                                                                   
-                                daitss                                                                                                                                                   
-                                jhove           786572                                                                                                                                   
-ICC profile                     fits                                                                                                                                                     
-Image height                    fits            512   px                                                               512   px                                                          
-                                exiftool        512   px                                                               512   px                                                          
-                                imagemagick     512   px                                                               512   px                                                          
-                                kakadu                px                                                               512   px                                                          
-                                exiv2           512   px                                                                     px                                                          
-                                core            512                                                                    512                                                               
-                                daitss                px                                                               512   px                                                          
-                                jhove                 px                                                                     px                                                          
-Image width                     fits            512   px                                                               512   px                                                          
-                                exiftool        512   px                                                               512   px                                                          
-                                imagemagick     512   px                                                               512   px                                                          
-                                kakadu                px                                                               512   px                                                          
-                                exiv2           512   px                                                                     px                                                          
-                                core            512                                                                    512                                                               
-                                daitss                px                                                               512   px                                                          
-                                jhove                 px                                                                     px                                                          
-Interlace                       imagemagick     None                                                                   None                                                              
-Number of channels              jhove                                                                                                                                                    
-Number of decomposition levels  kakadu                                                                                 5                                                                 
-Number of pixels                imagemagick     262KB                                                                  262KB                                                             
-Number of quality layers        kakadu                                                                                 1                                                                 
-Orientation                     exiftool                                                                               Horizontal (normal)                                               
-                                imagemagick     TopLeft                                                                Undefined                                                         
-Overall kurtosis                imagemagick     -1.10259                                                               -1.10259                                                          
-Overall max                     imagemagick     255 (1)                                                                255 (1)                                                           
-Overall mean                    imagemagick     96.1713 (0.377142)                                                     96.1713 (0.377142)                                                
-Overall min                     imagemagick     3 (0.0117647)                                                          3 (0.0117647)                                                     
-Overall standard deviation      imagemagick     75.4472 (0.295871)                                                     75.4472 (0.295871)                                                
-Page geometry                   imagemagick     512x512+0+0                                                            512x512+0+0                                                       
-Pixels per second               imagemagick     26.21MB                                                                1.092MB                                                           
-Progression order               kakadu                                                                                 RLCP                                                              
-Resolution horizontal           exiftool              PPI                                                              72    PPI                                                         
-                                imagemagick     72    PPI                                                              72    PPI                                                         
-                                daitss                PPI                                                              2834  PPI                                                         
-                                jhove                 PPI                                                                    PPI                                                         
-Resolution unit                 exiftool                                                                               inches                                                            
-Resolution vertical             exiftool              PPI                                                              72    PPI                                                         
-                                imagemagick     72    PPI                                                              72    PPI                                                         
-                                daitss                PPI                                                              2834  PPI                                                         
-                                jhove                 PPI                                                                    PPI                                                         
-Samples per pixel               exiftool        3                                                                      3                                                                 
-                                daitss                                                                                 3                                                                 
-Sampling                        kakadu                                                                                 {1,1},{1,1},{1,1}                                                 
-Start of packet header          kakadu                                                                                 no                                                                
-Thumbnail                       exiv2           None                                                                                                                                     
-Transformation                  kakadu                                                                                 yes                                                               
-Transparent color               imagemagick     black                                                                  black                                                             
-Type of algorithm               kakadu                                                                                 W5X3                                                              
-Units                           imagemagick     PixelsPerInch                                                          Undefined                                                         
-------------------------------  -----------  ---------------------------------------------------------------------  ---------------------------------------------------------------------
+Significant Property                Source       Value for Image A                                                      Value for Image B                                                    
+----------------------------------  -----------  ---------------------------------------------------------------------  ---------------------------------------------------------------------
+ADS                                 kakadu                                                                                 0                                                                 
+ATK                                 kakadu                                                                                 0                                                                 
+Bits per sample                     daitss                                                                                 88                                                                
+Bypass                              kakadu                                                                                 0                                                                 
+Code block size                     kakadu                                                                                 {32,32}                                                           
+Color depth                         exiftool        8 8 8                                                                  8, 8, 8                                                           
+                                    imagemagick     8                                                                      8                                                                 
+                                    kakadu                                                                                 8,8,8                                                             
+                                    jpylyzer                                                                               8                                                                 
+                                    jhove                                                                                                                                                    
+Color space                         exiftool                                                                               sRGB                                                              
+                                    imagemagick     RGB                                                                    RGB                                                               
+                                    jpylyzer                                                                               sRGB                                                              
+                                    daitss                                                                                                                                                   
+                                    jhove                                                                                                                                                    
+Color type                          imagemagick     TrueColor                                                              TrueColor                                                         
+Compression                         fits            Uncompressed                                                           JPEG 2000 Lossless                                                
+                                    exiftool        Uncompressed                                                           JPEG 2000                                                         
+                                    imagemagick     None                                                                   JPEG2000                                                          
+                                    jpylyzer                                                                               5-3 reversible                                                    
+                                    daitss                                                                                 Unknown                                                           
+                                    jhove                                                                                                                                                    
+Decomp                              kakadu                                                                                 B(-:-:-)                                                          
+Depth of blue channel               imagemagick     8                                                                      8                                                                 
+Depth of green channel              imagemagick     8                                                                      8                                                                 
+Depth of red channel                imagemagick     8                                                                      8                                                                 
+End of packet header                kakadu                                                                                 no                                                                
+                                    jpylyzer                                                                               no                                                                
+File created                        exiftool                                                                               2012:02:12 12:27:13+01:00                                         
+                                    imagemagick     2013-02-24 19:54:11+01:00                                              2013-02-24 19:54:52+01:00                                         
+File last modified                  fits            2013:02:24 19:54:11+01:00                                              2013:01:11 14:47:26+01:00                                         
+                                    exiftool        2013:02:24 19:54:11+01:00                                              2013:01:11 14:47:26+01:00                                         
+                                    imagemagick     2013-02-24 19:54:11+01:00                                              2013-01-11 14:47:26+01:00                                         
+                                    jpylyzer                                                                               Fri Jan 11 14:47:26 2013                                          
+                                    jhove           2013-02-24T19:54:11+01:00                                                                                                                
+File name                           fits            15.tiff                                                                15.jp2                                                            
+                                    exiftool        15.tiff                                                                15.jp2                                                            
+                                    imagemagick     15.tiff                                                                15.jp2                                                            
+                                    exiv2           15.tiff                                                                                                                                  
+                                    jpylyzer                                                                               15.jp2                                                            
+                                    core            15.tiff                                                                15.jp2                                                            
+                                    daitss                                                                                 15.jp2                                                            
+File path                           fits            /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff      /home/stavel/differ/differ-cmdline/../docs/examples/images_02/15.jp2 
+                                    exiv2           /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff                                                                        
+                                    jpylyzer                                                                               /home/stavel/differ/docs/examples/images_02/15.jp2                
+                                    core            /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff      /home/stavel/differ/differ-cmdline/../docs/examples/images_02/15.jp2 
+                                    jhove           /home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff                                                                        
+File size                           fits            786572                                                                 476756                                                            
+                                    exiftool        768 kB                                                                 466 kB                                                            
+                                    imagemagick     787KB                                                                  477KB                                                             
+                                    exiv2           786572                                                                                                                                   
+                                    jpylyzer                                                                               476756                                                            
+                                    daitss                                                                                                                                                   
+                                    jhove           786572                                                                                                                                   
+ICC profile                         fits                                                                                                                                                     
+Image height                        fits            512   px                                                               512   px                                                          
+                                    exiftool        512   px                                                               512   px                                                          
+                                    imagemagick     512   px                                                               512   px                                                          
+                                    kakadu                px                                                               512   px                                                          
+                                    exiv2           512   px                                                                     px                                                          
+                                    jpylyzer              px                                                               512   px                                                          
+                                    core            512                                                                    512                                                               
+                                    daitss                px                                                               512   px                                                          
+                                    jhove                 px                                                                     px                                                          
+Image width                         fits            512   px                                                               512   px                                                          
+                                    exiftool        512   px                                                               512   px                                                          
+                                    imagemagick     512   px                                                               512   px                                                          
+                                    kakadu                px                                                               512   px                                                          
+                                    exiv2           512   px                                                                     px                                                          
+                                    jpylyzer              px                                                               512   px                                                          
+                                    core            512                                                                    512                                                               
+                                    daitss                px                                                               512   px                                                          
+                                    jhove                 px                                                                     px                                                          
+Interlace                           imagemagick     None                                                                   None                                                              
+Number of channels                  jpylyzer                                                                               3                                                                 
+                                    jhove                                                                                                                                                    
+Number of decomposition levels      kakadu                                                                                 5                                                                 
+                                    jpylyzer                                                                               5                                                                 
+Number of pixels                    imagemagick     262KB                                                                  262KB                                                             
+Number of quality layers            kakadu                                                                                 1                                                                 
+                                    jpylyzer                                                                               1                                                                 
+Orientation                         exiftool                                                                               Horizontal (normal)                                               
+                                    imagemagick     TopLeft                                                                Undefined                                                         
+Overall kurtosis                    imagemagick     -1.10259                                                               -1.10259                                                          
+Overall max                         imagemagick     255 (1)                                                                255 (1)                                                           
+Overall mean                        imagemagick     96.1713 (0.377142)                                                     96.1713 (0.377142)                                                
+Overall min                         imagemagick     3 (0.0117647)                                                          3 (0.0117647)                                                     
+Overall standard deviation          imagemagick     75.4472 (0.295871)                                                     75.4472 (0.295871)                                                
+Page geometry                       imagemagick     512x512+0+0                                                            512x512+0+0                                                       
+Pixels per second                   imagemagick     0b                                                                     1.049MB                                                           
+Precincts                           jpylyzer                                                                               no                                                                
+Progression order                   kakadu                                                                                 RLCP                                                              
+                                    jpylyzer                                                                               RLCP                                                              
+Resolution horizontal               exiftool              PPI                                                              72    PPI                                                         
+                                    imagemagick     72    PPI                                                              72    PPI                                                         
+                                    jpylyzer              PPI                                                              2834  PPI                                                         
+                                    daitss                PPI                                                              2834  PPI                                                         
+                                    jhove                 PPI                                                                    PPI                                                         
+Resolution unit                     exiftool                                                                               inches                                                            
+Resolution vertical                 exiftool              PPI                                                              72    PPI                                                         
+                                    imagemagick     72    PPI                                                              72    PPI                                                         
+                                    jpylyzer              PPI                                                              2834  PPI                                                         
+                                    daitss                PPI                                                              2834  PPI                                                         
+                                    jhove                 PPI                                                                    PPI                                                         
+Samples per pixel                   exiftool        3                                                                      3                                                                 
+                                    daitss                                                                                 3                                                                 
+Sampling                            kakadu                                                                                 {1,1},{1,1},{1,1}                                                 
+Start of packet header              kakadu                                                                                 no                                                                
+                                    jpylyzer                                                                               no                                                                
+Thumbnail                           exiv2           None                                                                                                                                     
+Transformation                      kakadu                                                                                 yes                                                               
+                                    jpylyzer                                                                               5-3 reversible                                                    
+Transparent color                   imagemagick     black                                                                  black                                                             
+Type of algorithm                   kakadu                                                                                 W5X3                                                              
+Units                               imagemagick     PixelsPerInch                                                          Undefined                                                         
+Universal unique identifier (UUID)  jpylyzer                                                                               3a0d0218-0ae9-4115-b376-4bca41ce0e71                              
+----------------------------------  -----------  ---------------------------------------------------------------------  ---------------------------------------------------------------------
 
 Other properties
 ================
@@ -152,17 +269,24 @@ Calign_blk_last                       kakadu                                    
 Cdfs                                  kakadu                                                                                0                                                                
 Class                                 imagemagick     DirectClass                                                           DirectClass                                                      
 Cmct                                  kakadu                                                                                0                                                                
+Code block height                     jpylyzer              px                                                              32    px                                                         
+Code block width                      jpylyzer              px                                                              32    px                                                         
+Coding bypass                         jpylyzer                                                                              no                                                               
 Color Mode                            exiftool                                                                              3                                                                
 Color Space                           exiftool                                                                              sRGB                                                             
+Commentary                            jpylyzer                                                                                                                                               
 Compatible Brands                     exiftool                                                                              jp2 , jpxb, jpx                                                  
 Components                            kakadu                                                                                3                                                                
 Compose                               imagemagick     Over                                                                  Over                                                             
+Compression ratio                     jpylyzer                                                                              1.65                                                             
 Consumed                              kakadu                                                                                98 codestream bytes (excluding any file format) = 0.002991 bits/pel. 
 Creator Tool                          exiftool                                                                              Adobe Photoshop CS5 Windows                                      
 Directory                             exiftool        /home/stavel/differ/differ-cmdline/../docs/examples/images_01         /home/stavel/differ/differ-cmdline/../docs/examples/images_02    
+Display resolution horizontal         jpylyzer              PPI                                                                   PPI                                                        
+Display resolution vertical           jpylyzer              PPI                                                                   PPI                                                        
 Dispose                               imagemagick     Undefined                                                             Undefined                                                        
 Document ID                           exiftool                                                                              xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                         
-Elapsed time                          imagemagick     0:01.009                                                              0:01.240                                                         
+Elapsed time                          imagemagick     0:01.000                                                              0:01.250                                                         
 Endianess                             imagemagick     MSB                                                                   Undefined                                                        
 Exif Byte Order                       exiftool        Big-endian (Motorola, MM)                                                                                                              
 Exif Image Height                     exiftool                                                                              512                                                              
@@ -189,6 +313,7 @@ Metadata Date                         exiftool                                  
 Minor Version                         exiftool                                                                              0.0.0                                                            
 Modify Date                           exiftool                                                                              2012:02:17 22:07:36+01:00                                        
 Number Of Components                  exiftool                                                                              3                                                                
+Number of tiles                       jpylyzer                                                                              1                                                                
 Origin                                kakadu                                                                                {0,0}                                                            
 Original Document ID                  exiftool                                                                              xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                         
 Overall skewness                      imagemagick     0.20095                                                               0.20095                                                          
@@ -217,7 +342,8 @@ Subfile Type                          exiftool        Full-resolution Image
 Tainted                               imagemagick     False                                                                 False                                                            
 Tile origin                           kakadu                                                                                {0,0}                                                            
 Tiles                                 kakadu                                                                                {1024,1024}                                                      
-User time                             imagemagick     0.000u                                                                0.240u                                                           
+User time                             imagemagick     0.000u                                                                0.250u                                                           
+Valid and Well formed                 jpylyzer                                                                              False                                                            
 Verbose                               imagemagick     true                                                                  true                                                             
 XMP Toolkit                           exiftool                                                                              Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00           
 ------------------------------------  -----------  --------------------------------------------------------------------  --------------------------------------------------------------------

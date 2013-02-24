@@ -93,7 +93,7 @@ Overall min                imagemagick  0 (0)
 Overall standard deviation imagemagick  75.7718 (0.297144)                                                    
 Page geometry              imagemagick  3776x2520+0+0                                                         
 Pixel units                exiftool     Meters                                                                
-Pixels per second          imagemagick  17.3MB                                                                
+Pixels per second          imagemagick  16.69MB                                                               
 Pixels per unit x          exiftool     7087                                                                  
 Pixels per unit y          exiftool     7087                                                                  
 Profile file signature     exiftool     acsp                                                                  
@@ -133,7 +133,7 @@ Device Mfg Desc               exiftool     IEC http://www.iec.ch
 Device Model                  exiftool     sRGB                                                           
 Directory                     exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_01  
 Dispose                       imagemagick  Undefined                                                      
-Elapsed time                  imagemagick  0:01.550                                                       
+Elapsed time                  imagemagick  0:01.570                                                       
 Endianess                     imagemagick  Undefined                                                      
 exit-code                     daitss       OK                                                             
                               exiftool     ok                                                             
@@ -187,7 +187,7 @@ Rendering Intent              exiftool     Perceptual
 Rendering intent              imagemagick  Undefined                                                      
 Tainted                       imagemagick  False                                                          
 Technology                    exiftool     Cathode Ray Tube Display                                       
-User time                     imagemagick  0.530u                                                         
+User time                     imagemagick  0.570u                                                         
 Verbose                       imagemagick  true                                                           
 Viewing Cond Desc             exiftool     Reference Viewing Condition in IEC61966-2.1                    
 Viewing Cond Illuminant       exiftool     19.6445 20.3718 16.8089                                        
@@ -202,11 +202,17 @@ Raw outputs of extractors
 =========================
 
    fits         'output <../docs/examples/images_01/05/output-fits.raw>'_
+   fits         'stderr output <../docs/examples/images_01/05/output-fits.raw>'_
    exiftool     'output <../docs/examples/images_01/05/output-exiftool.raw>'_
+   exiftool     'stderr output <../docs/examples/images_01/05/output-exiftool.raw>'_
    jhove        'output <../docs/examples/images_01/05/output-jhove.raw>'_
+   jhove        'stderr output <../docs/examples/images_01/05/output-jhove.raw>'_
    exiv2        'output <../docs/examples/images_01/05/output-exiv2.raw>'_
+   exiv2        'stderr output <../docs/examples/images_01/05/output-exiv2.raw>'_
    daitss       'output <../docs/examples/images_01/05/output-daitss.raw>'_
+   daitss       'stderr output <../docs/examples/images_01/05/output-daitss.raw>'_
    imagemagick   'output <../docs/examples/images_01/05/output-imagemagick.raw>'_
+   imagemagick   'stderr output <../docs/examples/images_01/05/output-imagemagick.raw>'_
 
 Text report
 ===========
