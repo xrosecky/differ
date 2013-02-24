@@ -894,74 +894,10 @@
         </metadata>
     </metadata-list>
     <sources-list>
-        <source exitCode="0" source="fits">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="19.2.13 20:58"&gt;
-  &lt;identification&gt;
-    &lt;identity format="Tagged Image File Format" mimetype="image/tiff" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="Jhove" toolversion="1.5" /&gt;
-      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-      &lt;tool toolname="ffident" toolversion="0.2" /&gt;
-      &lt;version toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;5.0&lt;/version&gt;
-      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;3&lt;/version&gt;
-      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;4&lt;/version&gt;
-      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;6&lt;/version&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/7&lt;/externalIdentifier&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/8&lt;/externalIdentifier&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/9&lt;/externalIdentifier&gt;
-      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/10&lt;/externalIdentifier&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;286116&lt;/size&gt;
-    &lt;creatingApplicationName toolname="Jhove" toolversion="1.5"&gt;Adobe Photoshop CS5 Windows&lt;/creatingApplicationName&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:10+01:00&lt;/lastmodified&gt;
-    &lt;created toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2012:02:12 12:09:13+01:00&lt;/created&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;dda4f74bd5183330452b2e5d7a18f7bb&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947370000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus&gt;
-    &lt;well-formed toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/well-formed&gt;
-    &lt;valid toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/valid&gt;
-  &lt;/filestatus&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;byteOrder toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;big endian&lt;/byteOrder&gt;
-      &lt;compressionScheme toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;Uncompressed&lt;/compressionScheme&gt;
-      &lt;compressionScheme toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;65536&lt;/compressionScheme&gt;
-      &lt;imageWidth toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageWidth&gt;
-      &lt;imageWidth toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageHeight&gt;
-      &lt;imageHeight toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageHeight&gt;
-      &lt;colorSpace toolname="Jhove" toolversion="1.5"&gt;BlackIsZero&lt;/colorSpace&gt;
-      &lt;orientation toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;normal*&lt;/orientation&gt;
-      &lt;orientation toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;65536&lt;/orientation&gt;
-      &lt;samplingFrequencyUnit toolname="Jhove" toolversion="1.5"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;xSamplingFrequency toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;72&lt;/xSamplingFrequency&gt;
-      &lt;xSamplingFrequency toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;7.985499168681983&lt;/xSamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;72&lt;/ySamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;7.985499168681983&lt;/ySamplingFrequency&gt;
-      &lt;bitsPerSample toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;8&lt;/bitsPerSample&gt;
-      &lt;bitsPerSample toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;524288&lt;/bitsPerSample&gt;
-      &lt;samplesPerPixel toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;1&lt;/samplesPerPixel&gt;
-      &lt;samplesPerPixel toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;65536&lt;/samplesPerPixel&gt;
-      &lt;scanningSoftwareName toolname="Jhove" toolversion="1.5"&gt;Adobe Photoshop CS5 Windows&lt;/scanningSoftwareName&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
-
-</stdout>
-            <stderr></stderr>
-        </source>
         <source exitCode="0" source="jhove">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-19T20:58:09+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-24T19:55:56+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif"&gt;
   &lt;reportingModule release="1.5" date="2007-10-02"&gt;TIFF-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:10+01:00&lt;/lastModified&gt;
@@ -10667,10 +10603,6 @@ Image Size                      : 512x512
 </stdout>
             <stderr></stderr>
         </source>
-        <source exitCode="0" source="core">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
         <source exitCode="0" source="imagemagick">
             <stdout>Image: /home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif
   Format: TIFF (Tagged Image File Format)
@@ -10942,6 +10874,74 @@ Image Size                      : 512x512
   Elapsed time: 0:01.009
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
 </stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="fits">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="24.2.13 19:56"&gt;
+  &lt;identification&gt;
+    &lt;identity format="Tagged Image File Format" mimetype="image/tiff" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="Jhove" toolversion="1.5" /&gt;
+      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="Droid" toolversion="3.0" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+      &lt;tool toolname="ffident" toolversion="0.2" /&gt;
+      &lt;version toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;5.0&lt;/version&gt;
+      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;3&lt;/version&gt;
+      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;4&lt;/version&gt;
+      &lt;version toolname="Droid" toolversion="3.0" status="CONFLICT"&gt;6&lt;/version&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/7&lt;/externalIdentifier&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/8&lt;/externalIdentifier&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/9&lt;/externalIdentifier&gt;
+      &lt;externalIdentifier toolname="Droid" toolversion="3.0" type="puid"&gt;fmt/10&lt;/externalIdentifier&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;286116&lt;/size&gt;
+    &lt;creatingApplicationName toolname="Jhove" toolversion="1.5"&gt;Adobe Photoshop CS5 Windows&lt;/creatingApplicationName&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:10+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2012:02:12 12:09:13+01:00&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;dda4f74bd5183330452b2e5d7a18f7bb&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947370000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus&gt;
+    &lt;well-formed toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/well-formed&gt;
+    &lt;valid toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;true&lt;/valid&gt;
+  &lt;/filestatus&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;byteOrder toolname="Jhove" toolversion="1.5" status="SINGLE_RESULT"&gt;big endian&lt;/byteOrder&gt;
+      &lt;compressionScheme toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;Uncompressed&lt;/compressionScheme&gt;
+      &lt;compressionScheme toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;65536&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageWidth&gt;
+      &lt;imageWidth toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;512&lt;/imageHeight&gt;
+      &lt;imageHeight toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;33554432&lt;/imageHeight&gt;
+      &lt;colorSpace toolname="Jhove" toolversion="1.5"&gt;BlackIsZero&lt;/colorSpace&gt;
+      &lt;orientation toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;normal*&lt;/orientation&gt;
+      &lt;orientation toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;65536&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Jhove" toolversion="1.5"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;72&lt;/xSamplingFrequency&gt;
+      &lt;xSamplingFrequency toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;7.985499168681983&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;72&lt;/ySamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;7.985499168681983&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;8&lt;/bitsPerSample&gt;
+      &lt;bitsPerSample toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;524288&lt;/bitsPerSample&gt;
+      &lt;samplesPerPixel toolname="Jhove" toolversion="1.5" status="CONFLICT"&gt;1&lt;/samplesPerPixel&gt;
+      &lt;samplesPerPixel toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;65536&lt;/samplesPerPixel&gt;
+      &lt;scanningSoftwareName toolname="Jhove" toolversion="1.5"&gt;Adobe Photoshop CS5 Windows&lt;/scanningSoftwareName&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
+</stdout>
+            <stderr></stderr>
+        </source>
+        <source exitCode="0" source="core">
+            <stdout></stdout>
             <stderr></stderr>
         </source>
     </sources-list>

@@ -1318,7 +1318,7 @@
             </metadata>
             <metadata>
                 <key>Pixels per second</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">26.21MB</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">13.11MB</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -1330,7 +1330,7 @@
             </metadata>
             <metadata>
                 <key>Elapsed time</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.009</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.019</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -1370,10 +1370,40 @@
             </metadata>
         </metadata-list>
         <sources-list>
+            <source exitCode="0" source="exiv2">
+                <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01/02.jpg
+File size       : 176931 Bytes
+MIME type       : image/jpeg
+Image size      : 512 x 512
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 512 x 512
+White balance   : 
+Thumbnail       : image/jpeg, 6952 Bytes
+Copyright       : 
+Exif comment    : 
+
+</stdout>
+                <stderr></stderr>
+            </source>
             <source exitCode="0" source="jhove">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-19T20:57:46+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-24T19:55:34+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/02.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:10+01:00&lt;/lastModified&gt;
@@ -1621,39 +1651,9 @@
 </stdout>
                 <stderr></stderr>
             </source>
-            <source exitCode="0" source="exiv2">
-                <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01/02.jpg
-File size       : 176931 Bytes
-MIME type       : image/jpeg
-Image size      : 512 x 512
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 512 x 512
-White balance   : 
-Thumbnail       : image/jpeg, 6952 Bytes
-Copyright       : 
-Exif comment    : 
-
-</stdout>
-                <stderr></stderr>
-            </source>
             <source exitCode="0" source="fits">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="19.2.13 20:57"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="24.2.13 19:55"&gt;
   &lt;identification&gt;
     &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.04" /&gt;
@@ -2242,9 +2242,9 @@ Exif comment    :
   Tainted: False
   Filesize: 177KB
   Number pixels: 262KB
-  Pixels per second: 26.21MB
+  Pixels per second: 13.11MB
   User time: 0.010u
-  Elapsed time: 0:01.009
+  Elapsed time: 0:01.019
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
 </stdout>
                 <stderr></stderr>
@@ -2258,7 +2258,7 @@ Exif comment    :
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130219-1938-h8w5vx-0.jpg&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130224-1938-1p91k1s-0.jpg&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -2347,7 +2347,7 @@ Exif comment    :
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-19T14:57:48-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-02-24T13:55:35-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -2359,7 +2359,7 @@ Exif comment    :
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130219-1938-h8w5vx-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130224-1938-1p91k1s-0.jpg&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
@@ -2375,6 +2375,10 @@ Exif comment    :
 &lt;/agent&gt;
 &lt;/premis&gt;
 </stdout>
+                <stderr></stderr>
+            </source>
+            <source exitCode="0" source="core">
+                <stdout></stdout>
                 <stderr></stderr>
             </source>
             <source exitCode="0" source="exiftool">
@@ -2443,10 +2447,6 @@ Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
 Image Size                      : 512x512
 Thumbnail Image                 : (Binary data 6952 bytes, use -b option to extract)
 </stdout>
-                <stderr></stderr>
-            </source>
-            <source exitCode="0" source="core">
-                <stdout></stdout>
                 <stderr></stderr>
             </source>
         </sources-list>
@@ -4404,7 +4404,7 @@ Thumbnail Image                 : (Binary data 6952 bytes, use -b option to extr
             </metadata>
             <metadata>
                 <key>User time</key>
-                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.010u</value>
+                <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.000u</value>
                 <conflict>false</conflict>
                 <source>imagemagick</source>
             </metadata>
@@ -4450,36 +4450,6 @@ Thumbnail Image                 : (Binary data 6952 bytes, use -b option to extr
             </metadata>
         </metadata-list>
         <sources-list>
-            <source exitCode="0" source="exiv2">
-                <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/02.jpg
-File size       : 158027 Bytes
-MIME type       : image/jpeg
-Image size      : 512 x 512
-Camera make     : 
-Camera model    : 
-Image timestamp : 
-Image number    : 
-Exposure time   : 
-Aperture        : 
-Exposure bias   : 
-Flash           : 
-Flash bias      : 
-Focal length    : 
-Subject distance: 
-ISO speed       : 
-Exposure mode   : 
-Metering mode   : 
-Macro mode      : 
-Image quality   : 
-Exif Resolution : 512 x 512
-White balance   : 
-Thumbnail       : image/jpeg, 6527 Bytes
-Copyright       : 
-Exif comment    : 
-
-</stdout>
-                <stderr></stderr>
-            </source>
             <source exitCode="0" source="daitss">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
@@ -4489,7 +4459,7 @@ Exif comment    :
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130219-1938-rm33px-0.jpg&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130224-1938-o6m0sw-0.jpg&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -4576,7 +4546,7 @@ Exif comment    :
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-02-19T14:57:51-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-02-24T13:55:38-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -4588,7 +4558,7 @@ Exif comment    :
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130219-1938-rm33px-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130224-1938-o6m0sw-0.jpg&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
@@ -4603,6 +4573,112 @@ Exif comment    :
 	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.&lt;/agentNote&gt;
 &lt;/agent&gt;
 &lt;/premis&gt;
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source exitCode="0" source="exiftool">
+                <stdout>ExifTool Version Number         : 8.15
+File Name                       : 02.jpg
+Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
+File Size                       : 154 kB
+File Modification Date/Time     : 2013:02:15 17:56:11+01:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+MIME Type                       : image/jpeg
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Compression                     : Uncompressed
+Photometric Interpretation      : RGB
+Orientation                     : Horizontal (normal)
+Samples Per Pixel               : 3
+X Resolution                    : 72
+Y Resolution                    : 72
+Planar Configuration            : Chunky
+Resolution Unit                 : inches
+Software                        : Adobe Photoshop CS5 Windows
+Modify Date                     : 2012:02:12 12:11:40
+Color Space                     : Uncalibrated
+Exif Image Width                : 512
+Exif Image Height               : 512
+Thumbnail Offset                : 402
+Thumbnail Length                : 6527
+IPTC Digest                     : 00000000000000000000000000000000
+Displayed Units X               : inches
+Displayed Units Y               : inches
+Global Angle                    : 30
+Global Altitude                 : 30
+Photoshop Thumbnail             : (Binary data 6527 bytes, use -b option to extract)
+Photoshop Quality               : 12
+Photoshop Format                : Standard
+Progressive Scans               : 3 Scans
+XMP Toolkit                     : Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00
+Create Date                     : 2012:02:12 12:09:13+01:00
+Metadata Date                   : 2012:02:12 12:11:40+01:00
+Creator Tool                    : Adobe Photoshop CS5 Windows
+Format                          : image/jpeg
+Color Mode                      : 1
+Instance ID                     : xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E
+Document ID                     : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+Original Document ID            : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
+History Action                  : created, converted, saved, saved, saved
+History Instance ID             : xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E
+History When                    : 2012:02:12 12:09:13+01:00, 2012:02:12 12:11:16+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:11:40+01:00
+History Software Agent          : Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows
+History Parameters              : from image/tiff to image/jpeg
+History Changed                 : /, /, /
+DCT Encode Version              : 100
+APP14 Flags 0                   : (none)
+APP14 Flags 1                   : (none)
+Color Transform                 : Unknown (RGB or CMYK)
+Image Width                     : 512
+Image Height                    : 512
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 1
+Image Size                      : 512x512
+Thumbnail Image                 : (Binary data 6527 bytes, use -b option to extract)
+</stdout>
+                <stderr></stderr>
+            </source>
+            <source exitCode="0" source="fits">
+                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="24.2.13 19:55"&gt;
+  &lt;identification&gt;
+    &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
+      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
+      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
+      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
+    &lt;/identity&gt;
+  &lt;/identification&gt;
+  &lt;fileinfo&gt;
+    &lt;size toolname="Jhove" toolversion="1.5"&gt;158027&lt;/size&gt;
+    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;Adobe Photoshop CS5 Windows&lt;/creatingApplicationName&gt;
+    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
+    &lt;created toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2012:02:12 12:09:13+01:00&lt;/created&gt;
+    &lt;created toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;2012:02:12 12:11:40&lt;/created&gt;
+    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/02.jpg&lt;/filepath&gt;
+    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/02.jpg&lt;/filename&gt;
+    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;83afef066999155a08a3f06bf0410847&lt;/md5checksum&gt;
+    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
+  &lt;/fileinfo&gt;
+  &lt;filestatus /&gt;
+  &lt;metadata&gt;
+    &lt;image&gt;
+      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Uncompressed&lt;/compressionScheme&gt;
+      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;512&lt;/imageWidth&gt;
+      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;512&lt;/imageHeight&gt;
+      &lt;colorSpace toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;RGB&lt;/colorSpace&gt;
+      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
+      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74"&gt;in.&lt;/samplingFrequencyUnit&gt;
+      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;72&lt;/xSamplingFrequency&gt;
+      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;72&lt;/ySamplingFrequency&gt;
+      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8&lt;/bitsPerSample&gt;
+      &lt;samplesPerPixel toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;3&lt;/samplesPerPixel&gt;
+      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Adobe Photoshop CS5 Windows&lt;/scanningSoftwareName&gt;
+      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
+    &lt;/image&gt;
+  &lt;/metadata&gt;
+&lt;/fits&gt;
+
 </stdout>
                 <stderr></stderr>
             </source>
@@ -5142,16 +5218,20 @@ Exif comment    :
   Filesize: 158KB
   Number pixels: 262KB
   Pixels per second: 26.21MB
-  User time: 0.010u
+  User time: 0.000u
   Elapsed time: 0:01.009
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
 </stdout>
                 <stderr></stderr>
             </source>
+            <source exitCode="0" source="core">
+                <stdout></stdout>
+                <stderr></stderr>
+            </source>
             <source exitCode="0" source="jhove">
                 <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-02-19T20:57:49+01:00&lt;/date&gt;
+ &lt;date&gt;2013-02-24T19:55:37+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/02.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
@@ -5399,114 +5479,34 @@ Exif comment    :
 </stdout>
                 <stderr></stderr>
             </source>
-            <source exitCode="0" source="fits">
-                <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="19.2.13 20:57"&gt;
-  &lt;identification&gt;
-    &lt;identity format="Exchangeable Image File Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
-      &lt;tool toolname="file utility" toolversion="5.04" /&gt;
-      &lt;tool toolname="Exiftool" toolversion="7.74" /&gt;
-      &lt;tool toolname="NLNZ Metadata Extractor" toolversion="3.4GA" /&gt;
-    &lt;/identity&gt;
-  &lt;/identification&gt;
-  &lt;fileinfo&gt;
-    &lt;size toolname="Jhove" toolversion="1.5"&gt;158027&lt;/size&gt;
-    &lt;creatingApplicationName toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;Adobe Photoshop CS5 Windows&lt;/creatingApplicationName&gt;
-    &lt;lastmodified toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;2013:02:15 17:56:11+01:00&lt;/lastmodified&gt;
-    &lt;created toolname="Exiftool" toolversion="7.74" status="CONFLICT"&gt;2012:02:12 12:09:13+01:00&lt;/created&gt;
-    &lt;created toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="CONFLICT"&gt;2012:02:12 12:11:40&lt;/created&gt;
-    &lt;filepath toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/02.jpg&lt;/filepath&gt;
-    &lt;filename toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;/home/stavel/differ/differ-cmdline/../docs/examples/images_02/02.jpg&lt;/filename&gt;
-    &lt;md5checksum toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;83afef066999155a08a3f06bf0410847&lt;/md5checksum&gt;
-    &lt;fslastmodified toolname="OIS File Information" toolversion="0.1" status="SINGLE_RESULT"&gt;1360947371000&lt;/fslastmodified&gt;
-  &lt;/fileinfo&gt;
-  &lt;filestatus /&gt;
-  &lt;metadata&gt;
-    &lt;image&gt;
-      &lt;compressionScheme toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Uncompressed&lt;/compressionScheme&gt;
-      &lt;imageWidth toolname="Exiftool" toolversion="7.74"&gt;512&lt;/imageWidth&gt;
-      &lt;imageHeight toolname="Exiftool" toolversion="7.74"&gt;512&lt;/imageHeight&gt;
-      &lt;colorSpace toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;RGB&lt;/colorSpace&gt;
-      &lt;orientation toolname="Exiftool" toolversion="7.74"&gt;normal*&lt;/orientation&gt;
-      &lt;samplingFrequencyUnit toolname="Exiftool" toolversion="7.74"&gt;in.&lt;/samplingFrequencyUnit&gt;
-      &lt;xSamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;72&lt;/xSamplingFrequency&gt;
-      &lt;ySamplingFrequency toolname="Exiftool" toolversion="7.74"&gt;72&lt;/ySamplingFrequency&gt;
-      &lt;bitsPerSample toolname="Exiftool" toolversion="7.74"&gt;8&lt;/bitsPerSample&gt;
-      &lt;samplesPerPixel toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;3&lt;/samplesPerPixel&gt;
-      &lt;scanningSoftwareName toolname="Exiftool" toolversion="7.74" status="SINGLE_RESULT"&gt;Adobe Photoshop CS5 Windows&lt;/scanningSoftwareName&gt;
-      &lt;lightSource toolname="NLNZ Metadata Extractor" toolversion="3.4GA" status="SINGLE_RESULT"&gt;unknown&lt;/lightSource&gt;
-    &lt;/image&gt;
-  &lt;/metadata&gt;
-&lt;/fits&gt;
+            <source exitCode="0" source="exiv2">
+                <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02/02.jpg
+File size       : 158027 Bytes
+MIME type       : image/jpeg
+Image size      : 512 x 512
+Camera make     : 
+Camera model    : 
+Image timestamp : 
+Image number    : 
+Exposure time   : 
+Aperture        : 
+Exposure bias   : 
+Flash           : 
+Flash bias      : 
+Focal length    : 
+Subject distance: 
+ISO speed       : 
+Exposure mode   : 
+Metering mode   : 
+Macro mode      : 
+Image quality   : 
+Exif Resolution : 512 x 512
+White balance   : 
+Thumbnail       : image/jpeg, 6527 Bytes
+Copyright       : 
+Exif comment    : 
 
 </stdout>
-                <stderr></stderr>
-            </source>
-            <source exitCode="0" source="exiftool">
-                <stdout>ExifTool Version Number         : 8.15
-File Name                       : 02.jpg
-Directory                       : /home/stavel/differ/differ-cmdline/../docs/examples/images_02
-File Size                       : 154 kB
-File Modification Date/Time     : 2013:02:15 17:56:11+01:00
-File Permissions                : rw-r--r--
-File Type                       : JPEG
-MIME Type                       : image/jpeg
-Exif Byte Order                 : Big-endian (Motorola, MM)
-Compression                     : Uncompressed
-Photometric Interpretation      : RGB
-Orientation                     : Horizontal (normal)
-Samples Per Pixel               : 3
-X Resolution                    : 72
-Y Resolution                    : 72
-Planar Configuration            : Chunky
-Resolution Unit                 : inches
-Software                        : Adobe Photoshop CS5 Windows
-Modify Date                     : 2012:02:12 12:11:40
-Color Space                     : Uncalibrated
-Exif Image Width                : 512
-Exif Image Height               : 512
-Thumbnail Offset                : 402
-Thumbnail Length                : 6527
-IPTC Digest                     : 00000000000000000000000000000000
-Displayed Units X               : inches
-Displayed Units Y               : inches
-Global Angle                    : 30
-Global Altitude                 : 30
-Photoshop Thumbnail             : (Binary data 6527 bytes, use -b option to extract)
-Photoshop Quality               : 12
-Photoshop Format                : Standard
-Progressive Scans               : 3 Scans
-XMP Toolkit                     : Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00
-Create Date                     : 2012:02:12 12:09:13+01:00
-Metadata Date                   : 2012:02:12 12:11:40+01:00
-Creator Tool                    : Adobe Photoshop CS5 Windows
-Format                          : image/jpeg
-Color Mode                      : 1
-Instance ID                     : xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E
-Document ID                     : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-Original Document ID            : xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E
-History Action                  : created, converted, saved, saved, saved
-History Instance ID             : xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E
-History When                    : 2012:02:12 12:09:13+01:00, 2012:02:12 12:11:16+01:00, 2012:02:12 12:11:40+01:00, 2012:02:12 12:11:40+01:00
-History Software Agent          : Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows, Adobe Photoshop CS5 Windows
-History Parameters              : from image/tiff to image/jpeg
-History Changed                 : /, /, /
-DCT Encode Version              : 100
-APP14 Flags 0                   : (none)
-APP14 Flags 1                   : (none)
-Color Transform                 : Unknown (RGB or CMYK)
-Image Width                     : 512
-Image Height                    : 512
-Encoding Process                : Baseline DCT, Huffman coding
-Bits Per Sample                 : 8
-Color Components                : 1
-Image Size                      : 512x512
-Thumbnail Image                 : (Binary data 6527 bytes, use -b option to extract)
-</stdout>
-                <stderr></stderr>
-            </source>
-            <source exitCode="0" source="core">
-                <stdout></stdout>
                 <stderr></stderr>
             </source>
         </sources-list>
@@ -6333,11 +6333,11 @@ Thumbnail Image                 : (Binary data 6527 bytes, use -b option to extr
             </metadata>
         </metadata-list>
         <sources-list>
-            <source exitCode="0" source="PSNR">
+            <source exitCode="0" source="MSE">
                 <stdout></stdout>
                 <stderr></stderr>
             </source>
-            <source exitCode="0" source="MSE">
+            <source exitCode="0" source="PSNR">
                 <stdout></stdout>
                 <stderr></stderr>
             </source>
