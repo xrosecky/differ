@@ -144,6 +144,19 @@ public class TextResultTransformer implements ResultTransformer{
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
+                    File errorOutputFile = this.outputNamer.rawErrorOutputName(file, result,metadata.getSource().toString());
+                    writer = null;
+                    try {
+                        output += String.format("   %-10s   'stderr output <%s>'_\n",
+                                metadata.getSource().toString(),
+                                outFile
+                        );
+                        writer = new FileWriter(errorOutputFile);
+                        writer.write(metadata.getSource().getStdout());
+                        writer.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }

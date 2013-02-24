@@ -12,6 +12,7 @@ import java.io.File;
 public interface OutputNamer {
     public File baseName(File file, ImageProcessorResult result);
     public File rawOutputName(File file, ImageProcessorResult result, String source);
+    public File rawErrorOutputName(File file, ImageProcessorResult result, String source);
     public File reportName(File file, ImageProcessorResult result);
     public File textName(File file, ImageProcessorResult result);
     public File textCompareName(File file1, File file2, ImageProcessorResult results[]);

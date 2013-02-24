@@ -27,6 +27,12 @@ public class TheSameNameOutputNamer implements OutputNamer {
     }
 
     @Override
+    public File rawErrorOutputName(File file, ImageProcessorResult result, String source) {
+        File output =  new File(this.baseName(file, result),String.format("stderr-%s.raw",source));
+        return output;
+    }
+
+    @Override
     public File reportName(File file, ImageProcessorResult result) {
         File output = new File(this.baseName(file, result),"report.drep");
         return output;  //To change body of implemented methods use File | Settings | File Templates.
