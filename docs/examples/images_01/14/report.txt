@@ -117,6 +117,7 @@ Sum height width exponent is valid                jpylyzer  True
 tp sot is valid                                   jpylyzer  True                   
 unkC is valid                                     jpylyzer  True                   
 Validation (well formed and valid)                daitss    Well-Formed and valid  
+                                                  jpylyzer  False                  
 vRcD is valid                                     jpylyzer  True                   
 vRcE is valid                                     jpylyzer  True                   
 vRcN is valid                                     jpylyzer  True                   
@@ -218,7 +219,7 @@ Overall mean                       imagemagick  96.1919 (0.377223)
 Overall min                        imagemagick  0 (0)                                                                 
 Overall standard deviation         imagemagick  75.4944 (0.296057)                                                    
 Page geometry                      imagemagick  512x512+0+0                                                           
-Pixels per second                  imagemagick  3.277MB                                                               
+Pixels per second                  imagemagick  3.745MB                                                               
 Precincts                          jpylyzer     no                                                                    
 Progression order                  jpylyzer     RLCP                                                                  
                                    kakadu       RLCP                                                                  
@@ -286,12 +287,13 @@ Display resolution horizontal jpylyzer                                          
 Display resolution vertical   jpylyzer                                                                            PPI
 Dispose                       imagemagick  Undefined                                                              
 Document ID                   exiftool     xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                               
-Elapsed time                  imagemagick  0:01.080                                                               
+Elapsed time                  imagemagick  0:01.070                                                               
 Endianess                     imagemagick  Undefined                                                              
 Exif Image Height             exiftool     512                                                                    
 Exif Image Width              exiftool     512                                                                    
 exit-code                     daitss       OK                                                                     
                               exiftool     ok                                                                     
+                              exiv2        error (253)                                                            
                               fits         ok                                                                     
                               imagemagick  ok                                                                     
                               jhove        ok                                                                     
@@ -344,7 +346,6 @@ Tainted                       imagemagick  False
 Tile origin                   kakadu       {0,0}                                                                  
 Tiles                         kakadu       {1024,1024}                                                            
 User time                     imagemagick  0.060u                                                                 
-Valid and Well formed         jpylyzer     False                                                                  
 Verbose                       imagemagick  true                                                                   
 XMP Toolkit                   exiftool     Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00                 
 ----------------------------- -----------  ---------------------------------------------------------------------  ----
@@ -358,6 +359,8 @@ Raw outputs of extractors
    exiftool     'stderr output <../docs/examples/images_01/14/output-exiftool.raw>'_
    jhove        'output <../docs/examples/images_01/14/output-jhove.raw>'_
    jhove        'stderr output <../docs/examples/images_01/14/output-jhove.raw>'_
+   exiv2        'output <../docs/examples/images_01/14/output-exiv2.raw>'_
+   exiv2        'stderr output <../docs/examples/images_01/14/output-exiv2.raw>'_
    jpylyzer     'output <../docs/examples/images_01/14/output-jpylyzer.raw>'_
    jpylyzer     'stderr output <../docs/examples/images_01/14/output-jpylyzer.raw>'_
    daitss       'output <../docs/examples/images_01/14/output-daitss.raw>'_

@@ -87,7 +87,8 @@ Second box is file type box                        jpylyzer     True
 Signature box length is valid                      jpylyzer     True                                     
 Signature is valid                                 jpylyzer     True                                     
 Sum height width exponent is valid                 jpylyzer     True                                     
-Validation (well formed and valid)                 daitss       Well-Formed and valid      Well-Formed and valid 
+Validation (well formed and valid)                 jpylyzer     False                                    
+                                                   daitss       Well-Formed and valid      Well-Formed and valid 
                                                    jhove                               Well-Formed and valid 
 Width consistent with SIZ                          jpylyzer     True                                     
 bPC depth consistent with SIZ                      jpylyzer     True                                     
@@ -228,7 +229,7 @@ Overall mean                        imagemagick     96.1919 (0.377223)          
 Overall min                         imagemagick     0 (0)                                                                 2 (0.00784314)                                                   
 Overall standard deviation          imagemagick     75.4944 (0.296057)                                                    75.4581 (0.295914)                                               
 Page geometry                       imagemagick     512x512+0+0                                                           512x512+0+0                                                      
-Pixels per second                   imagemagick     3.277MB                                                               26.21MB                                                          
+Pixels per second                   imagemagick     3.745MB                                                               26.21MB                                                          
 Precincts                           jpylyzer        no                                                                                                                                     
 Progression order                   kakadu          RLCP                                                                                                                                   
                                     jpylyzer        RLCP                                                                                                                                   
@@ -306,7 +307,7 @@ Displayed Units X                                  exiftool                     
 Displayed Units Y                                  exiftool                                                                               inches                                                            
 Dispose                                            imagemagick     Undefined                                                              Undefined                                                         
 Document ID                                        exiftool        xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                               xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E                          
-Elapsed time                                       imagemagick     0:01.080                                                               0:01.010                                                          
+Elapsed time                                       imagemagick     0:01.070                                                               0:01.009                                                          
 Encoding process                                   exiftool                                                                               Baseline DCT, Huffman coding                                      
 Endianess                                          imagemagick     Undefined                                                              Undefined                                                         
 Exif Byte Order                                    exiftool                                                                               Big-endian (Motorola, MM)                                         
@@ -388,7 +389,6 @@ Tile size X                                        jhove                 PPI    
 Tile size Y                                        jhove                 PPI                                                                    PPI                                                         
 Tiles                                              kakadu          {1024,1024}                                                                                                                              
 User time                                          imagemagick     0.060u                                                                 0.020u                                                            
-Valid and Well formed                              jpylyzer        False                                                                                                                                    
 Verbose                                            imagemagick     true                                                                   true                                                              
 XMP Toolkit                                        exiftool        Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00                 Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00            
 -------------------------------------------------  -----------  ---------------------------------------------------------------------  ---------------------------------------------------------------------

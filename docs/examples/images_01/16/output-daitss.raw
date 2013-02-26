@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+	
+	<!-- premis file object -->
+	<object xsi:type="file">
+		<objectIdentifier>
+			<objectIdentifierType>URI</objectIdentifierType>
+			<objectIdentifierValue>/tmp/object20130226-1938-g2apq5-0.png</objectIdentifierValue>
+		</objectIdentifier>
+		<objectCharacteristics>
+			<compositionLevel>0</compositionLevel>
+			<fixity>
+				<messageDigestAlgorithm>MD5</messageDigestAlgorithm>
+				<messageDigest>928adda44ab130cdfde74fef416a0bbb</messageDigest>
+				<messageDigestOriginator>Archive</messageDigestOriginator>
+			</fixity>
+			<fixity>
+				<messageDigestAlgorithm>SHA-1</messageDigestAlgorithm>
+				<messageDigest>80ea59dcb8d178d0d4ffe23694a21e0c429a3936</messageDigest>
+				<messageDigestOriginator>Archive</messageDigestOriginator>
+			</fixity>
+			<size>403025</size>
+			
+			<format>
+				<formatDesignation>
+					<formatName>Portable Network Graphics</formatName>
+					
+					<formatVersion>1.1</formatVersion>
+					
+				</formatDesignation>
+				
+				<formatRegistry>
+					<formatRegistryName>http://www.nationalarchives.gov.uk/pronom</formatRegistryName>
+					<formatRegistryKey>fmt/12</formatRegistryKey>
+				</formatRegistry>
+				
+				
+			</format>
+			
+			
+			
+			
+		</objectCharacteristics>
+		
+		<originalName>16.png</originalName>
+		
+		
+		
+		
+		<linkingEventIdentifier>
+			<linkingEventIdentifierType>URI</linkingEventIdentifierType>
+			<linkingEventIdentifierValue>1</linkingEventIdentifierValue>
+		</linkingEventIdentifier>
+	</object>
+	
+
+	
+	<!-- premis bitstream object -->
+	
+	
+
+	<!-- premis event -->
+	<event>
+		<eventIdentifier>
+			<eventIdentifierType>URI</eventIdentifierType>
+			<eventIdentifierValue>1</eventIdentifierValue>
+		</eventIdentifier>
+		<eventType>describe</eventType>
+		<eventDateTime>2013-02-26T16:10:34-05:00</eventDateTime>
+		<eventDetail>format identified</eventDetail>
+		<eventOutcomeInformation>
+			<eventOutcome>success</eventOutcome>
+			
+		</eventOutcomeInformation>
+		<linkingAgentIdentifier>
+			<linkingAgentIdentifierType>URI</linkingAgentIdentifierType>
+			<linkingAgentIdentifierValue>info:fda/daitss/description/v2.2.0</linkingAgentIdentifierValue>
+		</linkingAgentIdentifier>
+		<linkingObjectIdentifier>
+			<linkingObjectIdentifierType>URI</linkingObjectIdentifierType>
+			<linkingObjectIdentifierValue>/tmp/object20130226-1938-g2apq5-0.png</linkingObjectIdentifierValue>
+		</linkingObjectIdentifier>
+	</event>
+
+<!-- premis agent -->
+<agent>
+	<agentIdentifier>
+		<agentIdentifierType>URI</agentIdentifierType>
+		<agentIdentifierValue>info:fda/daitss/description/v2.2.0</agentIdentifierValue>
+	</agentIdentifier>
+	<agentName>Format Description Service</agentName>
+	<agentType>Web Service</agentType>
+	<agentNote>built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.</agentNote>
+</agent>
+</premis>
