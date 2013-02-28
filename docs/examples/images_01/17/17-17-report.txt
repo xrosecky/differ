@@ -36,9 +36,9 @@ Characterization
 
 Significant Property                Source       Value for Image A                                                     Value for Image B                                                   
 ----------------------------------  -----------  --------------------------------------------------------------------  --------------------------------------------------------------------
-Bits per sample                     daitss                                                                                88                                                               
 Color depth                         exiftool        8                                                                     8                                                                
                                     imagemagick     8                                                                     8                                                                
+                                    daitss                                                                                8                                                                
                                     jhove                                                                                                                                                  
 Color space                         imagemagick     1                                                                     2                                                                
                                     daitss          YCbCr                                                                 YCbCr                                                            
@@ -105,7 +105,7 @@ Overall mean                        imagemagick                                 
 Overall min                         imagemagick                                                                           0 (0)                                                            
 Overall standard deviation          imagemagick                                                                           80.0573 (0.31395)                                                
 Page geometry                       imagemagick     1815x2126+0+0                                                         1815x2126+0+0                                                    
-Pixels per second                   imagemagick     55.12MB                                                               24.12MB                                                          
+Pixels per second                   imagemagick     64.31MB                                                               25.72MB                                                          
 Progression order                   jhove                                                                                                                                                  
 Resolution horizontal               exiftool        300   PPI                                                             300           PPI                                                
                                     imagemagick     300   PPI                                                             300           PPI                                                
@@ -158,7 +158,7 @@ Displayed Units X                                  exiftool        inches       
 Displayed Units Y                                  exiftool        inches                                                         inches                                                    
 Dispose                                            imagemagick     Undefined                                                      Undefined                                                 
 Document ID                                        exiftool        uuid:CB596EAF7807E011B337EC427BA3BC23                          uuid:CB596EAF7807E011B337EC427BA3BC23                     
-Elapsed time                                       imagemagick     0:01.069                                                       0:01.160                                                  
+Elapsed time                                       imagemagick     0:01.060                                                       0:01.149                                                  
 Encoding process                                   exiftool        Baseline DCT, Huffman coding                                   Progressive DCT, Huffman coding                           
 Endianess                                          imagemagick     Undefined                                                      Undefined                                                 
 Exif Byte Order                                    exiftool        Big-endian (Motorola, MM)                                      Big-endian (Motorola, MM)                                 
@@ -238,7 +238,7 @@ Thumbnail Length                                   exiftool        5929         
 Thumbnail Offset                                   exiftool        8662                                                           332                                                       
 Tile size X                                        jhove                 PPI                                                            PPI                                                 
 Tile size Y                                        jhove                 PPI                                                            PPI                                                 
-User time                                          imagemagick     0.060u                                                         0.140u                                                    
+User time                                          imagemagick     0.050u                                                         0.160u                                                    
 Verbose                                            imagemagick     true                                                           true                                                      
 XMP Toolkit                                        exiftool        3.1.1-112                                                      3.1.1-112                                                 
 -------------------------------------------------  -----------  -------------------------------------------------------------  -------------------------------------------------------------

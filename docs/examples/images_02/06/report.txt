@@ -35,9 +35,9 @@ Characterization
 
 Significant Property               Source       Value                                                                 Unit
 ---------------------------------- -----------  --------------------------------------------------------------------  ----
-Bits per sample                    daitss       88                                                                    
-                                   imagemagick  8, 8, 8                                                               
-Color depth                        exiftool     8                                                                     
+Color depth                        daitss       8                                                                     
+                                   exiftool     8                                                                     
+                                   imagemagick  8                                                                     
                                    imagemagick  8                                                                     
                                    jhove                                                                              
 Color space                        daitss                                                                             
@@ -225,7 +225,7 @@ Thumbnail Length                                  exiftool     6564
 Thumbnail Offset                                  exiftool     402                                                            
 Tile size X                                       jhove                                                                       PPI
 Tile size Y                                       jhove                                                                       PPI
-User time                                         imagemagick  0.000u                                                         
+User time                                         imagemagick  0.010u                                                         
 Verbose                                           imagemagick  true                                                           
 XMP Toolkit                                       exiftool     Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00         
 ------------------------------------------------- -----------  -------------------------------------------------------------  ----

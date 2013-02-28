@@ -36,9 +36,9 @@ Characterization
 
 Significant Property                Source       Value for Image A                                                     Value for Image B                                                   
 ----------------------------------  -----------  --------------------------------------------------------------------  --------------------------------------------------------------------
-Bits per sample                     daitss          88                                                                    88                                                               
 Color depth                         exiftool        8                                                                     8                                                                
                                     imagemagick     8                                                                     8                                                                
+                                    daitss          8                                                                     8                                                                
                                     jhove                                                                                                                                                  
 Color space                         imagemagick     2                                                                     2                                                                
                                     daitss          YCbCr                                                                 YCbCr                                                            
@@ -114,7 +114,7 @@ Overall mean                        imagemagick     86.2596 (0.338273)          
 Overall min                         imagemagick     0 (0)                                                                 0 (0)                                                            
 Overall standard deviation          imagemagick     68.7104 (0.269452)                                                    70.3469 (0.27587)                                                
 Page geometry                       imagemagick     2000x1346+0+0                                                         2000x1346+0+0                                                    
-Pixels per second                   imagemagick     19.23MB                                                               22.43MB                                                          
+Pixels per second                   imagemagick     24.47MB                                                               22.43MB                                                          
 Profile file signature              exiftool        acsp                                                                  acsp                                                             
 Progression order                   jhove                                                                                                                                                  
 Resolution horizontal               exiftool        300   PPI                                                             300   PPI                                                        
@@ -177,7 +177,7 @@ Displayed Units X                                  exiftool        inches       
 Displayed Units Y                                  exiftool        inches                                                         inches                                                    
 Dispose                                            imagemagick     Undefined                                                      Undefined                                                 
 Document ID                                        exiftool        adobe:docid:photoshop:164b2635-48a0-11d9-90f4-c22daedd6e5a      adobe:docid:photoshop:164b2635-48a0-11d9-90f4-c22daedd6e5a 
-Elapsed time                                       imagemagick     0:01.140                                                       0:01.120                                                  
+Elapsed time                                       imagemagick     0:01.109                                                       0:01.120                                                  
 Encoding process                                   exiftool        Baseline DCT, Huffman coding                                   Baseline DCT, Huffman coding                              
 Endianess                                          imagemagick     Undefined                                                      Undefined                                                 
 Exif Byte Order                                    exiftool        Big-endian (Motorola, MM)                                      Big-endian (Motorola, MM)                                 
@@ -263,7 +263,7 @@ Thumbnail Length                                   exiftool        8171         
 Thumbnail Offset                                   exiftool        332                                                            332                                                       
 Tile size X                                        jhove                 PPI                                                            PPI                                                 
 Tile size Y                                        jhove                 PPI                                                            PPI                                                 
-User time                                          imagemagick     0.140u                                                         0.110u                                                    
+User time                                          imagemagick     0.110u                                                         0.110u                                                    
 Verbose                                            imagemagick     true                                                           true                                                      
 Viewing Cond Desc                                  exiftool        Reference Viewing Condition in IEC61966-2.1                    Reference Viewing Condition in IEC61966-2.1               
 Viewing Cond Illuminant                            exiftool        19.6445 20.3718 16.8089                                        19.6445 20.3718 16.8089                                   

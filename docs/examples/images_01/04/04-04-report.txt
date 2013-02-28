@@ -36,10 +36,9 @@ Characterization
 
 Significant Property                Source       Value for Image A                                                     Value for Image B                                                   
 ----------------------------------  -----------  --------------------------------------------------------------------  --------------------------------------------------------------------
-Bits per sample                     imagemagick                                                                           8, 8, 8                                                          
-                                    daitss                                                                                88                                                               
 Color depth                         exiftool        8                                                                     8                                                                
                                     imagemagick     8                                                                     8                                                                
+                                    daitss                                                                                8                                                                
                                     jhove                                                                                                                                                  
 Color space                         imagemagick     RGB                                                                   2                                                                
                                     daitss                                                                                                                                                 
@@ -106,7 +105,7 @@ Overall mean                        imagemagick                                 
 Overall min                         imagemagick                                                                           0 (0)                                                            
 Overall standard deviation          imagemagick                                                                           68.5928 (0.268991)                                               
 Page geometry                       imagemagick     512x512+0+0                                                           512x512+0+0                                                      
-Pixels per second                   imagemagick     26.21MB                                                               13.11MB                                                          
+Pixels per second                   imagemagick     0b                                                                    13.11MB                                                          
 Progression order                   jhove                                                                                                                                                  
 Resolution horizontal               exiftool        72    PPI                                                             72           PPI                                                 
                                     imagemagick     72    PPI                                                             72           PPI                                                 
@@ -162,7 +161,7 @@ Displayed Units Y                                  exiftool        inches       
 Dispose                                            imagemagick     Undefined                                                      Undefined                                                 
 Document Ancestors                                 exiftool                                                                       xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E                  
 Document ID                                        exiftool        xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                       xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E                  
-Elapsed time                                       imagemagick     0:01.009                                                       0:01.019                                                  
+Elapsed time                                       imagemagick     0:01.000                                                       0:01.019                                                  
 Encoding process                                   exiftool                                                                       Baseline DCT, Huffman coding                              
 Endianess                                          imagemagick     MSB                                                            Undefined                                                 
 Exif Byte Order                                    exiftool        Big-endian (Motorola, MM)                                      Big-endian (Motorola, MM)                                 

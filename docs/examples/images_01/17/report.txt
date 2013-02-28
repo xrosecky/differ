@@ -35,8 +35,8 @@ Characterization
 
 Significant Property               Source       Value                                                                 Unit
 ---------------------------------- -----------  --------------------------------------------------------------------  ----
-Bits per sample                    daitss                                                                             
-Color depth                        exiftool     8                                                                     
+Color depth                        daitss                                                                             
+                                   exiftool     8                                                                     
                                    imagemagick  8                                                                     
                                    jhove                                                                              
 Color space                        daitss       YCbCr                                                                 
@@ -104,7 +104,7 @@ Orientation                        exiftool     Horizontal (normal)
                                    imagemagick  TopLeft                                                               
                                    imagemagick  1                                                                     
 Page geometry                      imagemagick  1815x2126+0+0                                                         
-Pixels per second                  imagemagick  55.12MB                                                               
+Pixels per second                  imagemagick  64.31MB                                                               
 Progression order                  jhove                                                                              
 Resolution horizontal              daitss       300                                                                   PPI
                                    exiftool     300                                                                   PPI
@@ -148,7 +148,7 @@ Displayed Units X                                 exiftool     inches
 Displayed Units Y                                 exiftool     inches                                                         
 Dispose                                           imagemagick  Undefined                                                      
 Document ID                                       exiftool     uuid:CB596EAF7807E011B337EC427BA3BC23                          
-Elapsed time                                      imagemagick  0:01.069                                                       
+Elapsed time                                      imagemagick  0:01.060                                                       
 Encoding process                                  exiftool     Baseline DCT, Huffman coding                                   
 Endianess                                         imagemagick  Undefined                                                      
 Exif Byte Order                                   exiftool     Big-endian (Motorola, MM)                                      
@@ -221,7 +221,7 @@ Thumbnail Length                                  exiftool     5929
 Thumbnail Offset                                  exiftool     8662                                                           
 Tile size X                                       jhove                                                                       PPI
 Tile size Y                                       jhove                                                                       PPI
-User time                                         imagemagick  0.060u                                                         
+User time                                         imagemagick  0.050u                                                         
 Verbose                                           imagemagick  true                                                           
 XMP Toolkit                                       exiftool     3.1.1-112                                                      
 ------------------------------------------------- -----------  -------------------------------------------------------------  ----

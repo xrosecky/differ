@@ -35,8 +35,8 @@ Characterization
 
 Significant Property               Source       Value                                                                 Unit
 ---------------------------------- -----------  --------------------------------------------------------------------  ----
-Bits per sample                    daitss       88                                                                    
-Color depth                        exiftool     8                                                                     
+Color depth                        daitss       8                                                                     
+                                   exiftool     8                                                                     
                                    imagemagick  8                                                                     
                                    jhove                                                                              
 Color space                        daitss       YCbCr                                                                 
@@ -108,7 +108,7 @@ Overall mean                       imagemagick  65.1132 (0.255346)
 Overall min                        imagemagick  0 (0)                                                                 
 Overall standard deviation         imagemagick  93.5947 (0.367038)                                                    
 Page geometry                      imagemagick  3509x2550+0+0                                                         
-Pixels per second                  imagemagick  24.86MB                                                               
+Pixels per second                  imagemagick  22.94MB                                                               
 Progression order                  jhove                                                                              
 Resolution horizontal              daitss       300                                                                   PPI
                                    exiftool     300                                                                   PPI
@@ -149,7 +149,7 @@ Color transformation                  exiftool     YCbCr4:2:0 (2 2)
 Compose                               imagemagick  Over                                                           
 Directory                             exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_02  
 Dispose                               imagemagick  Undefined                                                      
-Elapsed time                          imagemagick  0:01.359                                                       
+Elapsed time                          imagemagick  0:01.390                                                       
 Encoding process                      exiftool     Baseline DCT, Huffman coding                                   
 Endianess                             imagemagick  Undefined                                                      
 Exif Byte Order                       exiftool     Big-endian (Motorola, MM)                                      
@@ -194,7 +194,7 @@ Rendering intent                      imagemagick  Undefined
 Tainted                               imagemagick  False                                                          
 Tile size X                           jhove                                                                       PPI
 Tile size Y                           jhove                                                                       PPI
-User time                             imagemagick  0.350u                                                         
+User time                             imagemagick  0.380u                                                         
 Verbose                               imagemagick  true                                                           
 ------------------------------------- -----------  -------------------------------------------------------------  ----
 

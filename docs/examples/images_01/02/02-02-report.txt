@@ -36,10 +36,9 @@ Characterization
 
 Significant Property                Source       Value for Image A                                                     Value for Image B                                                   
 ----------------------------------  -----------  --------------------------------------------------------------------  --------------------------------------------------------------------
-Bits per sample                     imagemagick     8, 8, 8                                                               8, 8, 8                                                          
-                                    daitss          88                                                                                                                                     
 Color depth                         exiftool        8                                                                     8                                                                
                                     imagemagick     8                                                                     8                                                                
+                                    daitss          8                                                                                                                                      
                                     jhove                                                                                                                                                  
 Color space                         imagemagick     2                                                                     1                                                                
                                     daitss                                                                                                                                                 
@@ -235,7 +234,7 @@ Thumbnail Length                                   exiftool        6952         
 Thumbnail Offset                                   exiftool        402                                                            402                                                       
 Tile size X                                        jhove                 PPI                                                            PPI                                                 
 Tile size Y                                        jhove                 PPI                                                            PPI                                                 
-User time                                          imagemagick     0.010u                                                         0.010u                                                    
+User time                                          imagemagick     0.020u                                                         0.010u                                                    
 Verbose                                            imagemagick     true                                                           true                                                      
 XMP Toolkit                                        exiftool        Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00         Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00    
 -------------------------------------------------  -----------  -------------------------------------------------------------  -------------------------------------------------------------

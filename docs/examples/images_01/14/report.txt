@@ -141,10 +141,10 @@ Significant Property               Source       Value                           
 ---------------------------------- -----------  --------------------------------------------------------------------  ----
 ADS                                kakadu       0                                                                     
 ATK                                kakadu       0                                                                     
-Bits per sample                    daitss       88                                                                    
 Bypass                             kakadu       0                                                                     
 Code block size                    kakadu       {32,32}                                                               
-Color depth                        exiftool     8, 8, 8                                                               
+Color depth                        daitss       8                                                                     
+                                   exiftool     8, 8, 8                                                               
                                    imagemagick  8                                                                     
                                    jpylyzer     8                                                                     
                                    kakadu       8,8,8                                                                 
@@ -219,7 +219,7 @@ Overall mean                       imagemagick  96.1919 (0.377223)
 Overall min                        imagemagick  0 (0)                                                                 
 Overall standard deviation         imagemagick  75.4944 (0.296057)                                                    
 Page geometry                      imagemagick  512x512+0+0                                                           
-Pixels per second                  imagemagick  3.745MB                                                               
+Pixels per second                  imagemagick  2.383MB                                                               
 Precincts                          jpylyzer     no                                                                    
 Progression order                  jpylyzer     RLCP                                                                  
                                    kakadu       RLCP                                                                  
@@ -287,7 +287,7 @@ Display resolution horizontal jpylyzer                                          
 Display resolution vertical   jpylyzer                                                                            PPI
 Dispose                       imagemagick  Undefined                                                              
 Document ID                   exiftool     xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                               
-Elapsed time                  imagemagick  0:01.070                                                               
+Elapsed time                  imagemagick  0:01.109                                                               
 Endianess                     imagemagick  Undefined                                                              
 Exif Image Height             exiftool     512                                                                    
 Exif Image Width              exiftool     512                                                                    
@@ -345,7 +345,7 @@ Ssigned                       kakadu       no,no,no
 Tainted                       imagemagick  False                                                                  
 Tile origin                   kakadu       {0,0}                                                                  
 Tiles                         kakadu       {1024,1024}                                                            
-User time                     imagemagick  0.060u                                                                 
+User time                     imagemagick  0.110u                                                                 
 Verbose                       imagemagick  true                                                                   
 XMP Toolkit                   exiftool     Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00                 
 ----------------------------- -----------  ---------------------------------------------------------------------  ----
