@@ -14,13 +14,13 @@ Type of format        fits            JPEG                                      
                       exiftool        JP2                                                                                                 JPEG                                                                                           
                       imagemagick     JPEG                                                                                                JPEG                                                                                           
                       jpylyzer        jpeg                                                                                                                                                                                               
-                      daitss          Unknown                                                                                             JPEG                                                                                           
+                      daitss                                                                                                              JPEG                                                                                           
                       jhove                                                                                                               JPEG                                                                                           
 Version               fits            FITS 0.6.1                                                                                          FITS 0.6.1                                                                                     
                       exiftool        8.15                                                                                                8.15                                                                                           
                       imagemagick     ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                       ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                  
                       jpylyzer        jpylyzer 1.6.0                                                                                                                                                                                     
-                      daitss          built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.      built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63. 
+                      daitss                                                                                                              built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63. 
 Version of format     daitss                                                                                                                                                                                                             
 --------------------  -----------  --------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------
 
@@ -88,7 +88,7 @@ Signature box length is valid                      jpylyzer     True
 Signature is valid                                 jpylyzer     True                                     
 Sum height width exponent is valid                 jpylyzer     True                                     
 Validation (well formed and valid)                 jpylyzer     False                                    
-                                                   daitss       Well-Formed and valid      Well-Formed and valid 
+                                                   daitss                              Well-Formed and valid 
                                                    jhove                               Well-Formed and valid 
 Width consistent with SIZ                          jpylyzer     True                                     
 bPC depth consistent with SIZ                      jpylyzer     True                                     
@@ -142,7 +142,7 @@ Color depth                         exiftool        8, 8, 8                     
                                     imagemagick     8                                                                     8                                                                
                                     kakadu          8,8,8                                                                                                                                  
                                     jpylyzer        8                                                                                                                                      
-                                    daitss          8                                                                     8                                                                
+                                    daitss                                                                                8                                                                
                                     jhove                                                                                                                                                  
 Color space                         exiftool        sRGB                                                                                                                                   
                                     imagemagick     RGB                                                                   2                                                                
@@ -154,7 +154,7 @@ Compression                         fits            JPEG 2000 Lossy             
                                     exiftool        JPEG 2000                                                             Uncompressed                                                     
                                     imagemagick     JPEG2000                                                              JPEG                                                             
                                     jpylyzer        9-7 irreversible                                                                                                                       
-                                    daitss          Unknown                                                               JPEG                                                             
+                                    daitss                                                                                JPEG                                                             
                                     jhove                                                                                                                                                  
 Compression quality                 exiftool                                                                              12                                                               
                                     imagemagick                                                                           99                                                               
@@ -183,12 +183,12 @@ File path                           fits            /home/stavel/differ/differ-c
                                     jpylyzer        /home/stavel/differ/docs/examples/images_01/14.jpf                                                                                     
                                     core            /home/stavel/differ/differ-cmdline/../docs/examples/images_01/14.jpf      /home/stavel/differ/differ-cmdline/../docs/examples/images_02/14.jpg 
                                     jhove                                                                                 /home/stavel/differ/differ-cmdline/../docs/examples/images_02/14.jpg 
-File size                           fits            33879                                                                 347724                                                           
-                                    exiftool        33 kB                                                                 340 kB                                                           
-                                    imagemagick     33.9KB                                                                348KB                                                            
-                                    exiv2                                                                                 347724                                                           
-                                    jpylyzer        33879                                                                                                                                  
-                                    daitss                                                                                347724                                                           
+File size                           fits            33.879 kB                                                             347.724 kB                                                       
+                                    exiftool        33.0 kB                                                               340.0 kB                                                         
+                                    imagemagick     33.9 kB                                                               348.0 kB                                                         
+                                    exiv2                                                                                 347.724 kB                                                       
+                                    jpylyzer        33.879 kB                                                                                                                              
+                                    daitss                                                                                347.724 kB                                                       
                                     jhove                                                                                 347724                                                           
 ICC profile                         fits                                                                                                                                                   
 Image height                        fits            512   px                                                              512          px                                                  
@@ -198,7 +198,7 @@ Image height                        fits            512   px                    
                                     kakadu          512   px                                                                           px                                                  
                                     jpylyzer        512   px                                                                           px                                                  
                                     core            512                                                                   512                                                              
-                                    daitss          512   px                                                              512          px                                                  
+                                    daitss                px                                                              512          px                                                  
                                     jhove                 px                                                                           px                                                  
 Image width                         fits            512   px                                                              512          px                                                  
                                     exiftool        512   px                                                              512          px                                                  
@@ -207,7 +207,7 @@ Image width                         fits            512   px                    
                                     kakadu          512   px                                                                           px                                                  
                                     jpylyzer        512   px                                                                           px                                                  
                                     core            512                                                                   512                                                              
-                                    daitss          512   px                                                              512          px                                                  
+                                    daitss                px                                                              512          px                                                  
                                     jhove                 px                                                                           px                                                  
 Interlace                           imagemagick     None                                                                  None                                                             
 Number of channels                  exiftool                                                                              3                                                                
@@ -228,7 +228,7 @@ Overall mean                        imagemagick     96.1919 (0.377223)          
 Overall min                         imagemagick     0 (0)                                                                 2 (0.00784314)                                                   
 Overall standard deviation          imagemagick     75.4944 (0.296057)                                                    75.4581 (0.295914)                                               
 Page geometry                       imagemagick     512x512+0+0                                                           512x512+0+0                                                      
-Pixels per second                   imagemagick     2.383MB                                                               8.738MB                                                          
+Pixels per second                   imagemagick     2.913MB                                                               8.738MB                                                          
 Precincts                           jpylyzer        no                                                                                                                                     
 Progression order                   kakadu          RLCP                                                                                                                                   
                                     jpylyzer        RLCP                                                                                                                                   
@@ -236,17 +236,17 @@ Progression order                   kakadu          RLCP
 Resolution horizontal               exiftool        72    PPI                                                             72           PPI                                                 
                                     imagemagick     72    PPI                                                             72           PPI                                                 
                                     jpylyzer        2834  PPI                                                                          PPI                                                 
-                                    daitss          2834  PPI                                                                          PPI                                                 
+                                    daitss                PPI                                                                          PPI                                                 
                                     jhove                 PPI                                                                          PPI                                                 
 Resolution unit                     exiftool        inches                                                                inches                                                           
 Resolution vertical                 exiftool        72    PPI                                                             72           PPI                                                 
                                     imagemagick     72    PPI                                                             72           PPI                                                 
                                     jpylyzer        2834  PPI                                                                          PPI                                                 
-                                    daitss          2834  PPI                                                                          PPI                                                 
+                                    daitss                PPI                                                                          PPI                                                 
                                     jhove                 PPI                                                                          PPI                                                 
 Samples per pixel                   exiftool        3                                                                     3                                                                
                                     imagemagick                                                                           3                                                                
-                                    daitss          3                                                                     3                                                                
+                                    daitss                                                                                3                                                                
 Sampling                            kakadu          {1,1},{1,1},{1,1}                                                                                                                      
 Start of packet header              kakadu          no                                                                                                                                     
                                     jpylyzer        no                                                                                                                                     
@@ -306,7 +306,7 @@ Displayed Units X                                  exiftool                     
 Displayed Units Y                                  exiftool                                                                               inches                                                            
 Dispose                                            imagemagick     Undefined                                                              Undefined                                                         
 Document ID                                        exiftool        xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                               xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E                          
-Elapsed time                                       imagemagick     0:01.109                                                               0:01.030                                                          
+Elapsed time                                       imagemagick     0:01.089                                                               0:01.030                                                          
 Encoding process                                   exiftool                                                                               Baseline DCT, Huffman coding                                      
 Endianess                                          imagemagick     Undefined                                                              Undefined                                                         
 Exif Byte Order                                    exiftool                                                                               Big-endian (Motorola, MM)                                         
@@ -387,7 +387,7 @@ Tile origin                                        kakadu          {0,0}
 Tile size X                                        jhove                 PPI                                                                    PPI                                                         
 Tile size Y                                        jhove                 PPI                                                                    PPI                                                         
 Tiles                                              kakadu          {1024,1024}                                                                                                                              
-User time                                          imagemagick     0.110u                                                                 0.020u                                                            
+User time                                          imagemagick     0.080u                                                                 0.020u                                                            
 Verbose                                            imagemagick     true                                                                   true                                                              
 XMP Toolkit                                        exiftool        Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00                 Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00            
 -------------------------------------------------  -----------  ---------------------------------------------------------------------  ---------------------------------------------------------------------
