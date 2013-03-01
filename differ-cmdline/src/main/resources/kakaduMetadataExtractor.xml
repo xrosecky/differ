@@ -28,7 +28,8 @@
       </property>
       
       <property name="entryTransformers">
-	<map>
+	<map>	  
+	  <entry key="File size" value-ref="sizeNormalizer"/>
 	</map>
       </property>
       
