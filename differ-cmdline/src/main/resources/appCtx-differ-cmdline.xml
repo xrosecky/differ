@@ -162,38 +162,8 @@
     <import resource="jpylyzerMetadataExtractor.xml"/>
 
     <!-- Jhove -->
-    <bean id="jhoveMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-      <property name="stylesheet" value="${jhove.xsl}"/>
-    </bean>
+    <import resource="jhoveMetadataExtractor.xml"/>
 
-    <bean id="jhoveMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-      <property name="source" value="jhove"/>
-      <property name="transformer" ref="jhoveMetadataTransformer"/>
-      <property name="programArguments">
-	<list>
-	  <value>${jhove.binary}</value>
-	  <value>-h</value>
-	  <value>xml</value>
-	  <value>{file}</value>
-	</list>
-      </property>
-      <property name="units" ref="units"/>
-      <property name="supportedFileExtensions">
-	<list>
-	  <value>tiff</value>
-	  <value>tif</value>
-	  <value>jpeg</value>
-	  <value>jpg</value>
-	  <value>jp2000</value>
-	  <value>jp2</value>
-	  <value>jpf</value>
-	  <value>jpp</value>
-	  <value>djvu</value>
-	  <value>png</value>
-	  <value>pdf</value>
-	</list>
-      </property>
-    </bean>
 
     <bean id="metadataExtractors" class="cz.nkp.differ.compare.metadata.MetadataExtractors">
 	<property name="extractors">

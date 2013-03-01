@@ -31,7 +31,6 @@
     	  <entry key="Image/Depth" value="Color depth"/>
     	  <entry key="Image/Properties/date/create" value="File created"/>
     	  <entry key="Image/Properties/date/modify" value="File last modified"/>
-    	  <entry key="Image/Properties/signature" value="Universal unique identifier (UUID)"/>
     	  <entry key="Image/Compression" value="Compression"/>
     	  <entry key="Image/Filesize" value="File size"/>
     	  <entry key="Image/Quality" value="Compression quality"/>
@@ -64,7 +63,7 @@
 	  <entry key="Image/Chromaticity/red primary" value="Primary red"/>
 	  <entry key="Image/Chromaticity/white point" value="White point"/>
 	  <entry key="Image/Compose" value="Compose"/>
-	  <entry key="Image/Dispose" value="Dispose"/>
+	  <entry key="Image/Dspose" value="Dispose"/>
 	  <entry key="Image/Gamma" value="Gamma"/>
 	  <entry key="Image/Interlace" value="Interlace"/>
 	  <entry key="Image/Iterations" value="Iterations"/>
@@ -114,6 +113,7 @@
 	  <entry key="Image/Properties/exif/Orientation" value="Orientation"/>
 	  <entry key="Image/Properties/exif/XResolution" value="Resolution horizontal"/>
 	  <entry key="Image/Properties/exif/YResolution" value="Resolution vertical"/>
+	  <entry key="Image/Properties/xapMM/DocumentID" value="Universal unique identifier (UUID)"/>
 	</map>
       </property>
 
@@ -138,7 +138,7 @@
 	  <entry key="Image/Properties/exif/NativeDigest" value-ref="entryRemover"/>
 	  <entry key="Image/Properties/tiff/NativeDigest" value-ref="entryRemover"/>
 	  <entry key="Image/Elapsed time" value-ref="entryRemover"/>
-    	  <entry key="Universal unique identifier (UUID)" value-ref="entryRemover"/>
+    	  <!-- <entry key="Universal unique identifier (UUID)" value-ref="entryRemover"/> -->
 	</map>
       </property>
 
