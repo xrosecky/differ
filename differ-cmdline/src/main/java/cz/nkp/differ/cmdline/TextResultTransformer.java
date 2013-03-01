@@ -33,7 +33,7 @@ class TheSameValueHider {
         lastValue = value;
         return value;
     }
-};
+}
 
 
 public class TextResultTransformer implements ResultTransformer{
@@ -65,7 +65,7 @@ public class TextResultTransformer implements ResultTransformer{
             return new String(array);
         }
         return "";
-    };
+    }
     @Override
     public String transform(File file, ImageProcessorResult result) {
         List<ImageMetadata> identificationMetadata = new ArrayList<ImageMetadata>();
@@ -111,7 +111,7 @@ public class TextResultTransformer implements ResultTransformer{
         String output = "";
         output += "Identification\n";
         output += "==============\n\n";
-        output += String.format("%s: %sx%s\n\n",file.getName().toString(),result.getWidth(),result.getHeight());
+        output += String.format("%s: %sx%s\n\n",file.getName(),result.getWidth(),result.getHeight());
         output += reportMetadataList(identificationMetadata);
 
         output += "\nValidation";
@@ -132,7 +132,7 @@ public class TextResultTransformer implements ResultTransformer{
             for(ImageMetadata metadata: result.getMetadata()){
                 if( metadata.getKey().equals("exit-code") ){
                     File outFile = this.outputNamer.rawOutputName(file, result,metadata.getSource().toString());
-                    FileWriter writer = null;
+                    FileWriter writer;
                     try {
                         output += String.format("   %-10s   'output <%s>'_\n",
                                 metadata.getSource().toString(),
@@ -182,14 +182,23 @@ public class TextResultTransformer implements ResultTransformer{
         Integer keyLength = "Significant Property".length();
         Integer sourceLength = "Source".length();
         Integer unitLength = "Unit".length();
+        Integer valueWithUnitLength = "Value".length();
         Integer valueLength = "Value".length();
         PropertiesSummary propertiesSummary = new PropertiesSummary();
 
         for(ImageMetadata metadata: metadataList){
             keyLength = Math.max(keyLength, metadata.getKey().length());
             sourceLength = Math.max(sourceLength, metadata.getSource().toString().length());
-            if (metadata.getUnit() != null) unitLength = Math.max(unitLength, metadata.getUnit().length());
-            if (metadata.getValue() != null) valueLength = Math.max(valueLength, metadata.getValue().toString().length());
+            if (metadata.getUnit() != null) {
+                unitLength = Math.max(unitLength, metadata.getUnit().length());
+                if (metadata.getValue() != null){
+                    valueWithUnitLength = Math.max(valueWithUnitLength, metadata.getValue().toString().length());
+                    valueLength = Math.max(valueLength, valueWithUnitLength + 1 + metadata.getUnit().length());
+                }
+            } else {
+                if (metadata.getValue() != null) valueLength =
+                        Math.max(valueLength, metadata.getValue().toString().length());
+            }
             propertiesSummary.addProperty(metadata.getKey());
         }
         Collections.sort(metadataList, new Comparator<ImageMetadata>() {
@@ -207,20 +216,21 @@ public class TextResultTransformer implements ResultTransformer{
         });
         TheSameValueHider propertyNameHider = new TheSameValueHider();
         String output = "";
-        String format = String.format("%%-%ds %%-%ds  %%-%ds  %%s\n", keyLength, sourceLength, valueLength);
-        output += String.format(format, "Significant Property", "Source", "Value", "Unit");
+        String format = String.format("%%-%ds %%-%ds  %%-%ds\n", keyLength, sourceLength,valueLength);
+        String formatWithUnit = String.format("%%-%ds %%s", valueWithUnitLength );
+        output += String.format(format, "Significant Property", "Source", "Value");
         output += String.format(format,
                 getStringGivenLength(keyLength,'-'),
                 getStringGivenLength(sourceLength,'-'),
-                getStringGivenLength(valueLength,'-'),
-                getStringGivenLength(unitLength, '-'));
+                getStringGivenLength(valueLength,'-'));
 
         for (ImageMetadata metadata: metadataList) {
             output += String.format(format,
                     propertyNameHider.getOrHide(metadata.getKey()),
                     metadata.getSource(),
-                    metadata.getValue(),
-                    metadata.getUnit() != null ? metadata.getUnit() : ""
+                    metadata.getUnit() != null ? String.format(formatWithUnit,metadata.getValue(),
+                                                               metadata.getUnit()) :
+                            metadata.getValue()
                     );
         }
         output += String.format(format,
