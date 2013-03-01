@@ -70,7 +70,7 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
                     keyLength, sourceLength, valueLength, valueLength);
             String [] valueFormats = new String [2];
             for ( int imageOrder = 0; imageOrder < 2; imageOrder++){
-                valueFormats[imageOrder] = String.format("   %%-%ds %%s", valueWithUnitLength[imageOrder]);
+                valueFormats[imageOrder] = String.format("%%-%ds %%s", valueWithUnitLength[imageOrder]);
             }
             TreeSet<String> keys = new TreeSet<String>();
             for( String key: metadataByKeyName.keySet()){
