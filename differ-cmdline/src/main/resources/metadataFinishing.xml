@@ -3,9 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:util="http://www.springframework.org/schema/util"
     xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
     xsi:schemaLocation="
     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
   
   
@@ -52,5 +54,19 @@
     </property>
   </bean>
 
+  <!-- remove empty values at the end of significant properties processing -->
+  <aop:config>
+    <aop:aspect id="emptyValuesRemoverAspect" ref="emptyValuesRemover">
+      <aop:pointcut id="emptyValuesRemoverPointcut"
+    		    expression="bean(finishingTransformer)"
+    		    />
+      <aop:after-returning pointcut-ref="emptyValuesRemoverPointcut"
+    			   returning="metadataList"
+    			   method="transform"/>
+    </aop:aspect>
+  </aop:config>
+
   <bean id="finishingTransformer" class="cz.nkp.differ.compare.metadata.external.ResultFinishingTransformer"/>
+  <bean id="emptyValuesRemover"   class="cz.nkp.differ.compare.metadata.external.result.EmptyValuesRemover"/>
+
 </beans>

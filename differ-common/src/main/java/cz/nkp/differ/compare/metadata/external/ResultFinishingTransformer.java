@@ -17,17 +17,13 @@ public class ResultFinishingTransformer {
     private HashMap<String,String> mapOfEntryNames;
     private HashMap<String,ResultEntryValueTransformer> entryTransformers;
     private HashMap<String,ResultEntryReplacer> entryReplacers;
-    private Set<String> aux = null;
 
     public List<ResultTransformer.Entry> transform(List<ResultTransformer.Entry> metadataList){
         List<ResultTransformer.Entry> toRemove = new ArrayList<ResultTransformer.Entry>();
         List<ResultTransformer.Entry> toAdd = new ArrayList<ResultTransformer.Entry>();
 
         for(ResultTransformer.Entry entry: metadataList){
-            String key=entry.getKey();
-            if( aux != null && aux.contains(key)){
-                toRemove.add(entry);
-            } else {
+                String key=entry.getKey();
                 String newKey = mapOfEntryNames.get(key);
                 if( newKey != null ){
                     key = newKey;
@@ -44,7 +40,6 @@ public class ResultFinishingTransformer {
                     toAdd.addAll(entryReplacers.get(key).replace(entry));
                     toRemove.add(entry);
                 }
-            }
         }
         if( ! toRemove.isEmpty() ){
             metadataList.removeAll(toRemove);
