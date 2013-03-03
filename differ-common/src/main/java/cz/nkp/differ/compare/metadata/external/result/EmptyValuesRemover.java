@@ -11,7 +11,7 @@ import java.util.List;
  * Date: 1.3.13
  * Time: 19:40
  */
-public class EmptyValuesRemover {
+public class EmptyValuesRemover implements MetadataResultTransformer {
     public List<ResultTransformer.Entry> transform(List<ResultTransformer.Entry> metadataList){
         List<ResultTransformer.Entry> toRemove = new ArrayList<ResultTransformer.Entry>();
 

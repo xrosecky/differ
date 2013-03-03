@@ -3,6 +3,7 @@ package cz.nkp.differ.compare.metadata.external.result;
 import cz.nkp.differ.compare.metadata.external.ResultEntryValueTransformer;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,7 +15,12 @@ public class FilePathNormalizer implements ResultEntryValueTransformer {
     @Override
     public String transform(String value) {
         File file = new File(value);
-        String filePath = file.getAbsolutePath();
+        String filePath = null;
+        try {
+            filePath = file.getCanonicalPath();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return filePath;
     }
 }

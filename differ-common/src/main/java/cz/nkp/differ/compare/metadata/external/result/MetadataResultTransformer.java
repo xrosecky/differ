@@ -1,4 +1,6 @@
-package cz.nkp.differ.compare.metadata.external;
+package cz.nkp.differ.compare.metadata.external.result;
+
+import cz.nkp.differ.compare.metadata.external.ResultTransformer;
 
 import java.util.List;
 

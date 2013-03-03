@@ -1,9 +1,10 @@
 package cz.nkp.differ.compare.metadata.external;
 
+import cz.nkp.differ.compare.metadata.external.result.MetadataResultTransformer;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.

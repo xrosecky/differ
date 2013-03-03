@@ -22,6 +22,7 @@
   </bean>
 
   <bean id="fileNameNormalizer" class="cz.nkp.differ.compare.metadata.external.result.FileNameNormalizer"/>
+  <bean id="filePathNormalizer" class="cz.nkp.differ.compare.metadata.external.result.FilePathNormalizer"/>
   <bean id="dateNormalizer"     class="cz.nkp.differ.compare.metadata.external.result.DateNormalizer"/>
   <bean id="entryRemover"       class="cz.nkp.differ.compare.metadata.external.result.EntryRemover"/>
   <bean id="sizeNormalizer"     class="cz.nkp.differ.compare.metadata.external.result.SizeNormalizer"/>
@@ -55,16 +56,17 @@
   </bean>
 
   <!-- remove empty values at the end of significant properties processing -->
-  <aop:config>
-    <aop:aspect id="emptyValuesRemoverAspect" ref="emptyValuesRemover">
-      <aop:pointcut id="emptyValuesRemoverPointcut"
-    		    expression="bean(finishingTransformer)"
-    		    />
-      <aop:after-returning pointcut-ref="emptyValuesRemoverPointcut"
-    			   returning="metadataList"
-    			   method="transform"/>
-    </aop:aspect>
-  </aop:config>
+
+  <!-- <aop:config> -->
+  <!--   <aop:aspect id="emptyValuesRemoverAspect" ref="emptyValuesRemover"> -->
+  <!--     <aop:pointcut id="emptyValuesRemoverPointcut" -->
+  <!--   		    expression="bean(finishingTransformer)" -->
+  <!--   		    /> -->
+  <!--     <aop:after-returning pointcut-ref="emptyValuesRemoverPointcut" -->
+  <!--   			   returning="metadataList" -->
+  <!--   			   method="transform"/> -->
+  <!--   </aop:aspect> -->
+  <!-- </aop:config> -->
 
   <bean id="finishingTransformer" class="cz.nkp.differ.compare.metadata.external.ResultFinishingTransformer"/>
   <bean id="emptyValuesRemover"   class="cz.nkp.differ.compare.metadata.external.result.EmptyValuesRemover"/>

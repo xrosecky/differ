@@ -120,14 +120,15 @@
       <property name="entryTransformers">
 	<map>
 	  <entry key="Type of format" value-ref="typeOfFormatNormalizer"/>
-	  <entry key="Color depth" value-ref="justNumbersNormalizer"/>
 	  <entry key="File name" value-ref="fileNameNormalizer"/>
+	  <entry key="File path" value-ref="filePathNormalizer"/>
 	  <entry key="File last modified" value-ref="dateNormalizer"/>
+	  <entry key="File size" value-ref="sizeNormalizer"/>
+	  <entry key="Color depth" value-ref="justNumbersNormalizer"/>
 	  <entry key="File created" value-ref="dateNormalizer"/>
 	  <entry key="Depth of blue channel" value-ref="justNumbersNormalizer"/>
 	  <entry key="Depth of red channel" value-ref="justNumbersNormalizer"/>
 	  <entry key="Depth of green channel" value-ref="justNumbersNormalizer"/>
-	  <entry key="File size" value-ref="sizeNormalizer"/>
 	</map>
       </property>
 
