@@ -13,7 +13,7 @@ import java.util.Set;
  * This class can be used to post process finishing changes in result metadata list.
  */
 
-public class ResultFinishingTransformer {
+public class ResultFinishingTransformer implements MetadataResultTransformer {
     private HashMap<String,String> mapOfEntryNames;
     private HashMap<String,ResultEntryValueTransformer> entryTransformers;
     private HashMap<String,ResultEntryReplacer> entryReplacers;
