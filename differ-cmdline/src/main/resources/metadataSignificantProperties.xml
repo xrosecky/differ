@@ -7,11 +7,14 @@
 			   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
 			   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
   
+  <util:set id="extractorProperties">
+    <value>Version</value>
+  </util:set>
+
   <util:set id="identificationProperties">
     <value>MIME type</value>
     <value>Type of format</value>
     <value>Version of format</value>
-    <value>Version</value>
   </util:set>
   
   <util:set id="validationProperties">

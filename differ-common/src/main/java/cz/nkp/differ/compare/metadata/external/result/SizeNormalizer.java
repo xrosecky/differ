@@ -38,12 +38,12 @@ public class SizeNormalizer implements ResultEntryValueTransformer {
         }
         if( size != null) {
             if( size > 1e6 ){
-                return String.format("%.3f MB (%.3f kB)", size / 1e6, size / 1e3);
+                return String.format("%.1f MB (%.1f kB)", size / 1e6, size / 1e3);
             }  else {
                 if ( size > 1e4 ){
-                    return String.format("%.3f kB", size/1e3);
+                    return String.format("%.1f kB", size/1e3);
                 } else {
-                    return String.format("%.3f B", size);
+                    return String.format("%.1f B", size);
                 }
             }
         }

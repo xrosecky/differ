@@ -68,6 +68,7 @@ public class TextResultTransformer implements ResultTransformer{
     }
     @Override
     public String transform(File file, ImageProcessorResult result) {
+        List<ImageMetadata> extractorVersionMetadata = new ArrayList<ImageMetadata>();
         List<ImageMetadata> identificationMetadata = new ArrayList<ImageMetadata>();
         List<ImageMetadata> validationMetadata = new ArrayList<ImageMetadata>();
         List<ImageMetadata> characterizationMetadata = new ArrayList<ImageMetadata>();
@@ -75,6 +76,7 @@ public class TextResultTransformer implements ResultTransformer{
 
         List<ImageMetadata>  metadataList = result.getMetadata();
 
+        Set<String> extractorProperties = (Set<String>) context.getBean("extractorProperties");
         Set<String> identificationProperties = (Set<String>) context.getBean("identificationProperties");
         Set<String> validationProperties = (Set<String>) context.getBean("validationProperties");
         Set<String> characterizationProperties = (Set<String>) context.getBean("characterizationProperties");
@@ -100,7 +102,11 @@ public class TextResultTransformer implements ResultTransformer{
                                 if( characterizationProperties.contains(key)){
                                     characterizationMetadata.add(metadata);
                                 } else {
-                                    otherMetadata.add(metadata);
+                                    if( extractorProperties.contains(key)){
+                                        extractorVersionMetadata.add(metadata);
+                                    } else {
+                                        otherMetadata.add(metadata);
+                                    }
                                 }
                             }
                         }
@@ -109,8 +115,12 @@ public class TextResultTransformer implements ResultTransformer{
             }
         }
         String output = "";
-        output += "Identification\n";
-        output += "==============\n\n";
+        output += "Used extractors\n";
+        output += "===============\n\n";
+        output += reportMetadataList(extractorVersionMetadata);
+
+        output += "\nIdentification";
+        output += "\n==============\n\n";
         output += String.format("%s: %sx%s\n\n",file.getName(),result.getWidth(),result.getHeight());
         output += reportMetadataList(identificationMetadata);
 
@@ -164,8 +174,9 @@ public class TextResultTransformer implements ResultTransformer{
             output += "\nText report";
             output += "\n===========\n";
             output += String.format("\n  `text report <%s>`_\n", this.outputNamer.textName(file, result));
+
             output += "\nReport for web";
-            output += "\n===========\n";
+            output += "\n==============\n";
             output += String.format("\n  `web report <%s>`_\n", this.outputNamer.reportName(file, result));
         }
         if( this.saveProperties ){
