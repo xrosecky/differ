@@ -68,7 +68,7 @@ public class TextResultTransformer implements ResultTransformer{
     }
     @Override
     public String transform(File file, ImageProcessorResult result) {
-        List<ImageMetadata> extractorVersionMetadata = new ArrayList<ImageMetadata>();
+        List<ImageMetadata> extractorMetadata = new ArrayList<ImageMetadata>();
         List<ImageMetadata> identificationMetadata = new ArrayList<ImageMetadata>();
         List<ImageMetadata> validationMetadata = new ArrayList<ImageMetadata>();
         List<ImageMetadata> characterizationMetadata = new ArrayList<ImageMetadata>();
@@ -103,7 +103,7 @@ public class TextResultTransformer implements ResultTransformer{
                                     characterizationMetadata.add(metadata);
                                 } else {
                                     if( extractorProperties.contains(key)){
-                                        extractorVersionMetadata.add(metadata);
+                                        extractorMetadata.add(metadata);
                                     } else {
                                         otherMetadata.add(metadata);
                                     }
@@ -117,7 +117,7 @@ public class TextResultTransformer implements ResultTransformer{
         String output = "";
         output += "Used extractors\n";
         output += "===============\n\n";
-        output += reportMetadataList(extractorVersionMetadata);
+        output += reportMetadataList(extractorMetadata);
 
         output += "\nIdentification";
         output += "\n==============\n\n";

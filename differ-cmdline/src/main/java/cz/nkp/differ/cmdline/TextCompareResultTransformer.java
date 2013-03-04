@@ -136,6 +136,7 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
         ImageMetadata [] exitCodeMetadata = new ImageMetadata[2];
         PropertiesSummary propertiesSummary = new PropertiesSummary();
 
+        Set<String> extractorProperties = (Set<String>) context.getBean("extractorProperties");
         Set<String> identificationProperties = (Set<String>) context.getBean("identificationProperties");
         Set<String> validationProperties = (Set<String>) context.getBean("validationProperties");
         Set<String> characterizationProperties = (Set<String>) context.getBean("characterizationProperties");
@@ -143,6 +144,7 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
         MetadataGroup characterizationMetadataGroup = new MetadataGroup();
         MetadataGroup validationMetadataGroup = new MetadataGroup();
         MetadataGroup identificationMetadataGroup = new MetadataGroup();
+        MetadataGroup extractorMetadataGroup = new MetadataGroup();
         MetadataGroup otherMetadataGroup = new MetadataGroup();
 
         for(int imageOrder = 0;imageOrder < 2; imageOrder++ ){
@@ -166,7 +168,11 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
                                         !key.equals("Histogram") &&
                                         !key.equals("Colormap")
                                         ){
-                                otherMetadataGroup.add(metadata,imageOrder);
+                                    if( extractorProperties.contains(key) ){
+                                        extractorMetadataGroup.add(metadata, imageOrder);
+                                    } else {
+                                        otherMetadataGroup.add(metadata,imageOrder);
+                                    }
                                 }
                             }
                         }
@@ -176,9 +182,11 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
         }
 
         String output = "";
-
-        output += "Identification\n";
-        output += "==============\n\n";
+        output += "Used extractors\n";
+        output += "===============\n\n";
+        output += extractorMetadataGroup.toString();
+        output += "\nIdentification";
+        output += "\n==============\n\n";
         output += String.format("  Image A :: %s: %sx%s\n", files[0].toString(), results[0].getHeight(), results[0].getWidth());
         output += String.format("  Image B :: %s: %sx%s\n\n", files[1].toString(), results[1].getHeight(), results[1].getWidth());
         output += identificationMetadataGroup.toString();
