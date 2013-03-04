@@ -20,7 +20,7 @@
     			     method="transform"/>
       </aop:aspect>
     </aop:config>
-    
+
     <bean id="imagemagickResultFinishingTransformer" class="cz.nkp.differ.compare.metadata.external.ResultFinishingTransformer">
       <property name="mapOfEntryNames">
 	<map>
@@ -143,9 +143,14 @@
 	</map>
       </property>
 
+      <property name="resultTransformers">
+	<list>
+	  <ref bean="emptyValuesRemover"/>
+	</list>
+      </property>
     </bean>
 
-    
+
     <bean id="imagemagickMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.ImagemagickTransformer"/>
     
     <bean id="imagemagickMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">

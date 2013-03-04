@@ -56,19 +56,7 @@
   </bean>
 
   <!-- remove empty values at the end of significant properties processing -->
-
-  <!-- <aop:config> -->
-  <!--   <aop:aspect id="emptyValuesRemoverAspect" ref="emptyValuesRemover"> -->
-  <!--     <aop:pointcut id="emptyValuesRemoverPointcut" -->
-  <!--   		    expression="bean(finishingTransformer)" -->
-  <!--   		    /> -->
-  <!--     <aop:after-returning pointcut-ref="emptyValuesRemoverPointcut" -->
-  <!--   			   returning="metadataList" -->
-  <!--   			   method="transform"/> -->
-  <!--   </aop:aspect> -->
-  <!-- </aop:config> -->
-
-  <bean id="finishingTransformer" class="cz.nkp.differ.compare.metadata.external.ResultFinishingTransformer"/>
+  <!-- <bean id="finishingTransformer" class="cz.nkp.differ.compare.metadata.external.ResultFinishingTransformer"/> -->
   <bean id="emptyValuesRemover"   class="cz.nkp.differ.compare.metadata.external.result.EmptyValuesRemover"/>
 
 </beans>

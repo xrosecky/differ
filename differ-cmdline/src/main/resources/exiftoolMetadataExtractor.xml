@@ -51,6 +51,13 @@
 	  <entry key="Univerzal unique identifier (UUID)" value-ref="entryRemover"/>
     	</map>
       </property>
+
+      <property name="resultTransformers">
+	<list>
+	  <ref bean="emptyValuesRemover"/>
+	</list>
+      </property>
+
     </bean>
 
     <bean id="exiftoolMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">

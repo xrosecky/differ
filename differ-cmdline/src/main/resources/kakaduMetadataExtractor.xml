@@ -42,6 +42,13 @@
 	  <entry key="Size" value-ref="sizeInBracketsReplacer"/>
     	</map>
       </property>
+
+      <property name="resultTransformers">
+	<list>
+	  <ref bean="emptyValuesRemover"/>
+	</list>
+      </property>
+
     </bean>
     
     <bean id="kakaduMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">

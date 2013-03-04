@@ -14,7 +14,6 @@ import java.util.List;
 public class EmptyValuesRemover implements MetadataResultTransformer {
     public List<ResultTransformer.Entry> transform(List<ResultTransformer.Entry> metadataList){
         List<ResultTransformer.Entry> toRemove = new ArrayList<ResultTransformer.Entry>();
-
         for(ResultTransformer.Entry entry: metadataList){
             String value=entry.getValue();
             if( value == null || value.isEmpty() ){

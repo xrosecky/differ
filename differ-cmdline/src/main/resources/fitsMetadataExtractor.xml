@@ -41,6 +41,13 @@
 	<map>
 	</map>
       </property>
+
+      <property name="resultTransformers">
+	<list>
+	  <ref bean="emptyValuesRemover"/>
+	</list>
+      </property>
+
     </bean>
 
     <bean id="fitsMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">

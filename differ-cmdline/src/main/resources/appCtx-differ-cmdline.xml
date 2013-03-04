@@ -168,15 +168,15 @@
     <bean id="metadataExtractors" class="cz.nkp.differ.compare.metadata.MetadataExtractors">
 	<property name="extractors">
 	    <list>
+	      <ref bean="imagemagickMetadataExtractor"/>
 	      <ref bean="fitsMetadataExtractor"/>
 	      <ref bean="exiftoolMetadataExtractor"/>
 	      <ref bean="djvudumpMetadataExtractor"/>
 	      <ref bean="jhoveMetadataExtractor"/>
 	      <ref bean="exiv2MetadataExtractor"/>
 	      <ref bean="jpylyzerMetadataExtractor"/>
-	      <ref bean="daitssHTTPMetadataExtractor"/>
-	      <ref bean="imagemagickMetadataExtractor"/>
 	      <ref bean="kakaduMetadataExtractor"/>
+	      <ref bean="daitssHTTPMetadataExtractor"/>
 	    </list>
 	</property>
     </bean>
@@ -201,5 +201,4 @@
 	    </map>
 	</property>
     </bean>
-
 </beans>

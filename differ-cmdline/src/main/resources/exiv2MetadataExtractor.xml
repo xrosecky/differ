@@ -46,6 +46,13 @@
 	  <entry key="History Action" value-ref="entryRemover"/>
     	</map>
       </property>
+
+      <property name="resultTransformers">
+	<list>
+	  <ref bean="emptyValuesRemover"/>
+	</list>
+      </property>
+
     </bean>
     
     <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">

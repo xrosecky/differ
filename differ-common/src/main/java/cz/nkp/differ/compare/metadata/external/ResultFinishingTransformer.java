@@ -18,6 +18,7 @@ public class ResultFinishingTransformer implements MetadataResultTransformer {
     private HashMap<String,String> mapOfEntryNames;
     private HashMap<String,ResultEntryValueTransformer> entryTransformers;
     private HashMap<String,ResultEntryReplacer> entryReplacers;
+    private ArrayList<MetadataResultTransformer> resultTransformers;
 
     public List<ResultTransformer.Entry> transform(List<ResultTransformer.Entry> metadataList){
         List<ResultTransformer.Entry> toRemove = new ArrayList<ResultTransformer.Entry>();
@@ -48,6 +49,9 @@ public class ResultFinishingTransformer implements MetadataResultTransformer {
         if( ! toAdd.isEmpty() ){
             metadataList.addAll(toAdd);
         }
+        for ( MetadataResultTransformer resultTransformer: resultTransformers){
+            metadataList = resultTransformer.transform(metadataList);
+        }
         return metadataList;
     }
     public void setMapOfEntryNames( HashMap<String,String> mapOfEntryNames){
@@ -67,5 +71,11 @@ public class ResultFinishingTransformer implements MetadataResultTransformer {
     }
     public HashMap<String,ResultEntryReplacer> getEntryReplacers(){
         return entryReplacers;
+    }
+    public ArrayList<MetadataResultTransformer> getResultTransformers () {
+        return resultTransformers;
+    }
+    public void setResultTransformers (ArrayList<MetadataResultTransformer> resultTransformers){
+        this.resultTransformers = resultTransformers;
     }
 }
