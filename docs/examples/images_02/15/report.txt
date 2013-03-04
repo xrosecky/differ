@@ -1,24 +1,31 @@
-Identification
-==============
-
-15.jp2: 512x512
+Used extractors
+===============
 
 Significant Property Source       Value                                                                                             
 -------------------- -----------  --------------------------------------------------------------------------------------------------
-MIME type            exiftool     image/jp2                                                                                         
-                     fits         image/jp2                                                                                         
-Type of format       daitss       JPEG                                                                                              
-                     daitss       Unknown                                                                                           
-                     exiftool     JP2                                                                                               
-                     fits         JPEG                                                                                              
-                     imagemagick  JPEG                                                                                              
-                     jpylyzer     jpeg                                                                                              
 Version              daitss       built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.
                      exiftool     8.15                                                                                              
                      fits         FITS 0.6.1                                                                                        
                      imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                     
                      jpylyzer     jpylyzer 1.6.0                                                                                    
 -------------------- -----------  --------------------------------------------------------------------------------------------------
+
+Identification
+==============
+
+15.jp2: 512x512
+
+Significant Property Source       Value    
+-------------------- -----------  ---------
+MIME type            exiftool     image/jp2
+                     fits         image/jp2
+Type of format       daitss       JPEG     
+                     daitss       Unknown  
+                     exiftool     JP2      
+                     fits         JPEG     
+                     imagemagick  JPEG     
+                     jpylyzer     jpeg     
+-------------------- -----------  ---------
 
 Validation
 ==========
@@ -177,11 +184,11 @@ File name                          core         15.jp2
 File path                          core         /home/stavel/differ/differ-cmdline/../docs/examples/images_02/15.jp2
                                    fits         /home/stavel/differ/docs/examples/images_02/15.jp2                  
                                    jpylyzer     /home/stavel/differ/docs/examples/images_02/15.jp2                  
-File size                          daitss       476,756 kB                                                          
-                                   exiftool     466,000 kB                                                          
-                                   fits         476,756 kB                                                          
-                                   imagemagick  477,000 kB                                                          
-                                   jpylyzer     476,756 kB                                                          
+File size                          daitss       476,8 kB                                                            
+                                   exiftool     466,0 kB                                                            
+                                   fits         476,8 kB                                                            
+                                   imagemagick  477,0 kB                                                            
+                                   jpylyzer     476,8 kB                                                            
 Image height                       core         512                                                                 
                                    daitss       512   px                                                            
                                    daitss       512   px                                                            
@@ -214,7 +221,7 @@ Overall mean                       imagemagick  96.1713 (0.377142)
 Overall min                        imagemagick  3 (0.0117647)                                                       
 Overall standard deviation         imagemagick  75.4472 (0.295871)                                                  
 Page geometry                      imagemagick  512x512+0+0                                                         
-Pixels per second                  imagemagick  1.049MB                                                             
+Pixels per second                  imagemagick  1.008MB                                                             
 Precincts                          jpylyzer     no                                                                  
 Progression order                  jpylyzer     RLCP                                                                
                                    kakadu       RLCP                                                                
@@ -277,7 +284,7 @@ Consumed                   kakadu       0 tile-part(s) from a total of 1 tile(s)
 Creator Tool               exiftool     Adobe Photoshop CS5 Windows                                         
 Directory                  exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_02       
 Document ID                exiftool     xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                            
-Elapsed time               imagemagick  0:01.250                                                            
+Elapsed time               imagemagick  0:01.259                                                            
 Endianess                  imagemagick  Undefined                                                           
 Exif Image Height          exiftool     512                                                                 
 Exif Image Width           exiftool     512                                                                 
@@ -334,7 +341,7 @@ Ssigned                    kakadu       no,no,no
 Tainted                    imagemagick  False                                                               
 Tile origin                kakadu       {0,0}                                                               
 Tiles                      kakadu       {1024,1024}                                                         
-User time                  imagemagick  0.240u                                                              
+User time                  imagemagick  0.260u                                                              
 Verbose                    imagemagick  true                                                                
 XMP Toolkit                exiftool     Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00              
 -------------------------- -----------  --------------------------------------------------------------------
@@ -365,7 +372,7 @@ Text report
   `text report <../docs/examples/images_02/15/report.txt>`_
 
 Report for web
-===========
+==============
 
   `web report <../docs/examples/images_02/15/report.drep>`_
 

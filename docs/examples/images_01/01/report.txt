@@ -1,24 +1,31 @@
-Identification
-==============
-
-01.jpg: 512x512
+Used extractors
+===============
 
 Significant Property Source       Value                                                                                             
 -------------------- -----------  --------------------------------------------------------------------------------------------------
-MIME type            exiftool     image/jpeg                                                                                        
-                     exiv2        image/jpeg                                                                                        
-                     fits         image/jpeg                                                                                        
-                     jhove        image/jpeg                                                                                        
-Type of format       daitss       JPEG                                                                                              
-                     exiftool     JPEG                                                                                              
-                     fits         Exchangeable Image File Format                                                                    
-                     imagemagick  JPEG                                                                                              
-                     jhove        JPEG                                                                                              
 Version              daitss       built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.
                      exiftool     8.15                                                                                              
                      fits         FITS 0.6.1                                                                                        
                      imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                     
 -------------------- -----------  --------------------------------------------------------------------------------------------------
+
+Identification
+==============
+
+01.jpg: 512x512
+
+Significant Property Source       Value                         
+-------------------- -----------  ------------------------------
+MIME type            exiftool     image/jpeg                    
+                     exiv2        image/jpeg                    
+                     fits         image/jpeg                    
+                     jhove        image/jpeg                    
+Type of format       daitss       JPEG                          
+                     exiftool     JPEG                          
+                     fits         Exchangeable Image File Format
+                     imagemagick  JPEG                          
+                     jhove        JPEG                          
+-------------------- -----------  ------------------------------
 
 Validation
 ==========
@@ -68,12 +75,12 @@ File path                          core         /home/stavel/differ/differ-cmdli
                                    exiv2        /home/stavel/differ/docs/examples/images_01/01.jpg                  
                                    fits         /home/stavel/differ/docs/examples/images_01/01.jpg                  
                                    jhove        /home/stavel/differ/docs/examples/images_01/01.jpg                  
-File size                          daitss       177,246 kB                                                          
-                                   exiftool     173,000 kB                                                          
-                                   exiv2        177,246 kB                                                          
-                                   fits         177,246 kB                                                          
-                                   imagemagick  177,000 kB                                                          
-                                   jhove        177,246 kB                                                          
+File size                          daitss       177,2 kB                                                            
+                                   exiftool     173,0 kB                                                            
+                                   exiv2        177,2 kB                                                            
+                                   fits         177,2 kB                                                            
+                                   imagemagick  177,0 kB                                                            
+                                   jhove        177,2 kB                                                            
 Image height                       core         512                                                                 
                                    daitss       512          px                                                     
                                    daitss       512          px                                                     
@@ -218,7 +225,7 @@ Software type                                     exiftool     Adobe Photoshop C
 Tainted                                           imagemagick  False                                                           
 Thumbnail Length                                  exiftool     7068                                                            
 Thumbnail Offset                                  exiftool     402                                                             
-User time                                         imagemagick  0.010u                                                          
+User time                                         imagemagick  0.020u                                                          
 Verbose                                           imagemagick  true                                                            
 XMP Toolkit                                       exiftool     Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00          
 ------------------------------------------------- -----------  ----------------------------------------------------------------
@@ -245,7 +252,7 @@ Text report
   `text report <../docs/examples/images_01/01/report.txt>`_
 
 Report for web
-===========
+==============
 
   `web report <../docs/examples/images_01/01/report.drep>`_
 

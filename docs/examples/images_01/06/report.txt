@@ -1,22 +1,29 @@
+Used extractors
+===============
+
+Significant Property Source       Value                                                        
+-------------------- -----------  -------------------------------------------------------------
+Version              exiftool     8.15                                                         
+                     fits         FITS 0.6.1                                                   
+                     imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
+-------------------- -----------  -------------------------------------------------------------
+
 Identification
 ==============
 
 06.tif: 512x512
 
-Significant Property Source       Value                                                        
--------------------- -----------  -------------------------------------------------------------
-MIME type            exiftool     image/tiff                                                   
-                     exiv2        image/tiff                                                   
-                     fits         image/tiff                                                   
-                     jhove        image/tiff                                                   
-Type of format       exiftool     TIFF                                                         
-                     fits         Tagged Image File Format                                     
-                     imagemagick  TIFF                                                         
-                     jhove        TIFF                                                         
-Version              exiftool     8.15                                                         
-                     fits         FITS 0.6.1                                                   
-                     imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
--------------------- -----------  -------------------------------------------------------------
+Significant Property Source       Value                   
+-------------------- -----------  ------------------------
+MIME type            exiftool     image/tiff              
+                     exiv2        image/tiff              
+                     fits         image/tiff              
+                     jhove        image/tiff              
+Type of format       exiftool     TIFF                    
+                     fits         Tagged Image File Format
+                     imagemagick  TIFF                    
+                     jhove        TIFF                    
+-------------------- -----------  ------------------------
 
 Validation
 ==========
@@ -55,11 +62,11 @@ File path                  core         /home/stavel/differ/differ-cmdline/../do
                            exiv2        /home/stavel/differ/docs/examples/images_01/06.tif                  
                            fits         /home/stavel/differ/docs/examples/images_01/06.tif                  
                            jhove        /home/stavel/differ/docs/examples/images_01/06.tif                  
-File size                  exiftool     768,000 kB                                                          
-                           exiv2        786,572 kB                                                          
-                           fits         786,572 kB                                                          
-                           imagemagick  787,000 kB                                                          
-                           jhove        786,572 kB                                                          
+File size                  exiftool     768,0 kB                                                            
+                           exiv2        786,6 kB                                                            
+                           fits         786,6 kB                                                            
+                           imagemagick  787,0 kB                                                            
+                           jhove        786,6 kB                                                            
 Image height               core         512                                                                 
                            exiftool     512   px                                                            
                            exiftool     512   px                                                            
@@ -81,7 +88,7 @@ Overall mean               imagemagick  96.1713 (0.377142)
 Overall min                imagemagick  3 (0.0117647)                                                       
 Overall standard deviation imagemagick  75.4472 (0.295871)                                                  
 Page geometry              imagemagick  512x512+0+0                                                         
-Pixels per second          imagemagick  26.21MB                                                             
+Pixels per second          imagemagick  0b                                                                  
 Resolution horizontal      imagemagick  72    PPI                                                           
 Resolution vertical        imagemagick  72    PPI                                                           
 Samples per pixel          exiftool     3                                                                   
@@ -106,7 +113,7 @@ Border color                         imagemagick  rgb(223,223,223)
 Class                                imagemagick  DirectClass                                                     
 Compose                              imagemagick  Over                                                            
 Directory                            exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_01   
-Elapsed time                         imagemagick  0:01.009                                                        
+Elapsed time                         imagemagick  0:01.000                                                        
 Endianess                            imagemagick  MSB                                                             
 Exif Byte Order                      exiftool     Big-endian (Motorola, MM)                                       
 exit-code                            exiftool     ok                                                              
@@ -168,7 +175,7 @@ Text report
   `text report <../docs/examples/images_01/06/report.txt>`_
 
 Report for web
-===========
+==============
 
   `web report <../docs/examples/images_01/06/report.drep>`_
 

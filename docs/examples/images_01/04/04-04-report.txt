@@ -1,25 +1,32 @@
+Used extractors
+===============
+
+Significant Property  Source       Value for Image A                                                                                   Value for Image B                                                                                 
+--------------------  -----------  --------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------
+Version               fits         FITS 0.6.1                                                                                          FITS 0.6.1                                                                                        
+                      exiftool     8.15                                                                                                8.15                                                                                              
+                      imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                       ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                     
+                      daitss                                                                                                           built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63. 
+--------------------  -----------  --------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------
+
 Identification
 ==============
 
   Image A :: ../docs/examples/images_01/04.tif: 512x512
   Image B :: ../docs/examples/images_02/04.jpg: 512x512
 
-Significant Property  Source       Value for Image A                                                                                   Value for Image B                                                                                 
---------------------  -----------  --------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------
-MIME type             fits         image/tiff                                                                                          image/jpeg                                                                                        
-                      exiftool     image/tiff                                                                                          image/jpeg                                                                                        
-                      exiv2        image/tiff                                                                                          image/jpeg                                                                                        
-                      jhove        image/tiff                                                                                          image/jpeg                                                                                        
-Type of format        fits         Tagged Image File Format                                                                            Exchangeable Image File Format                                                                    
-                      exiftool     TIFF                                                                                                JPEG                                                                                              
-                      imagemagick  TIFF                                                                                                JPEG                                                                                              
-                      daitss                                                                                                           JPEG                                                                                              
-                      jhove        TIFF                                                                                                JPEG                                                                                              
-Version               fits         FITS 0.6.1                                                                                          FITS 0.6.1                                                                                        
-                      exiftool     8.15                                                                                                8.15                                                                                              
-                      imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                       ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                     
-                      daitss                                                                                                           built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63. 
---------------------  -----------  --------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------
+Significant Property  Source       Value for Image A               Value for Image B             
+--------------------  -----------  ------------------------------  ------------------------------
+MIME type             fits         image/tiff                      image/jpeg                    
+                      exiftool     image/tiff                      image/jpeg                    
+                      exiv2        image/tiff                      image/jpeg                    
+                      jhove        image/tiff                      image/jpeg                    
+Type of format        fits         Tagged Image File Format        Exchangeable Image File Format 
+                      exiftool     TIFF                            JPEG                          
+                      imagemagick  TIFF                            JPEG                          
+                      daitss                                       JPEG                          
+                      jhove        TIFF                            JPEG                          
+--------------------  -----------  ------------------------------  ------------------------------
 
 Validation
 ==========
@@ -65,12 +72,12 @@ File path                           fits         /home/stavel/differ/docs/exampl
                                     exiv2        /home/stavel/differ/docs/examples/images_01/04.tif                    /home/stavel/differ/docs/examples/images_02/04.jpg                  
                                     core         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif   /home/stavel/differ/differ-cmdline/../docs/examples/images_02/04.jpg 
                                     jhove        /home/stavel/differ/docs/examples/images_01/04.tif                    /home/stavel/differ/docs/examples/images_02/04.jpg                  
-File size                           fits         286,116 kB                                                            176,940 kB                                                          
-                                    exiftool     279,000 kB                                                            173,000 kB                                                          
-                                    imagemagick  286,000 kB                                                            177,000 kB                                                          
-                                    exiv2        286,116 kB                                                            176,940 kB                                                          
-                                    daitss                                                                             176,940 kB                                                          
-                                    jhove        286,116 kB                                                            176,940 kB                                                          
+File size                           fits         286,1 kB                                                              176,9 kB                                                            
+                                    exiftool     279,0 kB                                                              173,0 kB                                                            
+                                    imagemagick  286,0 kB                                                              177,0 kB                                                            
+                                    exiv2        286,1 kB                                                              176,9 kB                                                            
+                                    daitss                                                                             176,9 kB                                                            
+                                    jhove        286,1 kB                                                              176,9 kB                                                            
 Image height                        fits         512   px                                                              512          px                                                     
                                     exiftool     512   px                                                              512          px                                                     
                                     imagemagick  512   px                                                              512          px                                                     
@@ -94,7 +101,7 @@ Overall mean                        imagemagick                                 
 Overall min                         imagemagick                                                                        0 (0)                                                               
 Overall standard deviation          imagemagick                                                                        68.5928 (0.268991)                                                  
 Page geometry                       imagemagick  512x512+0+0                                                           512x512+0+0                                                         
-Pixels per second                   imagemagick  0b                                                                    13.11MB                                                             
+Pixels per second                   imagemagick  0b                                                                    26.21MB                                                             
 Resolution horizontal               exiftool     72    PPI                                                             72           PPI                                                    
                                     imagemagick  72    PPI                                                             72           PPI                                                    
 Resolution unit                     exiftool     inches                                                                inches                                                              
@@ -140,7 +147,7 @@ Displayed Units X                                  exiftool     inches          
 Displayed Units Y                                  exiftool     inches                                                            inches                                                          
 Document Ancestors                                 exiftool                                                                       xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E                        
 Document ID                                        exiftool     xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                          xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E                        
-Elapsed time                                       imagemagick  0:01.000                                                          0:01.019                                                        
+Elapsed time                                       imagemagick  0:01.000                                                          0:01.009                                                        
 Encoding process                                   exiftool                                                                       Baseline DCT, Huffman coding                                    
 Endianess                                          imagemagick  MSB                                                               Undefined                                                       
 Exif Byte Order                                    exiftool     Big-endian (Motorola, MM)                                         Big-endian (Motorola, MM)                                       

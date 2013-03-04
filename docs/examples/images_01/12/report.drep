@@ -684,7 +684,7 @@
         </metadata>
         <metadata>
             <key>File size</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">384,000 kB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">384,0 kB</value>
             <conflict>true</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -696,19 +696,19 @@
         </metadata>
         <metadata>
             <key>Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">38.4MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>User time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.060u</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.040u</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.060</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:01.050</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -772,7 +772,7 @@
         </metadata>
         <metadata>
             <key>File size</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">383,559 kB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">383,6 kB</value>
             <conflict>true</conflict>
             <source>fits</source>
         </metadata>
@@ -840,7 +840,7 @@
         </metadata>
         <metadata>
             <key>File size</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">375,000 kB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">375,0 kB</value>
             <conflict>true</conflict>
             <source>exiftool</source>
         </metadata>
@@ -1434,7 +1434,7 @@
         </metadata>
         <metadata>
             <key>File size</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">383,559 kB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">383,6 kB</value>
             <conflict>true</conflict>
             <source>jhove</source>
         </metadata>
@@ -1482,7 +1482,7 @@
         </metadata>
         <metadata>
             <key>File size</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">383,559 kB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">383,6 kB</value>
             <conflict>true</conflict>
             <source>exiv2</source>
         </metadata>
@@ -1628,7 +1628,7 @@
         </metadata>
         <metadata>
             <key>File size</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">383,559 kB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">383,6 kB</value>
             <conflict>true</conflict>
             <source>daitss</source>
         </metadata>
@@ -1711,10 +1711,45 @@
         </metadata>
     </metadata-list>
     <sources-list>
+        <source exitCode="0" source="exiv2">
+            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01/12.jpg
+File size       : 383559 Bytes
+MIME type       : image/jpeg
+Image size      : 1200 x 1600
+Camera make     : NIKON
+Camera model    : E2100
+Image timestamp : 0000:00:00 00:00:00
+Image number    : 
+Exposure time   : 1/60 s
+Aperture        : F2.6
+Exposure bias   : 0 EV
+Flash           : Yes, auto
+Flash bias      : 
+Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
+Subject distance: 
+ISO speed       : 100
+Exposure mode   : Auto
+Metering mode   : Multi-segment
+Macro mode      : 
+Image quality   : NORMAL
+Exif Resolution : 1600 x 1200
+White balance   : AUTO        
+Thumbnail       : None
+Copyright       : 
+Exif comment    :                                                                                                                      
+
+</stdout>
+            <stderr>Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
+</stderr>
+        </source>
+        <source exitCode="0" source="core">
+            <stdout></stdout>
+            <stderr></stderr>
+        </source>
         <source exitCode="0" source="jhove">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30"&gt;
- &lt;date&gt;2013-03-04T09:50:27+01:00&lt;/date&gt;
+ &lt;date&gt;2013-03-04T14:14:04+01:00&lt;/date&gt;
  &lt;repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/12.jpg"&gt;
   &lt;reportingModule release="1.2" date="2007-02-13"&gt;JPEG-hul&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-02-15T17:56:11+01:00&lt;/lastModified&gt;
@@ -3288,41 +3323,6 @@
 </stdout>
             <stderr></stderr>
         </source>
-        <source exitCode="0" source="exiv2">
-            <stdout>File name       : /home/stavel/differ/differ-cmdline/../docs/examples/images_01/12.jpg
-File size       : 383559 Bytes
-MIME type       : image/jpeg
-Image size      : 1200 x 1600
-Camera make     : NIKON
-Camera model    : E2100
-Image timestamp : 0000:00:00 00:00:00
-Image number    : 
-Exposure time   : 1/60 s
-Aperture        : F2.6
-Exposure bias   : 0 EV
-Flash           : Yes, auto
-Flash bias      : 
-Focal length    : 4.7 mm (35 mm equivalent: 36.0 mm)
-Subject distance: 
-ISO speed       : 100
-Exposure mode   : Auto
-Metering mode   : Multi-segment
-Macro mode      : 
-Image quality   : NORMAL
-Exif Resolution : 1600 x 1200
-White balance   : AUTO        
-Thumbnail       : None
-Copyright       : 
-Exif comment    :                                                                                                                      
-
-</stdout>
-            <stderr>Warning: Directory NikonPreview, entry 0x0201: Data area exceeds data buffer, ignoring it.
-</stderr>
-        </source>
-        <source exitCode="0" source="core">
-            <stdout></stdout>
-            <stderr></stderr>
-        </source>
         <source exitCode="0" source="exiftool">
             <stdout>ExifTool Version Number         : 8.15
 File Name                       : 12.jpg
@@ -3551,9 +3551,9 @@ Light Value                     : 8.7
   Tainted: False
   Filesize: 384KB
   Number pixels: 1.92MB
-  Pixels per second: 32MB
-  User time: 0.060u
-  Elapsed time: 0:01.060
+  Pixels per second: 38.4MB
+  User time: 0.040u
+  Elapsed time: 0:01.050
   Version: ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
 </stdout>
             <stderr></stderr>
@@ -3567,7 +3567,7 @@ Light Value                     : 8.7
 	&lt;object xsi:type="file"&gt;
 		&lt;objectIdentifier&gt;
 			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130304-1938-8azr61-0.jpg&lt;/objectIdentifierValue&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130304-1938-qe60ur-0.jpg&lt;/objectIdentifierValue&gt;
 		&lt;/objectIdentifier&gt;
 		&lt;objectCharacteristics&gt;
 			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
@@ -3678,7 +3678,7 @@ Light Value                     : 8.7
 			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
 		&lt;/eventIdentifier&gt;
 		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-03-04T03:50:30-05:00&lt;/eventDateTime&gt;
+		&lt;eventDateTime&gt;2013-03-04T08:14:06-05:00&lt;/eventDateTime&gt;
 		&lt;eventDetail&gt;Well-Formed and valid&lt;/eventDetail&gt;
 		&lt;eventOutcomeInformation&gt;
 			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
@@ -3690,7 +3690,7 @@ Light Value                     : 8.7
 		&lt;/linkingAgentIdentifier&gt;
 		&lt;linkingObjectIdentifier&gt;
 			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130304-1938-8azr61-0.jpg&lt;/linkingObjectIdentifierValue&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130304-1938-qe60ur-0.jpg&lt;/linkingObjectIdentifierValue&gt;
 		&lt;/linkingObjectIdentifier&gt;
 	&lt;/event&gt;
 
@@ -3710,7 +3710,7 @@ Light Value                     : 8.7
         </source>
         <source exitCode="0" source="fits">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="4.3.13 9:50"&gt;
+&lt;fits xmlns="http://hul.harvard.edu/ois/xml/ns/fits/fits_output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/fits/fits_output http://hul.harvard.edu/ois/xml/xsd/fits/fits_output.xsd" version="0.6.1" timestamp="4.3.13 14:14"&gt;
   &lt;identification&gt;
     &lt;identity format="JPEG File Interchange Format" mimetype="image/jpeg" toolname="FITS" toolversion="0.6.1"&gt;
       &lt;tool toolname="file utility" toolversion="5.04" /&gt;
