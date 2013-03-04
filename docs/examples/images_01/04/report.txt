@@ -3,180 +3,170 @@ Identification
 
 04.tif: 512x512
 
-Significant Property Source       Value                                                          Unit
--------------------- -----------  -------------------------------------------------------------  ----
-MIME type            exiftool     image/tiff                                                     
-                     exiv2        image/tiff                                                     
-                     fits         image/tiff                                                     
-                     jhove        image/tiff                                                     
-Type of format       exiftool     TIFF                                                           
-                     fits         Tagged Image File Format                                       
-                     imagemagick  TIFF                                                           
-                     jhove        TIFF                                                           
-Version              exiftool     8.15                                                           
-                     fits         FITS 0.6.1                                                     
-                     imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org  
--------------------- -----------  -------------------------------------------------------------  ----
+Significant Property Source       Value                                                        
+-------------------- -----------  -------------------------------------------------------------
+MIME type            exiftool     image/tiff                                                   
+                     exiv2        image/tiff                                                   
+                     fits         image/tiff                                                   
+                     jhove        image/tiff                                                   
+Type of format       exiftool     TIFF                                                         
+                     fits         Tagged Image File Format                                     
+                     imagemagick  TIFF                                                         
+                     jhove        TIFF                                                         
+Version              exiftool     8.15                                                         
+                     fits         FITS 0.6.1                                                   
+                     imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org
+-------------------- -----------  -------------------------------------------------------------
 
 Validation
 ==========
 
-Significant Property               Source  Value                  Unit
----------------------------------- ------  ---------------------  ----
-Validation (well formed and valid) jhove   Well-Formed and valid  
----------------------------------- ------  ---------------------  ----
+Significant Property               Source  Value                
+---------------------------------- ------  ---------------------
+Validation (well formed and valid) jhove   Well-Formed and valid
+---------------------------------- ------  ---------------------
 
 Characterization
 ================
 
-Significant Property  Source       Value                                                                 Unit
---------------------- -----------  --------------------------------------------------------------------  ----
-Color depth           exiftool     8                                                                     
-                      imagemagick  8                                                                     
-                      jhove                                                                              
-Color space           imagemagick  RGB                                                                   
-                      jhove                                                                              
-Color type            imagemagick  Grayscale                                                             
-Compression           exiftool     Uncompressed                                                          
-                      fits         Uncompressed                                                          
-                      imagemagick  None                                                                  
-                      jhove                                                                              
-File created          exiftool     2012:02:12 12:09:13+01:00                                             
-                      imagemagick  2013-02-15 17:56:10+01:00                                             
-File last modified    exiftool     2013:02:15 17:56:10+01:00                                             
-                      fits         2013:02:15 17:56:10+01:00                                             
-                      imagemagick  2013-02-15 17:56:10+01:00                                             
-                      jhove        2013-02-15 17:56:10+01:00                                             
-File name             core         04.tif                                                                
-                      exiftool     04.tif                                                                
-                      exiv2        04.tif                                                                
-                      fits         04.tif                                                                
-                      imagemagick  04.tif                                                                
-File path             core         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif  
-                      exiv2        /home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif  
-                      fits         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif  
-                      jhove        /home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif  
-File size             exiftool     279,000 kB                                                            
-                      exiv2        286,116 kB                                                            
-                      fits         286,116 kB                                                            
-                      imagemagick  286,000 kB                                                            
-                      jhove        286,116 kB                                                            
-ICC profile           fits                                                                               
-Image height          core         512                                                                   
-                      exiftool     512                                                                   px
-                      exiftool     512                                                                   px
-                      exiv2        512                                                                   px
-                      fits         512                                                                   px
-                      imagemagick  512                                                                   px
-                      jhove                                                                              px
-Image width           core         512                                                                   
-                      exiftool     512                                                                   px
-                      exiftool     512                                                                   px
-                      exiv2        512                                                                   px
-                      fits         512                                                                   px
-                      imagemagick  512                                                                   px
-                      jhove                                                                              px
-Interlace             imagemagick  None                                                                  
-Number of channels    jhove                                                                              
-Number of pixels      imagemagick  262KB                                                                 
-Orientation           exiftool     Horizontal (normal)                                                   
-                      imagemagick  TopLeft                                                               
-Page geometry         imagemagick  512x512+0+0                                                           
-Pixels per second     imagemagick  0b                                                                    
-Resolution horizontal exiftool     72                                                                    PPI
-                      imagemagick  72                                                                    PPI
-                      jhove                                                                              PPI
-Resolution unit       exiftool     inches                                                                
-Resolution vertical   exiftool     72                                                                    PPI
-                      imagemagick  72                                                                    PPI
-                      jhove                                                                              PPI
-Samples per pixel     exiftool     1                                                                     
-Thumbnail             exiv2        None                                                                  
-Transparent color     imagemagick  black                                                                 
-Units                 imagemagick  PixelsPerInch                                                         
---------------------- -----------  --------------------------------------------------------------------  ----
+Significant Property  Source       Value                                                               
+--------------------- -----------  --------------------------------------------------------------------
+Color depth           exiftool     8                                                                   
+                      imagemagick  8                                                                   
+Color space           imagemagick  RGB                                                                 
+Color type            imagemagick  Grayscale                                                           
+Compression           exiftool     Uncompressed                                                        
+                      fits         Uncompressed                                                        
+                      imagemagick  None                                                                
+File created          exiftool     2012:02:12 12:09:13+01:00                                           
+                      imagemagick  2013-02-15 17:56:10+01:00                                           
+File last modified    exiftool     2013:02:15 17:56:10+01:00                                           
+                      fits         2013:02:15 17:56:10+01:00                                           
+                      imagemagick  2013-02-15 17:56:10+01:00                                           
+                      jhove        2013-02-15 17:56:10+01:00                                           
+File name             core         04.tif                                                              
+                      exiftool     04.tif                                                              
+                      exiv2        04.tif                                                              
+                      fits         04.tif                                                              
+                      imagemagick  04.tif                                                              
+File path             core         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/04.tif
+                      exiv2        /home/stavel/differ/docs/examples/images_01/04.tif                  
+                      fits         /home/stavel/differ/docs/examples/images_01/04.tif                  
+                      jhove        /home/stavel/differ/docs/examples/images_01/04.tif                  
+File size             exiftool     279,000 kB                                                          
+                      exiv2        286,116 kB                                                          
+                      fits         286,116 kB                                                          
+                      imagemagick  286,000 kB                                                          
+                      jhove        286,116 kB                                                          
+Image height          core         512                                                                 
+                      exiftool     512   px                                                            
+                      exiftool     512   px                                                            
+                      exiv2        512   px                                                            
+                      fits         512   px                                                            
+                      imagemagick  512   px                                                            
+Image width           core         512                                                                 
+                      exiftool     512   px                                                            
+                      exiftool     512   px                                                            
+                      exiv2        512   px                                                            
+                      fits         512   px                                                            
+                      imagemagick  512   px                                                            
+Interlace             imagemagick  None                                                                
+Number of pixels      imagemagick  262KB                                                               
+Orientation           exiftool     Horizontal (normal)                                                 
+                      imagemagick  TopLeft                                                             
+Page geometry         imagemagick  512x512+0+0                                                         
+Pixels per second     imagemagick  0b                                                                  
+Resolution horizontal exiftool     72    PPI                                                           
+                      imagemagick  72    PPI                                                           
+Resolution unit       exiftool     inches                                                              
+Resolution vertical   exiftool     72    PPI                                                           
+                      imagemagick  72    PPI                                                           
+Samples per pixel     exiftool     1                                                                   
+Thumbnail             exiv2        None                                                                
+Transparent color     imagemagick  black                                                               
+Units                 imagemagick  PixelsPerInch                                                       
+--------------------- -----------  --------------------------------------------------------------------
 
 Other properties
 ================
 
-Significant Property                             Source       Value                                                                               Unit
------------------------------------------------- -----------  ----------------------------------------------------------------------------------  ----
-Background color                                 imagemagick  white                                                                               
-Border color                                     imagemagick  rgb(223,223,223)                                                                    
-Class                                            imagemagick  DirectClass                                                                         
-Color Mode                                       exiftool     1                                                                                   
-Color Space                                      exiftool     Uncalibrated                                                                        
-Compose                                          imagemagick  Over                                                                                
-Directory                                        exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_01                       
-Displayed Units X                                exiftool     inches                                                                              
-Displayed Units Y                                exiftool     inches                                                                              
-Document ID                                      exiftool     xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                                            
-Elapsed time                                     imagemagick  0:01.000                                                                            
-Endianess                                        imagemagick  MSB                                                                                 
-Exif Byte Order                                  exiftool     Big-endian (Motorola, MM)                                                           
-Exif Image Height                                exiftool     512                                                                                 
-Exif Image Width                                 exiftool     512                                                                                 
-exit-code                                        exiftool     ok                                                                                  
-                                                 exiv2        ok                                                                                  
-                                                 fits         ok                                                                                  
-                                                 imagemagick  ok                                                                                  
-                                                 jhove        ok                                                                                  
-File Permissions                                 exiftool     rw-r--r--                                                                           
-Format                                           exiftool     image/tiff                                                                          
-Global Altitude                                  exiftool     30                                                                                  
-Global Angle                                     exiftool     30                                                                                  
-ICC profile version                              fits                                                                                             
-Image size                                       exiv2        512 x 512                                                                           
-Image/Base type                                  imagemagick  Grayscale                                                                           
-Image/Channel depth/gray                         imagemagick  8-bit                                                                               
-Image/Channel statistics/Gray/kurtosis           imagemagick  -0.807688                                                                           
-Image/Channel statistics/Gray/max                imagemagick  246 (0.964706)                                                                      
-Image/Channel statistics/Gray/mean               imagemagick  125.161 (0.490827)                                                                  
-Image/Channel statistics/Gray/min                imagemagick  34 (0.133333)                                                                       
-Image/Channel statistics/Gray/skewness           imagemagick  -0.0282769                                                                          
-Image/Channel statistics/Gray/standard deviation imagemagick  45.2026 (0.177265)                                                                  
-Image/Dispose                                    imagemagick  Undefined                                                                           
-Image/Profiles/Profile-8bim                      imagemagick  9246 bytes                                                                          
-Image/Profiles/Profile-xmp                       imagemagick  14375 bytes                                                                         
-Image/Properties/dc/format                       imagemagick  image/tiff                                                                          
-Image/Properties/photoshop/ColorMode             imagemagick  1                                                                                   
-Image/Properties/signature                       imagemagick  c83b83944e73db24e7f1a8887bdd7be1f7770c34d0b11965a073c06d1a7b6e22                    
-Image/Properties/tiff/photometric                imagemagick  min-is-black                                                                        
-Image/Properties/tiff/rows-per-strip             imagemagick  16                                                                                  
-Image/Properties/tiff/software                   imagemagick  Adobe Photoshop CS5 Windows                                                         
-Image/Properties/tiff/timestamp                  imagemagick  2012:02:12 12:10:26                                                                 
-Image/Properties/xmp/CreateDate                  imagemagick  2012-02-12T12:09:13+01:00                                                           
-Image/Properties/xmp/MetadataDate                imagemagick  2012-02-12T12:10:26+01:00                                                           
-Image/Properties/xmp/ModifyDate                  imagemagick  2012-02-12T12:10:26+01:00                                                           
-Image/Properties/xmpMM/DocumentID                imagemagick  xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                                            
-Image/Properties/xmpMM/InstanceID                imagemagick  xmp.iid:D3B1752A6A55E11180A5EF7BDC084C3E                                            
-Image/Properties/xmpMM/OriginalDocumentID        imagemagick  xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                                            
-IPTC Digest                                      exiftool     00000000000000000000000000000000                                                    
-Iterations                                       imagemagick  0                                                                                   
-Matte color                                      imagemagick  grey74                                                                              
-Metadata Date                                    exiftool     2012:02:12 12:10:26+01:00                                                           
-Modify Date                                      exiftool     2012:02:12 12:10:26                                                                 
-Original Document ID                             exiftool     xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                                            
-Photometric Interpretation                       exiftool     BlackIsZero                                                                         
-Photoshop Thumbnail                              exiftool     (Binary data 6535 bytes, use -b option to extract)                                  
-Print size                                       imagemagick  7.11111x7.11111                                                                     
-Rendering intent                                 imagemagick  Undefined                                                                           
-Rows Per Strip                                   exiftool     512                                                                                 
-Software type                                    exiftool     Adobe Photoshop CS5 Windows                                                         
-Strip Byte Counts                                exiftool     262144                                                                              
-Strip Offsets                                    exiftool     23928                                                                               
-Subfile Type                                     exiftool     Full-resolution Image                                                               
-Tainted                                          imagemagick  False                                                                               
-Univerzal unique identifier (UUID)               exiftool     xmp.iid:D3B1752A6A55E11180A5EF7BDC084C3E                                            
-                                                 exiftool     xmp.iid:D2B1752A6A55E11180A5EF7BDC084C3E, xmp.iid:D3B1752A6A55E11180A5EF7BDC084C3E  
-User time                                        imagemagick  0.000u                                                                              
-Verbose                                          imagemagick  true                                                                                
-XMP Toolkit                                      exiftool     Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00                              
------------------------------------------------- -----------  ----------------------------------------------------------------------------------  ----
+Significant Property                             Source       Value                                                           
+------------------------------------------------ -----------  ----------------------------------------------------------------
+Background color                                 imagemagick  white                                                           
+Border color                                     imagemagick  rgb(223,223,223)                                                
+Class                                            imagemagick  DirectClass                                                     
+Color Mode                                       exiftool     1                                                               
+Color Space                                      exiftool     Uncalibrated                                                    
+Compose                                          imagemagick  Over                                                            
+Directory                                        exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_01   
+Displayed Units X                                exiftool     inches                                                          
+Displayed Units Y                                exiftool     inches                                                          
+Document ID                                      exiftool     xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                        
+Elapsed time                                     imagemagick  0:01.000                                                        
+Endianess                                        imagemagick  MSB                                                             
+Exif Byte Order                                  exiftool     Big-endian (Motorola, MM)                                       
+Exif Image Height                                exiftool     512                                                             
+Exif Image Width                                 exiftool     512                                                             
+exit-code                                        exiftool     ok                                                              
+                                                 exiv2        ok                                                              
+                                                 fits         ok                                                              
+                                                 imagemagick  ok                                                              
+                                                 jhove        ok                                                              
+File Permissions                                 exiftool     rw-r--r--                                                       
+Format                                           exiftool     image/tiff                                                      
+Global Altitude                                  exiftool     30                                                              
+Global Angle                                     exiftool     30                                                              
+Image size                                       exiv2        512 x 512                                                       
+Image/Base type                                  imagemagick  Grayscale                                                       
+Image/Channel depth/gray                         imagemagick  8-bit                                                           
+Image/Channel statistics/Gray/kurtosis           imagemagick  -0.807688                                                       
+Image/Channel statistics/Gray/max                imagemagick  246 (0.964706)                                                  
+Image/Channel statistics/Gray/mean               imagemagick  125.161 (0.490827)                                              
+Image/Channel statistics/Gray/min                imagemagick  34 (0.133333)                                                   
+Image/Channel statistics/Gray/skewness           imagemagick  -0.0282769                                                      
+Image/Channel statistics/Gray/standard deviation imagemagick  45.2026 (0.177265)                                              
+Image/Dispose                                    imagemagick  Undefined                                                       
+Image/Profiles/Profile-8bim                      imagemagick  9246 bytes                                                      
+Image/Profiles/Profile-xmp                       imagemagick  14375 bytes                                                     
+Image/Properties/dc/format                       imagemagick  image/tiff                                                      
+Image/Properties/photoshop/ColorMode             imagemagick  1                                                               
+Image/Properties/signature                       imagemagick  c83b83944e73db24e7f1a8887bdd7be1f7770c34d0b11965a073c06d1a7b6e22
+Image/Properties/tiff/photometric                imagemagick  min-is-black                                                    
+Image/Properties/tiff/rows-per-strip             imagemagick  16                                                              
+Image/Properties/tiff/software                   imagemagick  Adobe Photoshop CS5 Windows                                     
+Image/Properties/tiff/timestamp                  imagemagick  2012:02:12 12:10:26                                             
+Image/Properties/xmp/CreateDate                  imagemagick  2012-02-12T12:09:13+01:00                                       
+Image/Properties/xmp/MetadataDate                imagemagick  2012-02-12T12:10:26+01:00                                       
+Image/Properties/xmp/ModifyDate                  imagemagick  2012-02-12T12:10:26+01:00                                       
+Image/Properties/xmpMM/DocumentID                imagemagick  xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                        
+Image/Properties/xmpMM/InstanceID                imagemagick  xmp.iid:D3B1752A6A55E11180A5EF7BDC084C3E                        
+Image/Properties/xmpMM/OriginalDocumentID        imagemagick  xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                        
+IPTC Digest                                      exiftool     00000000000000000000000000000000                                
+Iterations                                       imagemagick  0                                                               
+Matte color                                      imagemagick  grey74                                                          
+Metadata Date                                    exiftool     2012:02:12 12:10:26+01:00                                       
+Modify Date                                      exiftool     2012:02:12 12:10:26                                             
+Original Document ID                             exiftool     xmp.did:D2B1752A6A55E11180A5EF7BDC084C3E                        
+Photometric Interpretation                       exiftool     BlackIsZero                                                     
+Photoshop Thumbnail                              exiftool     (Binary data 6535 bytes, use -b option to extract)              
+Print size                                       imagemagick  7.11111x7.11111                                                 
+Rendering intent                                 imagemagick  Undefined                                                       
+Rows Per Strip                                   exiftool     512                                                             
+Software type                                    exiftool     Adobe Photoshop CS5 Windows                                     
+Strip Byte Counts                                exiftool     262144                                                          
+Strip Offsets                                    exiftool     23928                                                           
+Subfile Type                                     exiftool     Full-resolution Image                                           
+Tainted                                          imagemagick  False                                                           
+User time                                        imagemagick  0.000u                                                          
+Verbose                                          imagemagick  true                                                            
+XMP Toolkit                                      exiftool     Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00          
+------------------------------------------------ -----------  ----------------------------------------------------------------
 
 Raw outputs of extractors
 =========================
 
+   imagemagick   'output <../docs/examples/images_01/04/output-imagemagick.raw>'_
+   imagemagick   'stderr output <../docs/examples/images_01/04/output-imagemagick.raw>'_
    fits         'output <../docs/examples/images_01/04/output-fits.raw>'_
    fits         'stderr output <../docs/examples/images_01/04/output-fits.raw>'_
    exiftool     'output <../docs/examples/images_01/04/output-exiftool.raw>'_
@@ -185,8 +175,6 @@ Raw outputs of extractors
    jhove        'stderr output <../docs/examples/images_01/04/output-jhove.raw>'_
    exiv2        'output <../docs/examples/images_01/04/output-exiv2.raw>'_
    exiv2        'stderr output <../docs/examples/images_01/04/output-exiv2.raw>'_
-   imagemagick   'output <../docs/examples/images_01/04/output-imagemagick.raw>'_
-   imagemagick   'stderr output <../docs/examples/images_01/04/output-imagemagick.raw>'_
 
 Text report
 ===========

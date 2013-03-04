@@ -18,8 +18,6 @@ Version              daitss       built with JHOVE 1.6 (built on December 12, 20
                      fits         FITS 0.6.1                                                                                        
                      imagemagick  ImageMagick 6.6.0-4 2012-05-02 Q16 http://www.imagemagick.org                                     
                      jpylyzer     jpylyzer 1.6.0                                                                                    
-Version of format    daitss                                                                                                         
-                     daitss                                                                                                         
 -------------------- -----------  --------------------------------------------------------------------------------------------------
 
 Validation
@@ -148,8 +146,7 @@ Color depth                        daitss       8
                                    imagemagick  8                                                                   
                                    jpylyzer     8                                                                   
                                    kakadu       8,8,8                                                               
-Color space                        daitss                                                                           
-                                   exiftool     sRGB                                                                
+Color space                        exiftool     sRGB                                                                
                                    imagemagick  RGB                                                                 
                                    jpylyzer     sRGB                                                                
 Color type                         imagemagick  TrueColor                                                           
@@ -178,15 +175,13 @@ File name                          core         14.jpf
                                    imagemagick  14.jpf                                                              
                                    jpylyzer     14.jpf                                                              
 File path                          core         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/14.jpf
-                                   fits         /home/stavel/differ/differ-cmdline/../docs/examples/images_01/14.jpf
+                                   fits         /home/stavel/differ/docs/examples/images_01/14.jpf                  
                                    jpylyzer     /home/stavel/differ/docs/examples/images_01/14.jpf                  
-File size                          daitss       33.879 kB                                                           
-                                   daitss                                                                           
-                                   exiftool     33.000 kB                                                           
-                                   fits         33.879 kB                                                           
-                                   imagemagick  33.900 kB                                                           
-                                   jpylyzer     33.879 kB                                                           
-ICC profile                        fits                                                                             
+File size                          daitss       33,879 kB                                                           
+                                   exiftool     33,000 kB                                                           
+                                   fits         33,879 kB                                                           
+                                   imagemagick  33,900 kB                                                           
+                                   jpylyzer     33,879 kB                                                           
 Image height                       core         512                                                                 
                                    daitss       512   px                                                            
                                    daitss       512   px                                                            
@@ -219,7 +214,7 @@ Overall mean                       imagemagick  96.1919 (0.377223)
 Overall min                        imagemagick  0 (0)                                                               
 Overall standard deviation         imagemagick  75.4944 (0.296057)                                                  
 Page geometry                      imagemagick  512x512+0+0                                                         
-Pixels per second                  imagemagick  2.621MB                                                             
+Pixels per second                  imagemagick  3.745MB                                                             
 Precincts                          jpylyzer     no                                                                  
 Progression order                  jpylyzer     RLCP                                                                
                                    kakadu       RLCP                                                                
@@ -227,7 +222,6 @@ Resolution horizontal              daitss       2834  PPI
                                    exiftool     2834  PPI                                                           
                                    exiftool     72    PPI                                                           
                                    imagemagick  72    PPI                                                           
-                                   jpylyzer           PPI                                                           
                                    jpylyzer     2834  PPI                                                           
 Resolution unit                    exiftool     m                                                                   
                                    exiftool     m                                                                   
@@ -236,7 +230,6 @@ Resolution vertical                daitss       2834  PPI
                                    exiftool     2834  PPI                                                           
                                    exiftool     72    PPI                                                           
                                    imagemagick  72    PPI                                                           
-                                   jpylyzer           PPI                                                           
                                    jpylyzer     2834  PPI                                                           
 Samples per pixel                  daitss       3                                                                   
                                    exiftool     3                                                                   
@@ -249,112 +242,109 @@ Transparent color                  imagemagick  black
 Type of algorithm                  kakadu       W9X7                                                                
 Units                              imagemagick  Undefined                                                           
 Universal unique identifier (UUID) daitss       d0ab71214ea246c7f7d45607f67f98cc                                    
-                                   daitss                                                                           
                                    jpylyzer     3a0d0218-0ae9-4115-b376-4bca41ce0e71                                
 ---------------------------------- -----------  --------------------------------------------------------------------
 
 Other properties
 ================
 
-Significant Property          Source       Value                                                                
------------------------------ -----------  ---------------------------------------------------------------------
-Background color              imagemagick  white                                                                
-Bits Per Component            exiftool     8 Bits, Unsigned                                                     
-Blue kurtosis                 imagemagick  -0.0774266                                                           
-Blue max                      imagemagick  248 (0.972549)                                                       
-Blue mean                     imagemagick  105.429 (0.413447)                                                   
-Blue min                      imagemagick  0 (0)                                                                
-Blue skewness                 imagemagick  0.574505                                                             
-Blue standard deviation       imagemagick  34.601 (0.13569)                                                     
-Border color                  imagemagick  rgb(223,223,223)                                                     
-Calign_blk_last               kakadu       {no,no}                                                              
-Cdfs                          kakadu       0                                                                    
-Class                         imagemagick  DirectClass                                                          
-Cmct                          kakadu       0                                                                    
-Code block height             jpylyzer     32    px                                                             
-Code block width              jpylyzer     32    px                                                             
-Coding bypass                 jpylyzer     no                                                                   
-Color Mode                    exiftool     3                                                                    
-Color Space                   exiftool     sRGB                                                                 
-Commentary                    jpylyzer                                                                          
-Compatible Brands             exiftool     jp2 , jpxb, jpx                                                      
-Components                    kakadu       3                                                                    
-Compose                       imagemagick  Over                                                                 
-Compression ratio             jpylyzer     23.21                                                                
-Consumed                      kakadu       0 tile-part(s) from a total of 1 tile(s).                            
-                              kakadu       114 codestream bytes (excluding any file format) = 0.003479 bits/pel.
-Creator Tool                  exiftool     Adobe Photoshop CS5 Windows                                          
-Directory                     exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_01        
-Display resolution horizontal jpylyzer           PPI                                                            
-Display resolution vertical   jpylyzer           PPI                                                            
-Document ID                   exiftool     xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                             
-Elapsed time                  imagemagick  0:01.099                                                             
-Endianess                     imagemagick  Undefined                                                            
-Exif Image Height             exiftool     512                                                                  
-Exif Image Width              exiftool     512                                                                  
-exit-code                     daitss       OK                                                                   
-                              exiftool     ok                                                                   
-                              exiv2        error (253)                                                          
-                              fits         ok                                                                   
-                              imagemagick  ok                                                                   
-                              jhove        ok                                                                   
-                              jpylyzer     ok                                                                   
-                              kakadu       ok                                                                   
-File Permissions              exiftool     rw-r--r--                                                            
-Format                        exiftool     image/jpx                                                            
-Green kurtosis                imagemagick  -0.724782                                                            
-Green max                     imagemagick  249 (0.976471)                                                       
-Green mean                    imagemagick  99.0464 (0.388417)                                                   
-Green min                     imagemagick  0 (0)                                                                
-Green skewness                imagemagick  0.212873                                                             
-Green standard deviation      imagemagick  52.4249 (0.205588)                                                   
-ICC profile size              imagemagick  3024 bytes                                                           
-                              imagemagick  IEC 61966-2.1 Default RGB colour space - sRGB                        
-ICC profile version           fits                                                                              
-Image/Dispose                 imagemagick  Undefined                                                            
-Image/Properties/signature    imagemagick  7e6c24de8522a1c008b13a41822de38d7d4202bf9e7cdd74d4973765c8262072     
-Iterations                    imagemagick  0                                                                    
-Major Brand                   exiftool     JPEG 2000 Image (.JP2)                                               
-Matte color                   imagemagick  grey74                                                               
-Metadata Date                 exiftool     2012:02:17 22:08:01+01:00                                            
-Minor Version                 exiftool     0.0.0                                                                
-Modify Date                   exiftool     2012:02:17 22:08:01+01:00                                            
-Number Of Components          exiftool     3                                                                    
-Number of tiles               jpylyzer     1                                                                    
-Origin                        kakadu       {0,0}                                                                
-Original Document ID          exiftool     xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                             
-Overall skewness              imagemagick  0.202654                                                             
-Photometric Interpretation    exiftool     RGB                                                                  
-Planar Configuration          exiftool     Chunky                                                               
-Precints                      kakadu       no                                                                   
-Print size                    imagemagick  7.11111x7.11111                                                      
-Qabs_steps                    kakadu       0.003906,0.001953,0.001953,0.000977,0.001953,0.001953,0.000977,0.001 
-Qderived                      kakadu       no                                                                   
-Qguard                        kakadu       2                                                                    
-Red kurtosis                  imagemagick  -0.752438                                                            
-Red max                       imagemagick  255 (1)                                                              
-Red mean                      imagemagick  180.292 (0.707027)                                                   
-Red min                       imagemagick  21 (0.0823529)                                                       
-Red skewness                  imagemagick  -0.681639                                                            
-Red standard deviation        imagemagick  49.3241 (0.193428)                                                   
-Rendering intent              imagemagick  Undefined                                                            
-Reversible                    kakadu       no                                                                   
-Scap                          kakadu       no                                                                   
-Sdims                         kakadu       {512,512},{512,512},{512,512}                                        
-Sextensions                   kakadu       0                                                                    
-Sprofile                      kakadu       PROFILE2                                                             
-Ssigned                       kakadu       no,no,no                                                             
-Tainted                       imagemagick  False                                                                
-Tile origin                   kakadu       {0,0}                                                                
-Tiles                         kakadu       {1024,1024}                                                          
-User time                     imagemagick  0.100u                                                               
-Verbose                       imagemagick  true                                                                 
-XMP Toolkit                   exiftool     Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00               
------------------------------ -----------  ---------------------------------------------------------------------
+Significant Property       Source       Value                                                                
+-------------------------- -----------  ---------------------------------------------------------------------
+Background color           imagemagick  white                                                                
+Bits Per Component         exiftool     8 Bits, Unsigned                                                     
+Blue kurtosis              imagemagick  -0.0774266                                                           
+Blue max                   imagemagick  248 (0.972549)                                                       
+Blue mean                  imagemagick  105.429 (0.413447)                                                   
+Blue min                   imagemagick  0 (0)                                                                
+Blue skewness              imagemagick  0.574505                                                             
+Blue standard deviation    imagemagick  34.601 (0.13569)                                                     
+Border color               imagemagick  rgb(223,223,223)                                                     
+Calign_blk_last            kakadu       {no,no}                                                              
+Cdfs                       kakadu       0                                                                    
+Class                      imagemagick  DirectClass                                                          
+Cmct                       kakadu       0                                                                    
+Code block height          jpylyzer     32    px                                                             
+Code block width           jpylyzer     32    px                                                             
+Coding bypass              jpylyzer     no                                                                   
+Color Mode                 exiftool     3                                                                    
+Color Space                exiftool     sRGB                                                                 
+Compatible Brands          exiftool     jp2 , jpxb, jpx                                                      
+Components                 kakadu       3                                                                    
+Compose                    imagemagick  Over                                                                 
+Compression ratio          jpylyzer     23.21                                                                
+Consumed                   kakadu       0 tile-part(s) from a total of 1 tile(s).                            
+                           kakadu       114 codestream bytes (excluding any file format) = 0.003479 bits/pel.
+Creator Tool               exiftool     Adobe Photoshop CS5 Windows                                          
+Directory                  exiftool     /home/stavel/differ/differ-cmdline/../docs/examples/images_01        
+Document ID                exiftool     xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                             
+Elapsed time               imagemagick  0:01.070                                                             
+Endianess                  imagemagick  Undefined                                                            
+Exif Image Height          exiftool     512                                                                  
+Exif Image Width           exiftool     512                                                                  
+exit-code                  daitss       OK                                                                   
+                           exiftool     ok                                                                   
+                           exiv2        error (253)                                                          
+                           fits         ok                                                                   
+                           imagemagick  ok                                                                   
+                           jhove        ok                                                                   
+                           jpylyzer     ok                                                                   
+                           kakadu       ok                                                                   
+File Permissions           exiftool     rw-r--r--                                                            
+Format                     exiftool     image/jpx                                                            
+Green kurtosis             imagemagick  -0.724782                                                            
+Green max                  imagemagick  249 (0.976471)                                                       
+Green mean                 imagemagick  99.0464 (0.388417)                                                   
+Green min                  imagemagick  0 (0)                                                                
+Green skewness             imagemagick  0.212873                                                             
+Green standard deviation   imagemagick  52.4249 (0.205588)                                                   
+ICC profile size           imagemagick  3024 bytes                                                           
+                           imagemagick  IEC 61966-2.1 Default RGB colour space - sRGB                        
+Image/Dispose              imagemagick  Undefined                                                            
+Image/Properties/signature imagemagick  7e6c24de8522a1c008b13a41822de38d7d4202bf9e7cdd74d4973765c8262072     
+Iterations                 imagemagick  0                                                                    
+Major Brand                exiftool     JPEG 2000 Image (.JP2)                                               
+Matte color                imagemagick  grey74                                                               
+Metadata Date              exiftool     2012:02:17 22:08:01+01:00                                            
+Minor Version              exiftool     0.0.0                                                                
+Modify Date                exiftool     2012:02:17 22:08:01+01:00                                            
+Number Of Components       exiftool     3                                                                    
+Number of tiles            jpylyzer     1                                                                    
+Origin                     kakadu       {0,0}                                                                
+Original Document ID       exiftool     xmp.did:41CDF60AA959E111B6D8F36F074F6F1F                             
+Overall skewness           imagemagick  0.202654                                                             
+Photometric Interpretation exiftool     RGB                                                                  
+Planar Configuration       exiftool     Chunky                                                               
+Precints                   kakadu       no                                                                   
+Print size                 imagemagick  7.11111x7.11111                                                      
+Qabs_steps                 kakadu       0.003906,0.001953,0.001953,0.000977,0.001953,0.001953,0.000977,0.001 
+Qderived                   kakadu       no                                                                   
+Qguard                     kakadu       2                                                                    
+Red kurtosis               imagemagick  -0.752438                                                            
+Red max                    imagemagick  255 (1)                                                              
+Red mean                   imagemagick  180.292 (0.707027)                                                   
+Red min                    imagemagick  21 (0.0823529)                                                       
+Red skewness               imagemagick  -0.681639                                                            
+Red standard deviation     imagemagick  49.3241 (0.193428)                                                   
+Rendering intent           imagemagick  Undefined                                                            
+Reversible                 kakadu       no                                                                   
+Scap                       kakadu       no                                                                   
+Sdims                      kakadu       {512,512},{512,512},{512,512}                                        
+Sextensions                kakadu       0                                                                    
+Sprofile                   kakadu       PROFILE2                                                             
+Ssigned                    kakadu       no,no,no                                                             
+Tainted                    imagemagick  False                                                                
+Tile origin                kakadu       {0,0}                                                                
+Tiles                      kakadu       {1024,1024}                                                          
+User time                  imagemagick  0.060u                                                               
+Verbose                    imagemagick  true                                                                 
+XMP Toolkit                exiftool     Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00               
+-------------------------- -----------  ---------------------------------------------------------------------
 
 Raw outputs of extractors
 =========================
 
+   imagemagick   'output <../docs/examples/images_01/14/output-imagemagick.raw>'_
+   imagemagick   'stderr output <../docs/examples/images_01/14/output-imagemagick.raw>'_
    fits         'output <../docs/examples/images_01/14/output-fits.raw>'_
    fits         'stderr output <../docs/examples/images_01/14/output-fits.raw>'_
    exiftool     'output <../docs/examples/images_01/14/output-exiftool.raw>'_
@@ -365,12 +355,10 @@ Raw outputs of extractors
    exiv2        'stderr output <../docs/examples/images_01/14/output-exiv2.raw>'_
    jpylyzer     'output <../docs/examples/images_01/14/output-jpylyzer.raw>'_
    jpylyzer     'stderr output <../docs/examples/images_01/14/output-jpylyzer.raw>'_
-   daitss       'output <../docs/examples/images_01/14/output-daitss.raw>'_
-   daitss       'stderr output <../docs/examples/images_01/14/output-daitss.raw>'_
-   imagemagick   'output <../docs/examples/images_01/14/output-imagemagick.raw>'_
-   imagemagick   'stderr output <../docs/examples/images_01/14/output-imagemagick.raw>'_
    kakadu       'output <../docs/examples/images_01/14/output-kakadu.raw>'_
    kakadu       'stderr output <../docs/examples/images_01/14/output-kakadu.raw>'_
+   daitss       'output <../docs/examples/images_01/14/output-daitss.raw>'_
+   daitss       'stderr output <../docs/examples/images_01/14/output-daitss.raw>'_
 
 Text report
 ===========
