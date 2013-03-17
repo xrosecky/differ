@@ -1,8 +1,5 @@
-Installation
-............
-
 Exiftool
-~~~~~~~~
+........
 
 `home page <http://www.sno.phy.queensu.ca/~phil/exiftool/>`_
 
@@ -22,11 +19,9 @@ It depends on operating system.
 ::
 
    exiftool.binary=/usr/bin/exiftool
-
-   
    
 Exiv2
-~~~~~
+.....
 
 `home page <http://www.exiv2.org/>`_
 
@@ -49,7 +44,7 @@ It depends on operating system.
 
 
 JHOVE
-~~~~~
+.....
 
 `home page <http://jhove.sourceforge.net>`_
 
@@ -72,7 +67,7 @@ It depends on operating system.
 
 
 Imagemagick
-~~~~~~~~~~~
+...........
 
 
 `home page <http://www.imagemagick.org/script/index.php>`_
@@ -95,7 +90,7 @@ It depends on operating system.
    imagemagic.binary=/usr/bin/identify
 
 FITS
-~~~~
+....
 
 `home page <http://code.google.com/p/fits/>`_
 `download page <http://code.google.com/p/fits/downloads/list>`_
@@ -131,7 +126,7 @@ Please add into fits.sh something like:
 
 
 Kakadu
-~~~~~~~
+......
 
 This library is necessary to handle jp2000 images.
 
@@ -148,24 +143,35 @@ To identify and load images it is used ``kdu_expand`` binary.
    kakadu.binary=/home/stavel/bin/kdu_expand.sh
 
 JPylyzer
-~~~~~~~~
+........
 
-`home page <http://www.openplanetsfoundation.org/software/jpylyzer>`_
+`JPylyzer home page <http://www.openplanetsfoundation.org/software/jpylyzer>`_
 
 Download binary installation from home page. And install it as usual in your operating system.
 
+Daitss
+.......
 
-..
+`Daitss Home Page <http://daitss.fcla.edu/>`_
 
-   DROID
-   ~~~~~
+You can use daitss as a web service or as local program.
 
-   `Home page <http://digital-preservation.github.com/droid/>`_
+See `Software Installation Guide <https://daitss.pubwiki.fcla.edu/wiki/index.php/DAITSS_2_Software_Installation_Guide>`_.
 
-   Download `Zip file with binary <https://github.com/downloads/digital-preservation/droid/droid-binary-6.1-bin.zip>`_.
+See `Getting started <https://share.fcla.edu/FDAPublic/DAITSS/Chapter_2_Getting_Started.pdf>`_.
+
+set in file ``differ-common/common.properties``
+an url for daitss web service.
+
+It can be local or external.
+
+::
+
+   daitssHTTPExtractor.url=http://description.fcla.edu/description
 
 
-   PRONOM
-   ~~~~~~
+.. important::
 
-   http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new
+   En external web service is slow and it accepts files just smaller than 40MB.
+
+   It is better to install local web service for huge amount of files to process.

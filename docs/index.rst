@@ -26,8 +26,8 @@
 	 });
 	 </script>
 
-Welcome to Differ Documentation!
-================================
+Welcome to The Image Validator Documentation!
+=============================================
 
 Contents:
 
@@ -36,24 +36,30 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-
-Installation
+Introduction
 ------------
 
-.. include:: installation.rst  
+The Image Validator helps an user with transformation of an image 
+from one format to another one.
 
-Recognized Validator Outputs
+Sometimes it is necessary to convert an image from one format into another format. 
+Some distorsions or error effects can occur when transforming of an image.
+
+The Image Validator gives user the information whether a graphic information that 
+an image carries was destroyed or not after the transformation.
+
+The Image Validator collects significant properties from various image data extractors,
+process them and shows them to a user so that he or she can easily compare two images and controls 
+a tranformation process.
+
+.. include:: introduction.rst
+
+Recognized Extractor Outputs
 ----------------------------
-
-.. include:: djvudump.rst
-
-.. include:: jpylyzer.rst
 
 .. include:: exiftool.rst
 
 .. include:: fits.rst
-
-.. include:: kdu.rst
 
 .. include:: daitss.rst
 
@@ -61,11 +67,21 @@ Recognized Validator Outputs
 
 .. include:: jhove.rst
 
+.. include:: djvudump.rst
+
+.. include:: jpylyzer.rst
+
+.. include:: kdu.rst
+b
+Installation
+------------
+
+.. include:: installation.rst
+
 Command Line Application
 ------------------------
 
 .. include:: cmdline.rst
-
 
 Examples of validation results
 ------------------------------

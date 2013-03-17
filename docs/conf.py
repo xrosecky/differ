@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Differ Documentation'
+project = u'The Image Validator Documentation'
 copyright = u'2012, Jan Stavel'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -183,7 +183,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'DifferDocumentation.tex', u'Differ Documentation Documentation',
+  ('index', 'DifferDocumentation.tex', u'The Image Validator Documentation',
    u'Jan Stavel', 'manual'),
 ]
 
@@ -213,7 +213,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'differdocumentation', u'Differ Documentation Documentation',
+    ('index', 'differdocumentation', u'The Image Validator Documentation',
      [u'Jan Stavel'], 1)
 ]
 
@@ -227,9 +227,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'DifferDocumentation', u'Differ Documentation Documentation',
-   u'Jan Stavel', 'DifferDocumentation', 'One line description of project.',
-   'Miscellaneous'),
+    ('index', 'DifferDocumentation', u'The Image Validator Documentation',
+     u'Jan Stavel', 'TheImageValidatorDocumentation', 'Determinator of image file format properties.',
+     'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.

@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Installation &mdash; Differ Documentation 0.5 documentation</title>
+    <title>Exiftool &mdash; The Image Validator Documentation 0.5 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -25,7 +25,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="Differ Documentation 0.5 documentation" href="../" /> 
+    <link rel="top" title="The Image Validator Documentation 0.5 documentation" href="../" /> 
   </head>
   <body>
     <div class="related">
@@ -34,7 +34,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="../genindex/" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../">Differ Documentation 0.5 documentation</a> &raquo;</li> 
+        <li><a href="../">The Image Validator Documentation 0.5 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -43,10 +43,8 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="exiftool">
-<h2>Exiftool<a class="headerlink" href="#exiftool" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="exiftool">
+<h1>Exiftool<a class="headerlink" href="#exiftool" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="http://www.sno.phy.queensu.ca/~phil/exiftool/">home page</a></p>
 <p><a class="reference external" href="http://www.stahuj.centrum.cz/utility_a_ostatni/ostatni/exiftool/">http://www.stahuj.centrum.cz/utility_a_ostatni/ostatni/exiftool/</a></p>
 <div class="highlight-python"><pre># for debian linux
@@ -59,7 +57,7 @@ a path to exiftool binary.</p>
 </div>
 </div>
 <div class="section" id="exiv2">
-<h2>Exiv2<a class="headerlink" href="#exiv2" title="Permalink to this headline">¶</a></h2>
+<h1>Exiv2<a class="headerlink" href="#exiv2" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="http://www.exiv2.org/">home page</a></p>
 <p><a class="reference external" href="http://www.exiv2.org/download.html">download</a></p>
 <div class="highlight-python"><pre># for debian linux
@@ -72,7 +70,7 @@ a path to exiv2 binary.</p>
 </div>
 </div>
 <div class="section" id="jhove">
-<h2>JHOVE<a class="headerlink" href="#jhove" title="Permalink to this headline">¶</a></h2>
+<h1>JHOVE<a class="headerlink" href="#jhove" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="http://jhove.sourceforge.net">home page</a></p>
 <p><a class="reference external" href="http://http://jhove.sourceforge.net/distribution.html">download page</a></p>
 <div class="highlight-python"><pre># for debian linux
@@ -85,7 +83,7 @@ a path to jhove binary.</p>
 </div>
 </div>
 <div class="section" id="imagemagick">
-<h2>Imagemagick<a class="headerlink" href="#imagemagick" title="Permalink to this headline">¶</a></h2>
+<h1>Imagemagick<a class="headerlink" href="#imagemagick" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="http://www.imagemagick.org/script/index.php">home page</a></p>
 <p><a class="reference external" href="http://www.imagemagick.org/script/binary-releases.php">download page</a></p>
 <div class="highlight-python"><pre># for debian linux
@@ -98,7 +96,7 @@ a path to imagemagick binary.</p>
 </div>
 </div>
 <div class="section" id="fits">
-<h2>FITS<a class="headerlink" href="#fits" title="Permalink to this headline">¶</a></h2>
+<h1>FITS<a class="headerlink" href="#fits" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="http://code.google.com/p/fits/">home page</a>
 <a class="reference external" href="http://code.google.com/p/fits/downloads/list">download page</a></p>
 <div class="highlight-python"><pre>stavel@treebeard:~/lib$ wget http://fits.googlecode.com/files/fits-0.6.1.zip
@@ -107,12 +105,20 @@ stavel@treebeard:~/lib$ chmod 755 fits-0.6.1/fits.sh</pre>
 </div>
 <p>set in file <tt class="docutils literal"><span class="pre">differ-common/common.properties</span></tt>
 a path to fits binary.</p>
-<p>It depends on operating system.</p>
 <div class="highlight-python"><pre>fits.binary=/home/stavel/lib/fits-0.6.1/fits.sh</pre>
+</div>
+<p>It depends on operating system.</p>
+<p>There is necessary to fix incorrect string that invalidates xml output.</p>
+<p>Please add into fits.sh something like:</p>
+<div class="highlight-python"><pre># for windows:
+java edu.harvard.hul.ois.fits.Fits %* | find /V "READBOX"
+
+# for linux:
+eval "exec $cmd" | grep -v "READBOX"</pre>
 </div>
 </div>
 <div class="section" id="kakadu">
-<h2>Kakadu<a class="headerlink" href="#kakadu" title="Permalink to this headline">¶</a></h2>
+<h1>Kakadu<a class="headerlink" href="#kakadu" title="Permalink to this headline">¶</a></h1>
 <p>This library is necessary to handle jp2000 images.</p>
 <p><a class="reference external" href="http://www.kakadusoftware.com/">home page</a></p>
 <p>Download binaries from their <a class="reference external" href="http://www.kakadusoftware.com/index.php?option=com_content&amp;task=view&amp;id=26&amp;Itemid=22">download page</a></p>
@@ -122,14 +128,25 @@ a path to fits binary.</p>
 </div>
 </div>
 <div class="section" id="jpylyzer">
-<h2>JPylyzer<a class="headerlink" href="#jpylyzer" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="http://www.openplanetsfoundation.org/software/jpylyzer">home page</a></p>
+<h1>JPylyzer<a class="headerlink" href="#jpylyzer" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://www.openplanetsfoundation.org/software/jpylyzer">JPylyzer home page</a></p>
 <p>Download binary installation from home page. And install it as usual in your operating system.</p>
-<blockquote>
-<div><p><a class="reference external" href="http://digital-preservation.github.com/droid/">Home page</a></p>
-<p>Download <a class="reference external" href="https://github.com/downloads/digital-preservation/droid/droid-binary-6.1-bin.zip">Zip file with binary</a>.</p>
-<p><a class="reference external" href="http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new">http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new</a></p>
-</div></blockquote>
+</div>
+<div class="section" id="daitss">
+<h1>Daitss<a class="headerlink" href="#daitss" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://daitss.fcla.edu/">Daitss Home Page</a></p>
+<p>You can use daitss as a web service or as local program.</p>
+<p>See <a class="reference external" href="https://daitss.pubwiki.fcla.edu/wiki/index.php/DAITSS_2_Software_Installation_Guide">Software Installation Guide</a>.</p>
+<p>See <a class="reference external" href="https://share.fcla.edu/FDAPublic/DAITSS/Chapter_2_Getting_Started.pdf">Getting started</a>.</p>
+<p>set in file <tt class="docutils literal"><span class="pre">differ-common/common.properties</span></tt>
+an url for daitss web service.</p>
+<p>It can be local or external.</p>
+<div class="highlight-python"><pre>daitssHTTPExtractor.url=http://description.fcla.edu/description</pre>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p>En external web service is slow and it accepts files just smaller than 40MB.</p>
+<p class="last">It is better to install local web service for huge amount of files to process.</p>
 </div>
 </div>
 
@@ -141,16 +158,14 @@ a path to fits binary.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Installation</a><ul>
-<li><a class="reference internal" href="#exiftool">Exiftool</a></li>
+<li><a class="reference internal" href="#">Exiftool</a></li>
 <li><a class="reference internal" href="#exiv2">Exiv2</a></li>
 <li><a class="reference internal" href="#jhove">JHOVE</a></li>
 <li><a class="reference internal" href="#imagemagick">Imagemagick</a></li>
 <li><a class="reference internal" href="#fits">FITS</a></li>
 <li><a class="reference internal" href="#kakadu">Kakadu</a></li>
 <li><a class="reference internal" href="#jpylyzer">JPylyzer</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#daitss">Daitss</a></li>
 </ul>
 
   <h3>This Page</h3>
@@ -181,7 +196,7 @@ a path to fits binary.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../genindex/" title="General Index"
              >index</a></li>
-        <li><a href="../">Differ Documentation 0.5 documentation</a> &raquo;</li> 
+        <li><a href="../">The Image Validator Documentation 0.5 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

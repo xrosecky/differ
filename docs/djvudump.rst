@@ -1,4 +1,4 @@
-DjvuDump
+DjVuDump
 ........
 
 od verze 16 do v26 umi DJVU
