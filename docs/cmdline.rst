@@ -54,9 +54,6 @@ Program usage
    The program will print properties in a format that can be used to choose properties to print in future
    c:\> differ.bat --show-properties
 
-
-
-
 Program output when validating image
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -68,8 +65,7 @@ Program output when comparing images
 .. literalinclude:: outputs/cmdline-compare.txt
 
 
-Program output examples
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. literalinclude:: examples.rst
+.. note::
+   
+   You can see a lot of examples of metadata extractor's outputs in a directory =examples=.
 
