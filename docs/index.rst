@@ -72,7 +72,7 @@ Recognized Extractor Outputs
 .. include:: jpylyzer.rst
 
 .. include:: kdu.rst
-b
+
 Installation
 ------------
 
@@ -82,6 +82,8 @@ Command Line Application
 ------------------------
 
 .. include:: cmdline.rst
+
+.. include:: improvements.rst
 
 Examples of validation results
 ------------------------------
