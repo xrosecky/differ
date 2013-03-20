@@ -175,3 +175,16 @@ It can be local or external.
    En external web service is slow and it accepts files just smaller than 40MB.
 
    It is better to install local web service for huge amount of files to process.
+
+
+DJVuDump
+........
+
+http://www.djvuzone.org/support/tutorial/index.html
+
+http://djvu.sourceforge.net/doc/index.html
+
+::
+
+   # for debian linux
+   root@treebeard:~# aptitude install djvulibre-bin

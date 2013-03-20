@@ -125,32 +125,3 @@ ExifTool
         </div>
 
 
-
-Significant Properties
-~~~~~~~~~~~~~~~~~~~~~~~	 
-
-
-
-   ==========================    =================================================================================
-   Information                   Value from an example
-   ==========================    =================================================================================
-   Identification
-   
-   File size
-   Type of format
-   MIME type
-   Software type
-   File last modified
-   Image width
-   Image height
-   Resolution horizontal
-   Resolution vertical
-   Compression
-   Encoding process
-   Color depth
-   Number of channels
-   Compression quality
-
-   Validation
-   Characterization
-   

@@ -36,4 +36,22 @@ Things to improve
 
     Each program than identifies some properties of an image is welcome.
 
+- add a way to exclude properties than user does not need ::
 
+    A user will choose properties that will be shown.
+
+- improve an iteration process of recognizing new properties ::
+    
+    It is difficult to observe all properties that metadata extractors offer.
+    So it is posible that some of properties remain unrecognized and they are not never used.
+
+    It would be great to offer some debug mode when an application shows all unused properties.
+    At the end of an iteration an application will show no unused property.
+
+    Or something else. Each improvement is welcome.
+
+- add more metadata extractors for djvudump ::
+
+    There are more binaries than understand djvu format. See http://djvu.sourceforge.net/doc/index.html.
+    Is there some program that recognizes interesting properties of this image format?
+  

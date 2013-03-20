@@ -59,19 +59,21 @@ Recognized Extractor Outputs
 
 .. include:: exiftool.rst
 
-.. include:: fits.rst
-
-.. include:: daitss.rst
-
-.. include:: imagemagick.rst
+.. include:: exiv2.rst
 
 .. include:: jhove.rst
 
-.. include:: djvudump.rst
+.. include:: imagemagick.rst
+
+.. include:: fits.rst
+
+.. include:: kdu.rst
 
 .. include:: jpylyzer.rst
 
-.. include:: kdu.rst
+.. include:: daitss.rst
+
+.. include:: djvudump.rst
 
 Installation
 ------------

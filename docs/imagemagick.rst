@@ -125,8 +125,6 @@ IMAGEMAGICK
 
         </div>
 
-
-
 `output of imagemagick <../../outputs/imagemagick.raw>`_
 	 
    
