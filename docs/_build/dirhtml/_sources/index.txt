@@ -52,7 +52,26 @@ The Image Validator collects significant properties from various image data extr
 process them and shows them to a user so that he or she can easily compare two images and controls 
 a tranformation process.
 
+
+Project webpage: http://differ.nkp.cz:8080/differ/ (BETA)
+
+Project source code: http://github.com/jstavel/differ/differ
+
+Presentation: http://www.youtube.com/watch?v=2u0MxhOZ5h8
+
+Presentation Lighting talk at GSOC2012: https://docs.google.com/folder/d/0B-c5jwGzSQyPOC1JWjhnXzZKSXM/edit?docId=0Bw7eDY6ebeEdcGdyc2luSXNsTkE
+
+Project poster: https://docs.google.com/file/d/0B9Ah7Og9gY_ORi1kandLZVJ2NEU/edit?usp=sharing
+
+Last year project’s topics GSOC 2012: https://github.com/moravianlibrary/differ/wiki/GSoC
+
 .. include:: introduction.rst
+
+
+Things to improve (Ideas list)
+------------------------------
+
+.. include:: improvements.rst
 
 Recognized Extractor Outputs
 ----------------------------
@@ -84,8 +103,6 @@ Command Line Application
 ------------------------
 
 .. include:: cmdline.rst
-
-.. include:: improvements.rst
 
 Examples of validation results
 ------------------------------

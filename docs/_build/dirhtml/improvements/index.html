@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Things to improve &mdash; The Image Validator Documentation 0.5 documentation</title>
+    <title>Web interface (GUI) improvement &mdash; The Image Validator Documentation 0.5 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -43,12 +43,86 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="things-to-improve">
-<h1>Things to improve<a class="headerlink" href="#things-to-improve" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="web-interface-gui-improvement">
+<h1>Web interface (GUI) improvement<a class="headerlink" href="#web-interface-gui-improvement" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p class="first">to design of the existing GUI, preserving all the existing functionality</p>
+</li>
+<li><p class="first">to add and review new features</p>
+<div class="highlight-python"><pre>Widgets, Button, Functionalities, Traffic, Results, Compare, etc.</pre>
+</div>
+</li>
+<li><p class="first">to add content into project webpage</p>
+<div class="highlight-python"><pre>About, Documentation, FAQ, TOS, Help, etc.</pre>
+</div>
+</li>
+</ul>
+<p>Any thoughts and improvement are welcome :)</p>
+<p>required skills:</p>
+<ul class="simple">
+<li>Java</li>
+<li>Java Image IO and Image processing</li>
+<li>JUnit testing</li>
+<li>Excellent English (writing and speaking)</li>
+</ul>
+<p>desirable skills:</p>
+<ul class="simple">
+<li>Spring framework</li>
+<li>experience with continuous integration</li>
+<li>Vaadin / GWT (google web toolkit)</li>
+</ul>
+</div>
+<div class="section" id="organization-and-mapping-tools-xml-output-into-web-api">
+<h1>Organization and mapping tool’s XML output into web API<a class="headerlink" href="#organization-and-mapping-tools-xml-output-into-web-api" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p class="first">to improve current functionalities</p>
+</li>
+<li><p class="first">more properties and statistics extracted from an image</p>
+<div class="highlight-python"><pre>`Histogram` or `Color map` extracted from an image can help with comparing of two images.</pre>
+</div>
+</li>
+<li><p class="first">to create a thumbnail of an image and to add it into report</p>
+<div class="highlight-python"><pre>User could view image in a report.</pre>
+</div>
+</li>
+<li><p class="first">to suggest and implement useful tools for identification, validation and characterization</p>
+<p>Great focus is on file format validations. We do not have many tools for JPEG 2000 and DjVu file format,
+see <a class="reference external" href="http://djvu.sourceforge.net/doc/index.html">http://djvu.sourceforge.net/doc/index.html</a>.</p>
+</li>
+<li><p class="first">result of comparion can be in other than text format</p>
+<div class="highlight-python"><pre>It could be great to have a comparison report in `html`.
+Or in `pdf`. Report can be done using JasperReport or Docbook or something similar.</pre>
+</div>
+</li>
+<li><p class="first">to implement tests and to apply continuous integration practice</p>
+<div class="highlight-python"><pre>Tests for significant properties processing.
+Tests for xml export
+    - whether it contains all extracted significant properties that
+      are shown at text output.
+Tests for export XML reports to REST API.
+
+Apply continuous integration practice using site such as www.travis-ci.org.</pre>
+</div>
+</li>
+</ul>
+<p>required skills:</p>
+<ul class="simple">
+<li>Java</li>
+<li>XSLT</li>
+<li>JUnit testing</li>
+</ul>
+<p>desirable skills:</p>
+<ul class="simple">
+<li>Spring framework</li>
+<li>experience with continuous integration</li>
+</ul>
+</div>
+<div class="section" id="improvements-of-existing-functionalities-and-add-new-ones">
+<h1>Improvements of existing functionalities and add new ones<a class="headerlink" href="#improvements-of-existing-functionalities-and-add-new-ones" title="Permalink to this headline">¶</a></h1>
 <ul>
 <li><p class="first">significant properties processing is slow</p>
 <div class="highlight-python"><pre>There are a lot of properties that program must collects and normalizes.
-They are stored in ArrayList structure. It is necessary to select given properties
+They are stored in ArrayList structure. It is often necessary to select given properties
 by its own name.
 
 Implementing some kind of index by property name must speed up an aplication.
@@ -60,46 +134,35 @@ At least ArrayHash by property name could help.</pre>
 calling some class methods. It must speed up an application a lot.</pre>
 </div>
 </li>
-<li><p class="first">result of comparion can be in other than text format</p>
-<div class="highlight-python"><pre>It could be great to have comparison report in `html`.
-Or in `pdf`.</pre>
-</div>
-</li>
-<li><p class="first">more properties and statistics extracted from an image</p>
-<div class="highlight-python"><pre>`Histogram` or `Color map` of an image can help with comparing of two images.</pre>
-</div>
-</li>
-<li><p class="first">create a thumbnail of an image and add it into report</p>
-<div class="highlight-python"><pre>User could view image in a report.</pre>
-</div>
-</li>
-<li><p class="first">make a program distributed using <tt class="docutils literal"><span class="pre">RabbitMQ</span></tt>, <tt class="docutils literal"><span class="pre">Apache</span> <span class="pre">ActiveMQ</span></tt></p>
-<div class="highlight-python"><pre>Mainly due to slow external metadata extractors.</pre>
-</div>
-</li>
-<li><p class="first">add more metadata extractors</p>
-<div class="highlight-python"><pre>Each program than identifies some properties of an image is welcome.</pre>
+<li><p class="first">make a program distributed using <tt class="docutils literal"><span class="pre">RabbitMQ</span></tt> or <tt class="docutils literal"><span class="pre">Apache</span> <span class="pre">ActiveMQ</span></tt></p>
+<div class="highlight-python"><pre>The intention is to run the external processes in a separate
+JVM to be more robust and to offer standard integration pattern.</pre>
 </div>
 </li>
 <li><p class="first">add a way to exclude properties than user does not need</p>
 <div class="highlight-python"><pre>A user will choose properties that will be shown.</pre>
 </div>
 </li>
-<li><p class="first">improve an iteration process of recognizing new properties</p>
+<li><p class="first">to improve an iteration process of recognizing new properties</p>
 <div class="highlight-python"><pre>It is difficult to observe all properties that metadata extractors offer.
-So it is posible that some of properties remain unrecognized and they are not never used.
+So it is possible that some of properties remain unrecognized and they are not never used.
 
 It would be great to offer some debug mode when an application shows all unused properties.
-At the end of an iteration an application will show no unused property.
-
-Or something else. Each improvement is welcome.</pre>
+At the end of an iteration (ie. configuration) an application will show no unused property.</pre>
 </div>
 </li>
-<li><p class="first">add more metadata extractors for djvudump</p>
-<div class="highlight-python"><pre>There are more binaries than understand djvu format. See http://djvu.sourceforge.net/doc/index.html.
-Is there some program that recognizes interesting properties of this image format?</pre>
-</div>
-</li>
+</ul>
+<p>Or something else. Each improvement is welcome.</p>
+<p>requirements:</p>
+<ul class="simple">
+<li>Java</li>
+<li>XSLT</li>
+<li>JUnit testing</li>
+</ul>
+<p>desirable skills:</p>
+<ul class="simple">
+<li>Spring framework</li>
+<li>experience with continuous integration</li>
 </ul>
 </div>
 
@@ -109,6 +172,13 @@ Is there some program that recognizes interesting properties of this image forma
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Web interface (GUI) improvement</a></li>
+<li><a class="reference internal" href="#organization-and-mapping-tools-xml-output-into-web-api">Organization and mapping tool’s XML output into web API</a></li>
+<li><a class="reference internal" href="#improvements-of-existing-functionalities-and-add-new-ones">Improvements of existing functionalities and add new ones</a></li>
+</ul>
+
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/improvements.txt"
