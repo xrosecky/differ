@@ -57,7 +57,7 @@ a tranformation process.
 Links related to the project
 ............................
 
-.. list-table:: 
+.. list-table::  
    :header-rows: 0
 
    * - project webpage
