@@ -1,5 +1,5 @@
 Web interface (GUI) improvement
-...............................
+-------------------------------
 
 - to design of the existing GUI, preserving all the existing functionality
 - to add and review new features ::
@@ -27,7 +27,7 @@ desirable skills:
 - Vaadin / GWT (google web toolkit)
 
 Organization and mapping tool’s XML output into web API
-.......................................................
+-------------------------------------------------------
 
 - to improve current functionalities
 
@@ -72,7 +72,7 @@ desirable skills:
 - experience with continuous integration
 
 Improvements of existing functionalities and add new ones
-..........................................................
+---------------------------------------------------------
 
 - significant properties processing is slow ::
     
