@@ -49,7 +49,8 @@ project webpage
 project source code
 ...................
 
-     - http://github.com/jstavel/differ/differ
+     - http://github.com/jstavel/differ
+
 presentation
 ............
 
@@ -105,10 +106,11 @@ Links related to the project
    :header-rows: 0
 
    * - project webpage
-     - http://differ.nkp.cz:8080/differ/ (BETA)
      - http://differ.nkp.czdiffer/
+   * - project webpage BETA
+     - http://differ.nkp.cz:8080/differ/ (BETA)
    * - project source code
-     - http://github.com/jstavel/differ/differ
+     - http://github.com/jstavel/differ
    * - presentation
      - http://www.youtube.com/watch?v=2u0MxhOZ5h8
    * - presentation Lighting talk at GSOC2012
