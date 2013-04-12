@@ -44,7 +44,7 @@ project webpage
 ...............
 
      - http://differ.nkp.cz:8080/differ/ (BETA)
-     - http://differ.nkp.czdiffer/
+     - http://differ.nkp.cz/differ/
 
 project source code
 ...................
