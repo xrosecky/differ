@@ -37,6 +37,11 @@ Ideas List - Google Summer of Code 2013
 
 .. include:: improvements.rst
 
+Important parts of a project
+----------------------------
+
+.. include:: important_parts.rst
+
 Links related to the project
 ----------------------------
 
