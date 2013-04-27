@@ -79,50 +79,6 @@ public class DifferApplication extends TPTApplication {
 	//Add this as a listener to the context transaction event pump
 	context.addTransactionListener(this);
 
-	//Load Differ Properties into JVM
-	File differProps = new File(new File(getHomeDirectory(), "resources"), "differ.properties");
-	if (differProps.exists() && differProps.canRead()) {
-	    FileInputStream propStream = null;
-	    try {
-		propStream = new FileInputStream(differProps);
-		System.getProperties().load(propStream);
-		LOGGER.info("Loaded differ.properties");
-	    } catch (IOException e) {
-		LOGGER.error("Unable to load differ.properties!", e);
-	    } finally {
-		if (propStream != null) {
-		    try {
-			propStream.close();
-		    } catch (IOException e) {
-			LOGGER.error("Unable to close differ.properties file stream.", e);
-		    }
-		}
-	    }
-	}
-
-	//Setup Apache Log4j Configuration for file logging if the property is set in differ props
-	if (System.getProperty("differ.logging.file") != null && System.getProperty("differ.logging.file").equalsIgnoreCase("true")) {
-
-	    String fileLocation = System.getProperty("differ.logging.file.location");
-	    if (fileLocation == null) {
-		//Create a logging file in the logs directory that is names by the current nanotime
-		Calendar cal = Calendar.getInstance();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
-		String fileName = sdf.format(cal.getTime()) + ".log";
-		fileLocation = new File(new File(getHomeDirectory(), "logs"), fileName).getAbsolutePath();
-	    }
-
-	    File loggingFile = new File(fileLocation);
-	    if (loggingFile.exists()) {
-		LOGGER.warn("differ.logging.file.location is an invalid location");
-	    } else {
-		try {
-		    BasicConfigurator.configure(new FileAppender(new PatternLayout(PatternLayout.DEFAULT_CONVERSION_PATTERN), loggingFile.getAbsolutePath()));
-		} catch (IOException e) {
-		    LOGGER.error("Unable to create logging file", e);
-		}
-	    }
-	}
 	ServletContext servletContext = ((WebApplicationContext) this.getContext()).getHttpSession().getServletContext();
         applicationContext = WebApplicationContextUtils.getRequiredWebApplicationContext(servletContext);
 	userManager = (UserManager) applicationContext.getBean("userManager");
@@ -179,6 +135,7 @@ public class DifferApplication extends TPTApplication {
 	return (DifferApplication) TPTApplication.getCurrentApplication();
     }
 
+    /*
     public static File getHomeDirectory() {
 	if (differHome == null) {
 	    differHome = System.getProperty("user.home");
@@ -219,6 +176,7 @@ public class DifferApplication extends TPTApplication {
 
 	return homeDir;
     }
+    */ 
 
     public float getScreenWidth() {
 	return getMainWindow().getWidth();

@@ -1,7 +1,7 @@
 package cz.nkp.differ.compare.metadata.external;
 
+import cz.nkp.differ.compare.metadata.AbstractMetadataExtractor;
 import cz.nkp.differ.compare.metadata.ImageMetadata;
-import cz.nkp.differ.compare.metadata.MetadataExtractor;
 import cz.nkp.differ.compare.metadata.MetadataSource;
 import cz.nkp.differ.compare.metadata.external.ResultTransformer.Entry;
 import cz.nkp.differ.plugins.tools.CommandRunner;
@@ -17,7 +17,7 @@ import java.util.Map;
  *
  * @author xrosecky
  */
-public class ExternalMetadataExtractor implements MetadataExtractor {
+public class ExternalMetadataExtractor extends AbstractMetadataExtractor {
 
     private List<String> programArguments;
     private ResultTransformer transformer;
@@ -57,8 +57,12 @@ public class ExternalMetadataExtractor implements MetadataExtractor {
     }
 
     @Override
-    public List<ImageMetadata> getMetadata(File a) {
-	return this.getMetadata(Collections.singletonMap("{file}", a.getAbsolutePath()));
+    public List<ImageMetadata> getMetadata(File file) {
+        if (super.isSupported(file)) {
+            return this.getMetadata(Collections.singletonMap("{file}", file.getAbsolutePath()));
+        } else {
+            return Collections.emptyList();
+        }
     }
 
     public List<ImageMetadata> getMetadata(Map<String, String> attributes) {
