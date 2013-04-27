@@ -21,6 +21,18 @@ Text report output, main class for cmdline application, various formating classe
 
   https://github.com/jstavel/differ/tree/master/differ-cmdline/src/main/java/cz/nkp/differ/cmdline
 
+Main Class, that fills list of extracted metadata and do all required reports is
+
+  https://github.com/jstavel/differ/blob/master/differ-cmdline/src/main/java/cz/nkp/differ/cmdline/Main.java
+
+Structure that hold all informations being extracted from all external image metadata extractors is
+
+  https://github.com/jstavel/differ/blob/master/differ-common/src/main/java/cz/nkp/differ/compare/io/ImageProcessorResult.java
+
+A piece of an image metadata is
+
+  https://github.com/jstavel/differ/blob/master/differ-common/src/main/java/cz/nkp/differ/compare/metadata/ImageMetadata.java
+
 
 Documentation
 .............
