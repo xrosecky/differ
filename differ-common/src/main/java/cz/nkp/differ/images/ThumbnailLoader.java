@@ -4,7 +4,8 @@ import cz.nkp.differ.exceptions.ImageDifferException;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-/**
+/**	This class loads up the image and repaints it in the specified way
+ *  Images are loaded on the fly the first time and saved until called next time
  *	 @author Jonatan Svensson
  */
 public ThumbnailLoader implements ImageLoader {
@@ -15,9 +16,10 @@ public ThumbnailLoader implements ImageLoader {
     
     }
     
-    public BufferedImage resize(BufferedImage){
+    public BufferedImage resize(BufferedImage, int width, int height){
     	
     	return null;
     }
+
 
 }
