@@ -274,7 +274,25 @@ public class ImageFileAnalysisContainer {
         chart.setHeight(scaleFactor, Component.UNITS_PIXELS);
         return chart;
     }
-
+    
+    /**
+     * Set up component to generate reports
+     *
+     */
+    public void setupExport(final Layout mainLayout){
+        Button downloadPDFButton = new Button();
+        downloadPDFButton.setCaption("Download as PDF");
+        // TODO Listener
+        //	generatePDF()
+        // callback from dynamicreports
+        
+        Button downloadXlsButton = new Button();
+        downloadXlsButton.setCaption("Download as Xls");
+        // TODO Listener
+    	// generateXls()
+        // callback from dynamicreports
+    	}
+     
     public Resource imageToResource(Image img) {
         if (img == null) {
             return null;
