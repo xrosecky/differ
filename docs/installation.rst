@@ -136,18 +136,30 @@ Download binaries from their `download page <http://www.kakadusoftware.com/index
 
 Do not forget to set in file ``differ-common/common.properties`` a path to kakadu binary.
 
-To identify and load images it is used ``kdu_expand`` binary.
+To identify and load images ``kdu_expand`` binary is used.
 
 ::
 
-   kakadu.binary=/home/stavel/bin/kdu_expand.sh
+   kakadu.binary=/home/stavel/bin/kdu_expand
 
 JPylyzer
 ........
 
 `JPylyzer home page <http://www.openplanetsfoundation.org/software/jpylyzer>`_
 
-Download binary installation from home page. And install it as usual in your operating system.
+Download binary installation from home page. Install it as usual in your operating system.
+:: 
+
+   # for Ubuntu:
+   sudo apt-get install jpylyzer
+
+
+In order for scripts to run ensure that `xmlstarlet is also installed <http://xmlstar.sourceforge.net/>`_.
+
+:: 
+
+   # for Ubuntu:
+   sudo apt-get install xmlstarlet
 
 Daitss
 .......

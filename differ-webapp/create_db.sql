@@ -1,7 +1,7 @@
-/*
+
 CREATE DATABASE differ;
 GRANT ALL ON differ.* TO 'differ'@'localhost' IDENTIFIED BY 'differ';
-*/
+
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS images;
 

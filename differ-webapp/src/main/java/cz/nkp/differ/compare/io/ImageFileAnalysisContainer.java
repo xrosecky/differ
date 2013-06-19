@@ -278,7 +278,7 @@ public class ImageFileAnalysisContainer {
     /**
      * Set up component to generate reports
      * @author Jonatan Svensson
-     */
+     
     public void setupExport(final Layout mainLayout){
         Button downloadPDFButton = new Button();
         downloadPDFButton.setCaption("Download as PDF");
@@ -293,7 +293,7 @@ public class ImageFileAnalysisContainer {
         // callback from dynamicreports
         
         // add buttons to mainLayout
-    	}
+    	}*/
      
     public Resource imageToResource(Image img) {
         if (img == null) {
