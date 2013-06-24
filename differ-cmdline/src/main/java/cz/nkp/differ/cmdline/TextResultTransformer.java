@@ -227,21 +227,21 @@ public class TextResultTransformer implements ResultTransformer{
         });
         TheSameValueHider propertyNameHider = new TheSameValueHider();
         String output = "";
-        String format = String.format("%%-%ds %%-%ds  %%-%ds\n", keyLength, sourceLength,valueLength);
+        String format = String.format("%%-%ds %%-%ds  %%-%ds  %%-%ds\n", keyLength, sourceLength,valueLength, unitLength);
         String formatWithUnit = String.format("%%-%ds %%s", valueWithUnitLength );
-        output += String.format(format, "Significant Property", "Source", "Value");
+        output += String.format(format, "Significant Property", "Source", "Value", "Unit");
         output += String.format(format,
                 getStringGivenLength(keyLength,'-'),
                 getStringGivenLength(sourceLength,'-'),
-                getStringGivenLength(valueLength,'-'));
+                getStringGivenLength(valueLength,'-'),
+                getStringGivenLength(unitLength,'-'));
 
         for (ImageMetadata metadata: metadataList) {
             output += String.format(format,
                     propertyNameHider.getOrHide(metadata.getKey()),
                     metadata.getSource(),
-                    metadata.getUnit() != null ? String.format(formatWithUnit,metadata.getValue(),
-                                                               metadata.getUnit()) :
-                            metadata.getValue()
+                    metadata.getValue(),
+                    metadata.getUnit() != null ? metadata.getUnit() :  ""
                     );
         }
         output += String.format(format,
