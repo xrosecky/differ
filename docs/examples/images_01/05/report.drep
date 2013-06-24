@@ -444,19 +444,19 @@
         </metadata>
         <metadata>
             <key>Pixels per second</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2.218MB</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">6.139MB</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>User time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.120u</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.100u</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
         <metadata>
             <key>Elapsed time</key>
-            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:05.290</value>
+            <value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0:02.550</value>
             <conflict>false</conflict>
             <source>imagemagick</source>
         </metadata>
@@ -1020,115 +1020,6 @@
             <stdout></stdout>
             <stderr></stderr>
         </source>
-        <source source="daitss" exitCode="0">
-            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-
-&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
-	
-	&lt;!-- premis file object --&gt;
-	&lt;object xsi:type="file"&gt;
-		&lt;objectIdentifier&gt;
-			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
-			&lt;objectIdentifierValue&gt;/tmp/object20130618-1980-1pxxo38-0.png&lt;/objectIdentifierValue&gt;
-		&lt;/objectIdentifier&gt;
-		&lt;objectCharacteristics&gt;
-			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;06acb32b0cc4a16c4b159795609359cf&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;fixity&gt;
-				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
-				&lt;messageDigest&gt;761af562b9d946c2b446d984335a1ee9b5be0ff3&lt;/messageDigest&gt;
-				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
-			&lt;/fixity&gt;
-			&lt;size&gt;11977006&lt;/size&gt;
-			
-			&lt;format&gt;
-				&lt;formatDesignation&gt;
-					&lt;formatName&gt;Portable Network Graphics&lt;/formatName&gt;
-					
-					&lt;formatVersion&gt;1.1&lt;/formatVersion&gt;
-					
-				&lt;/formatDesignation&gt;
-				
-				&lt;formatRegistry&gt;
-					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
-					&lt;formatRegistryKey&gt;fmt/12&lt;/formatRegistryKey&gt;
-				&lt;/formatRegistry&gt;
-				
-				
-			&lt;/format&gt;
-			
-			
-			
-			
-		&lt;/objectCharacteristics&gt;
-		
-		&lt;originalName&gt;05.png&lt;/originalName&gt;
-		
-		
-		
-		
-		&lt;linkingEventIdentifier&gt;
-			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
-			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
-		&lt;/linkingEventIdentifier&gt;
-	&lt;/object&gt;
-	
-
-	
-	&lt;!-- premis bitstream object --&gt;
-	
-	
-
-	&lt;!-- premis event --&gt;
-	&lt;event&gt;
-		&lt;eventIdentifier&gt;
-			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
-			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
-		&lt;/eventIdentifier&gt;
-		&lt;eventType&gt;describe&lt;/eventType&gt;
-		&lt;eventDateTime&gt;2013-06-18T06:21:05-04:00&lt;/eventDateTime&gt;
-		&lt;eventDetail&gt;format identified&lt;/eventDetail&gt;
-		&lt;eventOutcomeInformation&gt;
-			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
-			
-		&lt;/eventOutcomeInformation&gt;
-		&lt;linkingAgentIdentifier&gt;
-			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
-			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.3.1&lt;/linkingAgentIdentifierValue&gt;
-		&lt;/linkingAgentIdentifier&gt;
-		&lt;linkingObjectIdentifier&gt;
-			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
-			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130618-1980-1pxxo38-0.png&lt;/linkingObjectIdentifierValue&gt;
-		&lt;/linkingObjectIdentifier&gt;
-	&lt;/event&gt;
-
-&lt;!-- premis agent --&gt;
-&lt;agent&gt;
-	&lt;agentIdentifier&gt;
-		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
-		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.3.1&lt;/agentIdentifierValue&gt;
-	&lt;/agentIdentifier&gt;
-	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
-	&lt;agentType&gt;Web Service&lt;/agentType&gt;
-	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 67.&lt;/agentNote&gt;
-&lt;/agent&gt;
-&lt;/premis&gt;
-</stdout>
-            <stderr></stderr>
-        </source>
-        <source source="exiv2" exitCode="253">
-            <stdout>File name       : /home/klas/workspace/differ/differ-cmdline/../docs/examples/images_01/05.png
-File size       : 11977006 Bytes
-MIME type       : image/png
-Image size      : 3776 x 2520
-</stdout>
-            <stderr>/home/klas/workspace/differ/differ-cmdline/../docs/examples/images_01/05.png: No Exif data found in the file
-</stderr>
-        </source>
         <source source="imagemagick" exitCode="0">
             <stdout>Image: /home/klas/workspace/differ/differ-cmdline/../docs/examples/images_01/05.png
   Format: PNG (Portable Network Graphics)
@@ -1211,9 +1102,9 @@ Image size      : 3776 x 2520
   Tainted: False
   Filesize: 11.98MBB
   Number pixels: 9.516MB
-  Pixels per second: 2.218MB
-  User time: 1.120u
-  Elapsed time: 0:05.290
+  Pixels per second: 6.139MB
+  User time: 1.100u
+  Elapsed time: 0:02.550
   Version: ImageMagick 6.6.9-7 2012-08-17 Q16 http://www.imagemagick.org
 </stdout>
             <stderr></stderr>
@@ -1221,7 +1112,7 @@ Image size      : 3776 x 2520
         <source source="jhove" exitCode="0">
             <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.6/jhove.xsd" name="Jhove" release="1.6" date="2011-01-04"&gt;
- &lt;date&gt;2013-06-18T12:20:22+02:00&lt;/date&gt;
+ &lt;date&gt;2013-06-20T13:31:01+02:00&lt;/date&gt;
  &lt;repInfo uri="/home/klas/workspace/differ/differ-cmdline/../docs/examples/images_01/05.png"&gt;
   &lt;reportingModule release="1.3" date="2007-04-10"&gt;BYTESTREAM&lt;/reportingModule&gt;
   &lt;lastModified&gt;2013-06-16T17:10:25+02:00&lt;/lastModified&gt;
@@ -1234,10 +1125,119 @@ Image size      : 3776 x 2520
 </stdout>
             <stderr></stderr>
         </source>
+        <source source="daitss" exitCode="0">
+            <stdout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"&gt;
+	
+	&lt;!-- premis file object --&gt;
+	&lt;object xsi:type="file"&gt;
+		&lt;objectIdentifier&gt;
+			&lt;objectIdentifierType&gt;URI&lt;/objectIdentifierType&gt;
+			&lt;objectIdentifierValue&gt;/tmp/object20130620-1980-t07y3g-0.png&lt;/objectIdentifierValue&gt;
+		&lt;/objectIdentifier&gt;
+		&lt;objectCharacteristics&gt;
+			&lt;compositionLevel&gt;0&lt;/compositionLevel&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;MD5&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;06acb32b0cc4a16c4b159795609359cf&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;fixity&gt;
+				&lt;messageDigestAlgorithm&gt;SHA-1&lt;/messageDigestAlgorithm&gt;
+				&lt;messageDigest&gt;761af562b9d946c2b446d984335a1ee9b5be0ff3&lt;/messageDigest&gt;
+				&lt;messageDigestOriginator&gt;Archive&lt;/messageDigestOriginator&gt;
+			&lt;/fixity&gt;
+			&lt;size&gt;11977006&lt;/size&gt;
+			
+			&lt;format&gt;
+				&lt;formatDesignation&gt;
+					&lt;formatName&gt;Portable Network Graphics&lt;/formatName&gt;
+					
+					&lt;formatVersion&gt;1.1&lt;/formatVersion&gt;
+					
+				&lt;/formatDesignation&gt;
+				
+				&lt;formatRegistry&gt;
+					&lt;formatRegistryName&gt;http://www.nationalarchives.gov.uk/pronom&lt;/formatRegistryName&gt;
+					&lt;formatRegistryKey&gt;fmt/12&lt;/formatRegistryKey&gt;
+				&lt;/formatRegistry&gt;
+				
+				
+			&lt;/format&gt;
+			
+			
+			
+			
+		&lt;/objectCharacteristics&gt;
+		
+		&lt;originalName&gt;05.png&lt;/originalName&gt;
+		
+		
+		
+		
+		&lt;linkingEventIdentifier&gt;
+			&lt;linkingEventIdentifierType&gt;URI&lt;/linkingEventIdentifierType&gt;
+			&lt;linkingEventIdentifierValue&gt;1&lt;/linkingEventIdentifierValue&gt;
+		&lt;/linkingEventIdentifier&gt;
+	&lt;/object&gt;
+	
+
+	
+	&lt;!-- premis bitstream object --&gt;
+	
+	
+
+	&lt;!-- premis event --&gt;
+	&lt;event&gt;
+		&lt;eventIdentifier&gt;
+			&lt;eventIdentifierType&gt;URI&lt;/eventIdentifierType&gt;
+			&lt;eventIdentifierValue&gt;1&lt;/eventIdentifierValue&gt;
+		&lt;/eventIdentifier&gt;
+		&lt;eventType&gt;describe&lt;/eventType&gt;
+		&lt;eventDateTime&gt;2013-06-20T07:32:03-04:00&lt;/eventDateTime&gt;
+		&lt;eventDetail&gt;format identified&lt;/eventDetail&gt;
+		&lt;eventOutcomeInformation&gt;
+			&lt;eventOutcome&gt;success&lt;/eventOutcome&gt;
+			
+		&lt;/eventOutcomeInformation&gt;
+		&lt;linkingAgentIdentifier&gt;
+			&lt;linkingAgentIdentifierType&gt;URI&lt;/linkingAgentIdentifierType&gt;
+			&lt;linkingAgentIdentifierValue&gt;info:fda/daitss/description/v2.3.1&lt;/linkingAgentIdentifierValue&gt;
+		&lt;/linkingAgentIdentifier&gt;
+		&lt;linkingObjectIdentifier&gt;
+			&lt;linkingObjectIdentifierType&gt;URI&lt;/linkingObjectIdentifierType&gt;
+			&lt;linkingObjectIdentifierValue&gt;/tmp/object20130620-1980-t07y3g-0.png&lt;/linkingObjectIdentifierValue&gt;
+		&lt;/linkingObjectIdentifier&gt;
+	&lt;/event&gt;
+
+&lt;!-- premis agent --&gt;
+&lt;agent&gt;
+	&lt;agentIdentifier&gt;
+		&lt;agentIdentifierType&gt;URI&lt;/agentIdentifierType&gt;
+		&lt;agentIdentifierValue&gt;info:fda/daitss/description/v2.3.1&lt;/agentIdentifierValue&gt;
+	&lt;/agentIdentifier&gt;
+	&lt;agentName&gt;Format Description Service&lt;/agentName&gt;
+	&lt;agentType&gt;Web Service&lt;/agentType&gt;
+	&lt;agentNote&gt;built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 67.&lt;/agentNote&gt;
+&lt;/agent&gt;
+&lt;/premis&gt;
+</stdout>
+            <stderr></stderr>
+        </source>
         <source source="fits" exitCode="2">
             <stdout></stdout>
             <stderr>/home/klas/lib/fits/fits.sh: rad 48: oväntat filslut vid sökning efter matchande """
 /home/klas/lib/fits/fits.sh: rad 50: syntaxfel: oväntat filslut
+</stderr>
+        </source>
+        <source source="exiv2" exitCode="253">
+            <stdout>File name       : /home/klas/workspace/differ/differ-cmdline/../docs/examples/images_01/05.png
+File size       : 11977006 Bytes
+MIME type       : image/png
+Image size      : 3776 x 2520
+</stdout>
+            <stderr>/home/klas/workspace/differ/differ-cmdline/../docs/examples/images_01/05.png: No Exif data found in the file
 </stderr>
         </source>
         <source source="exiftool" exitCode="0">

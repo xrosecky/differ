@@ -50,7 +50,7 @@
 <span class="k">do</span>
 <span class="k">    </span><span class="nv">OUTPUT</span><span class="o">=</span>outputs/jpylyzer/<span class="nv">$FILE</span>.raw
     <span class="nb">echo</span> -e <span class="s2">&quot;images/$FILE \t -&gt; $OUTPUT&quot;</span>
-    jpylyzer --verbose <span class="s2">&quot;images/$FILE&quot;</span>  | xmlstarlet fo &gt; ~/test/<span class="nv">$FILE</span>
+    jpylyzer --verbose <span class="s2">&quot;images/$FILE&quot;</span>  | xmlstarlet fo &gt; <span class="nv">$OUTPUT</span>
 <span class="k">done</span>
 </pre></div>
 </div>
