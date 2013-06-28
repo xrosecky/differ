@@ -5,13 +5,15 @@ import org.apache.log4j.Logger;
 import com.vaadin.Application;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.Window;
+
 import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.model.Image;
 import cz.nkp.differ.listener.ProgressListener;
-
 import cz.nkp.differ.plugins.tools.PluginPollingThread;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,6 +53,7 @@ public class CompareComponent {
     }
 
     public Component getPluginDisplayComponent(ProgressListener c) {
+        VerticalLayout layout = new VerticalLayout();
 	ImageProcessor imageProcessor = (ImageProcessor) DifferApplication.getApplicationContext().getBean("imageProcessor");
 	if (images.length == 2) {
 	    ImageProcessorResult[] result = null;
@@ -59,36 +62,50 @@ public class CompareComponent {
 	    } catch (Exception ex) {
 		ex.printStackTrace();
 	    }
-	    HorizontalLayout layout = new HorizontalLayout();
+	    HorizontalLayout childALayout = new HorizontalLayout();
+            HorizontalLayout childBLayout = new HorizontalLayout();
 	    ImageFileAnalysisContainer iFAC1 = new ImageFileAnalysisContainer(result[0], this);
-	    layout.addComponent(iFAC1.getComponent());
+	    childALayout.addComponent(iFAC1.getComponent());
 	    ImageFileAnalysisContainer iFAC2 = new ImageFileAnalysisContainer(result[1], this);
-	    layout.addComponent(iFAC2.getComponent());
+	    childALayout.addComponent(iFAC2.getComponent());
+            ImageMetadataTableGen table = new ImageMetadataTableGen(new ImageProcessorResult[] {result[0], result[1]}, this);
+            ImageMetadataTableGen tableComp = null;
 	    if (result[2] != null) {
 		ImageFileAnalysisContainer iFAC3 = new ImageFileAnalysisContainer(result[2], this);
-		layout.addComponent(iFAC3.getComponent());
+		childALayout.addComponent(iFAC3.getComponent());
 		iFACs.addAll(Arrays.asList(iFAC1, iFAC2, iFAC3));
+                tableComp = new ImageMetadataTableGen(new ImageProcessorResult[] {result[2]}, this);
 	    } else {
 		TextField errorComponent = new TextField();
 		errorComponent.setValue("Images can't be compared.");
 		errorComponent.setReadOnly(true);
-		layout.addComponent(errorComponent);
+		childALayout.addComponent(errorComponent);
 		iFACs.addAll(Arrays.asList(iFAC1, iFAC2));
-	    }
+	    }  
+            childBLayout.addComponent(table.getComponent());
+            if (tableComp != null) {
+                childBLayout.addComponent(tableComp.getComponent());
+            }
+            layout.addComponent(childALayout);
+            layout.addComponent(childBLayout);
 	    return layout;
 	} else {
-	    HorizontalLayout layout = new HorizontalLayout();
-	    for (Image image : images) {
+	    HorizontalLayout childLayout = new HorizontalLayout();
+            ImageProcessorResult[] result = new ImageProcessorResult[images.length];
+            for (int i = 0; i < images.length; i++) {
 		try {
-		    ImageProcessorResult result = imageProcessor.processImage(image.getFile(), c);
-		    ImageFileAnalysisContainer iFAC = new ImageFileAnalysisContainer(result, this);
-		    layout.addComponent(iFAC.getComponent());
+		    result[i] = imageProcessor.processImage(images[i].getFile(), c);
+		    ImageFileAnalysisContainer iFAC = new ImageFileAnalysisContainer(result[i], this);
+		    childLayout.addComponent(iFAC.getComponent());
 		    iFACs.add(iFAC);
 		} catch (Exception ex) {
 		    ex.printStackTrace();
 		    throw new RuntimeException(ex);
 		}
 	    }
+            layout.addComponent(childLayout);
+            ImageMetadataTableGen table = new ImageMetadataTableGen(result, this);
+            layout.addComponent(table.getComponent());
 	    return layout;
 	}
     }
