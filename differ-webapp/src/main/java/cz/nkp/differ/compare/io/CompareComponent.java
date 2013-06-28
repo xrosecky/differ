@@ -1,5 +1,6 @@
 package cz.nkp.differ.compare.io;
 
+import cz.nkp.differ.compare.io.generators.ImageMetadataComponentGenerator;
 import org.apache.log4j.Logger;
 
 import com.vaadin.Application;
@@ -68,13 +69,13 @@ public class CompareComponent {
 	    childALayout.addComponent(iFAC1.getComponent());
 	    ImageFileAnalysisContainer iFAC2 = new ImageFileAnalysisContainer(result[1], this);
 	    childALayout.addComponent(iFAC2.getComponent());
-            ImageMetadataTableGen table = new ImageMetadataTableGen(new ImageProcessorResult[] {result[0], result[1]}, this);
-            ImageMetadataTableGen tableComp = null;
+            ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(new ImageProcessorResult[] {result[0], result[1]}, this);
+            ImageMetadataComponentGenerator tableComp = null;
 	    if (result[2] != null) {
 		ImageFileAnalysisContainer iFAC3 = new ImageFileAnalysisContainer(result[2], this);
 		childALayout.addComponent(iFAC3.getComponent());
 		iFACs.addAll(Arrays.asList(iFAC1, iFAC2, iFAC3));
-                tableComp = new ImageMetadataTableGen(new ImageProcessorResult[] {result[2]}, this);
+                tableComp = new ImageMetadataComponentGenerator(new ImageProcessorResult[] {result[2]}, this);
 	    } else {
 		TextField errorComponent = new TextField();
 		errorComponent.setValue("Images can't be compared.");
@@ -104,7 +105,7 @@ public class CompareComponent {
 		}
 	    }
             layout.addComponent(childLayout);
-            ImageMetadataTableGen table = new ImageMetadataTableGen(result, this);
+            ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(result, this);
             layout.addComponent(table.getComponent());
 	    return layout;
 	}

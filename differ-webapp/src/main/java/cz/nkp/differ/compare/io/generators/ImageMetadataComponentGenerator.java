@@ -1,4 +1,4 @@
-package cz.nkp.differ.compare.io;
+package cz.nkp.differ.compare.io.generators;
 
 import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
@@ -12,6 +12,8 @@ import com.vaadin.ui.Layout;
 import com.vaadin.ui.Table;
 import com.vaadin.ui.HorizontalLayout;
 import cz.nkp.differ.DifferApplication;
+import cz.nkp.differ.compare.io.CompareComponent;
+import cz.nkp.differ.compare.io.ImageProcessorResult;
 import cz.nkp.differ.compare.metadata.MetadataSource;
 import cz.nkp.differ.gui.windows.RawDataWindow;
 import java.util.Arrays;
@@ -21,7 +23,7 @@ import java.util.List;
  *
  * @author Thomas Truax
  */
-public class ImageMetadataTableGen {
+public class ImageMetadataComponentGenerator {
 
     private ImageProcessorResult[] result;
     private List<String> nonConflictMetadata = Arrays.asList("exit-code");
@@ -32,7 +34,7 @@ public class ImageMetadataTableGen {
      * @param ImageProcessorResult
      * @param CompareComponent 
      */
-    public ImageMetadataTableGen(ImageProcessorResult result, CompareComponent parent) {
+    public ImageMetadataComponentGenerator(ImageProcessorResult result, CompareComponent parent) {
         this.result = new ImageProcessorResult[] {result};
         this.parent = parent;
     }
@@ -42,7 +44,7 @@ public class ImageMetadataTableGen {
      * @param ImageProcessorResult[]
      * @param CompareComponent
      */
-    public ImageMetadataTableGen(ImageProcessorResult[] result, CompareComponent parent) {
+    public ImageMetadataComponentGenerator(ImageProcessorResult[] result, CompareComponent parent) {
         this.result = result;
         this.parent = parent;
     }
