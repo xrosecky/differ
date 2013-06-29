@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+	
+	<!-- premis file object -->
+	<object xsi:type="file">
+		<objectIdentifier>
+			<objectIdentifierType>URI</objectIdentifierType>
+			<objectIdentifierValue>/tmp/object20130304-1938-12w4j3k-0.jpg</objectIdentifierValue>
+		</objectIdentifier>
+		<objectCharacteristics>
+			<compositionLevel>0</compositionLevel>
+			<fixity>
+				<messageDigestAlgorithm>MD5</messageDigestAlgorithm>
+				<messageDigest>31daecf70ac0b0ccecc6e0a8305bd465</messageDigest>
+				<messageDigestOriginator>Archive</messageDigestOriginator>
+			</fixity>
+			<fixity>
+				<messageDigestAlgorithm>SHA-1</messageDigestAlgorithm>
+				<messageDigest>9af5b648f5ed630d50fcf3086dd48caef377761c</messageDigest>
+				<messageDigestOriginator>Archive</messageDigestOriginator>
+			</fixity>
+			<size>347724</size>
+			
+			<format>
+				<formatDesignation>
+					<formatName>Raw JPEG Stream</formatName>
+					
+				</formatDesignation>
+				
+				<formatRegistry>
+					<formatRegistryName>http://www.nationalarchives.gov.uk/pronom</formatRegistryName>
+					<formatRegistryKey>fmt/41</formatRegistryKey>
+				</formatRegistry>
+				
+				
+			</format>
+			
+			
+			
+			
+			<objectCharacteristicsExtension>
+				<mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd">
+  <mix:BasicDigitalObjectInformation>
+    <mix:ObjectIdentifier>
+      <mix:objectIdentifierType>JHOVE</mix:objectIdentifierType>
+    </mix:ObjectIdentifier>
+    <mix:byteOrder>big endian</mix:byteOrder>
+    <mix:Compression>
+      <mix:compressionScheme>JPEG</mix:compressionScheme>
+    </mix:Compression>
+  </mix:BasicDigitalObjectInformation>
+  <mix:BasicImageInformation>
+    <mix:BasicImageCharacteristics>
+      <mix:imageWidth>512</mix:imageWidth>
+      <mix:imageHeight>512</mix:imageHeight>
+    </mix:BasicImageCharacteristics>
+  </mix:BasicImageInformation>
+  <mix:ImageAssessmentMetadata>
+    <mix:ImageColorEncoding>
+      <mix:BitsPerSample>
+        <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+        <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+        <mix:bitsPerSampleUnit>integer</mix:bitsPerSampleUnit>
+      </mix:BitsPerSample>
+      <mix:samplesPerPixel>3</mix:samplesPerPixel>
+    </mix:ImageColorEncoding>
+  </mix:ImageAssessmentMetadata>
+</mix:mix>
+			</objectCharacteristicsExtension>
+			
+		</objectCharacteristics>
+		
+		<originalName>05.jpg</originalName>
+		
+		
+		
+		
+		<linkingEventIdentifier>
+			<linkingEventIdentifierType>URI</linkingEventIdentifierType>
+			<linkingEventIdentifierValue>1</linkingEventIdentifierValue>
+		</linkingEventIdentifier>
+	</object>
+	
+
+	
+	<!-- premis bitstream object -->
+	
+	
+
+	<!-- premis event -->
+	<event>
+		<eventIdentifier>
+			<eventIdentifierType>URI</eventIdentifierType>
+			<eventIdentifierValue>1</eventIdentifierValue>
+		</eventIdentifier>
+		<eventType>describe</eventType>
+		<eventDateTime>2013-03-04T08:12:08-05:00</eventDateTime>
+		<eventDetail>Well-Formed and valid</eventDetail>
+		<eventOutcomeInformation>
+			<eventOutcome>success</eventOutcome>
+			
+		</eventOutcomeInformation>
+		<linkingAgentIdentifier>
+			<linkingAgentIdentifierType>URI</linkingAgentIdentifierType>
+			<linkingAgentIdentifierValue>info:fda/daitss/description/v2.2.0</linkingAgentIdentifierValue>
+		</linkingAgentIdentifier>
+		<linkingObjectIdentifier>
+			<linkingObjectIdentifierType>URI</linkingObjectIdentifierType>
+			<linkingObjectIdentifierValue>/tmp/object20130304-1938-12w4j3k-0.jpg</linkingObjectIdentifierValue>
+		</linkingObjectIdentifier>
+	</event>
+
+<!-- premis agent -->
+<agent>
+	<agentIdentifier>
+		<agentIdentifierType>URI</agentIdentifierType>
+		<agentIdentifierValue>info:fda/daitss/description/v2.2.0</agentIdentifierValue>
+	</agentIdentifier>
+	<agentName>Format Description Service</agentName>
+	<agentType>Web Service</agentType>
+	<agentNote>built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.</agentNote>
+</agent>
+</premis>

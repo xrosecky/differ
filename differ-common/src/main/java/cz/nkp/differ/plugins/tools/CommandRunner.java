@@ -14,7 +14,7 @@ import java.util.List;
 public class CommandRunner {
 
     public static CommandOutput runCommandAndWaitForExit(File workingDir, List<String> arguments) throws IOException, InterruptedException {
-	ProcessBuilder pb = new ProcessBuilder(arguments);
+    ProcessBuilder pb = new ProcessBuilder(arguments);
 	pb.directory(workingDir);
 	Process process = pb.start();
 	ByteArrayOutputStream stderr = new ByteArrayOutputStream();

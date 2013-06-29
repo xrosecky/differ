@@ -99,60 +99,8 @@ public class ImageFileAnalysisContainer {
         } else {
             generateHistogramComponent(layout, true);
         }
-        // Metadata table
-        BeanItemContainer metadataContainer = new BeanItemContainer<ImageMetadata>(ImageMetadata.class, result.getMetadata());
-        metadataContainer.sort(new String[]{"key"}, new boolean[]{true});
-        final Table metadataTable = new Table("Metadata", metadataContainer);
-        metadataTable.setSelectable(true);
-        metadataTable.setMultiSelect(false);
-        metadataTable.setImmediate(true);
-        metadataTable.setVisibleColumns(new Object[]{"key", "source", "value", "unit"});
-        metadataTable.setCellStyleGenerator(new Table.CellStyleGenerator() {
-            @Override
-            public String getStyle(Object itemId, Object propertyId) {
-                ImageMetadata metadata = (ImageMetadata) itemId;
-                if (result.getType() == ImageProcessorResult.Type.COMPARISON) {
-                    String key = metadata.getKey();
-                    if (Arrays.asList("red", "blue", "green").contains(key)) {
-                        return key;
-                    }
-                } else {
-                    if (!nonConflictMetadata.contains(metadata.getKey())) {
-                        if (metadata.isConflict()) {
-                            return "red";
-                        } else {
-                            return "green";
-                        }
-                    }
-                }
-                return "";
-            }
-        });
-        layout.addComponent(metadataTable);
-        final Button rawData = new Button();
-        rawData.setCaption("Raw data");
-        rawData.addListener(new ClickListener() {
-            @Override
-            public void buttonClick(ClickEvent event) {
-                try {
-                    ImageMetadata metadata = (ImageMetadata) metadataTable.getValue();
-                    DifferApplication.getCurrentApplication().getMainWindow().addWindow(new RawDataWindow(parent, metadata.getSource()));
-                } catch (Exception ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
-        rawData.setImmediate(true);
-        rawData.setEnabled(false); //FIXME
-        layout.addComponent(rawData);
-        metadataTable.addListener(new ValueChangeListener() {
-            @Override
-            public void valueChange(ValueChangeEvent event) {
-                rawData.setEnabled(true);
-            }
-        });
     }
-
+    
     private void generateHistogramComponent(final Layout mainLayout, boolean logarithmic) {
         HorizontalLayout histogramLayout = new HorizontalLayout();
         histogramLayout.setMargin(true);

@@ -86,9 +86,15 @@ public class PureImageProcessor extends ImageProcessor {
         PureImageProcessorResult result = new PureImageProcessorResult(fullImage, preview);
         result.setType(ImageProcessorResult.Type.IMAGE);
         processImage(fullImage, result);
-        result.getMetadata().add(new ImageMetadata("height", new Integer(fullImage.getHeight()), core));
-        result.getMetadata().add(new ImageMetadata("width", new Integer(fullImage.getWidth()), core));
+
+        result.getMetadata().add(new ImageMetadata("Image height", new Integer(fullImage.getHeight()), core));
+        result.getMetadata().add(new ImageMetadata("Image width", new Integer(fullImage.getWidth()), core));
+        result.getMetadata().add(new ImageMetadata("File name", image.getName(), core));
+        result.getMetadata().add(new ImageMetadata("File path", image.getAbsolutePath(), core));
         List<Callable<List<ImageMetadata>>> tasks = new ArrayList<Callable<List<ImageMetadata>>>();
+
+        String fileName = image.toString();
+        String fileExtension = fileName.substring(fileName.lastIndexOf(".")+1).toLowerCase();
         for (MetadataExtractor extractor : extractors.getExtractors()) {
             tasks.add(new ImageMetadataTask(extractor, image));
         }

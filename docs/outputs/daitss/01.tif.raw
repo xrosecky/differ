@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<premis xmlns="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+	
+	<!-- premis file object -->
+	<object xsi:type="file">
+		<objectIdentifier>
+			<objectIdentifierType>URI</objectIdentifierType>
+			<objectIdentifierValue>/tmp/object20130203-1949-1r5h490-0.tif</objectIdentifierValue>
+		</objectIdentifier>
+		<objectCharacteristics>
+			<compositionLevel>0</compositionLevel>
+			<fixity>
+				<messageDigestAlgorithm>MD5</messageDigestAlgorithm>
+				<messageDigest>bf323f8e3783b493df72308b7e45daf1</messageDigest>
+				<messageDigestOriginator>Archive</messageDigestOriginator>
+			</fixity>
+			<fixity>
+				<messageDigestAlgorithm>SHA-1</messageDigestAlgorithm>
+				<messageDigest>f1ad333a5fc35dd27906874090640ca1cb3403fd</messageDigest>
+				<messageDigestOriginator>Archive</messageDigestOriginator>
+			</fixity>
+			<size>28578928</size>
+			
+			<format>
+				<formatDesignation>
+					<formatName>Tagged Image File Format</formatName>
+					
+				</formatDesignation>
+				
+				<formatRegistry>
+					<formatRegistryName>http://www.nationalarchives.gov.uk/pronom</formatRegistryName>
+					<formatRegistryKey>fmt/353</formatRegistryKey>
+				</formatRegistry>
+				
+				
+			</format>
+			
+			
+			<creatingApplication>
+				<creatingApplicationName>Adobe Photoshop CS4 Windows</creatingApplicationName>
+				
+				
+				<dateCreatedByApplication>2011-12-01T18:16:57-05:00</dateCreatedByApplication>
+				
+			</creatingApplication>
+			
+			
+			
+		</objectCharacteristics>
+		
+		<originalName>01.tif</originalName>
+		
+		
+		
+		<relationship>
+			<relationshipType>structural</relationshipType>
+			<relationshipSubType>includes</relationshipSubType>
+			<relatedObjectIdentification>
+				<relatedObjectIdentifierType>URI</relatedObjectIdentifierType>
+				<relatedObjectIdentifierValue>/tmp/object20130203-1949-1r5h490-0.tif/1</relatedObjectIdentifierValue>
+			</relatedObjectIdentification>
+		</relationship>
+		
+		
+		<linkingEventIdentifier>
+			<linkingEventIdentifierType>URI</linkingEventIdentifierType>
+			<linkingEventIdentifierValue>1</linkingEventIdentifierValue>
+		</linkingEventIdentifier>
+	</object>
+	
+
+	
+	<!-- premis bitstream object -->
+	
+	<object xsi:type="bitstream">
+		<objectIdentifier>
+			<objectIdentifierType>URI</objectIdentifierType>
+			<objectIdentifierValue>/tmp/object20130203-1949-1r5h490-0.tif/1</objectIdentifierValue>
+		</objectIdentifier>
+		<objectCharacteristics>
+			<compositionLevel>0</compositionLevel>
+			<format>
+				
+				<formatDesignation>
+					<formatName>Uncompressed</formatName>
+				</formatDesignation>
+				
+			</format>
+			<objectCharacteristicsExtension>
+				<mix:mix xmlns:mix="http://www.loc.gov/mix/v20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd">
+  <mix:BasicDigitalObjectInformation>
+    <mix:ObjectIdentifier>
+      <mix:objectIdentifierType>JHOVE</mix:objectIdentifierType>
+    </mix:ObjectIdentifier>
+    <mix:byteOrder>little endian</mix:byteOrder>
+    <mix:Compression>
+      <mix:compressionScheme>Uncompressed</mix:compressionScheme>
+    </mix:Compression>
+  </mix:BasicDigitalObjectInformation>
+  <mix:BasicImageInformation>
+    <mix:BasicImageCharacteristics>
+      <mix:imageWidth>3776</mix:imageWidth>
+      <mix:imageHeight>2520</mix:imageHeight>
+      <mix:PhotometricInterpretation>
+        <mix:colorSpace>RGB</mix:colorSpace>
+        <mix:ReferenceBlackWhite>
+          <mix:Component>
+            <mix:componentPhotometricInterpretation>R</mix:componentPhotometricInterpretation>
+            <mix:footroom>
+              <mix:numerator>0</mix:numerator>
+            </mix:footroom>
+            <mix:headroom>
+              <mix:numerator>255</mix:numerator>
+            </mix:headroom>
+          </mix:Component>
+          <mix:Component>
+            <mix:componentPhotometricInterpretation>G</mix:componentPhotometricInterpretation>
+            <mix:footroom>
+              <mix:numerator>0</mix:numerator>
+            </mix:footroom>
+            <mix:headroom>
+              <mix:numerator>255</mix:numerator>
+            </mix:headroom>
+          </mix:Component>
+          <mix:Component>
+            <mix:componentPhotometricInterpretation>B</mix:componentPhotometricInterpretation>
+            <mix:footroom>
+              <mix:numerator>0</mix:numerator>
+            </mix:footroom>
+            <mix:headroom>
+              <mix:numerator>255</mix:numerator>
+            </mix:headroom>
+          </mix:Component>
+        </mix:ReferenceBlackWhite>
+      </mix:PhotometricInterpretation>
+    </mix:BasicImageCharacteristics>
+  </mix:BasicImageInformation>
+  <mix:ImageCaptureMetadata>
+    <mix:GeneralCaptureInformation>
+      <mix:dateTimeCreated>2011-12-01T18:16:57</mix:dateTimeCreated>
+      <mix:imageProducer>BEDRICH</mix:imageProducer>
+    </mix:GeneralCaptureInformation>
+    <mix:ScannerCapture>
+      <mix:scannerManufacturer>Panasonic</mix:scannerManufacturer>
+      <mix:ScannerModel>
+        <mix:scannerModelName>DMC-LX3</mix:scannerModelName>
+      </mix:ScannerModel>
+      <mix:ScanningSystemSoftware>
+        <mix:scanningSoftwareName>Adobe Photoshop CS4 Windows</mix:scanningSoftwareName>
+      </mix:ScanningSystemSoftware>
+    </mix:ScannerCapture>
+    <mix:orientation>normal*</mix:orientation>
+  </mix:ImageCaptureMetadata>
+  <mix:ImageAssessmentMetadata>
+    <mix:SpatialMetrics>
+      <mix:samplingFrequencyUnit>in.</mix:samplingFrequencyUnit>
+      <mix:xSamplingFrequency>
+        <mix:numerator>1800000</mix:numerator>
+        <mix:denominator>10000</mix:denominator>
+      </mix:xSamplingFrequency>
+      <mix:ySamplingFrequency>
+        <mix:numerator>1800000</mix:numerator>
+        <mix:denominator>10000</mix:denominator>
+      </mix:ySamplingFrequency>
+    </mix:SpatialMetrics>
+    <mix:ImageColorEncoding>
+      <mix:BitsPerSample>
+        <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+        <mix:bitsPerSampleValue>8</mix:bitsPerSampleValue>
+        <mix:bitsPerSampleUnit>integer</mix:bitsPerSampleUnit>
+      </mix:BitsPerSample>
+      <mix:samplesPerPixel>3</mix:samplesPerPixel>
+    </mix:ImageColorEncoding>
+  </mix:ImageAssessmentMetadata>
+</mix:mix>
+			</objectCharacteristicsExtension>
+		</objectCharacteristics>
+	</object>
+	
+	
+
+	<!-- premis event -->
+	<event>
+		<eventIdentifier>
+			<eventIdentifierType>URI</eventIdentifierType>
+			<eventIdentifierValue>1</eventIdentifierValue>
+		</eventIdentifier>
+		<eventType>describe</eventType>
+		<eventDateTime>2013-02-03T15:35:17-05:00</eventDateTime>
+		<eventDetail>Well-Formed and valid</eventDetail>
+		<eventOutcomeInformation>
+			<eventOutcome>success</eventOutcome>
+			
+		</eventOutcomeInformation>
+		<linkingAgentIdentifier>
+			<linkingAgentIdentifierType>URI</linkingAgentIdentifierType>
+			<linkingAgentIdentifierValue>info:fda/daitss/description/v2.2.0</linkingAgentIdentifierValue>
+		</linkingAgentIdentifier>
+		<linkingObjectIdentifier>
+			<linkingObjectIdentifierType>URI</linkingObjectIdentifierType>
+			<linkingObjectIdentifierValue>/tmp/object20130203-1949-1r5h490-0.tif</linkingObjectIdentifierValue>
+		</linkingObjectIdentifier>
+	</event>
+
+<!-- premis agent -->
+<agent>
+	<agentIdentifier>
+		<agentIdentifierType>URI</agentIdentifierType>
+		<agentIdentifierValue>info:fda/daitss/description/v2.2.0</agentIdentifierValue>
+	</agentIdentifier>
+	<agentName>Format Description Service</agentName>
+	<agentType>Web Service</agentType>
+	<agentNote>built with JHOVE 1.6 (built on December 12, 2011), DROID 3.0 with DROID signature file version 63.</agentNote>
+</agent>
+</premis>
