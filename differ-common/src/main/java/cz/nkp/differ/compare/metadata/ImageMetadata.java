@@ -23,7 +23,7 @@ public class ImageMetadata {
     public ImageMetadata() {
 	
     }
-
+    
     public ImageMetadata(String key, Object value, MetadataSource source) {
         this.key = key;
         this.value = value;
