@@ -148,6 +148,7 @@ public class Main {
 	}
 		
 	public static void main(String[] args) throws Exception {
+		
 		ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"appCtx-differ-cmdline.xml"});
         ImageProcessor processor = (ImageProcessor) context.getBean("imageProcessor");
 
