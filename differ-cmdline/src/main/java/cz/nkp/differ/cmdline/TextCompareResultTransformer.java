@@ -66,22 +66,23 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
         public String toString(){
             String output = "";
             TheSameValueHider propertyNameHider = new TheSameValueHider();
-            String format = String.format("%%-%ds  %%-%ds  %%-%ds  %%-%ds\n",
-                    keyLength, sourceLength, valueLength, valueLength);
+            String format = String.format("%%-%ds  %%-%ds  %%-%ds  %%-%ds %%-%ds\n",
+                    keyLength, sourceLength, valueLength, valueLength, unitLength);
             String [] valueFormats = new String [2];
             for ( int imageOrder = 0; imageOrder < 2; imageOrder++){
-                valueFormats[imageOrder] = String.format("%%-%ds %%s", valueWithUnitLength[imageOrder]);
+                valueFormats[imageOrder] = String.format("%%-%ds", valueWithUnitLength[imageOrder]);
             }
             TreeSet<String> keys = new TreeSet<String>();
             for( String key: metadataByKeyName.keySet()){
                 keys.add(key);
             }
-            output += String.format(format,"Significant Property", "Source", "Value for Image A", "Value for Image B");
+            output += String.format(format,"Significant Property", "Source", "Value for Image A", "Value for Image B", "Unit");
             output += String.format(format,
                     getStringGivenLength(keyLength,'-'),
                     getStringGivenLength(sourceLength,'-'),
                     getStringGivenLength(valueLength,'-'),
-                    getStringGivenLength(valueLength,'-'));
+                    getStringGivenLength(valueLength,'-'),
+                    getStringGivenLength(unitLength,'-'));
             for( String key: keys){
                 HashMap<String, ImageMetadata[]> metadataBySource = metadataByKeyName.get(key);
                 for( String source: metadataBySource.keySet() ){
@@ -91,11 +92,10 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
                             propertyNameHider.getOrHide(key),
                             source,
                             String.format(valueFormats[0],
-                                    (pair[0] != null ? pair[0].getValue() : ""),
-                                    (unit != null ? unit : "")),
+                                    (pair[0] != null ? pair[0].getValue() : "")),
                             String.format(valueFormats[1],
-                                    (pair[1] != null ? pair[1].getValue() : ""),
-                                    (unit != null ? unit : ""))
+                                    (pair[1] != null ? pair[1].getValue() : "")),
+                            (unit != null ? unit : "")
                     );
                 }
             }
@@ -103,8 +103,8 @@ public class TextCompareResultTransformer implements CompareResultTransformer {
                     getStringGivenLength(keyLength,'-'),
                     getStringGivenLength(sourceLength,'-'),
                     getStringGivenLength(valueLength,'-'),
-                    getStringGivenLength(valueLength,'-'));
-
+                    getStringGivenLength(valueLength,'-'),
+            		getStringGivenLength(unitLength,'-'));
             return output;
         }
     }
