@@ -161,3 +161,7 @@ Examples of validation results
 
 .. include:: examples.rst
 
+Tests
+-----
+
+.. include:: tests.rst

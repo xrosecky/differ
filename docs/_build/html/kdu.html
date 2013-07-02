@@ -46,16 +46,12 @@
   <div class="section" id="kakadu">
 <h1>Kakadu<a class="headerlink" href="#kakadu" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-bash"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
-<span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:~/lib/kakadu
-<span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$LD_LIBRARY_PATH</span>:~/lib/kakadu
-<span class="nb">export </span>PATH
-<span class="nb">export </span>LD_LIBRARY_PATH
-
+<span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/home/stavel/KDU71_Demo_Apps_for_Linux-x86-64_120605/
 <span class="k">for </span>FILE in <span class="k">$(</span>ls images<span class="k">)</span>
 <span class="k">do</span>
 <span class="k">    </span><span class="nv">OUTPUT</span><span class="o">=</span>outputs/kdu/<span class="nv">$FILE</span>.raw
     <span class="nb">echo</span> -e <span class="s2">&quot;images/$FILE \t -&gt; $OUTPUT&quot;</span>
-    home/klas/lib/kakadu/kdu_expand -i <span class="s2">&quot;images/$FILE&quot;</span> -record /dev/stdout -no_decode &gt; <span class="nv">$OUTPUT</span>
+    /home/stavel/KDU71_Demo_Apps_for_Linux-x86-64_120605/kdu_expand -i <span class="s2">&quot;images/$FILE&quot;</span> -record /dev/stdout -no_decode &gt; <span class="nv">$OUTPUT</span>
 <span class="k">done</span>
 </pre></div>
 </div>
@@ -108,100 +104,23 @@ Qabs_steps=0.003906,0.001953,0.001953,0.000977,0.001953,0.001953,0.000977,0.001
 </div>
 </div><div class="output">
 <a class="show" href="#">02.jpg.raw  - show</a>
-<a class="hide" href="#">02.jpg.raw  - hide</a><div class="highlight-python"><pre>Kakadu Core Warning:
-Unrecognized/unimplemented marker code, 0xffd8, found in code-stream.
-</pre>
+<a class="hide" href="#">02.jpg.raw  - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
 </div>
 </div><div class="output">
 <a class="show" href="#">03.jpf.raw  - show</a>
-<a class="hide" href="#">03.jpf.raw  - hide</a><div class="highlight-python"><pre>
-Consumed 0 tile-part(s) from a total of 1 tile(s).
-Consumed 98 codestream bytes (excluding any file format) = 0.002991 bits/pel.
-no,no,no
-Sprecision=8,8,8
-Ssampling={1,1},{1,1},{1,1}
-Sdims={512,512},{512,512},{512,512}
-Cycc=yes
-Cmct=0
-Clayers=1
-Cuse_sop=no
-Cuse_eph=no
-Corder=RLCP
-Calign_blk_last={no,no}
-Clevels=5
-Cads=0
-Cdfs=0
-Cdecomp=B(-:-:-)
-Creversible=yes
-Ckernels=W5X3
-Catk=0
-Cuse_precincts=no
-Cblk={32,32}
-Cmodes=0
-Qguard=2
-Qabs_ranges=8,9,9,10,9,9,10,9,9,10,9,9,10,9,9,10
-</pre>
+<a class="hide" href="#">03.jpf.raw  - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
 </div>
 </div><div class="output">
 <a class="show" href="#">03-PSCS5.jp2.raw  - show</a>
-<a class="hide" href="#">03-PSCS5.jp2.raw  - hide</a><div class="highlight-python"><pre>
-Consumed 0 tile-part(s) from a total of 12 tile(s).
-Consumed 98 codestream bytes (excluding any file format) = 0.000082 bits/pel.
-=no,no,no
-Sprecision=8,8,8
-Ssampling={1,1},{1,1},{1,1}
-Sdims={2520,3776},{2520,3776},{2520,3776}
-Cycc=yes
-Cmct=0
-Clayers=1
-Cuse_sop=no
-Cuse_eph=no
-Corder=CPRL
-Calign_blk_last={no,no}
-Clevels=5
-Cads=0
-Cdfs=0
-Cdecomp=B(-:-:-)
-Creversible=yes
-Ckernels=W5X3
-Catk=0
-Cuse_precincts=no
-Cblk={32,32}
-Cmodes=0
-Qguard=2
-Qabs_ranges=8,9,9,10,9,9,10,9,9,10,9,9,10,9,9,10
-</pre>
+<a class="hide" href="#">03-PSCS5.jp2.raw  - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
 </div>
 </div><div class="output">
 <a class="show" href="#">04-KDU.jp2.raw  - show</a>
-<a class="hide" href="#">04-KDU.jp2.raw  - hide</a><div class="highlight-python"><pre>
-Consumed 0 tile-part(s) from a total of 1 tile(s).
-Consumed 215 codestream bytes (excluding any file format) = 0.000181 bits/pel.
-=no,no,no
-Sprecision=8,8,8
-Ssampling={1,1},{1,1},{1,1}
-Sdims={2520,3776},{2520,3776},{2520,3776}
-Cycc=yes
-Cmct=0
-Clayers=1
-Cuse_sop=yes
-Cuse_eph=yes
-Corder=RPCL
-Calign_blk_last={no,no}
-Clevels=5
-Cads=0
-Cdfs=0
-Cdecomp=B(-:-:-)
-Creversible=yes
-Ckernels=W5X3
-Catk=0
-Cuse_precincts=yes
-Cprecincts={256,256},{128,128},{128,128},{128,128},{128,128},{128,128}
-Cblk={64,64}
-Cmodes=BYPASS
-Qguard=1
-Qabs_ranges=10,11,11,12,11,11,12,11,11,12,11,11,11,10,10,11
-</pre>
+<a class="hide" href="#">04-KDU.jp2.raw  - hide</a><div class="highlight-python"><div class="highlight"><pre>
+</pre></div>
 </div>
 </div><div class="output">
 <a class="show" href="#">05.djvu.raw  - show</a>
