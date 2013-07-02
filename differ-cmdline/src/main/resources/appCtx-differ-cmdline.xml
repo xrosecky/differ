@@ -3,10 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:util="http://www.springframework.org/schema/util"
     xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
     xsi:schemaLocation="
     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
-    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
 
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 	<property name="locations">
@@ -21,108 +23,160 @@
 
     <bean id="djvuImageLoader" class="cz.nkp.differ.images.DjvuImageLoader"/>
 
-    <bean id="imageLoaderFactory" class="cz.nkp.differ.images.ImageLoaderFactory">
-	<property name="loaders">
-	    <map>
-		<entry key="djvu" value-ref="djvuImageLoader"/>
-	    </map>
-	</property>
-	<property name="defaultImageLoader" ref="genericImageLoader"/>
+    <bean id="jp2ImageLoader" class="cz.nkp.differ.images.ExternalImageLoader">
+      <property name="programArguments">
+        <list>
+          <value>${kakadu.binary}</value>
+          <value>-i</value>
+          <value>{input_file}</value>
+          <value>-o</value>
+          <value>{output_file}</value>
+        </list>
+      </property>
+      <property name="imageLoader" ref="genericImageLoader"/>
+      <property name="prefix" value="bmp"/>
     </bean>
+    
+    <bean id="tiffImageLoader" class="cz.nkp.differ.images.ExternalImageLoader">
+      <property name="programArguments">
+	<list>
+	  <value>/usr/bin/convert</value>
+	  <value>{input_file}</value>
+	  <value>{output_file}</value>
+	</list>
+      </property>
+      <property name="imageLoader" ref="genericImageLoader"/>
+      <property name="prefix" value="bmp"/>
+    </bean>
+    
+    <bean id="imageLoaderFactory" class="cz.nkp.differ.images.ImageLoaderFactory">
+      <property name="loaders">
+	<map>
+	  <entry key="djvu" value-ref="djvuImageLoader"/>
+	  <entry key="tiff" value-ref="tiffImageLoader"/>
+	  <entry key="tif" value-ref="tiffImageLoader"/>
+	  <entry key="tiff" value-ref="tiffImageLoader"/>
+	  <entry key="jpf" value-ref="jp2ImageLoader"/>
+	  <entry key="jp2" value-ref="jp2ImageLoader"/>
+	  <entry key="jpp" value-ref="jp2ImageLoader"/>
+	</map>
+      </property>
+      <property name="defaultImageLoader" ref="genericImageLoader"/>
+    </bean>
+    
+    <!-- <bean id="imageLoaderFactory" class="cz.nkp.differ.images.ImageLoaderFactory"> -->
+    <!-- 	<property name="loaders"> -->
+    <!-- 	    <map> -->
+    <!-- 		<entry key="djvu" value-ref="djvuImageLoader"/> -->
+    <!-- 	    </map> -->
+    <!-- 	</property> -->
+    <!-- 	<property name="defaultImageLoader" ref="genericImageLoader"/> -->
+    <!-- </bean> -->
 
     <bean id="imageProcessorConfig" class="cz.nkp.differ.compare.io.ImageProcessorConfig">
 	<property name="imageWidth" value="128"/>
     </bean>
 
-    <bean id="imageProcessor" class="cz.nkp.differ.compare.io.pure.PureImageProcessor">
-	<constructor-arg ref="imageLoaderFactory"/>
-	<constructor-arg ref="metadataExtractors"/>
-	<property name="config" ref="imageProcessorConfig"/>
-    </bean>
+    <!-- <import resource="imageProcessor.xml"/> -->
+    <import resource="pureImageProcessor.xml"/>
+    <import resource="metadataFinishing.xml"/>
+    <import resource="metadataSignificantProperties.xml"/>
 
     <util:map id="units">
-	<entry key="width" value="px"/>
-	<entry key="height" value="px"/>
+      <entry key="Image width" value="px"/>
+      <entry key="Image height" value="px"/>
+      <entry key="Code block height" value="px"/>
+      <entry key="Code block width" value="px"/>
+      <entry key="Resolution horizontal" value="PPI"/>
+      <entry key="Resolution vertical" value="PPI"/>
+      <entry key="Display resolution horizontal" value="PPI"/>
+      <entry key="Display resolution vertical" value="PPI"/>
+      <entry key="Tile size X" value="PPI"/>
+      <entry key="Tile size Y" value="PPI"/>
     </util:map>
+    
+    <!-- <import resource="../dist/WEB-INF/applicationContext.xml"/> -->
 
-    <!-- differ binary -->
-    <bean id="differBinaryMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-	<property name="stylesheet" value="${differBinary.xsl}"/>
+    <!-- web to collect results of comparison -->
+    <bean id="reportHTTPSender" class="cz.nkp.differ.cmdline.ReportHTTPSender">
+      <property name="url" value="${reportingWeb.url}"/>
+      <property name="password" value="${reportingWeb.password}"/>
+      <property name="user" value="${reportingWeb.user}"/>
     </bean>
 
-    <bean id="differBinaryMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-	<property name="source" value="differ"/>
-	<property name="transformer" ref="differBinaryMetadataTransformer"/>
-	<property name="programArguments">
-	    <list>
-		<value>${differ.binary}</value>
-		<value>--image1</value>
-		<value>{file1}</value>
-		<value>--image2</value>
-		<value>{file2}</value>
-		<value>--algorithm</value>
-		<value>all</value>
-		<value>--colorspace</value>
-		<value>1</value>
-	    </list>
-	</property>
-	<property name="units" ref="units"/>
+    <!-- kakadu -->
+    <import resource="kakaduMetadataExtractor.xml"/>
+
+    <!-- exiftool -->
+    <import resource="exiftoolMetadataExtractor.xml"/>
+
+    <!-- imagemagick (identify) -->
+    <import resource="imagemagickMetadataExtractor.xml"/>
+
+    <!-- djvudump -->
+    <bean id="djvudumpMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
+      <property name="mapOfRegexp">
+    	    <map>
+    	      <entry key="Type of format"   value="FORM:([^\[]+)"/>
+    	      <entry key="Software type"    value="INFO \[[0-9]+\][^x]*,[\ \t]*([^,]+)"/>
+    	      <entry key="Image width"      value="INFO \[[0-9]+\].*([0-9]+)x"/>
+    	      <entry key="Image height"     value="INFO \[[0-9]+\].*[0-9]+x([0-9]+)"/>
+    	      <entry key="Resolution"       value="INFO \[[0-9=+\].*v[0-9]+,[\ \t]*([0-9]+[\ \t]*dpi)"/>
+    	    </map>
+    	</property>
+    	<property name="listOfRegexp">
+    	  <list>
+    	    <value>([^:]+):([^:]+)</value>
+    	  </list>
+    	</property>
+    </bean>
+
+    <bean id="djvudumpMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
+    	<property name="source" value="djvudump"/>
+    	<property name="transformer" ref="djvudumpMetadataTransformer"/>
+    	<property name="programArguments">
+    	    <list>
+    		<value>${djvudump.binary}</value>
+    		<value>{file}</value>
+    	    </list>
+    	</property>
+    	<property name="units" ref="units"/>
+      <property name="supportedFileExtensions">
+	<list>
+	  <value>djvu</value>
+	</list>
+      </property>
+
     </bean>
 
     <!-- exiv2 -->
-    <bean id="exiv2MetadataTransformer" class="cz.nkp.differ.compare.metadata.external.RegexpTransformer">
-	<property name="mapOfRegexp">
-	    <map>
-		<entry key="width" value="Image size      : ([0-9]+) x [0-9]+"/>
-		<entry key="height" value="Image size      : [0-9]+ x ([0-9]+)"/>
-	    </map>
-	</property>
-	<property name="listOfRegexp">
-	    <list>
-		<value>([^:]+):([^:]+)</value>
-	    </list>
-	</property>
-    </bean>
+    <import resource="exiv2MetadataExtractor.xml"/>
 
-    <bean id="exiv2MetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-	<property name="source" value="exiv2"/>
-	<property name="transformer" ref="exiv2MetadataTransformer"/>
-	<property name="programArguments">
-	    <list>
-		<value>${exiv2.binary}</value>
-		<value>print</value>
-		<value>{file}</value>
-	    </list>
-	</property>
-	<property name="units" ref="units"/>
-    </bean>
+    <!-- daitss -->
+    <import resource="daitssMetadataExtractor.xml"/>
+
+    <!-- fits -->
+    <import resource="fitsMetadataExtractor.xml"/>
+
+    <!-- jpylyzer -->
+    <import resource="jpylyzerMetadataExtractor.xml"/>
 
     <!-- Jhove -->
-    <bean id="jhoveMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-	<property name="stylesheet" value="${jhove.xsl}"/>
-    </bean>
+    <import resource="jhoveMetadataExtractor.xml"/>
 
-    <bean id="jhoveMetadataExtractor" class="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor">
-	<property name="source" value="jhove"/>
-	<property name="transformer" ref="jhoveMetadataTransformer"/>
-	<property name="programArguments">
-	    <list>
-		<value>${java.binary}</value>
-		<value>-jar</value>
-		<value>${jhove.jar}</value>
-		<value>-h</value>
-		<value>xml</value>
-		<value>{file}</value>
-	    </list>
-	</property>
-	<property name="units" ref="units"/>
-    </bean>
 
     <bean id="metadataExtractors" class="cz.nkp.differ.compare.metadata.MetadataExtractors">
 	<property name="extractors">
 	    <list>
-		<ref bean="exiv2MetadataExtractor"/>
-		<ref bean="jhoveMetadataExtractor"/>
+	      <ref bean="imagemagickMetadataExtractor"/>
+	      <ref bean="fitsMetadataExtractor"/>
+	      <ref bean="exiftoolMetadataExtractor"/>
+	      <ref bean="djvudumpMetadataExtractor"/>
+	      <ref bean="jhoveMetadataExtractor"/>
+	      <ref bean="exiv2MetadataExtractor"/>
+	      <ref bean="jpylyzerMetadataExtractor"/>
+	      <ref bean="kakaduMetadataExtractor"/>
+	      <ref bean="daitssHTTPMetadataExtractor"/>
 	    </list>
 	</property>
     </bean>
@@ -147,5 +201,4 @@
 	    </map>
 	</property>
     </bean>
-    
 </beans>

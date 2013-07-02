@@ -1,0 +1,121 @@
+Characterization
+================
+
+image.jpg: 2480x1748
+
+Significant Properties
+======================
+
+Property                           Unit  Source    Value
+---------------------------------- ----  --------  ------------------------------------
+Code block height                  px    jhove     
+                                   px    jpylyzer  
+Code block width                   px    jhove     
+                                   px    jpylyzer  
+Coding bypass                            jpylyzer  
+Color depth                              exiftool  8
+                                         jhove     8
+                                         jpylyzer  
+Color space                              exiftool  sRGB
+                                         jhove     
+                                         jpylyzer  
+Commentary                               jpylyzer  
+Compression                              exiftool  JPEG (old-style)
+                                         jhove     JPEG
+                                         jpylyzer  
+Compression ratio                        jpylyzer  
+Display resolution horizontal      PPI   jpylyzer  
+Display resolution vertical        PPI   jpylyzer  
+Encoding process                         exiftool  Baseline DCT, Huffman coding
+End of packet header                     jpylyzer  
+exit-code                                djvudump  error (1)
+                                         exiftool  ok
+                                         exiv2     ok
+                                         fits      ok
+                                         jhove     ok
+                                         jpylyzer  ok
+File last modified                       exiftool  2011:10:24 15:06:10+02:00
+                                         fits      
+                                         jhove     2011-10-24T15:06:10+02:00
+                                         jpylyzer  Mon Oct 24 15:06:10 2011
+File name                                core      image.jpg
+                                         exiv2     /opt/differ/differ-cmdline/image.jpg
+                                         fits      /opt/differ/differ-cmdline/image.jpg
+                                         jpylyzer  image.jpg
+File path                                core      /opt/differ/differ-cmdline/image.jpg
+                                         exiv2     /opt/differ/differ-cmdline/image.jpg
+                                         fits      /opt/differ/differ-cmdline/image.jpg
+                                         jhove     /opt/differ/differ-cmdline/image.jpg
+                                         jpylyzer  /opt/differ/differ-cmdline/image.jpg
+File size                                exiftool  294 kB
+                                         exiv2     301376
+                                         fits      301376
+                                         jhove     301376
+                                         jpylyzer  301376
+File type                                exiftool  JPEG
+Image height                             core      2480
+                                   px    exiftool  2480
+                                   px    exiv2     2480
+                                   px    fits      2480
+                                   px    jhove     2480
+                                   px    jpylyzer  
+Image width                              core      1748
+                                   px    exiftool  1748
+                                   px    exiv2     1748
+                                   px    fits      1748
+                                   px    jhove     1748
+                                   px    jpylyzer  
+MIME type                                exiftool  image/jpeg
+                                         exiv2     image/jpeg
+                                         jhove     image/jpeg
+Multiple Component Transformation        jhove     
+Number of channels                       exiftool  3
+                                         jhove     3
+                                         jpylyzer  
+Number of decomposition levels           jhove     
+                                         jpylyzer  
+Number of quality layers                 jhove     
+                                         jpylyzer  
+Number of tiles                          jhove     0
+                                         jpylyzer  
+Precincts                                jpylyzer  
+Progression order                        jhove     
+                                         jpylyzer  
+Quantization style                       jhove     
+Resolution horizontal              PPI   exiftool  300
+                                   PPI   exiv2     1748
+                                   PPI   jpylyzer  
+Resolution unit                          exiftool  inches
+Resolution vertical                PPI   exiftool  300
+                                   PPI   exiv2     2480
+                                   PPI   jpylyzer  
+Software type                            exiftool  Adobe Photoshop CS4 Windows
+Start of packet header                   jpylyzer  
+Thumbnail                                exiv2     image/jpeg, 934 Bytes
+Tile size X                        PPI   jhove     
+Tile size Y                        PPI   jhove     
+Transformation                           jhove     
+                                         jpylyzer  
+Type of format                           jhove     JPEG
+                                         jpylyzer  
+Universal unique identifier (UUID)       jhove     
+                                         jpylyzer  
+Validation (well formed and valid)       jhove     Well-Formed and valid
+                                         jpylyzer  False
+---------------------------------- ----  --------  ------------------------------------
+
+Raw outputs of extractors
+=========================
+
+   djvudump     'output <image-output-djvudump.raw>'_
+   exiftool     'output <image-output-exiftool.raw>'_
+   exiv2        'output <image-output-exiv2.raw>'_
+   fits         'output <image-output-fits.raw>'_
+   jhove        'output <image-output-jhove.raw>'_
+   jpylyzer     'output <image-output-jpylyzer.raw>'_
+
+Text report
+===========
+
+  `text report <image-report.txt>`_
+

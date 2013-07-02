@@ -1,0 +1,63 @@
+Characterization
+================
+
+  Img A :: /opt/differ/differ-cmdline/image.jpg: 2480x1748
+  Img B :: /opt/differ/differ-cmdline/image2.jpg: 2480x1748
+
+Significant Properties
+======================
+
+Significant Property   Source    Value for Img A               Value for Img B             
+---------------------  --------  ----------------------------  ----------------------------
+Color depth            exiftool  8                             8                           
+Color space            exiftool  sRGB                          sRGB                        
+Compression            exiftool  JPEG (old-style)              JPEG (old-style)            
+Encoding process       exiftool  Baseline DCT, Huffman coding   Baseline DCT, Huffman coding 
+File last modified     fits                                                                
+                       exiftool  2011:10:24 15:06:10+02:00     2011:10:24 15:13:54+02:00   
+File size              fits      301376                        307248                      
+                       exiftool  294 kB                        300 kB                      
+                       exiv2     301376                        307248                      
+File type              exiftool  JPEG                          JPEG                        
+Image height           fits      2480  px                      2480  px                    
+                       exiftool  2480  px                      2480  px                    
+                       exiv2     2480  px                      2480  px                    
+                       core      2480                          2480                        
+Image width            fits      1748  px                      1748  px                    
+                       exiftool  1748  px                      1748  px                    
+                       exiv2     1748  px                      1748  px                    
+                       core      1748                          1748                        
+MIME type              exiftool  image/jpeg                    image/jpeg                  
+                       exiv2     image/jpeg                    image/jpeg                  
+Number of channels     exiftool  3                             3                           
+Resolution horizontal  exiftool  300   PPI                     300   PPI                   
+                       exiv2     1748  PPI                     1748  PPI                   
+Resolution unit        exiftool  inches                        inches                      
+Resolution vertical    exiftool  300   PPI                     300   PPI                   
+                       exiv2     2480  PPI                     2480  PPI                   
+Software type          exiftool  Adobe Photoshop CS4 Windows   Adobe Photoshop CS4 Windows 
+Thumbnail              exiv2     image/jpeg, 934 Bytes         image/jpeg, 934 Bytes       
+format                 jhove     JPEG                          JPEG                        
+height                 jhove     2480                          2480                        
+mimetype               jhove     image/jpeg                    image/jpeg                  
+status                 jhove     Well-Formed and valid         Well-Formed and valid       
+width                  jhove     1748                          1748                        
+---------------------  --------  ----------------------------  ----------------------------
+
+Raw outputs of extractors
+=========================
+
+   jpylyzer     'output <image-output-jpylyzer.raw>'_
+   jpylyzer     'output <image2-output-jpylyzer.raw>'_
+
+Text report
+===========
+
+  `text report <image-image2-report.txt>`_
+
+Used significant properties
+===========================
+
+
+  `used properties <image-used-properties.txt>`_
+  `used properties <image2-used-properties.txt>`_

@@ -1,0 +1,407 @@
+Image: images/ngc0253-field01-f606w_drz.fits
+  Format: FITS (Flexible Image Transport System)
+  Class: DirectClass
+  Geometry: 4220x4299+0+0
+  Resolution: 72x72
+  Print size: 58.6111x59.7083
+  Units: Undefined
+  Type: Grayscale
+  Base type: Grayscale
+  Endianess: MSB
+  Colorspace: Gray
+  Depth: 32/16-bit
+  Channel depth:
+    gray: 16-bit
+  Channel statistics:
+    Gray:
+      min: 0 (0)
+      max: 65535 (1)
+      mean: 1294.4 (0.0197513)
+      standard deviation: 647.894 (0.00988623)
+      kurtosis: 308.694
+      skewness: 6.60262
+  Rendering intent: Undefined
+  Gamma: 1
+  Interlace: None
+  Background color: gray(255,255,255)
+  Border color: gray(223,223,223)
+  Matte color: gray(189,189,189)
+  Transparent color: gray(0,0,0)
+  Compose: Over
+  Page geometry: 4220x4299+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: Undefined
+  Orientation: Undefined
+  Properties:
+    date:create: 2013-02-02T16:12:41+01:00
+    date:modify: 2013-02-02T16:12:41+01:00
+    fits::                                                                         
+    fits:airmass: 0.000000 / Air mass                                       
+    fits:aperture: 'WFCENTER        '   / aperture name                                  
+    fits:asn_id: 'J9RA98020 '         / unique identifier assigned to association      
+    fits:asn_mtyp: 'PROD-DTH'           / Role of the Member in the Association          
+    fits:asn_tab: 'j9ra98020_asn.fits     ' / name of the association table             
+    fits:atodcorr: 'OMIT    '           / correct for A to D conversion errors           
+    fits:atodgna: 2.0020001E+00 / calibrated gain for amplifier A                
+    fits:atodgnb: 1.9450001E+00 / calibrated gain for amplifier B                
+    fits:atodgnc: 2.0280001E+00 / calibrated gain for amplifier C                
+    fits:atodgnd: 1.9940000E+00 / calibrated gain for amplifier D                
+    fits:atodtab: 'jref$kcb1734hj_a2d.fits' / analog to digital correction file         
+    fits:badinpdq: 0 / data quality flag bits to reject               
+    fits:badpix: 0.000000 / Low bad data value (DN)                        
+    fits:biascorr: 'COMPLETE'           / Subtract bias image                            
+    fits:biasfile: 'jref$qad2005sj_bia.fits' / bias image file name                      
+    fits:biasleva: 2.2679893E+03 / bias level for amplifier A                     
+    fits:biaslevb: 2.3336379E+03 / bias level for amplifier B                     
+    fits:biaslevc: 2.2653992E+03 / bias level for amplifier C                     
+    fits:biaslevd: 2.2613003E+03 / bias level for amplifier D                     
+    fits:binaxis1: 1 / axis1 data bin size in unbinned detector pixels
+    fits:binaxis2: 1 / axis2 data bin size in unbinned detector pixels
+    fits:bitpix: -32 / Data type                                      
+    fits:blevcorr: 'COMPLETE'           / subtract bias level computed from overscan img 
+    fits:bpixtab: 'jref$q860440tj_bpx.fits' / bad pixel table                           
+    fits:bscale: 1.000000 / Image scale                                    
+    fits:bunit: 'ELECTRONS/S'        / Units of science product                       
+    fits:bzero: 0.000000 / Image zero                                     
+    fits:cal_ver: '4.6.1 (13-Mar-2006)' / CALACS code version                           
+    fits:cblksiz: 0 / size of compression block in 2-byte words      
+    fits:ccdamp: 'ABCD'               / CCD Amplifier Readout Configuration            
+    fits:ccdchip: '-999    '           / CCD chip (1 or 2)                              
+    fits:ccdgain: 2 / commanded gain of CCD                          
+    fits:ccdofsta: 3 / commanded CCD bias offset for amplifier A      
+    fits:ccdofstb: 3 / commanded CCD bias offset for amplifier B      
+    fits:ccdofstc: 3 / commanded CCD bias offset for amplifier C      
+    fits:ccdofstd: 3 / commanded CCD bias offset for amplifier D      
+    fits:ccdtab: 'jref$o151506fj_ccd.fits' / CCD calibration parameters                
+    fits:cd1_1: -1.063972738166565E-05 / partial of first axis coordinate w.r.t. x    
+    fits:cd1_2: -8.927887624081076E-06 / partial of first axis coordinate w.r.t. y    
+    fits:cd2_1: -8.927887624267096E-06 / partial of second axis coordinate w.r.t. x   
+    fits:cd2_2: 1.063972738131941E-05 / partial of second axis coordinate w.r.t. y    
+    fits:centera1: 2073 / subarray axis1 center pt in unbinned dect. pix 
+    fits:centera2: 1035 / subarray axis2 center pt in unbinned dect. pix 
+    fits:cfltfile: 'N/A               ' / Coronagraphic spot image                       
+    fits:comptab: 'mtab$qbk1959fm_tmc.fits' / the HST components table                  
+    fits:comptyp: 'None    '           / compression type performed (Partial/Full/None) 
+    fits:crcorr: 'OMIT    '           / combine observations to reject cosmic rays     
+    fits:crmask: F / flag CR-rejected pixels in input files (T/F)   
+    fits:crpix1: 2110.0 / x-coordinate of reference pixel                
+    fits:crpix2: 2149.5 / y-coordinate of reference pixel                
+    fits:crradius: 0.000000 / rejection propagation radius (pixels)          
+    fits:crrejtab: 'jref$n4e12511j_crr.fits' / cosmic ray rejection parameters           
+    fits:crsigmas: '               '    / statistical rejection criteria                 
+    fits:crsplit: 1 / number of cosmic ray split exposures           
+    fits:crthresh: 0.000000 / rejection propagation threshold                
+    fits:crval1: 11.90174612041608 / first axis value at reference pixel            
+    fits:crval2: -25.27874241098385 / second axis value at reference pixel           
+    fits:ctedir: 'NONE    '           / CTE measurement direction: serial or parallel  
+    fits:cteimage: 'NONE'               / type of Charge Transfer Image, if applicable   
+    fits:ctype1: 'RA---TAN'           / the coordinate type for the first axis         
+    fits:ctype2: 'DEC--TAN'           / the coordinate type for the second axis        
+    fits:d001coef: 'j9ra98ihq_flt_coeffs2.dat' / Drizzle, coefficients file name         
+    fits:d001data: 'j9ra98ihq_flt.fits[sci,1]' / Drizzle, input data image               
+    fits:d001dexp: 741.0 / Drizzle, input image exposure time (s)         
+    fits:d001exky: 'EXPTIME '           / Drizzle, exposure keyword name in input image  
+    fits:d001fval: 'INDEF   '           / Drizzle, fill value for zero weight output pix 
+    fits:d001geom: 'User parameters'    / Drizzle, source of geometric information       
+    fits:d001inun: 'counts  '           / Drizzle, units of input image - counts or cps  
+    fits:d001inxc: 2048.5 / Drizzle, reference center of input image (X)   
+    fits:d001inyc: 1024.5 / Drizzle, reference center of input image (Y)   
+    fits:d001kern: 'square  '           / Drizzle, form of weight distribution kernel    
+    fits:d001lam: 591.76797 / Drizzle, wavelength applied for transformation 
+    fits:d001mask: 'j9ra98ihq_flt_final_mask1.fits' / Drizzle, input weighting image     
+    fits:d001ouco: 'ngc0253-field01-f606w_drz_context.fits' / Drizzle, output context ima
+    fits:d001ouda: 'ngc0253-field01-f606w_drz_sci.fits' / Drizzle, output data image     
+    fits:d001ouun: 'cps     '           / Drizzle, units of output image - counts or cps 
+    fits:d001ouwe: 'ngc0253-field01-f606w_drz_weight.fits' / Drizzle, output weighting im
+    fits:d001ouxc: 2110.5 / Drizzle, reference center of output image (X)  
+    fits:d001ouyc: 2149.5 / Drizzle, reference center of output image (Y)  
+    fits:d001pixf: 1.0 / Drizzle, linear size of drop                   
+    fits:d001rot: 0.00013165 / Drizzle, rotation angle, degrees anticlockwise 
+    fits:d001scal: 0.9999915118665161 / Drizzle, scale (pixel size) of output image    
+    fits:d001sftf: 'output  '           / Drizzle, frame in which shifts were applied    
+    fits:d001sftu: 'output  '           / Drizzle, units used for shifts                 
+    fits:d001ver: 'Callable DRIZZLE Version 0.7 (4th Apr 2005) ' / Drizzle, task version
+    fits:d001wtsc: 741.0 / Drizzle, weighting factor for input image      
+    fits:d001xgim: 'jref$qbu16424j_dxy.fits[DX,1]' / Drizzle, X distortion image name    
+    fits:d001xsh: -3.774518145607999 / Drizzle, X shift applied                       
+    fits:d001ygim: 'jref$qbu16424j_dxy.fits[DY,1]' / Drizzle, Y distortion image name    
+    fits:d001ysh: -29.71586895844939 / Drizzle, Y shift applied                       
+    fits:d002coef: 'j9ra98ihq_flt_coeffs1.dat' / Drizzle, coefficients file name         
+    fits:d002data: 'j9ra98ihq_flt.fits[sci,2]' / Drizzle, input data image               
+    fits:d002dexp: 741.0 / Drizzle, input image exposure time (s)         
+    fits:d002exky: 'EXPTIME '           / Drizzle, exposure keyword name in input image  
+    fits:d002fval: 'INDEF   '           / Drizzle, fill value for zero weight output pix 
+    fits:d002geom: 'User parameters'    / Drizzle, source of geometric information       
+    fits:d002inun: 'counts  '           / Drizzle, units of input image - counts or cps  
+    fits:d002inxc: 2048.5 / Drizzle, reference center of input image (X)   
+    fits:d002inyc: 1024.5 / Drizzle, reference center of input image (Y)   
+    fits:d002kern: 'square  '           / Drizzle, form of weight distribution kernel    
+    fits:d002lam: 591.76797 / Drizzle, wavelength applied for transformation 
+    fits:d002mask: 'j9ra98ihq_flt_final_mask2.fits' / Drizzle, input weighting image     
+    fits:d002ouco: 'ngc0253-field01-f606w_drz_context.fits' / Drizzle, output context ima
+    fits:d002ouda: 'ngc0253-field01-f606w_drz_sci.fits' / Drizzle, output data image     
+    fits:d002ouun: 'cps     '           / Drizzle, units of output image - counts or cps 
+    fits:d002ouwe: 'ngc0253-field01-f606w_drz_weight.fits' / Drizzle, output weighting im
+    fits:d002ouxc: 2110.5 / Drizzle, reference center of output image (X)  
+    fits:d002ouyc: 2149.5 / Drizzle, reference center of output image (Y)  
+    fits:d002pixf: 1.0 / Drizzle, linear size of drop                   
+    fits:d002rot: 0.00013157 / Drizzle, rotation angle, degrees anticlockwise 
+    fits:d002scal: 0.9999916428895315 / Drizzle, scale (pixel size) of output image    
+    fits:d002sftf: 'output  '           / Drizzle, frame in which shifts were applied    
+    fits:d002sftu: 'output  '           / Drizzle, units used for shifts                 
+    fits:d002ver: 'Callable DRIZZLE Version 0.7 (4th Apr 2005) ' / Drizzle, task version
+    fits:d002wtsc: 741.0 / Drizzle, weighting factor for input image      
+    fits:d002xgim: 'jref$qbu16424j_dxy.fits[DX,2]' / Drizzle, X distortion image name    
+    fits:d002xsh: -3.595728902006613 / Drizzle, X shift applied                       
+    fits:d002ygim: 'jref$qbu16424j_dxy.fits[DY,2]' / Drizzle, Y distortion image name    
+    fits:d002ysh: -29.66659132575978 / Drizzle, Y shift applied                       
+    fits:d003coef: 'j9ra98ijq_flt_coeffs2.dat' / Drizzle, coefficients file name         
+    fits:d003data: 'j9ra98ijq_flt.fits[sci,1]' / Drizzle, input data image               
+    fits:d003dexp: 767.0 / Drizzle, input image exposure time (s)         
+    fits:d003exky: 'EXPTIME '           / Drizzle, exposure keyword name in input image  
+    fits:d003fval: 'INDEF   '           / Drizzle, fill value for zero weight output pix 
+    fits:d003geom: 'User parameters'    / Drizzle, source of geometric information       
+    fits:d003inun: 'counts  '           / Drizzle, units of input image - counts or cps  
+    fits:d003inxc: 2048.5 / Drizzle, reference center of input image (X)   
+    fits:d003inyc: 1024.5 / Drizzle, reference center of input image (Y)   
+    fits:d003kern: 'square  '           / Drizzle, form of weight distribution kernel    
+    fits:d003lam: 591.76797 / Drizzle, wavelength applied for transformation 
+    fits:d003mask: 'j9ra98ijq_flt_final_mask1.fits' / Drizzle, input weighting image     
+    fits:d003ouco: 'ngc0253-field01-f606w_drz_context.fits' / Drizzle, output context ima
+    fits:d003ouda: 'ngc0253-field01-f606w_drz_sci.fits' / Drizzle, output data image     
+    fits:d003ouun: 'cps     '           / Drizzle, units of output image - counts or cps 
+    fits:d003ouwe: 'ngc0253-field01-f606w_drz_weight.fits' / Drizzle, output weighting im
+    fits:d003ouxc: 2110.5 / Drizzle, reference center of output image (X)  
+    fits:d003ouyc: 2149.5 / Drizzle, reference center of output image (Y)  
+    fits:d003pixf: 1.0 / Drizzle, linear size of drop                   
+    fits:d003rot: 0.00044157 / Drizzle, rotation angle, degrees anticlockwise 
+    fits:d003scal: 1.000011157061104 / Drizzle, scale (pixel size) of output image    
+    fits:d003sftf: 'output  '           / Drizzle, frame in which shifts were applied    
+    fits:d003sftu: 'output  '           / Drizzle, units used for shifts                 
+    fits:d003ver: 'Callable DRIZZLE Version 0.7 (4th Apr 2005) ' / Drizzle, task version
+    fits:d003wtsc: 767.0 / Drizzle, weighting factor for input image      
+    fits:d003xgim: 'jref$qbu16424j_dxy.fits[DX,1]' / Drizzle, X distortion image name    
+    fits:d003xsh: 3.792225273836721 / Drizzle, X shift applied                       
+    fits:d003ygim: 'jref$qbu16424j_dxy.fits[DY,1]' / Drizzle, Y distortion image name    
+    fits:d003ysh: 29.75473743951125 / Drizzle, Y shift applied                       
+    fits:d004coef: 'j9ra98ijq_flt_coeffs1.dat' / Drizzle, coefficients file name         
+    fits:d004data: 'j9ra98ijq_flt.fits[sci,2]' / Drizzle, input data image               
+    fits:d004dexp: 767.0 / Drizzle, input image exposure time (s)         
+    fits:d004exky: 'EXPTIME '           / Drizzle, exposure keyword name in input image  
+    fits:d004fval: 'INDEF   '           / Drizzle, fill value for zero weight output pix 
+    fits:d004geom: 'User parameters'    / Drizzle, source of geometric information       
+    fits:d004inun: 'counts  '           / Drizzle, units of input image - counts or cps  
+    fits:d004inxc: 2048.5 / Drizzle, reference center of input image (X)   
+    fits:d004inyc: 1024.5 / Drizzle, reference center of input image (Y)   
+    fits:d004kern: 'square  '           / Drizzle, form of weight distribution kernel    
+    fits:d004lam: 591.76797 / Drizzle, wavelength applied for transformation 
+    fits:d004mask: 'j9ra98ijq_flt_final_mask2.fits' / Drizzle, input weighting image     
+    fits:d004ouco: 'ngc0253-field01-f606w_drz_context.fits' / Drizzle, output context ima
+    fits:d004ouda: 'ngc0253-field01-f606w_drz_sci.fits' / Drizzle, output data image     
+    fits:d004ouun: 'cps     '           / Drizzle, units of output image - counts or cps 
+    fits:d004ouwe: 'ngc0253-field01-f606w_drz_weight.fits' / Drizzle, output weighting im
+    fits:d004ouxc: 2110.5 / Drizzle, reference center of output image (X)  
+    fits:d004ouyc: 2149.5 / Drizzle, reference center of output image (Y)  
+    fits:d004pixf: 1.0 / Drizzle, linear size of drop                   
+    fits:d004rot: 0.00044167 / Drizzle, rotation angle, degrees anticlockwise 
+    fits:d004scal: 1.000011280139622 / Drizzle, scale (pixel size) of output image    
+    fits:d004sftf: 'output  '           / Drizzle, frame in which shifts were applied    
+    fits:d004sftu: 'output  '           / Drizzle, units used for shifts                 
+    fits:d004ver: 'Callable DRIZZLE Version 0.7 (4th Apr 2005) ' / Drizzle, task version
+    fits:d004wtsc: 767.0 / Drizzle, weighting factor for input image      
+    fits:d004xgim: 'jref$qbu16424j_dxy.fits[DX,2]' / Drizzle, X distortion image name    
+    fits:d004xsh: 3.971010578528421 / Drizzle, X shift applied                       
+    fits:d004ygim: 'jref$qbu16424j_dxy.fits[DY,2]' / Drizzle, Y distortion image name    
+    fits:d004ysh: 29.80401228051369 / Drizzle, Y shift applied                       
+    fits:darkcorr: 'COMPLETE'           / Subtract dark image                            
+    fits:darkfile: 'jref$qad20067j_drk.fits' / dark image file name                      
+    fits:date: '2007-01-02T17:48:54' / Date FITS file was generated                  
+    fits:date-obs: '2006-09-13'         / UT date of start of observation (yyyy-mm-dd)   
+    fits:dec_aper: -2.527950950483E+01 / Declination of aperture reference position     
+    fits:dec_targ: -2.527894444444E+01 / declination of the target (deg) (J2000)        
+    fits:detector: 'WFC'                / detector in use: WFC, HRC, or SBC              
+    fits:dfltfile: 'N/A                    ' / delta flat field file name                
+    fits:dgeofile: 'jref$qbu16424j_dxy.fits' / Distortion correction image               
+    fits:dirimage: 'NONE     '          / direct image for grism or prism exposure       
+    fits:dol_acs: -2 / DOLPHOT ACS tag                                
+    fits:dqicorr: 'COMPLETE'           / data quality initialization                    
+    fits:drizcorr: 'COMPLETE'           / drizzle processing                             
+    fits:equinox: 2000.0 / equinox of celestial coord. system             
+    fits:errcnt: 0 / number of segments containing errors           
+    fits:expend: 53991.42405175 / exposure end time (Modified Julian Date)       
+    fits:expflag: 'NORMAL       '      / Exposure interruption indicator                
+    fits:expname: 'j9ra98ihq                ' / exposure identifier                     
+    fits:expscorr: 'COMPLETE'           / process individual observations after cr-reject
+    fits:expstart: 53991.40438814 / exposure start time (Modified Julian Date)     
+    fits:exptime: 1508.000000 / Exposure time (s)                              
+    fits:exptime0: 1508.000000 / Single image exposure time (s)                 
+    fits:extend: T / There may be standard extensions               
+    fits:extname: 'SCI     '           / Extension name                                 
+    fits:extver: 1 / Extension version                              
+    fits:fgslock: 'FINE              ' / commanded FGS lock (FINE,COARSE,GYROS,UNKNOWN) 
+    fits:filename: 'ngc0253-field01-f606w_drz.fits' / name of file                       
+    fits:filetype: 'SCI      '          / type of data found in data file                
+    fits:fillcnt: 0 / number of segments containing fill             
+    fits:filter1: 'F606W             ' / element selected from filter wheel 1           
+    fits:filter2: 'CLEAR2L           ' / element selected from filter wheel 2           
+    fits:flashcur: 'OFF '               / Post flash current: OFF, LOW, MED, HIGH        
+    fits:flashdur: 0.0 / Exposure time in seconds: 0.1 to 409.5         
+    fits:flashsta: 'NOT PERFORMED   '   / Status: SUCCESSFUL, ABORTED, NOT PERFORMED     
+    fits:flatcorr: 'COMPLETE'           / flat field data                                
+    fits:flshcorr: 'OMIT    '           / post flash correction                          
+    fits:flshfile: 'N/A                    ' / post flash correction file name           
+    fits:fwerror: F / filter wheel position error flag               
+    fits:fwoffset: 0 / computed filter wheel offset                   
+    fits:gain: 1.000000 / Gain (electrons/ADU)                           
+    fits:gcount: 1 / Only one group                                 
+    fits:goodmax: 7.2157133E+04 / maximum value of good pixels                   
+    fits:goodmean: 9.0681812E+02 / mean value of good pixels                      
+    fits:goodmin: -1.6524738E+02 / minimum value of good pixels                   
+    fits:graphtab: 'mtab$p1s1748gm_tmg.fits' / the HST graph table                       
+    fits:gyromode: '2'                  / observation scheduled with only two gyros (Y/N)
+    fits:history: _syn.fits                                                               
+    fits:idctab: 'jref$qbu1641sj_idc.fits' / image distortion correction table         
+    fits:imagetyp: 'EXT               ' / type of exposure identifier                    
+    fits:inherit: T / inherit the primary header                     
+    fits:initgues: '   '                / initial guess method (MIN or MED)              
+    fits:instrume: 'ACS   '             / identifier for instrument used to acquire data 
+    fits:iraf-tlm: '17:48:53 (02/01/2007)' / Time of last modification                   
+    fits:lfltfile: 'N/A                    ' / low order flat                            
+    fits:linenum: '98.005         '    / proposal logsheet line number                  
+    fits:lostpix: 0 / #pixels lost due to buffer overflow            
+    fits:lrfwave: 0.000000 / proposed linear ramp filter wavelength         
+    fits:ltm1_1: 1.0 / reciprocal of sampling rate in X               
+    fits:ltm2_2: 1.0 / reciprocal of sampling rate in Y               
+    fits:ltv1: 0.0000000E+00 / offset in X to subsection start                
+    fits:ltv2: 0.0000000E+00 / offset in Y to subsection start                
+    fits:mdrizsky: 0 / Sky value computed by MultiDrizzle             
+    fits:mdriztab: 'jref$p3p16511j_mdz.fits' / MultiDrizzle parameter table              
+    fits:meanblev: 2.2633499E+03 / average of all bias levels subtracted          
+    fits:meandark: 1.1313769E+00 / average of the dark values subtracted          
+    fits:meanexp: 0.000000 / reference exposure time for parameters         
+    fits:meanflsh: 0.000000 / Mean number of counts in post flash exposure   
+    fits:mjd-obs: 53991.414220 / Epoch (MJD)                                    
+    fits:moonangl: 72.315430 / angle between moon and V1 axis                 
+    fits:naxis: 2 / Number of axes                                 
+    fits:naxis1: 4220 /                                                
+    fits:naxis2: 4299 /                                                
+    fits:ncombine: 2 / number of image sets combined during CR rejecti
+    fits:ndrizim: 4 / Drizzle, No. images drizzled onto output       
+    fits:nextend: 1 /                                                
+    fits:ngoodpix: 8018192 / number of good pixels                          
+    fits:nrptexp: 1 / number of repeat exposures in set: default 1   
+    fits:obsmode: 'ACCUM     '         / operating mode                                 
+    fits:obstype: 'IMAGING       '     / observation type - imaging or spectroscopic    
+    fits:ocd1_1: -1.08761E-05 / partial of first axis coordinate w.r.t. x      
+    fits:ocd1_2: -9.39496E-06 / partial of first axis coordinate w.r.t. y      
+    fits:ocd2_1: -8.59077E-06 / partial of second axis coordinate w.r.t. x     
+    fits:ocd2_2: 1.03525E-05 / partial of second axis coordinate w.r.t. y     
+    fits:ocrpix1: 2100.0 / x-coordinate of reference pixel                
+    fits:ocrpix2: 1024.0 / y-coordinate of reference pixel                
+    fits:ocrval1: 11.9123110611 / first axis value at reference pixel            
+    fits:ocrval2: -25.28990822428 / second axis value at reference pixel           
+    fits:octype1: 'RA---TAN'           / the coordinate type for the first axis         
+    fits:octype2: 'DEC--TAN'           / the coordinate type for the second axis        
+    fits:ocx10: 0.001963132009005428                                                  
+    fits:ocx11: 0.04983047607945856                                                  
+    fits:ocy10: 0.05027492442077177                                                  
+    fits:ocy11: 0.001491922365114964                                                  
+    fits:onaxis1: 4096 / Axis length                                    
+    fits:onaxis2: 2048 / Axis length                                    
+    fits:oorienta: -42.22394357896897 / position angle of image y axis (deg. e of n)   
+    fits:opus_ver: 'OPUS 2006_6       ' / OPUS software system version number            
+    fits:orientat: -40.00030432392262 / position angle of image y axis (deg. e of n)   
+    fits:origin: 'NOAO-IRAF FITS Image Kernel July 2003' / FITS file originator        
+    fits:oscntab: 'jref$lch1459bj_osc.fits' / CCD overscan table                        
+    fits:p1_angle: 0.000000 / angle between sides of parallelogram patt (deg)
+    fits:p1_centr: '   '                / center pattern relative to pointing (yes/no)   
+    fits:p1_frame: '         '          / coordinate frame of primary pattern            
+    fits:p1_lspac: 0.000000 / line spacing for primary pattern (arc-sec)     
+    fits:p1_npts: 0 / number of points in primary pattern            
+    fits:p1_orint: 0.000000 / orientation of pattern to coordinate frame (deg
+    fits:p1_pspac: 0.000000 / point spacing for primary pattern (arc-sec)    
+    fits:p1_purps: '          '         / primary pattern purpose                        
+    fits:p1_shape: '                  ' / primary pattern shape                          
+    fits:pa_aper: -42.4727 / Position Angle of reference aperture center (de
+    fits:pa_v3: 139.994797 / position angle of V3-axis of HST (deg)         
+    fits:pattern1: 'NONE                    ' / primary pattern type                     
+    fits:pattstep: 0 / position number of this point in the pattern   
+    fits:pcount: 0 / No 'random' parameters                         
+    fits:pfltfile: 'jref$qb12257sj_pfl.fits' / pixel to pixel flat field file name       
+    fits:photbw: 6.7231146E+02 / RMS bandwidth of filter plus detector          
+    fits:photcorr: 'COMPLETE'           / populate photometric header keywords           
+    fits:photflam: 7.9064521E-20 / inverse sensitivity, ergs/cm2/Ang/electron     
+    fits:photmode: 'ACS WFC1 F606W'     / observation con                                
+    fits:photplam: 5.9176797E+03 / Pivot wavelength (Angstroms)                   
+    fits:phottab: 'N/A                    ' / Photometric throughput table              
+    fits:photzpt: -2.1100000E+01 / ST magnitude zero point                        
+    fits:podpsff: F / podps fill present (T/F)                       
+    fits:postarg1: 0.247000 / POSTARG in axis 1 direction                    
+    fits:postarg2: 2.984000 / POSTARG in axis 2 direction                    
+    fits:pr_inv_f: 'Julianne            ' / first name of principal investigator         
+    fits:pr_inv_l: 'Dalcanton                     ' / last name of principal investigator
+    fits:pr_inv_m: '                    ' / middle name / initial of principal investigat
+    fits:primesi: 'ACS   '             / instrument designated as prime                 
+    fits:proctime: 5.410272046296E+04 / Pipeline processing time (MJD)                 
+    fits:propaper: 'WFCENTER        '   / proposed aperture name                         
+    fits:proposid: 10915 / PEP proposal identifier                        
+    fits:qualcom1: '                                                                    '
+    fits:qualcom2: '                                                                    '
+    fits:qualcom3: '                                                                    '
+    fits:quality: '                                                                    '
+    fits:ra_aper: 1.190203327116E+01 / RA of aperture reference position              
+    fits:ra_targ: 1.190135833333E+01 / right ascension of the target (deg) (J2000)    
+    fits:rdnoise: 5.247500 / Read noise (electrons)                         
+    fits:readnsea: 5.3299999E+00 / calibrated read noise for amplifier A          
+    fits:readnseb: 4.9899998E+00 / calibrated read noise for amplifier B          
+    fits:readnsec: 5.5100002E+00 / calibrated read noise for amplifier C          
+    fits:readnsed: 5.1599998E+00 / calibrated read noise for amplifier D          
+    fits:refframe: 'ICRS    '           / guide star catalog version                     
+    fits:rej_rate: 0.0 / rate at which pixels are affected by cosmic ray
+    fits:rootname: 'ngc0253-field01-f606w' / rootname of the observation set             
+    fits:rptcorr: 'OMIT    '           / add individual repeat observations             
+    fits:saturate: 208536.437500 / High bad data value (DN)                       
+    fits:scalense: 0.000000 / multiplicative scale factor applied to noise   
+    fits:sclamp: 'NONE     '          / lamp status, NONE or name of lamp which is on  
+    fits:sdqflags: 31743 / serious data quality flags                     
+    fits:shadcorr: 'OMIT    '           / apply shutter shading correction               
+    fits:shadfile: 'jref$kcb17349j_shd.fits' / shutter shading correction file           
+    fits:shutrpos: 'B    '              / Shutter position: A or B                       
+    fits:simple: T / Standard FITS format                           
+    fits:sizaxis1: 4096 / subarray axis1 size in unbinned detector pixels
+    fits:sizaxis2: 2048 / subarray axis2 size in unbinned detector pixels
+    fits:skysub: '    '               / sky value subtracted (MODE or NONE)            
+    fits:skysum: 0.0 / sky level from the sum of all constituent image
+    fits:snrmax: 2.2105536E+02 / maximum signal to noise of good pixels         
+    fits:snrmean: 2.8184797E+01 / mean value of signal to noise of good pixels   
+    fits:snrmin: -3.1653905E-01 / minimum signal to noise of good pixels         
+    fits:softerrs: 0 / number of soft error pixels (DQF=1)            
+    fits:spottab: 'N/A               ' / Coronagraphic spot offset table                
+    fits:statflag: F / Calculate statistics?                          
+    fits:stdcfff: F / ST DDF fill present (T/F)                      
+    fits:stdcffp: 'x5569 '             / ST DDF fill pattern (hex)                      
+    fits:subarray: F / data from a subarray (T) or full frame (F)     
+    fits:sun_alt: -8.528769 / altitude of the sun above Earth's limb         
+    fits:sunangle: 150.768448 / angle between sun and V1 axis                  
+    fits:t_sgstar: '                  ' / OMS calculated guide star control              
+    fits:targname: 'NGC0253-WIDE5                 ' / proposer's target name             
+    fits:telescop: 'HST'                / telescope used to acquire data                 
+    fits:time-obs: '09:42:19'           / UT time of start of observation (hh:mm:ss)     
+    fits:vafactor: 1.0 / velocity aberration plate scale factor         
+    fits:wcsaxes: 2 / number of World Coordinate System axes         
+    fits:wcscdate: '18:37:11 (02/01/2007)' / Time WCS keywords were copied.              
+    fits:wfcmprsd: F / was WFC data compressed? (T/F)                 
+    fits:wrterr: T / write out error array extension                
+    fits:xtension: 'IMAGE             ' / Extension type                                 
+    signature: da57805ee12e88d1394fea26903f7c52c2991700949f3bf01efbe222a6565188
+  Artifacts:
+    filename: images/ngc0253-field01-f606w_drz.fits
+    verbose: true
+  Tainted: False
+  Filesize: 72.6MB
+  Number pixels: 18.14M
+  Pixels per second: 2.839MB
+  User time: 6.300u
+  Elapsed time: 0:07.390
+  Version: ImageMagick 6.7.7-10 2012-11-06 Q16 http://www.imagemagick.org
