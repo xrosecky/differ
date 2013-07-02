@@ -1,0 +1,163 @@
+#+TODO: OPEN | CLOSED
+(setq org-sync-github-auth '("jstavel" . "aeLohjo9"))
+* Bugs of differ
+:PROPERTIES:
+:since:    nil
+:url:      https://api.github.com/repos/jstavel/differ
+:END:
+** OPEN jpylyzer - create unittest to check whether all significant properties are mapped right way
+ - see appCtx-differ-cmdline.xml. It is main source.
+ 
+ So there is bean metadataExtractors.
+ See where it is used.
+ 
+ There is jpylyzerMetadataExtractor in the file.
+ It will be called in a unittest to get output.
+ 
+ - please see, what structure the output is.
+ 
+ There is ArraySet extractorProperties, identificationProperties, validationProperties, characterizationProperties in a file metadataSignificantProperties.
+ All of them will be checked in the unittest.
+ 
+ - Choose two images that jpylyzer can recognize. See property supportedFileExtensions in a file jpylyzerMetadataExtractor.
+ - call jpylyzer by hand and try to recognize what values of significant properties the extractor gives.
+ - save the values of significant properties for a given image into some structure. I think you can create spring application context for junit.
+ - write junit test for bean jpylyzerMetadataExtractor to check, whether outputs it gives for a given image are the same as values by hand.
+ 
+ If you have problem with collecting values of significant properties for given image I help you.
+
+** OPEN find one property that jpylyzer shows and that is not mapped yet
+:PROPERTIES:
+:sync:     conflict-local
+:id:       12
+:date-modification: 2013-06-19T17:56:17+0200
+:date-creation: 2013-06-19T17:52:20+0200
+:author:   "jstavel"
+:assignee: "jonatansve"
+:END:
+: one property that does not appear in text report
+** OPEN fix refer to common.properties to proper place
+:PROPERTIES:
+:id:       11
+:date-modification: 2013-06-19T17:39:30+0200
+:date-creation: 2013-06-19T17:39:30+0200
+:author:   "jstavel"
+:END:
+: proper link is differ-cmdline/src/main/resources/common.properties
+** OPEN implement some hash index to access properties by name
+:PROPERTIES:
+:tags:     ("enhancement")
+:id:       4
+:date-modification: 2013-06-19T11:10:53+0200
+:date-creation: 2013-06-03T03:05:38+0200
+:author:   "jstavel"
+:END:
+: https://differ.readthedocs.org/en/latest/#id31
+: 
+: There are a lot of properties that program must collects and normalizes.
+: They are stored in ArrayList structure. It is often necessary to select given properties
+: by its own name.
+: 
+: Implementing some kind of index by property name must speed up an aplication.
+: At least ArrayHash by property name could help.
+** OPEN to create a thumbnail of an image and to add it into report
+:PROPERTIES:
+:tags:     ("enhancement")
+:id:       3
+:date-modification: 2013-06-19T11:10:53+0200
+:date-creation: 2013-06-03T03:03:15+0200
+:author:   "jstavel"
+:END:
+: User could view image in a report. So it is easier to remember what images were compared.
+** OPEN result of comparion can be in other than text format
+:PROPERTIES:
+:tags:     ("enhancement")
+:id:       2
+:date-modification: 2013-06-19T11:10:53+0200
+:date-creation: 2013-06-03T03:01:44+0200
+:author:   "jstavel"
+:END:
+: It could be great to have a comparison report in `html`.
+: Or in `pdf`. Report can be done using JasperReport.
+: 
+: See: https://differ.readthedocs.org/en/latest/#result-of-comparion-can-be-in-other-than-text-format
+** OPEN to improve an iteration process of recognizing new properties
+:PROPERTIES:
+:tags:     ("enhancement")
+:id:       6
+:date-modification: 2013-06-19T11:10:52+0200
+:date-creation: 2013-06-03T03:07:51+0200
+:author:   "jstavel"
+:END:
+: https://differ.readthedocs.org/en/latest/#id35
+: 
+: It is difficult to observe all properties that metadata extractors offer.
+: So it is possible that some of properties remain unrecognized and they are not never used.
+: 
+: It would be great to offer some debug mode when an application shows all unused properties.
+: At the end of an iteration (ie. configuration) an application will show no unused property.
+** OPEN calling of external java extractors throught their methods using running JVM
+:PROPERTIES:
+:tags:     ("enhancement")
+:id:       5
+:date-modification: 2013-06-19T11:10:52+0200
+:date-creation: 2013-06-03T03:06:59+0200
+:author:   "jstavel"
+:END:
+: https://differ.readthedocs.org/en/latest/#id32
+: Metadata extractors that are written in java can be called in running JVM
+: calling some class methods. It must speed up an application a lot.
+** CLOSED save steps of jpylyzer installation into documentation
+:PROPERTIES:
+:id:       10
+:date-modification: 2013-06-19T20:55:56+0200
+:date-creation: 2013-06-19T11:24:18+0200
+:author:   "jstavel"
+:assignee: "jonatansve"
+:END:
+: Please save your installations steps in documentation.
+: It is enought to copy and paste steps you did on your terminal.
+: The source file of a documentation regarding to jpylyzer is docs/jpylyzer.rst.
+** CLOSED install sphinx documentation tool
+:PROPERTIES:
+:id:       9
+:date-modification: 2013-06-19T20:55:56+0200
+:date-creation: 2013-06-19T11:24:08+0200
+:author:   "jstavel"
+:assignee: "jonatansve"
+:END:
+: documentation is written in restructured text.
+: [[http://docutils.sourceforge.net/rst.html]]
+: 
+: If you want to see rendered documentation, it is necessary to install sphinx tools.
+: [[http://sphinx-doc.org/]]
+** CLOSED install jpylyzer
+:PROPERTIES:
+:sync:     conflict-local
+:id:       8
+:date-modification: 2013-06-19T17:20:00+0200
+:date-creation: 2013-06-19T11:16:21+0200
+:author:   "jstavel"
+:assignee: "jonatansve"
+:END:
+: and try to run docs/bin/get-jpylyzer.sh
+: It is a script to collect outputs from jpylyzer.
+: It is the first step to collect significant properties - observing output of an external program.
+** CLOSED install jpylyzer
+:PROPERTIES:
+:id:       7
+:date-modification: 2013-06-19T11:33:22+0200
+:date-creation: 2013-06-19T09:31:49+0200
+:author:   "jstavel"
+:END:
+: please refer to documentation.
+: Please, write a short installation guide how to install.
+: Just copy and paste commands you did.
+** CLOSED GSoC proposal
+:PROPERTIES:
+:id:       1
+:date-modification: 2013-06-19T11:15:45+0200
+:date-creation: 2013-04-30T17:32:22+0200
+:author:   "qwertzdenek"
+:END:
+: Hello. There is my code suggestion for start. It is not much.
