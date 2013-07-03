@@ -11,7 +11,7 @@ Configuration of metadata extractor test contains:
 - file with raw output from metadata extractor
 
 
-main file with context of all tests is: =resources/appCtx-differ-tests.xml=
+main file with context of all tests is: =src/test/resources/appCtx-differ-cmdline-test.xml=
 
 .. list-table:: Tests of metadata extractors
    :header-rows: 1

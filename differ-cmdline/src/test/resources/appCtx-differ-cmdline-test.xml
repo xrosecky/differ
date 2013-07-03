@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="
-	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:component-scan base-package="cz.nkp.differ"/>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+
+    <context:component-scan base-package="cz.nkp.differ"/>
+    <import resource="image14-significant-properties.xml"/>
 
 
     <bean id="jpylyzerMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
-      <property name="stylesheet" value="classpath:jpylyzer.xsl"/>
+        <property name="stylesheet" value="classpath:jpylyzer.xsl"/>
     </bean>
 
+    <util:list id="metadataExtractorTests">
+        <value>image14Test01</value>
+    </util:list>
 
-</beans>
+    <util:map id="image14Tesct01">
+        <entry key="extractor" value="jpylyzerMetadataExtractor"/>
+        <!-- it said value-ref to? maybe ref to jpylyzerMetadataTransformer? : defined in jpylyzerMetadataExtractor.xml -->
+        <entry key="filePathOfOutput" value="docs/examples/images_01/14/output-jpylyzer.raw"/>
+        <entry key="significantProperties" value="image14SignificantProperties"/>
+        <entry key="recognizedSignificantProperties" value-ref="image14Test01RecognizedProperties"/>
+    </util:map>
+
+    <util:list id="image14Test01RecognizedProperties">
+        <value>MIME type</value>
+        <value>Type of format</value>
+        <value>Version of format</value>
+    </util:list>
+ </beans>
+
+

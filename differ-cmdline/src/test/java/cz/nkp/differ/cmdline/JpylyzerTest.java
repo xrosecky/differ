@@ -38,7 +38,6 @@ public final class JpylyzerTest {
 	
 	
 	
-	
 	@Test
 	public void test() {
 		setup();
@@ -58,6 +57,7 @@ public final class JpylyzerTest {
         //Step 2: run file through xslt
         try{
             byte[] output= readFile("src/test/resources/output-jpylyzer.xml");
+            //TODO fix intelliJ working directory: http://justsomejavaguy.blogspot.se/2011/06/filenotfoundexception-when-running-unit.html
             transformedMetadata = jpylyzerMetadataTransformer.transform(output, null);
         }
         catch(IOException e){
