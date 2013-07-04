@@ -8,9 +8,9 @@
 			   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
   <util:map id="image01SignificantProperties">
-    <entry key="filePath" value="docs/examples/images_01/01.jpg"/>
+    <entry key="filePath" value="docs/examples/01.jpg"/>
     <entry key="identificationProperties" value-ref="image01IdentificationProperties"/>
-    <entry key="validationProperties" value-ref="image01IdentificationProperties"/>
+    <entry key="validationProperties" value-ref="image01ValidationProperties"/>
     <entry key="characterizationProperties" value-ref="image01CharacterizationProperties"/>
   </util:map>
 
@@ -20,7 +20,7 @@
     <entry key="Version of format" value=""/>
   </util:map>
   
-  <util:map id="image01validationProperties">
+  <util:map id="image01ValidationProperties">
     <entry key="Validation (well formed and valid)" value=""/>
     <entry key="Signature box length is valid" value=""/>
     <entry key="Signature is valid" value=""/>
