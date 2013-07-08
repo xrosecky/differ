@@ -2,6 +2,9 @@ package cz.nkp.differ.cmdline;
 
 import static org.junit.Assert.*;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -32,6 +35,8 @@ public final class JpylyzerTest {
     private List<Entry> transformedMetadata;
 
     private String filePathToRawOutput;
+    // TODO set proper config
+    Logger logger = LogManager.getLogger(JpylyzerTest.class.getName());
 
 
     /**
@@ -43,18 +48,69 @@ public final class JpylyzerTest {
     private List<Map> testList;
 	
 	@Test
-	public void test() {
+	public void testProperties() {
 		setup();
 
         assertNotNull(manualMetadata);
         assertNotNull(transformedMetadata);
 
-        // Run comparison tests here
+        // assertEquals(manualMetadata.size(),transformedMetadata.size());
+
+
+        // Look for the differences between the two structures
+        logger.error("Testing properties that appear in manualMetadata but not in transformedMetadata");
+        significantProperties(manualMetadata, true);
+
+        // Until config is set proper root level
+        logger.error("----------------------------------");
+
+        logger.error("Testing properties that appear in transformedMetadata but not in manualMetadata");
+        significantProperties(transformedMetadata, false);
 
 	}
+    // Assuming transformed has more properties than manual
+    public void significantProperties(List<Entry> list, boolean manualTest){
+       int listIndex = 0;
+       boolean success = false;
+       Entry e;
+       while(listIndex < list.size()){
+          e= list.get(listIndex);
+          if(manualTest==true){
+            success=lookForinTransform(e.getKey());
+          }
+          else success=lookForinManual(e.getKey());
+
+          if(!success) {
+              logger.error(">>>>>>>>>>>>"+e.getKey()+"<<<<<<<<<< is missing...");
+          }
+          listIndex++;
+       }
+
+    }
+    private boolean lookForinTransform(String key){
+        Entry e;
+        for(int i=0; i <transformedMetadata.size();i++){
+            e = transformedMetadata.get(i);
+            if(key.equals(e.getKey())){  // Test value equality
+                logger.trace("Found!!!>>>>>>>>" + key + "<<<<<<<<<<<<");
+                return true;
+            }
+        }
+         return false;
+    }
+    private boolean lookForinManual(String key){
+        Entry e;
+        for(int i=0; i <manualMetadata.size();i++){
+            e = manualMetadata.get(i);
+            if(key.equals(e.getKey())){  // Test value equality
+                logger.trace("Found!!!>>>>>>>>" + key + "<<<<<<<<<<<<");
+                return true;
+            }
+        }
+        return false;
+    }
 
     public void setup(){
-        System.out.println(testList);
         for(int i = 0;i<testList.size();i++){
             //Step 1: load properties for this test
             Map m =testList.get(i);
@@ -75,7 +131,6 @@ public final class JpylyzerTest {
             //Find elements and insert into structure
             o = m.get("significantProperties");
             LinkedHashMap l = (LinkedHashMap)o;
-            System.out.println(l);
             o= l.get("identificationProperties");
             createNewEntries((LinkedHashMap)o);
             o= l.get("validationProperties");
@@ -83,12 +138,7 @@ public final class JpylyzerTest {
             o= l.get("characterizationProperties");
             createNewEntries((LinkedHashMap)o);
 
-            // Verify
-            for(Entry e : manualMetadata){
-                System.out.println(e.getKey());
-            }
-
-        }  // Loop to next test
+        }  // Loop to next test TODO if more than one test run tests inside this method
     }
 
     private void createNewEntries(LinkedHashMap l){
@@ -101,7 +151,7 @@ public final class JpylyzerTest {
                 manualMetadata.add(e);
             }
         }
-        else System.err.println("Could not load list from context");
+        else logger.error("Could not load properties list from application context");
 
     }
 	private byte[] readFile(String string) throws IOException{
@@ -123,5 +173,4 @@ public final class JpylyzerTest {
         }
 		return null;
 	}
-
 }
