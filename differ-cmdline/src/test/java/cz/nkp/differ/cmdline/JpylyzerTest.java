@@ -19,7 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-
+import cz.nkp.differ.compare.metadata.external.ResultTransformer;
 import cz.nkp.differ.compare.metadata.external.XSLTTransformer;
 import cz.nkp.differ.compare.metadata.external.ResultTransformer.Entry;
 
@@ -43,7 +43,7 @@ public final class JpylyzerTest {
      * Import test subjects
      */
 	@Autowired
-	private XSLTTransformer jpylyzerMetadataTransformer;
+	private ResultTransformer jpylyzerMetadataTransformer;
     @Resource (name="metadataExtractorTests")
     private List<Map> testList;
 	

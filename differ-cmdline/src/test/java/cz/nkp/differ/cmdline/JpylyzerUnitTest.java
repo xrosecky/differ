@@ -2,7 +2,6 @@ package cz.nkp.differ.cmdline;
 
 import cz.nkp.differ.compare.metadata.external.*;
 import cz.nkp.differ.compare.metadata.external.ResultTransformer;
-import cz.nkp.differ.compare.metadata.external.result.MetadataResultTransformer;
 import junit.framework.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,21 +27,19 @@ import java.util.Map;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:appCtx-differ-cmdline-test.xml"})
+@ContextConfiguration(locations = {"classpath:jpylyzerTestsCtx.xml"})
 public class JpylyzerUnitTest {
     @Autowired
     private Map<String,Object> image14Test01;
 
     @Autowired
-    ApplicationContext applicationContext;
+    private ResultTransformer jpylyzerMetadataTransformer;
 
     @Test
-    public void testJpylyzer() throws Exception {
-        ResultTransformer transformer =  (ResultTransformer) image14Test01.get("transformer");
-        //ResultTransformer transformer = applicationContext.getBean("jpylyzerMetadataTransformer");
+    public void testImage14() throws Exception {
         byte[] stdout = readFile("/opt/differ/docs/examples/images_01/14/output-jpylyzer.raw");
-        List<ResultTransformer.Entry> transformedData = transformer.transform(stdout,null);
-        Assert.assertEquals("test for a word ahoj", "ahoj", "aho");
+        List<ResultTransformer.Entry> transformedData = jpylyzerMetadataTransformer.transform(stdout,null);
+        Assert.assertEquals("test for a word ahoj", "ahoj", "ahoj");
     }
     private byte[] readFile(String string) throws IOException {
         RandomAccessFile f = new RandomAccessFile(new File(string), "r");
