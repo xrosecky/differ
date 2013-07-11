@@ -13,13 +13,18 @@
 
 
     <context:component-scan base-package="cz.nkp.differ"/>
-      <import resource="classpath*:appCtx-differ-cmdline.xml" />
+    
+    <!-- <import resource="classpath:appCtx-differ-cmdline.xml" /> -->
 
       <!-- image subjects to be run -->
       <util:list id="metadataExtractorTests">
         <ref bean="image14Test01"/>
       </util:list>
 
+
+      <bean id="jpylyzerMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer">
+        <property name="stylesheet" value="classpath:jpylyzer.xsl"/>
+      </bean>
 
       <!-- ref to jpylyzerMetadataTransformer : source defined in jpylyzerMetadataExtractor.xml -->
       <!-- <bean id="jpylyzerMetadataTransformer" class="cz.nkp.differ.compare.metadata.external.XSLTTransformer"> -->
