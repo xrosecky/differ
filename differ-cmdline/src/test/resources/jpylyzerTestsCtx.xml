@@ -48,6 +48,7 @@
         <value>File path</value>
         <value>File last modified</value>
         <value>File created</value>
+        <value>Type of format</value>
 
         <value>Validation (well formed and valid)</value>
         <value>Signature box length is valid</value>
@@ -148,6 +149,9 @@
         <value>bPC sign consistent with SIZ</value>
         <value>bPC depth consistent with SIZ</value>
 
+        <value>Code block width</value>
+        <value>Code block height</value>
+
         <value>Color depth</value>
         <value>Color space</value>
         <value>Universal unique identifier (UUID)</value>
@@ -156,12 +160,14 @@
         <value>Image width</value>
 
         <value>Compression</value>
+        <value>Compression ratio</value>
         <!-- Compression ratio missing-->
 
         <value>Resolution horizontal</value>
         <value>Resolution vertical</value>
         <!-- Display resolution missing-->
 
+        <value>Number of tiles</value>
         <value>Number of channels</value>
         <value>Transformation</value>
         <value>Number of quality layers</value>
@@ -173,6 +179,7 @@
         <value>Code block size</value>
         <!-- Coding bypass is the same property? defined as Coding Bypass by transformer -->
         <value>Bypass</value>
+        <value>Coding bypass</value>
 
 
     </util:list>
