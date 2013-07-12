@@ -1,13 +1,13 @@
 package cz.nkp.differ.cmdline;
 
-import cz.nkp.differ.compare.metadata.external.*;
 import cz.nkp.differ.compare.metadata.external.ResultTransformer;
-import junit.framework.Assert;
+import cz.nkp.differ.compare.metadata.external.ResultTransformer.Entry;
+
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -37,10 +37,14 @@ public class JpylyzerUnitTest {
 
     @Test
     public void testImage14() throws Exception {
-        byte[] stdout = readFile("/opt/differ/docs/examples/images_01/14/output-jpylyzer.raw");
+        byte[] stdout = readFile("../docs/examples/images_01/14/output-jpylyzer.raw");
         List<ResultTransformer.Entry> transformedData = jpylyzerMetadataTransformer.transform(stdout,null);
-        Assert.assertEquals("test for a word ahoj", "ahoj", "ahoj");
+        assertNotNull(transformedData);
     }
+
+
+
+
     private byte[] readFile(String string) throws IOException {
         RandomAccessFile f = new RandomAccessFile(new File(string), "r");
 
