@@ -39,12 +39,19 @@
       <entry key="filePathOfOutput" value="docs/examples/images_01/14/output-jpylyzer.raw"/>
       <entry key="significantProperties" value-ref="image14SignificantProperties"/> <!--defined in image14-significant-properties.xml -->
       <entry key="recognizedSignificantProperties" value-ref="image14Test01RecognizedProperties"/>
+      <entry key="ignoredSignificantProperties" value-ref="image14Test01IgnoredProperties"/>
     </util:map>
     
     <util:list id="image14Test01RecognizedProperties">
       <value>MIME type</value>
       <value>Type of format</value>
       <value>Version of format</value>
+    </util:list>
+
+    <util:list id="image14Test01IgnoredProperties">
+      <value></value>
+      <value></value>
+      <value></value>
     </util:list>
 </beans>
 
