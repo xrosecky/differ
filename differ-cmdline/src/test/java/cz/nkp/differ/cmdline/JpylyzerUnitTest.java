@@ -48,14 +48,15 @@ public class JpylyzerUnitTest {
          * Compare transformedData with list of
          * manual input of significant properties in image14Test01RecognizedProperties
          * Fails if a property is transformed but is yet not mapped.
+         * Fails if manual value is not the same as transformed value.
          */
 
         ArrayList recognizedProperties = (ArrayList) image14Test01.get("image14Test01RecognizedProperties");
         assertNotNull(recognizedProperties);
         for(Entry e: transformedData){
             assertTrue("Testing that transformed property is recognized: "+ e.getKey(),recognizedProperties.contains(e.getKey()));
-        }
 
+        }
 
         /**
          * Go through each entry in transformedData,
@@ -80,12 +81,8 @@ public class JpylyzerUnitTest {
                 }
             }  // If s is null here, then the entry is missing in manual data
 
-            System.out.println("Testing: "+e.getKey()+ " with: "+ s);
-
-            if(s!= null){
-                System.out.println("Checking equality: "+ e.getValue() + " with: "+ s);
-                assertEquals("Testing: "+e.getKey(), e.getValue(), s);
-            }
+            assertNotNull("Testing: "+e.getKey()+ " with: "+ s, s);
+            assertEquals("Testing equality: "+e.getKey(), e.getValue(), s);
             s=null;
         }
     }

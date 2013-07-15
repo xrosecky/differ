@@ -119,7 +119,7 @@
     <property name="Multiple component transformation is valid"><xsl:value-of select="cod/multipleComponentTransformationIsValid"/></property>
     <property name="Cod levels is valid"><xsl:value-of select="cod/levelsIsValid"/></property>
     <property name="l cod consistent with levels precincts"><xsl:value-of select="cod/lcodConsistentWithLevelsPrecincts"/></property>
-    <property name="Code block with exponent is valid"><xsl:value-of select="cod/codeBlockWidthExponentIsValid"/></property>
+    <property name="Code block width exponent is valid"><xsl:value-of select="cod/codeBlockWidthExponentIsValid"/></property>
     <property name="Code block height exponent is valid"><xsl:value-of select="cod/codeBlockHeightExponentIsValid"/></property>
     <property name="Sum height width exponent is valid"><xsl:value-of select="cod/sumHeightWidthExponentIsValid"/></property>
     <property name="Cod transformation is valid"><xsl:value-of select="cod/transformationIsValid"/></property>

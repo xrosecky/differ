@@ -15,8 +15,9 @@
   </util:map>
 
   <util:map id="image14IdentificationProperties">
+    <entry key="Version" value="jpylyzer 1.6.0"/>
     <entry key="MIME type" value=""/>
-    <entry key="Type of format" value=""/>
+    <entry key="Type of format" value="jpeg"/>
     <entry key="Version of format" value=""/>
   </util:map>
   
@@ -51,10 +52,10 @@
     <entry key="No more than one capture resolution box" value="True"/>
     <entry key="No more than one display resolution box" value="True"/>
     <entry key="Contains image header box" value="True"/>
-    <entry key="Contains colour speci   fication box" value="True"/>
+    <entry key="Contains colour specification box" value="True"/>
     <entry key="First jp2 header box is image header box" value="True"/>
     <entry key="No more than one image header box" value="True"/>
-    <entry key="No more than one bits pre component box" value="True"/>
+    <entry key="No more than one bits per component box" value="True"/>
     <entry key="No more than one palette box" value="True"/>
     <entry key="No more than one component mapping box" value="True"/>
     <entry key="No more than one channel definition box" value="True"/>
@@ -86,7 +87,7 @@
     <entry key="Multiple component transformation is valid" value="True"/>
     <entry key="Cod levels is valid" value="True"/>
     <entry key="l cod consistent with levels precincts" value="True"/>
-    <entry key="Code block with exponent is valid" value="True"/>
+    <entry key="Code block width exponent is valid" value="True"/>
     <entry key="Code block height exponent is valid" value="True"/>
     <entry key="Sum height width exponent is valid" value="True"/>
     <entry key="Cod transformation is valid" value="True"/>
@@ -97,6 +98,7 @@
     <entry key="Quantization consistent with levels" value="True"/>
     <entry key="Found expected number of tiles" value="True"/>
     <entry key="Found expected number of tile parts" value="True"/>
+    <entry key="Number of tiles" value="1"/>
     <entry key="l sot is valid" value="True"/>
     <entry key="i sot is valid" value="True"/>
     <entry key="p sot is valid" value="True"/>
@@ -129,18 +131,19 @@
     <entry key="Depth of red channel" value=""/>
     <entry key="Copyright" value=""/>
     <entry key="Compression quality" value=""/>
+    <entry key="Compression ratio" value="23.21"/>
     <entry key="File name" value="14.jpf"/>
-    <entry key="File path" value="/home/klas/workspace/differ-org/differ/docs/14.jpf"/>
+    <entry key="File path" value="/home/stavel/differ/docs/examples/images_01/14.jpf"/>
     <entry key="Color depth" value="8"/>
     <entry key="Color space" value="sRGB"/>
     <entry key="Color type" value=""/>
     <!--More than one: taking the last UUID in list -->
-    <entry key="Universal unique identifier (UUID)" value="2c4c0100-8504-40b9-a03e-562148d6dfeb"/>
-    <entry key="File size" value="33879"/>
+    <entry key="Universal unique identifier (UUID)" value="3a0d0218-0ae9-4115-b376-4bca41ce0e71"/>
+    <entry key="File size" value="33,9 kB"/>
     <entry key="Image height" value="512"/>
     <entry key="Image width" value="512"/>
     <entry key="File created" value=""/>
-    <entry key="File last modified" value="2013-07-02 19:00:34+01:00" />
+    <entry key="File last modified" value="2013-01-11 14:47:36+01:00" />
     <!-- Note possible error: Compression is under cod/transformation in transform -->
     <entry key="Compression" value="9-7 irreversible"/>
     <entry key="Resolution horizontal" value="2834"/>
@@ -192,7 +195,9 @@
     <entry key="ATK" value=""/>
     <entry key="Precincts" value="no"/>
     <entry key="Code block size" value=""/>
-    <entry key="Bypass" value="no"/> <!-- Verify bypass is coding bypass-->
+    <entry key="Code block width" value="32"/>
+      <entry key="Code block height" value="32"/>
+      <entry key="Coding bypass" value="no"/> <!-- Verify bypass is coding bypass-->
     <entry key="Derived" value=""/>
   </util:map>
 
