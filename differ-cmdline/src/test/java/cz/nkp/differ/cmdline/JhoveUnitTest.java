@@ -1,12 +1,7 @@
 package cz.nkp.differ.cmdline;
 
+import cz.nkp.differ.compare.metadata.external.*;
 import cz.nkp.differ.compare.metadata.external.ResultTransformer;
-import cz.nkp.differ.compare.metadata.external.ResultTransformer.Entry;
-
-import static org.junit.Assert.*;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,43 +11,38 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.util.LinkedHashMap;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
+
 /**
- * Test class for extractor Jpylyzer.
- * Test context includes significant properties for the given extractor.
- * The testing makes sure that the properties transformed are being
- * recognized properly and that no values are missing in the significant
- * properties list.
- *
- * @author Jan Stavel / Jonatan Svensson
- * @version 15-07-2013
- *
- *
+ * User: Jonatan Svensson <jonatansve@gmail.com>
+ * Date: 2013-07-16
+ * Time: 19:17
  */
 
-
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:jpylyzerTestsCtx.xml"})
-public class JpylyzerUnitTest {
+@ContextConfiguration(locations = {"classpath:jhoveTestsCtx.xml"})
+public class JhoveUnitTest {
     @Autowired
     private Map<String,Object> image14Test01;
 
     @Autowired
-    private ResultTransformer jpylyzerMetadataTransformer;
-
-    Logger logger = LogManager.getLogger(JpylyzerUnitTest.class.getName());
+    private cz.nkp.differ.compare.metadata.external.ResultTransformer jhoveMetadataTransformer;
 
     @Test
     public void testImage14() throws Exception {
-        byte[] stdout = readFile("../docs/examples/images_01/14/output-jpylyzer.raw");
-        List<ResultTransformer.Entry> transformedData = jpylyzerMetadataTransformer.transform(stdout,null);
+        byte[] stdout = readFile("../docs/examples/images_01/14/output-jhove.raw");
+        List<ResultTransformer.Entry> transformedData = jhoveMetadataTransformer.transform(stdout,null);
         assertNotNull(transformedData);
 
         /**
+         * Test all properties are mapped.
          * Compare transformedData with list of
          * manual input of significant properties in image14Test01RecognizedProperties
          * Fails if a property is transformed but is yet not mapped.
@@ -61,12 +51,13 @@ public class JpylyzerUnitTest {
         ArrayList ignoredProperties = (ArrayList) image14Test01.get("image14Test01IgnoredProperties");
         ArrayList recognizedProperties = (ArrayList) image14Test01.get("image14Test01RecognizedProperties");
         assertNotNull(recognizedProperties);
-        for(Entry e: transformedData){
+        for(ResultTransformer.Entry e: transformedData){
             assertTrue("Testing that transformed property is recognized: "+ e.getKey(),recognizedProperties.contains(e.getKey())||ignoredProperties.contains(e.getKey()));
         }
 
 
         /**
+         * Test all properties that are not ignored.
          * Go through each entry in transformedData,
          * Look for the key in:
          * identificationProperties/validationProperties/characterizationProperties,
@@ -80,7 +71,7 @@ public class JpylyzerUnitTest {
 
         String s;
 
-        for(Entry e: transformedData){
+        for(ResultTransformer.Entry e: transformedData){
             // Make sure it is not ignored first
             if(recognizedProperties.contains(e.getKey())){
                 s= (String)lh1.get(e.getKey());
@@ -96,12 +87,11 @@ public class JpylyzerUnitTest {
                 s=null;
             }
         }
-
     }
+
 
     private byte[] readFile(String string) throws IOException {
         RandomAccessFile f = new RandomAccessFile(new File(string), "r");
-
         try {
             long longlength = f.length();
             int length = (int) longlength;

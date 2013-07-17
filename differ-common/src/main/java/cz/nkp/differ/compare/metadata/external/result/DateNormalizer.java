@@ -1,6 +1,8 @@
 package cz.nkp.differ.compare.metadata.external.result;
 
 import cz.nkp.differ.compare.metadata.external.ResultEntryValueTransformer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -16,9 +18,12 @@ import java.util.regex.Pattern;
  * @version 15-07-2013
  */
 public class DateNormalizer implements ResultEntryValueTransformer {
+
+    Logger logger = LogManager.getLogger(DateNormalizer.class.getName());
     @Override
     public String transform(String input) {
 
+        logger.debug("Entering DateNormalizer transformer with input: " + input);
         // Normalize date but not time with "-"
         String firstPart= input.substring(0,10);
         firstPart=firstPart.replaceAll(":","-");
@@ -41,8 +46,10 @@ public class DateNormalizer implements ResultEntryValueTransformer {
             }
             // Normalize standard dddd to dd:dd in SimpleDate locale
             result = new StringBuilder(result).insert(result.length()-2, ":").toString();
+            logger.debug("Returning: "+result);
             return result;
         }
+        logger.debug("Returning: "+input);
         return input;
     }
 }
