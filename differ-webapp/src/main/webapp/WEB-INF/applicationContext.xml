@@ -121,40 +121,11 @@
         </property>
     </bean>
 
-	<!--  units -->
-	<util:map id="units">
-		<entry key="Image width" value="px" />
-		<entry key="Image height" value="px" />
-		<entry key="Code block height" value="px" />
-		<entry key="Code block width" value="px" />
-		<entry key="Resolution horizontal" value="PPI" />
-		<entry key="Resolution vertical" value="PPI" />
-		<entry key="Display resolution horizontal" value="PPI" />
-		<entry key="Display resolution vertical" value="PPI" />
-		<entry key="Tile size X" value="PPI" />
-		<entry key="Tile size Y" value="PPI" />
-	</util:map>
-    
-    <!-- common -->
-    <import resource="tools/metadataFinishing.xml"/>
-    
-    <!-- exiftool -->
-    <import resource="tools/exiftoolMetadataExtractor.xml"/>
-    
-    <!-- exiv2 -->
-    <import resource="tools/exiv2MetadataExtractor.xml"/>
-    
-    <!-- imageMagick -->
-    <import resource="tools/imagemagickMetadataExtractor.xml"/>
-
     <bean id="metadataExtractors" class="cz.nkp.differ.compare.metadata.MetadataExtractors">
         <property name="extractors">
             <list>
                 <ref bean="kduexpandMetadataExtractor"/>
                 <ref bean="jhoveMetadataExtractor"/>
-                <ref bean="exiftoolMetadataExtractor"/>
-                <ref bean="exiv2MetadataExtractor"/>
-                <ref bean="imagemagickMetadataExtractor"/>
             </list>
         </property>
     </bean>
