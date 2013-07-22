@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Test class for extractor Jpylyzer.
+ * Test class for Jpylyzer transformer.
  * Test context includes significant properties for the given extractor.
  * The testing makes sure that the properties transformed are being
  * recognized properly and that no values are missing in the significant
@@ -38,6 +38,8 @@ import java.util.Map;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:jpylyzerTestsCtx.xml"})
 public class JpylyzerUnitTest {
+
+    List<ResultTransformer.Entry> transformedData;
     @Autowired
     private Map<String,Object> image14Test01;
 
@@ -49,10 +51,11 @@ public class JpylyzerUnitTest {
     @Test
     public void testImage14() throws Exception {
         byte[] stdout = readFile("../docs/examples/images_01/14/output-jpylyzer.raw");
-        List<ResultTransformer.Entry> transformedData = jpylyzerMetadataTransformer.transform(stdout,null);
+        transformedData = jpylyzerMetadataTransformer.transform(stdout,null);
         assertNotNull(transformedData);
 
         /**
+         * Test all properties are mapped.
          * Compare transformedData with list of
          * manual input of significant properties in image14Test01RecognizedProperties
          * Fails if a property is transformed but is yet not mapped.
@@ -67,6 +70,7 @@ public class JpylyzerUnitTest {
 
 
         /**
+         * Test all properties that are not ignored.
          * Go through each entry in transformedData,
          * Look for the key in:
          * identificationProperties/validationProperties/characterizationProperties,
@@ -96,7 +100,24 @@ public class JpylyzerUnitTest {
                 s=null;
             }
         }
+        /**
+         * Last: 1.Check conversely that the recognized properties in test context
+         * match the transformed data exactly (no extra entries in list).
+         * 2. Ignored properties should also be in the transformed list.
+         */
 
+        for(int i=0; i<recognizedProperties.size();i++){
+            assertTrue("Testing that manual recognized property was transformed: "+ recognizedProperties.get(i), lookFor((String)recognizedProperties.get(i)));
+        }
+        for(int j=0; j<ignoredProperties.size();j++){
+            assertTrue("Testing that manual ignored property was transformed: "+ ignoredProperties.get(j),lookFor((String)ignoredProperties.get(j)));
+        }
+    }
+    private boolean lookFor(String key){
+        for(Entry e: transformedData){
+            if(key.equals(e.getKey())) return true;
+        }
+        return false;
     }
 
     private byte[] readFile(String string) throws IOException {

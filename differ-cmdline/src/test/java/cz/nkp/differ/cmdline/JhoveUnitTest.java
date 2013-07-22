@@ -1,6 +1,5 @@
 package cz.nkp.differ.cmdline;
 
-import cz.nkp.differ.compare.metadata.external.*;
 import cz.nkp.differ.compare.metadata.external.ResultTransformer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,6 +20,7 @@ import static org.junit.Assert.assertEquals;
 
 
 /**
+ * Test class for Jhove transformer
  * User: Jonatan Svensson <jonatansve@gmail.com>
  * Date: 2013-07-16
  * Time: 19:17
@@ -29,6 +29,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:jhoveTestsCtx.xml"})
 public class JhoveUnitTest {
+    List<ResultTransformer.Entry> transformedData;
     @Autowired
     private Map<String,Object> image14Test01;
 
@@ -38,7 +39,7 @@ public class JhoveUnitTest {
     @Test
     public void testImage14() throws Exception {
         byte[] stdout = readFile("../docs/examples/images_01/14/output-jhove.raw");
-        List<ResultTransformer.Entry> transformedData = jhoveMetadataTransformer.transform(stdout,null);
+        transformedData = jhoveMetadataTransformer.transform(stdout,null);
         assertNotNull(transformedData);
 
         /**
@@ -87,8 +88,28 @@ public class JhoveUnitTest {
                 s=null;
             }
         }
-    }
 
+
+
+        /**
+         * Last: 1.Check conversely that the recognized properties in test context
+         * match the transformed data exactly (no extra entries in list).
+         * 2. Ignored properties should also be in the transformed list.
+         */
+
+        for(int i=0; i<recognizedProperties.size();i++){
+            assertTrue("Testing that manual recognized property was transformed: "+ recognizedProperties.get(i), lookFor((String)recognizedProperties.get(i)));
+        }
+        for(int j=0; j<ignoredProperties.size();j++){
+            assertTrue("Testing that manual ignored property was transformed: "+ ignoredProperties.get(j),lookFor((String)ignoredProperties.get(j)));
+        }
+    }
+    private boolean lookFor(String key){
+        for(ResultTransformer.Entry e: transformedData){
+            if(key.equals(e.getKey())) return true;
+        }
+        return false;
+    }
 
     private byte[] readFile(String string) throws IOException {
         RandomAccessFile f = new RandomAccessFile(new File(string), "r");
