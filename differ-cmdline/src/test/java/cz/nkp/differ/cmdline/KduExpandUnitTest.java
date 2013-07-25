@@ -37,7 +37,7 @@ public class KduExpandUnitTest {
     @Test
     public void testImage14() throws Exception {
 
-        byte[] stdout = readFile("../docs/examples/images_01/14/output-kakadu.raw");
+        byte[] stdout = TestHelper.readFile("../docs/examples/images_01/14/output-kakadu.raw");
         transformedData = kakaduMetadataTransformer.transform(stdout,null);
         assertNotNull(transformedData);
 
@@ -105,25 +105,5 @@ public class KduExpandUnitTest {
             if(key.equals(e.getKey())) return true;
         }
         return false;
-    }
-
-    private byte[] readFile(String string) throws IOException {
-        RandomAccessFile f = new RandomAccessFile(new File(string), "r");
-
-        try {
-            long longlength = f.length();
-            int length = (int) longlength;
-            if (length != longlength)
-                throw new IOException("File size >= 2 GB");
-            byte[] data = new byte[length];
-            f.readFully(data);
-            return data;
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        finally {
-            f.close();
-        }
-        return null;
     }
 }

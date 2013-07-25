@@ -7,40 +7,40 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.*;
-import static org.junit.Assert.assertEquals;
 
 
 /**
- * Test class for Jhove transformer
+ * Test class for Imagemagick transformer
  * User: Jonatan Svensson <jonatansve@gmail.com>
- * Date: 2013-07-16
- * Time: 19:17
+ * Date: 2013-07-19
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:jhoveTestsCtx.xml"})
-public class JhoveUnitTest {
+@ContextConfiguration(locations = {"classpath:imagemagickTestsCtx.xml"})
+public class ImagemagickUnitTest {
     List<ResultTransformer.Entry> transformedData;
     @Autowired
-    private Map<String,Object> image14Test01;
+    private Map<String,Object> image01Test01;
 
     @Autowired
-    private cz.nkp.differ.compare.metadata.external.ResultTransformer jhoveMetadataTransformer;
+    private ResultTransformer imagemagickMetadataTransformer;
 
     @Test
-    public void testImage14() throws Exception {
-        byte[] stdout = TestHelper.readFile("../docs/examples/images_01/14/output-jhove.raw");
-        transformedData = jhoveMetadataTransformer.transform(stdout,null);
+    public void testImage01() throws Exception {
+
+        byte[] stdout = TestHelper.readFile("../docs/examples/images_01/01/output-imagemagick.raw");
+        transformedData = imagemagickMetadataTransformer.transform(stdout,null);
         assertNotNull(transformedData);
+
+        ArrayList ignoredProperties = (ArrayList) image01Test01.get("image01Test01IgnoredProperties");
+        ArrayList recognizedProperties = (ArrayList) image01Test01.get("image01Test01RecognizedProperties");
+        assertNotNull(recognizedProperties);
 
         /**
          * Test all properties are mapped.
@@ -48,14 +48,9 @@ public class JhoveUnitTest {
          * manual input of significant properties in image14Test01RecognizedProperties
          * Fails if a property is transformed but is yet not mapped.
          */
-
-        ArrayList ignoredProperties = (ArrayList) image14Test01.get("image14Test01IgnoredProperties");
-        ArrayList recognizedProperties = (ArrayList) image14Test01.get("image14Test01RecognizedProperties");
-        assertNotNull(recognizedProperties);
         for(ResultTransformer.Entry e: transformedData){
-            assertTrue("Testing that transformed property is recognized: "+ e.getKey(),recognizedProperties.contains(e.getKey())||ignoredProperties.contains(e.getKey()));
+          assertTrue("Testing that transformed property is recognized: "+ e.getKey(),recognizedProperties.contains(e.getKey())||ignoredProperties.contains(e.getKey()));
         }
-
 
         /**
          * Test all properties that are not ignored.
@@ -65,7 +60,7 @@ public class JhoveUnitTest {
          * Assert that the value is identical.
          */
 
-        LinkedHashMap l = (LinkedHashMap) image14Test01.get("image14SignificantProperties");
+        LinkedHashMap l = (LinkedHashMap) image01Test01.get("image01SignificantProperties");
         LinkedHashMap lh1 = (LinkedHashMap) l.get("identificationProperties");
         LinkedHashMap lh2 = (LinkedHashMap) l.get("validationProperties");
         LinkedHashMap lh3 = (LinkedHashMap) l.get("characterizationProperties");
@@ -81,15 +76,14 @@ public class JhoveUnitTest {
                     if(s==null){
                         s= (String)lh3.get(e.getKey());
                     }
-                }  // If s is null here, then the entry is missing in manual data
+                }
+                // If s is null here, then the entry is missing in manual data
 
-                assertNotNull("Testing: "+e.getKey()+ " with: "+ s, s);
-                assertEquals("Testing equality: "+e.getKey(), e.getValue(), s);
-                s=null;
+               assertNotNull("Testing: "+e.getKey()+ " with: "+ s, s);
+               assertEquals("Testing equality: "+e.getKey(), e.getValue(), s);
+               s=null;
             }
         }
-
-
 
         /**
          * Last: 1.Check conversely that the recognized properties in test context
@@ -110,4 +104,5 @@ public class JhoveUnitTest {
         }
         return false;
     }
+
 }
