@@ -1,14 +1,34 @@
 package cz.nkp.differ.gui.components;
 
+import com.vaadin.Application;
+import com.vaadin.terminal.Sizeable;
 import com.vaadin.terminal.ThemeResource;
+import com.vaadin.ui.AbsoluteLayout;
+import com.vaadin.ui.Alignment;
+import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.Embedded;
+import com.vaadin.ui.FormLayout;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Layout;
+import com.vaadin.ui.LoginForm;
+import com.vaadin.ui.LoginForm.LoginListener;
 import com.vaadin.ui.Panel;
+import com.vaadin.ui.TextArea;
 import com.vaadin.ui.VerticalLayout;
+import com.vaadin.ui.Window;
+import cz.nkp.differ.DifferApplication;
+import cz.nkp.differ.gui.tabs.DifferProgramTab;
+import cz.nkp.differ.gui.windows.LoginUserWindow;
+import cz.nkp.differ.gui.windows.MainDifferWindow;
+import cz.nkp.differ.gui.windows.RegisterUserWindow;
+import cz.nkp.differ.util.GUIMacros;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Creates and populates a Component that has an image, page title, and copyright. Intended to be displayed
@@ -19,6 +39,12 @@ import com.vaadin.ui.VerticalLayout;
 @SuppressWarnings("serial")
 public class ProjectHeaderPanel extends CustomComponent {
 
+    Button buttonLogin;
+    Button buttonLogout;
+    Button buttonRegister;
+    Label loginMessage;
+    DifferProgramTab parent;
+    Window application;
     /**
      * Creates the Component
      */
@@ -31,9 +57,29 @@ public class ProjectHeaderPanel extends CustomComponent {
         headerPanel.addComponent(layout);//Add content container to outer container
         Component title = createHeaderTitle();
         layout.addComponent(title);//add the created title component
+        Component loginPanel = createLoginPanel();
+        layout.addComponent(loginPanel);
+        layout.setComponentAlignment(loginPanel, Alignment.BOTTOM_RIGHT);
         this.setCompositionRoot(headerPanel);
     }
 
+    public ProjectHeaderPanel(Window application, DifferProgramTab parent) {
+        this.parent = parent;
+        this.application = application;
+        Panel headerPanel = new Panel();//Create outer panel
+        headerPanel.setWidth("100%");
+        HorizontalLayout layout = new HorizontalLayout();//Create Layout to hold content components
+        layout.setWidth("100%");
+        layout.setHeight("100%");
+        headerPanel.addComponent(layout);//Add content container to outer container
+        Component title = createHeaderTitle();
+        layout.addComponent(title);//add the created title component
+        Component loginPanel = createLoginPanel();
+        layout.addComponent(loginPanel);
+        layout.setComponentAlignment(loginPanel, Alignment.BOTTOM_RIGHT);
+        this.setCompositionRoot(headerPanel);
+    }
+    
     /**
      * A valid Header Title with copyright, page title and an anchor header image.
      * @return
@@ -53,5 +99,52 @@ public class ProjectHeaderPanel extends CustomComponent {
         projectTitlePanel.addComponent(image);
         projectTitlePanel.addComponent(titleInner);
         return projectTitlePanel;
+    }
+    
+    private Layout createLoginPanel() {
+        VerticalLayout loginPanel = new VerticalLayout();
+        HorizontalLayout buttonPanel = new HorizontalLayout();
+        HorizontalLayout messagePanel = new HorizontalLayout();
+        buttonLogin = new Button("Login");
+        buttonLogin.addListener(GUIMacros.createWindowOpenButtonListener(application, new LoginUserWindow(parent, this)));
+        buttonRegister = new Button("Register");
+        buttonRegister.addListener(GUIMacros.createWindowOpenButtonListener(application, new RegisterUserWindow()));
+        buttonLogout = new Button("Logout");
+        buttonLogout.addListener(new Listener() {
+            @Override
+            public void componentEvent(Event event) {
+                setLoggedOut();
+            }
+        });
+        buttonPanel.addComponent(buttonLogin);
+        buttonPanel.addComponent(buttonRegister);
+        buttonPanel.addComponent(buttonLogout);
+        loginMessage = new Label();
+        messagePanel.addComponent(loginMessage);
+        loginPanel.addComponent(buttonPanel);
+        loginPanel.addComponent(messagePanel);
+        loginPanel.setComponentAlignment(buttonPanel, Alignment.TOP_RIGHT);
+        loginPanel.setComponentAlignment(messagePanel, Alignment.BOTTOM_RIGHT);
+        setLoggedOut();
+        return loginPanel;
+    }
+    
+    public void setLoggedIn(String username) {
+        buttonLogin.setVisible(false);
+        buttonLogout.setVisible(true);
+        buttonRegister.setVisible(false);
+        if (username != null) {
+            loginMessage.setCaption("You are currently logged in as " + username);
+        }
+        parent.setLoggedInView();
+    }
+    
+    public void setLoggedOut() {
+        DifferApplication.getCurrentApplication().setLoggedUser(null);
+        buttonLogin.setVisible(true);
+        buttonLogout.setVisible(false);
+        buttonRegister.setVisible(true);
+        loginMessage.setCaption("You are not logged in.");     
+        parent.setLoggedOutView();
     }
 }

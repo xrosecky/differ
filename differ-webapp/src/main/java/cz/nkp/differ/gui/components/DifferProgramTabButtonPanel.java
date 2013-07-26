@@ -122,16 +122,6 @@ public class DifferProgramTabButtonPanel extends CustomComponent {
 	compareButton.setEnabled(false);
 	buttonPanelRoot.addComponent(compareButton);
 
-	logoutButton = new Button("Logout");
-	logoutButton.addListener(new Listener() {
-
-	    @Override
-	    public void componentEvent(Event event) {
-		parent.setLoggedOutView();
-	    }
-	});
-	buttonPanelRoot.addComponent(logoutButton);
-
 	return buttonPanelRoot;
     }
 }

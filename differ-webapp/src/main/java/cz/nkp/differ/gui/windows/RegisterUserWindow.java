@@ -17,11 +17,16 @@ import cz.nkp.differ.gui.components.CaptchaComponent;
 import cz.nkp.differ.model.User;
 import cz.nkp.differ.user.UserManager;
 import cz.nkp.differ.util.GUIMacros;
+import java.util.HashMap;
+import java.util.Map;
 
 @SuppressWarnings("serial")
 public class RegisterUserWindow extends Window implements ClickListener {
 
+    RegisterUserWindow internal_this;
+    
     public RegisterUserWindow() {
+        internal_this = this;
 	setCaption("Register User");
 	setModal(true);
 	setDraggable(false);
@@ -85,6 +90,10 @@ public class RegisterUserWindow extends Window implements ClickListener {
 	if (nameValue != null && passValue != null) {
 	    try {
 		user = UserManager.getInstance().registerUser(user, passValue);
+                DifferApplication.getCurrentApplication().getMainWindow().showNotification("Success", "You have successfully registered as " + nameField);
+                Map<String, Object> CloseVariableMap = new HashMap<String,Object>(1);
+                CloseVariableMap.put("close", true);
+                internal_this.changeVariables(null, CloseVariableMap); 
 	    } catch (Exception ex) {
 		DifferApplication.getCurrentApplication().getMainWindow().showNotification("Error when registering user", "<br/>Error when registering user.", Window.Notification.TYPE_ERROR_MESSAGE);
 		captcha.reset();
