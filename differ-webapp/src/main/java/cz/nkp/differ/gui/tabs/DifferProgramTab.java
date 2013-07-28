@@ -1,11 +1,12 @@
 package cz.nkp.differ.gui.tabs;
 
-import com.google.gwt.user.client.ui.TextBox;
-import com.vaadin.terminal.Sizeable;
+import com.vaadin.event.FieldEvents;
+import com.vaadin.event.FieldEvents.TextChangeListener;
+import com.vaadin.terminal.FileResource;
 import com.vaadin.ui.AbsoluteLayout;
+import com.vaadin.ui.AbstractTextField.TextChangeEventMode;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
-import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.Button.ClickEvent;
@@ -13,33 +14,29 @@ import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.Embedded;
 import com.vaadin.ui.Label;
-import com.vaadin.ui.LoginForm.LoginEvent;
-import com.vaadin.ui.LoginForm.LoginListener;
-import com.vaadin.ui.Panel;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.Upload;
+import com.vaadin.ui.Upload.FailedListener;
+import com.vaadin.ui.Upload.StartedListener;
+import com.vaadin.ui.Upload.SucceededListener;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Window;
 
 import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.compare.io.CompareComponent;
-import cz.nkp.differ.exceptions.ImageDifferException;
-import cz.nkp.differ.exceptions.UserDifferException;
 import cz.nkp.differ.gui.components.DifferProgramTabButtonPanel;
-import cz.nkp.differ.gui.components.LoginRegisterComponent;
 import cz.nkp.differ.gui.components.PluginDisplayComponent;
+import cz.nkp.differ.gui.components.RemoteFile;
 import cz.nkp.differ.gui.components.UploadReceiver;
 import cz.nkp.differ.gui.components.UserFilesWidget;
 import cz.nkp.differ.gui.windows.MainDifferWindow;
 import cz.nkp.differ.model.Image;
 import cz.nkp.differ.model.User;
-import cz.nkp.differ.util.GUIMacros;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
-import org.vaadin.easyuploads.MultiFileUpload;
 
 /**
  * The main application view.
@@ -97,10 +94,13 @@ public class DifferProgramTab extends HorizontalLayout {
             upload = new ArrayList<Upload>();
             ((HorizontalLayout) loggedOutView).setSpacing(true);
 
-            AbsoluteLayout loggedOutViewInner = new AbsoluteLayout();
-            loggedOutViewInner.setWidth("400px");
-            loggedOutViewInner.setHeight("400px");
-
+            AbsoluteLayout innerUploadSection = new AbsoluteLayout();
+            innerUploadSection.setWidth("500px");
+            innerUploadSection.setHeight("500px");
+            
+            VerticalLayout innerCompareSection = new VerticalLayout();
+            innerCompareSection.setHeight("100%");
+            
             compareButton = new Button("Compare");
             compareButton.setEnabled(false);
             compareButton.addListener(new ClickListener() {
@@ -143,14 +143,18 @@ public class DifferProgramTab extends HorizontalLayout {
                 }
             });
             
-            loggedOutViewInner.addComponent(addFileUploadComponent(), "left: 10px; top: 10px;");
-            loggedOutViewInner.addComponent(addFileUploadComponent(), "left: 10px; top: 200px;");
+            innerUploadSection.addComponent(addFileUploadComponent(), "left: 10px; top: 10px;");
+            innerUploadSection.addComponent(addFileUploadComponent(), "left: 10px; top: 250px;");
             
-            loggedOutView.addComponent(loggedOutViewInner);
-            loggedOutView.addComponent(compareButton);
-            loggedOutView.addComponent(resetButton);
+            innerCompareSection.addComponent(compareButton);
+            innerCompareSection.addComponent(resetButton);
+            innerCompareSection.setComponentAlignment(compareButton, Alignment.BOTTOM_LEFT);
+            innerCompareSection.setComponentAlignment(resetButton, Alignment.TOP_LEFT);
             
-            //Label lbl = new Label("You are currently using DIFFER anonymously." + 
+            loggedOutView.addComponent(innerUploadSection);
+            loggedOutView.addComponent(innerCompareSection);
+            
+            //Label lbl = new Label("You are currently using DIFFER anonymously. " + 
             //"Anonymous users are restricted to uploads of 5MB in size.");
             //loggedOutView.addComponent(lbl);
         }
@@ -160,8 +164,6 @@ public class DifferProgramTab extends HorizontalLayout {
         this.loggedInView = null;
     }
     
-
-    
     private Component addFileUploadComponent() {       
         HorizontalLayout outer = new HorizontalLayout();
         outer.addStyleName("v-upload");
@@ -170,25 +172,79 @@ public class DifferProgramTab extends HorizontalLayout {
         VerticalLayout inner = new VerticalLayout();
         inner.setSpacing(true);
 
-        Embedded embedded = new Embedded();
-        embedded.setHeight("100%");
-        embedded.setWidth("100%");
+        final Embedded embedded = new Embedded();
+        embedded.addStyleName("v-preview");
         
-        UploadReceiver receiver = new UploadReceiver(embedded, compareButton);
-        Upload uploadInstance = new Upload("Select Local File", receiver);
+        final TextField urlPaste = new TextField("Select Remote File");
+        urlPaste.setInputPrompt("Paste URL here...");
+        final UploadReceiver receiver = new UploadReceiver();
+        final Upload uploadInstance = new Upload("Select Local File", receiver);
+        final Button uploadBtn = new Button("Upload");
+        
+        
         uploadInstance.setButtonCaption("Browse...");
-        uploadInstance.addListener(receiver);
+        
+        uploadInstance.addListener(new StartedListener() {
+            @Override
+            public void uploadStarted(Upload.StartedEvent event) {
+                urlPaste.setEnabled(false);
+                uploadBtn.setEnabled(false);
+            }
+        });
+        uploadInstance.addListener(new FailedListener() {
+            @Override
+            public void uploadFailed(Upload.FailedEvent event) {
+                urlPaste.setEnabled(true);
+                uploadBtn.setEnabled(true);
+            }
+        });
+        uploadInstance.addListener(new SucceededListener() {
+            @Override
+            public void uploadSucceeded(Upload.SucceededEvent event) {
+                embedded.setVisible(true);
+                embedded.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));
+                compareButton.setEnabled(true);
+            }           
+        });
         uploadInstance.setImmediate(true);
         inner.addComponent(uploadInstance);
         
         upload.add(uploadInstance);
 
-        Label lbl = new Label("OR");
+        final Label lbl = new Label("OR");
+        lbl.addStyleName("v-labelspacer");
         inner.addComponent(lbl);
+
+        urlPaste.addListener(new TextChangeListener() {
+            @Override
+            public void textChange(FieldEvents.TextChangeEvent event) {
+                if (event.getText().length() > 0) {
+                    uploadInstance.setEnabled(false);
+                } else {
+                    uploadInstance.setEnabled(true);
+                }
+            }
+        });
+        urlPaste.setImmediate(true);
+        //urlPaste.setInvalidAllowed(true);
+        urlPaste.setTextChangeEventMode(TextChangeEventMode.EAGER);
         
-        TextField urlPaste = new TextField("Select Remote File");
-        urlPaste.setInputPrompt("Paste URL here...");
         inner.addComponent(urlPaste);
+        
+        
+        uploadBtn.addListener(new ClickListener() {
+            @Override
+            public void buttonClick(ClickEvent event) {
+                embedded.setVisible(true);
+                RemoteFile remoteFile = new RemoteFile((String) (urlPaste.getValue()));
+                if (remoteFile.isValid()) {
+                    File file = remoteFile.getFile();
+                    embedded.setSource(new FileResource(file, DifferApplication.getCurrentApplication()));
+                    compareButton.setEnabled(true);
+                }
+            }        
+        });
+        inner.addComponent(uploadBtn);
         
         outer.addComponent(inner);
         outer.addComponent(embedded);

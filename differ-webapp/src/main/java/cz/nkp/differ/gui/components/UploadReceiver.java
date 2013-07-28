@@ -1,37 +1,25 @@
 package cz.nkp.differ.gui.components;
 
-import com.vaadin.terminal.FileResource;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.Embedded;
-import com.vaadin.ui.TextField;
-import com.vaadin.ui.Upload;
 import com.vaadin.ui.Upload.Receiver;
-import com.vaadin.ui.Upload.SucceededEvent;
-import com.vaadin.ui.Upload.SucceededListener;
 import cz.nkp.differ.DifferApplication;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.OutputStream;
 
 /**
  *
  * @author Thomas Truax
  */
-public class UploadReceiver implements Receiver, SucceededListener {
+public class UploadReceiver implements Receiver {
     
     private static String tempDir = "/tmp/differ/anon_uploads/";
     private String filePrefix;
     private File file;
-    private static int i; 
-    private Embedded embedded;
-    private Button compareButton;
+    private static int i;
     
-    public UploadReceiver(Embedded embedded, Button compareButton) {
+    public UploadReceiver() {
         this.filePrefix = "image" + (++i) + "-";
-        this.embedded = embedded;
-        this.compareButton = compareButton;
     }
  
     @Override
@@ -49,13 +37,6 @@ public class UploadReceiver implements Receiver, SucceededListener {
                return null;
            }
            return fos;
-    }
-
-    @Override
-    public void uploadSucceeded(SucceededEvent event) {
-        embedded.setVisible(true);
-        embedded.setSource(new FileResource(file, DifferApplication.getCurrentApplication()));
-        compareButton.setEnabled(true);
     }
       
     public File getFile() {
