@@ -54,7 +54,9 @@ public class DifferProgramTab extends HorizontalLayout {
     private Button customLayoutBackButton;
     private Button compareButton;
     private UserFilesWidget fileSelector1, fileSelector2;
-    private ArrayList<Upload> upload;
+    //private ArrayList<Upload> upload;
+    private File uploadA;
+    private File uploadB;
     private final DifferProgramTab this_internal = this;
     private MainDifferWindow mainWindow = null;
     //Used by button listener to reference DifferProgramTab object indirectly
@@ -90,8 +92,11 @@ public class DifferProgramTab extends HorizontalLayout {
     public void setLoggedOutView() {
         if (loggedOutView == null) {
             final DifferProgramTab parent = this;
+            uploadA = null;
+            uploadB = null;
+            
             loggedOutView = new HorizontalLayout();
-            upload = new ArrayList<Upload>();
+
             ((HorizontalLayout) loggedOutView).setSpacing(true);
 
             AbsoluteLayout innerUploadSection = new AbsoluteLayout();
@@ -108,9 +113,9 @@ public class DifferProgramTab extends HorizontalLayout {
                 @Override
                 public void buttonClick(Button.ClickEvent event) {
                     try {
-                        Image[] selectedImages = new Image[upload.size()];
-                        for (int i = 0; i < upload.size(); i++) {
-                            File file = ((UploadReceiver) upload.get(i).getReceiver()).getFile();
+                        Image[] selectedImages = new Image[2];
+                        /*for (int i = 0; i < upload.size(); i++) {
+                            File file = upload.get(i);
                             if (file == null) {
                                 break;
                             }
@@ -122,7 +127,26 @@ public class DifferProgramTab extends HorizontalLayout {
                             selectedImages[i].setShared(false);
                             selectedImages[i].setOwnerId(-1);
                             selectedImages[i].setSize((int)file.length());
-                        }
+                        }*/
+                        //uploadA
+                        selectedImages[0] = new Image();
+                        selectedImages[0].setFile(uploadA);
+                        selectedImages[0].setFileName(uploadA.getName());
+                        selectedImages[0].setUniqueName(uploadA.getName());
+                        selectedImages[0].setId(0);
+                        selectedImages[0].setShared(false);
+                        selectedImages[0].setOwnerId(-1);
+                        selectedImages[0].setSize((int)uploadA.length());
+                        //uploadB
+                        selectedImages[1] = new Image();
+                        selectedImages[1].setFile(uploadB);
+                        selectedImages[1].setFileName(uploadB.getName());
+                        selectedImages[1].setUniqueName(uploadB.getName());
+                        selectedImages[1].setId(1);
+                        selectedImages[1].setShared(false);
+                        selectedImages[1].setOwnerId(-1);
+                        selectedImages[1].setSize((int)uploadB.length());
+                        
                         HorizontalLayout layout = new HorizontalLayout();
                         CompareComponent cp = new CompareComponent();
                         cp.setApplication(DifferApplication.getCurrentApplication());
@@ -143,8 +167,8 @@ public class DifferProgramTab extends HorizontalLayout {
                 }
             });
             
-            innerUploadSection.addComponent(addFileUploadComponent(), "left: 10px; top: 10px;");
-            innerUploadSection.addComponent(addFileUploadComponent(), "left: 10px; top: 250px;");
+            innerUploadSection.addComponent(addFileUploadComponent(0), "left: 10px; top: 10px;");
+            innerUploadSection.addComponent(addFileUploadComponent(1), "left: 10px; top: 250px;");
             
             innerCompareSection.addComponent(compareButton);
             innerCompareSection.addComponent(resetButton);
@@ -164,7 +188,7 @@ public class DifferProgramTab extends HorizontalLayout {
         this.loggedInView = null;
     }
     
-    private Component addFileUploadComponent() {       
+    private Component addFileUploadComponent(final int index) {       
         HorizontalLayout outer = new HorizontalLayout();
         outer.addStyleName("v-upload");
         outer.setSpacing(true);
@@ -180,8 +204,7 @@ public class DifferProgramTab extends HorizontalLayout {
         final UploadReceiver receiver = new UploadReceiver();
         final Upload uploadInstance = new Upload("Select Local File", receiver);
         final Button uploadBtn = new Button("Upload");
-        
-        
+                
         uploadInstance.setButtonCaption("Browse...");
         
         uploadInstance.addListener(new StartedListener() {
@@ -204,12 +227,15 @@ public class DifferProgramTab extends HorizontalLayout {
                 embedded.setVisible(true);
                 embedded.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));
                 compareButton.setEnabled(true);
+                if (index == 0) {
+                    uploadA = receiver.getFile();
+                } else {
+                    uploadB = receiver.getFile();
+                }
             }           
         });
         uploadInstance.setImmediate(true);
         inner.addComponent(uploadInstance);
-        
-        upload.add(uploadInstance);
 
         final Label lbl = new Label("OR");
         lbl.addStyleName("v-labelspacer");
@@ -226,11 +252,9 @@ public class DifferProgramTab extends HorizontalLayout {
             }
         });
         urlPaste.setImmediate(true);
-        //urlPaste.setInvalidAllowed(true);
         urlPaste.setTextChangeEventMode(TextChangeEventMode.EAGER);
         
         inner.addComponent(urlPaste);
-        
         
         uploadBtn.addListener(new ClickListener() {
             @Override
@@ -241,6 +265,11 @@ public class DifferProgramTab extends HorizontalLayout {
                     File file = remoteFile.getFile();
                     embedded.setSource(new FileResource(file, DifferApplication.getCurrentApplication()));
                     compareButton.setEnabled(true);
+                    if (index == 0) {
+                        uploadA = file;
+                    } else {
+                        uploadB = file;
+                    }
                 }
             }        
         });
