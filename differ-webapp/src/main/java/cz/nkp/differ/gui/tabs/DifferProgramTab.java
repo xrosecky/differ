@@ -114,38 +114,30 @@ public class DifferProgramTab extends HorizontalLayout {
                 public void buttonClick(Button.ClickEvent event) {
                     try {
                         Image[] selectedImages = new Image[2];
-                        /*for (int i = 0; i < upload.size(); i++) {
-                            File file = upload.get(i);
-                            if (file == null) {
-                                break;
-                            }
-                            selectedImages[i] = new Image();
-                            selectedImages[i].setFile(file);
-                            selectedImages[i].setFileName(file.getName());
-                            selectedImages[i].setUniqueName(file.getName());
-                            selectedImages[i].setId(i);
-                            selectedImages[i].setShared(false);
-                            selectedImages[i].setOwnerId(-1);
-                            selectedImages[i].setSize((int)file.length());
-                        }*/
+
                         //uploadA
-                        selectedImages[0] = new Image();
-                        selectedImages[0].setFile(uploadA);
-                        selectedImages[0].setFileName(uploadA.getName());
-                        selectedImages[0].setUniqueName(uploadA.getName());
-                        selectedImages[0].setId(0);
-                        selectedImages[0].setShared(false);
-                        selectedImages[0].setOwnerId(-1);
-                        selectedImages[0].setSize((int)uploadA.length());
+                        if (uploadA != null) {
+                            selectedImages[0] = new Image();
+                            selectedImages[0].setFile(uploadA);
+                            selectedImages[0].setFileName(uploadA.getName());
+                            selectedImages[0].setUniqueName(uploadA.getName());
+                            selectedImages[0].setId(0);
+                            selectedImages[0].setShared(false);
+                            selectedImages[0].setOwnerId(-1);
+                            selectedImages[0].setSize((int)uploadA.length());
+                        }
+                        
                         //uploadB
-                        selectedImages[1] = new Image();
-                        selectedImages[1].setFile(uploadB);
-                        selectedImages[1].setFileName(uploadB.getName());
-                        selectedImages[1].setUniqueName(uploadB.getName());
-                        selectedImages[1].setId(1);
-                        selectedImages[1].setShared(false);
-                        selectedImages[1].setOwnerId(-1);
-                        selectedImages[1].setSize((int)uploadB.length());
+                        if (uploadB != null) {
+                            selectedImages[1] = new Image();
+                            selectedImages[1].setFile(uploadB);
+                            selectedImages[1].setFileName(uploadB.getName());
+                            selectedImages[1].setUniqueName(uploadB.getName());
+                            selectedImages[1].setId(1);
+                            selectedImages[1].setShared(false);
+                            selectedImages[1].setOwnerId(-1);
+                            selectedImages[1].setSize((int)uploadB.length());
+                        }
                         
                         HorizontalLayout layout = new HorizontalLayout();
                         CompareComponent cp = new CompareComponent();
