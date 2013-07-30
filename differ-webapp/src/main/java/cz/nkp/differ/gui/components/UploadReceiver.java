@@ -30,7 +30,10 @@ public class UploadReceiver implements Receiver {
                if (!dir.exists()) {
                    dir.mkdirs();
                }
-               file = new File(tempDir + filePrefix + filename);
+               //guarantee filename is unique before writing to stream
+               while ((file = new File(tempDir + filePrefix + filename)).exists()) {
+                   filePrefix = "image" + (++i) + "-";
+               }
                fos = new FileOutputStream(file);
            } catch (FileNotFoundException io) {
                DifferApplication.getCurrentApplication().getMainWindow().showNotification("Error", "Error while uploading file");
