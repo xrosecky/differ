@@ -32,7 +32,7 @@ public class djvudumpUnitTest {
     private ResultTransformer djvudumpMetadataTransformer;
 
     @Test
-    public void testImage01() throws Exception {
+    public void testImage05() throws Exception {
 
         byte[] stdout = TestHelper.readFile("../docs/examples/images_03/05/output-djvudump.raw");
         transformedData = djvudumpMetadataTransformer.transform(stdout,null);
@@ -91,17 +91,11 @@ public class djvudumpUnitTest {
          */
 
         for(int i=0; i<recognizedProperties.size();i++){
-            assertTrue("Testing that manual recognized property was transformed: "+ recognizedProperties.get(i), lookFor((String)recognizedProperties.get(i)));
+            assertTrue("Testing that manual recognized property was transformed: "+ recognizedProperties.get(i), TestHelper.lookFor((String)recognizedProperties.get(i), transformedData));
         }
         for(int j=0; j<ignoredProperties.size();j++){
-            assertTrue("Testing that manual ignored property was transformed: "+ ignoredProperties.get(j),lookFor((String)ignoredProperties.get(j)));
+            assertTrue("Testing that manual ignored property was transformed: "+ ignoredProperties.get(j),TestHelper.lookFor((String)ignoredProperties.get(j), transformedData));
         }
     }
-    private boolean lookFor(String key){
-        for(ResultTransformer.Entry e: transformedData){
-            if(key.equals(e.getKey())) return true;
-        }
-        return false;
-    }
-
 }
+
