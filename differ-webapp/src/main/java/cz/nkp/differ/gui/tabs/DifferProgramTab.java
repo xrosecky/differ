@@ -113,8 +113,13 @@ public class DifferProgramTab extends HorizontalLayout {
                 @Override
                 public void buttonClick(Button.ClickEvent event) {
                     try {
-                        Image[] selectedImages = new Image[2];
-
+                        Image[] selectedImages = null;
+                        if (uploadA == null || uploadB == null) {
+                            selectedImages = new Image[1];
+                        } else {
+                            selectedImages = new Image[2];
+                        }
+                        
                         //uploadA
                         if (uploadA != null) {
                             selectedImages[0] = new Image();
@@ -224,6 +229,11 @@ public class DifferProgramTab extends HorizontalLayout {
                 } else {
                     uploadB = receiver.getFile();
                 }
+                if (uploadA == null || uploadB == null) {
+                    compareButton.setCaption("Proceed");
+                } else {
+                    compareButton.setCaption("Compare");
+                }
             }           
         });
         uploadInstance.setImmediate(true);
@@ -261,6 +271,11 @@ public class DifferProgramTab extends HorizontalLayout {
                         uploadA = file;
                     } else {
                         uploadB = file;
+                    }
+                    if (uploadA == null || uploadB == null) {
+                        compareButton.setCaption("Proceed");
+                    } else {
+                        compareButton.setCaption("Compare");
                     }
                 }
             }        

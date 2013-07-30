@@ -46,7 +46,12 @@ public class DifferProgramTabButtonPanel extends CustomComponent {
 		    int left = mainWindow.getUserFilesWidgets().get(0).getSelectedImages().size();
 		    int right = mainWindow.getUserFilesWidgets().get(1).getSelectedImages().size();
 		    deleteImagesButton.setEnabled(left > 0 || right > 0);
-		    compareButton.setEnabled(left + right >= 1);
+                    compareButton.setEnabled(left + right > 0);
+                    if (left + right == 1) {
+                        compareButton.setCaption("Proceed");
+                    } else {
+                        compareButton.setCaption("Compare");
+                    }
 		}
 	    });
 	}

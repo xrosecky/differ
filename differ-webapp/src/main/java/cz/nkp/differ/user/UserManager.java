@@ -95,11 +95,6 @@ public class UserManager {
 	throw new UserDifferException(UserDifferException.ErrorCode.BAD_PASSWORD_OR_USERNAME, "Bad password.");
     }
 
-    // FIXME:TODO
-    public synchronized User attemptAnonymousLogin() {
-	return null;
-    }
-
     public synchronized String getLoggedInUser() {
 	if (currentUser == null) {
 	    LOGGER.warn("No user logged in!");
