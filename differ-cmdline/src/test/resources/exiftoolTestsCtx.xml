@@ -30,27 +30,154 @@
         <entry key="Tile size Y" value="PPI"/>
     </util:map>
 
+    <bean id="valueInRange" class="cz.nkp.differ.cmdline.TestHelper">
+        <!--property name="range" value="10"/ Not working for static class-->
+    </bean>
 
-    <import resource="appCtx-differ-cmdline.xml"/>
+    <import resource="exiftoolMetadataExtractor.xml"/>
 
     <!-- import manual properties list to compare with -->
-    <import resource="image05-significant-properties.xml"/>
-    
-    <util:map id="image05Test01">
-      <entry key="filePathOfOutput" value="docs/examples/images_03/05/output-djvudump.raw"/>
-      <entry key="significantProperties" value-ref="image05SignificantProperties"/> <!--defined in image01-significant-properties.xml -->
-      <entry key="recognizedSignificantProperties" value-ref="image05Test01RecognizedProperties"/>
-      <entry key="ignoredSignificantProperties" value-ref="image05Test01IgnoredProperties"/>
+    <import resource="image01-significant-properties.xml"/>
+
+    <util:map id="image01Test01">
+      <entry key="filePathOfOutput" value="docs/examples/images_02/01/output-exiftool.raw"/>
+      <entry key="significantProperties" value-ref="image01SignificantProperties"/> <!--defined in image01-significant-properties.xml -->
+      <entry key="recognizedSignificantProperties" value-ref="image01Test01RecognizedProperties"/>
+      <entry key="specialSignificantProperties" value-ref="image01Test01SpecialProperties"/>
+      <entry key="ignoredSignificantProperties" value-ref="image01Test01IgnoredProperties"/>
     </util:map>
     
-    <util:list id="image05Test01RecognizedProperties">
+    <util:list id="image01Test01RecognizedProperties">
+        <value>File name</value>
+        <value>File last modified</value>
         <value>Type of format</value>
+        <value>MIME type</value>
+        <value>Samples per pixel</value>
+        <value>Resolution horizontal</value>
+        <value>Resolution vertical</value>
+        <value>Resolution unit</value>
+        <value>File created</value>
+        <value>Image width</value>
+        <value>Image height</value>
+        <value>Color depth</value>
+        <value>Number of channels</value>
         <value>Image width</value>
         <value>Image height</value>
     </util:list>
 
-    <util:list id="image05Test01IgnoredProperties">
+    <util:list id="image01Test01SpecialProperties">
+        <value>File size</value>
+    </util:list>
+
+    <util:list id="image01Test01IgnoredProperties">
+        <value>Compression</value>
+        <value>Orientation</value>
+        <value>Compression quality</value>
+        <value>Universal unique identifier (UUID)</value>
+        <value>Thumbnail</value>
+
         <!--Above are values TODO-->
+        <value>Version</value>
+        <value>Directory</value>
+        <value>File Permissions</value>
+        <value>Exif Byte Order</value>
+        <value>Photometric Interpretation</value>
+        <value>Planar Configuration</value>
+        <value>Software type</value>
+        <value>Modify Date</value>
+        <value>Color Space</value>
+        <value>Exif Image Width</value>
+        <value>Exif Image Height</value>
+        <value>Thumbnail Offset</value>
+        <value>Thumbnail Length</value>
+        <value>IPTC Digest</value>
+        <value>Displayed Units X</value>
+        <value>Displayed Units Y</value>
+        <value>Global Angle</value>
+        <value>Global Altitude</value>
+        <value>Photoshop Thumbnail</value>
+        <value>Photoshop Format</value>
+        <value>Progressive Scans</value>
+        <value>XMP Toolkit</value>
+        <value>Metadata Date</value>
+        <value>Creator Tool</value>
+        <value>Format</value>
+        <value>Color Mode</value>
+        <value>Document ID</value>
+        <value>Original Document ID</value>
+        <value>Document Ancestors</value>
+        <value>Derived From Document ID</value>
+        <value>Derived From Original Document ID</value>
+        <value>DCT Encode Version</value>
+        <value>APP14 Flags 0</value>
+        <value>APP14 Flags 1</value>
+        <value>Color Transform</value>
+        <value>Encoding process</value>
+        <value>Color transformation</value>
+
+    </util:list>
+
+    <!-- import manual properties list to compare with -->
+    <import resource="image14-significant-properties.xml"/>
+
+    <util:map id="image14Test02">
+        <entry key="filePathOfOutput" value="docs/examples/images_02/14/output-exiftool.raw"/>
+        <entry key="significantProperties" value-ref="image14SignificantProperties"/> <!--defined in image14-significant-properties.xml -->
+        <entry key="recognizedSignificantProperties" value-ref="image14Test02RecognizedProperties"/>
+        <entry key="specialSignificantProperties" value-ref="image14Test02SpecialProperties"/>
+        <entry key="ignoredSignificantProperties" value-ref="image14Test02IgnoredProperties"/>
+    </util:map>
+
+    <util:list id="image14Test02RecognizedProperties">
+        <value>File name</value>
+        <value>File last modified</value>
+        <value>Type of format</value>
+        <value>MIME type</value>
+        <value>Samples per pixel</value>
+        <value>File created</value>
+        <value>Image width</value>
+        <value>Image height</value>
+        <value>Image width</value>
+        <value>Image height</value>
+        <value>Color space</value>
+
+    </util:list>
+
+    <util:list id="image14Test02SpecialProperties">
+        <value>File size</value>
+    </util:list>
+
+    <util:list id="image14Test02IgnoredProperties">
+        <value>Compression</value>
+        <value>Orientation</value>
+        <value>Universal unique identifier (UUID)</value>
+        <value>Color depth</value>
+        <value>Resolution horizontal</value>
+        <value>Resolution vertical</value>
+        <value>Resolution unit</value><!-- Appears two times, first m, then inches-->
+
+        <!--Above are values TODO-->
+        <value>Major Brand</value>
+        <value>Minor Version</value>
+        <value>Compatible Brands</value>
+        <value>Number Of Components</value>
+        <value>Bits Per Component</value>
+        <value>Version</value>
+        <value>Directory</value>
+        <value>File Permissions</value>
+        <value>Photometric Interpretation</value>
+        <value>Planar Configuration</value>
+        <value>Modify Date</value>
+        <value>Color Space</value>
+        <value>Exif Image Width</value>
+        <value>Exif Image Height</value>
+        <value>XMP Toolkit</value>
+        <value>Metadata Date</value>
+        <value>Creator Tool</value>
+        <value>Format</value>
+        <value>Color Mode</value>
+        <value>Document ID</value>
+        <value>Original Document ID</value>
     </util:list>
 </beans>
 

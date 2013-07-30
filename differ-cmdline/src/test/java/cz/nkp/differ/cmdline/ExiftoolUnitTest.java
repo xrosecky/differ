@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -16,17 +17,21 @@ import static org.junit.Assert.*;
 
 
 /**
- * Test class for exiftool transformer
+ * Test class for Exiftool transformer
  * User: Jonatan Svensson <jonatansve@gmail.com>
  * Date: 2013-07-19
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:exiftoolTestsCtx.xml"})
-public class exiftoolUnitTest {
+public class ExiftoolUnitTest {
     List<ResultTransformer.Entry> transformedData;
-    @Autowired
+    @Resource
     private Map<String,Object> image01Test01;
+    @Resource
+    private Map<String,Object> image14Test02;
+
+
 
     @Autowired
     private ResultTransformer exiftoolMetadataTransformer;
@@ -38,64 +43,94 @@ public class exiftoolUnitTest {
         transformedData = exiftoolMetadataTransformer.transform(stdout,null);
         assertNotNull(transformedData);
 
-        ArrayList ignoredProperties = (ArrayList) image01Test01.get("image01Test01IgnoredProperties");
-        ArrayList recognizedProperties = (ArrayList) image01Test01.get("image01Test01RecognizedProperties");
+        ArrayList ignoredProperties = (ArrayList) image01Test01.get("ignoredSignificantProperties");
+        ArrayList recognizedProperties = (ArrayList) image01Test01.get("recognizedSignificantProperties");
+        ArrayList specialProperties = (ArrayList) image01Test01.get("specialSignificantProperties");
+
         assertNotNull(recognizedProperties);
 
-        /**
-         * Test all properties are mapped.
-         * Compare transformedData with list of
-         * manual input of significant properties in image14Test01RecognizedProperties
-         * Fails if a property is transformed but is yet not mapped.
-         */
-        for(ResultTransformer.Entry e: transformedData){
-          assertTrue("Testing that transformed property is recognized: "+ e.getKey(),recognizedProperties.contains(e.getKey())||ignoredProperties.contains(e.getKey()));
-        }
-
-        /**
-         * Test all properties that are not ignored.
-         * Go through each entry in transformedData,
-         * Look for the key in:
-         * identificationProperties/validationProperties/characterizationProperties,
-         * Assert that the value is identical.
-         */
-
-        LinkedHashMap l = (LinkedHashMap) image01Test01.get("image01SignificantProperties");
-        LinkedHashMap lh1 = (LinkedHashMap) l.get("identificationProperties");
-        LinkedHashMap lh2 = (LinkedHashMap) l.get("validationProperties");
-        LinkedHashMap lh3 = (LinkedHashMap) l.get("characterizationProperties");
-
+        LinkedHashMap l = (LinkedHashMap) image01Test01.get("significantProperties");
         String s;
-
         for(ResultTransformer.Entry e: transformedData){
-            // Make sure it is not ignored first
+          // Property is definitely handled
+          assertTrue("Testing that transformed property is recognized: "+ e.getKey(),recognizedProperties.contains(e.getKey())
+                         ||ignoredProperties.contains(e.getKey())
+                         ||specialProperties.contains(e.getKey()));
+          // Make sure it is not ignored or special
             if(recognizedProperties.contains(e.getKey())){
-                s= (String)lh1.get(e.getKey());
-                if(s==null) {
-                    s= (String)lh2.get(e.getKey());
-                    if(s==null){
-                        s= (String)lh3.get(e.getKey());
-                    }
-                }
-                // If s is null here, then the entry is missing in manual data
-               assertNotNull("Testing: "+e.getKey()+ " with: "+ s, s);
-               assertEquals("Testing equality: "+e.getKey(), e.getValue(), s);
-               s=null;
-          }
+                 s = TestHelper.lookForManualValue(e.getKey(),l);
+                // If s is null here, then the value is missing in manual data
+                 assertNotNull("Testing: "+e.getKey()+ " with: "+ s, s);
+                 assertEquals("Testing equality: "+e.getKey(), e.getValue(), s);
+                 s=null;
+            }
+            // Some values are not exact and are handled especially, so we test them in their own group
+            else if(specialProperties.contains(e.getKey())){
+                // Only File size so far
+                assertTrue("Testing equality for special property: "+e.getKey(),TestHelper.valueInRange(e.getValue(),TestHelper.lookForManualValue(e.getKey(), l)));
+            }
         }
-
-        /**
-         * Last: 1.Check conversely that the recognized properties in test context
-         * match the transformed data exactly (no extra entries in list).
-         * 2. Ignored properties should also be in the transformed list.
-         */
 
         for(int i=0; i<recognizedProperties.size();i++){
-            assertTrue("Testing that manual recognized property was transformed: "+ recognizedProperties.get(i), TestHelper.lookFor((String) recognizedProperties.get(i), transformedData));
+            assertTrue("Testing that manual recognized property was transformed: "+ recognizedProperties.get(i),
+                    TestHelper.lookFor((String) recognizedProperties.get(i), transformedData));
         }
-        for(int j=0; j<ignoredProperties.size();j++){
-            assertTrue("Testing that manual ignored property was transformed: "+ ignoredProperties.get(j),TestHelper.lookFor((String) ignoredProperties.get(j), transformedData));
+        for(int i=0; i<specialProperties.size();i++){
+            assertTrue("Testing that special recognized property was transformed: "+ specialProperties.get(i),
+                    TestHelper.lookFor((String) specialProperties.get(i), transformedData));
+        }
+        for(int i=0; i<ignoredProperties.size();i++){
+            assertTrue("Testing that manual ignored property was transformed: "+ ignoredProperties.get(i),
+                    TestHelper.lookFor((String) ignoredProperties.get(i), transformedData));
+        }
+    }
+    @Test
+    public void testImage14() throws Exception {
+        byte[] stdout = TestHelper.readFile("../docs/examples/images_01/14/output-exiftool.raw");
+        transformedData = exiftoolMetadataTransformer.transform(stdout,null);
+        assertNotNull(transformedData);
+
+        ArrayList ignoredProperties = (ArrayList) image14Test02.get("ignoredSignificantProperties");
+        ArrayList recognizedProperties = (ArrayList) image14Test02.get("recognizedSignificantProperties");
+        ArrayList specialProperties = (ArrayList) image14Test02.get("specialSignificantProperties");
+
+        assertNotNull(recognizedProperties);
+
+        LinkedHashMap l = (LinkedHashMap) image14Test02.get("significantProperties");
+        String s;
+        for(ResultTransformer.Entry e: transformedData){
+            // Property is definitely handled
+            assertTrue("Testing that transformed property is recognized: "+ e.getKey(),recognizedProperties.contains(e.getKey())
+                    ||ignoredProperties.contains(e.getKey())
+                    ||specialProperties.contains(e.getKey()));
+            // Make sure it is not ignored or special
+            if(recognizedProperties.contains(e.getKey())){
+                s = TestHelper.lookForManualValue(e.getKey(),l);
+                // If s is null here, then the value is missing in manual data
+                assertNotNull("Testing: "+e.getKey()+ " with: "+ s, s);
+                assertEquals("Testing equality: "+e.getKey(), e.getValue(), s);
+                s=null;
+            }
+            // Some values are not exact and are handled especially, so we test them in their own group
+            else if(specialProperties.contains(e.getKey())){
+                // Only File size so far
+                assertTrue("Testing equality for special property: "+e.getKey(),TestHelper.valueInRange(e.getValue(),TestHelper.lookForManualValue(e.getKey(), l)));
+            }
+        }
+
+        for(int i=0; i<recognizedProperties.size();i++){
+            assertTrue("Testing that manual recognized property was transformed: "+ recognizedProperties.get(i),
+                    TestHelper.lookFor((String) recognizedProperties.get(i), transformedData));
+        }
+        for(int i=0; i<specialProperties.size();i++){
+            assertTrue("Testing that special recognized property was transformed: "+ specialProperties.get(i),
+                    TestHelper.lookFor((String) specialProperties.get(i), transformedData));
+        }
+        for(int i=0; i<ignoredProperties.size();i++){
+            assertTrue("Testing that manual ignored property was transformed: "+ ignoredProperties.get(i),
+                    TestHelper.lookFor((String) ignoredProperties.get(i), transformedData));
         }
     }
 }
+
 
