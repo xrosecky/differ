@@ -48,9 +48,9 @@ public class DifferProgramTabButtonPanel extends CustomComponent {
 		    deleteImagesButton.setEnabled(left > 0 || right > 0);
                     compareButton.setEnabled(left + right > 0);
                     if (left + right == 1) {
-                        compareButton.setCaption("Proceed");
+                        compareButton.setCaption("<br/><b>PROCEED</b>");
                     } else {
-                        compareButton.setCaption("Compare");
+                        compareButton.setCaption("<br/><b>COMPARE</b>");
                     }
 		}
 	    });
@@ -107,7 +107,9 @@ public class DifferProgramTabButtonPanel extends CustomComponent {
 	buttonPanelRoot.addComponent(GUIMacros.bindTooltipToComponent(deleteImagesButton, "Delete images", "Delete selected images"));
 	buttonPanelRoot.addComponent(GUIMacros.bindTooltipToComponent(createProfilesButton, "Create Profile", "Create a new image processing profile"));
 
-	compareButton = new Button("Compare");
+	compareButton = new Button("<br/><b>COMPARE</b>");
+        compareButton.setHtmlContentAllowed(true);
+        compareButton.addStyleName("v-bigbutton");
 	compareButton.addListener(new ClickListener() {
 
 	    @Override

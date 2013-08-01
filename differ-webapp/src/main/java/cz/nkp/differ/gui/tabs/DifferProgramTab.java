@@ -106,8 +106,11 @@ public class DifferProgramTab extends HorizontalLayout {
             VerticalLayout innerCompareSection = new VerticalLayout();
             innerCompareSection.setHeight("100%");
             
-            compareButton = new Button("Compare");
+            compareButton = new Button("<br/><b>COMPARE</b>");
+            compareButton.setHtmlContentAllowed(true);
+            compareButton.addStyleName("v-bigbutton");
             compareButton.setEnabled(false);
+            
             compareButton.addListener(new ClickListener() {
 
                 @Override
@@ -156,6 +159,7 @@ public class DifferProgramTab extends HorizontalLayout {
             });
             
             Button resetButton = new Button("Reset");
+            resetButton.addStyleName("v-longbutton");
             resetButton.addListener(new ClickListener() {
                 @Override
                 public void buttonClick(Button.ClickEvent event) {
@@ -169,8 +173,8 @@ public class DifferProgramTab extends HorizontalLayout {
             
             innerCompareSection.addComponent(compareButton);
             innerCompareSection.addComponent(resetButton);
-            innerCompareSection.setComponentAlignment(compareButton, Alignment.BOTTOM_LEFT);
-            innerCompareSection.setComponentAlignment(resetButton, Alignment.TOP_LEFT);
+            innerCompareSection.setComponentAlignment(compareButton, Alignment.BOTTOM_CENTER);
+            innerCompareSection.setComponentAlignment(resetButton, Alignment.TOP_CENTER);
             
             loggedOutView.addComponent(innerUploadSection);
             loggedOutView.addComponent(innerCompareSection);
@@ -230,9 +234,9 @@ public class DifferProgramTab extends HorizontalLayout {
                     uploadB = receiver.getFile();
                 }
                 if (uploadA == null || uploadB == null) {
-                    compareButton.setCaption("Proceed");
+                    compareButton.setCaption("<br/><b>PROCEED</b>");
                 } else {
-                    compareButton.setCaption("Compare");
+                    compareButton.setCaption("<br/><b>COMPARE</b>");
                 }
             }           
         });
