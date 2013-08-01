@@ -17,72 +17,45 @@ import java.util.regex.Pattern;
  * Time: 11:57
  */
 public class TestHelper {
-    private static int range=10;
+    private static int range = 10;
 
     /**
      * @param s the property name
      * @param l the hash map in which to look in
      * @return null if the value cannot be found in manual data (i.e. it is not significant property)
-     * Returns the value if the value is found and should be tested.
+     *         Returns the value if the value is found and should be tested.
      */
-    public static String lookForManualValue(String s, LinkedHashMap l){
+    public static String lookForManualValue(String s, LinkedHashMap l) {
         String result;
         LinkedHashMap lh1 = (LinkedHashMap) l.get("identificationProperties");
         LinkedHashMap lh2 = (LinkedHashMap) l.get("validationProperties");
         LinkedHashMap lh3 = (LinkedHashMap) l.get("characterizationProperties");
-        result= (String)lh1.get(s);
-        if(result==null) {
-            result= (String)lh2.get(s);
-            if(result==null){
-                result= (String)lh3.get(s);
+        result = (String) lh1.get(s);
+        if (result == null) {
+            result = (String) lh2.get(s);
+            if (result == null) {
+                result = (String) lh3.get(s);
             }
         }
         return result;
     }
 
     /**
-     *
-     * @param key value to look for
+     * @param key             value to look for
      * @param transformedData list of all transformed data
      * @return true if key exists in transformed data
-     * false if it does not exist.
+     *         false if it does not exist.
      */
-    public static boolean lookFor(String key,  List<cz.nkp.differ.compare.metadata.external.ResultTransformer.Entry> transformedData){
-        for(cz.nkp.differ.compare.metadata.external.ResultTransformer.Entry e: transformedData){
-            if(key.equals(e.getKey())) return true;
-        }
-        return false;
-    }
-
-    /**
-     * Verify that value is within: reference+-range
-     * @param value input value
-     * @param reference reference to compare with
-     * @return true if in the range
-     * false if not
-     */
-    public static boolean valueInRange(String value, String reference){
-        int i=0;
-        int j=0;
-        Pattern r = Pattern.compile("[0-9]+(?=,)");
-        Matcher m = r.matcher(value);
-        if(m.find())  {
-          i  = Integer.valueOf(m.group(0));
-
-        }
-        Matcher m1= r.matcher(reference);
-        if(m1.find())  {
-            j  = Integer.valueOf(m1.group(0));
-        }
-
-        if(Math.abs(i-j)<range){
-            return true;
+    public static boolean lookFor(String key, List<cz.nkp.differ.compare.metadata.external.ResultTransformer.Entry> transformedData) {
+        for (cz.nkp.differ.compare.metadata.external.ResultTransformer.Entry e : transformedData) {
+            if (key.equals(e.getKey())) return true;
         }
         return false;
     }
 
     /**
      * Read file for metadataTransformer
+     *
      * @param string file path
      * @return file in byte[] format
      * @throws IOException
@@ -98,10 +71,9 @@ public class TestHelper {
             byte[] data = new byte[length];
             f.readFully(data);
             return data;
-        }catch(IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             f.close();
         }
         return null;

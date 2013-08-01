@@ -29,11 +29,6 @@
         <entry key="Tile size X" value="PPI"/>
         <entry key="Tile size Y" value="PPI"/>
     </util:map>
-
-    <bean id="valueInRange" class="cz.nkp.differ.cmdline.TestHelper">
-        <!--property name="range" value="10"/ Not working for static class-->
-    </bean>
-
     <import resource="exiftoolMetadataExtractor.xml"/>
 
     <!-- import manual properties list to compare with -->
@@ -46,6 +41,11 @@
       <entry key="specialSignificantProperties" value-ref="image01Test01SpecialProperties"/>
       <entry key="ignoredSignificantProperties" value-ref="image01Test01IgnoredProperties"/>
     </util:map>
+
+    <bean id="valueInRangeImage01" class="cz.nkp.differ.cmdline.ValueInRange">
+        <property name="range" value="10" />
+        <property name="description" value="Tester validates that input value is within the scope of manual value +- range variable"/>
+    </bean>
     
     <util:list id="image01Test01RecognizedProperties">
         <value>File name</value>
@@ -65,9 +65,9 @@
         <value>Image height</value>
     </util:list>
 
-    <util:list id="image01Test01SpecialProperties">
-        <value>File size</value>
-    </util:list>
+    <util:map id="image01Test01SpecialProperties">
+        <entry key="File size" value-ref="valueInRangeImage01"/>
+    </util:map>
 
     <util:list id="image01Test01IgnoredProperties">
         <value>Compression</value>
@@ -128,6 +128,11 @@
         <entry key="ignoredSignificantProperties" value-ref="image14Test02IgnoredProperties"/>
     </util:map>
 
+    <bean id="valueInRangeImage14" class="cz.nkp.differ.cmdline.ValueInRange">
+        <property name="range" value="10" />
+        <property name="description" value="Tester validates that input value is within the scope of manual value +- range variable"/>
+    </bean>
+
     <util:list id="image14Test02RecognizedProperties">
         <value>File name</value>
         <value>File last modified</value>
@@ -143,9 +148,9 @@
 
     </util:list>
 
-    <util:list id="image14Test02SpecialProperties">
-        <value>File size</value>
-    </util:list>
+    <util:map id="image14Test02SpecialProperties">
+        <entry key="File size" value-ref="valueInRangeImage14"/>
+    </util:map>
 
     <util:list id="image14Test02IgnoredProperties">
         <value>Compression</value>
