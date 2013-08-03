@@ -53,6 +53,8 @@ public class DifferProgramTab extends HorizontalLayout {
     private Layout loggedInView, loggedOutView, customViewWrapper;
     private Button customLayoutBackButton;
     private Button compareButton;
+    static private String BTN_TXT_COMPARE = "<div class=\"compare-button-caption\">Compare</div>";
+    static private String BTN_TXT_PROCEED = "<div class=\"compare-button-caption\">Proceed</div>";
     private UserFilesWidget fileSelector1, fileSelector2;
     //private ArrayList<Upload> upload;
     private File uploadA;
@@ -106,7 +108,7 @@ public class DifferProgramTab extends HorizontalLayout {
             VerticalLayout innerCompareSection = new VerticalLayout();
             innerCompareSection.setHeight("100%");
             
-            compareButton = new Button("<br/><b>COMPARE</b>");
+            compareButton = new Button(BTN_TXT_COMPARE);
             compareButton.setHtmlContentAllowed(true);
             compareButton.addStyleName("v-bigbutton");
             compareButton.setEnabled(false);
@@ -197,6 +199,7 @@ public class DifferProgramTab extends HorizontalLayout {
         VerticalLayout inner = new VerticalLayout();
         inner.setSpacing(true);
 
+        //FIXME: embedded size not being restricted properly through CSS layout
         final Embedded embedded = new Embedded();
         embedded.addStyleName("v-preview");
         
@@ -234,9 +237,9 @@ public class DifferProgramTab extends HorizontalLayout {
                     uploadB = receiver.getFile();
                 }
                 if (uploadA == null || uploadB == null) {
-                    compareButton.setCaption("<br/><b>PROCEED</b>");
+                    compareButton.setCaption(BTN_TXT_PROCEED);
                 } else {
-                    compareButton.setCaption("<br/><b>COMPARE</b>");
+                    compareButton.setCaption(BTN_TXT_COMPARE);
                 }
             }           
         });
@@ -277,9 +280,9 @@ public class DifferProgramTab extends HorizontalLayout {
                         uploadB = file;
                     }
                     if (uploadA == null || uploadB == null) {
-                        compareButton.setCaption("Proceed");
+                        compareButton.setCaption(BTN_TXT_PROCEED);
                     } else {
-                        compareButton.setCaption("Compare");
+                        compareButton.setCaption(BTN_TXT_COMPARE);
                     }
                 }
             }        

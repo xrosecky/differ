@@ -36,7 +36,7 @@ public class UploadReceiver implements Receiver {
                }
                fos = new FileOutputStream(file);
            } catch (FileNotFoundException io) {
-               DifferApplication.getCurrentApplication().getMainWindow().showNotification("Error", "Error while uploading file");
+               DifferApplication.getCurrentApplication().getMainWindow().showNotification("Error", "<br/>Error while uploading file");
                return null;
            }
            return fos;

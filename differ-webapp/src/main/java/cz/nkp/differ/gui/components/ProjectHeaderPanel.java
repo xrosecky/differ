@@ -1,34 +1,22 @@
 package cz.nkp.differ.gui.components;
 
-import com.vaadin.Application;
-import com.vaadin.terminal.Sizeable;
 import com.vaadin.terminal.ThemeResource;
-import com.vaadin.ui.AbsoluteLayout;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
-import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.Embedded;
-import com.vaadin.ui.FormLayout;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Layout;
-import com.vaadin.ui.LoginForm;
-import com.vaadin.ui.LoginForm.LoginListener;
 import com.vaadin.ui.Panel;
-import com.vaadin.ui.TextArea;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Window;
 import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.gui.tabs.DifferProgramTab;
 import cz.nkp.differ.gui.windows.LoginUserWindow;
-import cz.nkp.differ.gui.windows.MainDifferWindow;
 import cz.nkp.differ.gui.windows.RegisterUserWindow;
 import cz.nkp.differ.util.GUIMacros;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Creates and populates a Component that has an image, page title, and copyright. Intended to be displayed

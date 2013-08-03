@@ -27,10 +27,11 @@ public class DifferProgramTabButtonPanel extends CustomComponent {
     private static final long serialVersionUID = -3190731385605086001L;
     private Button uploadImagesButton;
     private Button createProfilesButton;
-    private Button logoutButton;
     private Button deleteImagesButton;
     private Button refreshImagesButton;
     private Button compareButton;
+    static private String BTN_TXT_COMPARE = "<div class=\"compare-button-caption\">Compare</div>";
+    static private String BTN_TXT_PROCEED = "<div class=\"compare-button-caption\">Proceed</div>";    
     private DifferProgramTab parent;
     private MainDifferWindow mainWindow;
 
@@ -48,9 +49,9 @@ public class DifferProgramTabButtonPanel extends CustomComponent {
 		    deleteImagesButton.setEnabled(left > 0 || right > 0);
                     compareButton.setEnabled(left + right > 0);
                     if (left + right == 1) {
-                        compareButton.setCaption("<br/><b>PROCEED</b>");
+                        compareButton.setCaption(BTN_TXT_PROCEED);
                     } else {
-                        compareButton.setCaption("<br/><b>COMPARE</b>");
+                        compareButton.setCaption(BTN_TXT_COMPARE);
                     }
 		}
 	    });
@@ -107,7 +108,7 @@ public class DifferProgramTabButtonPanel extends CustomComponent {
 	buttonPanelRoot.addComponent(GUIMacros.bindTooltipToComponent(deleteImagesButton, "Delete images", "Delete selected images"));
 	buttonPanelRoot.addComponent(GUIMacros.bindTooltipToComponent(createProfilesButton, "Create Profile", "Create a new image processing profile"));
 
-	compareButton = new Button("<br/><b>COMPARE</b>");
+	compareButton = new Button(BTN_TXT_COMPARE);
         compareButton.setHtmlContentAllowed(true);
         compareButton.addStyleName("v-bigbutton");
 	compareButton.addListener(new ClickListener() {
