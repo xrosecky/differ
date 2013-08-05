@@ -24,8 +24,20 @@
 /*adds padding and bg color to anonymous upload sections*/
 .v-horizontallayout
 .v-upload {
-    padding: 20px;
+    padding: 20px 0 20px 20px;
     background: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+/*prevents inheritance issue with local-file section*/
+.v-horizontallayout
+.v-upload
+.v-override {
+    padding: 0;
+    border-style: none;
+    max-height: 30px;
 }
 
 /*for -OR- label in anonymous upload sections*/
@@ -35,14 +47,6 @@
     margin-bottom: 10px;
     margin-left: 30px;
     font-weight: 900;
-}
-
-/*for image previews in anonymous upload sections*/
-.v-embedded
-.v-preview 
-img {
-    max-height: 190px;
-    max-width: 190px;
 }
 
 /*Overrides default loading indicator*/
@@ -76,7 +80,7 @@ img {
     font-size: 120%;
 }
 
-/*for RESET buttons*/
+/*for RESET button*/
 .v-longbutton
 .v-button-wrap {
     width: 70px;

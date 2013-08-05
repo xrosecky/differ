@@ -102,11 +102,12 @@ public class DifferProgramTab extends HorizontalLayout {
             ((HorizontalLayout) loggedOutView).setSpacing(true);
 
             AbsoluteLayout innerUploadSection = new AbsoluteLayout();
-            innerUploadSection.setWidth("500px");
-            innerUploadSection.setHeight("500px");
+            innerUploadSection.setWidth("450px");
+            innerUploadSection.setHeight("460px");
             
             VerticalLayout innerCompareSection = new VerticalLayout();
             innerCompareSection.setHeight("100%");
+            innerCompareSection.setWidth("45%");
             
             compareButton = new Button(BTN_TXT_COMPARE);
             compareButton.setHtmlContentAllowed(true);
@@ -193,20 +194,25 @@ public class DifferProgramTab extends HorizontalLayout {
     
     private Component addFileUploadComponent(final int index) {       
         HorizontalLayout outer = new HorizontalLayout();
+        outer.setWidth("400px");
+        outer.setHeight("165px");
         outer.addStyleName("v-upload");
         outer.setSpacing(true);
 
         VerticalLayout inner = new VerticalLayout();
         inner.setSpacing(true);
-
-        //FIXME: embedded size not being restricted properly through CSS layout
+        inner.setWidth("200px");
+        
         final Embedded embedded = new Embedded();
         embedded.addStyleName("v-preview");
+        embedded.setWidth("150px");
         
         final TextField urlPaste = new TextField("Select Remote File");
+        urlPaste.setWidth("100%");
         urlPaste.setInputPrompt("Paste URL here...");
         final UploadReceiver receiver = new UploadReceiver();
         final Upload uploadInstance = new Upload("Select Local File", receiver);
+        uploadInstance.addStyleName("v-override");
         final Button uploadBtn = new Button("Upload");
                 
         uploadInstance.setButtonCaption("Browse...");
