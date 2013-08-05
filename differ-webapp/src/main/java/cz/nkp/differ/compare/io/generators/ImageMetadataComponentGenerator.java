@@ -9,6 +9,7 @@ import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.Table;
 import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.VerticalLayout;
 
 import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.compare.io.CompareComponent;
@@ -62,7 +63,9 @@ public class ImageMetadataComponentGenerator {
      * @return Layout
      */
     public Layout getComponent() {
-        HorizontalLayout layout = new HorizontalLayout();
+        VerticalLayout layout = new VerticalLayout();
+        layout.addStyleName("v-table-metadata");
+        layout.setSpacing(true);
         generateMetadataTable(layout);
         return layout;
     }
@@ -99,6 +102,7 @@ public class ImageMetadataComponentGenerator {
                     version = result[0].getMetadata().get(i).getSource().getSourceName() + 
                               " " + result[0].getMetadata().get(i).getSource().getVersion();
                 } else {
+                    //TODO: Add obtain tool version information here
                     version = "N/A or Unknown";
                 }
                 source.addListener(new Button.ClickListener() {
