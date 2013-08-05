@@ -16,7 +16,10 @@
     
     <import resource="metadataFinishing.xml"/>
     <import resource="metadataSignificantProperties.xml"/>
-
+    <import resource="extractorProperties.xml"/>
+    <import resource="kakaduMetadataExtractor.xml"/>
+    <!-- import manual properties list to compare with -->
+    <import resource="ImageProperties/image14-significant-properties.xml"/>
     <util:map id="units">
         <entry key="Image width" value="px"/>
         <entry key="Image height" value="px"/>
@@ -30,15 +33,12 @@
         <entry key="Tile size Y" value="PPI"/>
     </util:map>
 
-    <import resource="kakaduMetadataExtractor.xml"/>
-      
-    <!-- import manual properties list to compare with -->
-    <import resource="image14-significant-properties.xml"/>
-    
+
     <util:map id="image14Test01">
       <entry key="filePathOfOutput" value="docs/examples/images_01/14/output-kakadu.raw"/>
       <entry key="significantProperties" value-ref="image14SignificantProperties"/> <!--defined in image14-significant-properties.xml -->
       <entry key="recognizedSignificantProperties" value-ref="image14Test01RecognizedProperties"/>
+      <entry key="specialSignificantProperties" value-ref="image14Test01SpecialProperties"/>
       <entry key="ignoredSignificantProperties" value-ref="image14Test01IgnoredProperties"/>
     </util:map>
     
@@ -56,6 +56,9 @@
         <value>Image height</value>
     </util:list>
 
+    <util:map id="image14Test01SpecialProperties">
+
+    </util:map>
     <util:list id="image14Test01IgnoredProperties">
         <value>Color depth</value>
         <value>Transformation</value>

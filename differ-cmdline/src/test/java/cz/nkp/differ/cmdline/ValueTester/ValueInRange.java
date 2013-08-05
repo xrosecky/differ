@@ -1,4 +1,4 @@
-package cz.nkp.differ.cmdline;
+package cz.nkp.differ.cmdline.ValueTester;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -12,6 +12,11 @@ public class ValueInRange implements ValueTester {
 
     private String description;
     private int range;
+
+    @Override
+    public boolean test(String value) {
+        return false;
+    }
 
     /**
      * Verify that value is within: reference+-range
@@ -52,10 +57,11 @@ public class ValueInRange implements ValueTester {
         return description;
     }
 
-    public void setRange(int range){
-        this.range=range;
+    public void setRange(int range) {
+        this.range = range;
     }
-    public int getRange(){
+
+    public int getRange() {
         return range;
     }
 

@@ -7,15 +7,19 @@
 			   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
 			   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
-  <util:map id="image14SignificantProperties">
+
+
+
+
+    <util:map id="image14SignificantProperties">
     <entry key="filePath" value="docs/examples/images_01/14.jpf"/>
     <entry key="identificationProperties" value-ref="image14IdentificationProperties"/>
     <entry key="validationProperties" value-ref="image14ValidationProperties"/>
     <entry key="characterizationProperties" value-ref="image14CharacterizationProperties"/>
   </util:map>
 
+
   <util:map id="image14IdentificationProperties">
-    <entry key="Version" value="jpylyzer 1.6.0"/>
     <entry key="MIME type" value="image/jp2"/>
     <entry key="Type of format" value="JP2"/>
     <entry key="Version of format" value=""/>

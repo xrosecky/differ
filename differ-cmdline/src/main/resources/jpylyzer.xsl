@@ -12,7 +12,7 @@
 
   <xsl:template match="/jpylyzer">
       <properties>
-	<property name="Version"><xsl:value-of select="concat(toolInfo/toolName,' ',toolInfo/toolVersion)"/></property>
+	<property name="Version of Extractor"><xsl:value-of select="concat(toolInfo/toolName,' ',toolInfo/toolVersion)"/></property>
 	<property name="Validation (well formed and valid)"><xsl:value-of select="isValidJP2"/></property>
 	
 	<property name="Contains signature box"><xsl:value-of select="tests/containsSignatureBox"/></property>

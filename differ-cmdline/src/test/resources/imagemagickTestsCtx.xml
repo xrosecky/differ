@@ -16,7 +16,10 @@
     
     <import resource="metadataFinishing.xml"/>
     <import resource="metadataSignificantProperties.xml"/>
-
+    <import resource="extractorProperties.xml"/>
+    <import resource="imagemagickMetadataExtractor.xml"/>
+    <!-- import manual properties list to compare with -->
+    <import resource="ImageProperties/image01-significant-properties.xml"/>
     <util:map id="units">
         <entry key="Image width" value="px"/>
         <entry key="Image height" value="px"/>
@@ -29,16 +32,12 @@
         <entry key="Tile size X" value="PPI"/>
         <entry key="Tile size Y" value="PPI"/>
     </util:map>
-
-    <import resource="imagemagickMetadataExtractor.xml"/>
-      
-    <!-- import manual properties list to compare with -->
-    <import resource="image01-significant-properties.xml"/>
     
     <util:map id="image01Test01">
       <entry key="filePathOfOutput" value="docs/examples/images_01/01/output-imagemagick.raw"/>
       <entry key="significantProperties" value-ref="image01SignificantProperties"/> <!--defined in image01-significant-properties.xml -->
       <entry key="recognizedSignificantProperties" value-ref="image01Test01RecognizedProperties"/>
+      <entry key="specialSignificantProperties" value-ref="image01Test01SpecialProperties"/>
       <entry key="ignoredSignificantProperties" value-ref="image01Test01IgnoredProperties"/>
     </util:map>
     
@@ -72,15 +71,18 @@
         <value>Resolution vertical</value>
         <value>File size</value>
         <value>Number of pixels</value>
-        <value>Pixels per second</value>
         <value>Image width</value>
         <value>Image height</value>
         <value>Resolution horizontal</value>
         <value>Resolution vertical</value>
     </util:list>
+    <util:map id="image01Test01SpecialProperties">
 
+    </util:map>
     <util:list id="image01Test01IgnoredProperties">
         <value>Orientation</value>
+        <value>Pixels per second</value>
+
         <!--Above are values TODO-->
         <value>Class</value>
         <value>Print size</value>
@@ -138,7 +140,6 @@
         <value>Tainted</value>
         <value>User time</value>
         <value>Elapsed time</value>
-        <value>Version</value>
     </util:list>
 </beans>
 

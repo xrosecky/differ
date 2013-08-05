@@ -7,10 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import javax.annotation.Resource;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -24,9 +22,13 @@ import static org.junit.Assert.*;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:djvudumpTestsCtx.xml"})
 public class DjvudumpUnitTest {
-    List<ResultTransformer.Entry> transformedData;
-    @Autowired
+    String thisExtractor = this.getClass().getSimpleName();
+    TestRunner t = new TestRunner();
+    @Resource
     private Map<String, Object> image05Test01;
+
+    @Resource
+    private LinkedHashMap<String, Object> extractorSignificantProperties;
 
     @Autowired
     private ResultTransformer djvudumpMetadataTransformer;
@@ -35,34 +37,20 @@ public class DjvudumpUnitTest {
     public void testImage05() throws Exception {
 
         byte[] stdout = TestHelper.readFile("../docs/examples/images_03/05/output-djvudump.raw");
-        transformedData = djvudumpMetadataTransformer.transform(stdout, null);
-        assertNotNull(transformedData);
+        List<ResultTransformer.Entry> transformedData = djvudumpMetadataTransformer.transform(stdout, null);
+        ArrayList ignoredProperties = (ArrayList) image05Test01.get("ignoredSignificantProperties");
+        ArrayList recognizedProperties = (ArrayList) image05Test01.get("recognizedSignificantProperties");
+        LinkedHashMap<String, Object> specialProperties = (LinkedHashMap<String, Object>) image05Test01.get("specialSignificantProperties");
+        LinkedHashMap significantProperties = (LinkedHashMap) image05Test01.get("significantProperties");
 
-        ArrayList ignoredProperties = (ArrayList) image05Test01.get("image05Test01IgnoredProperties");
-        ArrayList recognizedProperties = (ArrayList) image05Test01.get("image05Test01RecognizedProperties");
-        assertNotNull(recognizedProperties);
-
-
-        LinkedHashMap l = (LinkedHashMap) image05Test01.get("image05SignificantProperties");
-        String s;
-
-        for (ResultTransformer.Entry e : transformedData) {
-            assertTrue("Testing that transformed property is recognized: " + e.getKey(), recognizedProperties.contains(e.getKey()) || ignoredProperties.contains(e.getKey()));
-            // Make sure it is not ignored first
-            if (recognizedProperties.contains(e.getKey())) {
-                s = TestHelper.lookForManualValue(e.getKey(), l);
-                // If s is null here, then the entry is missing in manual data
-                assertNotNull("Testing: " + e.getKey() + " with: " + s, s);
-                assertEquals("Testing equality: " + e.getKey(), e.getValue(), s);
-            }
-        }
-
-        for (int i = 0; i < recognizedProperties.size(); i++) {
-            assertTrue("Testing that manual recognized property was transformed: " + recognizedProperties.get(i), TestHelper.lookFor((String) recognizedProperties.get(i), transformedData));
-        }
-        for (int j = 0; j < ignoredProperties.size(); j++) {
-            assertTrue("Testing that manual ignored property was transformed: " + ignoredProperties.get(j), TestHelper.lookFor((String) ignoredProperties.get(j), transformedData));
-        }
+        t.runStandardTests(transformedData,
+                recognizedProperties,
+                ignoredProperties,
+                specialProperties,
+                extractorSignificantProperties,
+                significantProperties,
+                thisExtractor
+        );
     }
 }
 

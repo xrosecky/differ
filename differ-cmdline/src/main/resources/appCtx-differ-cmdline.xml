@@ -120,9 +120,9 @@
     	    <map>
     	      <entry key="Type of format"   value="FORM:([^\[]+)"/>
     	      <entry key="Software type"    value="INFO \[[0-9]+\][^x]*,[\ \t]*([^,]+)"/>
-    	      <entry key="Image width"      value="INFO \[[0-9]+\].*([0-9]+)x"/>
+    	      <entry key="Image width"      value="INFO .*DjVu\s([0-9]+)x"/>
     	      <entry key="Image height"     value="INFO \[[0-9]+\].*[0-9]+x([0-9]+)"/>
-    	      <entry key="Resolution"       value="INFO \[[0-9=+\].*v[0-9]+,[\ \t]*([0-9]+[\ \t]*dpi)"/>
+    	      <entry key="Resolution"       value="INFO \[[0-9]+=\].*v[0-9]+,[\ \t]*([0-9]+[\ \t]*dpi)"/>
     	    </map>
     	</property>
     	<property name="listOfRegexp">
