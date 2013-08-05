@@ -204,8 +204,7 @@ public class DifferProgramTab extends HorizontalLayout {
         inner.setWidth("200px");
         
         final Embedded embedded = new Embedded();
-        embedded.addStyleName("v-preview");
-        embedded.setWidth("150px");
+        embedded.addStyleName("v-preview-anon");
         
         final TextField urlPaste = new TextField("Select Remote File");
         urlPaste.setWidth("100%");

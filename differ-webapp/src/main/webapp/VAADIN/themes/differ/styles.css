@@ -73,6 +73,33 @@
     width: 70px;
 }
 
+.v-preview-anon img {	
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.v-preview-reg-container {
+    padding: 20px 0 20px 20px;
+}
+
+.v-preview-reg img {
+    max-height: 200px;
+    max-width: 360px;
+
+}
+
+.v-results {
+    margin: 10px 10px 10px 0;
+    background: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+.v-table-metadata {
+   margin: 10px 10px 10px 0; 
+}
+
 /*text captions in COMPARE|PROCEED buttons*/
 .compare-button-caption {
     margin-top: 8px;

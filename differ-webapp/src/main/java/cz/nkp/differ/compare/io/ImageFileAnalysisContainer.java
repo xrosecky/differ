@@ -6,6 +6,7 @@ import cz.nkp.differ.compare.metadata.ImageMetadata;
 import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.terminal.FileResource;
 import com.vaadin.terminal.Resource;
+import com.vaadin.ui.AbsoluteLayout;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Button.ClickEvent;
@@ -66,6 +67,7 @@ public class ImageFileAnalysisContainer {
 
     public Layout getComponent() {
         final VerticalLayout layout = new VerticalLayout();
+        layout.addStyleName("v-results");
         generateComponent(layout);
         return layout;
     }
@@ -74,8 +76,15 @@ public class ImageFileAnalysisContainer {
         // Image preview
         final Resource imageFullResource = imageToResource(result.getFullImage());
         final Resource imageScaledResource = imageToResource(result.getPreview());
+        
+        HorizontalLayout previewContainer = new HorizontalLayout();
+        previewContainer.setHeight("200px");
+        previewContainer.setWidth("360px");
+        previewContainer.addStyleName("v-preview-reg-container");
+        
         Button imageButton = new Button();
-        imageButton.setStyleName(BaseTheme.BUTTON_LINK);
+        imageButton.addStyleName(BaseTheme.BUTTON_LINK);
+        imageButton.addStyleName("v-preview-reg");
         imageButton.setIcon(imageScaledResource);
         if (imageFullResource != null) {
             imageButton.addListener(new ClickListener() {
@@ -88,7 +97,9 @@ public class ImageFileAnalysisContainer {
                 }
             });
         }
-        layout.addComponent(imageButton);
+        previewContainer.addComponent(imageButton);
+        layout.addComponent(previewContainer);
+
         // Image checksum
         Label hashLabel = new Label();
         hashLabel.setCaption(String.format("Hash: %s", result.getMD5Checksum()));
