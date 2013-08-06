@@ -13,15 +13,18 @@
 
   <xsl:template match="text()"/>
 
-  <xsl:template match="/jhove:jhove">
-      <properties>
-	<property name = "File last modified"><xsl:value-of select="jhove:repInfo/jhove:lastModified"/></property>
-	<property name = "File path"><xsl:value-of select="jhove:repInfo/@uri"/></property>
-	<property name = "File size"><xsl:value-of select="jhove:repInfo/jhove:size"/></property>
-	<property name = "MIME type"><xsl:value-of select="jhove:repInfo/jhove:mimeType"/></property>
-	<property name = "Validation (well formed and valid)"><xsl:value-of select="jhove:repInfo/jhove:status"/></property>
-	<property name = "Type of format"><xsl:value-of select="jhove:repInfo/jhove:format"/></property>
-	<xsl:apply-templates/>
+
+    <xsl:template match="/jhove:jhove">
+    <properties>
+        <property name = "Version of Extractor"><xsl:value-of select="@release"/></property>
+        <property name = "File last modified"><xsl:value-of select="jhove:repInfo/jhove:lastModified"/></property>
+        <property name = "File path"><xsl:value-of select="jhove:repInfo/@uri"/></property>
+        <property name = "File size"><xsl:value-of select="jhove:repInfo/jhove:size"/></property>
+        <property name = "MIME type"><xsl:value-of select="jhove:repInfo/jhove:mimeType"/></property>
+        <property name = "Validation (well formed and valid)"><xsl:value-of select="jhove:repInfo/jhove:status"/></property>
+        <property name = "Type of format"><xsl:value-of select="jhove:repInfo/jhove:format"/></property>
+
+          <xsl:apply-templates/>
       </properties>
    </xsl:template>
 

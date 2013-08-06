@@ -34,7 +34,9 @@
       <entry key="File path" value-ref="filePathNormalizer"/>
       <entry key="File last modified" value-ref="dateNormalizer"/>
 	  <entry key="File size" value-ref="sizeNormalizer"/>
-	</map>
+      <entry key="Version of Extractor" value-ref="extractorVersionNormalizer"/>
+
+    </map>
       </property>
       
       <property name="entryReplacers">

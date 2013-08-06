@@ -31,20 +31,22 @@
     <util:list id="exiftoolAcceptedVersionValues">
         <value>8.15</value>
     </util:list>
-
-    <!--TODO NORMALIZE BELOW-->
-        <util:list id="imagemagickAcceptedVersionValues">
+    <util:list id="djvudumpAcceptedVersionValues">
+        <value>21</value>
+    </util:list>
+    <util:list id="imagemagickAcceptedVersionValues">
         <value>6.6.9.7</value>
+    </util:list>
+    <util:list id="jhoveAcceptedVersionValues">
+    <value>1.6</value>
     </util:list>
     <util:list id="jpylyzerAcceptedVersionValues">
         <value>1.6.0</value>
     </util:list>
     <util:list id="kduexpandAcceptedVersionValues">
+        <value><!-- TODO add version from external command kdu_expand -v--></value>
     </util:list>
-    <util:list id="jhoveAcceptedVersionValues">
-    </util:list>
-    <util:list id="djvudumpAcceptedVersionValues">
-    </util:list>
+
 
     <bean id="elapsedTime" class="cz.nkp.differ.cmdline.ValueTester.ElapsedTime">
         <!--TODO-->

@@ -125,7 +125,9 @@
 	  <entry key="Depth of blue channel" value-ref="justNumbersNormalizer"/>
 	  <entry key="Depth of red channel" value-ref="justNumbersNormalizer"/>
 	  <entry key="Depth of green channel" value-ref="justNumbersNormalizer"/>
-	</map>
+      <entry key="Version of Extractor" value-ref="extractorVersionNormalizer"/>
+
+    </map>
       </property>
 
       <property name="entryReplacers">

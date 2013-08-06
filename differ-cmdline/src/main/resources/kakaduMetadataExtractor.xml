@@ -96,7 +96,8 @@
     	<list>
     	  <value>${kakadu.binary}</value>
 	  <value>-i</value>
-    	  <value>{file}</value>
+      <value>-v</value>
+            <value>{file}</value>
 	  <value>-record</value>
 	  <value>/dev/stdout</value>
 	  <value>-no_decode</value>

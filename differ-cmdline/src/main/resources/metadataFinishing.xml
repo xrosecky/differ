@@ -26,8 +26,9 @@
   <bean id="dateNormalizer"     class="cz.nkp.differ.compare.metadata.external.result.DateNormalizer"/>
   <bean id="entryRemover"       class="cz.nkp.differ.compare.metadata.external.result.EntryRemover"/>
   <bean id="sizeNormalizer"     class="cz.nkp.differ.compare.metadata.external.result.SizeNormalizer"/>
+  <bean id="extractorVersionNormalizer"     class="cz.nkp.differ.compare.metadata.external.result.ExtractorVersionNormalizer"/>
 
-  <bean id="typeOfFormatNormalizer" class="cz.nkp.differ.compare.metadata.external.result.RegexpNormalizer">
+    <bean id="typeOfFormatNormalizer" class="cz.nkp.differ.compare.metadata.external.result.RegexpNormalizer">
     <property name="regexp" value="(JPEG|TIFF|PNG|png|jpeg|jpg)"/>
   </bean>
 
