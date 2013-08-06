@@ -26,6 +26,7 @@ import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.gui.windows.FullSizeImageWindow;
 import cz.nkp.differ.gui.windows.HistogramSettingsWindow;
 import cz.nkp.differ.gui.windows.RawDataWindow;
+import cz.nkp.differ.util.GUIMacros;
 import java.awt.Color;
 
 import java.awt.Graphics;
@@ -50,6 +51,8 @@ import org.vaadin.addon.JFreeChartWrapper;
 public class ImageFileAnalysisContainer {
 
     private ImageProcessorResult result;
+    private String imgLabel = "Image";
+    private String imgName = "";
     private CompareComponent parent;
     private XYPlot plot;
     private final int scaleFactor = 400;
@@ -60,7 +63,22 @@ public class ImageFileAnalysisContainer {
         this.result = result;
         this.parent = parent;
     }
+    
+    public ImageFileAnalysisContainer(ImageProcessorResult result, CompareComponent parent, int index) {
+        this(result, parent);
+        switch (index) {
+            case 0: imgLabel = "Image A"; break;
+            case 1: imgLabel = "Image B"; break;
+            case 2: imgLabel = "Image Comparison"; break;
+            default: 
+        }
+    }
 
+    public ImageFileAnalysisContainer(ImageProcessorResult result, CompareComponent parent, int imgIndex, String imgName) {
+        this(result, parent, imgIndex);
+        this.imgName = "— <i>" + imgName + "</i>";
+    }
+    
     public Image getImage() {
         return result.getPreview();
     }
@@ -74,17 +92,19 @@ public class ImageFileAnalysisContainer {
 
     private void generateComponent(final Layout layout) {
         // Image preview
+        layout.addStyleName("v-preview-reg");
+        
         final Resource imageFullResource = imageToResource(result.getFullImage());
         final Resource imageScaledResource = imageToResource(result.getPreview());
-        
-        HorizontalLayout previewContainer = new HorizontalLayout();
+
+        VerticalLayout previewContainer = new VerticalLayout();
+        previewContainer.addStyleName("v-preview-reg-container");
         previewContainer.setHeight("200px");
         previewContainer.setWidth("360px");
-        previewContainer.addStyleName("v-preview-reg-container");
         
         Button imageButton = new Button();
         imageButton.addStyleName(BaseTheme.BUTTON_LINK);
-        imageButton.addStyleName("v-preview-reg");
+        imageButton.addStyleName("v-preview-reg-img");
         imageButton.setIcon(imageScaledResource);
         if (imageFullResource != null) {
             imageButton.addListener(new ClickListener() {
@@ -97,13 +117,16 @@ public class ImageFileAnalysisContainer {
                 }
             });
         }
+        
+        // Image label & name
+        layout.addComponent(new Label("<b>" + imgLabel + "</b> " + imgName, Label.CONTENT_XHTML));
+        
         previewContainer.addComponent(imageButton);
         layout.addComponent(previewContainer);
-
+        
         // Image checksum
-        Label hashLabel = new Label();
-        hashLabel.setCaption(String.format("Hash: %s", result.getMD5Checksum()));
-        layout.addComponent(hashLabel);
+        layout.addComponent(new Label(String.format("<i>Hash:</i> %s", result.getMD5Checksum()), Label.CONTENT_XHTML));
+        
         // Histogram
         if (result.getType() == ImageProcessorResult.Type.IMAGE) {
             generateHistogramComponent(layout, false);
@@ -143,7 +166,7 @@ public class ImageFileAnalysisContainer {
         });
         histogramLayout.addComponent(downloadButton);
 
-        if (result.getType() == ImageProcessorResult.Type.COMPARISON) {
+        //if (result.getType() == ImageProcessorResult.Type.COMPARISON) {
             Button zoomButton = new Button();
             zoomButton.setImmediate(true);
             zoomButton.setCaption("Setting");
@@ -166,6 +189,7 @@ public class ImageFileAnalysisContainer {
                                         logarithmic, xRange[0], xRange[1], yRange[0], yRange[1]);
                                 mainLayout.replaceComponent(chartComponent, newChartComponent);
                                 chartComponent = newChartComponent;
+                                GUIMacros.closeWindow(zoomSettings);
                             } catch (NumberFormatException nfe) {
                                 parent.getApplication().getMainWindow().showNotification("Invalid value", "", Notification.TYPE_ERROR_MESSAGE);
                             }
@@ -176,7 +200,7 @@ public class ImageFileAnalysisContainer {
                 }
             });
             histogramLayout.addComponent(zoomButton);
-        }
+        //}
         mainLayout.addComponent(histogramLayout);
     }
 

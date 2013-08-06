@@ -59,7 +59,7 @@ public class RawDataWindow extends Window {
 	    @Override
 	    public void buttonClick(ClickEvent event) {
 		try {
-		File tmpFile = File.createTempFile("output", ".txt");
+                    File tmpFile = File.createTempFile("output", ".txt");
 		    tmpFile.deleteOnExit();
 		    FileUtils.writeByteArrayToFile(tmpFile, content.getBytes());
 		    FileResource resource = new FileResource(tmpFile, parent.getApplication());

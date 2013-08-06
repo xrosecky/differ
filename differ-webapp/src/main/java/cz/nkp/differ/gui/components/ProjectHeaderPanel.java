@@ -78,7 +78,7 @@ public class ProjectHeaderPanel extends CustomComponent {
         Embedded image = new Embedded(null, new ThemeResource("img/header_title_image.png")); // Load the logo from the package resources
         image.setSizeUndefined(); // Remove any size info from the image
         VerticalLayout titleInner = new VerticalLayout();
-        Label titleMain = new Label("<h1><b>NDK Image Data Validator</b></h1>", Label.CONTENT_XHTML); // Page title is large directly next to image
+        Label titleMain = new Label("<h1><b>The Image Data Validator - DIFFER</b></h1>", Label.CONTENT_XHTML); // Page title is large directly next to image
         titleMain.setSizeUndefined();
         //Label titleCopyright = new Label("<h6>© National Library of the Czech Republic</h6>", Label.CONTENT_XHTML); // Copyright is next to image under title
         //titleCopyright.setSizeUndefined();
