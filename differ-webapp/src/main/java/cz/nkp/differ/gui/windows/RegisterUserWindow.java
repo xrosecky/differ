@@ -96,9 +96,7 @@ public class RegisterUserWindow extends Window implements ClickListener {
                         user.setUserName(nameValue);
                         UserManager.getInstance().registerUser(user, passValue);
                         DifferApplication.getCurrentApplication().getMainWindow().showNotification("Success", "<br/>You have successfully registered as " + nameField + ", you may now login");
-                        Map<String, Object> CloseVariableMap = new HashMap<String,Object>(1);
-                        CloseVariableMap.put("close", true);
-                        internal_this.changeVariables(null, CloseVariableMap);
+                        GUIMacros.closeWindow(internal_this);
            
                     } else { //else username already exists
                         throw new Exception("The username you have chosen already exists");

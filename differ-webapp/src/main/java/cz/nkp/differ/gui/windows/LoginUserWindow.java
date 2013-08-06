@@ -84,9 +84,7 @@ public class LoginUserWindow extends Window implements ClickListener {
             if (appBody.login(nameValue, passValue)) {
                 appHeader.setLoggedIn(nameValue);
                 DifferApplication.getCurrentApplication().getMainWindow().showNotification("Success", "<br/>You are now logged in as " + nameValue);
-                Map<String, Object> CloseVariableMap = new HashMap<String,Object>(1);
-                CloseVariableMap.put("close", true);
-                internal_this.changeVariables(null, CloseVariableMap); 
+                GUIMacros.closeWindow(internal_this);
             }               
         }
     }
