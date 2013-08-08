@@ -12,11 +12,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Normalize date format to given pattern
- * [2013-01-11 14:47:36+01:00]
- *
+ * Normalize version of extractor to format 1.113.15.1 etc
+
  * @author Jonatan Svensson
- * @version 15-07-2013
+ * @version 06-08-2013
  */
 public class ExtractorVersionNormalizer implements ResultEntryValueTransformer {
 
