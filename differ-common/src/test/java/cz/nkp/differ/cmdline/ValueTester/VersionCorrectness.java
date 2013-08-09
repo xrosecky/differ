@@ -26,7 +26,7 @@ public class VersionCorrectness implements ValueTester {
         List<String> versionList = extractorVersions.get(extractorName);
         // Format of version should be: one or more digits, followed by dot, an unlimited amount of times. Cannot end with dot.
         // e.g. 1.14.133
-        Pattern r = Pattern.compile("^[0-9]*([.]{1}||[0-9]*)*[^.]$");
+        Pattern r = Pattern.compile("^[0-9]*([.]{1}||[0-9]*)*[^.](\\(latest known\\)||(?!))$");
         Matcher m = r.matcher(value);
         if (m.find()) {
             logger.debug("Pattern matched");

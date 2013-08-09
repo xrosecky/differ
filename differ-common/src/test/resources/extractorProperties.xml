@@ -8,7 +8,6 @@
 			   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
     <util:map id="extractorSignificantProperties">
-
            <entry key="Version of Extractor" value-ref="versionCorrectness"/>
            <entry key="Elapsed Time of Extraction" value-ref="elapsedTime"/>
 
@@ -44,7 +43,7 @@
         <value>1.6.0</value>
     </util:list>
     <util:list id="kduexpandAcceptedVersionValues">
-        <value>7.2.2</value>
+        <value>7.2.2 (latest known)</value>
     </util:list>
 
 
