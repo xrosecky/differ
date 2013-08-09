@@ -8,7 +8,9 @@
 			   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
   
   <util:set id="extractorProperties">
-    <value>Version</value>
+    <value>Version of Extractor</value>
+    <value>Name</value>
+    <value>Elapsed Time of Extractor</value>
   </util:set>
 
   <util:set id="identificationProperties">

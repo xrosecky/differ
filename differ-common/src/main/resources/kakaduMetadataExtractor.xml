@@ -46,6 +46,12 @@
       <property name="resultTransformers">
 	<list>
 	  <ref bean="emptyValuesRemover"/>
+        <bean id="manualExtractorVersion"   class="cz.nkp.differ.compare.metadata.external.result.ManualExtractorVersion">
+            <property name="version">
+                <value>7.2.2</value>
+            </property>
+
+        </bean>
 	</list>
       </property>
 
