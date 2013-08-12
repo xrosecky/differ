@@ -65,14 +65,14 @@ public class CompareComponent {
 	    }
 	    HorizontalLayout childALayout = new HorizontalLayout();
             HorizontalLayout childBLayout = new HorizontalLayout();
-	    ImageFileAnalysisContainer iFAC1 = new ImageFileAnalysisContainer(result[0], this);
+	    ImageFileAnalysisContainer iFAC1 = new ImageFileAnalysisContainer(result[0], this, 0, images[0].getFileName());
 	    childALayout.addComponent(iFAC1.getComponent());
-	    ImageFileAnalysisContainer iFAC2 = new ImageFileAnalysisContainer(result[1], this);
+	    ImageFileAnalysisContainer iFAC2 = new ImageFileAnalysisContainer(result[1], this, 1, images[1].getFileName());
 	    childALayout.addComponent(iFAC2.getComponent());
             ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(new ImageProcessorResult[] {result[0], result[1]}, this);
             ImageMetadataComponentGenerator tableComp = null;
 	    if (result[2] != null) {
-		ImageFileAnalysisContainer iFAC3 = new ImageFileAnalysisContainer(result[2], this);
+		ImageFileAnalysisContainer iFAC3 = new ImageFileAnalysisContainer(result[2], this, 2);
 		childALayout.addComponent(iFAC3.getComponent());
 		iFACs.addAll(Arrays.asList(iFAC1, iFAC2, iFAC3));
                 tableComp = new ImageMetadataComponentGenerator(new ImageProcessorResult[] {result[2]}, this);
@@ -96,7 +96,7 @@ public class CompareComponent {
             for (int i = 0; i < images.length; i++) {
 		try {
 		    result[i] = imageProcessor.processImage(images[i].getFile(), c);
-		    ImageFileAnalysisContainer iFAC = new ImageFileAnalysisContainer(result[i], this);
+		    ImageFileAnalysisContainer iFAC = new ImageFileAnalysisContainer(result[i], this, i, images[i].getFileName());
 		    childLayout.addComponent(iFAC.getComponent());
 		    iFACs.add(iFAC);
 		} catch (Exception ex) {

@@ -6,6 +6,7 @@ import com.vaadin.ui.Layout;
 import com.vaadin.ui.TabSheet;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Window;
+import cz.nkp.differ.gui.components.ProjectFooterComponent;
 
 import cz.nkp.differ.gui.components.ProjectHeaderPanel;
 import cz.nkp.differ.gui.components.UserFilesWidget;
@@ -25,16 +26,17 @@ public class MainDifferWindow extends Window {
 
     private List<UserFilesWidget> userFilesWidgets;
     private TabSheet menuTabs;
-
+    
     public MainDifferWindow() {
-	super("NDK Image Data Validator");//Sets the title of the application
+	super("The Image Data Validator - DIFFER");//Sets the title of the application
 
 	menuTabs = new TabSheet();
 
 	/*
 	 * Adding the dynamic content tabs
 	 */
-	MainDifferWindow.createDynamicContentTab(new DifferProgramTab(this), "DIFFER", menuTabs);
+        DifferProgramTab loginContext = new DifferProgramTab(this);
+	MainDifferWindow.createDynamicContentTab(loginContext, "DIFFER", menuTabs);
 	MainDifferWindow.createDynamicContentTab(new ResultManagerTab(this), "Results", menuTabs);
 
 	/*
@@ -50,8 +52,9 @@ public class MainDifferWindow extends Window {
 	/*
 	 * Add the actual completed UI components to the root
 	 */
-	addComponent(new ProjectHeaderPanel());//Component that represents the top-page header
+	addComponent(new ProjectHeaderPanel(this, loginContext));//Component that represents the top-page header
 	addComponent(menuTabs);//The application view tabs
+        addComponent(new ProjectFooterComponent());
     }
 
     /**

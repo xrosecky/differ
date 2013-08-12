@@ -42,6 +42,7 @@ public class DifferApplication extends TPTApplication {
     protected static ImageManager imageManager = null;
     protected static ResultManager resultManager = null;
     protected static ApplicationContext applicationContext = null;
+    protected static MainDifferWindow mainDifferWindow = null;
     /* session variables */
     private User loggedUser = null;
 
@@ -85,9 +86,9 @@ public class DifferApplication extends TPTApplication {
 	imageManager = (ImageManager) applicationContext.getBean("imageManager");
 	resultManager = (ResultManager) applicationContext.getBean("resultManager");
 
-	MainDifferWindow mainWindow = new MainDifferWindow();
-	mainWindow.setSizeUndefined();
-	setMainWindow(mainWindow);
+	mainDifferWindow = new MainDifferWindow();
+	mainDifferWindow.setSizeUndefined();
+	setMainWindow(mainDifferWindow);
     }
 
     @Override
@@ -135,6 +136,9 @@ public class DifferApplication extends TPTApplication {
 	return (DifferApplication) TPTApplication.getCurrentApplication();
     }
 
+    public static Window getMainApplicationWindow() {
+        return mainDifferWindow;
+    }
     /*
     public static File getHomeDirectory() {
 	if (differHome == null) {

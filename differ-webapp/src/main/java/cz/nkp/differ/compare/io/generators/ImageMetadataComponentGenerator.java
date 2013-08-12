@@ -9,6 +9,8 @@ import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.Table;
 import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.VerticalLayout;
+import com.vaadin.ui.Window;
 
 import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.compare.io.CompareComponent;
@@ -62,7 +64,9 @@ public class ImageMetadataComponentGenerator {
      * @return Layout
      */
     public Layout getComponent() {
-        HorizontalLayout layout = new HorizontalLayout();
+        VerticalLayout layout = new VerticalLayout();
+        layout.addStyleName("v-table-metadata");
+        layout.setSpacing(true);
         generateMetadataTable(layout);
         return layout;
     }
@@ -88,7 +92,7 @@ public class ImageMetadataComponentGenerator {
             metadataTable.addContainerProperty(COLUMN_3_PROPERTY, Object.class, null);
             metadataTable.addContainerProperty(COLUMN_4_PROPERTY, Object.class, null);
             metadataTable.addContainerProperty(COLUMN_5_PROPERTY, String.class, null);
-            
+
             for (int i = 0; i < result[0].getMetadata().size(); i++) {
                 //Clickable tool names created here as button objects.
                 //If need to make a specific item appear as regular text instead
@@ -99,7 +103,7 @@ public class ImageMetadataComponentGenerator {
                     version = result[0].getMetadata().get(i).getSource().getSourceName() + 
                               " " + result[0].getMetadata().get(i).getSource().getVersion();
                 } else {
-                    version = "N/A or Unknown";
+                    version = "Tool version - N/A or Unknown";
                 }
                 source.addListener(new Button.ClickListener() {
                     @Override
@@ -165,15 +169,22 @@ public class ImageMetadataComponentGenerator {
             @Override
             public void buttonClick(ClickEvent event) {
                 try {
-                    ImageMetadata metadata = (ImageMetadata) metadataTable.getValue();
-                    DifferApplication.getCurrentApplication().getMainWindow().addWindow(new RawDataWindow(parent, metadata.getSource()));
+                    final ImageMetadata metadata;
+                    if (metadataTable.getValue() instanceof Integer) {
+                        metadata = result[0].getMetadata().get((Integer) metadataTable.getValue());
+                    } else {
+                        metadata = (ImageMetadata) metadataTable.getValue();
+                    }
+                    Window rawDataWindow = new RawDataWindow(parent, metadata.getSource());
+                    Window mainWindow = DifferApplication.getMainApplicationWindow();
+                    mainWindow.addWindow(rawDataWindow);
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
             }
         });
         rawData.setImmediate(true);
-        rawData.setEnabled(false); //FIXME
+        rawData.setEnabled(true); 
         layout.addComponent(rawData);
         metadataTable.addListener(new ValueChangeListener() {
             @Override

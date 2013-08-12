@@ -36,7 +36,7 @@ public class HistogramSettingsWindow extends Window {
 	HorizontalLayout buttonLayout = new HorizontalLayout();
 	okButton = new Button("OK");
 	buttonLayout.addComponent(okButton);
-	Button close = new Button("Close");
+	Button close = new Button("Cancel");
 	buttonLayout.addComponent(close);
 	close.addListener(GUIMacros.createWindowCloseButtonListener(this));
 	windowLayout.addComponent(buttonLayout);

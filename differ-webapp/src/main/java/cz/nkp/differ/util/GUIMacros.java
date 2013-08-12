@@ -74,6 +74,11 @@ public class GUIMacros {
 		};
 	}
 	
+        public static void closeWindow(Window target) {
+            GeneralMacros.errorIfContainsNull(target);
+            target.changeVariables(null, CloseVariableMap);
+        }
+        
 	/**
 	 * Returns a HorizontalLayout with the tooltip positioned after the component.
 	 * @param c
