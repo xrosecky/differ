@@ -49,6 +49,12 @@ Values not normalized but still passing are put in the top half of ignored prope
      - resources/tests/image14-significant-properties.xml
      - examples/images_01/14/output-jhove.raw
      - :green:`OK`
+
+   * - jhoveMetadataExtractor
+     - examples/images_01/01.jpg
+     - resources/tests/image01-significant-properties.xml
+     - examples/images_01/01/output-jhove.raw
+     - :green:`OK`
      
    * - kakaduMetadataExtractor
      - examples/images_01/14.jpf
@@ -59,8 +65,14 @@ Values not normalized but still passing are put in the top half of ignored prope
    * - imagemagickMetadataExtractor
      - examples/images_01/01.jpg
      - resources/tests/image01-significant-properties.xml
+     - examples/images_01/01/output-imagemagick.raw
+     - :green:`OK`
+
+   * - imagemagickMetadataExtractor
+     - examples/images_14/14.jpf
+     - resources/tests/image01-significant-properties.xml
      - examples/images_01/14/output-imagemagick.raw
-     - :yellow:`Some values not equal - needs normalizing`
+     - :green:`OK`
 
    * - djvudumpMetadataExtractor
      - docs/examples/images/05.djvu
@@ -69,7 +81,7 @@ Values not normalized but still passing are put in the top half of ignored prope
      - :green:`OK`
 
    * - exiftoolMetadataExtractor
-     - images/images_02/01.jpg
+     - images/images_01/01.jpg
      - resources/tests/image01-significant-properties.xml
      - images/images_02/01/output-exiftool.raw
      - :green:`OK`
@@ -79,4 +91,13 @@ Values not normalized but still passing are put in the top half of ignored prope
      - resources/tests/image14-significant-properties.xml
      - examples/images_01/14/output-exiftool.raw
      - :green:`OK`
+
+To create a new test for s new image:
+
+1) Go to the appropriate test class
+2) Create a new method copying the previous test with @Test annotation
+3) Import the image properties with @Resource (these are the properties from context file). Change in the method all imports to this file.
+4) Create resources in appropriate test context file in /resources by copying previous context (if there is one for same image format, choose that one as many properties are already in the correct category)
+5) Change name of context files to reflect the import done in 3) with @Resource
+6) Run tests. If it's the first test for the particular image format, there is a big chance some properties need to be deleted/added or moved to ignored/special properties.
      
