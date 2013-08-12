@@ -318,7 +318,8 @@ public class DifferProgramTab extends HorizontalLayout {
     public void setCustomView(Layout layout) {
         if (customViewWrapper == null) {
             customViewWrapper = new VerticalLayout();
-            customLayoutBackButton = new Button("Back");
+            customLayoutBackButton = new Button("<b>↵</b> Back");
+            customLayoutBackButton.setHtmlContentAllowed(true);
             customLayoutBackButton.addListener(customViewWrapperBackButtonListener);
         }
         customViewWrapper.removeAllComponents();

@@ -92,7 +92,7 @@ public class ImageMetadataComponentGenerator {
             metadataTable.addContainerProperty(COLUMN_3_PROPERTY, Object.class, null);
             metadataTable.addContainerProperty(COLUMN_4_PROPERTY, Object.class, null);
             metadataTable.addContainerProperty(COLUMN_5_PROPERTY, String.class, null);
-            
+
             for (int i = 0; i < result[0].getMetadata().size(); i++) {
                 //Clickable tool names created here as button objects.
                 //If need to make a specific item appear as regular text instead
@@ -103,11 +103,7 @@ public class ImageMetadataComponentGenerator {
                     version = result[0].getMetadata().get(i).getSource().getSourceName() + 
                               " " + result[0].getMetadata().get(i).getSource().getVersion();
                 } else {
-                    if (result[0].getMetadata().get(i).getSource().getVersion() != null) 
-                        version = result[0].getMetadata().get(i).getSource().getVersion();
-                    else {
-                        version = "Tool version - N/A or Unknown";
-                    }
+                    version = "Tool version - N/A or Unknown";
                 }
                 source.addListener(new Button.ClickListener() {
                     @Override

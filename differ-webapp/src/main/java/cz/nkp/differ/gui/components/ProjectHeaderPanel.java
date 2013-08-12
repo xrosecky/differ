@@ -31,12 +31,12 @@ public class ProjectHeaderPanel extends CustomComponent {
     Button buttonLogout;
     Button buttonRegister;
     Label loginMessage;
-    DifferProgramTab parent;
-    Window application;
-    /**
-     * Creates the Component
-     */
-    public ProjectHeaderPanel() {
+    DifferProgramTab tabRef;
+    Window parent;
+    
+    public ProjectHeaderPanel(Window parent, DifferProgramTab tabRef) {
+        this.tabRef = tabRef;
+        this.parent = parent;
         Panel headerPanel = new Panel();//Create outer panel
         headerPanel.setWidth("100%");
         HorizontalLayout layout = new HorizontalLayout();//Create Layout to hold content components
@@ -51,27 +51,6 @@ public class ProjectHeaderPanel extends CustomComponent {
         this.setCompositionRoot(headerPanel);
     }
 
-    public ProjectHeaderPanel(Window application, DifferProgramTab parent) {
-        this.parent = parent;
-        this.application = application;
-        Panel headerPanel = new Panel();//Create outer panel
-        headerPanel.setWidth("100%");
-        HorizontalLayout layout = new HorizontalLayout();//Create Layout to hold content components
-        layout.setWidth("100%");
-        layout.setHeight("100%");
-        headerPanel.addComponent(layout);//Add content container to outer container
-        Component title = createHeaderTitle();
-        layout.addComponent(title);//add the created title component
-        Component loginPanel = createLoginPanel();
-        layout.addComponent(loginPanel);
-        layout.setComponentAlignment(loginPanel, Alignment.BOTTOM_RIGHT);
-        this.setCompositionRoot(headerPanel);
-    }
-    
-    /**
-     * A valid Header Title with copyright, page title and an anchor header image.
-     * @return
-     */
     private Layout createHeaderTitle() {
         Layout projectTitlePanel = new HorizontalLayout(); // Out Container for the Header Title layout
         projectTitlePanel.setHeight("100%");
@@ -94,9 +73,9 @@ public class ProjectHeaderPanel extends CustomComponent {
         HorizontalLayout buttonPanel = new HorizontalLayout();
         HorizontalLayout messagePanel = new HorizontalLayout();
         buttonLogin = new Button("Login");
-        buttonLogin.addListener(GUIMacros.createWindowOpenButtonListener(application, new LoginUserWindow(parent, this)));
+        buttonLogin.addListener(GUIMacros.createWindowOpenButtonListener(parent, new LoginUserWindow(tabRef, this)));
         buttonRegister = new Button("Register");
-        buttonRegister.addListener(GUIMacros.createWindowOpenButtonListener(application, new RegisterUserWindow()));
+        buttonRegister.addListener(GUIMacros.createWindowOpenButtonListener(parent, new RegisterUserWindow()));
         buttonLogout = new Button("Logout");
         buttonLogout.addListener(new Listener() {
             @Override
@@ -124,7 +103,7 @@ public class ProjectHeaderPanel extends CustomComponent {
         if (username != null) {
             loginMessage.setCaption("You are currently logged in as " + username);
         }
-        parent.setLoggedInView();
+        tabRef.setLoggedInView();
     }
     
     public void setLoggedOut() {
@@ -133,6 +112,6 @@ public class ProjectHeaderPanel extends CustomComponent {
         buttonLogout.setVisible(false);
         buttonRegister.setVisible(true);
         loginMessage.setCaption("You are not logged in.");     
-        parent.setLoggedOutView();
+        tabRef.setLoggedOutView();
     }
 }
