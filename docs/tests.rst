@@ -54,7 +54,7 @@ Values not normalized but still passing are put in the top half of ignored prope
      - examples/images_01/14.jpf
      - resources/tests/image14-significant-properties.xml
      - examples/images_01/14/output-kakadu.raw
-     - :yellow:`Some values not equal - needs normalizing`
+     - :green:`OK`
 
    * - imagemagickMetadataExtractor
      - examples/images_01/01.jpg
@@ -63,10 +63,20 @@ Values not normalized but still passing are put in the top half of ignored prope
      - :yellow:`Some values not equal - needs normalizing`
 
    * - djvudumpMetadataExtractor
-     - docs/images/05.djvu
+     - docs/examples/images/05.djvu
      - resources/tests/image05-significant-properties.xml
-     - TODO
-     - :red:`TODO`
+     - docs/examples/images/05/output-djvudump.raw
+     - :green:`OK`
 
-     
+   * - exiftoolMetadataExtractor
+     - images/images_02/01.jpg
+     - resources/tests/image01-significant-properties.xml
+     - images/images_02/01/output-exiftool.raw
+     - :green:`OK`
+
+   * - exiftoolMetadataExtractor
+     - examples/images_01/14.jpf
+     - resources/tests/image14-significant-properties.xml
+     - examples/images_01/14/output-exiftool.raw
+     - :green:`OK`
      
