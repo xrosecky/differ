@@ -33,6 +33,10 @@ public class JhoveUnitTest {
 
     @Resource
     private Map<String, Object> image14Test01;
+
+    @Resource
+    private Map<String, Object> image01Test02;
+
     @Resource
     private LinkedHashMap<String, Object> extractorSignificantProperties;
     @Autowired
@@ -46,6 +50,25 @@ public class JhoveUnitTest {
         ArrayList recognizedProperties = (ArrayList) image14Test01.get("recognizedSignificantProperties");
         LinkedHashMap<String, Object> specialProperties = (LinkedHashMap) image14Test01.get("specialSignificantProperties");
         LinkedHashMap significantProperties = (LinkedHashMap) image14Test01.get("significantProperties");
+
+        t.runStandardTests(transformedData,
+                recognizedProperties,
+                ignoredProperties,
+                specialProperties,
+                extractorSignificantProperties,
+                significantProperties,
+                thisExtractor
+        );
+    }
+
+    @Test
+    public void testImage01() throws Exception {
+        byte[] stdout = TestHelper.readFile("../docs/examples/images_01/01/output-jhove.raw");
+        List<ResultTransformer.Entry> transformedData = jhoveMetadataTransformer.transform(stdout, null);
+        ArrayList ignoredProperties = (ArrayList) image01Test02.get("ignoredSignificantProperties");
+        ArrayList recognizedProperties = (ArrayList) image01Test02.get("recognizedSignificantProperties");
+        LinkedHashMap<String, Object> specialProperties = (LinkedHashMap) image01Test02.get("specialSignificantProperties");
+        LinkedHashMap significantProperties = (LinkedHashMap) image01Test02.get("significantProperties");
 
         t.runStandardTests(transformedData,
                 recognizedProperties,
