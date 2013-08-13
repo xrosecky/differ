@@ -23,6 +23,9 @@
                <entry key="KduExpandUnitTest" value-ref="kduexpandAcceptedVersionValues"/>
                <entry key="JhoveUnitTest" value-ref="jhoveAcceptedVersionValues"/>
                <entry key="DjvudumpUnitTest" value-ref="djvudumpAcceptedVersionValues"/>
+               <entry key="DaitssUnitTest" value-ref="daitssAcceptedVersionValues"/>
+               <entry key="FitsUnitTest" value-ref="fitsAcceptedVersionValues"/>
+
            </map>
         </property>
     </bean>
@@ -46,6 +49,12 @@
     </util:list>
     <util:list id="kduexpandAcceptedVersionValues">
         <value>7.2.2 (latest known)</value>
+    </util:list>
+    <util:list id="daitssAcceptedVersionValues">
+        <value>2.2.0</value>
+    </util:list>
+    <util:list id="fitsAcceptedVersionValues">
+        <value>0.6.1</value>
     </util:list>
 
 
