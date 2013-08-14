@@ -177,5 +177,17 @@
 
     <context:component-scan base-package="cz.nkp.differ"/>
 
+    <aop:aspect id="timerAspect" ref="extractorTimer">
+        <aop:pointcut id="getMetadata"
+                      expression="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor.getMetadata()"/>
+
+        <aop:around
+                pointcut-ref="getMetadata"
+                method="startAndStopTimer"/>
+
+    </aop:aspect>
+
+    <bean id="extractorTimer" class="cz.nkp.differ.compare.metadata.external.ExtractorTimer"/>
+
 </beans>
 
