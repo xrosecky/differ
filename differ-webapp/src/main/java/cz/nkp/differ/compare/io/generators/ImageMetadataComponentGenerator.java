@@ -16,6 +16,7 @@ import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.compare.io.CompareComponent;
 import cz.nkp.differ.compare.io.ImageProcessorResult;
 import cz.nkp.differ.compare.metadata.ImageMetadata;
+import cz.nkp.differ.compare.metadata.MetadataSource;
 import cz.nkp.differ.gui.windows.RawDataWindow;
 
 import java.util.Arrays;
@@ -92,32 +93,31 @@ public class ImageMetadataComponentGenerator {
             metadataTable.addContainerProperty(COLUMN_3_PROPERTY, Object.class, null);
             metadataTable.addContainerProperty(COLUMN_4_PROPERTY, Object.class, null);
             metadataTable.addContainerProperty(COLUMN_5_PROPERTY, String.class, null);
-
+            
+            List<ImageMetadata> imgAMetadataList = result[0].getMetadata();
+            List<ImageMetadata> imgBMetadataList = result[1].getMetadata();
+            
             for (int i = 0; i < result[0].getMetadata().size(); i++) {
                 //Clickable tool names created here as button objects.
                 //If need to make a specific item appear as regular text instead
                 //use addStyleName + CSS to alter formatting
-                Button source = new Button(result[0].getMetadata().get(i).getSource().getSourceName());
-                final String version;
-                if (result[0].getMetadata().get(i).getSource().getVersion() != null) {
-                    version = result[0].getMetadata().get(i).getSource().getSourceName() + 
-                              " " + result[0].getMetadata().get(i).getSource().getVersion();
-                } else {
-                    version = "Tool version - N/A or Unknown";
+                if (i >= imgAMetadataList.size() || i >= imgBMetadataList.size()) {
+                    break;
                 }
-                source.addListener(new Button.ClickListener() {
-                    @Override
-                    public void buttonClick(ClickEvent event) {
-                        layout.getWindow().showNotification(version);
-                    } 
-                });
-                source.addStyleName("link");
-                metadataTable.addItem(new Object[] {result[0].getMetadata().get(i).getKey(),
-                                                    source,
-                                                    result[0].getMetadata().get(i).getValue(),
-                                                    result[1].getMetadata().get(i).getValue(),
-                                                    result[0].getMetadata().get(i).getUnit()
-                                                    }, i);
+                
+                ImageMetadata imgAMetadata = imgAMetadataList.get(i);
+                ImageMetadata imgBMetadata = imgBMetadataList.get(i);
+                
+                if (imgAMetadata.getKey().contentEquals(imgBMetadata.getKey())) {
+                    
+                    String key = imgAMetadata.getKey();
+                    Button source = createClickableTool(layout, imgAMetadata.getSource());
+                    Object valueA = imgAMetadata.getValue();
+                    Object valueB = imgBMetadata.getValue();
+                    String unit = imgAMetadata.getUnit();
+
+                    metadataTable.addItem(new Object[] {key, source, valueA, valueB, unit}, i);
+                }
             }
             metadataTable.sort(new String[] {COLUMN_1_PROPERTY}, new boolean[] {true});
         } else {
@@ -192,5 +192,29 @@ public class ImageMetadataComponentGenerator {
                 rawData.setEnabled(true);
             }
         });
+    }
+    
+    private Button createClickableTool(final Layout layout, MetadataSource source) {
+       
+        String toolName = "unknown";
+        if (source.getSourceName() != null && source.getSourceName().length() > 0) {
+            toolName = source.getSourceName();
+        }
+        Button button = new Button(toolName);
+        final String version;
+        if (source.getVersion() != null && source.getVersion().length() > 0) {
+            version = source.getVersion();
+        } else {
+            version = "Tool version unknown";
+        }
+        button.addListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(ClickEvent event) {
+                layout.getWindow().showNotification(version);
+            } 
+        });
+        button.addStyleName("link");
+        
+        return button;
     }
 }
