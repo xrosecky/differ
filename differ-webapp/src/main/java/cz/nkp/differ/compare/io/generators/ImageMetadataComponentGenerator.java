@@ -17,6 +17,7 @@ import cz.nkp.differ.compare.io.CompareComponent;
 import cz.nkp.differ.compare.io.ImageProcessorResult;
 import cz.nkp.differ.compare.metadata.ImageMetadata;
 import cz.nkp.differ.compare.metadata.MetadataSource;
+import cz.nkp.differ.exceptions.FatalDifferException;
 import cz.nkp.differ.gui.windows.RawDataWindow;
 
 import java.util.Arrays;
@@ -68,7 +69,11 @@ public class ImageMetadataComponentGenerator {
         VerticalLayout layout = new VerticalLayout();
         layout.addStyleName("v-table-metadata");
         layout.setSpacing(true);
-        generateMetadataTable(layout);
+        try {
+            generateMetadataTable(layout);
+        } catch (FatalDifferException fde) {
+            fde.printStackTrace();
+        }
         return layout;
     }
     
@@ -76,7 +81,7 @@ public class ImageMetadataComponentGenerator {
      * Builds the table 
      * @param Layout 
      */
-    private void generateMetadataTable(final Layout layout) {
+    private void generateMetadataTable(final Layout layout) throws FatalDifferException {
         final Table metadataTable;
                 
         if (result.length == 2) {
@@ -97,19 +102,20 @@ public class ImageMetadataComponentGenerator {
             List<ImageMetadata> imgAMetadataList = result[0].getMetadata();
             List<ImageMetadata> imgBMetadataList = result[1].getMetadata();
             
+            if (imgAMetadataList.size() != imgBMetadataList.size()) {
+                throw new FatalDifferException("Size of metadata lists for images A and B are not equal!");
+            }
+
             for (int i = 0; i < result[0].getMetadata().size(); i++) {
                 //Clickable tool names created here as button objects.
                 //If need to make a specific item appear as regular text instead
                 //use addStyleName + CSS to alter formatting
-                if (i >= imgAMetadataList.size() || i >= imgBMetadataList.size()) {
-                    break;
-                }
-                
+
                 ImageMetadata imgAMetadata = imgAMetadataList.get(i);
                 ImageMetadata imgBMetadata = imgBMetadataList.get(i);
-                
+
                 if (imgAMetadata.getKey().contentEquals(imgBMetadata.getKey())) {
-                    
+
                     String key = imgAMetadata.getKey();
                     Button source = createClickableTool(layout, imgAMetadata.getSource());
                     Object valueA = imgAMetadata.getValue();
@@ -120,6 +126,7 @@ public class ImageMetadataComponentGenerator {
                 }
             }
             metadataTable.sort(new String[] {COLUMN_1_PROPERTY}, new boolean[] {true});
+            
         } else {
             //if only one single ImageProcessorResult object passed, create table normally with BeanItemContainer
             BeanItemContainer metadataContainer = new BeanItemContainer<ImageMetadata>(ImageMetadata.class, result[0].getMetadata());
