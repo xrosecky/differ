@@ -20,21 +20,6 @@
     <import resource="exiftoolMetadataExtractor.xml"/>
 
     <!-- import manual properties list to compare with -->
-
-    <util:map id="units">
-        <entry key="Image height" value="px"/>
-        <entry key="Code block height" value="px"/>
-        <entry key="Code block width" value="px"/>
-        <entry key="Resolution horizontal" value="PPI"/>
-        <entry key="Resolution vertical" value="PPI"/>
-        <entry key="Display resolution horizontal" value="PPI"/>
-        <entry key="Display resolution vertical" value="PPI"/>
-        <entry key="Tile size X" value="PPI"/>
-        <entry key="Tile size Y" value="PPI"/>
-    </util:map>
-    <import resource="exiftoolMetadataExtractor.xml"/>
-
-    <!-- import manual properties list to compare with -->
     <import resource="ImageProperties/image01-significant-properties.xml"/>
 
     <util:map id="image01Test01">
