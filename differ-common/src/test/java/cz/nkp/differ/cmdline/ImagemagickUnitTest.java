@@ -60,7 +60,7 @@ public class ImagemagickUnitTest {
     }
 
     @Test
-    public void testImage05() throws Exception {
+    public void testImage14() throws Exception {
 
         byte[] stdout = TestHelper.readFile("../docs/examples/images_01/14/output-imagemagick.raw");
         List<ResultTransformer.Entry> transformedData = imagemagickMetadataTransformer.transform(stdout, null);

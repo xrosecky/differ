@@ -33,7 +33,6 @@
     <util:list id="image14Test01RecognizedProperties">
         <value>File name</value>
         <value>File path</value>
-        <value>File last modified</value>
         <value>Validation (well formed and valid)</value>
         <value>Signature box length is valid</value>
         <value>Signature is valid</value>
@@ -154,14 +153,18 @@
         <value>Progression order</value>
         <value>Number of decomposition levels</value>
         <value>Precincts</value>
+        <value>Coding bypass</value>
+
+
     </util:list>
     <util:map id="image14Test01SpecialProperties">
 
     </util:map>
 
     <util:list id="image14Test01IgnoredProperties">
-        <value>Coding bypass</value>
         <value>Type of format</value>
+        <value>File last modified</value>
+
     </util:list>
 </beans>
 

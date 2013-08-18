@@ -83,19 +83,6 @@
     <import resource="metadataFinishing.xml"/>
     <import resource="metadataSignificantProperties.xml"/>
 
-    <util:map id="units">
-        <entry key="Image width" value="px"/>
-        <entry key="Image height" value="px"/>
-        <entry key="Code block height" value="px"/>
-        <entry key="Code block width" value="px"/>
-        <entry key="Resolution horizontal" value="PPI"/>
-        <entry key="Resolution vertical" value="PPI"/>
-        <entry key="Display resolution horizontal" value="PPI"/>
-        <entry key="Display resolution vertical" value="PPI"/>
-        <entry key="Tile size X" value="PPI"/>
-        <entry key="Tile size Y" value="PPI"/>
-    </util:map>
-
     <!-- kakadu -->
     <import resource="kakaduMetadataExtractor.xml"/>
 
@@ -176,10 +163,10 @@
     </bean>
 
     <context:component-scan base-package="cz.nkp.differ"/>
-
+    <!--
     <aop:aspect id="timerAspect" ref="extractorTimer">
         <aop:pointcut id="getMetadata"
-                      expression="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor.getMetadata()"/>
+                      expression="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor"/>
 
         <aop:around
                 pointcut-ref="getMetadata"
@@ -188,6 +175,6 @@
     </aop:aspect>
 
     <bean id="extractorTimer" class="cz.nkp.differ.compare.metadata.external.ExtractorTimer"/>
-
+    -->
 </beans>
 

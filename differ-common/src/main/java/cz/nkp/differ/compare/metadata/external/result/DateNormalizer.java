@@ -28,9 +28,10 @@ public class DateNormalizer implements ResultEntryValueTransformer {
         String firstPart= input.substring(0,10);
         firstPart=firstPart.replaceAll(":","-");
         input=firstPart+input.substring(10,input.length());
-        // Delimiter is whitespace
-        input= input.replace("T"," ");
-
+        // Delimiter is whitespace and don't replace T in Tue
+        String tempString = input.substring(1,input.length());
+        tempString= tempString.replace("T"," ");
+        input=input.substring(0,1)+tempString;
         // If pattern is correct [2013-01-11 14:47:36+01:00], just return the value
         if(!Pattern.compile("\\d\\d\\d\\d-\\d\\d-\\d\\d\\s\\d\\d:\\d\\d:\\d\\d(\\+||\\-)\\d\\d:\\d\\d").matcher(input).matches()){
             String result="";
