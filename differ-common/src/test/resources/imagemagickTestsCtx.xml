@@ -164,7 +164,6 @@
         <value>Image width</value>
         <value>Image height</value>
         <value>Pixels per second</value>
-        <value>Resolution horizontal</value>
 
     </util:list>
     <util:map id="image14Test02SpecialProperties">
@@ -172,15 +171,15 @@
     </util:map>
     <util:list id="image14Test02IgnoredProperties">
         <value>Color space</value>
-        <value>Type of format</value>
-        <value>File created</value>
         <value>Compression</value>
         <value>Orientation</value>
         <!--Above are values TODO-->
         <value>Units</value>
         <value>Resolution vertical</value>
-
-        <!-- Wrong values above-->
+        <value>Resolution horizontal</value>
+        <value>Type of format</value>
+        <value>File created</value>
+        <!-- Wrong values above, but let them remain-->
         <value>ICC profile size</value>
         <value>Class</value>
         <value>Print size</value>
