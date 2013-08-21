@@ -8,7 +8,7 @@
     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
-    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
@@ -163,18 +163,20 @@
     </bean>
 
     <context:component-scan base-package="cz.nkp.differ"/>
-    <!--
-    <aop:aspect id="timerAspect" ref="extractorTimer">
+    <aop:config>
+
+        <aop:aspect id="timerAspect" ref="extractorTimer">
         <aop:pointcut id="getMetadata"
-                      expression="cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor"/>
+                      expression="execution(* cz.nkp.differ.compare.metadata.external.ExternalMetadataExtractor.getMetadata(..))"/>
 
         <aop:around
                 pointcut-ref="getMetadata"
                 method="startAndStopTimer"/>
 
-    </aop:aspect>
+      </aop:aspect>
+    </aop:config>
 
     <bean id="extractorTimer" class="cz.nkp.differ.compare.metadata.external.ExtractorTimer"/>
-    -->
+
 </beans>
 
