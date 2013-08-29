@@ -1,5 +1,7 @@
-The Image Validator - DIFFER
-============================
+OLD- The Image Validator - DIFFER
+=======================================
+
+Please, use parts that are yet useful and move them into new documentation (files above).
 
 .. contents::
    :local:
