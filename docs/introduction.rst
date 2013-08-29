@@ -1,3 +1,6 @@
+Introduction
+------------------
+
 New project was born
 ....................
 
@@ -9,6 +12,24 @@ main properties for images in various image formats.
 
 The main purpose of creating a succesor of this project was a need to have a program running
 on a various platforms. That is why new project ``The Image Validator`` is written in ``Java``.
+
+
+About
+..............
+
+The Image Validator helps an user with transformation of an image 
+from one format to another one.
+
+Sometimes it is necessary to convert an image from one format into another format. 
+Some distorsions or error effects can occur when transforming of an image.
+
+The Image Validator gives user the information whether a graphic information that 
+an image carries was destroyed or not after the transformation.
+
+The Image Validator collects significant properties from various image data extractors,
+process them and shows them to a user so that he or she can easily compare two images and controls 
+a tranformation process.
+
 
 
 The Image Validator Procedure
