@@ -24,9 +24,8 @@ The context includes:
 
 - File with raw output from metadata extractor to run through transformer 
 - Significant properties list recognized manually for a given image
-- Ignored properties that extractor recognizes but that are not included in Differ
-
-Values not normalized but still passing are put in the top half of ignored properties list. 
+- Ignored properties that extractor recognizes but that are not considered significant
+- Special properties that pass tests even thought they don't match exactly with output from other extractors (such as file size differences)
 
 .. list-table:: List of tests run
    :header-rows: 1
@@ -92,12 +91,13 @@ Values not normalized but still passing are put in the top half of ignored prope
      - examples/images_01/14/output-exiftool.raw
      - :green:`OK`
 
-To create a new test for s new image:
+To create a new test for a new image:
 
 1) Go to the appropriate test class
 2) Create a new method copying the previous test with @Test annotation
-3) Import the image properties with @Resource (these are the properties from context file). Change in the method all imports to this file.
-4) Create resources in appropriate test context file in /resources by copying previous context (if there is one for same image format, choose that one as many properties are already in the correct category)
-5) Change name of context files to reflect the import done in 3) with @Resource
-6) Run tests. If it's the first test for the particular image format, there is a big chance some properties need to be deleted/added or moved to ignored/special properties.
+3) Import the image properties with @Resource (these are the properties from context file). Change in the method all imports to point to this file.
+4) Create resources in appropriate test context file in /resources by copying previous test already in the context file
+5) Change the names of the copied data to reflect the import done in 3) with @Resource
+5a) If it's the first time running the test, add a line in test method to fetch context metadata before running the test: TestHelper.printTransformedMetadata(List<ResultTransformer.Entry> transformedData, LinkedHashMap signProperties); Add the output to appropiate context file as created in 3). 
+6) Run JUnit tests. Inspect results and move properties to ignored if they should pass even though they don't match with other extractors metadata. 
      

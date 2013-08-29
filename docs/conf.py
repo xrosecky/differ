@@ -41,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'The Image Validator Documentation'
-copyright = u'2012, 2013, Václav Rosecký, Jan Stavěl, Jonathan Svenson, Thomas Truax'
+copyright = u'2012, 2013, Václav Rosecký, Jan Stavěl, Jonatan Svenson, Thomas Truax'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
