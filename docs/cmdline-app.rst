@@ -76,5 +76,8 @@ Example output: Compare two images and validate
 
 .. note::
    
-   Developers and unix users can use the helpful bash scripts in the folder /differ-cmdline/ to run the application. The application must be compiled with Maven to the jar file before these can be run. Validation in run.sh and compare in run-two.sh. Edit the file and comment out the lines you don't want.  
+   Developers and unix users can use the helpful bash scripts in the folder /differ-cmdline/ to run the application. The application must be compiled with Maven to the jar file before these can be run. Validation in run.sh and compare in run-two.sh. Edit the file and comment out the lines you don't want.
+
+
+.. literalinclude:: important-parts.rst
 
