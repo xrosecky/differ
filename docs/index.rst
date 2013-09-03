@@ -7,6 +7,10 @@
 The Image Validator - DIFFER
 ===============================
 
+.. image:: poster.png
+   :width: 640
+   :height: 480
+
 .. toctree::
    :maxdepth: 2
 
@@ -17,6 +21,3 @@ The Image Validator - DIFFER
    gsoc2013-ideas-list
    old-index
 
-.. raw:: html
-
-	 <iframe src="https://docs.google.com/file/d/0B9Ah7Og9gY_ORi1kandLZVJ2NEU/preview" width="820" height="620"></iframe>
