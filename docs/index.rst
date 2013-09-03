@@ -16,3 +16,7 @@ The Image Validator - DIFFER
    important-links
    gsoc2013-ideas-list
    old-index
+
+.. raw:: html
+
+	 <iframe src="https://docs.google.com/file/d/0B9Ah7Og9gY_ORi1kandLZVJ2NEU/preview" width="640" height="480"></iframe>
