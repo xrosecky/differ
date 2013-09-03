@@ -15,6 +15,7 @@ The Image Validator - DIFFER
    :maxdepth: 2
 
    introduction
+   image-validator-procedure
    web-app
    cmdline-app
    important-links
