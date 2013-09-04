@@ -16,14 +16,14 @@ This open source application comes with a well-structured and uniform GUI, which
 New project was born
 ....................
 
-The project ``The Image Validator`` is a successor of the project ``Differ``.
-``Differ`` is short for ``Determinator of Image File Format properties``.
+The project The Image Validator is a successor of the project Differ.
+Differ is short for Determinator of Image File Format properties.
 
-The project ``Differ`` was written in ``C++`` and ``PHP`` and it allowed to get
+The project Differ was written in C++ and PHP and it allowed to get
 main properties for images in various image formats.
 
 The main purpose of creating a succesor was the need to have a program running
-on a various platforms. That is why new project ``The Image Validator`` is written in ``Java``.
+on a various platforms. That is why new project The Image Validator is written in Java.
 
 
 About

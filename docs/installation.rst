@@ -14,7 +14,7 @@ http://www.stahuj.centrum.cz/utility_a_ostatni/ostatni/exiftool/
    root@treebeard:~# aptitude install libimage-exiftool-perl 
 
 
-set in file ``differ-common/common.properties``
+set in file differ-common/common.properties
 a path to exiftool binary.
 
 It depends on operating system.
@@ -36,7 +36,7 @@ Exiv2
    root@treebeard:~# aptitude install exiv2 
    
 
-set in file ``differ-common/common.properties``
+set in file differ-common/common.properties
 a path to exiv2 binary.
 
 It depends on operating system.
@@ -59,7 +59,7 @@ JHOVE
    root@treebeard:~# aptitude install jhove
 
 
-set in file ``differ-common/common.properties``
+set in file differ-common/common.properties
 a path to jhove script. 
 ::
 
@@ -86,7 +86,7 @@ Imagemagick
    root@treebeard:~# aptitude install imagemagick
 
 
-set in file ``differ-common/common.properties``
+set in file differ-common/common.properties
 a path to imagemagick binary.
 
 It depends on operating system.
@@ -109,7 +109,7 @@ FITS
    stavel@treebeard:~/lib$ chmod 755 fits-0.6.1/fits.sh 
 
 
-set in file ``differ-common/common.properties``
+set in file differ-common/common.properties
 a path to fits script.
 
 ::
@@ -140,9 +140,9 @@ This library is necessary to handle jp2000 images.
 
 Download binaries from their `download page <http://www.kakadusoftware.com/index.php?option=com_content&task=view&id=26&Itemid=22>`_
 
-Do not forget to set in file ``differ-common/common.properties`` a path to kakadu binary.
+Do not forget to set in file differ-common/common.properties a path to kakadu binary.
 
-To identify and load images ``kdu_expand`` binary is used.
+To identify and load images kdu_expand binary is used.
 
 ::
 
@@ -178,7 +178,7 @@ See `Software Installation Guide <https://daitss.pubwiki.fcla.edu/wiki/index.php
 
 See `Getting started <https://share.fcla.edu/FDAPublic/DAITSS/Chapter_2_Getting_Started.pdf>`_.
 
-set in file ``differ-common/common.properties``
+set in file differ-common/common.properties
 an url for daitss web service.
 
 It can be local or external.
