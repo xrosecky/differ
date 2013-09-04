@@ -79,11 +79,6 @@ Installation
 
 .. include:: installation.rst
 
-Command Line Application
-------------------------
-
-.. include:: cmdline.rst
-
 Examples of validation results
 ------------------------------
 
