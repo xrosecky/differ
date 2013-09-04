@@ -16,7 +16,6 @@ The Image Validator - DIFFER
    cmdline-app
    important-links
    gsoc2013-ideas-list
-   old-index
 
 .. raw:: html
 
@@ -31,4 +30,10 @@ The Image Validator - DIFFER
 .. raw:: html
 
 	 <a href="https://docs.google.com/file/d/0B9Ah7Og9gY_ORi1kandLZVJ2NEU/preview" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Poster at Google Disc</a>
+
+
+.. toctree::
+   :maxdepth: 2
+
+   old-index
 
