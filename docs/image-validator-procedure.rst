@@ -14,7 +14,7 @@ The program recognizes various graphic formats:
 - ``jpeg2000``
 - ``djvu``
 - ``pdf``
-
+- ``FITS``
 
 Identification
 ~~~~~~~~~~~~~~
@@ -26,6 +26,8 @@ The program identifies a format of an image by an extension used in a file name:
 - ``jpeg 2000``: `*.jp2000`, `*.jpf`, `*.jp2`, `*.jpp`
 - ``jpeg``: `*.jpeg`, `*.jpg`
 - ``pdf``: `*.pdf`
+- ``png``: `*.png`
+- ``fits``: `*.fits`
 
 .. note::
    
@@ -55,6 +57,8 @@ The program can work with images in format:
 - ``DjVu``
 - ``JPEG 2000``
 - ``PDF``
+- ``PNG``
+- ``FITS``
 
 Validation and Characterization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -116,5 +120,6 @@ The program calls various external programs to extract image metadata depending 
   - ``JPylyzer``
   - ``KDU_expand``
 
+.. todo:: png, pdf, djvu, fits doplnit plus nastroje
 
 .. note:: Detailed information about each external program can be seen in `Recognized Extractor Outputs`_.

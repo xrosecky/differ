@@ -20,11 +20,15 @@ The Image Validator - DIFFER
 
 .. raw:: html
 
-	 <a href="https://docs.google.com/file/d/0B9Ah7Og9gY_ORi1kandLZVJ2NEU/preview" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
+	 <a href="poster.png" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
 
 .. image:: poster-thumbnail.png
 
 .. raw:: html
 	 </a>
 
+
+.. raw:: html
+
+	 <a href="https://docs.google.com/file/d/0B9Ah7Og9gY_ORi1kandLZVJ2NEU/preview" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Poster at Google Disc</a>
 
