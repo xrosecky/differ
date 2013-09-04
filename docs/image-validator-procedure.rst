@@ -120,6 +120,7 @@ The program calls various external programs to extract image metadata depending 
   - ``JPylyzer``
   - ``KDU_expand``
 
-.. todo:: png, pdf, djvu, fits doplnit plus nastroje
+
+TODO: png, pdf, djvu, fits doplnit plus nastroje
 
 .. note:: Detailed information about each external program can be seen in `Recognized Extractor Outputs`_.
