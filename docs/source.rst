@@ -2,10 +2,10 @@ General Source Code Information
 ------------------------------------------------------------
 
 Differ is split into three different packages. The differ-cmdline package is used to run differ in a command line environment with export in plaintext and drep (xml) format. The differ-webapp package creates a graphical web interface for the application. The differ-common package holds all classes and resources used by both applications to extract metadata and display it.
-  
+
 Each extractor tool is run with preset arguments and exported to XML. The application then transforms this data with regexp or xslt and maps it to defined properties.
 
-Transformers of external program output
+Transformers of output from external programs 
 ......................
 
 Main application context is 
