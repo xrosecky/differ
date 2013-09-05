@@ -28,7 +28,7 @@ At the end of transformation, some values are normalized with these classes (def
 Metadata
 ......................
 
-Structure that hold all informations being extracted from all external image metadata extractors is
+Structure that hold all informations being extracted from all external image metadata extractors
 
 	https://github.com/Differ-GSOC/differ/blob/master/differ-common/src/main/java/cz/nkp/differ/compare/io/ImageProcessorResult.java
 
@@ -57,11 +57,7 @@ Text report output and various formating classes
 Web application
 ......................
 
-Configurations
-
-   https://github.com/jstavel/differ/tree/master/differ-webapp/src/main/resources
-
-Main sources for a web application
+Main source for web application
 
    https://github.com/jstavel/differ/tree/master/differ-webapp/src/main/java/cz/nkp/differ
 
@@ -70,7 +66,7 @@ Main sources for a web application
 Documentation
 ......................
 
-Documentations is written using Sphinx
+Documentation is written using Sphinx
 
    https://github.com/jstavel/differ/tree/master/docs
 
