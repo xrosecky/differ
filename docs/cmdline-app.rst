@@ -6,8 +6,6 @@ Arguments of the application
 
 The application can validate one image or compare two images.
 
- ========================= ===== ===================================================================================
-
  Argument                        Description   
  ========================= ===== ===================================================================================
  --save-report               -s  Save report into file with the same name and with extension drep
@@ -61,19 +59,18 @@ Program usage
    c:\> differ.bat --show-properties
 
 
-Program output when validating image
+Example output: One image validation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. literalinclude:: outputs/cmdline.txt
 
-Program output when comparing images
+Example output: Compare two images and validate
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. literalinclude:: outputs/cmdline-compare.txt
 
 
 .. note::
-   
 
    You can see many more examples in the /docs/ folder 
 
