@@ -2,7 +2,9 @@ package cz.nkp.differ.gui.tabs;
 
 import com.vaadin.event.FieldEvents;
 import com.vaadin.event.FieldEvents.TextChangeListener;
+import com.vaadin.event.MouseEvents;
 import com.vaadin.terminal.FileResource;
+import com.vaadin.terminal.Resource;
 import com.vaadin.ui.AbsoluteLayout;
 import com.vaadin.ui.AbstractTextField.TextChangeEventMode;
 import com.vaadin.ui.Alignment;
@@ -21,22 +23,30 @@ import com.vaadin.ui.Upload.StartedListener;
 import com.vaadin.ui.Upload.SucceededListener;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Window;
+import com.vaadin.ui.themes.BaseTheme;
 
 import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.compare.io.CompareComponent;
+import cz.nkp.differ.compare.io.SerializableImage;
 import cz.nkp.differ.gui.components.DifferProgramTabButtonPanel;
 import cz.nkp.differ.gui.components.PluginDisplayComponent;
 import cz.nkp.differ.gui.components.RemoteFile;
 import cz.nkp.differ.gui.components.UploadReceiver;
 import cz.nkp.differ.gui.components.UserFilesWidget;
+import cz.nkp.differ.gui.windows.FullSizeImageWindow;
 import cz.nkp.differ.gui.windows.MainDifferWindow;
-import cz.nkp.differ.model.Image;
+
 import cz.nkp.differ.model.User;
+import cz.nkp.differ.util.GUIMacros;
+import java.awt.Image;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * The main application view.
@@ -119,16 +129,16 @@ public class DifferProgramTab extends HorizontalLayout {
                 @Override
                 public void buttonClick(Button.ClickEvent event) {
                     try {
-                        Image[] selectedImages = null;
+                        cz.nkp.differ.model.Image[] selectedImages = null;
                         if (uploadA == null || uploadB == null) {
-                            selectedImages = new Image[1];
+                            selectedImages = new cz.nkp.differ.model.Image[1];
                         } else {
-                            selectedImages = new Image[2];
+                            selectedImages = new cz.nkp.differ.model.Image[2];
                         }
                         
                         //uploadA
                         if (uploadA != null) {
-                            selectedImages[0] = new Image();
+                            selectedImages[0] = new cz.nkp.differ.model.Image();
                             selectedImages[0].setFile(uploadA);
                             selectedImages[0].setFileName(uploadA.getName());
                             selectedImages[0].setUniqueName(uploadA.getName());
@@ -140,7 +150,7 @@ public class DifferProgramTab extends HorizontalLayout {
                         
                         //uploadB
                         if (uploadB != null) {
-                            selectedImages[1] = new Image();
+                            selectedImages[1] = new cz.nkp.differ.model.Image();
                             selectedImages[1].setFile(uploadB);
                             selectedImages[1].setFileName(uploadB.getName());
                             selectedImages[1].setUniqueName(uploadB.getName());
@@ -202,9 +212,13 @@ public class DifferProgramTab extends HorizontalLayout {
         VerticalLayout inner = new VerticalLayout();
         inner.setSpacing(true);
         inner.setWidth("200px");
+        inner.addStyleName("v-preview-anon");
         
         final Embedded embedded = new Embedded();
         embedded.addStyleName("v-preview-anon");
+        embedded.addStyleName("v-showhand");
+        
+        
         
         final TextField urlPaste = new TextField("Select Remote File");
         urlPaste.setWidth("100%");
@@ -234,7 +248,15 @@ public class DifferProgramTab extends HorizontalLayout {
             @Override
             public void uploadSucceeded(Upload.SucceededEvent event) {
                 embedded.setVisible(true);
-                embedded.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));
+                embedded.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));              
+                embedded.addListener(new MouseEvents.ClickListener() {
+                    @Override
+                    public void click(MouseEvents.ClickEvent event) {
+                        Embedded fullview = new Embedded();
+                        fullview.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));
+                        DifferApplication.getMainApplicationWindow().addWindow(new FullSizeImageWindow(fullview));
+                    }
+                });
                 compareButton.setEnabled(true);
                 if (index == 0) {
                     uploadA = receiver.getFile();
@@ -273,11 +295,18 @@ public class DifferProgramTab extends HorizontalLayout {
         uploadBtn.addListener(new ClickListener() {
             @Override
             public void buttonClick(ClickEvent event) {
-                embedded.setVisible(true);
                 RemoteFile remoteFile = new RemoteFile((String) (urlPaste.getValue()));
                 if (remoteFile.isValid()) {
-                    File file = remoteFile.getFile();
-                    embedded.setSource(new FileResource(file, DifferApplication.getCurrentApplication()));
+                    final File file = remoteFile.getFile();
+                    embedded.setVisible(true); 
+                    embedded.addListener(new MouseEvents.ClickListener() {
+                        @Override
+                        public void click(MouseEvents.ClickEvent event) {
+                            Embedded fullview = new Embedded();
+                            fullview.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));
+                            DifferApplication.getMainApplicationWindow().addWindow(new FullSizeImageWindow(fullview));
+                        }
+                    });                    
                     compareButton.setEnabled(true);
                     if (index == 0) {
                         uploadA = file;
@@ -331,22 +360,22 @@ public class DifferProgramTab extends HorizontalLayout {
         this.setSizeUndefined();
     }
 
-    public Image[] getSelectedImages() {
-        Set<Image> images1 = fileSelector1.getSelectedImages();
-        Set<Image> images2 = fileSelector2.getSelectedImages();
+    public cz.nkp.differ.model.Image[] getSelectedImages() {
+        Set<cz.nkp.differ.model.Image> images1 = fileSelector1.getSelectedImages();
+        Set<cz.nkp.differ.model.Image> images2 = fileSelector2.getSelectedImages();
         if (images1 == null) {
             images1 = Collections.emptySet();
         }
         if (images2 == null) {
             images2 = Collections.emptySet();
         }
-        Image[] result = new Image[images1.size() + images2.size()];
+        cz.nkp.differ.model.Image[] result = new cz.nkp.differ.model.Image[images1.size() + images2.size()];
         int index = 0;
-        for (Image image : images1) {
+        for (cz.nkp.differ.model.Image image : images1) {
             result[index] = image;
             index++;
         }
-        for (Image image : images2) {
+        for (cz.nkp.differ.model.Image image : images2) {
             result[index] = image;
             index++;
         }
