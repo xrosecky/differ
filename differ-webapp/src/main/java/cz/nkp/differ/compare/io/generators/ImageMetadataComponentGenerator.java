@@ -60,7 +60,7 @@ public class ImageMetadataComponentGenerator {
     private static String COLUMN_B1_PROPERTY    = "value"; //not used in imageA\imageB table
     
     private static String COLUMN_C1_PROPERTY    = "metadataSource";
-    private static String COLUMN_C2_PROPERTY    = "sourceName";
+    //private static String COLUMN_C2_PROPERTY    = "sourceName";
     private static String COLUMN_C3_PROPERTY    = "version";
     
     private HashMap<String, String> versionValues = new HashMap<String, String>();
@@ -182,8 +182,10 @@ public class ImageMetadataComponentGenerator {
             metadataTable.addContainerProperty(COLUMN_A4_PROPERTY, String.class, null);
             metadataTable.addContainerProperty(COLUMN_A5_PROPERTY, String.class, null);
             metadataTable.addContainerProperty(COLUMN_C1_PROPERTY, MetadataSource.class, null);
-            metadataTable.addContainerProperty(COLUMN_C2_PROPERTY, String.class, null);
+            //metadataTable.addContainerProperty(COLUMN_C2_PROPERTY, String.class, null);
             metadataTable.addContainerProperty(COLUMN_C3_PROPERTY, String.class, null);
+            metadataTable.setColumnWidth(COLUMN_A3_PROPERTY, 160);
+            metadataTable.setColumnWidth(COLUMN_A4_PROPERTY, 160);
             
             Iterator it = hashmap.entrySet().iterator();
             int j = 0;
@@ -191,7 +193,7 @@ public class ImageMetadataComponentGenerator {
                 ComparedImagesMetadata cim = (ComparedImagesMetadata) ((Map.Entry)it.next()).getValue();
                 metadataTable.addItem(new Object[] {cim.getKey(), cim.getSource(), cim.getValueA(), 
                                                     cim.getValueB(), cim.getUnit(), cim.getMetadataSource(),
-                                                    cim.getSourceName(), cim.getVersion()}, j);
+                                                    cim.getVersion()}, j);//cim.getSourceName(), cim.getVersion()}, j);
                 cimList.add(cim);
                 j++;
             }
@@ -259,7 +261,7 @@ public class ImageMetadataComponentGenerator {
             metadataTable = new Table(tableName, metadataContainer);
             metadataTable.setVisibleColumns(new Object[]{COLUMN_A1_PROPERTY,COLUMN_A2_PROPERTY,
                                                          COLUMN_B1_PROPERTY,COLUMN_A5_PROPERTY});
-            
+            metadataTable.setColumnWidth(COLUMN_B1_PROPERTY, 160);
             metadataTable.sort(new String[] {COLUMN_A1_PROPERTY}, new boolean[] {true});
             metadataTable.setSelectable(true);
             metadataTable.setMultiSelect(false);
