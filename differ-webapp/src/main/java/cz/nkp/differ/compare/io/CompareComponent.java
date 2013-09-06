@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import com.vaadin.Application;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.Window;
@@ -72,10 +73,18 @@ public class CompareComponent {
             ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(new ImageProcessorResult[] {result[0], result[1]}, this);
             ImageMetadataComponentGenerator tableComp = null;
 	    if (result[2] != null) {
-		ImageFileAnalysisContainer iFAC3 = new ImageFileAnalysisContainer(result[2], this, 2);
+                Label comparedChecksum;
+		if (iFAC1.getChecksum().equals(iFAC2.getChecksum())) {
+                    comparedChecksum = new Label("Image hash values are equal.", Label.CONTENT_XHTML);
+                } else {
+                    comparedChecksum = new Label("Image hash values are NOT equal.", Label.CONTENT_XHTML);
+                }
+                ImageFileAnalysisContainer iFAC3 = new ImageFileAnalysisContainer(result[2], this, 2);
+                iFAC3.setChecksumLabel(comparedChecksum);
 		childALayout.addComponent(iFAC3.getComponent());
 		iFACs.addAll(Arrays.asList(iFAC1, iFAC2, iFAC3));
                 tableComp = new ImageMetadataComponentGenerator(new ImageProcessorResult[] {result[2]}, this);
+                tableComp.setTableName("SILARITY METRICS");
 	    } else {
 		TextField errorComponent = new TextField();
 		errorComponent.setValue("Images can't be compared.");

@@ -48,7 +48,8 @@ public class ImageMetadataComponentGenerator {
     private List<String> nonConflictMetadata = Arrays.asList("exit-code");
     private CompareComponent parent;
 
-    private static String TABLE_NAME            = "Metadata";
+    private String tableName = "METADATA";
+    
     private static String VERSION_PROPERTY_NAME = "Version";
     private static String COLUMN_A1_PROPERTY    = "key";
     private static String COLUMN_A2_PROPERTY    = "source";
@@ -174,7 +175,7 @@ public class ImageMetadataComponentGenerator {
 
             }
 
-            metadataTable = new Table(TABLE_NAME);
+            metadataTable = new Table(tableName);
             metadataTable.addContainerProperty(COLUMN_A1_PROPERTY, String.class, null);
             metadataTable.addContainerProperty(COLUMN_A2_PROPERTY, Button.class, null);
             metadataTable.addContainerProperty(COLUMN_A3_PROPERTY, String.class, null);
@@ -255,7 +256,7 @@ public class ImageMetadataComponentGenerator {
             //if only one single ImageProcessorResult object passed, create table with BeanItemContainer
             BeanItemContainer metadataContainer = 
                     new BeanItemContainer<ImageMetadata>(ImageMetadata.class, result[0].getMetadata());
-            metadataTable = new Table(TABLE_NAME, metadataContainer);
+            metadataTable = new Table(tableName, metadataContainer);
             metadataTable.setVisibleColumns(new Object[]{COLUMN_A1_PROPERTY,COLUMN_A2_PROPERTY,
                                                          COLUMN_B1_PROPERTY,COLUMN_A5_PROPERTY});
             
@@ -292,10 +293,6 @@ public class ImageMetadataComponentGenerator {
             });
             layout.addComponent(metadataTable);            
         }
-        
-
-
-
     }
     
     private Button createClickableTool(final Layout layout, MetadataSource source, final String version) {
@@ -324,4 +321,7 @@ public class ImageMetadataComponentGenerator {
         return button;
     }
 
+    public void setTableName(String tableName) {
+        this.tableName = tableName;
+    }
 }
