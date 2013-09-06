@@ -60,11 +60,7 @@ public class ImageMetadataComponentGenerator {
     private static String COLUMN_B1_PROPERTY    = "value"; //not used in imageA\imageB table
     
     private static String COLUMN_C1_PROPERTY    = "metadataSource";
-    //private static String COLUMN_C2_PROPERTY    = "sourceName";
-    private static String COLUMN_C3_PROPERTY    = "version";
-    
-    private HashMap<String, String> versionValues = new HashMap<String, String>();
-    private ArrayList<ComparedImagesMetadata> cimList = new ArrayList<ComparedImagesMetadata>();
+    private static String COLUMN_C2_PROPERTY    = "version";
     
     /**
      * Constructor which takes a single ImageProcessorResult object (usually for comparison table)
@@ -117,10 +113,7 @@ public class ImageMetadataComponentGenerator {
             for (int i = 0; i < result[0].getMetadata().size(); i++) {
                 String id = result[0].getMetadata().get(i).getKey() + "&&" +
                             result[0].getMetadata().get(i).getSource().getSourceName();
-                hashmap.put(id, new ComparedImagesMetadata(id));
-                if (result[0].getMetadata().get(i).getKey().contentEquals(VERSION_PROPERTY_NAME)) {
-                    versionValues.put(result[0].getMetadata().get(i).getSource().getSourceName(), "" + result[0].getMetadata().get(i).getValue());
-                }                
+                hashmap.put(id, new ComparedImagesMetadata(id));              
             }
             
             for (int i = 0; i < result[1].getMetadata().size(); i++) {
@@ -128,9 +121,6 @@ public class ImageMetadataComponentGenerator {
                             result[1].getMetadata().get(i).getSource().getSourceName();
                 if (!hashmap.containsKey(id)) { //prevent creating new ComparedImagesMetadata objects unneccessarily
                     hashmap.put(id, new ComparedImagesMetadata(id));
-                    if (result[1].getMetadata().get(i).getKey().contentEquals(VERSION_PROPERTY_NAME)) {
-                        versionValues.put(result[1].getMetadata().get(i).getSource().getSourceName(), "" + result[1].getMetadata().get(i).getValue());
-                    }
                 }
 
             }
@@ -145,7 +135,6 @@ public class ImageMetadataComponentGenerator {
                 hashmap.get(id).setUnit(result[0].getMetadata().get(i).getUnit());
                 hashmap.get(id).setConflict(result[0].getMetadata().get(i).isConflict());
                 MetadataSource msrc = result[0].getMetadata().get(i).getSource();
-                hashmap.get(id).setSource(createClickableTool(layout, msrc, versionValues.get(hashmap.get(id).getSourceName())));
                 hashmap.get(id).setMetadataSource(msrc);
                 hashmap.get(id).setSourceName(result[0].getMetadata().get(i).getSource().getSourceName());
             }
@@ -164,7 +153,6 @@ public class ImageMetadataComponentGenerator {
                 
                 if (hashmap.get(id).getSource() == null) {
                     MetadataSource msrc = result[1].getMetadata().get(i).getSource();
-                    hashmap.get(id).setSource(createClickableTool(layout, msrc, versionValues.get(hashmap.get(id).getSourceName())));
                     hashmap.get(id).setMetadataSource(msrc);
                 }
                 
@@ -181,23 +169,44 @@ public class ImageMetadataComponentGenerator {
             metadataTable.addContainerProperty(COLUMN_A3_PROPERTY, String.class, null);
             metadataTable.addContainerProperty(COLUMN_A4_PROPERTY, String.class, null);
             metadataTable.addContainerProperty(COLUMN_A5_PROPERTY, String.class, null);
+            metadataTable.addContainerProperty(COLUMN_C2_PROPERTY, String.class, null);
             metadataTable.addContainerProperty(COLUMN_C1_PROPERTY, MetadataSource.class, null);
-            //metadataTable.addContainerProperty(COLUMN_C2_PROPERTY, String.class, null);
-            metadataTable.addContainerProperty(COLUMN_C3_PROPERTY, String.class, null);
-            metadataTable.setColumnWidth(COLUMN_A3_PROPERTY, 160);
-            metadataTable.setColumnWidth(COLUMN_A4_PROPERTY, 160);
+
+            //prevent column overflow
+            metadataTable.setColumnWidth(COLUMN_A3_PROPERTY, 200);
+            metadataTable.setColumnWidth(COLUMN_A4_PROPERTY, 200);
+            metadataTable.setColumnWidth(COLUMN_C2_PROPERTY, 100);
             
+            //first iteration merely gleans the version property from the various tools
+            HashMap<String, String> versionmap = new HashMap<String, String>();
             Iterator it = hashmap.entrySet().iterator();
             int j = 0;
             while (it.hasNext()) {
                 ComparedImagesMetadata cim = (ComparedImagesMetadata) ((Map.Entry)it.next()).getValue();
-                metadataTable.addItem(new Object[] {cim.getKey(), cim.getSource(), cim.getValueA(), 
-                                                    cim.getValueB(), cim.getUnit(), cim.getMetadataSource(),
-                                                    cim.getVersion()}, j);//cim.getSourceName(), cim.getVersion()}, j);
-                cimList.add(cim);
+                if (cim.getKey().equals(VERSION_PROPERTY_NAME)) {
+                    versionmap.put(cim.getSourceName(), cim.getValueA());
+                }
                 j++;
             }
-
+            
+            Iterator itx = hashmap.entrySet().iterator();
+            int x = 0;
+            while (itx.hasNext()) {
+                ComparedImagesMetadata cim = (ComparedImagesMetadata) ((Map.Entry)itx.next()).getValue();
+                cim.setVersion(versionmap.get(cim.getSourceName()));
+                MetadataSource msrc = cim.getMetadataSource();
+                cim.setSource(createClickableTool(layout, msrc, cim.getVersion()));
+                metadataTable.addItem(new Object[] {cim.getKey(), cim.getSource(), cim.getValueA(), 
+                                                    cim.getValueB(), cim.getUnit(),
+                                                    cim.getVersion(), cim.getMetadataSource()}, x);
+                x++;
+            }
+            
+            //the following line must be set AFTER adding ALL data to the table
+            //otherwise data will not be set properly (table will be empty)
+            metadataTable.setVisibleColumns(new Object[] {COLUMN_A1_PROPERTY, COLUMN_A2_PROPERTY, COLUMN_A3_PROPERTY,
+                                                          COLUMN_A4_PROPERTY, COLUMN_A5_PROPERTY});
+              
             final Button rawData = new Button();
             rawData.setCaption("Raw data");
             rawData.addListener(new ClickListener() {
@@ -261,7 +270,7 @@ public class ImageMetadataComponentGenerator {
             metadataTable = new Table(tableName, metadataContainer);
             metadataTable.setVisibleColumns(new Object[]{COLUMN_A1_PROPERTY,COLUMN_A2_PROPERTY,
                                                          COLUMN_B1_PROPERTY,COLUMN_A5_PROPERTY});
-            metadataTable.setColumnWidth(COLUMN_B1_PROPERTY, 160);
+            metadataTable.setColumnWidth(COLUMN_B1_PROPERTY, 200);
             metadataTable.sort(new String[] {COLUMN_A1_PROPERTY}, new boolean[] {true});
             metadataTable.setSelectable(true);
             metadataTable.setMultiSelect(false);
@@ -303,19 +312,19 @@ public class ImageMetadataComponentGenerator {
         if (source.getSourceName() != null && source.getSourceName().length() > 0) {
             toolName = source.getSourceName();
         } else {
-            toolName = "unknown";
+            toolName = "tool name unknown";
         }
-        Button button = new Button(toolName);
-
-        //if (cSource.getVersion() != null && cSource.getVersion().length() > 0) {
-            //version = cSource.getVersion();
-        //} else {
-        //    version = "Tool version unknown";
-        //}
+        Button button = new Button("" + toolName);
+        final String vrsn;
+        if (version != null && version.length() > 0) {
+            vrsn = version;
+        } else {
+            vrsn = "unknown";
+        }
         button.addListener(new Button.ClickListener() {
             @Override
             public void buttonClick(ClickEvent event) {
-                layout.getWindow().showNotification(toolName + ": " + version);
+                layout.getWindow().showNotification(toolName, "version " + vrsn);
             } 
         });
         button.addStyleName("link");
