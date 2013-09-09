@@ -16,8 +16,10 @@
         <property name="locations">
             <list>
                 <value>WEB-INF/differ.properties</value>
+                <value>WEB-INF/differ.local.properties</value>
             </list>
         </property>
+        <property name="ignoreResourceNotFound" value="true" />
     </bean>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
