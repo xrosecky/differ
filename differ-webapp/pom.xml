@@ -22,7 +22,6 @@
   
     <properties>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	<differ.bin.dir>./bin</differ.bin.dir>
     </properties>
   
     <build>
@@ -41,15 +40,6 @@
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-war-plugin</artifactId>
 		<version>${maven.war.plugin.version}</version>
-		<configuration>
-		    <archive>
-			<manifestEntries>
-			    <Class-Path>plugins/*</Class-Path>
-			</manifestEntries>
-		    </archive>
-		    <outputDirectory>${differ.bin.dir}</outputDirectory>
-		    <warName>differ</warName>
-		</configuration>
 	    </plugin>
 		
 		<!--Plugin to compile GWT widget set -->
@@ -66,7 +56,6 @@
 		    <webappDirectory>${project.build.directory}/${project.build.finalName}/VAADIN/widgetsets</webappDirectory>
 		    <extraJvmArgs>-Xmx512M -Xss1024k</extraJvmArgs>
 		    <runTarget>clean</runTarget>
-		    <hostedWebapp>${differ.bin.dir}/differ.war</hostedWebapp>
 		    <copyWebapp>true</copyWebapp>
 		    <noServer>true</noServer>
 		    <soyc>false</soyc>
