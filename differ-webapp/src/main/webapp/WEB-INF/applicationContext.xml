@@ -54,6 +54,12 @@
         <property name="marshaller" ref="jaxb2Marshaller"/>
         <property name="directory" value="${differ.home}/results/"/>
     </bean>
+    
+    <!-- Google Analytics -->
+    <bean id="googleAnalyticsConfiguration" class="cz.nkp.differ.configuration.GoogleAnalyticsConfiguration">
+        <property name="domainName" value="${ga.domainName}"/>
+        <property name="trackerId" value="${ga.trackerId}"/>
+    </bean>
 
     <!-- Rest API -->
     <context:component-scan base-package="cz.nkp.differ"/>

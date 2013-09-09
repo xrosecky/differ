@@ -132,6 +132,7 @@ public class DifferProgramTab extends HorizontalLayout {
 
                 @Override
                 public void buttonClick(Button.ClickEvent event) {
+                    DifferApplication.getGATracker().trackPageview("/compare");
                     try {
                         cz.nkp.differ.model.Image[] selectedImages = null;
                         if (uploadA == null || uploadB == null) {

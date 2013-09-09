@@ -17,6 +17,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import com.vaadin.terminal.gwt.server.WebApplicationContext;
 import com.vaadin.ui.Window;
+import cz.nkp.differ.configuration.GoogleAnalyticsConfiguration;
 
 import cz.nkp.differ.gui.windows.MainDifferWindow;
 import cz.nkp.differ.io.ImageManager;
@@ -27,6 +28,7 @@ import eu.livotov.tpt.TPTApplication;
 import javax.servlet.ServletContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
+import org.vaadin.googleanalytics.tracking.GoogleAnalyticsTracker;
 
 /**
  * The main Application instance, responsible for setting global settings, such as locale, theme, and the root window for the GUI.
@@ -43,6 +45,7 @@ public class DifferApplication extends TPTApplication {
     protected static ResultManager resultManager = null;
     protected static ApplicationContext applicationContext = null;
     protected static MainDifferWindow mainDifferWindow = null;
+    protected static GoogleAnalyticsTracker gaTracker = null;
     /* session variables */
     private User loggedUser = null;
 
@@ -85,10 +88,15 @@ public class DifferApplication extends TPTApplication {
 	userManager = (UserManager) applicationContext.getBean("userManager");
 	imageManager = (ImageManager) applicationContext.getBean("imageManager");
 	resultManager = (ResultManager) applicationContext.getBean("resultManager");
+        GoogleAnalyticsConfiguration gaConf = (GoogleAnalyticsConfiguration)
+                applicationContext.getBean("googleAnalyticsConfiguration");
 
 	mainDifferWindow = new MainDifferWindow();
 	mainDifferWindow.setSizeUndefined();
 	setMainWindow(mainDifferWindow);
+        gaTracker = new GoogleAnalyticsTracker(gaConf.getTrackerId(), gaConf.getDomainName());
+        mainDifferWindow.addComponent(gaTracker);
+        gaTracker.trackPageview("/");
     }
 
     @Override
@@ -126,6 +134,10 @@ public class DifferApplication extends TPTApplication {
 
     public static ResultManager getResultManager() {
 	return resultManager;
+    }
+    
+    public static GoogleAnalyticsTracker getGATracker() {
+        return gaTracker;
     }
 
     public static ApplicationContext getApplicationContext() {
