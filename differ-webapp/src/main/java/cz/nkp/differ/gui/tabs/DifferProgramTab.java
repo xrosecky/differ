@@ -5,6 +5,7 @@ import com.vaadin.event.FieldEvents.TextChangeListener;
 import com.vaadin.event.MouseEvents;
 import com.vaadin.terminal.FileResource;
 import com.vaadin.terminal.Resource;
+import com.vaadin.terminal.gwt.server.UploadException;
 import com.vaadin.ui.AbsoluteLayout;
 import com.vaadin.ui.AbstractTextField.TextChangeEventMode;
 import com.vaadin.ui.Alignment;
@@ -19,6 +20,7 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.Upload;
 import com.vaadin.ui.Upload.FailedListener;
+import com.vaadin.ui.Upload.ProgressListener;
 import com.vaadin.ui.Upload.StartedListener;
 import com.vaadin.ui.Upload.SucceededListener;
 import com.vaadin.ui.VerticalLayout;
@@ -52,8 +54,9 @@ import java.util.logging.Logger;
  * The main application view.
  * @author Joshua Mabrey
  * @author Vaclav Rosecky
- *
- * Mar 30, 2012
+ * @author Thomas Truax
+ * 
+ * Sept. 2013
  */
 @SuppressWarnings("serial")
 public class DifferProgramTab extends HorizontalLayout {
@@ -69,6 +72,7 @@ public class DifferProgramTab extends HorizontalLayout {
     //private ArrayList<Upload> upload;
     private File uploadA;
     private File uploadB;
+    static private long MAX_FILE_SIZE = 5242880; //size in bytes (5MB)
     private final DifferProgramTab this_internal = this;
     private MainDifferWindow mainWindow = null;
     //Used by button listener to reference DifferProgramTab object indirectly
@@ -113,7 +117,7 @@ public class DifferProgramTab extends HorizontalLayout {
 
             AbsoluteLayout innerUploadSection = new AbsoluteLayout();
             innerUploadSection.setWidth("450px");
-            innerUploadSection.setHeight("460px");
+            innerUploadSection.setHeight("510px");
             
             VerticalLayout innerCompareSection = new VerticalLayout();
             innerCompareSection.setHeight("100%");
@@ -135,7 +139,7 @@ public class DifferProgramTab extends HorizontalLayout {
                         } else {
                             selectedImages = new cz.nkp.differ.model.Image[2];
                         }
-                        
+
                         //uploadA
                         if (uploadA != null) {
                             selectedImages[0] = new cz.nkp.differ.model.Image();
@@ -183,6 +187,11 @@ public class DifferProgramTab extends HorizontalLayout {
             
             innerUploadSection.addComponent(addFileUploadComponent(0), "left: 10px; top: 10px;");
             innerUploadSection.addComponent(addFileUploadComponent(1), "left: 10px; top: 250px;");
+                        
+            Label lbl = new Label("You are currently using DIFFER anonymously. " + 
+            "Anonymous users are restricted to uploads of 5MB in size.");
+            
+            innerUploadSection.addComponent(lbl, "left: 10px; top: 470px;");
             
             innerCompareSection.addComponent(compareButton);
             innerCompareSection.addComponent(resetButton);
@@ -191,10 +200,7 @@ public class DifferProgramTab extends HorizontalLayout {
             
             loggedOutView.addComponent(innerUploadSection);
             loggedOutView.addComponent(innerCompareSection);
-            
-            //Label lbl = new Label("You are currently using DIFFER anonymously. " + 
-            //"Anonymous users are restricted to uploads of 5MB in size.");
-            //loggedOutView.addComponent(lbl);
+
         }
         this.removeAllComponents();
         this.addComponent(loggedOutView);
@@ -233,6 +239,15 @@ public class DifferProgramTab extends HorizontalLayout {
         uploadInstance.addListener(new StartedListener() {
             @Override
             public void uploadStarted(Upload.StartedEvent event) {
+                try {
+                    if (uploadInstance.getUploadSize() > MAX_FILE_SIZE) {
+                        uploadInstance.interruptUpload();
+                                    DifferApplication.getCurrentApplication().getMainWindow().showNotification("File failed to upload",
+                        "<br/>" + "File must not exceed 5MB for anonymous users", Window.Notification.TYPE_WARNING_MESSAGE);
+                    }
+                } catch (Exception ex) {
+
+                }
                 urlPaste.setEnabled(false);
                 uploadBtn.setEnabled(false);
             }
