@@ -139,29 +139,31 @@ public class DifferProgramTab extends HorizontalLayout {
                         } else {
                             selectedImages = new cz.nkp.differ.model.Image[2];
                         }
-
+                        int indx = 0;
+                        
                         //uploadA
                         if (uploadA != null) {
-                            selectedImages[0] = new cz.nkp.differ.model.Image();
-                            selectedImages[0].setFile(uploadA);
-                            selectedImages[0].setFileName(uploadA.getName());
-                            selectedImages[0].setUniqueName(uploadA.getName());
-                            selectedImages[0].setId(0);
-                            selectedImages[0].setShared(false);
-                            selectedImages[0].setOwnerId(-1);
-                            selectedImages[0].setSize((int)uploadA.length());
+                            selectedImages[indx] = new cz.nkp.differ.model.Image();
+                            selectedImages[indx].setFile(uploadA);
+                            selectedImages[indx].setFileName(uploadA.getName());
+                            selectedImages[indx].setUniqueName(uploadA.getName());
+                            selectedImages[indx].setId(indx);
+                            selectedImages[indx].setShared(false);
+                            selectedImages[indx].setOwnerId(-1);
+                            selectedImages[indx].setSize((int)uploadA.length());
+                            indx++;
                         }
                         
                         //uploadB
                         if (uploadB != null) {
-                            selectedImages[1] = new cz.nkp.differ.model.Image();
-                            selectedImages[1].setFile(uploadB);
-                            selectedImages[1].setFileName(uploadB.getName());
-                            selectedImages[1].setUniqueName(uploadB.getName());
-                            selectedImages[1].setId(1);
-                            selectedImages[1].setShared(false);
-                            selectedImages[1].setOwnerId(-1);
-                            selectedImages[1].setSize((int)uploadB.length());
+                            selectedImages[indx] = new cz.nkp.differ.model.Image();
+                            selectedImages[indx].setFile(uploadB);
+                            selectedImages[indx].setFileName(uploadB.getName());
+                            selectedImages[indx].setUniqueName(uploadB.getName());
+                            selectedImages[indx].setId(indx);
+                            selectedImages[indx].setShared(false);
+                            selectedImages[indx].setOwnerId(-1);
+                            selectedImages[indx].setSize((int)uploadB.length());
                         }
                         
                         HorizontalLayout layout = new HorizontalLayout();
@@ -192,7 +194,6 @@ public class DifferProgramTab extends HorizontalLayout {
             "Anonymous users are restricted to uploads of 5MB in size.");
             
             innerUploadSection.addComponent(lbl, "left: 10px; top: 470px;");
-            
             innerCompareSection.addComponent(compareButton);
             innerCompareSection.addComponent(resetButton);
             innerCompareSection.setComponentAlignment(compareButton, Alignment.BOTTOM_CENTER);
