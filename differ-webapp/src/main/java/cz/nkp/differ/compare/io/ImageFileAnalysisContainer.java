@@ -58,6 +58,7 @@ public class ImageFileAnalysisContainer {
     private final int scaleFactor = 400;
     private JFreeChartWrapper chartComponent = null;
     private List<String> nonConflictMetadata = Arrays.asList("exit-code");
+    private Label checksumLabel = null;
 
     public ImageFileAnalysisContainer(ImageProcessorResult result, CompareComponent parent) {
         this.result = result;
@@ -125,7 +126,11 @@ public class ImageFileAnalysisContainer {
         layout.addComponent(previewContainer);
         
         // Image checksum
-        layout.addComponent(new Label(String.format("<i>Hash:</i> %s", result.getMD5Checksum()), Label.CONTENT_XHTML));
+        if (checksumLabel != null) {
+            layout.addComponent(checksumLabel);
+        } else {
+            layout.addComponent(new Label(String.format("<i>Hash:</i> %s", result.getMD5Checksum()), Label.CONTENT_XHTML));
+        }
         
         // Histogram
         if (result.getType() == ImageProcessorResult.Type.IMAGE) {
@@ -304,4 +309,13 @@ public class ImageFileAnalysisContainer {
             return null;
         }
     }
+    
+    public String getChecksum() {
+        return result.getMD5Checksum();
+    }
+    
+    public void setChecksumLabel(Label label) {
+        checksumLabel = label;
+    }
+    
 }

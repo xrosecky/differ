@@ -9,9 +9,11 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.net.URLConnection;
 
 /**
- * Immutable class for loading a remote file to the local filesystem. 
+ * Immutable class for loading a remote file to the local filesystem, with the
+ * ability to restrict by file size.
  * 
  * @author Thomas Truax
  */
@@ -21,6 +23,9 @@ public class RemoteFile {
     private File file;
     private boolean valid;
     
+    private long maxSize = -1; //in bytes
+    static private long DEFAULT_MAX_SIZE = 5242880; //default maxsize = 5MB
+    
     /**
      * Downloads a remote file from the supplied URL and writes it to the local filesystem.
      * If the URL is valid and the file was downloaded and written successfully,
@@ -28,6 +33,13 @@ public class RemoteFile {
      * @param url 
      */
     public RemoteFile(String url) {
+        this(url, 0);
+    }
+    
+    public RemoteFile(String url, long maxSize) {
+        if ((this.maxSize = maxSize) <= 0) {
+            this.maxSize = DEFAULT_MAX_SIZE;
+        }
         file = getRemoteFile(url);
     }
     
@@ -37,12 +49,16 @@ public class RemoteFile {
                     "The URL does not appear to be valid", Window.Notification.TYPE_WARNING_MESSAGE);
             return null;
         }
-        File file = null;
+        //File file = null;
         try {
             StringBuilder sb = new StringBuilder(url);
             String path = DIR + sb.substring(sb.lastIndexOf("/") + 1);
+            
+            URL remfile = new URL(url);
 
-            InputStream is = new URL(url).openStream();
+            checkSize(remfile);
+            
+            InputStream is = remfile.openStream();
 
             FileOutputStream fos = new FileOutputStream(file = new File(path));
 
@@ -88,6 +104,12 @@ public class RemoteFile {
      */
     public boolean isValid() {
         return valid;
+    }
+    
+    private void checkSize(URL u) throws IOException {
+        if (u.openConnection().getContentLength() > maxSize) {
+            throw new IOException("File must not exceed 5MB for anonymous users");
+        }
     }
     
     /**

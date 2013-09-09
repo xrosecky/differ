@@ -107,6 +107,7 @@
 .compare-button-caption {
     margin-top: 8px;
     margin-left: -2px;
+    font-weight: 700;
     font-size: 120%;
 }
 
@@ -119,4 +120,9 @@
 /*for image logos in footer*/
 .v-footer-logos img {
     padding: 0 8px 0 8px;
+}
+
+/*forces pointer cursor*/
+.v-showhand {
+    cursor: pointer;
 }

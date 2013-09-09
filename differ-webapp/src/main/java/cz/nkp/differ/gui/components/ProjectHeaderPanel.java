@@ -1,5 +1,7 @@
 package cz.nkp.differ.gui.components;
 
+import com.vaadin.event.MouseEvents;
+import com.vaadin.event.MouseEvents.ClickListener;
 import com.vaadin.terminal.ThemeResource;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
@@ -12,6 +14,7 @@ import com.vaadin.ui.Layout;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Window;
+import com.vaadin.ui.themes.Runo;
 import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.gui.tabs.DifferProgramTab;
 import cz.nkp.differ.gui.windows.LoginUserWindow;
@@ -38,13 +41,27 @@ public class ProjectHeaderPanel extends CustomComponent {
         this.tabRef = tabRef;
         this.parent = parent;
         Panel headerPanel = new Panel();//Create outer panel
+        
         headerPanel.setWidth("100%");
         HorizontalLayout layout = new HorizontalLayout();//Create Layout to hold content components
         layout.setWidth("100%");
         layout.setHeight("100%");
         headerPanel.addComponent(layout);//Add content container to outer container
+        Panel titlePanel = new Panel();
+        titlePanel.setWidth("100%");
         Component title = createHeaderTitle();
-        layout.addComponent(title);//add the created title component
+        titlePanel.addComponent(title);
+        titlePanel.addStyleName(Runo.PANEL_LIGHT);
+        titlePanel.addStyleName("v-showhand");
+        titlePanel.addListener(new ClickListener() {
+
+            @Override
+            public void click(MouseEvents.ClickEvent event) {
+                DifferApplication.getCurrentApplication().close();
+            }
+            
+        });
+        layout.addComponent(titlePanel);//add the created title component
         Component loginPanel = createLoginPanel();
         layout.addComponent(loginPanel);
         layout.setComponentAlignment(loginPanel, Alignment.BOTTOM_RIGHT);
