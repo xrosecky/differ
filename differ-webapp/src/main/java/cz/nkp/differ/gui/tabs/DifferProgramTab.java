@@ -117,7 +117,7 @@ public class DifferProgramTab extends HorizontalLayout {
 
             AbsoluteLayout innerUploadSection = new AbsoluteLayout();
             innerUploadSection.setWidth("450px");
-            innerUploadSection.setHeight("510px");
+            innerUploadSection.setHeight("600px");
             
             VerticalLayout innerCompareSection = new VerticalLayout();
             innerCompareSection.setHeight("100%");
@@ -190,9 +190,14 @@ public class DifferProgramTab extends HorizontalLayout {
             innerUploadSection.addComponent(addFileUploadComponent(0), "left: 10px; top: 10px;");
             innerUploadSection.addComponent(addFileUploadComponent(1), "left: 10px; top: 250px;");
                         
-            Label lbl = new Label("You are currently using DIFFER anonymously. " + 
-            "Anonymous users are restricted to uploads of 5MB in size.");
-            
+            Label lbl = new Label("<b>Supported file types:</b> JPEG/JFIF (jpe, jpeg), JPEG2000 (jp2, jpf, jpx)," +
+                "TIFF (tif, tiff), DjVu, sDjVu (djv, djvu), PNG, (png), PDF (pdf), FITS (fits, fit, fts)<br><br>" +
+                
+                "<b>File size limits:</b> Anonymous users - 5MB, Registered users - 15MB.<br>" +
+                "Registered users may store up to 100MB of images.<br><br>" +
+                "<i>You are currently using DIFFER anonymously.</i>",
+                Label.CONTENT_XHTML);
+
             innerUploadSection.addComponent(lbl, "left: 10px; top: 470px;");
             innerCompareSection.addComponent(compareButton);
             innerCompareSection.addComponent(resetButton);
