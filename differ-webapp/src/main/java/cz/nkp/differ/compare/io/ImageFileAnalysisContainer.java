@@ -100,8 +100,6 @@ public class ImageFileAnalysisContainer {
 
         VerticalLayout previewContainer = new VerticalLayout();
         previewContainer.addStyleName("v-preview-reg-container");
-        previewContainer.setHeight("200px");
-        previewContainer.setWidth("360px");
         
         Button imageButton = new Button();
         imageButton.addStyleName(BaseTheme.BUTTON_LINK);
