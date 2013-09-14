@@ -126,3 +126,10 @@
 .v-showhand {
     cursor: pointer;
 }
+
+/*adds border around embedded documentation (in help tab)*/
+.v-embedded-docs {
+    border-style:solid;
+    border-width:1px;
+    border-color:#aaa;
+}

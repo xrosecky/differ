@@ -1,0 +1,89 @@
+<h2>DIFFER (DetermInator of File Format propERties)</h2>
+
+<P>
+We are pleased to introduced a developing application called DIFFER
+(tool wrapper with web based GUI) designed to help to identify,
+validate, and characterize selected still image file formats.
+</P>
+
+<P>This application supports selected still image formats: JPEG/JFIF (*.jpe,
+*.jpeg), JPEG2000 (*.jp2, *.jpf, *. jpx), TIFF (*.tif, *.tiff), DjVu,
+sDjVu (*.djv, *.djvu), PNG (*.png) with
+the maximum file size 15MB. The selection was not random; it is
+based on needs of the Digital Preservation Standard Department at the
+National Library in the Czech Republic.</P>
+
+<P>Identification, validation, and characterization actions are frequently necessary
+during routine operation of digital repositories and for digital
+preservation activities. We use for these actions different existing
+tools and modules: </P>
+	<UL>
+		<LI><A HREF="http://droid.sourceforge.net/">DROID (Digital Record Object Identification)</A></LI>
+		<LI><A HREF="http://www.sno.phy.queensu.ca/~phil/exiftool/">ExifTool (Read, Write and Edit Meta Information) </A></LI>
+		<LI><A HREF="http://hul.harvard.edu/jhove/">JHOVE (JSTOR/Harvard Object Validation Environment)</A></LI>
+		<LI><A HREF="http://meta-extractor.sourceforge.net/">MTD Extraction Tool</A></LI>
+		<LI><A HREF="http://www.nationalarchives.gov.uk/PRONOM/Default.aspx">PRONOM (The technical registry PRONOM)</A></LI>
+		<LI><A HREF="http://www.openplanetsfoundation.org/blogs/2011-09-01-simple-jp2-file-structure-checker">A simple JP2 file structure checker</A></LI>
+	</UL>
+
+<P>In addition, application DIFFER includes the following open source libraries:</P>
+	<UL>
+		<LI><A HREF="http://www.kakadusoftware.com/">KDU_expand</A></LI>
+		<LI><A HREF="http://www.libtiff.org/">LibTIFF</A></LI>
+		<LI><A HREF="http://djvu.sourceforge.net/doc/man/djvudump.html">DJVUDUMP</A></LI>
+	</UL>
+
+
+<P>
+The project DIFFER is built in order to implement only open-source tools and modules. The whole wrapper is intended for free use and is itself an open-source.
+</P>
+
+<P>Format <EM>identification</EM> is the process of determining the format to which a digital object
+conforms; in other words, it answers the question: <I>&quot;I
+have a digital object; what format is it?&quot;</I><sup>1</sup>
+</P>
+<P>Format <EM>validation</EM> is the process of determining the level of compliance of a digital
+object to the specification for its purported format, e.g.: <I>&quot;I
+have an object purportedly of format F, is it?&quot;</I><sup>1</sup></P>
+
+<P>Format validation conformance is determined at two
+levels: <I>well-formedness</I>&nbsp;and&nbsp;<I>validity</I>.<sup>1</sup></P>
+<OL>
+	<LI> digital object is well-formed if it meets the purely syntactic requirements for its format.</LI>
+	<LI> An object is valid if it is well-formed and it meets additional semantic-level requirements.</LI>
+</OL>
+
+<sup>1</sup> <A HREF="http://hul.harvard.edu/jhove/">http://hul.harvard.edu/jhove/</A>
+
+
+<P>Format characterization is the process of determining the format-specific significant properties of an object of a given format, e.g.: 
+<I>&quot;I have an object of format F, what are its salient properties?&quot;</I>
+</P>
+
+<P><b>SYSTEM REQUIREMENTS:</b><br /></P>
+<ul>
+<li>PHP + Apache2</li>
+<li>C++ (g++) compiler<li>
+<li>Disk space about 20 GB</li>
+<li>RAM minimum 2GB, optimal 4GB</li>
+</ul>
+
+
+<P><b>PROJECT TEAM:</b><br /> <br />
+
+<b>Project manager</b><br />
+Bedrich
+Vychodil, Head of Digital preservation Standards Department at
+National Library of the Czech Republic, <br />contact:
+bedrich.vychodil@nkp.cz, bedrich@gmail.com<br /> <br />
+
+<B>Programmer</b><br />
+Vaclav Rosecky<br />
+<br /> <br />
+
+<b>Tester</b><br />
+Jana Bouckova, External staff<br /> <br />
+
+<b>Consultant</b><br />
+Petr Stolcpart, External staff<br />
+</P>
