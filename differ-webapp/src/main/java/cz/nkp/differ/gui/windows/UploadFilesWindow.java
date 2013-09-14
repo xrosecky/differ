@@ -13,7 +13,7 @@ import org.vaadin.easyuploads.MultiFileUpload;
 import com.vaadin.ui.Window;
 import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.exceptions.ImageDifferException;
-import cz.nkp.differ.gui.components.RemoteFile;
+import cz.nkp.differ.gui.components.UploadFile;
 import cz.nkp.differ.gui.components.UserFilesWidget;
 import cz.nkp.differ.model.Image;
 
@@ -21,7 +21,9 @@ import cz.nkp.differ.model.Image;
 public class UploadFilesWindow extends Window {
 
     private MainDifferWindow mainWindow;
-
+    static private long MAX_SIZE = 15728640; //in bytes (15MB)
+    MultiFileUpload upload; 
+    
     public UploadFilesWindow(final MainDifferWindow window) {
 	this.mainWindow = window;
 	setCaption("Upload Files");
@@ -36,14 +38,18 @@ public class UploadFilesWindow extends Window {
 	    protected void handleFile(File file, String fileName,
 		    String mimeType, long length) {
 		DifferApplication app = (DifferApplication) DifferApplication.getCurrentApplication();
-		try {
-		    Image image = DifferApplication.getImageManager().uploadImage(app.getLoggedUser(), file, fileName);
-		    for (UserFilesWidget widget : mainWindow.getUserFilesWidgets()) {
-			widget.refresh();
-		    }
-		} catch (ImageDifferException ide) {
-		    window.showNotification("Error when uploading file.", "<br/>" + ide.getMessage(), Window.Notification.TYPE_ERROR_MESSAGE);
-		}
+
+                if (isValid(fileName, length)) {
+                    try {
+                        Image image = DifferApplication.getImageManager().uploadImage(app.getLoggedUser(), file, fileName);
+                        for (UserFilesWidget widget : mainWindow.getUserFilesWidgets()) {
+                            widget.refresh();
+                        }
+                    } catch (ImageDifferException ide) {
+                        window.showNotification("File failed to upload", "<br/>" + ide.getMessage(), Window.Notification.TYPE_ERROR_MESSAGE);
+                    }
+                }
+
 	    }
 	};
 	addComponent(upload);
@@ -59,7 +65,7 @@ public class UploadFilesWindow extends Window {
         uploadBtn.addListener(new ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent event) {
-                RemoteFile remoteFile = new RemoteFile((String) urlPaste.getValue());
+                UploadFile remoteFile = new UploadFile(UploadFile.TYPE.REMOTE_URL, (String) urlPaste.getValue(), MAX_SIZE);
                 if (remoteFile.isValid()) {
                     File file = remoteFile.getFile();
                     try {
@@ -69,8 +75,13 @@ public class UploadFilesWindow extends Window {
                             widget.refresh();
                         }
                     } catch (ImageDifferException ide) {
-                        window.showNotification("Error when uploading file.", "<br/>" + ide.getMessage(), Window.Notification.TYPE_ERROR_MESSAGE);
+                        window.showNotification("File failed to upload", "<br/>" + ide.getMessage(), Window.Notification.TYPE_ERROR_MESSAGE);
                     }
+                    urlPaste.setValue("");
+                } else {
+                    window.showNotification("File failed to upload",
+                                            "<br/>" + remoteFile.getErrorMessage(),
+                                            Window.Notification.TYPE_WARNING_MESSAGE);
                     urlPaste.setValue("");
                 }
 
@@ -82,5 +93,28 @@ public class UploadFilesWindow extends Window {
         remote.setComponentAlignment(uploadBtn, Alignment.BOTTOM_RIGHT);
         addComponent(remote);
     }
-    MultiFileUpload upload;
+    
+
+    private boolean isValid(String filename, long length) {
+        if (length > MAX_SIZE) {
+           DifferApplication.getCurrentApplication().getMainWindow().showNotification("File failed to upload",
+                "<br/>File must not exceed " + (MAX_SIZE/1048576) + "MB for registered users", Window.Notification.TYPE_WARNING_MESSAGE);
+           return false; 
+        }    
+        String ext = "";
+        int extIndex;
+        if (filename != null) {
+            if ((extIndex = filename.lastIndexOf('.') + 1) > 0) {
+                ext = filename.substring(extIndex);
+                for (String s : UploadFile.VALID_EXTENSIONS) {
+                    if (s.equalsIgnoreCase(ext)) {
+                        return true;
+                    }
+                }
+            }
+        }
+        DifferApplication.getCurrentApplication().getMainWindow().showNotification("File failed to upload",
+            "<br/>File extension " + ext.toUpperCase() + " is invalid", Window.Notification.TYPE_WARNING_MESSAGE);
+        return false;
+    }
 }

@@ -164,20 +164,14 @@ public class AnonymousUserView extends HorizontalLayout {
             final Upload uploadInstance = new Upload("Select Local File", receiver);
             uploadInstance.addStyleName("v-override");
             final Button uploadBtn = new Button("Upload");
-
             uploadInstance.setButtonCaption("Browse...");
-
             uploadInstance.addListener(new Upload.StartedListener() {
                 @Override
                 public void uploadStarted(Upload.StartedEvent event) {
-                    try {
-                        if (uploadInstance.getUploadSize() > MAX_FILE_SIZE) {
-                            uploadInstance.interruptUpload();
-                                        DifferApplication.getCurrentApplication().getMainWindow().showNotification("File failed to upload",
-                            "<br/>" + "File must not exceed 5MB for anonymous users", Window.Notification.TYPE_WARNING_MESSAGE);
-                        }
-                    } catch (Exception ex) {
-
+                    if (uploadInstance.getUploadSize() > MAX_FILE_SIZE) {
+                        uploadInstance.interruptUpload();
+                                    DifferApplication.getCurrentApplication().getMainWindow().showNotification("File failed to upload",
+                        "<br/>" + "File must not exceed 5MB for anonymous users", Window.Notification.TYPE_WARNING_MESSAGE);
                     }
                     urlPaste.setEnabled(false);
                     uploadBtn.setEnabled(false);
@@ -193,26 +187,34 @@ public class AnonymousUserView extends HorizontalLayout {
             uploadInstance.addListener(new Upload.SucceededListener() {
                 @Override
                 public void uploadSucceeded(Upload.SucceededEvent event) {
-                    embedded.setVisible(true);
-                    embedded.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));              
-                    embedded.addListener(new MouseEvents.ClickListener() {
-                        @Override
-                        public void click(MouseEvents.ClickEvent event) {
-                            Embedded fullview = new Embedded();
-                            fullview.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));
-                            DifferApplication.getMainApplicationWindow().addWindow(new FullSizeImageWindow(fullview));
+                    UploadFile ufile = new UploadFile(UploadFile.TYPE.LOCAL_FILESYSTEM, receiver.getFile().getAbsolutePath());
+                    if (ufile.isValid()) {
+                        embedded.setVisible(true);
+                        embedded.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));
+                        embedded.addListener(new MouseEvents.ClickListener() {
+                            @Override
+                            public void click(MouseEvents.ClickEvent event) {
+                                Embedded fullview = new Embedded();
+                                fullview.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));
+                                DifferApplication.getMainApplicationWindow().addWindow(new FullSizeImageWindow(fullview));
+                            }
+                        });
+                        compareButton.setEnabled(true);
+                        if (index == 0) {
+                            uploadA = receiver.getFile();
+                        } else {
+                            uploadB = receiver.getFile();
                         }
-                    });
-                    compareButton.setEnabled(true);
-                    if (index == 0) {
-                        uploadA = receiver.getFile();
+                        if (uploadA == null || uploadB == null) {
+                            compareButton.setCaption(BTN_TXT_PROCEED);
+                        } else {
+                            compareButton.setCaption(BTN_TXT_COMPARE);
+                        }
                     } else {
-                        uploadB = receiver.getFile();
-                    }
-                    if (uploadA == null || uploadB == null) {
-                        compareButton.setCaption(BTN_TXT_PROCEED);
-                    } else {
-                        compareButton.setCaption(BTN_TXT_COMPARE);
+                      DifferApplication.getCurrentApplication().getMainWindow().showNotification("File failed to upload",
+                              "<br/>" + ufile.getErrorMessage(), Window.Notification.TYPE_WARNING_MESSAGE);
+                      urlPaste.setEnabled(true);
+                      uploadBtn.setEnabled(true);
                     }
                 }           
             });
@@ -241,16 +243,16 @@ public class AnonymousUserView extends HorizontalLayout {
             uploadBtn.addListener(new Button.ClickListener() {
                 @Override
                 public void buttonClick(Button.ClickEvent event) {
-                    RemoteFile remoteFile = new RemoteFile((String) (urlPaste.getValue()));
-                    if (remoteFile.isValid()) {
-                        final File file = remoteFile.getFile();
+                    UploadFile ufile = new UploadFile(UploadFile.TYPE.REMOTE_URL, (String) (urlPaste.getValue()));
+                    if (ufile.isValid()) {
+                        final File file = ufile.getFile();
                         embedded.setVisible(true);
-                        embedded.setSource(new FileResource(file, DifferApplication.getCurrentApplication()));              
+                        embedded.setSource(new FileResource(file, DifferApplication.getCurrentApplication()));
                         embedded.addListener(new MouseEvents.ClickListener() {
                             @Override
                             public void click(MouseEvents.ClickEvent event) {
                                 Embedded fullview = new Embedded();
-                                fullview.setSource(new FileResource(receiver.getFile(), DifferApplication.getCurrentApplication()));
+                                fullview.setSource(new FileResource(file, DifferApplication.getCurrentApplication()));
                                 DifferApplication.getMainApplicationWindow().addWindow(new FullSizeImageWindow(fullview));
                             }
                         });                    
@@ -265,6 +267,11 @@ public class AnonymousUserView extends HorizontalLayout {
                         } else {
                             compareButton.setCaption(BTN_TXT_COMPARE);
                         }
+                    } else {
+                      DifferApplication.getCurrentApplication().getMainWindow().showNotification("File failed to upload",
+                              "<br/>" + ufile.getErrorMessage(), Window.Notification.TYPE_WARNING_MESSAGE);
+                      urlPaste.setValue("");
+                      uploadInstance.setEnabled(true);
                     }
                 }        
             });
