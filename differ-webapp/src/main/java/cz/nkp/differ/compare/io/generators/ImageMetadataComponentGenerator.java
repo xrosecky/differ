@@ -324,7 +324,7 @@ public class ImageMetadataComponentGenerator {
         button.addListener(new Button.ClickListener() {
             @Override
             public void buttonClick(ClickEvent event) {
-                layout.getWindow().showNotification(toolName, "version " + vrsn);
+                layout.getWindow().showNotification(toolName, "<br/>version " + vrsn, Window.Notification.TYPE_HUMANIZED_MESSAGE);
             } 
         });
         button.addStyleName("link");

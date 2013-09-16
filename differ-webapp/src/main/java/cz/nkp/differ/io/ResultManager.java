@@ -10,27 +10,40 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 
 /**
  *
  * @author xrosecky
+ * @author Thomas Truax
  */
 public class ResultManager {
 
     private static final String EXTENSION = ".xml";
-    private Jaxb2Marshaller marshaller;
     private String directory;
-
+    private JAXBContext context;
+    private Marshaller marshaller;
+    private Unmarshaller unmarshaller;
+    
+    
     public void save(SerializableImageProcessorResults result) throws IOException {
 	String name = new Date().toString();
 	File outputFile = new File(directory, name + EXTENSION);
 	OutputStream os;
 	os = new FileOutputStream(outputFile);
 	StreamResult streamResult = new StreamResult(os);
-	marshaller.marshal(result, streamResult);
+        try {
+            marshaller.marshal(result, streamResult);
+        } catch (JAXBException ex) {
+            Logger.getLogger(ResultManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     public List<Result> getResults() {
@@ -47,7 +60,12 @@ public class ResultManager {
     public SerializableImageProcessorResults getResult(Result result) throws IOException {
 	File input = new File(directory, result.getName());
 	StreamSource source = new StreamSource(new FileInputStream(input));
-	return (SerializableImageProcessorResults) marshaller.unmarshal(source);
+        try {
+            return (SerializableImageProcessorResults)unmarshaller.unmarshal(source);
+        } catch (JAXBException ex) {
+            Logger.getLogger(ResultManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
     }
 
     public String getDirectory() {
@@ -58,12 +76,34 @@ public class ResultManager {
 	this.directory = directory;
     }
 
-    public Jaxb2Marshaller getMarshaller() {
+    public Marshaller getMarshaller() {
 	return marshaller;
     }
 
-    public void setMarshaller(Jaxb2Marshaller marshaller) {
+    public void setMarshaller(Marshaller marshaller) {
 	this.marshaller = marshaller;
     }
     
+    public Unmarshaller getUnmarshaller() {
+        return unmarshaller;
+    }
+    
+    public void setUnmarshaller(Unmarshaller unmarshaller) {
+        this.unmarshaller = unmarshaller;
+    }
+    
+    /**
+     * Creates a JAXB marshaller context from a given class, then
+     * instantiates the Marshaller and Unmarshaller objects with the created context.
+     * @param class<br/>Example: ClassExample.class
+     */
+    public void createJAXBContext(Class className) {
+        try {
+            context = JAXBContext.newInstance(className);
+            this.marshaller = context.createMarshaller();
+            this.unmarshaller = context.createUnmarshaller();
+        } catch (JAXBException ex) {
+            Logger.getLogger(ResultManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }
