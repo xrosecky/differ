@@ -4,6 +4,8 @@ import cz.nkp.differ.compare.io.generators.ImageMetadataComponentGenerator;
 import org.apache.log4j.Logger;
 
 import com.vaadin.Application;
+import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
@@ -32,7 +34,8 @@ public class CompareComponent {
     private Application application = null;
     private PluginPollingThread currentThread;
     private Image[] images;
-
+    private ImageProcessorResult[] results;
+    
     public String getName() {
 	return "Compare";
     }
@@ -74,8 +77,7 @@ public class CompareComponent {
 	    childALayout.addComponent(iFAC1.getComponent());
 	    ImageFileAnalysisContainer iFAC2 = new ImageFileAnalysisContainer(result[1], this, 1, images[1].getFileName());
 	    childALayout.addComponent(iFAC2.getComponent());
-            ImageProcessorResult[] results = new ImageProcessorResult[] {result[0], result[1]};
-            exportResultsToXml(results);
+            results = new ImageProcessorResult[] {result[0], result[1]};
             ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(results, this);
             ImageMetadataComponentGenerator tableComp = null;
 	    if (result[2] != null) {
@@ -123,7 +125,14 @@ public class CompareComponent {
             layout.addComponent(childLayout);
             ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(result, this);
             layout.addComponent(table.getComponent());
-
+            Button btnSaveResults = new Button("Save Results");
+            btnSaveResults.addListener(new ClickListener() {
+                @Override
+                public void buttonClick(Button.ClickEvent event) {
+                    exportResultsToXml(results);
+                    DifferApplication.getMainApplicationWindow().showNotification("Success", "Results XML has been exported successfully");
+                }   
+            });
 	    return layout;
 	}
     }
