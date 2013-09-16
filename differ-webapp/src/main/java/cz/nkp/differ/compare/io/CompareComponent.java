@@ -12,13 +12,17 @@ import com.vaadin.ui.TextField;
 import com.vaadin.ui.Window;
 
 import cz.nkp.differ.DifferApplication;
+import cz.nkp.differ.io.ResultManager;
 import cz.nkp.differ.model.Image;
 import cz.nkp.differ.listener.ProgressListener;
 import cz.nkp.differ.plugins.tools.PluginPollingThread;
+import java.io.IOException;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Level;
+
 
 public class CompareComponent {
 
@@ -70,7 +74,9 @@ public class CompareComponent {
 	    childALayout.addComponent(iFAC1.getComponent());
 	    ImageFileAnalysisContainer iFAC2 = new ImageFileAnalysisContainer(result[1], this, 1, images[1].getFileName());
 	    childALayout.addComponent(iFAC2.getComponent());
-            ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(new ImageProcessorResult[] {result[0], result[1]}, this);
+            ImageProcessorResult[] results = new ImageProcessorResult[] {result[0], result[1]};
+            exportResultsToXml(results);
+            ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(results, this);
             ImageMetadataComponentGenerator tableComp = null;
 	    if (result[2] != null) {
                 Label comparedChecksum;
@@ -102,6 +108,7 @@ public class CompareComponent {
 	} else {
 	    HorizontalLayout childLayout = new HorizontalLayout();
             ImageProcessorResult[] result = new ImageProcessorResult[images.length];
+            exportResultsToXml(result);
             for (int i = 0; i < images.length; i++) {
 		try {
 		    result[i] = imageProcessor.processImage(images[i].getFile(), c);
@@ -116,6 +123,7 @@ public class CompareComponent {
             layout.addComponent(childLayout);
             ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(result, this);
             layout.addComponent(table.getComponent());
+
 	    return layout;
 	}
     }
@@ -126,5 +134,37 @@ public class CompareComponent {
 
     public void setApplication(Application application) {
 	this.application = application;
+    }
+    
+    public void exportResultsToXml(ImageProcessorResult[] ipr) {
+        ArrayList<SerializableImageProcessorResult> resultsList = new ArrayList<SerializableImageProcessorResult>();
+        for (ImageProcessorResult result : ipr) {
+            SerializableImageProcessorResult res = new SerializableImageProcessorResult();
+            try {
+                res.setFullImage(new SerializableImage(result.getFullImage()));
+                res.setPreview(new SerializableImage(result.getPreview()));
+            } catch (IOException ex) {
+                java.util.logging.Logger.getLogger(CompareComponent.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            res.setHistogram(result.getHistogram());
+            res.setType(result.getType());
+            res.setWidth(result.getWidth());
+            res.setHeight(result.getHeight());
+            res.setMetadata(result.getMetadata());
+            resultsList.add(res);
+        }
+        SerializableImageProcessorResults sipr = new SerializableImageProcessorResults();
+        sipr.setResults(resultsList);
+        ResultManager resultMan = new ResultManager();
+        
+        //TODO: verify this is correct path for web app
+        resultMan.setDirectory("./results");
+        
+        resultMan.createJAXBContext(SerializableImageProcessorResults.class);
+        try {
+            resultMan.save(sipr);
+        } catch (IOException ex) {
+            java.util.logging.Logger.getLogger(CompareComponent.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
