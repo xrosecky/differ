@@ -18,6 +18,7 @@ import cz.nkp.differ.io.ResultManager;
 import cz.nkp.differ.model.Image;
 import cz.nkp.differ.listener.ProgressListener;
 import cz.nkp.differ.plugins.tools.PluginPollingThread;
+import java.io.File;
 import java.io.IOException;
 
 import java.util.ArrayList;
@@ -78,6 +79,7 @@ public class CompareComponent {
 	    ImageFileAnalysisContainer iFAC2 = new ImageFileAnalysisContainer(result[1], this, 1, images[1].getFileName());
 	    childALayout.addComponent(iFAC2.getComponent());
             results = new ImageProcessorResult[] {result[0], result[1]};
+            
             ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(results, this);
             ImageMetadataComponentGenerator tableComp = null;
 	    if (result[2] != null) {
@@ -106,11 +108,11 @@ public class CompareComponent {
             }
             layout.addComponent(childALayout);
             layout.addComponent(childBLayout);
+            layout.addComponent(addExportResultsButton(results));
 	    return layout;
 	} else {
 	    HorizontalLayout childLayout = new HorizontalLayout();
-            ImageProcessorResult[] result = new ImageProcessorResult[images.length];
-            exportResultsToXml(result);
+            final ImageProcessorResult[] result = new ImageProcessorResult[images.length];
             for (int i = 0; i < images.length; i++) {
 		try {
 		    result[i] = imageProcessor.processImage(images[i].getFile(), c);
@@ -125,14 +127,7 @@ public class CompareComponent {
             layout.addComponent(childLayout);
             ImageMetadataComponentGenerator table = new ImageMetadataComponentGenerator(result, this);
             layout.addComponent(table.getComponent());
-            Button btnSaveResults = new Button("Save Results");
-            btnSaveResults.addListener(new ClickListener() {
-                @Override
-                public void buttonClick(Button.ClickEvent event) {
-                    exportResultsToXml(results);
-                    DifferApplication.getMainApplicationWindow().showNotification("Success", "Results XML has been exported successfully");
-                }   
-            });
+            layout.addComponent(addExportResultsButton(result));
 	    return layout;
 	}
     }
@@ -145,13 +140,32 @@ public class CompareComponent {
 	this.application = application;
     }
     
-    public void exportResultsToXml(ImageProcessorResult[] ipr) {
+    private Component addExportResultsButton(final ImageProcessorResult[] ipr) {
+        Button btnSave = new Button("Save Results");
+        btnSave.addListener(new ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                exportResultsToXml(ipr);
+                DifferApplication.getMainApplicationWindow().showNotification("Success", 
+                    "<br/>Results XML has been exported successfully," +
+                    "<br/>they can be found in the Results tab", 
+                    Window.Notification.TYPE_HUMANIZED_MESSAGE);                
+            }   
+        });
+        return btnSave;
+    }
+    
+    private void exportResultsToXml(ImageProcessorResult[] ipr) {
         ArrayList<SerializableImageProcessorResult> resultsList = new ArrayList<SerializableImageProcessorResult>();
         for (ImageProcessorResult result : ipr) {
             SerializableImageProcessorResult res = new SerializableImageProcessorResult();
             try {
-                res.setFullImage(new SerializableImage(result.getFullImage()));
-                res.setPreview(new SerializableImage(result.getPreview()));
+                if (result.getFullImage() != null) {
+                    res.setFullImage(new SerializableImage(result.getFullImage()));
+                }
+                if (result.getPreview() != null) {
+                    res.setPreview(new SerializableImage(result.getPreview()));
+                } 
             } catch (IOException ex) {
                 java.util.logging.Logger.getLogger(CompareComponent.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -164,11 +178,12 @@ public class CompareComponent {
         }
         SerializableImageProcessorResults sipr = new SerializableImageProcessorResults();
         sipr.setResults(resultsList);
-        ResultManager resultMan = new ResultManager();
-        
-        //TODO: verify this is correct path for web app
-        resultMan.setDirectory("./results");
-        
+        ResultManager resultMan = DifferApplication.getResultManager();
+        String resultsDir = DifferApplication.getCurrentApplication().getContext()
+                .getBaseDirectory().getAbsolutePath() + "/" + 
+                DifferApplication.getUserManager().getLoggedInUser() + "/results";
+        new File(resultsDir).mkdirs(); //make path in case it don't exist
+        resultMan.setDirectory(resultsDir);
         resultMan.createJAXBContext(SerializableImageProcessorResults.class);
         try {
             resultMan.save(sipr);

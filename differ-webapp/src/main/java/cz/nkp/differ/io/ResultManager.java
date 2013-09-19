@@ -48,12 +48,14 @@ public class ResultManager {
 
     public List<Result> getResults() {
 	List<Result> results = new ArrayList<Result>();
-	File dir = new File(directory);
-	for (File file : dir.listFiles()) {
-            Result result = new Result();
-            result.setName(file.getName());
-	    results.add(result);
-	}
+	if (directory != null) {
+            File dir = new File(directory);
+            for (File file : dir.listFiles()) {
+                Result result = new Result();
+                result.setName(file.getName());
+                results.add(result);
+            }
+        }
 	return results;
     }
 
