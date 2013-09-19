@@ -179,9 +179,7 @@ public class CompareComponent {
         SerializableImageProcessorResults sipr = new SerializableImageProcessorResults();
         sipr.setResults(resultsList);
         ResultManager resultMan = DifferApplication.getResultManager();
-        String resultsDir = DifferApplication.getCurrentApplication().getContext()
-                .getBaseDirectory().getAbsolutePath() + "/" + 
-                DifferApplication.getUserManager().getLoggedInUser() + "/results";
+        String resultsDir = "/tmp/differ/" + DifferApplication.getUserManager().getLoggedInUser() + "/results";
         new File(resultsDir).mkdirs(); //make path in case it don't exist
         resultMan.setDirectory(resultsDir);
         resultMan.createJAXBContext(SerializableImageProcessorResults.class);
