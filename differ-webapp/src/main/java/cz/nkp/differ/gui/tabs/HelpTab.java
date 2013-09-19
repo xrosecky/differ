@@ -39,7 +39,7 @@ public class HelpTab extends HorizontalLayout {
         /*
          * TODO: add http address of documentation in line below
          */
-        ExternalHTMLComponent extres = new ExternalHTMLComponent(parent, "http://www.google-melange.com");
+        ExternalHTMLComponent extres = new ExternalHTMLComponent(parent, "https://differ.readthedocs.org/en/latest");
 
         Component cmp = extres.getComponent();
         cmp.setStyleName("v-embedded-docs");
