@@ -231,25 +231,16 @@ public class ImageMetadataComponentGenerator {
             metadataTable.setCellStyleGenerator(new Table.CellStyleGenerator() {
                 @Override
                 public String getStyle(Object itemId, Object propertyId) {
-                    final ImageMetadata metadata;
-                    if (itemId instanceof Integer) {
-                        metadata = result[0].getMetadata().get((Integer) itemId);
-                    } else {
-                        metadata = (ImageMetadata) itemId;
-                    }
-                    if (result[0].getType() == ImageProcessorResult.Type.COMPARISON) {
-                        String key = metadata.getKey();
-                        if (Arrays.asList("red", "blue", "green").contains(key)) {
-                            return key;
-                        }
-                    } else {
-                        if (!nonConflictMetadata.contains(metadata.getKey())) {
-                            if (metadata.isConflict()) {
-                                return "red";
-                            } else {
+                    
+                    if (result.length == 2) {                   
+                        String valA = (String) metadataTable.getContainerProperty(itemId, COLUMN_A3_PROPERTY).getValue();
+                        String valB = (String) metadataTable.getContainerProperty(itemId, COLUMN_A4_PROPERTY).getValue();   
+                        if (valA != null && valB != null) {
+                            if (valA.equalsIgnoreCase(valB)) {
                                 return "green";
                             }
                         }
+                        return "red";
                     }
                     return "";
                 }
