@@ -81,7 +81,7 @@ public class UserManager {
     public User attemptLogin(String username, String userSuppliedPassword) throws UserDifferException {
 	User user = userDAO.getUserByUserName(username);
 	if (user == null) {
-	    throw new UserDifferException(UserDifferException.ErrorCode.BAD_PASSWORD_OR_USERNAME, "User does not exists.");
+	    throw new UserDifferException(UserDifferException.ErrorCode.BAD_PASSWORD_OR_USERNAME, "User does not exist");
 	}
 	String userSuppliedPasswordHash = getHashedPassword(userSuppliedPassword.toCharArray(), decode(user.getPasswordSalt()).getBytes());
 	if (user.getPasswordHash() == null) {
@@ -92,12 +92,7 @@ public class UserManager {
 	    LOGGER.trace("Logged in user: " + currentUser);
 	    return user;
 	}
-	throw new UserDifferException(UserDifferException.ErrorCode.BAD_PASSWORD_OR_USERNAME, "Bad password.");
-    }
-
-    // FIXME:TODO
-    public synchronized User attemptAnonymousLogin() {
-	return null;
+	throw new UserDifferException(UserDifferException.ErrorCode.BAD_PASSWORD_OR_USERNAME, "Bad password");
     }
 
     public synchronized String getLoggedInUser() {

@@ -22,7 +22,6 @@
   
     <properties>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	<differ.bin.dir>./bin</differ.bin.dir>
     </properties>
   
     <build>
@@ -41,15 +40,6 @@
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-war-plugin</artifactId>
 		<version>${maven.war.plugin.version}</version>
-		<configuration>
-		    <archive>
-			<manifestEntries>
-			    <Class-Path>plugins/*</Class-Path>
-			</manifestEntries>
-		    </archive>
-		    <outputDirectory>${differ.bin.dir}</outputDirectory>
-		    <warName>differ</warName>
-		</configuration>
 	    </plugin>
 		
 		<!--Plugin to compile GWT widget set -->
@@ -66,7 +56,6 @@
 		    <webappDirectory>${project.build.directory}/${project.build.finalName}/VAADIN/widgetsets</webappDirectory>
 		    <extraJvmArgs>-Xmx512M -Xss1024k</extraJvmArgs>
 		    <runTarget>clean</runTarget>
-		    <hostedWebapp>${differ.bin.dir}/differ.war</hostedWebapp>
 		    <copyWebapp>true</copyWebapp>
 		    <noServer>true</noServer>
 		    <soyc>false</soyc>
@@ -80,6 +69,11 @@
 		    </execution>
 		</executions>
 	    </plugin>
+	    <plugin>
+        	<groupId>org.mortbay.jetty</groupId>
+        	<artifactId>jetty-maven-plugin</artifactId>
+        	<version>7.6.8.v20121106</version>
+      	</plugin>
 	</plugins>
 	<pluginManagement>
 	    <plugins>
@@ -248,6 +242,13 @@
 	    <artifactId>easyuploads</artifactId>
 	    <version>0.5.1</version>
 	</dependency>
+        
+        <!-- Google analytics tracker -->
+        <dependency>
+            <groupId>org.vaadin.addons</groupId>
+            <artifactId>googleanalyticstracker</artifactId>
+            <version>1.1.1</version>
+        </dependency>
 	
 	<!-- Captcha Widget -->
 	<dependency>
@@ -321,6 +322,18 @@
 	    <groupId>org.vaadin.addon</groupId>
 	    <artifactId>jfreechartwrapper</artifactId>
 	    <version>2.5.0</version>
+	</dependency>
+	
+	<dependency>
+          <groupId>org.aspectj</groupId>
+          <artifactId>aspectjrt</artifactId>
+          <version>1.5.4</version>
+	</dependency>
+
+	<dependency>
+          <groupId>org.aspectj</groupId>
+          <artifactId>aspectjweaver</artifactId>
+          <version>1.5.4</version>
 	</dependency>
 
     </dependencies>

@@ -13,15 +13,21 @@ import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Window;
 
 import cz.nkp.differ.DifferApplication;
+import cz.nkp.differ.exceptions.UserDifferException;
 import cz.nkp.differ.gui.components.CaptchaComponent;
 import cz.nkp.differ.model.User;
 import cz.nkp.differ.user.UserManager;
 import cz.nkp.differ.util.GUIMacros;
+import java.util.HashMap;
+import java.util.Map;
 
 @SuppressWarnings("serial")
 public class RegisterUserWindow extends Window implements ClickListener {
 
+    RegisterUserWindow internal_this;
+    
     public RegisterUserWindow() {
+        internal_this = this;
 	setCaption("Register User");
 	setModal(true);
 	setDraggable(false);
@@ -65,31 +71,47 @@ public class RegisterUserWindow extends Window implements ClickListener {
 
 	captcha = new CaptchaComponent();
 	layout.addComponent(captcha);
-
+        
+        layout.setSpacing(true);
+        
 	return layout;
     }
 
     @Override
     public void buttonClick(ClickEvent event) {
 
-	if (!captcha.passedValidation()) {
-	    DifferApplication.getCurrentApplication().getMainWindow().showNotification("Captcha Problem", "<br/>You did not enter the correct captcha.", Window.Notification.TYPE_WARNING_MESSAGE);
-	    return;
-	}
-
 	String nameValue = (String) nameField.getValue();
 	String passValue = (String) passField.getValue();
+        
+        try {
+            if (captcha.passedValidation()) { //if captcha succeeded
+                
+                if (nameValue.length() > 0 && passValue.length() > 0) { //if name & pass aren't null
+                    
+                    //FIXME: ensure no special characters are used in username
+                    
+                    if (UserManager.getInstance().getUserDAO().getUserByUserName(nameValue) == null) { // if username doesnt exist
 
-	User user = new User();
-	user.setUserName(nameValue);
-	if (nameValue != null && passValue != null) {
-	    try {
-		user = UserManager.getInstance().registerUser(user, passValue);
-	    } catch (Exception ex) {
-		DifferApplication.getCurrentApplication().getMainWindow().showNotification("Error when registering user", "<br/>Error when registering user.", Window.Notification.TYPE_ERROR_MESSAGE);
-		captcha.reset();
-	    }
+                        User user = new User();
+                        user.setUserName(nameValue);
+                        UserManager.getInstance().registerUser(user, passValue);
+                        DifferApplication.getCurrentApplication().getMainWindow().showNotification("Success", "<br/>You have successfully registered as " + nameField + ", you may now login");
+                        GUIMacros.closeWindow(internal_this);
+           
+                    } else { //else username already exists
+                        throw new Exception("The username you have chosen already exists");
+                    }
+                } else { //else user or pass was not entered
+                    throw new Exception("The Username and Password fields cannot be empty");
+                }
+            } else { //else captcha was incorrect
+                throw new Exception("You did not enter the correct captcha, please try again");
+            }            
+        } catch (Exception ex) {
+            DifferApplication.getCurrentApplication().getMainWindow().showNotification("Error when registering user", "<br/>" + ex.getMessage(), Window.Notification.TYPE_ERROR_MESSAGE);
+            captcha.reset();
+        }
 
-	}//TODO:password strength checking etc
+        //TODO:password strength checking etc
     }
 }

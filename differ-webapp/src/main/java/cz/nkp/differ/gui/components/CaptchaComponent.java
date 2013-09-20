@@ -3,8 +3,10 @@ package cz.nkp.differ.gui.components;
 import com.vaadin.Application;
 import com.vaadin.data.validator.NullValidator;
 import com.vaadin.terminal.StreamResource;
+import com.vaadin.ui.Button;
 import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.Embedded;
+import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
@@ -42,10 +44,26 @@ public class CaptchaComponent extends CustomComponent{
 		embed = new CaptchaEmbeddedImage(CAPTCHA_LENGTH);
 		layout.addComponent(embed);
 		
+                HorizontalLayout innerLayout = new HorizontalLayout();
+                
 		captchaResponse = new TextField();
 		captchaResponse.addValidator(new NullValidator("You must provide a response to the validation!",false));
-		layout.addComponent(captchaResponse);
-		
+		captchaResponse.setInputPrompt("Input captcha");
+                
+                Button captchaReload = new Button("Reload");
+                captchaReload.addListener(new Button.ClickListener() {
+                    @Override
+                    public void buttonClick(Button.ClickEvent event) {
+                        reset();
+                    }
+                });
+                
+                innerLayout.addComponent(captchaResponse);
+                innerLayout.addComponent(captchaReload);
+                
+                layout.addComponent(innerLayout);
+		layout.setSpacing(true);
+                
 		return layout;
 	}
 	
@@ -53,7 +71,7 @@ public class CaptchaComponent extends CustomComponent{
 		if(embed.verifyCaptchaCode((String)captchaResponse.getValue())){
 			return true;
 		}
-		
+		reset(); //reload a new captcha if user input invalid captcha
 		return false;
 	}
 	

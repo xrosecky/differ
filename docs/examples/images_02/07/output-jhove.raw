@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30">
+ <date>2013-03-04T14:12:30+01:00</date>
+ <repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/07.jpg">
+  <reportingModule release="1.2" date="2007-02-13">JPEG-hul</reportingModule>
+  <lastModified>2013-02-15T17:56:11+01:00</lastModified>
+  <size>1085698</size>
+  <format>JPEG</format>
+  <version>1.02</version>
+  <status>Well-Formed and valid</status>
+  <sigMatch>
+  <module>JPEG-hul</module>
+  </sigMatch>
+  <messages>
+   <message offset="78" severity="info">Value offset not word-aligned: 141</message>
+  </messages>
+  <mimeType>image/jpeg</mimeType>
+  <profiles>
+   <profile>JFIF</profile>
+  </profiles>
+  <properties>
+   <property>
+    <name>JPEGMetadata</name>
+    <values arity="List" type="Property">
+    <property>
+     <name>CompressionType</name>
+     <values arity="Scalar" type="String">
+      <value>Huffman coding, Baseline DCT</value>
+     </values>
+    </property>
+    <property>
+     <name>Images</name>
+     <values arity="List" type="Property">
+     <property>
+      <name>Number</name>
+      <values arity="Scalar" type="Integer">
+       <value>1</value>
+      </values>
+     </property>
+     <property>
+      <name>Image</name>
+      <values arity="List" type="Property">
+      <property>
+       <name>NisoImageMetadata</name>
+       <values arity="Scalar" type="NISOImageMetadata">
+        <value>
+      <mix:mix xmlns:mix="http://www.loc.gov/mix/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/ http://www.loc.gov/mix/mix02.xsd">
+       <mix:BasicImageParameters>
+        <mix:Format>
+         <mix:MIMEType>image/jpeg</mix:MIMEType>
+         <mix:ByteOrder>big-endian</mix:ByteOrder>
+         <mix:Compression>
+          <mix:CompressionScheme>6</mix:CompressionScheme>
+         </mix:Compression>
+         <mix:PhotometricInterpretation>
+          <mix:ColorSpace>6</mix:ColorSpace>
+         </mix:PhotometricInterpretation>
+        </mix:Format>
+       </mix:BasicImageParameters>
+       <mix:ImageCreation>
+       </mix:ImageCreation>
+        <mix:ImagingPerformanceAssessment>
+         <mix:SpatialMetrics>
+          <mix:SamplingFrequencyUnit>2</mix:SamplingFrequencyUnit>
+          <mix:XSamplingFrequency>300</mix:XSamplingFrequency>
+          <mix:YSamplingFrequency>300</mix:YSamplingFrequency>
+          <mix:ImageWidth>2000</mix:ImageWidth>
+          <mix:ImageLength>1346</mix:ImageLength>
+        </mix:SpatialMetrics>
+        <mix:Energetics>
+         <mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+         <mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+        </mix:Energetics>
+       </mix:ImagingPerformanceAssessment>
+      </mix:mix>
+        </value>
+       </values>
+      </property>
+      <property>
+       <name>RestartInterval</name>
+       <values arity="Scalar" type="Integer">
+        <value>250</value>
+       </values>
+      </property>
+      <property>
+       <name>Scans</name>
+       <values arity="Scalar" type="Integer">
+        <value>1</value>
+       </values>
+      </property>
+      <property>
+       <name>QuantizationTables</name>
+       <values arity="List" type="Property">
+       <property>
+        <name>QuantizationTable</name>
+        <values arity="Array" type="Property">
+        <property>
+         <name>Precision</name>
+         <values arity="Scalar" type="String">
+          <value>8-bit</value>
+         </values>
+        </property>
+        <property>
+         <name>DestinationIdentifier</name>
+         <values arity="Scalar" type="Integer">
+          <value>0</value>
+         </values>
+        </property>
+        </values>
+       </property>
+       </values>
+      </property>
+      <property>
+       <name>XMP</name>
+       <values arity="Scalar" type="String">
+        <value>&lt;x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='XMP toolkit 3.0-28, framework 1.6'&gt;
+&lt;rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rd4b3antax-ns#' xmlns:iX='http://ns.adobe.com/iX/1.0/'&gt;
+
+ &lt;rdf:Description rdf:about='uuid:164b2636-48a0-11d9-90f4-c22daedd6e5a'
+  xmlns:exif='http://ns.adobe.com/exif/1.0/'&gt;
+  &lt;exif:ColorSpace&gt;1&lt;/exif:ColorSpace&gt;
+  &lt;exif:PixelXDimension&gt;2000&lt;/exif:PixelXDimension&gt;
+  &lt;exif:PixelYDimension&gt;1346&lt;/exif:PixelYDimension&gt;
+ &lt;/rdf:Description&gt;
+
+ &lt;rdf:Description rdf:about='uuid:164b2636-48a0-11d9-90f4-c22daedd6e5a'
+  xmlns:pdf='http://ns.adobe.com/pdf/1.3/'&gt;
+ &lt;/rdf:Description&gt;
+
+ &lt;rdf:Description rdf:about='uuid:164b2636-48a0-11d9-90f4-c22daedd6e5a'
+  xmlns:photoshop='http://ns.adobe.com/photoshop/1.0/'&gt;
+  &lt;photoshop:History&gt;&lt;/photoshop:History&gt;
+ &lt;/rdf:Description&gt;
+
+ &lt;rdf:Description rdf:about='uuid:164b2636-48a0-11d9-90f4-c22daedd6e5a'
+  xmlns:tiff='http://ns.adobe.com/tiff/1.0/'&gt;
+  &lt;tiff:Orientation&gt;1&lt;/tiff:Orientation&gt;
+  &lt;tiff:XResolution&gt;300/1&lt;/tiff:XResolution&gt;
+  &lt;tiff:YResolution&gt;300/1&lt;/tiff:YResolution&gt;
+  &lt;tiff:ResolutionUnit&gt;2&lt;/tiff:ResolutionUnit&gt;
+ &lt;/rdf:Description&gt;
+
+ &lt;rdf:Description rdf:about='uuid:164b2636-48a0-11d9-90f4-c22daedd6e5a'
+  xmlns:xap='http://ns.adobe.com/xap/1.0/'&gt;
+  &lt;xap:CreateDate&gt;2004-12-07T14:38:49-08:00&lt;/xap:CreateDate&gt;
+  &lt;xap:ModifyDate&gt;2004-12-07T14:38:49-08:00&lt;/xap:ModifyDate&gt;
+  &lt;xap:MetadataDate&gt;2004-12-07T14:38:49-08:00&lt;/xap:MetadataDate&gt;
+  &lt;xap:CreatorTool&gt;Adobe Photoshop CS Windows&lt;/xap:CreatorTool&gt;
+ &lt;/rdf:Description&gt;
+
+ &lt;rdf:Description rdf:about='uuid:164b2636-48a0-11d9-90f4-c22daedd6e5a'
+  xmlns:stRef='http://ns.adobe.com/xap/1.0/sType/ResourceRef#'
+  xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/'&gt;
+  &lt;xapMM:DerivedFrom rdf:parseType='Resource'&gt;
+   &lt;stRef:instanceID&gt;uuid:164b2632-48a0-11d9-90f4-c22daedd6e5a&lt;/stRef:instanceID&gt;
+   &lt;stRef:documentID&gt;adobe:docid:photoshop:e911ff70-489e-11d9-90f4-c22daedd6e5a&lt;/stRef:documentID&gt;
+  &lt;/xapMM:DerivedFrom&gt;
+  &lt;xapMM:DocumentID&gt;adobe:docid:photoshop:164b2635-48a0-11d9-90f4-c22daedd6e5a&lt;/xapMM:DocumentID&gt;
+ &lt;/rdf:Description&gt;
+
+ &lt;rdf:Description rdf:about='uuid:164b2636-48a0-11d9-90f4-c22daedd6e5a'
+  xmlns:dc='http://purl.org/dc/elements/1.1/'&gt;
+  &lt;dc:format&gt;image/jpeg&lt;/dc:format&gt;
+ &lt;/rdf:Description&gt;
+
+&lt;/rdf:RDF&gt;
+&lt;/x:xmpmeta&gt;</value>
+       </values>
+      </property>
+      </values>
+     </property>
+     </values>
+    </property>
+    <property>
+     <name>ApplicationSegments</name>
+     <values arity="List" type="String">
+      <value>APP0</value>
+      <value>APP1</value>
+      <value>APP13</value>
+      <value>APP1</value>
+      <value>APP2</value>
+      <value>APP14</value>
+     </values>
+    </property>
+    </values>
+   </property>
+  </properties>
+ </repInfo>
+</jhove>

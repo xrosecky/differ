@@ -6,6 +6,7 @@ import cz.nkp.differ.compare.metadata.ImageMetadata;
 import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.terminal.FileResource;
 import com.vaadin.terminal.Resource;
+import com.vaadin.ui.AbsoluteLayout;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Button.ClickEvent;
@@ -25,6 +26,7 @@ import cz.nkp.differ.DifferApplication;
 import cz.nkp.differ.gui.windows.FullSizeImageWindow;
 import cz.nkp.differ.gui.windows.HistogramSettingsWindow;
 import cz.nkp.differ.gui.windows.RawDataWindow;
+import cz.nkp.differ.util.GUIMacros;
 import java.awt.Color;
 
 import java.awt.Graphics;
@@ -49,33 +51,59 @@ import org.vaadin.addon.JFreeChartWrapper;
 public class ImageFileAnalysisContainer {
 
     private ImageProcessorResult result;
+    private String imgLabel = "Image";
+    private String imgName = "";
     private CompareComponent parent;
     private XYPlot plot;
     private final int scaleFactor = 400;
     private JFreeChartWrapper chartComponent = null;
     private List<String> nonConflictMetadata = Arrays.asList("exit-code");
+    private Label checksumLabel = null;
 
     public ImageFileAnalysisContainer(ImageProcessorResult result, CompareComponent parent) {
         this.result = result;
         this.parent = parent;
     }
+    
+    public ImageFileAnalysisContainer(ImageProcessorResult result, CompareComponent parent, int index) {
+        this(result, parent);
+        switch (index) {
+            case 0: imgLabel = "Image A"; break;
+            case 1: imgLabel = "Image B"; break;
+            case 2: imgLabel = "Image Comparison"; break;
+            default: 
+        }
+    }
 
+    public ImageFileAnalysisContainer(ImageProcessorResult result, CompareComponent parent, int imgIndex, String imgName) {
+        this(result, parent, imgIndex);
+        this.imgName = "— <i>" + imgName + "</i>";
+    }
+    
     public Image getImage() {
         return result.getPreview();
     }
 
     public Layout getComponent() {
         final VerticalLayout layout = new VerticalLayout();
+        layout.addStyleName("v-results");
         generateComponent(layout);
         return layout;
     }
 
     private void generateComponent(final Layout layout) {
         // Image preview
+        layout.addStyleName("v-preview-reg");
+        
         final Resource imageFullResource = imageToResource(result.getFullImage());
         final Resource imageScaledResource = imageToResource(result.getPreview());
+
+        VerticalLayout previewContainer = new VerticalLayout();
+        previewContainer.addStyleName("v-preview-reg-container");
+        
         Button imageButton = new Button();
-        imageButton.setStyleName(BaseTheme.BUTTON_LINK);
+        imageButton.addStyleName(BaseTheme.BUTTON_LINK);
+        imageButton.addStyleName("v-preview-reg-img");
         imageButton.setIcon(imageScaledResource);
         if (imageFullResource != null) {
             imageButton.addListener(new ClickListener() {
@@ -88,71 +116,28 @@ public class ImageFileAnalysisContainer {
                 }
             });
         }
-        layout.addComponent(imageButton);
+        
+        // Image label & name
+        layout.addComponent(new Label("<b>" + imgLabel + "</b> " + imgName, Label.CONTENT_XHTML));
+        
+        previewContainer.addComponent(imageButton);
+        layout.addComponent(previewContainer);
+        
         // Image checksum
-        Label hashLabel = new Label();
-        hashLabel.setCaption(String.format("Hash: %s", result.getMD5Checksum()));
-        layout.addComponent(hashLabel);
+        if (checksumLabel != null) {
+            layout.addComponent(checksumLabel);
+        } else {
+            layout.addComponent(new Label(String.format("<i>Hash:</i> %s", result.getMD5Checksum()), Label.CONTENT_XHTML));
+        }
+        
         // Histogram
         if (result.getType() == ImageProcessorResult.Type.IMAGE) {
             generateHistogramComponent(layout, false);
         } else {
             generateHistogramComponent(layout, true);
         }
-        // Metadata table
-        BeanItemContainer metadataContainer = new BeanItemContainer<ImageMetadata>(ImageMetadata.class, result.getMetadata());
-        metadataContainer.sort(new String[]{"key"}, new boolean[]{true});
-        final Table metadataTable = new Table("Metadata", metadataContainer);
-        metadataTable.setSelectable(true);
-        metadataTable.setMultiSelect(false);
-        metadataTable.setImmediate(true);
-        metadataTable.setVisibleColumns(new Object[]{"key", "source", "value", "unit"});
-        metadataTable.setCellStyleGenerator(new Table.CellStyleGenerator() {
-            @Override
-            public String getStyle(Object itemId, Object propertyId) {
-                ImageMetadata metadata = (ImageMetadata) itemId;
-                if (result.getType() == ImageProcessorResult.Type.COMPARISON) {
-                    String key = metadata.getKey();
-                    if (Arrays.asList("red", "blue", "green").contains(key)) {
-                        return key;
-                    }
-                } else {
-                    if (!nonConflictMetadata.contains(metadata.getKey())) {
-                        if (metadata.isConflict()) {
-                            return "red";
-                        } else {
-                            return "green";
-                        }
-                    }
-                }
-                return "";
-            }
-        });
-        layout.addComponent(metadataTable);
-        final Button rawData = new Button();
-        rawData.setCaption("Raw data");
-        rawData.addListener(new ClickListener() {
-            @Override
-            public void buttonClick(ClickEvent event) {
-                try {
-                    ImageMetadata metadata = (ImageMetadata) metadataTable.getValue();
-                    DifferApplication.getCurrentApplication().getMainWindow().addWindow(new RawDataWindow(parent, metadata.getSource()));
-                } catch (Exception ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
-        rawData.setImmediate(true);
-        rawData.setEnabled(false); //FIXME
-        layout.addComponent(rawData);
-        metadataTable.addListener(new ValueChangeListener() {
-            @Override
-            public void valueChange(ValueChangeEvent event) {
-                rawData.setEnabled(true);
-            }
-        });
     }
-
+    
     private void generateHistogramComponent(final Layout mainLayout, boolean logarithmic) {
         HorizontalLayout histogramLayout = new HorizontalLayout();
         histogramLayout.setMargin(true);
@@ -184,7 +169,7 @@ public class ImageFileAnalysisContainer {
         });
         histogramLayout.addComponent(downloadButton);
 
-        if (result.getType() == ImageProcessorResult.Type.COMPARISON) {
+        //if (result.getType() == ImageProcessorResult.Type.COMPARISON) {
             Button zoomButton = new Button();
             zoomButton.setImmediate(true);
             zoomButton.setCaption("Setting");
@@ -207,6 +192,7 @@ public class ImageFileAnalysisContainer {
                                         logarithmic, xRange[0], xRange[1], yRange[0], yRange[1]);
                                 mainLayout.replaceComponent(chartComponent, newChartComponent);
                                 chartComponent = newChartComponent;
+                                GUIMacros.closeWindow(zoomSettings);
                             } catch (NumberFormatException nfe) {
                                 parent.getApplication().getMainWindow().showNotification("Invalid value", "", Notification.TYPE_ERROR_MESSAGE);
                             }
@@ -217,7 +203,7 @@ public class ImageFileAnalysisContainer {
                 }
             });
             histogramLayout.addComponent(zoomButton);
-        }
+        //}
         mainLayout.addComponent(histogramLayout);
     }
 
@@ -274,7 +260,27 @@ public class ImageFileAnalysisContainer {
         chart.setHeight(scaleFactor, Component.UNITS_PIXELS);
         return chart;
     }
-
+    
+    /**
+     * Set up component to generate reports
+     * @author Jonatan Svensson
+     
+    public void setupExport(final Layout mainLayout){
+        Button downloadPDFButton = new Button();
+        downloadPDFButton.setCaption("Download as PDF");
+        // TODO Listener
+        //	generatePDF()
+        // callback from dynamicreports
+        
+        Button downloadXlsButton = new Button();
+        downloadXlsButton.setCaption("Download as Xls");
+        // TODO Listener
+    	// generateXls()
+        // callback from dynamicreports
+        
+        // add buttons to mainLayout
+    	}*/
+     
     public Resource imageToResource(Image img) {
         if (img == null) {
             return null;
@@ -301,4 +307,13 @@ public class ImageFileAnalysisContainer {
             return null;
         }
     }
+    
+    public String getChecksum() {
+        return result.getMD5Checksum();
+    }
+    
+    public void setChecksumLabel(Label label) {
+        checksumLabel = label;
+    }
+    
 }

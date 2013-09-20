@@ -20,3 +20,116 @@
 .v-table-row-blue {
     background: lightblue;
 }
+
+/*adds padding and bg color to anonymous upload sections*/
+.v-horizontallayout
+.v-upload {
+    padding: 20px 0 20px 20px;
+    background: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+/*prevents inheritance issue with local-file section*/
+.v-horizontallayout
+.v-upload
+.v-override {
+    padding: 0;
+    border-style: none;
+    max-height: 30px;
+}
+
+/*for -OR- label in anonymous upload sections*/
+.v-label
+.v-labelspacer {	
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-weight: 900;
+}
+
+/*Overrides default loading indicator*/
+.v-loading-indicator,  
+.v-loading-indicator-delay,  
+.v-loading-indicator-wait {  
+    width: 100%;  
+    height: 999%;
+    margin: 0;  
+    background-image: url(./img/progress.gif);
+    background-position: 50%;  
+    background-repeat: no-repeat;  
+    background-attachment: fixed;   
+}
+
+/*for COMPARE|PROCEED buttons*/
+.v-bigbutton
+.v-button-wrap {
+    height: 34px;
+    width: 70px;
+}
+
+.v-preview-anon img {	
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.v-preview-reg {
+   padding: 5px 0 5px 5px;
+}
+
+.v-preview-reg-container {
+    padding: 10px 0 10px 0;
+    height: 200px;
+    width: 360px;
+}
+
+.v-preview-reg-img img {
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 360px;
+}
+
+.v-results {
+    margin: 10px 10px 10px 0;
+    background: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+.v-table-metadata {
+   margin: 10px 10px 10px 0; 
+}
+
+/*text captions in COMPARE|PROCEED buttons*/
+.compare-button-caption {
+    margin-top: 8px;
+    margin-left: -2px;
+    font-weight: 700;
+    font-size: 120%;
+}
+
+/*for RESET button*/
+.v-longbutton
+.v-button-wrap {
+    width: 70px;
+}
+
+/*for image logos in footer*/
+.v-footer-logos img {
+    padding: 0 8px 0 8px;
+}
+
+/*forces pointer cursor*/
+.v-showhand {
+    cursor: pointer;
+}
+
+/*adds border around embedded documentation (in help tab)*/
+.v-embedded-docs {
+    border-style:solid;
+    border-width:1px;
+    border-color:#aaa;
+}

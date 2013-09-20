@@ -17,6 +17,8 @@ public class MetadataSource {
 
     @XmlAttribute
     private int exitCode;
+    @XmlAttribute
+    private String version;
     @XmlElement
     private String stderr;
     @XmlElement
@@ -24,17 +26,22 @@ public class MetadataSource {
     @XmlAttribute(name = "source")
     @XmlID
     private String sourceName;
-
+    
     public MetadataSource() {
     }
 
     public MetadataSource(int exitCode, String stdout, String stderr, String sourceName) {
-	this.exitCode = exitCode;
+        this(exitCode, stdout, stderr, sourceName, null);
+    }
+
+    public MetadataSource(int exitCode, String stdout, String stderr, String sourceName, String version) {
+        this.exitCode = exitCode;
 	this.stdout = stdout;
 	this.stderr = stderr;
 	this.sourceName = sourceName;
+        this.version = version;
     }
-
+    
     public String getSourceName() {
 	return sourceName;
     }
@@ -66,7 +73,15 @@ public class MetadataSource {
     public void setExitCode(int exitCode) {
 	this.exitCode = exitCode;
     }
-
+    
+    public void setVersion(String version) {
+        this.version = version;
+    }
+    
+    public String getVersion() {
+        return version;
+    }
+    
     @Override
     public String toString() {
 	return sourceName;

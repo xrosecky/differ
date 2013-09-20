@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30">
+ <date>2013-03-04T14:15:13+01:00</date>
+ <repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_01/15.tiff">
+  <reportingModule release="1.5" date="2007-10-02">TIFF-hul</reportingModule>
+  <lastModified>2013-02-24T19:54:11+01:00</lastModified>
+  <size>786572</size>
+  <format>TIFF</format>
+  <version>5.0</version>
+  <status>Well-Formed and valid</status>
+  <sigMatch>
+  <module>TIFF-hul</module>
+  </sigMatch>
+  <mimeType>image/tiff</mimeType>
+  <properties>
+   <property>
+    <name>TIFFMetadata</name>
+    <values arity="Array" type="Property">
+    <property>
+     <name>ByteOrder</name>
+     <values arity="Scalar" type="String">
+      <value>big-endian</value>
+     </values>
+    </property>
+    <property>
+     <name>IFDs</name>
+     <values arity="List" type="Property">
+     <property>
+      <name>Number</name>
+      <values arity="Scalar" type="Integer">
+       <value>1</value>
+      </values>
+     </property>
+     <property>
+      <name>IFD</name>
+      <values arity="Array" type="Property">
+      <property>
+       <name>Offset</name>
+       <values arity="Scalar" type="Long">
+        <value>786440</value>
+       </values>
+      </property>
+      <property>
+       <name>Type</name>
+       <values arity="Scalar" type="String">
+        <value>TIFF</value>
+       </values>
+      </property>
+      <property>
+       <name>Entries</name>
+       <values arity="List" type="Property">
+       <property>
+        <name>NisoImageMetadata</name>
+        <values arity="Scalar" type="NISOImageMetadata">
+         <value>
+       <mix:mix xmlns:mix="http://www.loc.gov/mix/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/ http://www.loc.gov/mix/mix02.xsd">
+        <mix:BasicImageParameters>
+         <mix:Format>
+          <mix:MIMEType>image/tiff</mix:MIMEType>
+          <mix:ByteOrder>big-endian</mix:ByteOrder>
+          <mix:Compression>
+           <mix:CompressionScheme>1</mix:CompressionScheme>
+          </mix:Compression>
+          <mix:PhotometricInterpretation>
+           <mix:ColorSpace>2</mix:ColorSpace>
+           <mix:ReferenceBlackWhite>0.0 255.0 0.0 255.0 0.0 255.0</mix:ReferenceBlackWhite>
+          </mix:PhotometricInterpretation>
+          <mix:Segments>
+           <mix:StripOffsets>8</mix:StripOffsets>
+           <mix:RowsPerStrip>4294967295</mix:RowsPerStrip>
+           <mix:StripByteCounts>786432</mix:StripByteCounts>
+          </mix:Segments>
+          <mix:PlanarConfiguration>1</mix:PlanarConfiguration>
+         </mix:Format>
+         <mix:File>
+          <mix:Orientation>1</mix:Orientation>
+         </mix:File>
+        </mix:BasicImageParameters>
+        <mix:ImageCreation>
+        </mix:ImageCreation>
+         <mix:ImagingPerformanceAssessment>
+          <mix:SpatialMetrics>
+           <mix:ImageWidth>512</mix:ImageWidth>
+           <mix:ImageLength>512</mix:ImageLength>
+         </mix:SpatialMetrics>
+         <mix:Energetics>
+          <mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+          <mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+         </mix:Energetics>
+        </mix:ImagingPerformanceAssessment>
+       </mix:mix>
+         </value>
+        </values>
+       </property>
+       <property>
+        <name>NewSubfileType</name>
+        <values arity="Scalar" type="Long">
+         <value>0</value>
+        </values>
+       </property>
+       <property>
+        <name>SampleFormat</name>
+        <values arity="Array" type="Integer">
+         <value>1</value>
+         <value>1</value>
+         <value>1</value>
+        </values>
+       </property>
+       <property>
+        <name>MinSampleValue</name>
+        <values arity="Array" type="Integer">
+         <value>0</value>
+         <value>0</value>
+         <value>0</value>
+        </values>
+       </property>
+       <property>
+        <name>MaxSampleValue</name>
+        <values arity="Array" type="Integer">
+         <value>255</value>
+         <value>255</value>
+         <value>255</value>
+        </values>
+       </property>
+       <property>
+        <name>TransferRange</name>
+        <values arity="Array" type="Integer">
+         <value>0</value>
+         <value>255</value>
+         <value>0</value>
+         <value>255</value>
+         <value>0</value>
+         <value>255</value>
+        </values>
+       </property>
+       <property>
+        <name>Threshholding</name>
+        <values arity="Scalar" type="Integer">
+         <value>1</value>
+        </values>
+       </property>
+       <property>
+        <name>TIFFITProperties</name>
+        <values arity="List" type="Property">
+        <property>
+         <name>BackgroundColorIndicator</name>
+         <values arity="Scalar" type="String">
+          <value>background not defined</value>
+         </values>
+        </property>
+        <property>
+         <name>ImageColorIndicator</name>
+         <values arity="Scalar" type="String">
+          <value>image not defined</value>
+         </values>
+        </property>
+        <property>
+         <name>TransparencyIndicator</name>
+         <values arity="Scalar" type="String">
+          <value>no transparency</value>
+         </values>
+        </property>
+        <property>
+         <name>PixelIntensityRange</name>
+         <values arity="Array" type="Integer">
+          <value>0</value>
+          <value>255</value>
+         </values>
+        </property>
+        <property>
+         <name>RasterPadding</name>
+         <values arity="Scalar" type="String">
+          <value>1 byte</value>
+         </values>
+        </property>
+        <property>
+         <name>BitsPerRunLength</name>
+         <values arity="Scalar" type="Integer">
+          <value>8</value>
+         </values>
+        </property>
+        <property>
+         <name>BitsPerExtendedRunLength</name>
+         <values arity="Scalar" type="Integer">
+          <value>16</value>
+         </values>
+        </property>
+        </values>
+       </property>
+       </values>
+      </property>
+      </values>
+     </property>
+     </values>
+    </property>
+    </values>
+   </property>
+  </properties>
+ </repInfo>
+</jhove>

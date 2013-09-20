@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jhove xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hul.harvard.edu/ois/xml/ns/jhove" xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/1.5/jhove.xsd" name="Jhove" release="1.4" date="2009-07-30">
+ <date>2013-03-04T14:10:56+01:00</date>
+ <repInfo uri="/home/stavel/differ/differ-cmdline/../docs/examples/images_02/01.jpg">
+  <reportingModule release="1.2" date="2007-02-13">JPEG-hul</reportingModule>
+  <lastModified>2013-02-15T17:56:11+01:00</lastModified>
+  <size>177405</size>
+  <format>JPEG</format>
+  <status>Well-Formed and valid</status>
+  <sigMatch>
+  <module>JPEG-hul</module>
+  </sigMatch>
+  <mimeType>image/jpeg</mimeType>
+  <properties>
+   <property>
+    <name>JPEGMetadata</name>
+    <values arity="List" type="Property">
+    <property>
+     <name>CompressionType</name>
+     <values arity="Scalar" type="String">
+      <value>Huffman coding, Baseline DCT</value>
+     </values>
+    </property>
+    <property>
+     <name>Images</name>
+     <values arity="List" type="Property">
+     <property>
+      <name>Number</name>
+      <values arity="Scalar" type="Integer">
+       <value>1</value>
+      </values>
+     </property>
+     <property>
+      <name>Image</name>
+      <values arity="List" type="Property">
+      <property>
+       <name>NisoImageMetadata</name>
+       <values arity="Scalar" type="NISOImageMetadata">
+        <value>
+      <mix:mix xmlns:mix="http://www.loc.gov/mix/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mix/ http://www.loc.gov/mix/mix02.xsd">
+       <mix:BasicImageParameters>
+        <mix:Format>
+         <mix:MIMEType>image/jpeg</mix:MIMEType>
+         <mix:ByteOrder>big-endian</mix:ByteOrder>
+         <mix:Compression>
+          <mix:CompressionScheme>6</mix:CompressionScheme>
+         </mix:Compression>
+        </mix:Format>
+       </mix:BasicImageParameters>
+       <mix:ImageCreation>
+       </mix:ImageCreation>
+        <mix:ImagingPerformanceAssessment>
+         <mix:SpatialMetrics>
+          <mix:ImageWidth>512</mix:ImageWidth>
+          <mix:ImageLength>512</mix:ImageLength>
+        </mix:SpatialMetrics>
+        <mix:Energetics>
+         <mix:BitsPerSample>8,8,8</mix:BitsPerSample>
+         <mix:SamplesPerPixel>3</mix:SamplesPerPixel>
+        </mix:Energetics>
+       </mix:ImagingPerformanceAssessment>
+      </mix:mix>
+        </value>
+       </values>
+      </property>
+      <property>
+       <name>PixelAspectRatio</name>
+       <values arity="List" type="Property">
+       <property>
+        <name>PixelAspectRatioX</name>
+        <values arity="Scalar" type="Integer">
+         <value>0</value>
+        </values>
+       </property>
+       <property>
+        <name>PixelAspectRatioY</name>
+        <values arity="Scalar" type="Integer">
+         <value>0</value>
+        </values>
+       </property>
+       </values>
+      </property>
+      <property>
+       <name>RestartInterval</name>
+       <values arity="Scalar" type="Integer">
+        <value>64</value>
+       </values>
+      </property>
+      <property>
+       <name>Scans</name>
+       <values arity="Scalar" type="Integer">
+        <value>1</value>
+       </values>
+      </property>
+      <property>
+       <name>QuantizationTables</name>
+       <values arity="List" type="Property">
+       <property>
+        <name>QuantizationTable</name>
+        <values arity="Array" type="Property">
+        <property>
+         <name>Precision</name>
+         <values arity="Scalar" type="String">
+          <value>8-bit</value>
+         </values>
+        </property>
+        <property>
+         <name>DestinationIdentifier</name>
+         <values arity="Scalar" type="Integer">
+          <value>0</value>
+         </values>
+        </property>
+        </values>
+       </property>
+       </values>
+      </property>
+      <property>
+       <name>Exif</name>
+       <values arity="List" type="Property">
+       <property>
+        <name>ExifVersion</name>
+        <values arity="Scalar" type="String">
+         <value>0220</value>
+        </values>
+       </property>
+       <property>
+        <name>FlashpixVersion</name>
+        <values arity="Scalar" type="String">
+         <value>0100</value>
+        </values>
+       </property>
+       <property>
+        <name>ColorSpace</name>
+        <values arity="Scalar" type="String">
+         <value>uncalibrated</value>
+        </values>
+       </property>
+       <property>
+        <name>PixelXDimension</name>
+        <values arity="Scalar" type="Long">
+         <value>512</value>
+        </values>
+       </property>
+       <property>
+        <name>PixelYDimension</name>
+        <values arity="Scalar" type="Long">
+         <value>512</value>
+        </values>
+       </property>
+       <property>
+        <name>ExposureProgram</name>
+        <values arity="Scalar" type="String">
+         <value>unidentified</value>
+        </values>
+       </property>
+       <property>
+        <name>MeteringMode</name>
+        <values arity="Scalar" type="String">
+         <value>unidentified</value>
+        </values>
+       </property>
+       <property>
+        <name>LightSource</name>
+        <values arity="Scalar" type="String">
+         <value>unknown</value>
+        </values>
+       </property>
+       <property>
+        <name>FocalPlaneResolutionUnit</name>
+        <values arity="Scalar" type="String">
+         <value>inches</value>
+        </values>
+       </property>
+       <property>
+        <name>FileSource</name>
+        <values arity="Scalar" type="String">
+         <value>DSC</value>
+        </values>
+       </property>
+       <property>
+        <name>SceneType</name>
+        <values arity="Scalar" type="String">
+         <value>directly photographed image</value>
+        </values>
+       </property>
+       <property>
+        <name>CustomRendered</name>
+        <values arity="Scalar" type="String">
+         <value>normal</value>
+        </values>
+       </property>
+       <property>
+        <name>FocalLengthIn35mmFilm</name>
+        <values arity="Scalar" type="Integer">
+         <value>0</value>
+        </values>
+       </property>
+       <property>
+        <name>SceneCaptureType</name>
+        <values arity="Scalar" type="String">
+         <value>standard</value>
+        </values>
+       </property>
+       <property>
+        <name>Saturation</name>
+        <values arity="Scalar" type="String">
+         <value>normal</value>
+        </values>
+       </property>
+       <property>
+        <name>Sharpness</name>
+        <values arity="Scalar" type="String">
+         <value>normal</value>
+        </values>
+       </property>
+       <property>
+        <name>SubjectDistanceRange</name>
+        <values arity="Scalar" type="String">
+         <value>unknown</value>
+        </values>
+       </property>
+       </values>
+      </property>
+      <property>
+       <name>XMP</name>
+       <values arity="Scalar" type="String">
+        <value>&lt;x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00        "&gt; &lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt; &lt;rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreateDate="2012-02-12T12:09:13+01:00" xmp:ModifyDate="2012-02-12T12:25:34+01:00" xmp:MetadataDate="2012-02-12T12:25:34+01:00" xmp:CreatorTool="Adobe Photoshop CS5 Windows" dc:format="image/jpeg" photoshop:ColorMode="3" xmpMM:InstanceID="xmp.iid:1533E21B6C55E11180A5EF7BDC084C3E" xmpMM:DocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E" xmpMM:OriginalDocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E"&gt; &lt;photoshop:DocumentAncestors&gt; &lt;rdf:Bag&gt; &lt;rdf:li&gt;xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E&lt;/rdf:li&gt; &lt;/rdf:Bag&gt; &lt;/photoshop:DocumentAncestors&gt; &lt;xmpMM:History&gt; &lt;rdf:Seq&gt; &lt;rdf:li stEvt:action="created" stEvt:instanceID="xmp.iid:D4B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:09:13+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows"/&gt; &lt;rdf:li stEvt:action="converted" stEvt:parameters="from image/tiff to image/jpeg"/&gt; &lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D5B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:16+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&gt; &lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D6B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:40+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&gt; &lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:D7B1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:11:40+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&gt; &lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:DAB1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:15:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&gt; &lt;rdf:li stEvt:action="converted" stEvt:parameters="from image/jpeg to application/vnd.adobe.photoshop"/&gt; &lt;rdf:li stEvt:action="derived" stEvt:parameters="converted from image/jpeg to application/vnd.adobe.photoshop"/&gt; &lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:DBB1752A6A55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:15:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&gt; &lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:1233E21B6C55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:24:41+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&gt; &lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:1333E21B6C55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:24:41+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&gt; &lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:1433E21B6C55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:25:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&gt; &lt;rdf:li stEvt:action="converted" stEvt:parameters="from application/vnd.adobe.photoshop to image/jpeg"/&gt; &lt;rdf:li stEvt:action="derived" stEvt:parameters="converted from application/vnd.adobe.photoshop to image/jpeg"/&gt; &lt;rdf:li stEvt:action="saved" stEvt:instanceID="xmp.iid:1533E21B6C55E11180A5EF7BDC084C3E" stEvt:when="2012-02-12T12:25:34+01:00" stEvt:softwareAgent="Adobe Photoshop CS5 Windows" stEvt:changed="/"/&gt; &lt;/rdf:Seq&gt; &lt;/xmpMM:History&gt; &lt;xmpMM:DerivedFrom stRef:instanceID="xmp.iid:1433E21B6C55E11180A5EF7BDC084C3E" stRef:documentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E" stRef:originalDocumentID="xmp.did:D4B1752A6A55E11180A5EF7BDC084C3E"/&gt; &lt;/rdf:Description&gt; &lt;/rdf:RDF&gt; &lt;/x:xmpmeta&gt;</value>
+       </values>
+      </property>
+      </values>
+     </property>
+     </values>
+    </property>
+    <property>
+     <name>ApplicationSegments</name>
+     <values arity="List" type="String">
+      <value>APP1</value>
+      <value>APP13</value>
+      <value>APP1</value>
+      <value>APP14</value>
+     </values>
+    </property>
+    </values>
+   </property>
+  </properties>
+ </repInfo>
+</jhove>
