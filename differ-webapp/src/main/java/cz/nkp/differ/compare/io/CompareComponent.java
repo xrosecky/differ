@@ -94,7 +94,7 @@ public class CompareComponent {
 		childALayout.addComponent(iFAC3.getComponent());
 		iFACs.addAll(Arrays.asList(iFAC1, iFAC2, iFAC3));
                 tableComp = new ImageMetadataComponentGenerator(new ImageProcessorResult[] {result[2]}, this);
-                tableComp.setTableName("SILARITY METRICS");
+                tableComp.setTableName("SIMILARITY METRICS");
 	    } else {
 		TextField errorComponent = new TextField();
 		errorComponent.setValue("Images can't be compared.");
